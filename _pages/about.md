@@ -4,15 +4,30 @@ title: About
 permalink: /about/
 ---
 
-Software Engineer with ~7 years of industry experience, extensive experience working in Human Resources, Algorithmic Trading and Productivity Tools Industry.
+Software Engineer with 7+ years of industry experience and with 5+ years of volunteering experience.
 
-With ~3 years of experience developing web platforms within HR industry. Fulfilled the role of a software engineering manager working with Ruby on Rails, Emberjs, PostgreSQL, JIRA, Azure, AWS, etc.
+Extensive experience working in Human Resources, Algorithmic Trading and Productivity Tools Industry.
 
-With ~2 years of experience within algorithmic trading industry. Fulfilled the role of a software engineer working in technologies such as C++, C++ Actor Framework, Python, etc.
+I have been working with Ruby in a professional setting since 2016, with a single ~2 year exception of working with C++ and Python (had a lot of fun learning about actor systems working with CAF - C++ Actor Framework).
 
-With ~2 years of experience within productivity tools industry. Fulfilled the role of a senior software engineer working in technologies such as Ruby on Rails, ReactJS, MySQL, Google Cloud, Kubernetes, etc.
+Some of the roles/titles I held thus far during my professional & volunteering career:
+- Host / Project Lead of EuRuKo 2024
+- Software Engineering Manager
+- Senior Software Engineer
+- Junior Software Engineer
+- Team Lead / Coordinator / Mentor
 
-With 5+ years of volunteering experience. Fulfilled roles of a project lead, team lead, coordinator, technical and soft-skills mentor to passionate students and underpriviledged youth.
+Specialities:
+- Research & Development
+- Software Design
+- Team Leadership
+
+Tech stack I worked with thus far:
+- Ruby, C++, Python
+- Ruby on Rails, C++ Actor Framework
+- Emberjs, ReactJS
+- PostgreSQL, MySQL
+- Kubernetes, Google Cloud, Azure, AWS
 
 ## Career Overview
 
