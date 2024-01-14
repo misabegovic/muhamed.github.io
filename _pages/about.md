@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Software Engineer with ~8 years of industry experience, extensive experience working in Human Resources, Algorithmic Trading and Productivity Tools Industry.
+Software Engineer with ~7 years of industry experience, extensive experience working in Human Resources, Algorithmic Trading and Productivity Tools Industry.
 
-With ~4 years of experience developing web platforms within HR industry. Fulfilled the role of a software engineering manager working with Ruby on Rails, Emberjs, PostgreSQL, JIRA, Azure, AWS, etc.
+With ~3 years of experience developing web platforms within HR industry. Fulfilled the role of a software engineering manager working with Ruby on Rails, Emberjs, PostgreSQL, JIRA, Azure, AWS, etc.
 
 With ~2 years of experience within algorithmic trading industry. Fulfilled the role of a software engineer working in technologies such as C++, C++ Actor Framework, Python, etc.
 
