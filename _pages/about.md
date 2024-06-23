@@ -45,8 +45,10 @@ Tech stack I worked with thus far:
 
 ## List of things I love
 
+- My family
+- Commiting to a good cause
 - Good people & good stories
 - Good movies (since I was very little)
-- Commiting to a good cause
-- My family
+- Coffee
+
 
