@@ -1,0 +1,19 @@
+# pi-brain configuration
+org: "muhamed.github.io"
+active_repos:
+  - muhamed.github.io
+archived_repos: []
+auto_connect: true
+connectors:
+  github:
+    repos: []
+  notion:
+    pages: []
+  slack:
+    channels: []
+  datadog:
+    site: ""
+  langfuse:
+    host: ""
+  structure:
+    repos: []
