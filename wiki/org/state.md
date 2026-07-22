@@ -28,8 +28,8 @@ precompiled binary requires Ruby `< 3.3.dev`.
 domain not set in GitHub Pages settings, and Jekyll failing because `vendor/`
 was not excluded in `_config.yml`. Resolved by setting the custom domain to
 `muhamed.at`, adding `vendor` to `exclude`, and aligning `url`/`enforce_ssl`
-to `https://muhamed.at`. See the AI-suggested post-incident ADR at
-[ADR: Jekyll vendor exclude and custom domain](../muhamed.github.io/ai-suggestions/adrs/jekyll-vendor-exclude-and-custom-domain.md).
+to `https://muhamed.at`. See
+[ADR: Jekyll vendor exclude and custom domain](../muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md).
 
 ## What needs attention
 

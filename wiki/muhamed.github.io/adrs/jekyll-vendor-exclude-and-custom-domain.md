@@ -1,6 +1,6 @@
 ---
 kind: decision
-status: ai-suggested
+status: accepted
 confidence: low
 sources:
   - sources/doc/2026-07-22--pages-yml.md
