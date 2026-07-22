@@ -15,9 +15,10 @@ This is the synthesis layer for this pi-brain instance.
 
 ### decision
 - [Convert repo to pi-brain clone and deploy site via GitHub Actions](wiki/muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
+- [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
 
 ### constraint
-- [Structural repo changes require an approved ADR first](wiki/muhamed.github.io/constraints/adr-before-structural-changes.md)
+- [Constraint — ADR before structural changes](wiki/muhamed.github.io/constraints/adr-before-structural-changes.md)
 
 ### options
 - [Options — muhamed.github.io](wiki/org/options.md)

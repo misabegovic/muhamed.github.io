@@ -13,8 +13,11 @@ This repo was just converted into a pi-brain clone. Project code now lives in
 `.github/workflows/pages.yml` builds and deploys the Jekyll site from `files/`
 using GitHub Actions.
 
-The decision is recorded in
+The conversion decision is recorded in
 [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md).
+
+The clone has been synced with upstream pi-brain guardrails; see
+[ADR: Sync clone with upstream pi-brain guardrails](../muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md).
 
 ## What needs attention
 

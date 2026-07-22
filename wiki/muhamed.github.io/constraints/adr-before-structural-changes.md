@@ -1,25 +1,41 @@
 ---
 kind: constraint
 status: active
+confidence: medium
 severity: must
-confidence: high
+category: workflow
+scope: muhamed.github.io
 ---
 
-# Structural repo changes require an approved ADR first
+# Constraint — ADR before structural changes
 
-Any change that alters the repository layout, build/deployment pipeline, or the boundary between the pi-brain knowledge base and the project codebase must have an accepted ADR in `wiki/muhamed.github.io/adrs/` before implementation begins.
+## Statement
 
-## Applies to
+Any structural change to this pi-brain home or the maintained project repository MUST have an approved ADR before implementation begins.
 
-- Moving project files into or out of `files/`.
-- Adding, removing, or substantially changing GitHub Actions workflows.
-- Changing `brain.config.yml` in ways that affect connector behavior or active repos.
-- Adding or removing top-level pi-brain directories (`wiki/`, `sources/`, `log/`).
+"Structural change" includes, but is not limited to:
+- Changes to repository layout or top-level directories.
+- Changes to `brain.config.yml`, `.github/workflows/`, or CI configuration.
+- Changes to `AGENTS.md` that alter the agent's contract.
+- Onboarding or removing a maintained repository.
+- Converting a repository into a pi-brain clone.
 
 ## Rationale
 
-This repository is both a pi-brain clone and a published GitHub Pages site. Structural changes have immediate production consequences (e.g., breaking the site) and are hard to undo cleanly. Recording the decision first prevents agent-led restructures from outrunning human review.
+pi-brain is a contract-first knowledge base. If the agent implements structural decisions before they are recorded and approved, the corpus drifts from reality and the user loses trust. This constraint makes the contract enforceable during `/brain:shape` and gives both the user and the agent a clear place to point when something is being decided too quickly.
 
-## Exception
+## Applies to
 
-Purely cosmetic changes to existing files (typos, formatting, content updates) do not require an ADR.
+- ADRs, PRDs, epics, and bets in scope: `muhamed.github.io`
+- Categories: workflow, architecture
+
+## Examples
+
+- **Compliant:** A user asks to convert a repo to a pi-brain clone. The agent drafts an ADR in `ai-suggestions/`, the user approves it, and only then files are moved.
+- **Violation:** A user asks to restructure `wiki/` and the agent moves directories before an ADR is accepted.
+
+## Related
+
+- [AGENTS.md](../../../../AGENTS.md)
+- [ADR: Sync clone with upstream pi-brain guardrails](../adrs/sync-upstream-pi-brain-guardrails.md)
+- [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../adrs/convert-repo-to-pi-brain-actions.md)
