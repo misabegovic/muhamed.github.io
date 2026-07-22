@@ -19,6 +19,9 @@ The conversion decision is recorded in
 The clone has been synced with upstream pi-brain guardrails; see
 [ADR: Sync clone with upstream pi-brain guardrails](../muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md).
 
+The Pages workflow is pinned to Ruby 3.2 because the locked `nokogiri` 1.15.5
+precompiled binary requires Ruby `< 3.3.dev`.
+
 ## What needs attention
 
 - Capture the project's purpose and constraints.

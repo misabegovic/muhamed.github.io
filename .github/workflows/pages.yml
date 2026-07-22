@@ -24,7 +24,9 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          # Pin to 3.2 because the locked nokogiri 1.15.5 precompiled binary
+          # requires Ruby < 3.3.dev. Once Gemfile.lock is refreshed, 3.3 works.
+          ruby-version: '3.2'
           bundler-cache: true
           working-directory: files
 
