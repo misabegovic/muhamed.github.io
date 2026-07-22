@@ -48,8 +48,8 @@ google_analytics:
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.muhamed.at
-enforce_ssl: https://www.muhamed.at
+url: https://muhamed.at
+enforce_ssl: https://muhamed.at
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -99,4 +99,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor
 
