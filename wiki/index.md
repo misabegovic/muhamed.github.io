@@ -17,6 +17,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Convert repo to pi-brain clone and deploy site via GitHub Actions](wiki/muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
+- [Sync latest upstream pi-brain updates](wiki/muhamed.github.io/ai-suggestions/adrs/sync-latest-upstream-pi-brain-updates.md)
 
 ### constraint
 - [Constraint — ADR before structural changes](wiki/muhamed.github.io/constraints/adr-before-structural-changes.md)

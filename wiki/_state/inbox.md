@@ -25,3 +25,9 @@
   - sources/doc/2026-07-22--adr-before-structural-changes-md.md
   - sources/doc/2026-07-22--agents-md.md
   - sources/doc/2026-07-22--gemfile.md
+### user-requested-to-pull-latest-updates-from-upstr (2026-07-23)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User requested to pull latest updates from upstream pi-brain into the muhamed.github.io clone. This is a structural change affecting AGENTS.md and possibly constraints/skills. Drafting AI-suggested ADR for approval.
+
