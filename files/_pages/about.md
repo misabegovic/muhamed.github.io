@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Software Engineer with 8+ years of industry experience and with 5+ years of volunteering experience.
+Software Engineer with 10+ years of industry experience and 7+ years of volunteering and community organizing experience.
 
 Extensive experience working in Human Resources, Talent Acquisition, Algorithmic Trading and Productivity Tools Industry.
 
 I have been working with Ruby in a professional setting since 2016, with a single ~2 year exception of working with C++ and Python (had a lot of fun learning about actor systems working with CAF - C++ Actor Framework).
+
+Lately, I am building with pi-brain — a cloneable, agent-maintained knowledge base that powers this site — and experimenting with AI agents and workflows around tools like Claude, Kimi K3, and [Pi.dev](https://pi.dev).
 
 ## Career Overview
 
