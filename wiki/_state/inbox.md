@@ -3,7 +3,9 @@
 
 - **kind:** auto-ingest
 - **scope:** brain
-- **summary:** Auto-ingested 2 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+- **summary:** Auto-ingested 3 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+
+
 ### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
 
 - **kind:** discussion
@@ -39,4 +41,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User clarified: the Usput.ba planning is intended as content for the muhamed.at 'Peek into my brain' stream, not for immediate app work. Pivot to drafting a stream entry.
+### user-is-waiting-for-ruby-native-to-land-on-andro (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User is waiting for Ruby Native to land on Android properly. Plans to use Ruby Native to roll out Usput.ba (and potentially other apps) to app stores without writing native code.
 

@@ -3,7 +3,7 @@ kind: source
 source_kind: web
 source_url: https://rubynative.com/
 ingested_at: 2026-07-23
-summary: Ruby Native - framework for building native mobile apps with Ruby, candidate tech for Usput.ba mobile app.
+summary: Ruby Native framework for turning Rails apps into native mobile apps; user is waiting for Android support and plans to use it for app store rollouts
 ---
 
 # https://rubynative.com/
@@ -18,7 +18,7 @@ summary: Ruby Native - framework for building native mobile apps with Ruby, cand
     <meta name="description" content="Turn your Ruby on Rails app into a mobile app. Preview on your phone in minutes, then ship to the App Store and Google Play, no native code required.">
     <link rel="canonical" href="https://rubynative.com/">
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="UhdPxt_1RRbrpsL4d2YvRM0amPNuv5Etxfrk30oXd5GgnLpu0Apsc4GlANFXE9pQrSK7M9rxSOx5vzSdEOEt9Q" />
+<meta name="csrf-token" content="r2NwqfUavJn4l9Se3QrOE97kzkpWS4DLs0eq6Utglb1o_3s9hsPHJyaCINzSlRxPgj-ySahdiPP6jt1fH3rzzA" />
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1092,7 +1092,7 @@ summary: Ruby Native - framework for building native mobile apps with Ruby, cand
             </li>
           </ul>
         </div>
-        <a href="/cdn-cgi/l/email-protection#c8a2a7ad88babdaab1a6a9bca1beade6aba7a5f7bbbdaaa2adabbcf59cbdbaa6a3adb1e8a7a6aaa7a9baaca1a6af" class="inline-flex shrink-0 items-center justify-center rounded-md bg-ink text-white hover:bg-ink/90 px-4 py-2.5 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+        <a href="/cdn-cgi/l/email-protection#88e2e7edc8fafdeaf1e6e9fce1feeda6ebe7e5b7fbfdeae2edebfcb5dcfdfae6e3edf1a8e7e6eae7e9faece1e6ef" class="inline-flex shrink-0 items-center justify-center rounded-md bg-ink text-white hover:bg-ink/90 px-4 py-2.5 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
           Get in touch
         </a>
       </div>
@@ -1109,7 +1109,7 @@ summary: Ruby Native - framework for building native mobile apps with Ruby, cand
         </h2>
         <p class="text-base/7 text-pretty text-ink-light">
           Can&#39;t find what you&#39;re looking for?
-          <a href="/cdn-cgi/l/email-protection#670d0802271512051e0906130e11024904080a" class="font-medium text-teal-700 underline underline-offset-2">Send me an email</a>
+          <a href="/cdn-cgi/l/email-protection#3c5653597c4e495e45525d48554a59125f5351" class="font-medium text-teal-700 underline underline-offset-2">Send me an email</a>
           and I'll get back to you.
         </p>
       </div>
