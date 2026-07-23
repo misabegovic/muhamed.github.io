@@ -20,6 +20,8 @@ layout: default
 .brain-home .tag:hover { background: #e8e8e8; }
 .brain-home .hidden { display: none; }
 .brain-home .page-hidden { display: none; }
+.brain-home .empty-state { text-align: center; color: #666; padding: 3rem 1rem; }
+.brain-home .empty-state a { color: #333; }
 .brain-home .load-more-wrap { text-align: center; margin-top: 2rem; }
 .brain-home .load-more { padding: 0.6rem 1.4rem; font-size: 0.95rem; border: 1px solid #333; background: #fff; color: #333; border-radius: 4px; cursor: pointer; }
 .brain-home .load-more:hover { background: #333; color: #fff; }
@@ -48,6 +50,12 @@ layout: default
     </a>
     {% endfor %}
   </div>
+
+  {% if sorted.size == 0 %}
+  <div class="empty-state">
+    <p>Nothing here yet. Check back soon, or browse the <a href="/writing/">writing</a> page.</p>
+  </div>
+  {% endif %}
 
   <div class="load-more-wrap">
     <button id="load-more" class="load-more">Load more</button>

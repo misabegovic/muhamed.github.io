@@ -97,4 +97,29 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** Implemented refinements under the accepted 'brain-card home page' ADR: added 'Load more' pagination to home page (6 cards at a time), added tags to existing 3 blog posts, updated About page with current career info and brain stream description. Build verified locally.
+### user-asked-why-i-don-t-run-the-local-server-in-t (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User asked why I don't run the local server in the background while working. Explaining environment limitation: background processes launched via the bash tool do not persist across separate tool calls. Each bash invocation appears to clean up its process group, killing nohup/disown/setsid background servers. Need to start server when user wants to view, with long timeout during that session.
+### tried-tmux-to-keep-local-server-running-persiste (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Tried tmux to keep local server running persistently, but tmux sessions also do not survive across bash tool invocations. Confirmed environment limitation: no background processes persist. Will start server on-demand when user wants to view, and continue other work in between.
+### user-will-serve-the-jekyll-site-themselves-in-a (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User will serve the Jekyll site themselves in a separate terminal. Providing exact commands to use the correct Ruby version and start the server from files/.
+### user-found-broken-brain-cards-link-in-stream-ent (2026-07-23)
+
+- **kind:** task
+- **scope:** muhamed.github.io
+- **summary:** User found broken /brain-cards/ link in stream entry pages while serving locally. Also wants fake sample content removed from stream. Need to fix back link to point to / and remove sample _stream entries.
+### fixed-broken-brain-cards-back-link-in-stream-ent (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Fixed broken /brain-cards/ back link in stream entry layout to point to /. Removed all sample stream entries from files/_stream/. Added empty-state message on home page for when no stream entries exist. Rebuilt site.
 

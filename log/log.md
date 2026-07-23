@@ -9,3 +9,4 @@
 - 2026-07-23T10:00:00Z — backfilled missing upstream pi-brain files: added tools/, skills/, personas/, prompts/, themes/, extensions/, tests/, package.json, .env.example, GETTING_STARTED.md, .github/pull_request_template.md, .github/workflows/validate.yml, sources/brain/, sources/repos/, wiki/brain/; snapshotted upstream brain.config.yml, .gitignore, README.md, and sources/README.md
 - 2026-07-23T11:23:00Z — implemented production brain-card home page: replaced / with card stream, created /writing/ for posts, added /brain.xml feed, removed all prototype routes
 - 2026-07-23T11:35:00Z — added Load more pagination to home page, tags on existing posts, updated About page
+- 2026-07-23T11:47:00Z — fixed /brain-cards/ back link to /, removed sample stream entries, added empty-state message
