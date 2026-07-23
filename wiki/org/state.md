@@ -47,8 +47,9 @@ moved to `/writing/`. Individual stream entries have permalink pages at
 `/brain-minimal/`, `/brain-book/`, and `/brain-window/` were removed.
 Refinements added: "Load more" pagination, disclaimer that the stream is
 AI-assisted, tags on existing posts, updated About page and career timeline,
-and empty-state message. Deployed to muhamed.at via GitHub Actions run
-29998234763. See
+empty-state message, and a footer link to the `/brain.xml` feed alongside the
+existing `/feed.xml` link. Deployed to muhamed.at via GitHub Actions runs
+29998234763 and 29998410600. See
 [ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md).
 
 ## What needs attention
