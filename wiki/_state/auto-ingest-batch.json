@@ -54,6 +54,11 @@
       "source": "https://github.com/langfuse/langfuse",
       "targetPath": "sources/repo/2026-07-23--github-com-langfuse-langfuse.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://herdr.dev/",
+      "targetPath": "sources/web/2026-07-23--herdr-dev.md",
+      "date": "2026-07-23"
     }
   ],
   "createdAt": "2026-07-23"
