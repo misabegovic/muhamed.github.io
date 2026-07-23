@@ -20,7 +20,7 @@ I have been working with Ruby in a professional setting since 2016, with a singl
 - (2021 - 2024) [Senior Software Engineer @ Meisterlabs](https://www.meisterlabs.com/)
 - (2019 - 2021) [Software Engineering Manager @ Experfy](https://www.experfy.com/)
 - (2018 - 2019) [Software Engineer @ Marvelsoft](https://marvelsoft.net/)
-- (2017 - 2018) [Junior Software Engineer @ Experfy](https://www.experfy.com/)
+- (2016 - 2017) [Junior Software Engineer @ Experfy](https://www.experfy.com/)
 
 ## Specialties
 
