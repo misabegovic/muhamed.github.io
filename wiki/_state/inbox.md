@@ -3,7 +3,7 @@
 
 - **kind:** auto-ingest
 - **scope:** brain
-- **summary:** Auto-ingested 12 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+- **summary:** Auto-ingested 13 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
 
 
 ### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
@@ -56,4 +56,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User wants to learn more about Langfuse, specifically: prompt version management, releasing challengers, running experiments, introducing deterministic scorers and LLM-as-a-judge scorers. Likely relevant for Usput.ai / Platform workflows and AI content generation quality control.
+### user-is-looking-into-openai-flex-processing-for (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User is looking into OpenAI Flex Processing for Usput/AI workloads. Context: OpenAI webhooks are not available in Europe, so they need polling or alternatives. Considering AWS Bedrock or Azure OpenAI as alternatives.
 

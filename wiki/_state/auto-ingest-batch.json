@@ -59,6 +59,11 @@
       "source": "https://herdr.dev/",
       "targetPath": "sources/web/2026-07-23--herdr-dev.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://developers.openai.com/api/docs/guides/flex-processing",
+      "targetPath": "sources/web/2026-07-23--developers-openai-com-api-docs-guides-flex-processing.md",
+      "date": "2026-07-23"
     }
   ],
   "createdAt": "2026-07-23"
