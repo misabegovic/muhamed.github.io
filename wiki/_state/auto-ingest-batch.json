@@ -64,6 +64,26 @@
       "source": "https://developers.openai.com/api/docs/guides/flex-processing",
       "targetPath": "sources/web/2026-07-23--developers-openai-com-api-docs-guides-flex-processing.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://11factor.org/",
+      "targetPath": "sources/web/2026-07-23--11factor-org.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://elevenmessenger.com/unfiltered/",
+      "targetPath": "sources/web/2026-07-23--elevenmessenger-com-unfiltered.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://home.elevenmessenger.com/",
+      "targetPath": "sources/web/2026-07-23--home-elevenmessenger-com.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://ti.to/home",
+      "targetPath": "sources/web/2026-07-23--ti-to-home.md",
+      "date": "2026-07-23"
     }
   ],
   "createdAt": "2026-07-23"

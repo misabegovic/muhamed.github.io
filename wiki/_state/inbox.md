@@ -3,7 +3,7 @@
 
 - **kind:** auto-ingest
 - **scope:** brain
-- **summary:** Auto-ingested 13 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+- **summary:** Auto-ingested 17 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
 
 
 ### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
@@ -61,4 +61,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User is looking into OpenAI Flex Processing for Usput/AI workloads. Context: OpenAI webhooks are not available in Europe, so they need polling or alternatives. Considering AWS Bedrock or Azure OpenAI as alternatives.
+### user-spoke-with-paul-from-tito-ti-to-paul-is-bui (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User spoke with Paul from Tito (ti.to). Paul is building cathedrals, not in Ruby anymore, now builds in Go. Shared principles via 11factor.org, elevenmessenger.com, and elevenmessenger.com/unfiltered. User aligns on some principles and feels there's a lot to learn here. Relevant for rethinking how software systems should be built.
 
