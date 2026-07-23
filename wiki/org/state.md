@@ -20,6 +20,10 @@ The clone has been synced with upstream pi-brain guardrails; see
 [ADR: Sync clone with upstream pi-brain guardrails](../muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md).
 A later update pulled in the autonomy-mode and PR-convention changes; see
 [ADR: Sync latest upstream pi-brain updates](../muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md).
+The full upstream file structure was then backfilled so the clone is no longer
+missing `tools/`, `skills/`, `personas/`, `prompts/`, `themes/`, `extensions/`,
+`tests/`, or the remaining template files; see
+[ADR: Backfill missing upstream pi-brain files](../muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files.md).
 
 The Pages workflow is pinned to Ruby 3.2 because the locked `nokogiri` 1.15.5
 precompiled binary requires Ruby `< 3.3.dev`.
