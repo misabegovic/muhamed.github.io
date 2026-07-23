@@ -192,4 +192,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** Refined multi-tag filtering UX based on user feedback: removed '+ Add tag' dropdown and active tag pills. Now a single search input handles both text and #tag tokens. Tag chips toggle #tag in the input. OR logic among tags. Build verified locally.
+### user-requested-to-pull-latest-changes-from-upstr (2026-07-23)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User requested to pull latest changes from upstream pi-brain. New upstream commits include /brain:update skill, v0.2.0 release record, plain-language shape request handling, and updates to extension/skills. This is a structural sync requiring ADR per brain contract.
 

@@ -20,6 +20,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Make the brain-card stream the home page](wiki/muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
 - [Sync latest upstream pi-brain updates](wiki/muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
+- [Sync latest upstream pi-brain changes (v0.2.0)](wiki/muhamed.github.io/ai-suggestions/adrs/sync-latest-pi-brain-v0-2-0.md)
 
 ### bet
 - [Bet — Smarter autonomy for pi-brain clones](wiki/brain/bets/smarter-autonomy.md)
