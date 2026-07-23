@@ -51,11 +51,14 @@ empty-state message, and a footer link to the `/brain.xml` feed alongside the
 existing `/feed.xml` link. Later implemented unified tag filtering and search:
 clicking a tag on brain cards, stream entries, writing cards, or writing posts
 filters the relevant page; `/writing/` gained search and "Load more"; the
-standalone `/search/` page was removed. Deployed to muhamed.at via GitHub
-Actions runs 29998234763, 29998410600, and a subsequent run. See
-[ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
+standalone `/search/` page was removed. Later implemented multi-tag filtering
+and a `/tags/` explorer page with per-section counts; Brain and Writing pages
+support selecting multiple tags (OR logic) alongside text search. Deployed to
+muhamed.at via GitHub Actions. See
+[ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md),
+[PRD: Unified tag filtering and search](../prds/unified-tag-filtering-and-search.md),
 and
-[PRD: Unified tag filtering and search](../prds/unified-tag-filtering-and-search.md).
+[PRD: Multi-tag filtering and tag explorer](../prds/multi-tag-filtering-and-tag-explorer.md).
 
 ## What needs attention
 

@@ -1,6 +1,6 @@
 ---
 kind: prd
-status: ai-suggested
+status: accepted
 confidence: low
 sources:
   - files/index.html

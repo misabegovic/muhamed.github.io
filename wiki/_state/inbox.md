@@ -177,4 +177,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User answered PRD open questions: OR filtering, keep 'tags' (not topics), tag scope covers both Brain and Writing, tag explorer shows per-section counts so users know where clicking leads. Ready to update PRD and implement.
+### implemented-multi-tag-filtering-and-tag-explorer (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Implemented multi-tag filtering and tag explorer per accepted PRD. Brain and Writing pages now support multiple tag selection via dropdown and clickable chips, text search, and clear filters. Added /tags/ page showing all tags with per-section counts. Updated navigation. Build verified locally.
 

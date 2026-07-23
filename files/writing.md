@@ -11,7 +11,13 @@ title: Writing
 .writing-page .disclaimer { font-size: 0.9rem; color: #777; line-height: 1.5; margin-bottom: 1.5rem; max-width: 640px; }
 .writing-page .disclaimer a { color: #555; }
 .writing-page .controls { margin-bottom: 1.5rem; }
-.writing-page input { width: 100%; max-width: 400px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+.writing-page input { width: 100%; max-width: 300px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+.writing-page .tag-select { padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; margin-left: 0.5rem; }
+.writing-page .active-tags { margin-top: 0.8rem; }
+.writing-page .active-tag { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.6rem; background: #333; color: #fff; border-radius: 4px; font-size: 0.85rem; margin-right: 0.4rem; cursor: pointer; }
+.writing-page .active-tag:hover { background: #555; }
+.writing-page .clear-filters { display: inline-block; margin-left: 0.5rem; font-size: 0.85rem; color: #666; cursor: pointer; }
+.writing-page .clear-filters:hover { text-decoration: underline; }
 .writing-page .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
 .writing-page .card { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2rem; background: #fff; transition: box-shadow 0.15s; text-decoration: none; color: inherit; display: block; }
 .writing-page .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
@@ -26,8 +32,6 @@ title: Writing
 .writing-page .load-more-wrap { text-align: center; margin-top: 2rem; }
 .writing-page .load-more { padding: 0.6rem 1.4rem; font-size: 0.95rem; border: 1px solid #333; background: #fff; color: #333; border-radius: 4px; cursor: pointer; }
 .writing-page .load-more:hover { background: #333; color: #fff; }
-.writing-page .clear-filter { display: inline-block; margin-left: 1rem; font-size: 0.85rem; color: #666; cursor: pointer; }
-.writing-page .clear-filter:hover { text-decoration: underline; }
 </style>
 
 <div class="writing-page">
@@ -36,20 +40,27 @@ title: Writing
   <p class="disclaimer">For the raw, AI-assisted stream of things I find interesting, see <a href="/">Peek into my brain</a>.</p>
 
   <div class="controls">
-    <input type="text" id="search" placeholder="Search or filter by tag...">
-    <span id="clear-filter" class="clear-filter hidden">Clear filter</span>
+    <input type="text" id="search" placeholder="Search text...">
+    <select id="tag-select" class="tag-select">
+      <option value="">+ Add tag</option>
+      {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | sort %}
+      {% assign unique_tags = all_tags | uniq %}
+      {% for tag in unique_tags %}{% if tag != '' %}<option value="{{ tag }}">{{ tag }}</option>{% endif %}{% endfor %}
+    </select>
+    <span id="clear-filters" class="clear-filters hidden">Clear filters</span>
+    <div id="active-tags" class="active-tags"></div>
   </div>
 
   <div class="grid" id="cards">
     {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% for post in sorted_posts %}
-    <div class="card" data-text="{{ post.title | downcase }} {{ post.excerpt | strip_html | downcase }} {{ post.tags | join: ' ' | downcase }} {{ post.categories | join: ' ' | downcase }}">
+    <div class="card" data-text="{{ post.title | downcase }} {{ post.excerpt | strip_html | downcase }}" data-tags="{{ post.tags | join: ',' }}">
       <a class="card-link" href="{{ site.baseurl }}{{ post.url }}">
         <div class="card-date">{{ post.date | date: "%Y-%m-%d" }}</div>
         <h2 class="card-title">{{ post.title }}</h2>
         <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
       </a>
-      <div class="tags">{% for tag in post.tags %}<a href="/writing/?tag={{ tag | url_encode }}" class="tag" data-tag="{{ tag }}" onclick="event.preventDefault(); event.stopPropagation(); filterByTag('{{ tag | escape }}');">{{ tag }}</a>{% endfor %}</div>
+      <div class="tags">{% for tag in post.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button">{{ tag }}</span>{% endfor %}</div>
     </div>
     {% endfor %}
   </div>
@@ -61,27 +72,65 @@ title: Writing
 
 <script>
 const search = document.getElementById('search');
-const clearFilter = document.getElementById('clear-filter');
+const tagSelect = document.getElementById('tag-select');
+const activeTagsEl = document.getElementById('active-tags');
+const clearFilters = document.getElementById('clear-filters');
 const cards = Array.from(document.querySelectorAll('.card'));
 const loadMoreBtn = document.getElementById('load-more');
 const PAGE_SIZE = 6;
 let visibleCount = PAGE_SIZE;
+let activeTags = [];
 
-function setUrlParam(tag) {
+function setUrlParams() {
   const url = new URL(window.location.href);
-  if (tag) {
-    url.searchParams.set('tag', tag);
+  url.searchParams.delete('tag');
+  activeTags.forEach(t => url.searchParams.append('tag', t));
+  if (search.value) {
+    url.searchParams.set('q', search.value);
   } else {
-    url.searchParams.delete('tag');
+    url.searchParams.delete('q');
   }
   window.history.replaceState({}, '', url);
+}
+
+function updateActiveTagsUI() {
+  activeTagsEl.innerHTML = '';
+  activeTags.forEach(tag => {
+    const pill = document.createElement('span');
+    pill.className = 'active-tag';
+    pill.textContent = tag + ' ×';
+    pill.addEventListener('click', () => removeTag(tag));
+    activeTagsEl.appendChild(pill);
+  });
+  clearFilters.classList.toggle('hidden', activeTags.length === 0 && !search.value);
+}
+
+function addTag(tag) {
+  if (!tag || activeTags.includes(tag)) return;
+  activeTags.push(tag);
+  tagSelect.value = '';
+  visibleCount = PAGE_SIZE;
+  setUrlParams();
+  updateActiveTagsUI();
+  updateVisibility();
+}
+
+function removeTag(tag) {
+  activeTags = activeTags.filter(t => t !== tag);
+  visibleCount = PAGE_SIZE;
+  setUrlParams();
+  updateActiveTagsUI();
+  updateVisibility();
 }
 
 function updateVisibility() {
   const q = search.value.toLowerCase();
   let matched = 0;
   cards.forEach(c => {
-    const matches = c.dataset.text.includes(q);
+    const textMatch = !q || c.dataset.text.includes(q);
+    const cardTags = c.dataset.tags.split(',').map(t => t.trim()).filter(Boolean);
+    const tagMatch = activeTags.length === 0 || activeTags.some(t => cardTags.includes(t));
+    const matches = textMatch && tagMatch;
     c.classList.toggle('hidden', !matches);
     if (matches) {
       matched++;
@@ -90,27 +139,37 @@ function updateVisibility() {
   });
   const anyHidden = cards.some(c => !c.classList.contains('hidden') && c.classList.contains('page-hidden'));
   loadMoreBtn.style.display = (anyHidden ? 'inline-block' : 'none');
-  clearFilter.classList.toggle('hidden', !q);
-}
-
-function filterByTag(tag) {
-  search.value = tag;
-  setUrlParam(tag);
-  visibleCount = PAGE_SIZE;
-  updateVisibility();
 }
 
 search.addEventListener('input', () => {
   visibleCount = PAGE_SIZE;
-  setUrlParam(search.value);
+  setUrlParams();
   updateVisibility();
 });
 
-clearFilter.addEventListener('click', () => {
+tagSelect.addEventListener('change', () => addTag(tagSelect.value));
+
+clearFilters.addEventListener('click', () => {
   search.value = '';
-  setUrlParam('');
+  activeTags = [];
   visibleCount = PAGE_SIZE;
+  setUrlParams();
+  updateActiveTagsUI();
   updateVisibility();
+});
+
+document.querySelectorAll('.card .tag').forEach(tagEl => {
+  tagEl.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addTag(tagEl.dataset.tag);
+  });
+  tagEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      addTag(tagEl.dataset.tag);
+    }
+  });
 });
 
 loadMoreBtn.addEventListener('click', () => {
@@ -119,10 +178,10 @@ loadMoreBtn.addEventListener('click', () => {
 });
 
 const urlParams = new URLSearchParams(window.location.search);
-const initialTag = urlParams.get('tag');
-if (initialTag) {
-  search.value = initialTag;
-}
+activeTags = urlParams.getAll('tag');
+const initialQ = urlParams.get('q');
+if (initialQ) search.value = initialQ;
 
+updateActiveTagsUI();
 updateVisibility();
 </script>

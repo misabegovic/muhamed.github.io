@@ -16,3 +16,4 @@
 - 2026-07-23T12:20:00Z — added brain.xml feed link to footer; deployed via GitHub Actions run 29998410600
 - 2026-07-23T12:20:00Z — implemented unified tag filtering and search; removed /search/ page
 - 2026-07-23T12:25:00Z — deployed unified tag filtering and search via GitHub Actions run 29998923568
+- 2026-07-23T12:33:00Z — implemented multi-tag filtering and /tags/ explorer page
