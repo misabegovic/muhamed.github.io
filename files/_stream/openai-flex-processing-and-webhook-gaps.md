@@ -11,7 +11,7 @@ tags: [ai, openai, api, webhooks, flex-processing, europe]
 
 Looking into [OpenAI Flex Processing](https://developers.openai.com/api/docs/guides/flex-processing) for cheaper asynchronous workloads. The pitch is simple: lower-cost processing for tasks that don't need an immediate response.
 
-The catch for us in Europe: OpenAI webhooks aren't available here yet. Without webhooks, there's no clean push notification when a long-running job finishes, so we're stuck polling or building our own completion-tracking layer. That's annoying, especially for workloads like AI-generated content or audio tours where you'd rather fire-and-forget and get notified later.
+The catch for us in Europe: OpenAI webhooks aren't available here yet. Without webhooks, there's no clean push notification when a long-running job finishes, so we're stuck polling or building our own completion-tracking layer.
 
 Alternatives to explore:
 
