@@ -3,7 +3,7 @@
 
 - **kind:** auto-ingest
 - **scope:** brain
-- **summary:** Auto-ingested 9 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+- **summary:** Auto-ingested 10 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
 
 
 ### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
@@ -51,4 +51,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User is obsessed with figuring out how to work properly and evolve with AI tools. Key concepts: managing intent, building an intent store, building and maintaining AI workflows. Links this to organizing rubyconf.at as a way to get closer to this thinking. Sources: buzz.xyz, aicoding.leaflet.pub, freeq.at, misabegovic/pi-brain repo, Boris Tane's 'software development lifecycle is dead' blog post.
+### user-wants-to-learn-more-about-langfuse-specific (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User wants to learn more about Langfuse, specifically: prompt version management, releasing challengers, running experiments, introducing deterministic scorers and LLM-as-a-judge scorers. Likely relevant for Usput.ai / Platform workflows and AI content generation quality control.
 

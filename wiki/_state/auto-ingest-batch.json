@@ -44,6 +44,11 @@
       "source": "https://aicoding.leaflet.pub/rss",
       "targetPath": "sources/web/2026-07-23--aicoding-leaflet-pub-rss.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://langfuse.com/",
+      "targetPath": "sources/web/2026-07-23--langfuse-com.md",
+      "date": "2026-07-23"
     }
   ],
   "createdAt": "2026-07-23"
