@@ -3,7 +3,7 @@
 
 - **kind:** auto-ingest
 - **scope:** brain
-- **summary:** Auto-ingested 3 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+- **summary:** Auto-ingested 8 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
 
 
 ### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
@@ -46,4 +46,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User is waiting for Ruby Native to land on Android properly. Plans to use Ruby Native to roll out Usput.ba (and potentially other apps) to app stores without writing native code.
+### user-is-obsessed-with-figuring-out-how-to-work-p (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User is obsessed with figuring out how to work properly and evolve with AI tools. Key concepts: managing intent, building an intent store, building and maintaining AI workflows. Links this to organizing rubyconf.at as a way to get closer to this thinking. Sources: buzz.xyz, aicoding.leaflet.pub, freeq.at, misabegovic/pi-brain repo, Boris Tane's 'software development lifecycle is dead' blog post.
 

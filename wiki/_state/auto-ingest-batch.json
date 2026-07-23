@@ -14,6 +14,31 @@
       "source": "https://rubynative.com/",
       "targetPath": "sources/web/2026-07-23--rubynative-com.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://boristane.com/blog/the-software-development-lifecycle-is-dead/",
+      "targetPath": "sources/web/2026-07-23--boristane-com-blog-the-software-development-lifecycle-is-dead.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://buzz.xyz/",
+      "targetPath": "sources/web/2026-07-23--buzz-xyz.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://freeq.at/",
+      "targetPath": "sources/web/2026-07-23--freeq-at.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://github.com/misabegovic/pi-brain",
+      "targetPath": "sources/repo/2026-07-23--github-com-misabegovic-pi-brain.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://aicoding.leaflet.pub/",
+      "targetPath": "sources/web/2026-07-23--aicoding-leaflet-pub.md",
+      "date": "2026-07-23"
     }
   ],
   "createdAt": "2026-07-23"
