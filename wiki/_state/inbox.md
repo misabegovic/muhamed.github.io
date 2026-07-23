@@ -72,4 +72,19 @@
 - **kind:** discussion
 - **scope:** muhamed.github.io
 - **summary:** User wants to prepare the brain-card stream for production: make it the home page, retire /brain/ prototype index, preserve posts discovery on a separate page, and remove prototype routes. This is a structural change to the Jekyll site routing and home page. Drafting ADR per brain contract.
+### user-approved-the-adr-in-principle-with-modifica (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User approved the ADR in principle with modification: remove all prototype alternatives entirely, only keep what is used. Open questions remain: blog post discovery URL, and whether RSS includes stream entries. Asking one by one.
+### user-chose-writing-as-the-url-for-the-blog-post (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User chose /writing/ as the URL for the blog post discovery page.
+### user-wants-separate-rss-feeds-one-for-blog-posts (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User wants separate RSS feeds: one for blog posts and one for stream entries. All open questions now answered. Ready to finalize ADR and implement.
 

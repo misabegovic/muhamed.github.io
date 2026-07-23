@@ -28,13 +28,14 @@ Promote the card stream to production as follows:
 3. **Retire prototype routes:**
    - Remove `/brain/` prototype index page (`files/brain-index.md`).
    - Remove `/brain-cards/` prototype page (`files/brain-cards.md`).
-   - Optionally remove `/brain-minimal/`, `/brain-book/`, and `/brain-window/` prototype pages, or keep them temporarily under a hidden `/prototypes/` path for reference.
+   - Remove `/brain-minimal/`, `/brain-book/`, and `/brain-window/` prototype pages.
+   - Only the `_stream` collection entry pages at `/brain/:slug/` remain.
 4. **Keep individual entry pages** at `/brain/:slug/` from the `_stream` collection. These are the permalink destinations for each card.
-5. **Update site navigation** in the default layout to include a link to the new `/posts/` page and remove any prototype-only links.
+5. **Update site navigation** in the default layout to include a link to the new `/writing/` page and remove any prototype-only links.
 6. **Production checklist:**
    - Ensure all pages build without errors.
    - Ensure search and tag filtering still works on the home page.
-   - Update RSS/feed configuration if needed (currently `jekyll-feed` generates from posts; decide whether to include stream entries).
+   - Configure two separate feeds: `/feed.xml` for blog posts (existing) and `/brain.xml` for stream entries.
    - Remove or update the sample data in `_stream/` and replace with real content before publishing.
 
 ## Alternatives considered
@@ -59,16 +60,20 @@ Promote the card stream to production as follows:
 
 - `files/index.html` — replace content.
 - `files/_layouts/default.html` — update navigation.
-- New `files/posts.md` (or `files/writing.md`) — blog post discovery page.
-- Remove `files/brain-index.md` and `files/brain-cards.md`.
-- Optionally remove `files/brain-minimal.md`, `files/brain-book.md`, `files/brain-window.md`.
+- New `files/writing.md` — blog post discovery page.
+- New `files/brain.xml` — stream entries RSS feed.
+- Remove `files/brain-index.md`, `files/brain-cards.md`, `files/brain-minimal.md`, `files/brain-book.md`, `files/brain-window.md`.
 - `files/_config.yml` — already includes the `stream` collection.
+
+## Decisions
+
+1. Blog post discovery page URL: `/writing/`.
+2. RSS feeds: separate feeds for posts (`/feed.xml`) and stream entries (`/brain.xml`).
+3. Prototype pages: delete entirely; do not keep under `/prototypes/`.
 
 ## Open questions
 
-1. What should the blog post discovery page URL be? `/posts/`, `/writing/`, `/blog/`, or `/notes/`?
-2. Should the RSS feed include stream entries, or only blog posts?
-3. Should we keep the prototype pages under `/prototypes/` temporarily, or delete them entirely?
+None remaining.
 
 ## Related
 
