@@ -1,7 +1,7 @@
 ---
 layout: stream-entry
 title: "Intent, agents, and the end of the SDLC"
-source: "Buzz, Freeq, Ruby Native, pi-brain, Boris Tane, Phoenix Architecture"
+source: "Buzz, Freeq, pi-brain, Boris Tane, Phoenix Architecture"
 type: note
 date: 2026-07-23
 created_at: 2026-07-23T12:10:00+02:00
