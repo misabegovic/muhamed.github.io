@@ -4,13 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Software Engineer with 10+ years of industry experience and 7+ years of volunteering and community organizing experience.
+Software Engineer with 8+ years of industry experience and with 5+ years of volunteering experience.
 
-I have been working with Ruby in a professional setting since 2016, with a short detour into C++ and Python where I got to learn about actor systems with the C++ Actor Framework (CAF).
+Extensive experience working in Human Resources, Talent Acquisition, Algorithmic Trading and Productivity Tools Industry.
 
-I care deeply about software design, building teams, and creating spaces where good people can do good work. Lately, I am also obsessed with cities, attention, and how we share what we learn.
-
-This site is my public brain — a place where I collect what I am reading, watching, and thinking about. If you want a peek into how my mind works, start on the [home page](/) or subscribe to the [brain feed](/brain.xml).
+I have been working with Ruby in a professional setting since 2016, with a single ~2 year exception of working with C++ and Python (had a lot of fun learning about actor systems working with CAF - C++ Actor Framework).
 
 ## Career Overview
 
