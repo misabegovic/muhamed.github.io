@@ -52,7 +52,6 @@ This site is my public brain — a place where I collect what I am reading, watc
 - Good people & good stories
 - Movies (since I was very little)
 - Coffee
-- Ruby
-- Walkable cities
+- Ruby (Community)
 
 
