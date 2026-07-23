@@ -162,4 +162,9 @@
 - **kind:** discussion
 - **scope:** muhamed.github.io
 - **summary:** User wants to shape a feature: clickable tags on brain cards and writing posts that filter respective pages (not link to category/tag archive pages), add search to writing page, remove existing search page. Drafting PRD for approval per brain contract.
+### implemented-prd-unified-tag-filtering-and-search (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Implemented PRD: unified tag filtering and search. Brain cards and stream entry tags now link to /?tag=. Writing page has search, load more, and tag filtering. Writing post tags link to /writing/?tag=. Removed standalone /search/ page and nav link. Build verified locally.
 

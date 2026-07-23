@@ -46,7 +46,6 @@
               <a href="{{ site.baseurl }}/">Brain</a>
               <a href="{{ site.baseurl }}/writing">Writing</a>
               <a href="{{ site.baseurl }}/about">About</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
             </nav>
           </header>
         </div>
@@ -77,7 +76,7 @@
               <div>{{ page.date | date: "%Y-%m-%d" }}</div>
               <div style="margin-top: 0.5rem;">
                 {% for tag in page.tags %}
-                <span class="tag">{{ tag }}</span>
+                <a href="/?tag={{ tag | url_encode }}" class="tag">{{ tag }}</a>
                 {% endfor %}
               </div>
             </div>

@@ -14,3 +14,4 @@
 - 2026-07-23T11:55:00Z — updated site description and career timeline: Teamtailor since April 2025, Carv ended April 2025, self-employed since 2024
 - 2026-07-23T12:05:00Z — deployed brain-card home page to muhamed.at via GitHub Actions run 29998234763; live site verified
 - 2026-07-23T12:20:00Z — added brain.xml feed link to footer; deployed via GitHub Actions run 29998410600
+- 2026-07-23T12:20:00Z — implemented unified tag filtering and search; removed /search/ page
