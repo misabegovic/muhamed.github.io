@@ -15,6 +15,7 @@ This site is my public brain — a place where I collect what I am reading, watc
 ## Career Overview
 
 - (2025 - present) [Software Engineer @ Teamtailor](https://www.teamtailor.com/)
+- (2024 - present) Self-employed / Contractor
 - (2025 - present) [Chief Organizer @ RubyConf Austria](https://www.rubyconf.at/)
 - (2024 - 2025) [Technical Lead @ Carv](https://www.carv.com/)
 - (2024) [Chief Organizer @ EuRuKo 2024](https://2024.euruko.org)
@@ -22,8 +23,6 @@ This site is my public brain — a place where I collect what I am reading, watc
 - (2019 - 2021) [Software Engineering Manager @ Experfy](https://www.experfy.com/)
 - (2018 - 2019) [Software Engineer @ Marvelsoft](https://marvelsoft.net/)
 - (2017 - 2018) [Junior Software Engineer @ Experfy](https://www.experfy.com/)
-
-I have been self-employed since the beginning of 2024.
 
 ## Specialties
 
