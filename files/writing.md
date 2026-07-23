@@ -13,7 +13,8 @@ title: Writing
 .writing-page .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 .writing-page .card-date { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 0.5rem; }
 .writing-page .card-title { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.6rem; line-height: 1.3; color: #333; }
-.writing-page .card-excerpt { font-size: 0.95rem; color: #444; line-height: 1.45; }
+.writing-page .card-excerpt { font-size: 0.95rem; color: #444; line-height: 1.45; margin-bottom: 0.8rem; }
+.writing-page .tag { display: inline-block; font-size: 0.7rem; color: #555; background: #f4f4f4; padding: 0.1rem 0.4rem; border-radius: 3px; margin-right: 0.3rem; }
 </style>
 
 <div class="writing-page">
@@ -27,6 +28,7 @@ title: Writing
       <div class="card-date">{{ post.date | date: "%Y-%m-%d" }}</div>
       <h2 class="card-title">{{ post.title }}</h2>
       <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+      <div class="tags">{% for tag in post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
     </a>
     {% endfor %}
   </div>

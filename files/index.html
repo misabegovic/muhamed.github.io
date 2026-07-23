@@ -19,6 +19,10 @@ layout: default
 .brain-home .tag { display: inline-block; font-size: 0.7rem; color: #555; background: #f4f4f4; padding: 0.15rem 0.5rem; border-radius: 3px; margin-right: 0.3rem; cursor: pointer; }
 .brain-home .tag:hover { background: #e8e8e8; }
 .brain-home .hidden { display: none; }
+.brain-home .page-hidden { display: none; }
+.brain-home .load-more-wrap { text-align: center; margin-top: 2rem; }
+.brain-home .load-more { padding: 0.6rem 1.4rem; font-size: 0.95rem; border: 1px solid #333; background: #fff; color: #333; border-radius: 4px; cursor: pointer; }
+.brain-home .load-more:hover { background: #333; color: #fff; }
 </style>
 
 <div class="brain-home">
@@ -44,16 +48,47 @@ layout: default
     </a>
     {% endfor %}
   </div>
+
+  <div class="load-more-wrap">
+    <button id="load-more" class="load-more">Load more</button>
+  </div>
 </div>
 
 <script>
 const search = document.getElementById('search');
-const cards = document.querySelectorAll('.card');
-search.addEventListener('input', () => {
+const cards = Array.from(document.querySelectorAll('.card'));
+const loadMoreBtn = document.getElementById('load-more');
+const PAGE_SIZE = 6;
+let visibleCount = PAGE_SIZE;
+
+function updateVisibility() {
   const q = search.value.toLowerCase();
-  cards.forEach(c => c.classList.toggle('hidden', !c.dataset.text.includes(q)));
+  let matched = 0;
+  cards.forEach(c => {
+    const matches = c.dataset.text.includes(q);
+    c.classList.toggle('hidden', !matches);
+    if (matches) {
+      matched++;
+      c.classList.toggle('page-hidden', matched > visibleCount);
+    }
+  });
+  const anyHidden = cards.some(c => !c.classList.contains('hidden') && c.classList.contains('page-hidden'));
+  loadMoreBtn.style.display = (anyHidden ? 'inline-block' : 'none');
+}
+
+search.addEventListener('input', () => {
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
 });
+
+loadMoreBtn.addEventListener('click', () => {
+  visibleCount += PAGE_SIZE;
+  updateVisibility();
+});
+
 document.querySelectorAll('.tag').forEach(tag => {
   tag.addEventListener('click', (e) => { e.preventDefault(); search.value = tag.textContent; search.dispatchEvent(new Event('input')); });
 });
+
+updateVisibility();
 </script>

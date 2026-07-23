@@ -2,6 +2,7 @@
 layout: post
 title:  Starting from zero
 categories: [Beginning]
+tags: [beginning, personal, writing]
 excerpt: First post on the website, to kick things off.
 ---
 

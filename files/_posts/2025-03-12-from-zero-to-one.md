@@ -2,6 +2,7 @@
 layout: post
 title:  'From zero to one: Thoughts on the past few years'
 categories: [Ruby, EuRuKo, Meister, Recrubo, Carv]
+tags: [ruby, euruko, career, carv, meister, personal]
 excerpt: Thoughts on the past few years
 ---
 

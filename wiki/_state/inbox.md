@@ -87,4 +87,14 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User wants separate RSS feeds: one for blog posts and one for stream entries. All open questions now answered. Ready to finalize ADR and implement.
+### implemented-production-version-of-brain-card-hom (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Implemented production version of brain-card home page. Committed locally as fe73c04. Build verified: / shows card stream, /writing/ shows posts, /brain.xml is stream RSS, /brain/:slug/ entry pages work, prototype routes return 404. Sample entries still need replacement with real content. Ready to push upon user approval.
+### implemented-refinements-under-the-accepted-brain (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Implemented refinements under the accepted 'brain-card home page' ADR: added 'Load more' pagination to home page (6 cards at a time), added tags to existing 3 blog posts, updated About page with current career info and brain stream description. Build verified locally.
 
