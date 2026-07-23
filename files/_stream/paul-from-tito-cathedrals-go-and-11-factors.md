@@ -5,6 +5,7 @@ source: "Tito, Eleven Messenger, 11factor.org"
 type: note
 date: 2026-07-23
 created_at: 2026-07-23T12:30:00+02:00
+hidden_until: 2026-08-23
 tags: [tito, paul, go, software-design, cathedrals, intent, ai]
 ---
 

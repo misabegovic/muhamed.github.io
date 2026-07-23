@@ -46,7 +46,9 @@ layout: default
   </div>
 
   <div class="grid" id="cards">
-    {% assign sorted = site.stream | sort: 'created_at' | reverse %}
+    {% assign today = site.time | date: '%Y-%m-%d' %}
+    {% assign visible = site.stream | where_exp: 'entry', 'entry.hidden_until == nil or entry.hidden_until <= today' %}
+    {% assign sorted = visible | sort: 'created_at' | reverse %}
     {% for entry in sorted %}
     <div class="card" data-text="{{ entry.title | downcase }} {{ entry.source | downcase }} {{ entry.excerpt | strip_html | downcase }}" data-tags="{{ entry.tags | join: ',' }}">
       <a class="card-link" href="{{ entry.url }}">
