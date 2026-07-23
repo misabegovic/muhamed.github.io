@@ -45,6 +45,9 @@ This is the synthesis layer for this pi-brain instance.
 ### meta
 - [pi-brain home](wiki/index.md)
 
+### rfc
+- [RFC — Design directions for a public "brain stream" on muhamed.at](wiki/muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
+
 ### options
 - [Options — muhamed.github.io](wiki/org/options.md)
 
