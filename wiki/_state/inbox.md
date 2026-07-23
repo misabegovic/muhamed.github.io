@@ -52,4 +52,24 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** Audience for muhamed.at sharing section: all of the above and more — hiring managers, peers, friends, internet wanderers, specific communities, and future self. Design needs to balance professionalism with personality, eclecticism with navigability.
+### issue-discovered-after-backfilling-tools-brain-s (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Issue discovered: after backfilling tools/brain-state.mjs from upstream, running brain_sync now overwrites project-specific content in wiki/org/state.md, wiki/org/roadmap.md, and wiki/org/options.md with generic templates. Workaround: use brain_validate + brain_views separately. Need to decide whether to patch tools/brain-state.mjs to preserve existing content or adjust workflow.
+### built-four-local-jekyll-prototype-pages-for-the (2026-07-23)
+
+- **kind:** experiment
+- **scope:** muhamed.github.io
+- **summary:** Built four local Jekyll prototype pages for the muhamed.at sharing section: /brain/ (index), /brain-minimal/ (reading log), /brain-cards/ (card stream), /brain-book/ (commonplace book), /brain-window/ (curated window). Serving locally on port 4000 with sample data in files/_data/stream.yml. Not pushed to remote.
+### user-chose-option-b-card-stream-with-title-peek (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User chose Option B (Card Stream) with title 'Peek into my brain' for the muhamed.at sharing section. Also requested each item have its own personal page for longer thoughts, with references and links to sources. Implemented: created _stream Jekyll collection with individual entry pages, updated brain-cards.md to link to them and use the new title. Serving locally.
+### user-wants-to-prepare-the-brain-card-stream-for (2026-07-23)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User wants to prepare the brain-card stream for production: make it the home page, retire /brain/ prototype index, preserve posts discovery on a separate page, and remove prototype routes. This is a structural change to the Jekyll site routing and home page. Drafting ADR per brain contract.
 
