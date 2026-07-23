@@ -39,14 +39,16 @@ to `https://muhamed.at`. See
 
 ## Recent changes
 
-- **2026-07-23 — Brain-card stream promoted to production home page.** The card
-stream "Peek into my brain" now lives at `/`. Blog posts moved to `/writing/`.
-Individual stream entries have permalink pages at `/brain/:slug/`. Separate RSS
-feeds exist at `/feed.xml` (posts) and `/brain.xml` (stream). Prototype routes
-`/brain/`, `/brain-cards/`, `/brain-minimal/`, `/brain-book/`, and
-`/brain-window/` were removed. Refinements added: "Load more" pagination,
-disclaimer that the stream is AI-assisted, tags on existing posts, updated
-About page and career timeline, and empty-state message. See
+- **2026-07-23 — Brain-card stream promoted to production home page and
+deployed.** The card stream "Peek into my brain" now lives at `/`. Blog posts
+moved to `/writing/`. Individual stream entries have permalink pages at
+`/brain/:slug/`. Separate RSS feeds exist at `/feed.xml` (posts) and
+`/brain.xml` (stream). Prototype routes `/brain/`, `/brain-cards/`,
+`/brain-minimal/`, `/brain-book/`, and `/brain-window/` were removed.
+Refinements added: "Load more" pagination, disclaimer that the stream is
+AI-assisted, tags on existing posts, updated About page and career timeline,
+and empty-state message. Deployed to muhamed.at via GitHub Actions run
+29998234763. See
 [ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md).
 
 ## What needs attention

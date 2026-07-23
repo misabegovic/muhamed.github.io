@@ -12,3 +12,4 @@
 - 2026-07-23T11:47:00Z — fixed /brain-cards/ back link to /, removed sample stream entries, added empty-state message
 - 2026-07-23T11:50:00Z — added AI-assisted disclaimer to home page and human-written note to /writing/
 - 2026-07-23T11:55:00Z — updated site description and career timeline: Teamtailor since April 2025, Carv ended April 2025, self-employed since 2024
+- 2026-07-23T12:05:00Z — deployed brain-card home page to muhamed.at via GitHub Actions run 29998234763; live site verified
