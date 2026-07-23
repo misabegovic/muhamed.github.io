@@ -1,9 +1,10 @@
 ---
 layout: stream-entry
 title: "Intent, agents, and the end of the SDLC"
-source: "Buzz, Freeq, Ruby Native, pi-brain, Boris Tane"
+source: "Buzz, Freeq, Ruby Native, pi-brain, Boris Tane, Phoenix Architecture"
 type: note
 date: 2026-07-23
+created_at: 2026-07-23T12:10:00+02:00
 tags: [ai, agents, intent, workflow, sdlc, rubyconf, tools]
 ---
 
@@ -21,5 +22,7 @@ I've been collecting signals around this:
 - [Ruby Native](https://rubynative.com/) — collapsing mobile delivery into a config file.
 
 The pattern I keep seeing: **store intent, feed context, let agents execute.**
+
+The Phoenix Architecture takes this even further. Its framing is that production truth should be a first-class input to software creation — requirements include operational constraints, telemetry gets canonicalized into evidence, and when evidence drifts, only the affected subgraph is invalidated and regenerated. A module isn't good because it once passed tests; it's good only as long as the evidence supports the claim that it satisfies the requirement. This is the intent-store idea in a different shape.
 
 This is also a big part of why I organized [rubyconf.at](https://rubyconf.at) — I want to be closer to the people thinking seriously about what Ruby and Rails development looks like when agents are doing most of the typing.

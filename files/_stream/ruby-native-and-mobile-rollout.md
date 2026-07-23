@@ -5,6 +5,7 @@ source: "Ruby Native"
 url_external: "https://rubynative.com/"
 type: note
 date: 2026-07-23
+created_at: 2026-07-23T12:05:00+02:00
 tags: [ruby, rails, mobile, app-stores, usput, ruby-native]
 ---
 

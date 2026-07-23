@@ -4,6 +4,7 @@ title: "Usput.ba next phase"
 source: "Internal note"
 type: note
 date: 2026-07-23
+created_at: 2026-07-23T12:00:00+02:00
 tags: [usput, product-planning, rails, bosnia, mobile, ai]
 ---
 
