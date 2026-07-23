@@ -12,6 +12,7 @@ I have been working with Ruby in a professional setting since 2016, with a singl
 
 ## Career Overview
 
+- (2026 - present) Founder & CTO @ [Usput.ba](https://usput.ba)
 - (2026 - present) [AI Product Developer @ Teamtailor](https://www.teamtailor.com/)
 - (2024 - present) Self-employed / Contractor
 - (2025 - present) [Chief Organizer @ RubyConf Austria](https://www.rubyconf.at/)
