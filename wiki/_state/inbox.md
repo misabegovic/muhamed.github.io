@@ -132,4 +132,34 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User wants to update site description and career timeline. Changes: completed Carv in April 2025, started Teamtailor in April 2025, self-employed since start of 2024. Need to update files/_config.yml description and files/_pages/about.md career overview.
+### user-flagged-that-the-about-page-intro-paragraph (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User flagged that the About page intro paragraph was rewritten by me and wants control over it. Need to ask what they want it to say or revert to their original.
+### user-confirmed-they-like-the-year-updates-in-the (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User confirmed they like the year updates in the About page career overview section. The original intro has been restored while keeping the updated career timeline.
+### user-indicated-the-site-design-and-about-page-co (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User indicated the site design and About page content are good enough. Ready to push to production or do final review. Multiple local commits pending push.
+### user-authorized-push-to-production-and-reminded (2026-07-23)
+
+- **kind:** task
+- **scope:** muhamed.github.io
+- **summary:** User authorized push to production and reminded to follow brain contract. Push is implementation of accepted ADR 'make-brain-cards-the-home-page'. Will push, monitor GitHub Actions deployment, and update state/log after delivery.
+### user-correctly-noted-that-footer-only-showed-one (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User correctly noted that footer only showed one RSS feed link despite decision for two feeds. Added second feed link in footer for /brain.xml with 'brain' label. Need to deploy and update records.
+### user-wants-to-shape-a-feature-clickable-tags-on (2026-07-23)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User wants to shape a feature: clickable tags on brain cards and writing posts that filter respective pages (not link to category/tag archive pages), add search to writing page, remove existing search page. Drafting PRD for approval per brain contract.
 

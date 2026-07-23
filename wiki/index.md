@@ -46,6 +46,9 @@ This is the synthesis layer for this pi-brain instance.
 ### meta
 - [pi-brain home](wiki/index.md)
 
+### prd
+- [PRD — Unified tag filtering and search](wiki/muhamed.github.io/ai-suggestions/prds/unified-tag-filtering-and-search.md)
+
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](wiki/muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 
