@@ -53,6 +53,9 @@ This is the synthesis layer for this pi-brain instance.
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](wiki/muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 
+### note
+- [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](wiki/muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
+
 ### prd
 - [PRD — Multi-tag filtering and tag explorer](wiki/muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md)
 - [PRD — Unified tag filtering and search](wiki/muhamed.github.io/prds/unified-tag-filtering-and-search.md)
