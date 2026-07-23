@@ -37,7 +37,17 @@ was not excluded in `_config.yml`. Resolved by setting the custom domain to
 to `https://muhamed.at`. See
 [ADR: Jekyll vendor exclude and custom domain](../muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md).
 
+## Recent changes
+
+- **2026-07-23 — Brain-card stream promoted to production home page.** The card
+stream "Peek into my brain" now lives at `/`. Blog posts moved to `/writing/`.
+Individual stream entries have permalink pages at `/brain/:slug/`. Separate RSS
+feeds exist at `/feed.xml` (posts) and `/brain.xml` (stream). Prototype routes
+`/brain/`, `/brain-cards/`, `/brain-minimal/`, `/brain-book/`, and
+`/brain-window/` were removed. See
+[ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md).
+
 ## What needs attention
 
-- Capture the project's purpose and constraints.
-- Shape the first initiative.
+- Replace sample stream entries with real content before publicizing.
+- Monitor GitHub Pages build after next push.

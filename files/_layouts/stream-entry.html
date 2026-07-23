@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% seo title=false %}
+    {% include meta.html %}
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Peek into my brain" href="{{ site.baseurl }}/brain.xml" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/profile.jpg">
+    {% include analytics_head.html %}
+
+    <style>
+      .stream-entry { max-width: 700px; margin: 0 auto; padding: 2rem 1rem; }
+      .stream-entry .entry-type { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 0.5rem; }
+      .stream-entry h1 { font-size: 1.8rem; line-height: 1.25; margin-bottom: 0.5rem; }
+      .stream-entry .entry-source { font-size: 0.95rem; color: #666; margin-bottom: 1.5rem; }
+      .stream-entry .entry-source a { color: #333; }
+      .stream-entry .entry-quote { font-size: 1.3rem; line-height: 1.5; color: #222; margin: 1.5rem 0; padding-left: 1.2rem; border-left: 3px solid #333; }
+      .stream-entry .entry-body { font-size: 1.05rem; line-height: 1.7; color: #333; }
+      .stream-entry .entry-body p { margin-bottom: 1.2rem; }
+      .stream-entry .entry-meta { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.85rem; color: #888; }
+      .stream-entry .tag { display: inline-block; color: #555; background: #f4f4f4; padding: 0.15rem 0.5rem; border-radius: 3px; margin-right: 0.4rem; text-decoration: none; }
+      .stream-entry .tag:hover { background: #e8e8e8; }
+      .stream-entry .back { display: inline-block; margin-top: 2rem; color: #666; text-decoration: none; }
+      .stream-entry .back:hover { text-decoration: underline; }
+    </style>
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+            <nav>
+              <a href="{{ site.baseurl }}/">Peek into my brain</a>
+              <a href="{{ site.baseurl }}/writing">Writing</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+              <a href="{{ site.baseurl }}/search">Search</a>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          <article class="stream-entry">
+            <div class="entry-type">{{ page.type }}</div>
+            <h1>{{ page.title }}</h1>
+            <div class="entry-source">
+              {% if page.url_external %}
+                From <a href="{{ page.url_external }}" target="_blank" rel="noopener">{{ page.source }}</a>
+              {% else %}
+                {{ page.source }}
+              {% endif %}
+            </div>
+
+            {% if page.quote %}
+            <blockquote class="entry-quote">“{{ page.quote }}”</blockquote>
+            {% endif %}
+
+            <div class="entry-body">
+              {{ content }}
+            </div>
+
+            <div class="entry-meta">
+              <div>{{ page.date | date: "%Y-%m-%d" }}</div>
+              <div style="margin-top: 0.5rem;">
+                {% for tag in page.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            </div>
+
+            <a class="back" href="/brain-cards/">← Back to stream</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id='webring-widget'></div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
