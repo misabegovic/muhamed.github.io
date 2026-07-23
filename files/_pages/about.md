@@ -17,7 +17,7 @@ This site is my public brain — a place where I collect what I am reading, watc
 - (2025 - present) [Software Engineer @ Teamtailor](https://www.teamtailor.com/)
 - (2025 - present) [Chief Organizer @ RubyConf Austria](https://www.rubyconf.at/)
 - (2024 - 2025) [Technical Lead @ Carv](https://www.carv.com/)
-- (2024) [Chief Organizer @ EuRuKo 2024](https://2024.euruko.org) — one of the largest Ruby conferences that year
+- (2024) [Chief Organizer @ EuRuKo 2024](https://2024.euruko.org)
 - (2021 - 2024) [Senior Software Engineer @ Meisterlabs](https://www.meisterlabs.com/)
 - (2019 - 2021) [Software Engineering Manager @ Experfy](https://www.experfy.com/)
 - (2018 - 2019) [Software Engineer @ Marvelsoft](https://marvelsoft.net/)
