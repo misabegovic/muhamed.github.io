@@ -35,18 +35,20 @@ Upgrade Brain and Writing to support multi-tag filtering plus text search, and a
 
 ### UI on Brain and Writing pages
 
-Replace the single search input with a compact filter bar:
+Use a single search input that handles both text search and tag filtering:
 
 ```
-[Search text...]  [ruby ×] [career ×] [+ Add tag]
+[Search or type #tag to filter...]
 ```
 
-- **Text input:** Filters by title, excerpt/source, and tags as it does today.
-- **Active tag pills:** Selected tags appear as pills with a remove button (×).
-- **Add tag dropdown/button:** Opens a list of available tags for that section. On mobile, this could be a simple `<select>`; on desktop, a dropdown or inline list.
-- **Clear filters:** A "Clear" link resets text and tags.
+- **Text tokens:** Filter by title, excerpt/source, and tags.
+- **Tag tokens:** Words prefixed with `#` (e.g., `#ruby`, `#career`) filter by tag.
+- **OR logic:** Multiple `#tag` tokens are combined with OR.
+- **Combined filtering:** Text tokens narrow the tag-filtered results.
+- **Tag chips:** Clicking a tag chip on a card toggles the corresponding `#tag` in the search input.
+- **Clear filters:** A "Clear" link resets the input.
 
-Tag chips on cards and entry pages become toggles: clicking a tag adds it to the active filters if not present, or removes it if already active.
+This keeps the UI minimal and keyboard-friendly.
 
 ### URL state
 
@@ -78,10 +80,12 @@ Optionally render tags as a weighted list (larger font for more frequently used 
 ### Technical approach
 
 - Keep filtering client-side.
-- Generate a JSON data file at build time (`/assets/tags.json`) containing all tags and their counts, used by the tag explorer and the add-tag dropdown.
-- Alternatively, generate the tag list inline in the filter bar markup to avoid an extra request.
-- Update the existing `index.html` and `writing.md` JavaScript to manage an array of active tags instead of a single search string.
-- Update `stream-entry.html` and `post.html` tag links to include multi-tag URLs when appropriate. For simplicity, tag links from entry/post pages add the clicked tag as the only active filter (users can add more once on the list page).
+- Parse the search input: tokens starting with `#` are tags, all other tokens are text.
+- Store filter state in URL query parameters (`tag=` for each tag, `q=` for text).
+- On page load, reconstruct the search input from URL params.
+- Update the existing `index.html` and `writing.md` JavaScript to extract tags and text from the input.
+- Tag chips on cards toggle the corresponding `#tag` token in the input.
+- Tag links from entry/post pages use `?tag=<tag>`; the list page converts this into `#tag` in the input.
 
 ## Out of scope
 
@@ -91,9 +95,9 @@ Optionally render tags as a weighted list (larger font for more frequently used 
 
 ## Success criteria
 
-- [ ] Brain page supports filtering by multiple tags + text.
-- [ ] Writing page supports filtering by multiple tags + text.
-- [ ] Tag chips on cards and entry pages toggle or add tags correctly.
+- [ ] Brain page supports filtering by multiple `#tag` tokens + text in one input.
+- [ ] Writing page supports filtering by multiple `#tag` tokens + text in one input.
+- [ ] Tag chips on cards and entry pages toggle `#tag` tokens correctly.
 - [ ] `/tags/` page exists and lists all tags with counts.
 - [ ] Filter state is reflected in the URL and shareable.
 - [ ] A "Clear filters" control resets everything.

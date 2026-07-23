@@ -182,4 +182,14 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** Implemented multi-tag filtering and tag explorer per accepted PRD. Brain and Writing pages now support multiple tag selection via dropdown and clickable chips, text search, and clear filters. Added /tags/ page showing all tags with per-section counts. Updated navigation. Build verified locally.
+### user-feedback-the-add-tag-dropdown-and-active-ta (2026-07-23)
+
+- **kind:** feedback
+- **scope:** muhamed.github.io
+- **summary:** User feedback: the '+ Add tag' dropdown and active tag pills feel clunky. Proposing to merge tag filtering into the search input using #tag syntax (e.g. 'career #ruby #personal'), where #tokens are tag filters (OR) and other tokens are text search. Tag chips on cards will add/remove #tag from the input. Remove dropdown and pills.
+### refined-multi-tag-filtering-ux-based-on-user-fee (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Refined multi-tag filtering UX based on user feedback: removed '+ Add tag' dropdown and active tag pills. Now a single search input handles both text and #tag tokens. Tag chips toggle #tag in the input. OR logic among tags. Build verified locally.
 

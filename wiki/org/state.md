@@ -59,6 +59,9 @@ muhamed.at via GitHub Actions. See
 [PRD: Unified tag filtering and search](../prds/unified-tag-filtering-and-search.md),
 and
 [PRD: Multi-tag filtering and tag explorer](../prds/multi-tag-filtering-and-tag-explorer.md).
+The implementation was later refined so Brain and Writing share a single search
+input that accepts both text and `#tag` tokens, with tag chips toggling
+`#tag` filters.
 
 ## What needs attention
 

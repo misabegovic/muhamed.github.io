@@ -9,11 +9,8 @@ layout: default
 .brain-home .disclaimer { font-size: 0.9rem; color: #777; line-height: 1.5; margin-bottom: 1.5rem; max-width: 640px; }
 .brain-home .disclaimer a { color: #555; }
 .brain-home .controls { margin-bottom: 1.5rem; }
-.brain-home input { width: 100%; max-width: 300px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
-.brain-home .tag-select { padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; margin-left: 0.5rem; }
-.brain-home .active-tags { margin-top: 0.8rem; }
-.brain-home .active-tag { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.6rem; background: #333; color: #fff; border-radius: 4px; font-size: 0.85rem; margin-right: 0.4rem; cursor: pointer; }
-.brain-home .active-tag:hover { background: #555; }
+.brain-home input { width: 100%; max-width: 500px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+.brain-home .search-hint { font-size: 0.8rem; color: #888; margin-top: 0.4rem; }
 .brain-home .clear-filters { display: inline-block; margin-left: 0.5rem; font-size: 0.85rem; color: #666; cursor: pointer; }
 .brain-home .clear-filters:hover { text-decoration: underline; }
 .brain-home .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
@@ -27,6 +24,7 @@ layout: default
 .brain-home .card-meta { font-size: 0.8rem; color: #888; display: flex; justify-content: space-between; align-items: center; }
 .brain-home .tag { display: inline-block; font-size: 0.7rem; color: #555; background: #f4f4f4; padding: 0.15rem 0.5rem; border-radius: 3px; margin-right: 0.3rem; cursor: pointer; text-decoration: none; }
 .brain-home .tag:hover { background: #e8e8e8; }
+.brain-home .tag.active { background: #333; color: #fff; }
 .brain-home .hidden { display: none; }
 .brain-home .page-hidden { display: none; }
 .brain-home .empty-state { text-align: center; color: #666; padding: 3rem 1rem; }
@@ -42,15 +40,9 @@ layout: default
   <p class="disclaimer">These entries are raw signals I drop into my brain — articles, books, quotes, half-formed notes — and an AI helps me organize, tag, and present them here. For longer human-written pieces, see <a href="/writing/">Writing</a>.</p>
 
   <div class="controls">
-    <input type="text" id="search" placeholder="Search text...">
-    <select id="tag-select" class="tag-select">
-      <option value="">+ Add tag</option>
-      {% assign all_tags = site.stream | map: 'tags' | join: ',' | split: ',' | sort %}
-      {% assign unique_tags = all_tags | uniq %}
-      {% for tag in unique_tags %}{% if tag != '' %}<option value="{{ tag }}">{{ tag }}</option>{% endif %}{% endfor %}
-    </select>
+    <input type="text" id="search" placeholder="Search or type #tag to filter...">
     <span id="clear-filters" class="clear-filters hidden">Clear filters</span>
-    <div id="active-tags" class="active-tags"></div>
+    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
   <div class="grid" id="cards">
@@ -84,64 +76,51 @@ layout: default
 
 <script>
 const search = document.getElementById('search');
-const tagSelect = document.getElementById('tag-select');
-const activeTagsEl = document.getElementById('active-tags');
 const clearFilters = document.getElementById('clear-filters');
 const cards = Array.from(document.querySelectorAll('.card'));
 const loadMoreBtn = document.getElementById('load-more');
 const PAGE_SIZE = 6;
 let visibleCount = PAGE_SIZE;
-let activeTags = [];
 
-function setUrlParams() {
+function parseQuery(input) {
+  const tokens = input.trim().split(/\s+/).filter(Boolean);
+  const tags = tokens.filter(t => t.startsWith('#')).map(t => t.slice(1).toLowerCase());
+  const textTokens = tokens.filter(t => !t.startsWith('#'));
+  return { tags, text: textTokens.join(' ').toLowerCase() };
+}
+
+function buildInput(tags, text) {
+  const parts = [];
+  if (text) parts.push(text);
+  tags.forEach(t => parts.push('#' + t));
+  return parts.join(' ');
+}
+
+function setUrlParams(tags, text) {
   const url = new URL(window.location.href);
   url.searchParams.delete('tag');
-  activeTags.forEach(t => url.searchParams.append('tag', t));
-  if (search.value) {
-    url.searchParams.set('q', search.value);
+  tags.forEach(t => url.searchParams.append('tag', t));
+  if (text) {
+    url.searchParams.set('q', text);
   } else {
     url.searchParams.delete('q');
   }
   window.history.replaceState({}, '', url);
 }
 
-function updateActiveTagsUI() {
-  activeTagsEl.innerHTML = '';
-  activeTags.forEach(tag => {
-    const pill = document.createElement('span');
-    pill.className = 'active-tag';
-    pill.textContent = tag + ' ×';
-    pill.addEventListener('click', () => removeTag(tag));
-    activeTagsEl.appendChild(pill);
+function updateTagHighlights(tags) {
+  document.querySelectorAll('.card .tag').forEach(tagEl => {
+    tagEl.classList.toggle('active', tags.includes(tagEl.dataset.tag.toLowerCase()));
   });
-  clearFilters.classList.toggle('hidden', activeTags.length === 0 && !search.value);
-}
-
-function addTag(tag) {
-  if (!tag || activeTags.includes(tag)) return;
-  activeTags.push(tag);
-  tagSelect.value = '';
-  visibleCount = PAGE_SIZE;
-  setUrlParams();
-  updateActiveTagsUI();
-  updateVisibility();
-}
-
-function removeTag(tag) {
-  activeTags = activeTags.filter(t => t !== tag);
-  visibleCount = PAGE_SIZE;
-  setUrlParams();
-  updateActiveTagsUI();
-  updateVisibility();
 }
 
 function updateVisibility() {
-  const q = search.value.toLowerCase();
+  const { tags, text } = parseQuery(search.value);
   let matched = 0;
   cards.forEach(c => {
-    const textMatch = !q || c.dataset.text.includes(q);
-    const cardTags = c.dataset.tags.split(',').map(t => t.trim()).filter(Boolean);
-    const tagMatch = activeTags.length === 0 || activeTags.some(t => cardTags.includes(t));
+    const textMatch = !text || c.dataset.text.includes(text);
+    const cardTags = c.dataset.tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
+    const tagMatch = tags.length === 0 || tags.some(t => cardTags.includes(t));
     const matches = textMatch && tagMatch;
     c.classList.toggle('hidden', !matches);
     if (matches) {
@@ -151,22 +130,31 @@ function updateVisibility() {
   });
   const anyHidden = cards.some(c => !c.classList.contains('hidden') && c.classList.contains('page-hidden'));
   loadMoreBtn.style.display = (anyHidden ? 'inline-block' : 'none');
+  clearFilters.classList.toggle('hidden', !search.value);
+  updateTagHighlights(tags);
+}
+
+function toggleTag(tag) {
+  const { tags, text } = parseQuery(search.value);
+  const lowerTag = tag.toLowerCase();
+  const newTags = tags.includes(lowerTag) ? tags.filter(t => t !== lowerTag) : [...tags, lowerTag];
+  search.value = buildInput(newTags, text);
+  setUrlParams(newTags, text);
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
 }
 
 search.addEventListener('input', () => {
+  const { tags, text } = parseQuery(search.value);
+  setUrlParams(tags, text);
   visibleCount = PAGE_SIZE;
-  setUrlParams();
   updateVisibility();
 });
 
-tagSelect.addEventListener('change', () => addTag(tagSelect.value));
-
 clearFilters.addEventListener('click', () => {
   search.value = '';
-  activeTags = [];
+  setUrlParams([], '');
   visibleCount = PAGE_SIZE;
-  setUrlParams();
-  updateActiveTagsUI();
   updateVisibility();
 });
 
@@ -174,12 +162,12 @@ document.querySelectorAll('.card .tag').forEach(tagEl => {
   tagEl.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    addTag(tagEl.dataset.tag);
+    toggleTag(tagEl.dataset.tag);
   });
   tagEl.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      addTag(tagEl.dataset.tag);
+      toggleTag(tagEl.dataset.tag);
     }
   });
 });
@@ -190,10 +178,9 @@ loadMoreBtn.addEventListener('click', () => {
 });
 
 const urlParams = new URLSearchParams(window.location.search);
-activeTags = urlParams.getAll('tag');
-const initialQ = urlParams.get('q');
-if (initialQ) search.value = initialQ;
+const initialTags = urlParams.getAll('tag');
+const initialText = urlParams.get('q') || '';
+search.value = buildInput(initialTags, initialText);
 
-updateActiveTagsUI();
 updateVisibility();
 </script>
