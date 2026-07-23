@@ -18,9 +18,9 @@ This is the synthesis layer for this pi-brain instance.
 - [Convert repo to pi-brain clone and deploy site via GitHub Actions](wiki/muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Make the brain-card stream the home page](wiki/muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
+- [Sync latest upstream pi-brain changes (v0.2.0)](wiki/muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
 - [Sync latest upstream pi-brain updates](wiki/muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
-- [Sync latest upstream pi-brain changes (v0.2.0)](wiki/muhamed.github.io/ai-suggestions/adrs/sync-latest-pi-brain-v0-2-0.md)
 
 ### bet
 - [Bet — Smarter autonomy for pi-brain clones](wiki/brain/bets/smarter-autonomy.md)
@@ -41,8 +41,11 @@ This is the synthesis layer for this pi-brain instance.
 - [PRD — Upstream template sync for pi-brain clones](wiki/brain/prds/upstream-template-sync.md)
 
 ### record
+- [Record — Plain-language shape requests default to forward mode](wiki/brain/records/plain-language-triggers-shape.md)
 - [Record — Smarter autonomy for pi-brain clones](wiki/brain/records/smarter-autonomy.md)
 - [Record — Stronger default guardrails against eager implementation](wiki/brain/records/stronger-default-implementation-guardrails.md)
+- [Record — Upstream template sync](wiki/brain/records/upstream-template-sync.md)
+- [Record — pi-brain v0.2.0 release](wiki/brain/records/version-0-2-0.md)
 
 ### meta
 - [pi-brain home](wiki/index.md)

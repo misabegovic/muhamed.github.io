@@ -1,6 +1,6 @@
 ---
 kind: decision
-status: ai-suggested
+status: accepted
 confidence: low
 sources:
   - /home/muhamed/projects/pi-brain/README.md

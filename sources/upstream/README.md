@@ -1,6 +1,7 @@
 # pi-brain 🧠🏠
 
-[![Validate pi-brain](https://github.com/earendil-works/pi-brain/actions/workflows/validate.yml/badge.svg)](https://github.com/earendil-works/pi-brain/actions/workflows/validate.yml)
+[![Validate pi-brain](https://github.com/misabegovic/pi-brain/actions/workflows/validate.yml/badge.svg)](https://github.com/misabegovic/pi-brain/actions/workflows/validate.yml)
+[![npm](https://img.shields.io/npm/v/@misabegovic/pi-brain)](https://www.npmjs.com/package/@misabegovic/pi-brain)
 
 **A knowledge home for [pi](https://pi.dev).**
 
@@ -98,8 +99,10 @@ For a step-by-step checklist for real projects, see [GETTING_STARTED.md](GETTING
 # Clone pi-brain as the starting point for a project/customer brain
 git clone <pi-brain> my-project-brain && cd my-project-brain
 
-# Install the pi package globally (once per machine)
-pi install ./
+# Install the pi package (from npm or locally)
+pi install @misabegovic/pi-brain
+# or, when working on the template itself:
+# pi install ./
 
 # Bootstrap the local environment (Node check, pre-commit hook, health check)
 bash tools/setup-local.sh
@@ -218,6 +221,7 @@ my-project-brain/
 | `/brain:ask <question>` | Ask a question over the wiki + sources corpus. |
 | `/brain:tend` | Digest the tend queue. |
 | `/brain:sync` | Validate frontmatter and regenerate `wiki/index.md`. |
+| `/brain:update [--version=<tag>] [--apply]` | Pull upstream pi-brain template updates into this clone. |
 | `/brain:shape <scope> <pitch>` | Human-gated ADR/PRD/epic/bet authoring. |
 | `/brain:in <path-or-url>` | Ingest a file, directory, or URL into `sources/` (URLs fetched best-effort). |
 | `/brain:setup` | Bootstrap or reconfigure this directory as a pi-brain home. |
