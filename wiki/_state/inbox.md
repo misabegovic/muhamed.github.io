@@ -167,4 +167,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** Implemented PRD: unified tag filtering and search. Brain cards and stream entry tags now link to /?tag=. Writing page has search, load more, and tag filtering. Writing post tags link to /writing/?tag=. Removed standalone /search/ page and nav link. Build verified locally.
+### user-wants-to-shape-new-feature-multi-tag-filter (2026-07-23)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User wants to shape new feature: multi-tag filtering on Brain and Writing pages alongside text search, plus a dedicated tag exploration/overview page. Drafting PRD for approval.
 
