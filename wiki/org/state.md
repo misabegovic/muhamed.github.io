@@ -46,7 +46,7 @@ feeds exist at `/feed.xml` (posts) and `/brain.xml` (stream). Prototype routes
 `/brain/`, `/brain-cards/`, `/brain-minimal/`, `/brain-book/`, and
 `/brain-window/` were removed. Refinements added: "Load more" pagination,
 disclaimer that the stream is AI-assisted, tags on existing posts, updated
-About page, and empty-state message. See
+About page and career timeline, and empty-state message. See
 [ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md).
 
 ## What needs attention

@@ -127,4 +127,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User wants a disclaimer on the home page stating that AI is used to process thoughts and display them, and that Writing page contains human-written posts. This is a content refinement under the accepted brain-card home page ADR.
+### user-wants-to-update-site-description-and-career (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User wants to update site description and career timeline. Changes: completed Carv in April 2025, started Teamtailor in April 2025, self-employed since start of 2024. Need to update files/_config.yml description and files/_pages/about.md career overview.
 
