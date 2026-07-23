@@ -59,18 +59,19 @@ On page load, parse the URL and apply both tag and text filters.
 
 ### Filtering logic
 
-- An item matches if it contains **all** selected tags (AND logic).
+- Tags are combined with **OR**: an item matches if it contains any of the selected tags.
 - Text search is case-insensitive and matches against title, source/excerpt, and tags.
-- An item matches overall if it passes both the text search and the tag filter.
+- When both text and tags are active, text search narrows the tag-filtered results (AND between text and the tag OR group).
+- Example: selecting `ruby` and `career` shows items tagged `ruby` OR `career`. Typing `euruko` on top of that shows only items matching `euruko` among those.
 
 ### Tag explorer page
 
-Create `/tags/` (or `/topics/`):
+Create `/tags/`:
 
-- Page title: "Tags" or "Topics"
-- Shows all tags used across the entire site (brain stream + writing posts), or split into two sections: "Brain tags" and "Writing tags".
-- Each tag shows the count of items.
-- Clicking a tag goes to `/` or `/writing/` with that tag pre-selected, depending on which section it belongs to. For shared tags, default to `/`.
+- Page title: "Tags"
+- Shows all tags used across the entire site (brain stream + writing posts).
+- Each tag shows two counts: how many brain entries use it and how many writing posts use it.
+- Clicking a tag goes to `/` or `/writing/` with that tag pre-selected. If a tag exists in both sections, show two links or default to `/` and let the user switch sections.
 
 Optionally render tags as a weighted list (larger font for more frequently used tags).
 
@@ -97,11 +98,16 @@ Optionally render tags as a weighted list (larger font for more frequently used 
 - [ ] Filter state is reflected in the URL and shareable.
 - [ ] A "Clear filters" control resets everything.
 
+## Decisions
+
+1. URL and naming: `/tags/` (keep "tags"; do not switch to "topics").
+2. Tag scope: merged across Brain and Writing.
+3. Filtering logic: OR — an item is shown if it matches the text search or any selected tag.
+4. Tag explorer: show per-section counts so users know where a tag leads.
+
 ## Open questions
 
-1. Should the tag explorer be at `/tags/` or `/topics/`?
-2. Should tags be merged across Brain and Writing, or shown separately?
-3. Should tag filtering use AND logic (all selected) or OR logic (any selected)?
+None remaining.
 
 ## Related
 

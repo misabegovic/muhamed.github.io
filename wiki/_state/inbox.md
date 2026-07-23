@@ -172,4 +172,9 @@
 - **kind:** discussion
 - **scope:** muhamed.github.io
 - **summary:** User wants to shape new feature: multi-tag filtering on Brain and Writing pages alongside text search, plus a dedicated tag exploration/overview page. Drafting PRD for approval.
+### user-answered-prd-open-questions-or-filtering-ke (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User answered PRD open questions: OR filtering, keep 'tags' (not topics), tag scope covers both Brain and Writing, tag explorer shows per-section counts so users know where clicking leads. Ready to update PRD and implement.
 
