@@ -1,0 +1,19 @@
+[
+  {
+    "at": "2026-07-23T12:20:41.378Z",
+    "target": "/home/muhamed/projects/usput.ba",
+    "question": "What is Usput? What is the tech stack, current features, and project structure?",
+    "files": [
+      "/home/muhamed/projects/usput.ba/AGENTS.md",
+      "/home/muhamed/projects/usput.ba/CLAUDE.md",
+      "/home/muhamed/projects/usput.ba/Dockerfile",
+      "/home/muhamed/projects/usput.ba/Gemfile",
+      "/home/muhamed/projects/usput.ba/Gemfile.lock",
+      "/home/muhamed/projects/usput.ba/PLATFORM.md",
+      "/home/muhamed/projects/usput.ba/Procfile.dev",
+      "/home/muhamed/projects/usput.ba/README.md",
+      "/home/muhamed/projects/usput.ba/Rakefile",
+      "/home/muhamed/projects/usput.ba/app/controllers/application_controller.rb"
+    ]
+  }
+]

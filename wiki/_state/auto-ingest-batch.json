@@ -1,0 +1,15 @@
+{
+  "entries": [
+    {
+      "source": "https://usput.ba/",
+      "targetPath": "sources/web/2026-07-23--usput-ba.md",
+      "date": "2026-07-23"
+    },
+    {
+      "source": "https://rubynative.com/",
+      "targetPath": "sources/web/2026-07-23--rubynative-com.md",
+      "date": "2026-07-23"
+    }
+  ],
+  "createdAt": "2026-07-23"
+}

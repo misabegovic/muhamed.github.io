@@ -58,13 +58,13 @@ This is the synthesis layer for this pi-brain instance.
 - [PRD — Unified tag filtering and search](wiki/muhamed.github.io/prds/unified-tag-filtering-and-search.md)
 
 ### options
-- [Options — muhamed.github.io](wiki/org/options.md)
+- [Options — org](wiki/org/options.md)
 
 ### roadmap
-- [Roadmap — muhamed.github.io](wiki/org/roadmap.md)
+- [Roadmap — org](wiki/org/roadmap.md)
 
 ### state
-- [State — muhamed.github.io](wiki/org/state.md)
+- [State — org](wiki/org/state.md)
 
 ## Getting started
 

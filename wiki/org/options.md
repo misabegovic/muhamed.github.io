@@ -4,8 +4,16 @@ status: living
 confidence: low
 ---
 
-# Options — muhamed.github.io
+# Options — org
 
 ## Where we could go next
 
-- TBD.
+- [Upstream template sync for pi-brain clones](brain/pitches/upstream-template-sync.md)
+
+## What we are not doing
+
+- Options considered and rejected, with reasons.
+
+## Triggers for revisiting
+
+- Conditions that would make a parked option worth shaping again.

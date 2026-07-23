@@ -1,0 +1,42 @@
+
+### auto-ingest-batch (2026-07-23)
+
+- **kind:** auto-ingest
+- **scope:** brain
+- **summary:** Auto-ingested 2 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** Pitch/ideas for Usput.ba: user wants to finish promised features, add 'moments', build 'usput explore mode', mentor Aldin as a Rails developer on the project, and deliver a mobile app using Ruby Native (rubynative.com). Need to shape this into a plan. Source ingested: https://usput.ba/ and https://rubynative.com/.
+### deepdived-home-muhamed-projects-usput-ba-usput-b (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Deepdived /home/muhamed/projects/usput.ba. Usput.ba is a Rails 8 tourism platform for Bosnia and Herzegovina with curated locations, experiences, plans, audio tours, AI content generation, curator dashboard, and a Platform CLI/DSL. It already has .claude/agents/ personas. Tech stack: Ruby 3.3, Rails 8, PostgreSQL+pgvector, Hotwire, Tailwind, Solid Queue, RubyLLM, Kamal. User wants to add moments, explore mode, mentor Aldin, and deliver mobile app via Ruby Native.
+### user-clarified-do-not-onboard-usput-ba-as-a-main (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User clarified: do not onboard usput.ba as a maintained project. 'Moments' = short posts from travelers exploring Bosnia with Usput (social/UGC-style updates).
+### promised-work-is-commitments-to-self-and-users-f (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Promised work is commitments to self and users from an announcement about what Usput will be. Need to know what was announced.
+### user-shared-the-usput-ba-announcement-promised-f (2026-07-23)
+
+- **kind:** source
+- **scope:** muhamed.github.io
+- **summary:** User shared the Usput.ba announcement. Promised features: 14-language support, audio tours per location, personal travel plans, public/shareable plans, experiences, quality search, videos, multiple photos, location-based contacts for local businesses, travel profile + gamification + printable travel map, no-registration usage, offline support, PWA/mobile-first installable, dark/light theme, review system, AI-generated locations/experiences/public plans, AI translation to 14 languages, AI audio tours per language, QR codes for explore filters and audio tours, AI-generated content with curator contributions.
+### decision-fix-the-app-first-then-generate-content (2026-07-23)
+
+- **kind:** decision
+- **scope:** muhamed.github.io
+- **summary:** Decision: fix the app first, then generate content. User wants app stabilized before content pipeline work.
+### user-clarified-the-usput-ba-planning-is-intended (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User clarified: the Usput.ba planning is intended as content for the muhamed.at 'Peek into my brain' stream, not for immediate app work. Pivot to drafting a stream entry.
+
