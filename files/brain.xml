@@ -14,10 +14,9 @@ permalink: /brain.xml
     <name>{{ site.author }}</name>
   </author>
 
-  {% assign today = site.time | date: '%Y-%m-%d' %}
-  {% assign visible = site.stream | where_exp: 'entry', 'entry.hidden_until == nil or entry.hidden_until <= today' %}
-  {% assign sorted = visible | sort: 'created_at' | reverse | limit: 20 %}
+  {% assign sorted = site.stream | sort: 'created_at' | reverse %}
   {% for entry in sorted %}
+  {% unless entry.hidden_until and entry.hidden_until > site.time %}
   <entry>
     <title>{{ entry.title }}</title>
     <link href="{% if entry.url_external %}{{ entry.url_external }}{% else %}{{ site.url }}{{ entry.url }}{% endif %}"/>
@@ -29,5 +28,6 @@ permalink: /brain.xml
       {% if entry.url_external %}&lt;p&gt;&lt;a href="{{ entry.url_external }}"&gt;Original source&lt;/a&gt;&lt;/p&gt;{% endif %}
     </content>
   </entry>
+  {% endunless %}
   {% endfor %}
 </feed>
