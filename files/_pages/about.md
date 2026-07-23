@@ -14,7 +14,7 @@ This site is my public brain — a place where I collect what I am reading, watc
 
 ## Career Overview
 
-- (2026 - present) [Software Engineer @ Teamtailor](https://www.teamtailor.com/)
+- (2026 - present) [AI Product Developer @ Teamtailor](https://www.teamtailor.com/)
 - (2024 - present) Self-employed / Contractor
 - (2025 - present) [Chief Organizer @ RubyConf Austria](https://www.rubyconf.at/)
 - (2024 - 2026) [Technical Lead @ Carv](https://www.carv.com/)
