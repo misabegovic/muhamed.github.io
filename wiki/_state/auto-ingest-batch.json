@@ -49,6 +49,11 @@
       "source": "https://langfuse.com/",
       "targetPath": "sources/web/2026-07-23--langfuse-com.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://github.com/langfuse/langfuse",
+      "targetPath": "sources/repo/2026-07-23--github-com-langfuse-langfuse.md",
+      "date": "2026-07-23"
     }
   ],
   "createdAt": "2026-07-23"
