@@ -18,6 +18,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Sync latest upstream pi-brain updates](wiki/muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
+- [Backfill missing upstream pi-brain files](wiki/muhamed.github.io/ai-suggestions/adrs/backfill-missing-upstream-pi-brain-files.md)
 
 ### constraint
 - [Constraint — ADR before structural changes](wiki/muhamed.github.io/constraints/adr-before-structural-changes.md)
