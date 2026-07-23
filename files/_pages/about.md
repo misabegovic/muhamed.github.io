@@ -27,6 +27,8 @@ Lately, I am building [pi-brain](https://github.com/misabegovic/muhamed.github.i
 
 ## Specialties
 
+- AI Product Development
+- Agentic Workflows & LLM Orchestration
 - Research & Development
 - Software Design & Architecture
 - Team & Project Leadership
@@ -39,6 +41,8 @@ Lately, I am building [pi-brain](https://github.com/misabegovic/muhamed.github.i
 - Ember.js, React
 - PostgreSQL, MySQL
 - Kubernetes, Google Cloud, Azure, AWS
+- LLMs & AI agents (Claude, Kimi K3, Pi.dev)
+- pi-brain
 
 ## Socials
 
