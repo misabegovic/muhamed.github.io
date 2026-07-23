@@ -5,7 +5,9 @@ layout: default
 <style>
 .brain-home { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
 .brain-home h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-.brain-home .subtitle { color: #666; margin-bottom: 1.5rem; }
+.brain-home .subtitle { color: #666; margin-bottom: 0.8rem; }
+.brain-home .disclaimer { font-size: 0.9rem; color: #777; line-height: 1.5; margin-bottom: 1.5rem; max-width: 640px; }
+.brain-home .disclaimer a { color: #555; }
 .brain-home .controls { margin-bottom: 1.5rem; }
 .brain-home input { width: 100%; max-width: 400px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
 .brain-home .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
@@ -30,6 +32,7 @@ layout: default
 <div class="brain-home">
   <h1>Peek into my brain</h1>
   <p class="subtitle">A card-based browse through what I'm reading, watching, and thinking about.</p>
+  <p class="disclaimer">These entries are raw signals I drop into my brain — articles, books, quotes, half-formed notes — and an AI helps me organize, tag, and present them here. For longer human-written pieces, see <a href="/writing/">Writing</a>.</p>
 
   <div class="controls">
     <input type="text" id="search" placeholder="Search cards...">

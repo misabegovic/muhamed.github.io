@@ -44,9 +44,9 @@ stream "Peek into my brain" now lives at `/`. Blog posts moved to `/writing/`.
 Individual stream entries have permalink pages at `/brain/:slug/`. Separate RSS
 feeds exist at `/feed.xml` (posts) and `/brain.xml` (stream). Prototype routes
 `/brain/`, `/brain-cards/`, `/brain-minimal/`, `/brain-book/`, and
-`/brain-window/` were removed. Refinements added: "Load more" pagination on the
-home page, tags on existing posts, updated About page, and an empty-state
-message when no stream entries exist. See
+`/brain-window/` were removed. Refinements added: "Load more" pagination,
+disclaimer that the stream is AI-assisted, tags on existing posts, updated
+About page, and empty-state message. See
 [ADR: Make the brain-card stream the home page](../muhamed.github.io/adrs/make-brain-cards-the-home-page.md).
 
 ## What needs attention

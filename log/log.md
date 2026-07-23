@@ -10,3 +10,4 @@
 - 2026-07-23T11:23:00Z — implemented production brain-card home page: replaced / with card stream, created /writing/ for posts, added /brain.xml feed, removed all prototype routes
 - 2026-07-23T11:35:00Z — added Load more pagination to home page, tags on existing posts, updated About page
 - 2026-07-23T11:47:00Z — fixed /brain-cards/ back link to /, removed sample stream entries, added empty-state message
+- 2026-07-23T11:50:00Z — added AI-assisted disclaimer to home page and human-written note to /writing/

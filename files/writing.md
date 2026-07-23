@@ -7,7 +7,9 @@ title: Writing
 <style>
 .writing-page { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
 .writing-page h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-.writing-page .subtitle { color: #666; margin-bottom: 1.5rem; }
+.writing-page .subtitle { color: #666; margin-bottom: 0.5rem; }
+.writing-page .disclaimer { font-size: 0.9rem; color: #777; line-height: 1.5; margin-bottom: 1.5rem; max-width: 640px; }
+.writing-page .disclaimer a { color: #555; }
 .writing-page .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
 .writing-page .card { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2rem; background: #fff; transition: box-shadow 0.15s; text-decoration: none; color: inherit; }
 .writing-page .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
@@ -19,7 +21,8 @@ title: Writing
 
 <div class="writing-page">
   <h1>Writing</h1>
-  <p class="subtitle">Longer posts and essays.</p>
+  <p class="subtitle">Longer posts and essays, written by me.</p>
+  <p class="disclaimer">For the raw, AI-assisted stream of things I find interesting, see <a href="/">Peek into my brain</a>.</p>
 
   <div class="grid">
     {% assign sorted_posts = site.posts | sort: 'date' | reverse %}

@@ -122,4 +122,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** Fixed broken /brain-cards/ back link in stream entry layout to point to /. Removed all sample stream entries from files/_stream/. Added empty-state message on home page for when no stream entries exist. Rebuilt site.
+### user-wants-a-disclaimer-on-the-home-page-stating (2026-07-23)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User wants a disclaimer on the home page stating that AI is used to process thoughts and display them, and that Writing page contains human-written posts. This is a content refinement under the accepted brain-card home page ADR.
 
