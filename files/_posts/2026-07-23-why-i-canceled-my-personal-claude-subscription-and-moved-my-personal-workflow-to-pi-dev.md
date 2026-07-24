@@ -49,7 +49,7 @@ Tomorrow, if I'm able to host an open source model (notice open source as a repe
 
 Open source. 
 
-I want to see open source models that I can host locally manifest into reality.
+I want to see (good) open source models that I can host locally manifest into reality.
 
 I choose to support companies that are close to this thinking and that support open source development of AI and agents.
 
