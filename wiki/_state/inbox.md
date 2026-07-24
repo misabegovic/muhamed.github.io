@@ -91,4 +91,14 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User clarified: typos in the Claude/Pi.dev post are intentional. Do not edit the post.
+### user-asked-for-updated-analysis-of-the-published (2026-07-24)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User asked for updated analysis of the published Claude/Pi.dev post after adding What I lost section.
+### user-asked-if-tags-should-be-updated-for-the-cla (2026-07-24)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User asked if tags should be updated for the Claude/Pi.dev post. Current tags: ai, claude, pi, workflow, tools, local-first. Suggest relevant additions like moonshot, kimi, open-source, agents, anthropic.
 
