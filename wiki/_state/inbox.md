@@ -66,4 +66,19 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User spoke with Paul from Tito (ti.to). Paul is building cathedrals, not in Ruby anymore, now builds in Go. Shared principles via 11factor.org, elevenmessenger.com, and elevenmessenger.com/unfiltered. User aligns on some principles and feels there's a lot to learn here. Relevant for rethinking how software systems should be built.
+### user-posted-on-linkedin-x-done-moved-my-workflow (2026-07-24)
+
+- **kind:** source
+- **scope:** muhamed.github.io
+- **summary:** User posted on LinkedIn/X: "Done. ✅ Moved my workflow to Pi.dev, canceled my personal Claude subscription and moved to Moonshot for now, Kimi K3. Here's the PI extension representing my workflow (always under construction): https://github.com/misabegovic/pi-brain ." Got a comment asking for more details (in Bosnian): what did you gain, what did you lose, what about data on Claude Code if you used it as Web package not just API, etc. This is the raw material for the draft post "Why I canceled my personal Claude subscription and moved my personal workflow to Pi.dev".
+### user-is-going-to-start-writing-the-claude-pi-dev (2026-07-24)
+
+- **kind:** task
+- **scope:** muhamed.github.io
+- **summary:** User is going to start writing the Claude/Pi.dev post themselves. Will ask for shaping help later. Draft is at files/_drafts/2026-07-23-why-i-canceled-my-personal-claude-subscription-and-moved-my-personal-workflow-to-pi-dev.md.
+### user-asked-how-to-host-the-jekyll-site-locally-n (2026-07-24)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User asked how to host the Jekyll site locally. Need to provide the serve command and note the --drafts flag for previewing draft posts.
 
