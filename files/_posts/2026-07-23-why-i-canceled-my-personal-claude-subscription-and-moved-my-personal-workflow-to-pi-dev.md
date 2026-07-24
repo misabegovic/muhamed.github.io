@@ -61,7 +61,7 @@ The cushy feeling of being taken care of by Claude, having the entire ecosystem 
 
 Now I have to build my own mobile app with which I can access my sessions remotely, for example.
 
-If I want to use [ui.sh](https://ui.sh/) for design, I need to teach my Pi agent to use it. Everything is a concious decision and I need to be careful and understand what I need and how I need it to work, then I need to build it myself (under my supervision and tailor to my needs).
+If I want to use [ui.sh](https://ui.sh/) for design, I need to teach my Pi agent to use it. Everything is a conscious decision and I need to be careful and understand what I need and how I need it to work, then I need to build it myself (under my supervision and tailored to my needs).
 
 ## Disclaimer
 

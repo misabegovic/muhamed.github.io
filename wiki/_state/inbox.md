@@ -86,4 +86,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User asked whether the published post answers the commenter's query (what did you gain, what did you lose, what about data on Claude Code / Web package vs API). Need to give honest assessment.
+### user-clarified-typos-in-the-claude-pi-dev-post-a (2026-07-24)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User clarified: typos in the Claude/Pi.dev post are intentional. Do not edit the post.
 
