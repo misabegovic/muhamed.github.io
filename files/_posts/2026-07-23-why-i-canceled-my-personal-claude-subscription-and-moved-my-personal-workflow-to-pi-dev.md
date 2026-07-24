@@ -55,6 +55,14 @@ I choose to support companies that are close to this thinking and that support o
 
 Today that's Kimi K3, tomorrow it might be something else from [OpenRouter](https://openrouter.ai/).
 
+## What I lost
+
+The cushy feeling of being taken care of by Claude, having the entire ecosystem I can benefit from as a consumer.
+
+Now I have to build my own mobile app with which I can access my sessions remotely, for example.
+
+If I want to use [ui.sh](https://ui.sh/) for design, I need to teach my Pi agent to use it. Everything is a concious decision and I need to be careful and understand what I need and how I need it to work, then I need to build it myself (under my supervision and tailor to my needs).
+
 ## Disclaimer
 
 I still have a Claude subscription at work that I use.

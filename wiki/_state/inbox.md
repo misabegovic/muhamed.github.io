@@ -81,4 +81,9 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User asked how to host the Jekyll site locally. Need to provide the serve command and note the --drafts flag for previewing draft posts.
+### user-asked-whether-the-published-post-answers-th (2026-07-24)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** User asked whether the published post answers the commenter's query (what did you gain, what did you lose, what about data on Claude Code / Web package vs API). Need to give honest assessment.
 
