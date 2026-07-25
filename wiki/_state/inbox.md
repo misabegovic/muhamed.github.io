@@ -107,3 +107,9 @@
 - **kind:** discussion
 - **scope:** muhamed.github.io
 - **summary:** User's idea: personal agents as the future of human communication, applied to recruitment — job seekers' and hirers' agents hook into channels and negotiate amongst themselves first (inspired by rentahuman.ai and Marc Kohlbrugge's agent example). Near-term step: hiring platforms expanding their MCP to support candidates. Source: sources/conversation/2026-07-25--recruitment-agents-idea.md. Stream card published at files/_stream/recruitment-agents-talk-it-out-first.md.
+
+### is-ruby-dead-cathedrals-in-go-rebuild-experiment (2026-07-25)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User questioning whether Ruby is dead and whether it's time to build cathedrals in Go and other languages (echoes the Paul from Tito conversation). Wants to learn Go and distributed infrastructure for chat systems. Note to self: rebuild a Rails project in Go, rebuild the infrastructure around it, compare cost/speed/complexity, and identify guard rails and testing approaches. Source: sources/conversation/2026-07-25--ruby-vs-go-chat-infrastructure.md. Stream card published at files/_stream/is-ruby-dead-cathedrals-in-go.md.
