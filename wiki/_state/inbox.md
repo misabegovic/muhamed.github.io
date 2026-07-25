@@ -102,3 +102,8 @@
 - **scope:** muhamed.github.io
 - **summary:** User asked if tags should be updated for the Claude/Pi.dev post. Current tags: ai, claude, pi, workflow, tools, local-first. Suggest relevant additions like moonshot, kimi, open-source, agents, anthropic.
 
+### recruitment-agents-idea-agent-to-agent-hiring (2026-07-25)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User's idea: personal agents as the future of human communication, applied to recruitment — job seekers' and hirers' agents hook into channels and negotiate amongst themselves first (inspired by rentahuman.ai and Marc Kohlbrugge's agent example). Near-term step: hiring platforms expanding their MCP to support candidates. Source: sources/conversation/2026-07-25--recruitment-agents-idea.md. Stream card published at files/_stream/recruitment-agents-talk-it-out-first.md.
