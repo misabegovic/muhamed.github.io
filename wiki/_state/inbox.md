@@ -113,3 +113,9 @@
 - **kind:** discussion
 - **scope:** muhamed.github.io
 - **summary:** User questioning whether Ruby is dead and whether it's time to build cathedrals in Go and other languages (echoes the Paul from Tito conversation). Wants to learn Go and distributed infrastructure for chat systems. Note to self: rebuild a Rails project in Go, rebuild the infrastructure around it, compare cost/speed/complexity, and identify guard rails and testing approaches. Source: sources/conversation/2026-07-25--ruby-vs-go-chat-infrastructure.md. Stream card published at files/_stream/is-ruby-dead-cathedrals-in-go.md.
+
+### pi-web-ui-one-shot-prompt-build-my-own (2026-07-25)
+
+- **kind:** discussion
+- **scope:** muhamed.github.io
+- **summary:** User shared @dodoreach's X post: instead of open-sourcing their Pi web UI, they published a one-shot prompt that builds a local, private, responsive "codex-style" dashboard for the Pi coding agent (native Pi sessions, streaming, steer/follow-up/stop, model/tool controls, mobile access via Tailscale Serve, localhost-only security, fake-adapter tests). Philosophy: shaping your own tools beats accepting someone else's finished product. User's note to self: run this prompt against their own Pi setup and build their own dashboard. Source: sources/conversation/2026-07-25--pi-web-ui-one-shot-prompt.md. Stream card published at files/_stream/shape-your-own-tools-pi-web-ui-prompt.md.
