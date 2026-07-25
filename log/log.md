@@ -22,3 +22,4 @@
 - 2026-07-23T13:30:00Z — deployed #tag search refinement via GitHub Actions run 30002976732
 - 2026-07-23T13:35:00Z — synced clone with upstream pi-brain v0.2.0
 - 2026-07-23T13:40:00Z — pushed upstream sync; site deployment verified via run 30003733014
+- 2026-07-25T21:40:00Z — ingested recruitment-agents idea (agent-to-agent hiring, candidate-facing MCP) into sources/conversation/; published stream card recruitment-agents-talk-it-out-first; queued synthesis in inbox
