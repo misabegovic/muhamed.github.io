@@ -10,7 +10,7 @@ tags: [ruby, go, rails, distributed-systems, chat, infrastructure, learning, ide
 
 Is Ruby dead? Is it time to build cathedrals in Go and other languages?
 
-The question has been sitting with me since talking to Paul from Tito — he's building cathedrals, not in Ruby anymore, now in Go, with principles like [11factor.org](https://11factor.org) behind them. Maybe I need to actually learn Go, and learn how to build distributed infrastructures for things like chat systems, instead of theorizing about it from the Rails side.
+The question has been sitting with me lately. Maybe I need to actually learn Go, and learn how to build distributed infrastructures for things like chat systems, instead of theorizing about it from the Rails side.
 
 So, note to myself — an experiment:
 
