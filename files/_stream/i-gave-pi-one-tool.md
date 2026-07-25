@@ -6,7 +6,7 @@ url_external: "https://monotykamary.com/posts/i-gave-pi-one-tool/"
 type: note
 date: 2026-07-25
 created_at: 2026-07-25T23:59:30+02:00
-tags: [ai, agents, pi, code-mode, typescript, sandbox, tools, reading-list]
+tags: [ai, agents, pi, pi-brain, code-mode, typescript, sandbox, tools, reading-list]
 ---
 
 Queued up for a proper read: [I gave Pi one tool](https://monotykamary.com/posts/i-gave-pi-one-tool/) by Tom (monotykamary).
@@ -16,3 +16,5 @@ The premise alone earns it a spot on the list. Instead of handing the [Pi](https
 Then it gets recursive: most of pi-fabric was built by models working *through* pi-fabric — 337 commits and 11,155 fabric programs in twelve days, with Tom steering, stealing good ideas, and rejecting bad ones.
 
 This lands right in the middle of my Pi obsession — same orbit as the shape-your-own-tools prompt I captured earlier. Skimming it, the parts I want to sit down with: tool schemas as an entropy source (models drift while reproducing unfamiliar schemas, so give them a compiler instead), deliberate *erasure* — compaction, forgetting, and state transitions as runtime features — and the honest cost accounting: reading, not writing, is the bill.
+
+Note to self: before going deeper I need to learn more about how Pi itself is built — the extension API and its lifecycle events, sessions as JSONL trees, compaction, the SDK and RPC modes — so I can adjust [pi-brain](https://github.com/misabegovic/pi-brain) to get the most out of the harness, and honestly validate whether the idea makes sense at all next to runtimes like pi-fabric.
