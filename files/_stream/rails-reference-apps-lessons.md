@@ -9,31 +9,40 @@ created_at: 2026-07-27T10:00:00+02:00
 tags: [rails, ruby, 37signals, best-practices, architecture, hotwire]
 ---
 
-Spent time with the official [Rails reference apps](https://rubyonrails.org/docs/reference-apps) — Campfire, Writebook, and Fizzy — plus their agent guidelines and style guides. A few patterns worth keeping:
+Spent time with the official [Rails reference apps](https://rubyonrails.org/docs/reference-apps) — Campfire, Writebook, and Fizzy — reading code, not just READMEs. A few patterns worth keeping:
 
-**Architecture**
+**Architecture and domain modeling**
 
-- Vanilla Rails is plenty. Thin controllers, rich domain models. Don't reach for services or form objects as a default.
-- RESTful CRUD. When an action doesn't fit a standard verb, introduce a new resource instead of adding custom actions.
-- Method ordering matters: class methods, then public (with `initialize` first), then private — and order by invocation order so the flow reads top to bottom.
+- **Vanilla Rails, rich domain.** Thin controllers invoke plain model methods. Services or form objects appear, but they’re not a default layer — they’re used when justified and treated as ordinary objects.
+- **Concerns for focused behavior.** Fizzy splits `Card` into `Card::Eventable`, `Card::Commentable`, `Card::Closeable`, `Card::Entropic`, etc. Each concern owns one slice of behavior. Same pattern in Campfire: `Message::Broadcasts`, `Message::Searchable`, `User::Mentionable`.
+- **Polymorphic event stream.** Fizzy’s `Eventable` concern gives any model `has_many :events, as: :eventable`. `track_event` builds action names from the model class. Events drive timelines, notifications, webhooks, and even activity-spike detection.
+- **Delegated types for shared containers.** Writebook uses a `Leaf` container with `delegated_type :leafable, types: [Page, Section, Picture]`. One table for ordering/search/status, separate tables for each content shape.
+- **Request-scoped identity with `Current`.** `Current.user`, `Current.account` are used everywhere — controllers, models, background jobs — so context doesn't have to be threaded through every method call.
 
-**Code style**
+**Controllers and routing**
 
-- Expanded conditionals over guard clauses, generally. Guard clauses only when the return is at the very top or the main body is non-trivial.
-- Use `!` only when there's a non-bang counterpart. Don't mark destructive methods with `!` just because they're destructive.
-- No newline under `private`/`protected`; indent what follows.
+- **Resources over custom actions.** Fizzy has `Cards::ClosuresController`, `Cards::Comments::ReactionsController`, `Boards::PublicationsController`. A state change becomes a new resource with `create`/`destroy`, not a custom `post :close`.
+- **Nested RESTful resources.** `cards/1/comments/2/reactions`, `boards/1/columns/2/cards`. The URL structure mirrors the domain.
+- **Turbo Stream as a first-class format.** Controllers routinely respond with `format.turbo_stream` and `format.json`, treating server-rendered partial updates as normal.
+
+**Code style and conventions**
+
+- **Expanded conditionals over guard clauses.** Fizzy’s style guide prefers `if/else` unless the guard is at the very top or the main body is large.
+- **Method ordering by invocation order.** Public methods are ordered so the code reads top-to-bottom. Private methods follow the same rule.
+- **`!` only with a non-bang counterpart.** Don’t mark destructive methods with `!` just because they mutate.
+- **Visibility modifiers indented, no blank line underneath.**
 
 **Testing**
 
 - Use existing fixtures over creating records in tests.
-- Prefer `_path` helpers over `_url` unless you explicitly need the full URL.
-- Use `assert_in_body` / `assert_not_in_body` instead of checking `response.body` directly.
-- Omit explicit `{ render }` blocks in `respond_to` when rendering is implied.
+- Prefer `_path` helpers unless you need the full URL.
+- Use `assert_in_body` / `assert_not_in_body` instead of `assert_includes response.body`.
+- Omit explicit `{ render }` in `respond_to` when rendering is implied.
 
 **Async work**
 
 - Shallow job classes that delegate to domain models.
-- Use `_later` for methods that enqueue jobs, `_now` for the synchronous counterpart the job calls.
+- `_later` methods enqueue jobs; `_now` methods do the synchronous work the job calls.
 
 **Deployment and self-hosting**
 
@@ -41,11 +50,11 @@ Spent time with the official [Rails reference apps](https://rubyonrails.org/docs
 - Fizzy also documents Kamal deployment.
 - `bin/setup`, `bin/dev`, `bin/ci` are the standard interface.
 
-**Fizzy-specific ideas**
+**Specific tricks worth stealing**
 
-- URL-path-based multi-tenancy instead of subdomains or separate databases.
-- Passwordless magic-link authentication with a global `Identity` and per-account `User`.
-- Events as the backbone for activity timelines, notifications, and webhooks.
-- "Entropy" — cards automatically postpone after inactivity so todo lists don't rot.
+- **Writebook’s `Positionable` concern** — gap-based ordering with automatic rebalancing, using parent-level locking.
+- **Campfire’s `Message::Searchable`** — talks directly to a SQLite FTS index instead of adding a search dependency.
+- **Fizzy’s URL-path multi-tenancy** — `/{account_id}/boards/...` with middleware extracting the slug into `Current.account`.
+- **Fizzy’s entropy system** — cards automatically postpone after inactivity so boards don't rot.
 
 Good reference material for tightening up how I build Rails apps.
