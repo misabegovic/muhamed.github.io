@@ -30,3 +30,4 @@
 - 2026-07-27: Migrated clone to package-resolved resources.
 - 2026-07-27T16:30:00Z — ingested pi.dev package gallery page for @misabegovic/pi-brain (v0.3.2, 257 downloads/month) into sources/web/; published stream card pi-brain-in-the-pi-package-gallery; queued synthesis in inbox
 - 2026-07-27T18:20:00Z — fixed validate workflow broken by v0.3.0 migration: run brain-sync from @misabegovic/pi-brain@0.3.2 npm package instead of deleted tools/; ADR fix-validate-workflow-package-resolved-brain-sync accepted
+- 2026-07-27T18:55:00Z — tempered pi-brain gallery stream card: 257 downloads in four days is registry mirrors/scanners, not adoption; updated inbox item to gate synthesis on a real adoption signal
