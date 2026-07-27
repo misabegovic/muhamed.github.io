@@ -1,0 +1,35 @@
+{
+  "entries": [
+    {
+      "source": "/home/muhamed/.nvm/versions/node/v22.22.2/lib/node_modules/@earendil-works/pi-coding-agent/docs",
+      "targetPath": "sources/doc/2026-07-27--docs.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://pi.dev/docs/latest/compaction",
+      "targetPath": "sources/web/2026-07-27--pi-dev-docs-latest-compaction.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://pi.dev/docs/latest/session-format",
+      "targetPath": "sources/web/2026-07-27--pi-dev-docs-latest-session-format.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://pi.dev/docs/latest/extensions",
+      "targetPath": "sources/web/2026-07-27--pi-dev-docs-latest-extensions.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://pi.dev/docs/latest/packages",
+      "targetPath": "sources/web/2026-07-27--pi-dev-docs-latest-packages.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://pi.dev/docs/latest/sdk",
+      "targetPath": "sources/web/2026-07-27--pi-dev-docs-latest-sdk.md",
+      "date": "2026-07-27"
+    }
+  ],
+  "createdAt": "2026-07-27"
+}
