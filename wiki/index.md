@@ -16,6 +16,7 @@ This is the synthesis layer for this pi-brain instance.
 - [ADR — Upstream template sync mechanism](wiki/brain/adrs/upstream-template-sync.md)
 - [Backfill missing upstream pi-brain files](wiki/muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files.md)
 - [Convert repo to pi-brain clone and deploy site via GitHub Actions](wiki/muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
+- [Fix validate workflow to run package-resolved brain-sync (pinned to 0.3.2)](wiki/muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync.md)
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Make the brain-card stream the home page](wiki/muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
 - [Sync latest upstream pi-brain changes (v0.2.0)](wiki/muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
