@@ -4,6 +4,12 @@ kind: inbox
 
 # Inbox
 
+### pi-brain-package-gallery-milestone (2026-07-27)
+
+- **kind:** source
+- **scope:** muhamed.github.io
+- **summary:** @misabegovic/pi-brain is listed in the pi.dev package gallery at v0.3.2 with 257 downloads/month at time of capture (MIT, zero runtime dependencies; bundles the pi-brain extension plus skills, prompts, and themes). First external adoption signal for the package. Source: sources/web/2026-07-27--pi-dev-packages-misabegovic-pi-brain.md. Stream card published at files/_stream/pi-brain-in-the-pi-package-gallery.md. Consider synthesizing an adoption/milestone note once download numbers have a second data point.
+
 ### i-gave-pi-one-tool-article-reading-queue (2026-07-25)
 
 - **kind:** source

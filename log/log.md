@@ -28,3 +28,4 @@
 - 2026-07-25T22:15:00Z — ingested monotykamary.com article "I gave Pi one tool" (pi-fabric: single fabric_exec code-mode tool for Pi, QuickJS sandbox, self-built runtime) into sources/web/ as reading-queue item; published stream card i-gave-pi-one-tool; queued synthesis in inbox
 - 2026-07-25T22:30:00Z — folded 'learn how Pi is built to evolve pi-brain and validate the idea' note-to-self into stream card i-gave-pi-one-tool; queued research task in inbox with pi.dev docs starting points
 - 2026-07-27: Migrated clone to package-resolved resources.
+- 2026-07-27T16:30:00Z — ingested pi.dev package gallery page for @misabegovic/pi-brain (v0.3.2, 257 downloads/month) into sources/web/; published stream card pi-brain-in-the-pi-package-gallery; queued synthesis in inbox
