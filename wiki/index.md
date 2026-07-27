@@ -52,6 +52,7 @@ This is the synthesis layer for this pi-brain instance.
 
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](wiki/muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
+- [> ⚠️ AI-suggested draft. This is not an approved RFC. Review, edit, and graduate it before treating it as a project decision.](wiki/muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md)
 
 ### note
 - [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](wiki/muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)

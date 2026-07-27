@@ -104,6 +104,11 @@
       "source": "https://github.com/basecamp/once-campfire",
       "targetPath": "sources/repo/2026-07-27--github-com-basecamp-once-campfire.md",
       "date": "2026-07-27"
+    },
+    {
+      "source": "/home/muhamed/projects/usput.ba/.claude/planning/VISION.md",
+      "targetPath": "sources/doc/2026-07-27--vision-md.md",
+      "date": "2026-07-27"
     }
   ],
   "createdAt": "2026-07-23"
