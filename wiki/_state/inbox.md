@@ -3,7 +3,7 @@
 
 - **kind:** auto-ingest
 - **scope:** brain
-- **summary:** Auto-ingested 17 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
+- **summary:** Auto-ingested 21 source(s). Review at wiki/_state/auto-ingest-batch.json. Run /brain:tend to synthesize, or /brain:groom to archive if stale.
 
 
 ### pitch-ideas-for-usput-ba-user-wants-to-finish-pr (2026-07-23)
@@ -101,6 +101,11 @@
 - **kind:** insight
 - **scope:** muhamed.github.io
 - **summary:** User asked if tags should be updated for the Claude/Pi.dev post. Current tags: ai, claude, pi, workflow, tools, local-first. Suggest relevant additions like moonshot, kimi, open-source, agents, anthropic.
+### extracted-lessons-from-rails-reference-apps-camp (2026-07-27)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Extracted lessons from Rails reference apps (Campfire, Writebook, Fizzy) and their AGENTS.md/STYLE.md guides. Key themes: vanilla Rails, thin controllers rich models, RESTful CRUD, expanded conditionals over guard clauses, method ordering by invocation, async jobs with _later/_now convention, use existing fixtures, _path helpers, assert_in_body, simplified respond_to, self-hosting/Docker/ONCE/Kamal, URL-based multi-tenancy, passwordless auth, events drive activity.
 
 ### recruitment-agents-idea-agent-to-agent-hiring (2026-07-25)
 

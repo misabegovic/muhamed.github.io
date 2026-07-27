@@ -84,6 +84,26 @@
       "source": "https://ti.to/home",
       "targetPath": "sources/web/2026-07-23--ti-to-home.md",
       "date": "2026-07-23"
+    },
+    {
+      "source": "https://rubyonrails.org/docs/reference-apps",
+      "targetPath": "sources/web/2026-07-27--rubyonrails-org-docs-reference-apps.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://github.com/basecamp/writebook",
+      "targetPath": "sources/repo/2026-07-27--github-com-basecamp-writebook.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://github.com/basecamp/fizzy",
+      "targetPath": "sources/repo/2026-07-27--github-com-basecamp-fizzy.md",
+      "date": "2026-07-27"
+    },
+    {
+      "source": "https://github.com/basecamp/once-campfire",
+      "targetPath": "sources/repo/2026-07-27--github-com-basecamp-once-campfire.md",
+      "date": "2026-07-27"
     }
   ],
   "createdAt": "2026-07-23"
