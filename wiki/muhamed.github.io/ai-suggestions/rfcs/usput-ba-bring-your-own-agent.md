@@ -23,9 +23,9 @@ What would it mean for Usput.ba to support "bring your own agent"? And what does
 
 ## Proposed solution
 
-Expose Usput.ba as an **MCP server** (and eventually a set of structured agent-to-agent protocols) so a traveler's personal agent can query, plan, negotiate, and transact with the platform on their behalf.
+Expose Usput.ba as an **MCP server** (and eventually a set of structured agent-to-agent protocols) so agents on both sides of a trip — travelers and anyone offering something to travelers — can query, plan, negotiate, and transact through the platform.
 
-The Platform agent becomes the host: it represents Usput.ba's knowledge, the local providers, and the booking rules. User agents connect through a standard protocol instead of scraping the website or calling a bespoke REST API.
+The Platform agent becomes the host and matchmaker: it represents Usput.ba's knowledge, the local providers, and the booking rules. Demand-side agents (travelers) and supply-side agents (providers, agencies, individuals) connect through a standard protocol instead of scraping the website or calling a bespoke REST API.
 
 ### What an MCP enables for travelers
 
@@ -49,16 +49,22 @@ The Platform agent becomes the host: it represents Usput.ba's knowledge, the loc
    - "We're running late; reschedule the Blagaj visit and find a closer lunch spot."
    - The agent handles changes, cancellations, and rebookings without the traveler touching the app.
 
-### What it enables for local providers
+### What it enables for anyone offering something to travelers
 
-1. **Provider-side agents**
-   - A guesthouse owner or guide can expose their own agent, or let Platform act on their behalf, to answer availability, pricing, and special requests.
+This is not limited to traditional travel suppliers. Any person or business with something to offer can plug in an agent:
 
-2. **Agent-to-agent deal making**
-   - Group bookings, custom tours, and dynamic packages can be assembled by agents negotiating across multiple providers.
+1. **Accommodation** — hotels, guesthouses, apartments, rooms for rent.
+2. **Food and drink** — restaurants, cafés, bars, group menus, dietary options.
+3. **Activities and guides** — tour guides, rafting operators, hiking guides, cooking classes, transfers, rentals.
+4. **Travel agencies and DMCs** — packaged itineraries, negotiated rates, bundled multi-provider trips.
+5. **Individuals** — someone renting a spare room, offering a local experience, or driving a shuttle.
 
-3. **Reduced support load**
-   - Repeated questions ("Do you allow pets?", "Is there parking?") are answered by the platform's structured data or the provider's agent.
+Concrete benefits:
+
+- **Provider-side agents** answer availability, pricing, and special requests without a dashboard.
+- **Agent-to-agent deal making** assembles group bookings, custom tours, and dynamic packages across multiple providers.
+- **Reduced support load** — repeated questions ("Do you allow pets?", "Is there parking?", "Can you accommodate 12 people?") are answered by structured data or the provider's agent.
+- **Travel agencies and DMCs** can build complex itineraries by orchestrating provider agents instead of manual phone calls and emails.
 
 ### What it enables for Usput.ba
 
