@@ -27,3 +27,4 @@
 - 2026-07-25T22:05:00Z — ingested @dodoreach's Pi web UI one-shot prompt (shape-your-own-tools philosophy, codex-style Pi dashboard over Tailscale Serve; note to self to build one) into sources/conversation/; published stream card shape-your-own-tools-pi-web-ui-prompt; queued synthesis in inbox
 - 2026-07-25T22:15:00Z — ingested monotykamary.com article "I gave Pi one tool" (pi-fabric: single fabric_exec code-mode tool for Pi, QuickJS sandbox, self-built runtime) into sources/web/ as reading-queue item; published stream card i-gave-pi-one-tool; queued synthesis in inbox
 - 2026-07-25T22:30:00Z — folded 'learn how Pi is built to evolve pi-brain and validate the idea' note-to-self into stream card i-gave-pi-one-tool; queued research task in inbox with pi.dev docs starting points
+- 2026-07-27: Migrated clone to package-resolved resources.
