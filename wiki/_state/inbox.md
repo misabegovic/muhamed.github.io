@@ -136,3 +136,9 @@
 - **kind:** task
 - **scope:** brain
 - **summary:** User wants to learn how Pi is built in order to adjust pi-brain to benefit most from the harness and to validate whether the pi-brain idea makes sense (especially next to code-mode runtimes like pi-fabric). Research starting points: https://pi.dev/docs/latest/extensions (lifecycle events incl. session_before_compact, tool_call interception, appendEntry session persistence), /sdk, /session-format (JSONL tree sessions in ~/.pi/agent/sessions/), /compaction, /packages. Current pi-brain extension only uses registerTool/registerCommand/sendUserMessage and three events (session_start, session_tree, before_agent_start) — most of the event surface is untapped. Folded as note-to-self into stream card files/_stream/i-gave-pi-one-tool.md. Synthesize into a proper wiki note/ADR when the user picks this up.
+### consolidated-the-second-rails-reference-apps-dee (2026-07-27)
+
+- **kind:** insight
+- **scope:** muhamed.github.io
+- **summary:** Consolidated the second Rails reference apps deep dive into the single stream entry `files/_stream/rails-reference-apps-lessons.md`. Removed the separate draft wiki note.
+
