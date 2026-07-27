@@ -37,4 +37,3 @@ What changes:
 
 The smallest safe step is a read-only MCP for travelers. Agent-to-agent negotiation and provider-facing agents come later.
 
-Draft RFC saved at `wiki/muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md`.
