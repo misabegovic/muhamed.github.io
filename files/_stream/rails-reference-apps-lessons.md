@@ -9,52 +9,100 @@ created_at: 2026-07-27T10:00:00+02:00
 tags: [rails, ruby, 37signals, best-practices, architecture, hotwire]
 ---
 
-Spent time with the official [Rails reference apps](https://rubyonrails.org/docs/reference-apps) — Campfire, Writebook, and Fizzy — reading code, not just READMEs. A few patterns worth keeping:
+Spent more time inside the official [Rails reference apps](https://rubyonrails.org/docs/reference-apps) — Campfire, Writebook, and Fizzy — reading actual code, not just surface docs. Some deeper patterns worth keeping:
 
-**Architecture and domain modeling**
+## Campfire — real-time chat
 
-- **Vanilla Rails, rich domain.** Thin controllers invoke plain model methods. Services or form objects appear, but they’re not a default layer — they’re used when justified and treated as ordinary objects.
-- **Concerns for focused behavior.** Fizzy splits `Card` into `Card::Eventable`, `Card::Commentable`, `Card::Closeable`, `Card::Entropic`, etc. Each concern owns one slice of behavior. Same pattern in Campfire: `Message::Broadcasts`, `Message::Searchable`, `User::Mentionable`.
-- **Polymorphic event stream.** Fizzy’s `Eventable` concern gives any model `has_many :events, as: :eventable`. `track_event` builds action names from the model class. Events drive timelines, notifications, webhooks, and even activity-spike detection.
-- **Delegated types for shared containers.** Writebook uses a `Leaf` container with `delegated_type :leafable, types: [Page, Section, Picture]`. One table for ordering/search/status, separate tables for each content shape.
-- **Request-scoped identity with `Current`.** `Current.user`, `Current.account` are used everywhere — controllers, models, background jobs — so context doesn't have to be threaded through every method call.
+**Real-time layer**
 
-**Controllers and routing**
+- Multiple Action Cable channels: `RoomChannel` streams messages per room, `PresenceChannel` tracks who's online, `TypingNotificationsChannel`, `UnreadRoomsChannel`, `ReadRoomsChannel`.
+- `Message::Broadcasts` handles Turbo append/remove plus a raw `ActionCable.server.broadcast("unread_rooms", ...)` for the sidebar.
+- Messages broadcast themselves: `@message.broadcast_create` is called from the controller after create.
 
-- **Resources over custom actions.** Fizzy has `Cards::ClosuresController`, `Cards::Comments::ReactionsController`, `Boards::PublicationsController`. A state change becomes a new resource with `create`/`destroy`, not a custom `post :close`.
-- **Nested RESTful resources.** `cards/1/comments/2/reactions`, `boards/1/columns/2/cards`. The URL structure mirrors the domain.
-- **Turbo Stream as a first-class format.** Controllers routinely respond with `format.turbo_stream` and `format.json`, treating server-rendered partial updates as normal.
+**Pagination**
 
-**Code style and conventions**
+- Uses `geared_pagination` with custom scopes: `page_before`, `page_after`, `last_page`. Good for chat-style "load more above/below".
 
-- **Expanded conditionals over guard clauses.** Fizzy’s style guide prefers `if/else` unless the guard is at the very top or the main body is large.
-- **Method ordering by invocation order.** Public methods are ordered so the code reads top-to-bottom. Private methods follow the same rule.
-- **`!` only with a non-bang counterpart.** Don’t mark destructive methods with `!` just because they mutate.
-- **Visibility modifiers indented, no blank line underneath.**
+**Search**
 
-**Testing**
+- `Message::Searchable` maintains a custom SQLite FTS index manually via `after_create_commit`/`after_update_commit`/`after_destroy_commit`. No Elasticsearch, no pgvector.
 
-- Use existing fixtures over creating records in tests.
-- Prefer `_path` helpers unless you need the full URL.
-- Use `assert_in_body` / `assert_not_in_body` instead of `assert_includes response.body`.
-- Omit explicit `{ render }` in `respond_to` when rendering is implied.
+**Other**
 
-**Async work**
+- Web Push via VAPID keys and `web-push` gem.
+- OpenGraph metadata fetching lives in `app/models/opengraph/` with `Fetch`, `Document`, `Location`, `Metadata::Fetching`.
+- Bot webhooks delivered via `deliver_webhook_later`.
 
-- Shallow job classes that delegate to domain models.
-- `_later` methods enqueue jobs; `_now` methods do the synchronous work the job calls.
+## Writebook — book publishing
 
-**Deployment and self-hosting**
+**Delegated types for content shapes**
 
-- All three apps ship as Docker images and support self-hosting via ONCE.
-- Fizzy also documents Kamal deployment.
-- `bin/setup`, `bin/dev`, `bin/ci` are the standard interface.
+- A `Book` has many `Leaf` records. A `Leaf` is a container with position, status, slug.
+- `Leaf` uses `delegated_type :leafable, types: %w[ Page Section Picture ]`. Each leafable type has its own table and logic, but shares ordering/search/status through `Leaf`.
+- The `Leafable` concern gives each type the inverse `has_one :leaf` and delegates `title`.
 
-**Specific tricks worth stealing**
+**Ordering**
 
-- **Writebook’s `Positionable` concern** — gap-based ordering with automatic rebalancing, using parent-level locking.
-- **Campfire’s `Message::Searchable`** — talks directly to a SQLite FTS index instead of adding a search dependency.
-- **Fizzy’s URL-path multi-tenancy** — `/{account_id}/boards/...` with middleware extracting the slug into `Current.account`.
-- **Fizzy’s entropy system** — cards automatically postpone after inactivity so boards don't rot.
+- `Positionable` concern implements gap-based ordering with parent-level locking and automatic rebalancing when gaps get too small.
 
-Good reference material for tightening up how I build Rails apps.
+**Content**
+
+- Markdown-first with `redcarpet` + `rouge` for syntax highlighting, not Action Text.
+- `Page`, `Section`, `Picture` each have their own controller inheriting from `LeafablesController`.
+
+**Auth**
+
+- Join codes for account access. Books can be public or private.
+
+## Fizzy — kanban/issue tracking
+
+**Multi-tenancy**
+
+- URL-path based: `/{account_id}/boards/...`. Middleware `AccountSlug::Extractor` pulls the account slug, moves it from `PATH_INFO` to `SCRIPT_NAME`, and sets `Current.account`.
+- Every model has `account_id`. Background jobs capture and restore `Current.account` automatically.
+
+**Identity model**
+
+- `Identity` is global (email). `User` is per-account membership. One identity can belong to many accounts. This lets a single person log in once and switch accounts.
+
+**Domain**
+
+- `Board` has `Column`s. `Card` has sequential numbers per account and a lifecycle: triage → columns → closed / not_now.
+- `Event` is polymorphic (`eventable`) with JSON `particulars`. Events drive activity timeline, notifications, and webhooks.
+- `Card::Eventable`, `Comment::Eventable`, etc. each include `Eventable` and hook into `track_event`.
+
+**Entropy**
+
+- Cards auto-postpone to "not now" after inactivity. Configurable at account and board level. A recurring Solid Queue job cleans stale cards hourly.
+
+**Jobs**
+
+- Uses Solid Queue (database-backed, no Redis). Shallow job classes delegate to model methods.
+- `_later` methods enqueue, `_now` methods do the synchronous work.
+- Recurring tasks configured in `config/recurring.yml`.
+
+**Search**
+
+- 16-shard MySQL full-text search, sharded by account ID hash. Models in `app/models/search/`.
+
+**IDs**
+
+- UUIDv7 primary keys, base36-encoded as 25-character strings. Fixtures use deterministic older UUIDs so `.first`/`.last` behave predictably in tests.
+
+**Deployment**
+
+- Kamal in production. OSS Docker image plus a private `fizzy-saas` gem for billing.
+
+## Cross-cutting style and conventions
+
+- **Vanilla Rails, rich models.** Controllers stay thin. Models expose intention-revealing methods like `@card.close`, `@board.cards.create!`, `@card.gild`.
+- **REST resources over custom actions.** Closing a card is `Cards::ClosuresController#create`, not `post :close`.
+- **Concerns for behavior slices.** `Card::Commentable`, `Card::Closeable`, `Card::Entropic`, `Message::Searchable`, `User::Mentionable`.
+- **Expanded conditionals over guard clauses.** Guard clauses only at the very top or when the body is large.
+- **Method ordering:** class methods, public methods with `initialize` first, private methods — all ordered by invocation order.
+- **`!` only when there's a non-`!` counterpart.** Not just to signal mutation.
+- **Test conventions:** use fixtures, `_path` helpers, `assert_in_body`, omit explicit `{ render }` in `respond_to`.
+
+## What stands out
+
+These apps don't avoid Rails features — they use delegated types, polymorphic associations, concerns, Action Cable, Turbo, Solid Queue. But they avoid adding architectural layers until the domain demands it. The result is code that reads like the product it builds.
