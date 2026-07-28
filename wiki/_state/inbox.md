@@ -4,6 +4,12 @@ kind: inbox
 
 # Inbox
 
+### anthropic-open-weights-vs-nvidia-letter (2026-07-28)
+
+- **kind:** source
+- **scope:** muhamed.github.io
+- **summary:** Ingested the July 2026 open-weights policy exchange: the Nvidia-hosted industry letter "Open Weights and American AI Leadership" (2026-07-24, ~50 signatories, full text in sources/web/2026-07-28--nvidia-open-weights-american-ai-leadership-letter.md) and Anthropic's response (2026-07-27, sources/web/2026-07-28--anthropic-com-news-position-open-weights-models.md), plus the agent's control-spectrum close reading (sources/conversation/2026-07-28--anthropic-open-weights-vs-nvidia-letter-close-reading.md). Stream card published at files/_stream/who-holds-the-gate-anthropic-vs-the-open-weights-letter.md. Synthesize once the policy fight resolves (Chinese-model ban decision, distillation rules) or if a follow-up piece from either side lands — the open question is whether distillation ends up as contract law or export-control law.
+
 ### pi-brain-package-gallery-milestone (2026-07-27)
 
 - **kind:** source
