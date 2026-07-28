@@ -1,7 +1,7 @@
 ---
 layout: stream-entry
 title: "Jack & Jill AI: a recruitment-agent reference close to the idea"
-source: "sources/web/2026-07-28--www-jackandjill-ai.md"
+source: "https://www.jackandjill.ai/"
 type: note
 date: 2026-07-28
 created_at: 2026-07-28T10:00:00+02:00

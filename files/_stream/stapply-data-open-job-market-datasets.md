@@ -1,7 +1,7 @@
 ---
 layout: stream-entry
 title: "Stapply Data: open job-market datasets across 15 ATS platforms"
-source: "sources/web/2026-07-28--data-stapply-ai.md,sources/repo/2026-07-28--github-com-kalil0321-ats-scrapers.md"
+source: "https://data.stapply.ai/,https://github.com/kalil0321/ats-scrapers"
 type: note
 date: 2026-07-28
 created_at: 2026-07-28T10:30:00+02:00
