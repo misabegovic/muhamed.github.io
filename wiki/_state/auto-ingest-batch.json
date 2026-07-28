@@ -9,6 +9,11 @@
       "source": "https://data.stapply.ai/",
       "targetPath": "sources/web/2026-07-28--data-stapply-ai.md",
       "date": "2026-07-28"
+    },
+    {
+      "source": "https://github.com/kalil0321/ats-scrapers",
+      "targetPath": "sources/repo/2026-07-28--github-com-kalil0321-ats-scrapers.md",
+      "date": "2026-07-28"
     }
   ],
   "createdAt": "2026-07-28"
