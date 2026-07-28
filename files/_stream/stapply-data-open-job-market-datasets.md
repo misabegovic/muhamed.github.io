@@ -20,4 +20,4 @@ Why this matters for the recruitment-agent thread:
 
 The Stapply site is a JS-rendered SPA, so the ingestion only captured its shell and meta description. The GitHub repo fills in the actual scale, architecture, and API surface.
 
-(sources: [Stapply Data](../sources/web/2026-07-28--data-stapply-ai.md), [`kalil0321/ats-scrapers`](../sources/repo/2026-07-28--github-com-kalil0321-ats-scrapers.md))
+(sources: [Stapply Data](https://data.stapply.ai/), [`kalil0321/ats-scrapers`](https://github.com/kalil0321/ats-scrapers))

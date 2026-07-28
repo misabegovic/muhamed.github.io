@@ -30,4 +30,4 @@ Where it differs from the open MCP vision:
 
 Worth watching because it proves the user experience works: 314K+ professionals, introductions that skip applications, and a free-for-candidates model funded by employers. If the open-agent/MCP version of this is going to exist, Jack & Jill shows what the closed version already looks like — and where the seams are.
 
-(source: [sources/web/2026-07-28--www-jackandjill-ai.md](../sources/web/2026-07-28--www-jackandjill-ai.md))
+(source: [jackandjill.ai](https://www.jackandjill.ai/))
