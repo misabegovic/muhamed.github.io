@@ -4,6 +4,11 @@
       "source": "https://www.jackandjill.ai/",
       "targetPath": "sources/web/2026-07-28--www-jackandjill-ai.md",
       "date": "2026-07-28"
+    },
+    {
+      "source": "https://data.stapply.ai/",
+      "targetPath": "sources/web/2026-07-28--data-stapply-ai.md",
+      "date": "2026-07-28"
     }
   ],
   "createdAt": "2026-07-28"
