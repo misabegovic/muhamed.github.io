@@ -14,6 +14,16 @@
       "source": "https://github.com/kalil0321/ats-scrapers",
       "targetPath": "sources/repo/2026-07-28--github-com-kalil0321-ats-scrapers.md",
       "date": "2026-07-28"
+    },
+    {
+      "source": "https://x.com/i/status/2082138839888589200",
+      "targetPath": "sources/web/2026-07-29--x-com-i-status-2082138839888589200.md",
+      "date": "2026-07-29"
+    },
+    {
+      "source": "https://x.com/i/article/2082137754788646912",
+      "targetPath": "sources/web/2026-07-29--x-com-i-article-2082137754788646912.md",
+      "date": "2026-07-29"
     }
   ],
   "createdAt": "2026-07-28"
