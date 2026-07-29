@@ -1,0 +1,85 @@
+[
+  {
+    "at": "2026-07-27T09:42:55.798Z",
+    "target": "/tmp/fizzy",
+    "question": "Deep dive into Fizzy's board/column/card domain, notification system, filter system, import/export architecture, and any permission/access patterns. Read relevant model and controller files.",
+    "files": [
+      "/tmp/fizzy/AGENTS.md",
+      "/tmp/fizzy/Brewfile",
+      "/tmp/fizzy/CONTRIBUTING.md",
+      "/tmp/fizzy/Dockerfile",
+      "/tmp/fizzy/Gemfile",
+      "/tmp/fizzy/Gemfile.lock",
+      "/tmp/fizzy/Gemfile.saas",
+      "/tmp/fizzy/Gemfile.saas.lock",
+      "/tmp/fizzy/LICENSE.md",
+      "/tmp/fizzy/README.md",
+      "/tmp/fizzy/Rakefile",
+      "/tmp/fizzy/STYLE.md",
+      "/tmp/fizzy/app/controllers/activities_controller.rb",
+      "/tmp/fizzy/app/controllers/admin_controller.rb",
+      "/tmp/fizzy/app/controllers/application_controller.rb",
+      "/tmp/fizzy/app/controllers/boards_controller.rb",
+      "/tmp/fizzy/app/controllers/cards_controller.rb",
+      "/tmp/fizzy/app/controllers/client_configurations_controller.rb",
+      "/tmp/fizzy/app/controllers/events_controller.rb",
+      "/tmp/fizzy/app/controllers/filters_controller.rb",
+      "/tmp/fizzy/app/controllers/join_codes_controller.rb",
+      "/tmp/fizzy/app/controllers/landings_controller.rb",
+      "/tmp/fizzy/app/controllers/notifications_controller.rb",
+      "/tmp/fizzy/app/controllers/pwa_controller.rb",
+      "/tmp/fizzy/app/controllers/qr_codes_controller.rb",
+      "/tmp/fizzy/app/controllers/searches_controller.rb",
+      "/tmp/fizzy/app/controllers/sessions_controller.rb",
+      "/tmp/fizzy/app/controllers/signups_controller.rb",
+      "/tmp/fizzy/app/controllers/tags_controller.rb",
+      "/tmp/fizzy/app/controllers/users_controller.rb"
+    ]
+  },
+  {
+    "at": "2026-07-27T09:46:05.096Z",
+    "target": "/tmp/fizzy",
+    "question": "Focus on board/column/card domain model, notification system, filter system, import/export architecture, and permission/access patterns. Extract concrete code patterns, file paths, and design decisions that are reusable for a Rails SaaS.",
+    "files": [
+      "/tmp/fizzy/AGENTS.md",
+      "/tmp/fizzy/Brewfile",
+      "/tmp/fizzy/CONTRIBUTING.md",
+      "/tmp/fizzy/Dockerfile",
+      "/tmp/fizzy/Gemfile",
+      "/tmp/fizzy/Gemfile.lock",
+      "/tmp/fizzy/Gemfile.saas",
+      "/tmp/fizzy/Gemfile.saas.lock",
+      "/tmp/fizzy/LICENSE.md",
+      "/tmp/fizzy/README.md",
+      "/tmp/fizzy/Rakefile",
+      "/tmp/fizzy/STYLE.md",
+      "/tmp/fizzy/app/controllers/activities_controller.rb",
+      "/tmp/fizzy/app/controllers/admin_controller.rb",
+      "/tmp/fizzy/app/controllers/application_controller.rb",
+      "/tmp/fizzy/app/controllers/boards_controller.rb",
+      "/tmp/fizzy/app/controllers/cards_controller.rb",
+      "/tmp/fizzy/app/controllers/client_configurations_controller.rb",
+      "/tmp/fizzy/app/controllers/events_controller.rb",
+      "/tmp/fizzy/app/controllers/filters_controller.rb",
+      "/tmp/fizzy/app/controllers/join_codes_controller.rb",
+      "/tmp/fizzy/app/controllers/landings_controller.rb",
+      "/tmp/fizzy/app/controllers/notifications_controller.rb",
+      "/tmp/fizzy/app/controllers/pwa_controller.rb",
+      "/tmp/fizzy/app/controllers/qr_codes_controller.rb",
+      "/tmp/fizzy/app/controllers/searches_controller.rb",
+      "/tmp/fizzy/app/controllers/sessions_controller.rb",
+      "/tmp/fizzy/app/controllers/signups_controller.rb",
+      "/tmp/fizzy/app/controllers/tags_controller.rb",
+      "/tmp/fizzy/app/controllers/users_controller.rb"
+    ]
+  }
+]s_helper.rb",
+      "/tmp/writebook/app/helpers/sections_helper.rb"
+    ]
+  }
+]     "/tmp/once-campfire/app/helpers/accounts_helper.rb",
+      "/tmp/once-campfire/app/helpers/application_helper.rb",
+      "/tmp/once-campfire/app/helpers/broadcasts_helper.rb"
+    ]
+  }
+]

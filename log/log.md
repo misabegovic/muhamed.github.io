@@ -1,0 +1,37 @@
+# Log
+
+- 2026-07-22T12:41:01.672Z — converted repo into pi-brain clone; project code moved to `files/`
+- 2026-07-22T12:41:25.000Z — enabled auto_connect in brain.config.yml and turned autonomy ON
+- 2026-07-22T12:44:00.000Z — added GitHub Actions workflow to deploy Jekyll site from files/; created root README.md explaining layout
+- 2026-07-22T13:06:36Z — workflow failed: nokogiri 1.15.5 binary incompatible with Ruby 3.3; pinned workflow to Ruby 3.2
+- 2026-07-22T13:19:51Z — resolved muhamed.at outage: configured custom domain muhamed.at in GitHub Pages settings, excluded vendor/ in files/_config.yml, aligned url/enforce_ssl to https://muhamed.at; site returns HTTP 200
+- 2026-07-23T09:56:00Z — synced latest upstream pi-brain updates into AGENTS.md: added autonomy-mode section, expanded PR conventions, added repo conversion to structural-change examples; snapshotted upstream sources in sources/upstream/
+- 2026-07-23T10:00:00Z — backfilled missing upstream pi-brain files: added tools/, skills/, personas/, prompts/, themes/, extensions/, tests/, package.json, .env.example, GETTING_STARTED.md, .github/pull_request_template.md, .github/workflows/validate.yml, sources/brain/, sources/repos/, wiki/brain/; snapshotted upstream brain.config.yml, .gitignore, README.md, and sources/README.md
+- 2026-07-23T11:23:00Z — implemented production brain-card home page: replaced / with card stream, created /writing/ for posts, added /brain.xml feed, removed all prototype routes
+- 2026-07-23T11:35:00Z — added Load more pagination to home page, tags on existing posts, updated About page
+- 2026-07-23T11:47:00Z — fixed /brain-cards/ back link to /, removed sample stream entries, added empty-state message
+- 2026-07-23T11:50:00Z — added AI-assisted disclaimer to home page and human-written note to /writing/
+- 2026-07-23T11:55:00Z — updated site description and career timeline: Teamtailor since April 2025, Carv ended April 2025, self-employed since 2024
+- 2026-07-23T12:05:00Z — deployed brain-card home page to muhamed.at via GitHub Actions run 29998234763; live site verified
+- 2026-07-23T12:20:00Z — added brain.xml feed link to footer; deployed via GitHub Actions run 29998410600
+- 2026-07-23T12:20:00Z — implemented unified tag filtering and search; removed /search/ page
+- 2026-07-23T12:25:00Z — deployed unified tag filtering and search via GitHub Actions run 29998923568
+- 2026-07-23T12:33:00Z — implemented multi-tag filtering and /tags/ explorer page
+- 2026-07-23T12:40:00Z — deployed multi-tag filtering and tag explorer via GitHub Actions run 29999781279
+- 2026-07-23T13:23:00Z — refined tag filtering to single search input with #tag tokens
+- 2026-07-23T13:30:00Z — deployed #tag search refinement via GitHub Actions run 30002976732
+- 2026-07-23T13:35:00Z — synced clone with upstream pi-brain v0.2.0
+- 2026-07-23T13:40:00Z — pushed upstream sync; site deployment verified via run 30003733014
+- 2026-07-25T21:40:00Z — ingested recruitment-agents idea (agent-to-agent hiring, candidate-facing MCP) into sources/conversation/; published stream card recruitment-agents-talk-it-out-first; queued synthesis in inbox
+- 2026-07-25T22:00:00Z — ingested Ruby-vs-Go thoughts (is Ruby dead, cathedrals in Go, Rails-to-Go rebuild experiment for chat infrastructure) into sources/conversation/; published stream card is-ruby-dead-cathedrals-in-go; queued synthesis in inbox
+- 2026-07-25T22:05:00Z — ingested @dodoreach's Pi web UI one-shot prompt (shape-your-own-tools philosophy, codex-style Pi dashboard over Tailscale Serve; note to self to build one) into sources/conversation/; published stream card shape-your-own-tools-pi-web-ui-prompt; queued synthesis in inbox
+- 2026-07-25T22:15:00Z — ingested monotykamary.com article "I gave Pi one tool" (pi-fabric: single fabric_exec code-mode tool for Pi, QuickJS sandbox, self-built runtime) into sources/web/ as reading-queue item; published stream card i-gave-pi-one-tool; queued synthesis in inbox
+- 2026-07-25T22:30:00Z — folded 'learn how Pi is built to evolve pi-brain and validate the idea' note-to-self into stream card i-gave-pi-one-tool; queued research task in inbox with pi.dev docs starting points
+- 2026-07-27: Migrated clone to package-resolved resources.
+- 2026-07-27T16:30:00Z — ingested pi.dev package gallery page for @misabegovic/pi-brain (v0.3.2, 257 downloads/month) into sources/web/; published stream card pi-brain-in-the-pi-package-gallery; queued synthesis in inbox
+- 2026-07-27T18:20:00Z — fixed validate workflow broken by v0.3.0 migration: run brain-sync from @misabegovic/pi-brain@0.3.2 npm package instead of deleted tools/; ADR fix-validate-workflow-package-resolved-brain-sync accepted
+- 2026-07-27T18:55:00Z — tempered pi-brain gallery stream card: 257 downloads in four days is registry mirrors/scanners, not adoption; updated inbox item to gate synthesis on a real adoption signal
+- 2026-07-28T12:00:00Z — ingested Anthropic's open-weights position piece (2026-07-27) and the Nvidia-hosted "Open Weights and American AI Leadership" letter (2026-07-24, full PDF text) into sources/web/; captured the two-part close reading (control-spectrum lens) into sources/conversation/; published stream card who-holds-the-gate-anthropic-vs-the-open-weights-letter; queued synthesis in inbox
+- 2026-07-29T10:00:00Z — ingested Paul Battley's po-ru.com piece "It doesn't matter whether Matz is nice" (MINASWAN as projection; DHH's far-right turn; Shopify/Lütke control over Ruby Central and RubyGems) into sources/web/; published stream card it-doesnt-matter-whether-matz-is-nice; queued synthesis in inbox
+- 2026-07-29T20:00:00Z — ingested "Pacing the Frontier" statement (1,268 frontier-lab employees asking for deliberate pacing of automated AI R&D) and Codeberg's "Protecting our FLOSS commons from LLMs" (no LLM training on hosted data; ToU change discouraging vibe-coded projects) into sources/web/; published stream card claude-as-contributor-what-are-we-doing tracking the Claude-as-Ruby-contributor thread; queued synthesis in inbox
+- 2026-07-29T22:30:00Z — merged the two 2026-07-29 stream cards (it-doesnt-matter-whether-matz-is-nice + claude-as-contributor-what-are-we-doing) into a single card; removed the identifying reference to the friend building cathedrals in Go

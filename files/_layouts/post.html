@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="post detailed">
+  <h1>{{ page.title }}</h1>
+
+  <div>
+    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+    {% if page.last_modified_at %}
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    {% endif %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+        <a href="/writing/?tag={{ tag | url_encode }}">{{ tag }}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+    
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div>
+    <p><span class="share-box">Share:</span> <a href="https://x.com/intent/tweet?text={{ page.title | url_encode }}&url={{site.url}}{{page.url}}" target="_blank">X</a>, <a href="https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}" target="_blank">LinkedIn</a></p>
+  </div>
+
+  <!--<div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>-->
+
+  {% include disqus.html %}
+</article>

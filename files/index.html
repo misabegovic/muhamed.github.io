@@ -1,0 +1,188 @@
+---
+layout: default
+---
+
+<style>
+.brain-home { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+.brain-home h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.brain-home .subtitle { color: #666; margin-bottom: 0.8rem; }
+.brain-home .disclaimer { font-size: 0.9rem; color: #777; line-height: 1.5; margin-bottom: 1.5rem; max-width: 640px; }
+.brain-home .disclaimer a { color: #555; }
+.brain-home .controls { margin-bottom: 1.5rem; }
+.brain-home input { width: 100%; max-width: 500px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+.brain-home .search-hint { font-size: 0.8rem; color: #888; margin-top: 0.4rem; }
+.brain-home .clear-filters { display: inline-block; margin-left: 0.5rem; font-size: 0.85rem; color: #666; cursor: pointer; }
+.brain-home .clear-filters:hover { text-decoration: underline; }
+.brain-home .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
+.brain-home .card { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2rem; background: #fff; transition: box-shadow 0.15s; text-decoration: none; color: inherit; display: block; }
+.brain-home .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.brain-home .card-link { text-decoration: none; color: inherit; display: block; }
+.brain-home .card-type { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 0.5rem; }
+.brain-home .card-title { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.4rem; line-height: 1.3; color: #333; }
+.brain-home .card-source { font-size: 0.85rem; color: #666; margin-bottom: 0.8rem; }
+.brain-home .card-note { font-size: 0.95rem; color: #444; line-height: 1.45; margin-bottom: 1rem; }
+.brain-home .card-meta { font-size: 0.8rem; color: #888; display: flex; justify-content: space-between; align-items: center; }
+.brain-home .tag { display: inline-block; font-size: 0.7rem; color: #555; background: #f4f4f4; padding: 0.15rem 0.5rem; border-radius: 3px; margin-right: 0.3rem; cursor: pointer; text-decoration: none; }
+.brain-home .tag:hover { background: #e8e8e8; }
+.brain-home .tag.active { background: #333; color: #fff; }
+.brain-home .hidden { display: none; }
+.brain-home .page-hidden { display: none; }
+.brain-home .empty-state { text-align: center; color: #666; padding: 3rem 1rem; }
+.brain-home .empty-state a { color: #333; }
+.brain-home .load-more-wrap { text-align: center; margin-top: 2rem; }
+.brain-home .load-more { padding: 0.6rem 1.4rem; font-size: 0.95rem; border: 1px solid #333; background: #fff; color: #333; border-radius: 4px; cursor: pointer; }
+.brain-home .load-more:hover { background: #333; color: #fff; }
+</style>
+
+<div class="brain-home">
+  <h1>Peek into my brain</h1>
+  <p class="subtitle">A card-based browse through what I'm reading, watching, and thinking about.</p>
+  <p class="disclaimer">These entries are raw signals I drop into my brain — articles, books, quotes, half-formed notes — and an AI helps me organize, tag, and present them here. For longer human-written pieces, see <a href="/writing/">Writing</a>.</p>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search or type #tag to filter...">
+    <span id="clear-filters" class="clear-filters hidden">Clear filters</span>
+    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
+  </div>
+
+  <div class="grid" id="cards">
+    {% assign sorted = site.stream | sort: 'created_at' | reverse %}
+    {% for entry in sorted %}
+    {% unless entry.hidden_until and entry.hidden_until > site.time %}
+    <div class="card" data-text="{{ entry.title | downcase }} {{ entry.source | downcase }} {{ entry.excerpt | strip_html | downcase }}" data-tags="{{ entry.tags | join: ',' }}">
+      <a class="card-link" href="{{ entry.url }}">
+        <div class="card-type">{{ entry.type }}</div>
+        <h2 class="card-title">{{ entry.title }}</h2>
+        <div class="card-source">{{ entry.source }}</div>
+        <p class="card-note">{{ entry.excerpt | strip_html | truncatewords: 24 }}</p>
+      </a>
+      <div class="card-meta">
+        <span class="tags">{% for tag in entry.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button">{{ tag }}</span>{% endfor %}</span>
+        <span>{{ entry.date | date: "%Y-%m-%d" }}</span>
+      </div>
+    </div>
+    {% endunless %}
+    {% endfor %}
+  </div>
+
+  {% if sorted.size == 0 %}
+  <div class="empty-state">
+    <p>Nothing here yet. Check back soon, or browse the <a href="/writing/">writing</a> page.</p>
+  </div>
+  {% endif %}
+
+  <div class="load-more-wrap">
+    <button id="load-more" class="load-more">Load more</button>
+  </div>
+</div>
+
+<script>
+const search = document.getElementById('search');
+const clearFilters = document.getElementById('clear-filters');
+const cards = Array.from(document.querySelectorAll('.card'));
+const loadMoreBtn = document.getElementById('load-more');
+const PAGE_SIZE = 6;
+let visibleCount = PAGE_SIZE;
+
+function parseQuery(input) {
+  const tokens = input.trim().split(/\s+/).filter(Boolean);
+  const tags = tokens.filter(t => t.startsWith('#')).map(t => t.slice(1).toLowerCase());
+  const textTokens = tokens.filter(t => !t.startsWith('#'));
+  return { tags, text: textTokens.join(' ').toLowerCase() };
+}
+
+function buildInput(tags, text) {
+  const parts = [];
+  if (text) parts.push(text);
+  tags.forEach(t => parts.push('#' + t));
+  return parts.join(' ');
+}
+
+function setUrlParams(tags, text) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete('tag');
+  tags.forEach(t => url.searchParams.append('tag', t));
+  if (text) {
+    url.searchParams.set('q', text);
+  } else {
+    url.searchParams.delete('q');
+  }
+  window.history.replaceState({}, '', url);
+}
+
+function updateTagHighlights(tags) {
+  document.querySelectorAll('.card .tag').forEach(tagEl => {
+    tagEl.classList.toggle('active', tags.includes(tagEl.dataset.tag.toLowerCase()));
+  });
+}
+
+function updateVisibility() {
+  const { tags, text } = parseQuery(search.value);
+  let matched = 0;
+  cards.forEach(c => {
+    const textMatch = !text || c.dataset.text.includes(text);
+    const cardTags = c.dataset.tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
+    const tagMatch = tags.length === 0 || tags.some(t => cardTags.includes(t));
+    const matches = textMatch && tagMatch;
+    c.classList.toggle('hidden', !matches);
+    if (matches) {
+      matched++;
+      c.classList.toggle('page-hidden', matched > visibleCount);
+    }
+  });
+  const anyHidden = cards.some(c => !c.classList.contains('hidden') && c.classList.contains('page-hidden'));
+  loadMoreBtn.style.display = (anyHidden ? 'inline-block' : 'none');
+  clearFilters.classList.toggle('hidden', !search.value);
+  updateTagHighlights(tags);
+}
+
+function toggleTag(tag) {
+  const { tags, text } = parseQuery(search.value);
+  const lowerTag = tag.toLowerCase();
+  const newTags = tags.includes(lowerTag) ? tags.filter(t => t !== lowerTag) : [...tags, lowerTag];
+  search.value = buildInput(newTags, text);
+  setUrlParams(newTags, text);
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
+}
+
+search.addEventListener('input', () => {
+  const { tags, text } = parseQuery(search.value);
+  setUrlParams(tags, text);
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
+});
+
+clearFilters.addEventListener('click', () => {
+  search.value = '';
+  setUrlParams([], '');
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
+});
+
+document.querySelectorAll('.card .tag').forEach(tagEl => {
+  tagEl.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleTag(tagEl.dataset.tag);
+  });
+  tagEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleTag(tagEl.dataset.tag);
+    }
+  });
+});
+
+loadMoreBtn.addEventListener('click', () => {
+  visibleCount += PAGE_SIZE;
+  updateVisibility();
+});
+
+const urlParams = new URLSearchParams(window.location.search);
+const initialTags = urlParams.getAll('tag');
+const initialText = urlParams.get('q') || '';
+search.value = buildInput(initialTags, initialText);
+
+updateVisibility();
+</script>
