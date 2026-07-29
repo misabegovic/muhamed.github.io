@@ -13,7 +13,7 @@ tags: [ruby, rails, community, governance, dhh, shopify, open-source]
 
 The case he lays out: DHH has moved from early-days abrasiveness to openly far-right writing — calling for "remigration," comparing Roma people to wolves that get shot, years of anti-DEI and anti-trans rhetoric — while remaining dictator-for-life of Rails, with pieces like [Rails Needs New Governance](https://davidcel.is/articles/rails-needs-new-governance) and [The Ruby community has a DHH problem](https://tekin.co.uk/2025/09/the-ruby-community-has-a-dhh-problem) already on the record. Tobias Lütke's Shopify employs five of the top ten human Ruby contributors, is Ruby Central's largest sponsor, and pushed the takeover of RubyGems; Lütke gave DHH a Shopify board seat well after the turn, and the company shut down its Indigenous- and Black-entrepreneur programmes right after Trump's re-election. Paul hopes [the move to fork Rails](https://mastodon.me.uk/@Floppy/116997766777309382) succeeds but doubts it's sufficient "while Ruby as a whole is substantially controlled by the same people."
 
-My own take: on DHH, unfortunately, I think I have to agree. And on Matz — I can only confirm he is nice, even though he himself would say not always.
+My own take: on DHH, unfortunately, I think I have to agree. I enjoyed his technical content and could respect what he did with Rails — but his political views and the personal content he writes just make me dislike him, and want to distance myself from him and his framework long-term. And on Matz — I can only confirm he is nice, even though he himself would say not always.
 
 His closing line cuts deepest: the second most prolific contributor to Ruby itself in the last six months is Claude. "Is this even worth salvaging?"
 
