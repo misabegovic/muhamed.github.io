@@ -39,6 +39,11 @@
       "source": "https://raw.githubusercontent.com/misabegovic/pi-brain/main/CHANGELOG.md",
       "targetPath": "sources/doc/2026-08-03--raw-githubusercontent-com-misabegovic-pi-brain-main-changelog-md.md",
       "date": "2026-08-03"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/misabegovic/pi-brain/main/skills/brain-enola/SKILL.md",
+      "targetPath": "sources/doc/2026-08-03--raw-githubusercontent-com-misabegovic-pi-brain-main-skills-brain.md",
+      "date": "2026-08-03"
     }
   ],
   "createdAt": "2026-07-28"
