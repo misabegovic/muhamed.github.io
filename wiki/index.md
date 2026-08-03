@@ -63,6 +63,9 @@ This is the synthesis layer for this pi-brain instance.
 - [✅ Restore custom content in org state/roadmap/options pages](muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)
 - [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
+- [Add the remaining low-confidence cross-links](muhamed.github.io/ai-suggestions/refinement/add-remaining-link-suggestions.md)
+- [Create an index for the resolved-suggestions archive](muhamed.github.io/ai-suggestions/refinement/create-archive-index.md)
+- [Create state/roadmap/options pages for the muhamed.github.io scope](muhamed.github.io/ai-suggestions/refinement/create-muhamed-github-io-state-pages.md)
 
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
