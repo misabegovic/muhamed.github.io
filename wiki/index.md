@@ -11,67 +11,67 @@ This is the synthesis layer for this pi-brain instance.
 ## Pages
 
 ### decision
-- [ADR — Smarter autonomy boundaries](wiki/brain/adrs/smarter-autonomy.md)
-- [ADR — Stronger default guardrails against eager implementation](wiki/brain/adrs/stronger-default-implementation-guardrails.md)
-- [ADR — Upstream template sync mechanism](wiki/brain/adrs/upstream-template-sync.md)
-- [Backfill missing upstream pi-brain files](wiki/muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files.md)
-- [Convert repo to pi-brain clone and deploy site via GitHub Actions](wiki/muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
-- [Fix validate workflow to run package-resolved brain-sync (pinned to 0.3.2)](wiki/muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync.md)
-- [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
-- [Make the brain-card stream the home page](wiki/muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
-- [Sync latest upstream pi-brain changes (v0.2.0)](wiki/muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
-- [Sync latest upstream pi-brain updates](wiki/muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
-- [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
-- [Update pi-brain to v0.4.0 in this hybrid clone](wiki/muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
+- [ADR — Smarter autonomy boundaries](brain/adrs/smarter-autonomy.md)
+- [ADR — Stronger default guardrails against eager implementation](brain/adrs/stronger-default-implementation-guardrails.md)
+- [ADR — Upstream template sync mechanism](brain/adrs/upstream-template-sync.md)
+- [Backfill missing upstream pi-brain files](muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files.md)
+- [Convert repo to pi-brain clone and deploy site via GitHub Actions](muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
+- [Fix validate workflow to run package-resolved brain-sync (pinned to 0.3.2)](muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync.md)
+- [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
+- [Make the brain-card stream the home page](muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
+- [Sync latest upstream pi-brain changes (v0.2.0)](muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
+- [Sync latest upstream pi-brain updates](muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
+- [Sync clone with upstream pi-brain guardrails](muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
+- [Update pi-brain to v0.4.0 in this hybrid clone](muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 
 ### bet
-- [Bet — Smarter autonomy for pi-brain clones](wiki/brain/bets/smarter-autonomy.md)
-- [Bet — Build `/brain:update` for safe upstream template sync](wiki/brain/bets/upstream-template-sync.md)
+- [Bet — Smarter autonomy for pi-brain clones](brain/bets/smarter-autonomy.md)
+- [Bet — Build `/brain:update` for safe upstream template sync](brain/bets/upstream-template-sync.md)
 
 ### constraint
-- [Constraint — ADR before structural changes](wiki/brain/constraints/adr-before-structural-changes.md)
-- [Constraint — ADR before structural changes](wiki/muhamed.github.io/constraints/adr-before-structural-changes.md)
+- [Constraint — ADR before structural changes](brain/constraints/adr-before-structural-changes.md)
+- [Constraint — ADR before structural changes](muhamed.github.io/constraints/adr-before-structural-changes.md)
 
 ### feedback
-- [Feedback — Agent implemented structural changes before ADR approval](wiki/brain/feedback/eager-implementation-contract-breach.md)
+- [Feedback — Agent implemented structural changes before ADR approval](brain/feedback/eager-implementation-contract-breach.md)
 
 ### pitch
-- [Upstream template sync for pi-brain clones](wiki/brain/pitches/upstream-template-sync.md)
+- [Upstream template sync for pi-brain clones](brain/pitches/upstream-template-sync.md)
 
 ### initiative
-- [PRD — Smarter autonomy for pi-brain clones](wiki/brain/prds/smarter-autonomy.md)
-- [PRD — Upstream template sync for pi-brain clones](wiki/brain/prds/upstream-template-sync.md)
+- [PRD — Smarter autonomy for pi-brain clones](brain/prds/smarter-autonomy.md)
+- [PRD — Upstream template sync for pi-brain clones](brain/prds/upstream-template-sync.md)
 
 ### record
-- [Record — Plain-language shape requests default to forward mode](wiki/brain/records/plain-language-triggers-shape.md)
-- [Record — Smarter autonomy for pi-brain clones](wiki/brain/records/smarter-autonomy.md)
-- [Record — Stronger default guardrails against eager implementation](wiki/brain/records/stronger-default-implementation-guardrails.md)
-- [Record — Upstream template sync](wiki/brain/records/upstream-template-sync.md)
-- [Record — pi-brain v0.2.0 release](wiki/brain/records/version-0-2-0.md)
+- [Record — Plain-language shape requests default to forward mode](brain/records/plain-language-triggers-shape.md)
+- [Record — Smarter autonomy for pi-brain clones](brain/records/smarter-autonomy.md)
+- [Record — Stronger default guardrails against eager implementation](brain/records/stronger-default-implementation-guardrails.md)
+- [Record — Upstream template sync](brain/records/upstream-template-sync.md)
+- [Record — pi-brain v0.2.0 release](brain/records/version-0-2-0.md)
 
 ### meta
-- [pi-brain home](wiki/index.md)
+- [pi-brain home](index.md)
 
 ### rfc
-- [RFC — Design directions for a public "brain stream" on muhamed.at](wiki/muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
-- [> ⚠️ AI-suggested draft. This is not an approved RFC. Review, edit, and graduate it before treating it as a project decision.](wiki/muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md)
+- [RFC — Design directions for a public "brain stream" on muhamed.at](muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
+- [> ⚠️ AI-suggested draft. This is not an approved RFC. Review, edit, and graduate it before treating it as a project decision.](muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md)
 
 ### note
-- [Auto-ingest batch 2026-07-23 — synthesis](wiki/muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md)
-- [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](wiki/muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
+- [Auto-ingest batch 2026-07-23 — synthesis](muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md)
+- [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
 
 ### prd
-- [PRD — Multi-tag filtering and tag explorer](wiki/muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md)
-- [PRD — Unified tag filtering and search](wiki/muhamed.github.io/prds/unified-tag-filtering-and-search.md)
+- [PRD — Multi-tag filtering and tag explorer](muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md)
+- [PRD — Unified tag filtering and search](muhamed.github.io/prds/unified-tag-filtering-and-search.md)
 
 ### options
-- [Options — org](wiki/org/options.md)
+- [Options — org](org/options.md)
 
 ### roadmap
-- [Roadmap — org](wiki/org/roadmap.md)
+- [Roadmap — org](org/roadmap.md)
 
 ### state
-- [State — org](wiki/org/state.md)
+- [State — org](org/state.md)
 
 ## Getting started
 

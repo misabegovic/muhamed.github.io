@@ -1,6 +1,6 @@
 ---
 kind: decision
-status: proposed
+status: accepted
 confidence: low
 sources:
   - sources/doc/2026-08-03--raw-githubusercontent-com-misabegovic-pi-brain-main-changelog-md.md
