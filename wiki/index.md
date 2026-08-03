@@ -75,6 +75,9 @@ This is the synthesis layer for this pi-brain instance.
 - [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
 - [Update log/log.md with recent work](muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md)
 - [Update v0.4.0 ADR and record to reflect enabled Enola](muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled.md)
+- [Batch-add the remaining natural cross-links](muhamed.github.io/ai-suggestions/refinement/batch-add-remaining-cross-links.md)
+- [Link the resolved-suggestions archive from the brain home](muhamed.github.io/ai-suggestions/refinement/link-archive-index-from-home.md)
+- [Schedule periodic refinement instead of continuous micro-linking](muhamed.github.io/ai-suggestions/refinement/schedule-periodic-refinement.md)
 
 ### note
 - [Resolved AI-suggestions archive](muhamed.github.io/ai-suggestions/_archive/index.md)
