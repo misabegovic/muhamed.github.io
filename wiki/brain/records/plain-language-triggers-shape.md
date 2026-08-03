@@ -2,10 +2,9 @@
 kind: record
 status: current
 confidence: high
-decided_by: wiki/brain/adrs/plain-language-triggers-shape.md
 implemented_in:
-  - skills/brain/SKILL.md
-  - skills/brain-shape/SKILL.md
+  - https://github.com/misabegovic/pi-brain/blob/main/skills/brain/SKILL.md
+  - https://github.com/misabegovic/pi-brain/blob/main/skills/brain-shape/SKILL.md
 ---
 
 # Record — Plain-language shape requests default to forward mode
@@ -24,8 +23,8 @@ The current, approved behavior for how the agent handles plain-language requests
 
 ## Origin
 
-- Decision: [ADR — Plain-language shape requests default to forward mode](../adrs/plain-language-triggers-shape.md)
-- Commitment: [Bet — Plain-language shape requests default to forward mode](../bets/plain-language-triggers-shape.md)
+- Decision: ADR — Plain-language shape requests default to forward mode (upstream pi-brain template)
+- Commitment: Bet — Plain-language shape requests default to forward mode (upstream pi-brain template)
 
 ## Implementation
 
@@ -34,5 +33,5 @@ The current, approved behavior for how the agent handles plain-language requests
 
 ## Related
 
-- [skills/brain/SKILL.md](../../../../skills/brain/SKILL.md)
-- [skills/brain-shape/SKILL.md](../../../../skills/brain-shape/SKILL.md)
+- [skills/brain/SKILL.md](https://github.com/misabegovic/pi-brain/blob/main/skills/brain/SKILL.md)
+- [skills/brain-shape/SKILL.md](https://github.com/misabegovic/pi-brain/blob/main/skills/brain-shape/SKILL.md)

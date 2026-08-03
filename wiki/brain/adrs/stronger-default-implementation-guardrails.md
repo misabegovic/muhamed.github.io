@@ -40,11 +40,11 @@ The default constraint applies to the brain home and to any repo the brain maint
 
 ## Related
 
-- [sources/brain/feedback/eager-implementation-session-snippet.md](../../../../sources/brain/feedback/eager-implementation-session-snippet.md)
-- [wiki/brain/feedback/eager-implementation-contract-breach.md](../../feedback/eager-implementation-contract-breach.md)
-- [wiki/brain/constraints/adr-before-structural-changes.md](../../constraints/adr-before-structural-changes.md)
-- [AGENTS.md](../../../../AGENTS.md)
-- [skills/brain/SKILL.md](../../../../skills/brain/SKILL.md)
-- [skills/brain-shape/SKILL.md](../../../../skills/brain-shape/SKILL.md)
-- [skills/brain-setup/SKILL.md](../../../../skills/brain-setup/SKILL.md)
-- [prompts/brain-home.md](../../../../prompts/brain-home.md)
+- [sources/brain/feedback/eager-implementation-session-snippet.md](https://github.com/misabegovic/pi-brain/blob/main/sources/brain/feedback/eager-implementation-session-snippet.md)
+- [wiki/brain/feedback/eager-implementation-contract-breach.md](../feedback/eager-implementation-contract-breach.md)
+- [wiki/brain/constraints/adr-before-structural-changes.md](../constraints/adr-before-structural-changes.md)
+- [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)
+- [skills/brain/SKILL.md](https://github.com/misabegovic/pi-brain/blob/main/skills/brain/SKILL.md)
+- [skills/brain-shape/SKILL.md](https://github.com/misabegovic/pi-brain/blob/main/skills/brain-shape/SKILL.md)
+- [skills/brain-setup/SKILL.md](https://github.com/misabegovic/pi-brain/blob/main/skills/brain-setup/SKILL.md)
+- [prompts/brain-home.md](https://github.com/misabegovic/pi-brain/blob/main/prompts/brain-home.md)

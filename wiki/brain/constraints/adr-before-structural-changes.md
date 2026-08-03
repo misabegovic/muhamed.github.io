@@ -37,4 +37,4 @@ pi-brain is a contract-first knowledge base. If the agent implements structural 
 ## Related
 
 - [wiki/brain/adrs/stronger-default-implementation-guardrails.md](../adrs/stronger-default-implementation-guardrails.md)
-- [AGENTS.md](../../../../AGENTS.md)
+- [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)

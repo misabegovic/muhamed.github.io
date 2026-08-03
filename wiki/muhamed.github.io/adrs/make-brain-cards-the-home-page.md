@@ -77,5 +77,5 @@ None remaining.
 
 ## Related
 
-- [RFC: Design directions for muhamed.at sharing section](../rfcs/muhamed-at-sharing-section-design.md)
+- [RFC: Design directions for muhamed.at sharing section](../ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../adrs/convert-repo-to-pi-brain-actions.md)

@@ -38,7 +38,7 @@ Apply the upstream guardrails to this clone:
 
 ## Related
 
-- [AGENTS.md](../../../../AGENTS.md)
+- [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)
 - [Constraint: ADR before structural changes](../constraints/adr-before-structural-changes.md)
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](convert-repo-to-pi-brain-actions.md)
 - [State — muhamed.github.io](../../org/state.md)
