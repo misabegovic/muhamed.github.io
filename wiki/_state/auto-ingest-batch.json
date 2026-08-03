@@ -24,6 +24,21 @@
       "source": "https://x.com/i/article/2082137754788646912",
       "targetPath": "sources/web/2026-07-29--x-com-i-article-2082137754788646912.md",
       "date": "2026-07-29"
+    },
+    {
+      "source": "https://www.npmjs.com/package/@misabegovic/pi-brain",
+      "targetPath": "sources/web/2026-08-03--www-npmjs-com-package-misabegovic-pi-brain.md",
+      "date": "2026-08-03"
+    },
+    {
+      "source": "https://github.com/misabegovic/pi-brain",
+      "targetPath": "sources/repo/2026-08-03--github-com-misabegovic-pi-brain.md",
+      "date": "2026-08-03"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/misabegovic/pi-brain/main/CHANGELOG.md",
+      "targetPath": "sources/doc/2026-08-03--raw-githubusercontent-com-misabegovic-pi-brain-main-changelog-md.md",
+      "date": "2026-08-03"
     }
   ],
   "createdAt": "2026-07-28"

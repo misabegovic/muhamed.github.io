@@ -22,6 +22,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Sync latest upstream pi-brain changes (v0.2.0)](wiki/muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
 - [Sync latest upstream pi-brain updates](wiki/muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
+- [Update pi-brain to v0.4.0 in this hybrid clone](wiki/muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 
 ### bet
 - [Bet — Smarter autonomy for pi-brain clones](wiki/brain/bets/smarter-autonomy.md)
