@@ -79,3 +79,4 @@ None remaining.
 
 - [RFC: Design directions for muhamed.at sharing section](../ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../adrs/convert-repo-to-pi-brain-actions.md)
+- [ADR: Sync clone with upstream pi-brain guardrails](sync-upstream-pi-brain-guardrails.md)
