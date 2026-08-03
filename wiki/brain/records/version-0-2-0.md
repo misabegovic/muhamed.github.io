@@ -2,7 +2,6 @@
 kind: record
 status: current
 confidence: high
-decided_by: wiki/brain/adrs/versioning-and-releases.md
 implemented_in:
   - https://github.com/misabegovic/pi-brain/releases/tag/v0.2.0
 ---
@@ -29,12 +28,12 @@ The current state of the pi-brain v0.2.0 release.
 
 ## Origin
 
-- Decision: [ADR — Versioning and release strategy](../adrs/versioning-and-releases.md)
-- Commitment: [Bet — Cut pi-brain v0.1.0](../bets/version-0-1-0.md)
+- Decision: ADR — Versioning and release strategy (upstream pi-brain template)
+- Commitment: Bet — Cut pi-brain v0.1.0 (upstream pi-brain template)
 
 ## Related
 
 - [Record — Upstream template sync](upstream-template-sync.md)
 - [Record — Plain-language shape requests default to forward mode](plain-language-triggers-shape.md)
 - [Record — Smarter autonomy for pi-brain clones](smarter-autonomy.md)
-- [Record — brain-state preserves custom content](brain-state-preserves-custom-content.md)
+- Record — brain-state preserves custom content (upstream pi-brain template)

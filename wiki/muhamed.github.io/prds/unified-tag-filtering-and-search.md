@@ -95,4 +95,4 @@ Make tags and search work consistently across Brain and Writing:
 ## Related
 
 - [ADR: Make the brain-card stream the home page](../adrs/make-brain-cards-the-home-page.md)
-- [State — muhamed.github.io](../../../org/state.md)
+- [State — muhamed.github.io](../../org/state.md)

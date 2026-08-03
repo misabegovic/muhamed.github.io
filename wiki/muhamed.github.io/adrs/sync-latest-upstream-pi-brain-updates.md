@@ -53,4 +53,4 @@ Adopt the following upstream updates, adapted to this clone:
 
 - [ADR: Sync clone with upstream pi-brain guardrails](../adrs/sync-upstream-pi-brain-guardrails.md)
 - [Constraint: ADR before structural changes](../constraints/adr-before-structural-changes.md)
-- [AGENTS.md](../../../../AGENTS.md)
+- [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)

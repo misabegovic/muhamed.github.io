@@ -52,7 +52,7 @@ This ADR was written after the implementation was already pushed. Future structu
 
 - [State — muhamed.github.io](../../org/state.md)
 - [Roadmap — muhamed.github.io](../../org/roadmap.md)
-- [pi-brain home](../../../index.md)
+- [pi-brain home](../../index.md)
 - `files/README.md`
 - `.github/workflows/pages.yml`
 - `brain.config.yml`

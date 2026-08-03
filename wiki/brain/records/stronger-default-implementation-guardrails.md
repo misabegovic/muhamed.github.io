@@ -47,4 +47,4 @@ The current, approved state of the guardrails that prevent agents from implement
 
 ## Related
 
-- [sources/brain/feedback/eager-implementation-session-snippet.md](../../../../sources/brain/feedback/eager-implementation-session-snippet.md)
+- [sources/brain/feedback/eager-implementation-session-snippet.md](https://github.com/misabegovic/pi-brain/blob/main/sources/brain/feedback/eager-implementation-session-snippet.md)

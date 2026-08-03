@@ -65,4 +65,4 @@ Pull the latest upstream changes into this clone, adapting them for the `muhamed
 
 - [ADR: Backfill missing upstream pi-brain files](../adrs/backfill-missing-upstream-pi-brain-files.md)
 - [ADR: Sync latest upstream pi-brain updates](../adrs/sync-latest-upstream-pi-brain-updates.md)
-- [State — muhamed.github.io](../../../org/state.md)
+- [State — muhamed.github.io](../../org/state.md)

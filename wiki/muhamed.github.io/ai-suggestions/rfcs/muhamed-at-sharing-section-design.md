@@ -99,5 +99,5 @@ A landing page that feels like a room: a short intro, a "now" or "recently" sect
 
 ## Related
 
-- [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../adrs/convert-repo-to-pi-brain-actions.md)
+- [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../../adrs/convert-repo-to-pi-brain-actions.md)
 - [State — muhamed.github.io](../../../org/state.md)

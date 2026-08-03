@@ -74,5 +74,5 @@ Specifically:
 
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../adrs/convert-repo-to-pi-brain-actions.md)
 - [ADR: Sync latest upstream pi-brain updates](../adrs/sync-latest-upstream-pi-brain-updates.md)
-- [AGENTS.md](../../../../AGENTS.md)
-- [brain.config.yml](../../../../brain.config.yml)
+- [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)
+- `brain.config.yml`

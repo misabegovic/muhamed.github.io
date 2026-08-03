@@ -48,6 +48,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Record — Stronger default guardrails against eager implementation](brain/records/stronger-default-implementation-guardrails.md)
 - [Record — Upstream template sync](brain/records/upstream-template-sync.md)
 - [Record — pi-brain v0.2.0 release](brain/records/version-0-2-0.md)
+- [Record — Update pi-brain to v0.4.0 in this hybrid clone](muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 
 ### meta
 - [pi-brain home](index.md)

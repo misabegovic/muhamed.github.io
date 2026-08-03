@@ -12,9 +12,9 @@ sources:
 
 ## Context
 
-`@misabegovic/pi-brain@0.4.0` was published on 2026-08-01. The release adds optional Enola architecture-intelligence integration, regenerative-intent commands (`/brain:build`, `/brain:diff`, `/brain:sync-code`, `/brain:revise`), multi-agent collaboration, background task runners, and a package-resolved resource model where the installed npm package owns `extensions/`, `skills/`, `prompts/`, `themes/`, `tools/`, `personas/`, `AGENTS.md`, `README.md`, and `.github/`. (source: [CHANGELOG](sources/doc/2026-08-03--raw-githubusercontent-com-misabegovic-pi-brain-main-changelog-md.md))
+`@misabegovic/pi-brain@0.4.0` was published on 2026-08-01. The release adds optional Enola architecture-intelligence integration, regenerative-intent commands (`/brain:build`, `/brain:diff`, `/brain:sync-code`, `/brain:revise`), multi-agent collaboration, background task runners, and a package-resolved resource model where the installed npm package owns `extensions/`, `skills/`, `prompts/`, `themes/`, `tools/`, `personas/`, `AGENTS.md`, `README.md`, and `.github/`. (source: [CHANGELOG](https://github.com/misabegovic/pi-brain/blob/main/CHANGELOG.md))
 
-This clone is currently on the v0.3.0-era template (`brain.config.yml` says `template_version: "v0.3.0"`; the validate workflow pins `@misabegovic/pi-brain@0.3.2`). The upstream `migrate-clone.mjs` script in 0.4.0 assumes a pure pi-brain clone and would move `.github/` into `.brain/overrides/`. That breaks this repository because it is a hybrid: it is both a pi-brain clone and a published Jekyll site (`files/` is the site source; `.github/workflows/pages.yml` deploys to GitHub Pages).
+This clone was on the v0.3.0-era template (`brain.config.yml` said `template_version: "v0.3.0"`; the validate workflow pinned `@misabegovic/pi-brain@0.3.2`). The upstream `migrate-clone.mjs` script in 0.4.0 assumes a pure pi-brain clone and would move `.github/` into `.brain/overrides/`. That breaks this repository because it is a hybrid: it is both a pi-brain clone and a published Jekyll site (`files/` is the site source; `.github/workflows/pages.yml` deploys to GitHub Pages).
 
 `brain_update` also failed: the tool could not resolve the 0.4.0 package path locally and could not find a `0.4.0` git branch in the upstream repository.
 
