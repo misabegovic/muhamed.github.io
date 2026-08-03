@@ -52,6 +52,11 @@ This is the synthesis layer for this pi-brain instance.
 ### meta
 - [pi-brain home](index.md)
 
+### ai-suggestion
+- [Create a record for the accepted pi-brain v0.4.0 update](muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md)
+- [Review stale inbox items](muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items.md)
+- [Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links.md)
+
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [> ⚠️ AI-suggested draft. This is not an approved RFC. Review, edit, and graduate it before treating it as a project decision.](muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md)
