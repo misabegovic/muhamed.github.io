@@ -21,6 +21,8 @@ What Enola adds here:
 
 The idea is to stop guessing about architecture. Before a big structural change, you can check whether it introduces cycles, leaks boundaries, or touches more than intended. After a `/brain:build` or `/brain:sync-code`, you can re-baseline automatically so the corpus stays tied to real code structure.
 
+**We are already using it here.** Enola is enabled in this clone (`enola.enabled: true` in `brain.config.yml`), the baseline is pinned, and `brain_enola_capture` runs during autonomous refinement. That means shaping sessions for code-affecting decisions can now be grounded in the actual structure of the repo, not just prose.
+
 Other 0.4.0 additions worth noting:
 
 - Regenerative-intent commands: `/brain:build`, `/brain:diff`, `/brain:sync-code`, `/brain:revise`.
