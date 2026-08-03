@@ -47,8 +47,11 @@ confidence: medium
 
 ## Candidate
 
-- AI-suggested pages under ai-suggestions/ awaiting graduation.
+- AI-suggested pages under `ai-suggestions/` awaiting graduation.
+- Unified tag filtering and search for the stream.
+- Multi-tag filtering and a tag explorer.
 
 ## Parked
 
 - Options explicitly deferred.
+- Splitting the Jekyll site and pi-brain clone into separate repositories — rejected due to migration risk.

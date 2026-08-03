@@ -16,8 +16,11 @@ confidence: low
 
 ## What we are not doing
 
-- Options considered and rejected, with reasons.
+- **Split site and brain into separate repos** — rejected. The hybrid repo keeps deployment simple and the corpus next to its published output.
+- **Build a custom pi-brain theme/UI** — parked. The default theme is sufficient while the corpus is being built out.
 
 ## Triggers for revisiting
 
-- Conditions that would make a parked option worth shaping again.
+- If the Jekyll build becomes a bottleneck for brain maintenance, reconsider separation.
+- If the RFC for the public brain stream is approved, bump it to the roadmap.
+- If tag volume grows enough that filtering becomes painful, promote the tag-filtering PRDs.

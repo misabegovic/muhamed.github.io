@@ -1,7 +1,7 @@
 ---
 kind: note
 status: living
-confidence: high
+confidence: low
 ---
 
 # Resolved AI-suggestions archive
@@ -22,3 +22,6 @@ This page indexes agent-initiated refinement suggestions that have been resolved
 | [Create an index for the resolved-suggestions archive](create-archive-index.md) | Created this index page. |
 | [Add the remaining low-confidence cross-links](add-remaining-link-suggestions.md) | Added links between site ADRs and the structural constraint; skipped the RFC → org/roadmap link. |
 | [Create state/roadmap/options pages for the muhamed.github.io scope](create-muhamed-github-io-state-pages.md) | Generated `wiki/muhamed.github.io/{state,roadmap,options}.md`. |
+| [Link records and constraints to muhamed.github.io/roadmap](link-pages-to-muhamed-roadmap.md) | Added cross-links from brain records and muhamed.github.io records/constraints to the site roadmap. |
+| [Customize the new muhamed.github.io state/roadmap/options pages](customize-muhamed-state-pages.md) | Added human-written summaries to state, roadmap, and options pages. |
+| [Connect remaining site ADRs to the roadmap](connect-site-adrs-to-roadmap.md) | Added links between site ADRs, the structural constraint, and the unified-tag-filtering PRD. |

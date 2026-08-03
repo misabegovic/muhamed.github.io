@@ -2,7 +2,7 @@
 kind: ai-suggestion
 ai_suggestion: true
 status: resolved
-confidence: medium
+confidence: low
 tags: [state, roadmap, muhamed.github.io, refinement]
 ---
 

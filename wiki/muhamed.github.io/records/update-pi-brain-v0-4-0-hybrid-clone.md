@@ -39,3 +39,4 @@ The clone is now running pi-brain v0.4.0 while keeping the Jekyll site deploymen
 - [ADR — Update pi-brain to v0.4.0 in this hybrid clone](../adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Record — Fix validate workflow to run package-resolved brain-sync](../adrs/fix-validate-workflow-package-resolved-brain-sync.md)
 - [Roadmap — org](../../org/roadmap.md)
+- [Roadmap — muhamed.github.io](../roadmap.md)

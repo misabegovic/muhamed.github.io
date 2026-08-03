@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T11:24:13.716Z",
-  "node_count": 52,
-  "edge_count": 309,
+  "generated_at": "2026-08-03T11:44:20.431Z",
+  "node_count": 55,
+  "edge_count": 328,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -196,77 +196,98 @@
       "path": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "high",
+      "confidence": "low",
       "title": "Archive resolved ai-suggestions"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Connect remaining site ADRs to the roadmap"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/create-archive-index.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "Create an index for the resolved-suggestions archive"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/create-muhamed-github-io-state-pages.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "Create state/roadmap/options pages for the muhamed.github.io scope"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/customize-muhamed-state-pages.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Customize the new muhamed.github.io state/roadmap/options pages"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/document-expected-source-citations.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "✅ Document expected dead links from internal source citations"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/enable-enola-for-architecture-tracking.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "Enable Enola architecture tracking"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/index.md",
       "kind": "note",
       "status": "living",
-      "confidence": "high",
+      "confidence": "low",
       "title": "Resolved AI-suggestions archive"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "✅ Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Link records and constraints to muhamed.github.io/roadmap"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "high",
+      "confidence": "low",
       "title": "✅ Create a record for the accepted pi-brain v0.4.0 update"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "high",
+      "confidence": "low",
       "title": "✅ Restore custom content in org state/roadmap/options pages"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "✅ Review stale inbox items"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md",
       "kind": "ai-suggestion",
       "status": "resolved",
-      "confidence": "medium",
+      "confidence": "low",
       "title": "✅ Suppress dead links to package-resolved resources"
     },
     {
@@ -580,6 +601,13 @@
       "context": "Roadmap — org"
     },
     {
+      "source": "brain/records/smarter-autonomy",
+      "target": "muhamed.github.io/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — muhamed.github.io"
+    },
+    {
       "source": "brain/records/stronger-default-implementation-guardrails",
       "target": "brain/adrs/stronger-default-implementation-guardrails",
       "kind": "markdown",
@@ -620,6 +648,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Roadmap — org"
+    },
+    {
+      "source": "brain/records/upstream-template-sync",
+      "target": "muhamed.github.io/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — muhamed.github.io"
     },
     {
       "source": "brain/records/version-0-2-0",
@@ -854,6 +889,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Connect remaining site ADRs to the roadmap"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/ai-suggestions/_archive/create-archive-index",
       "kind": "markdown",
       "provenance": "body",
@@ -865,6 +907,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Create state/roadmap/options pages for the muhamed.github.io"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/customize-muhamed-state-pages",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Customize the new muhamed.github.io state/roadmap/options pa"
     },
     {
       "source": "index",
@@ -886,6 +935,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "✅ Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link records and constraints to muhamed.github.io/roadmap"
     },
     {
       "source": "index",
@@ -1057,6 +1113,13 @@
     },
     {
       "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+      "target": "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "ADR: Sync latest upstream pi-brain updates"
+    },
+    {
+      "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
       "target": "muhamed.github.io/adrs/make-brain-cards-the-home-page",
       "kind": "markdown",
       "provenance": "body",
@@ -1068,6 +1131,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Constraint: ADR before structural changes"
+    },
+    {
+      "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+      "target": "muhamed.github.io/prds/unified-tag-filtering-and-search",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "PRD: Unified tag filtering and search"
     },
     {
       "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
@@ -1110,6 +1180,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "ADR: Sync clone with upstream pi-brain guardrails"
+    },
+    {
+      "source": "muhamed.github.io/adrs/make-brain-cards-the-home-page",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Constraint: ADR before structural changes"
     },
     {
       "source": "muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0",
@@ -1273,6 +1350,27 @@
       "context": "Create state/roadmap/options pages for the muhamed.github.io"
     },
     {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link records and constraints to muhamed.github.io/roadmap"
+    },
+    {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/customize-muhamed-state-pages",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Customize the new muhamed.github.io state/roadmap/options pa"
+    },
+    {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Connect remaining site ADRs to the roadmap"
+    },
+    {
       "source": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design",
       "target": "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
       "kind": "markdown",
@@ -1306,6 +1404,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Roadmap — org"
+    },
+    {
+      "source": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "target": "muhamed.github.io/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — muhamed.github.io"
     },
     {
       "source": "muhamed.github.io/options",
@@ -1376,6 +1481,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Roadmap — org"
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "muhamed.github.io/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — muhamed.github.io"
     },
     {
       "source": "muhamed.github.io/roadmap",
@@ -1624,34 +1736,6 @@
     },
     {
       "source": "muhamed.github.io/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Archive resolved ai-suggestions"
-    },
-    {
-      "source": "muhamed.github.io/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/index",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Resolved AI-suggestions archive"
-    },
-    {
-      "source": "muhamed.github.io/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "✅ Create a record for the accepted pi-brain v0.4.0 update"
-    },
-    {
-      "source": "muhamed.github.io/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "✅ Restore custom content in org state/roadmap/options pages"
-    },
-    {
-      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
       "provenance": "body",
@@ -1806,6 +1890,20 @@
     },
     {
       "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Archive resolved ai-suggestions"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Connect remaining site ADRs to the roadmap"
+    },
+    {
+      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/create-archive-index",
       "kind": "markdown",
       "provenance": "body",
@@ -1817,6 +1915,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Create state/roadmap/options pages for the muhamed.github.io"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/customize-muhamed-state-pages",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Customize the new muhamed.github.io state/roadmap/options pa"
     },
     {
       "source": "muhamed.github.io/state",
@@ -1834,10 +1939,38 @@
     },
     {
       "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/index",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Resolved AI-suggestions archive"
+    },
+    {
+      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state",
       "kind": "markdown",
       "provenance": "body",
       "context": "✅ Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link records and constraints to muhamed.github.io/roadmap"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Restore custom content in org state/roadmap/options pages"
     },
     {
       "source": "muhamed.github.io/state",
@@ -2212,34 +2345,6 @@
     },
     {
       "source": "org/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Archive resolved ai-suggestions"
-    },
-    {
-      "source": "org/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/index",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Resolved AI-suggestions archive"
-    },
-    {
-      "source": "org/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "✅ Create a record for the accepted pi-brain v0.4.0 update"
-    },
-    {
-      "source": "org/state",
-      "target": "muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "✅ Restore custom content in org state/roadmap/options pages"
-    },
-    {
-      "source": "org/state",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
       "provenance": "body",
@@ -2394,6 +2499,20 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Archive resolved ai-suggestions"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Connect remaining site ADRs to the roadmap"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/create-archive-index",
       "kind": "markdown",
       "provenance": "body",
@@ -2405,6 +2524,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Create state/roadmap/options pages for the muhamed.github.io"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/customize-muhamed-state-pages",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Customize the new muhamed.github.io state/roadmap/options pa"
     },
     {
       "source": "org/state",
@@ -2422,10 +2548,38 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/index",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Resolved AI-suggestions archive"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state",
       "kind": "markdown",
       "provenance": "body",
       "context": "✅ Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link records and constraints to muhamed.github.io/roadmap"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Restore custom content in org state/roadmap/options pages"
     },
     {
       "source": "org/state",
@@ -2564,6 +2718,10 @@
       "incoming": 9
     },
     {
+      "path": "muhamed.github.io/roadmap.md",
+      "incoming": 9
+    },
+    {
       "path": "brain/adrs/smarter-autonomy.md",
       "incoming": 8
     },
@@ -2593,14 +2751,22 @@
     },
     {
       "path": "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md",
-      "incoming": 7
+      "incoming": 8
     },
     {
       "path": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md",
       "incoming": 7
     },
     {
+      "path": "muhamed.github.io/constraints/adr-before-structural-changes.md",
+      "incoming": 7
+    },
+    {
       "path": "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md",
+      "incoming": 7
+    },
+    {
+      "path": "muhamed.github.io/prds/unified-tag-filtering-and-search.md",
       "incoming": 7
     },
     {
@@ -2628,14 +2794,6 @@
       "incoming": 6
     },
     {
-      "path": "muhamed.github.io/constraints/adr-before-structural-changes.md",
-      "incoming": 6
-    },
-    {
-      "path": "muhamed.github.io/prds/unified-tag-filtering-and-search.md",
-      "incoming": 6
-    },
-    {
       "path": "muhamed.github.io/state.md",
       "incoming": 6
     },
@@ -2657,10 +2815,6 @@
     },
     {
       "path": "muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md",
-      "incoming": 5
-    },
-    {
-      "path": "muhamed.github.io/roadmap.md",
       "incoming": 5
     },
     {
@@ -2692,11 +2846,19 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap.md",
+      "incoming": 4
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/create-archive-index.md",
       "incoming": 4
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/create-muhamed-github-io-state-pages.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/customize-muhamed-state-pages.md",
       "incoming": 4
     },
     {
@@ -2709,6 +2871,10 @@
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md",
       "incoming": 4
     },
     {
@@ -2748,46 +2914,74 @@
   "suggestions": [
     {
       "source": "brain/records/smarter-autonomy",
-      "target": "muhamed.github.io/roadmap",
+      "target": "brain/records/upstream-template-sync",
       "via": [
-        "brain/adrs/smarter-autonomy",
-        "brain/prds/smarter-autonomy",
-        "brain/bets/smarter-autonomy",
-        "org/roadmap"
+        "org/roadmap",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
+      "source": "brain/records/smarter-autonomy",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "via": [
+        "org/roadmap",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
+      "source": "brain/records/smarter-autonomy",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "via": [
+        "org/roadmap",
+        "muhamed.github.io/roadmap"
       ]
     },
     {
       "source": "brain/records/upstream-template-sync",
-      "target": "muhamed.github.io/roadmap",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
       "via": [
-        "brain/adrs/upstream-template-sync",
-        "brain/prds/upstream-template-sync",
-        "brain/bets/upstream-template-sync",
-        "org/roadmap"
+        "org/roadmap",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
+      "source": "brain/records/upstream-template-sync",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "via": [
+        "org/roadmap",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files",
+      "target": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+      "via": [
+        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+        "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates"
       ]
     },
     {
       "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
-      "target": "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates",
+      "target": "muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0",
       "via": [
-        "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
-        "muhamed.github.io/constraints/adr-before-structural-changes"
-      ]
-    },
-    {
-      "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
-      "target": "muhamed.github.io/prds/unified-tag-filtering-and-search",
-      "via": [
-        "muhamed.github.io/adrs/make-brain-cards-the-home-page",
+        "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates",
         "org/state"
       ]
     },
     {
-      "source": "muhamed.github.io/adrs/make-brain-cards-the-home-page",
-      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+      "target": "muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer",
       "via": [
-        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
-        "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails"
+        "muhamed.github.io/adrs/make-brain-cards-the-home-page",
+        "muhamed.github.io/prds/unified-tag-filtering-and-search"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/make-brain-cards-the-home-page",
+      "target": "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates",
+      "via": [
+        "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
+        "muhamed.github.io/constraints/adr-before-structural-changes"
       ]
     },
     {
@@ -2808,11 +3002,10 @@
     },
     {
       "source": "muhamed.github.io/constraints/adr-before-structural-changes",
-      "target": "muhamed.github.io/roadmap",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "via": [
-        "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
-        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
-        "org/roadmap"
+        "org/roadmap",
+        "muhamed.github.io/roadmap"
       ]
     },
     {
@@ -2822,15 +3015,6 @@
         "brain/pitches/upstream-template-sync",
         "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
         "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors"
-      ]
-    },
-    {
-      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
-      "target": "muhamed.github.io/roadmap",
-      "via": [
-        "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
-        "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync",
-        "org/roadmap"
       ]
     }
   ]

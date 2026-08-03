@@ -2,7 +2,7 @@
 kind: ai-suggestion
 ai_suggestion: true
 status: resolved
-confidence: high
+confidence: low
 tags: [grooming, ai-suggestions, refinement]
 ---
 
