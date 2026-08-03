@@ -53,6 +53,8 @@ This ADR was written after the fix was already deployed. In future incidents, th
 ## Related
 
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](convert-repo-to-pi-brain-actions.md)
+- [ADR: Sync clone with upstream pi-brain guardrails](sync-upstream-pi-brain-guardrails.md)
+- [RFC: Design directions for a public "brain stream" on muhamed.at](../ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [State — muhamed.github.io](../../org/state.md)
 - `files/_config.yml`
 - `files/CNAME`

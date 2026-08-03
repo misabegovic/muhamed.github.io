@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: medium
 tags: [enola, architecture, pi-brain, refinement]
 ---
@@ -16,16 +16,16 @@ pi-brain v0.4.0 added optional Enola integration. The skill is available (`skill
 
 Without enabling Enola, the clone misses architecture regression checks, impact analysis, and citation verification for code-affecting decisions. The user has explicitly mentioned Enola twice in recent sessions.
 
-## Suggested action
+## Resolution
 
-Add Enola configuration to `brain.config.yml`:
+Added to `brain.config.yml`:
 
 ```yaml
 enola.enabled: true
 enola.target_repo: ./
 ```
 
-Then run `/brain:enola-baseline` to pin the current architecture of this repo. Enola will then be able to detect structural drift on subsequent `/brain:build` or `/brain:sync-code` operations.
+Ran `/brain:enola-baseline` — architecture baseline pinned. `brain_enola_capture` reported no structural regressions.
 
 ## Trade-offs
 

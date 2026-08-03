@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [links, org, roadmap, refinement]
 ---
@@ -25,12 +25,13 @@ tags: [links, org, roadmap, refinement]
 
 These links would strengthen the graph: upstream product records would point to the org roadmap, and site-level ADRs/RFCs would be connected to each other.
 
-## Suggested action
+## Resolution
 
-Add the most valuable links manually:
+Added cross-links:
 
-1. In `wiki/brain/records/smarter-autonomy.md` and `wiki/brain/records/upstream-template-sync.md`, add a `## Related` link to `../org/roadmap.md`.
-2. In `wiki/muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md` and `wiki/muhamed.github.io/constraints/adr-before-structural-changes.md`, add a `## Related` link to `../org/roadmap.md`.
-3. In `wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md` and `wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md`, add `## Related` links to each other and to the sharing-section RFC.
-
-Lower-confidence suggestions (e.g., RFC → org/roadmap) can be skipped until the RFC is approved.
+- `wiki/brain/records/smarter-autonomy.md` → `org/roadmap`
+- `wiki/brain/records/upstream-template-sync.md` → `org/roadmap`
+- `wiki/muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md` → `org/roadmap`
+- `wiki/muhamed.github.io/constraints/adr-before-structural-changes.md` → `org/roadmap`
+- `wiki/muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md` → `sync-upstream-pi-brain-guardrails`, sharing-section RFC
+- `wiki/muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md` → `jekyll-vendor-exclude-and-custom-domain`, sharing-section RFC
