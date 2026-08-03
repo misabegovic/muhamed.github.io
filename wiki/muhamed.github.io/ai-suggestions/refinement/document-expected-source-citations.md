@@ -1,12 +1,12 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: medium
 tags: [links, citations, sources, refinement]
 ---
 
-# Document expected dead links from internal source citations
+# ✅ Document expected dead links from internal source citations
 
 ## Observation
 
@@ -22,10 +22,6 @@ These are intentional inline citations to source files in the pi-brain corpus. T
 
 Persistent "dead links" reduce trust in the link graph. A reader running `brain-links` sees 3 failures that are not actually failures.
 
-## Suggested action
+## Resolution
 
-Either:
-
-1. **Add a dead-link ignore list to `brain-links`** for citation-style links to `sources/` and `files/_stream/` (e.g., a `citation_paths` config in `brain.config.yml`).
-2. **Add a comment/note** in the RFC explaining that the 3 source links are citations and expected to show as dead, with a link to this suggestion.
-3. **Convert the citations** to `(source: <path>)` parenthetical style instead of markdown links, since the brain convention supports both.
+Converted the 3 markdown source links in `wiki/muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md` to parenthetical `(source: ...)` citations. `brain-links` now reports **0 dead links** from citations.

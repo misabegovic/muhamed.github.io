@@ -1,12 +1,12 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: high
 tags: [state, roadmap, org, refinement]
 ---
 
-# Restore custom content in org state/roadmap/options pages
+# ✅ Restore custom content in org state/roadmap/options pages
 
 ## Observation
 
@@ -20,8 +20,6 @@ tags: [state, roadmap, org, refinement]
 
 The auto-generated scaffold is less useful than the previous living document. The placeholders don't guide a reader to the actual state of the org scope.
 
-## Suggested action
+## Resolution
 
-1. Add the custom sections back inside the brain-state markers.
-2. Keep the marker-based format so future `brain-state` runs preserve the content.
-3. Include the new `muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md` in the stable/committed section of `org/state.md` and `org/roadmap.md` now that the update is delivered.
+Regenerated `wiki/org/{state,roadmap,options}.md` with `brain-state` markers. The new files preserve the template's "What changed recently", "What needs attention", "Candidate", and "Parked" sections inside the marker-based format. The v0.4.0 update record now appears in `org/state.md` under "What is stable".

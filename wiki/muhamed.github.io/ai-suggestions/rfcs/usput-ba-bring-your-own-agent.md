@@ -137,7 +137,7 @@ Keep agent-to-agent negotiation and provider-facing agents as later phases, gate
 
 ## Related
 
-- Stream note: [Recruitment agents: let the agents talk it out first](../../../files/_stream/recruitment-agents-talk-it-out-first.md)
-- Source: [Recruitment agents idea conversation](../../../sources/conversation/2026-07-25--recruitment-agents-idea.md)
-- Source: [Usput.ba Platform vision](../../../sources/doc/2026-07-27--vision-md.md)
+- Stream note: Recruitment agents: let the agents talk it out first (source: `files/_stream/recruitment-agents-talk-it-out-first.md`)
+- Source: Recruitment agents idea conversation (source: `sources/conversation/2026-07-25--recruitment-agents-idea.md`)
+- Source: Usput.ba Platform vision (source: `sources/doc/2026-07-27--vision-md.md`)
 - Inbox item: "User's idea: personal agents as the future of human communication..."
