@@ -66,6 +66,9 @@ This is the synthesis layer for this pi-brain instance.
 - [✅ Restore custom content in org state/roadmap/options pages](muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)
 - [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
+- [Connect remaining site ADRs to the roadmap](muhamed.github.io/ai-suggestions/refinement/connect-site-adrs-to-roadmap.md)
+- [Customize the new muhamed.github.io state/roadmap/options pages](muhamed.github.io/ai-suggestions/refinement/customize-muhamed-state-pages.md)
+- [Link records and constraints to muhamed.github.io/roadmap](muhamed.github.io/ai-suggestions/refinement/link-pages-to-muhamed-roadmap.md)
 
 ### note
 - [Resolved AI-suggestions archive](muhamed.github.io/ai-suggestions/_archive/index.md)
