@@ -72,6 +72,9 @@ This is the synthesis layer for this pi-brain instance.
 - [✅ Review stale inbox items](muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)
 - [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
 - [Update log/log.md with recent work](muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md)
+- [Link muhamed.github.io/options to org/options](muhamed.github.io/ai-suggestions/refinement/link-options-scopes.md)
+- [Review older stream cards for staleness](muhamed.github.io/ai-suggestions/refinement/review-stale-stream-cards.md)
+- [Update v0.4.0 ADR and record to reflect enabled Enola](muhamed.github.io/ai-suggestions/refinement/update-v0-4-0-artifacts-for-enola-enabled.md)
 
 ### note
 - [Resolved AI-suggestions archive](muhamed.github.io/ai-suggestions/_archive/index.md)
