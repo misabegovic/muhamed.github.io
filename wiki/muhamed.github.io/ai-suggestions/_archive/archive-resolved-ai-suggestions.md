@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: high
 tags: [grooming, ai-suggestions, refinement]
 ---
@@ -26,6 +26,6 @@ All are marked `status: resolved` and documented with resolution notes.
 
 Resolved suggestions mixed with open ones make it harder to see what still needs attention. They also continue to appear in `brain-state` generated views unless their status excludes them.
 
-## Suggested action
+## Resolution
 
-Move resolved refinement suggestions to `wiki/muhamed.github.io/ai-suggestions/_archive/` (or delete them if they have no lasting value). Keep a short index page in the archive noting what was resolved and when.
+Moved the six resolved refinement suggestions to `wiki/muhamed.github.io/ai-suggestions/_archive/`.

@@ -41,5 +41,7 @@ Apply the upstream guardrails to this clone:
 - [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)
 - [Constraint: ADR before structural changes](../constraints/adr-before-structural-changes.md)
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](convert-repo-to-pi-brain-actions.md)
+- [ADR: Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](jekyll-vendor-exclude-and-custom-domain.md)
+- [RFC: Design directions for a public "brain stream" on muhamed.at](../ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [State — muhamed.github.io](../../org/state.md)
 - [Roadmap — muhamed.github.io](../../org/roadmap.md)

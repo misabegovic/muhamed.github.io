@@ -38,3 +38,8 @@ connectors:
 # pi-brain template version this clone was created from or last updated to.
 # Used by /brain:update to diff against upstream releases.
 template_version: "v0.4.0"
+
+# Optional enola architecture intelligence integration.
+# Requires the enola binary to be installed and on PATH.
+enola.enabled: true
+enola.target_repo: ./
