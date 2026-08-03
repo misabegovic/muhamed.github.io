@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [links, org, options, refinement]
 ---
@@ -16,6 +16,6 @@ tags: [links, org, options, refinement]
 
 A bidirectional link would make it easy to move between site-level options and org-level options.
 
-## Suggested action
+## Resolution
 
-Add a `## Related` link from `wiki/muhamed.github.io/options.md` to `../org/options.md` and vice versa. Low priority.
+Added bidirectional `## Related` links between `wiki/muhamed.github.io/options.md` and `wiki/org/options.md`.

@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [stream, grooming, refinement]
 ---
@@ -16,8 +16,6 @@ The stream now has cards dating back to 2026-07-23. Some early cards capture tra
 
 Stream cards are published on the site. Stale or superseded cards can mislead visitors about current priorities.
 
-## Suggested action
+## Resolution
 
-1. Identify stream cards that are outdated or superseded.
-2. Either update them with a "Status" note, unpublish them by moving them out of `_stream/`, or publish a follow-up card that clarifies the current position.
-3. Start with the oldest cards and any that contradict later decisions.
+Reviewed all 21 stream cards in `files/_stream/`. None are clearly outdated or superseded by later decisions. Several are time-bound observations (OpenAI Flex, Ruby Native Android wait, Herdr) that remain accurate as of the review date. No cards were removed; recommend revisiting when external conditions change.

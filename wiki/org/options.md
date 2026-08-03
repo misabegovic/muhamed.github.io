@@ -18,6 +18,10 @@ confidence: low
 
 - Options considered and rejected, with reasons.
 
+## Related
+
+- [Options — muhamed.github.io](../muhamed.github.io/options.md)
+
 ## Triggers for revisiting
 
 - Conditions that would make a parked option worth shaping again.

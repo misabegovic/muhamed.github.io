@@ -20,6 +20,7 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Record — pi-brain v0.2.0 release](../brain/records/version-0-2-0.md)
 - [pi-brain home](../index.md)
 - [Update log/log.md with recent work](../muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md)
+- [Update v0.4.0 ADR and record to reflect enabled Enola](../muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled.md)
 - [Record — Update pi-brain to v0.4.0 in this hybrid clone](../muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 <!-- /brain-state -->
 
@@ -57,11 +58,13 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Enable Enola architecture tracking](../muhamed.github.io/ai-suggestions/_archive/enable-enola-for-architecture-tracking.md)
 - [Resolved AI-suggestions archive](../muhamed.github.io/ai-suggestions/_archive/index.md)
 - [✅ Link muhamed.github.io decisions into org state/roadmap](../muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md)
+- [Link muhamed.github.io/options to org/options](../muhamed.github.io/ai-suggestions/_archive/link-options-scopes.md)
 - [Link records and constraints to muhamed.github.io/roadmap](../muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md)
 - [Link recent stream cards into the wiki](../muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki.md)
 - [✅ Create a record for the accepted pi-brain v0.4.0 update](../muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md)
 - [✅ Restore custom content in org state/roadmap/options pages](../muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](../muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)
+- [Review older stream cards for staleness](../muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards.md)
 - [✅ Suppress dead links to package-resolved resources](../muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
 - [RFC — Design directions for a public "brain stream" on muhamed.at](../muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [> ⚠️ AI-suggested draft. This is not an approved RFC. Review, edit, and graduate it before treating it as a project decision.](../muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md)

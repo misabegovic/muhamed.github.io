@@ -19,6 +19,10 @@ confidence: low
 - **Split site and brain into separate repos** — rejected. The hybrid repo keeps deployment simple and the corpus next to its published output.
 - **Build a custom pi-brain theme/UI** — parked. The default theme is sufficient while the corpus is being built out.
 
+## Related
+
+- [Options — org](../org/options.md)
+
 ## Triggers for revisiting
 
 - If the Jekyll build becomes a bottleneck for brain maintenance, reconsider separation.
