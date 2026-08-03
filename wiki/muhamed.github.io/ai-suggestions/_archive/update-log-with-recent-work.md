@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: high
 tags: [log, grooming, refinement]
 ---
@@ -24,6 +24,6 @@ tags: [log, grooming, refinement]
 
 The log is the append-only record of what happened. Falling behind makes it harder to reconstruct the sequence of decisions and maintenance work later.
 
-## Suggested action
+## Resolution
 
-Append concise dated entries to `log/log.md` covering the major items above. Keep each entry to one line and cite the relevant ADR, record, or commit where applicable.
+Appended dated entries to `log/log.md` covering the Jack & Jill / Stapply / Camel AI ingestions, dependency updates, pi-brain v0.4.0 migration, Enola enablement, and the autonomous refinement passes.

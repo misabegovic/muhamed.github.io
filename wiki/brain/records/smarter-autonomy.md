@@ -49,5 +49,7 @@ The current, approved state of autonomy mode after the smarter-autonomy bet was 
 - [wiki/brain/adrs/smarter-autonomy.md](../adrs/smarter-autonomy.md)
 - [wiki/brain/prds/smarter-autonomy.md](../prds/smarter-autonomy.md)
 - [wiki/brain/bets/smarter-autonomy.md](../bets/smarter-autonomy.md)
+- [Record — Upstream template sync](upstream-template-sync.md)
+- [Constraint: ADR before structural changes](../../muhamed.github.io/constraints/adr-before-structural-changes.md)
 - [Roadmap — org](../../org/roadmap.md)
 - [Roadmap — muhamed.github.io](../../muhamed.github.io/roadmap.md)

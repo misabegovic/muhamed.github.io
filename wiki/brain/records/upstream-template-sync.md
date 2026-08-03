@@ -50,5 +50,7 @@ The current, delivered state of the `/brain:update` command for pulling pi-brain
 - [ADR — Upstream template sync mechanism](../adrs/upstream-template-sync.md)
 - [PRD — Upstream template sync for pi-brain clones](../prds/upstream-template-sync.md)
 - [Bet — Build `/brain:update` for safe upstream template sync](../bets/upstream-template-sync.md)
+- [Record — Smarter autonomy for pi-brain clones](smarter-autonomy.md)
+- [Record — Update pi-brain to v0.4.0 in this hybrid clone](../../muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Roadmap — org](../../org/roadmap.md)
 - [Roadmap — muhamed.github.io](../../muhamed.github.io/roadmap.md)

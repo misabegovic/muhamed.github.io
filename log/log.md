@@ -35,3 +35,10 @@
 - 2026-07-29T10:00:00Z — ingested Paul Battley's po-ru.com piece "It doesn't matter whether Matz is nice" (MINASWAN as projection; DHH's far-right turn; Shopify/Lütke control over Ruby Central and RubyGems) into sources/web/; published stream card it-doesnt-matter-whether-matz-is-nice; queued synthesis in inbox
 - 2026-07-29T20:00:00Z — ingested "Pacing the Frontier" statement (1,268 frontier-lab employees asking for deliberate pacing of automated AI R&D) and Codeberg's "Protecting our FLOSS commons from LLMs" (no LLM training on hosted data; ToU change discouraging vibe-coded projects) into sources/web/; published stream card claude-as-contributor-what-are-we-doing tracking the Claude-as-Ruby-contributor thread; queued synthesis in inbox
 - 2026-07-29T22:30:00Z — merged the two 2026-07-29 stream cards (it-doesnt-matter-whether-matz-is-nice + claude-as-contributor-what-are-we-doing) into a single card; removed the identifying reference to the friend building cathedrals in Go
+- 2026-07-28T10:00:00Z — ingested jackandjill.ai as a recruitment-agent reference; published stream card comparing its closed agent pair to the open MCP/agent-to-agent vision
+- 2026-07-28T10:30:00Z — ingested Stapply Data and kalil0321/ats-scrapers as recruitment-agent data references; published stream card on open ATS-agnostic job datasets
+- 2026-07-29T10:00:00Z — ingested Camel AI Durable Objects agent post; published stream card on hosting small specialized agents in Cloudflare Durable Objects
+- 2026-07-28T11:49:00Z — updated Jekyll dependencies (github-pages 228 → 232) to resolve 35 dependabot alerts; bumped Pages workflow to Ruby 3.3
+- 2026-08-03T10:00:00Z — drafted and accepted ADR update-pi-brain-v0-4-0-hybrid-clone; migrated clone to @misabegovic/pi-brain@0.4.0 with hybrid-site carve-out; created delivery record
+- 2026-08-03T10:30:00Z — enabled Enola architecture tracking, pinned baseline; no regressions detected
+- 2026-08-03T11:00:00Z — ran autonomous refinement passes: rewrote package-resolved dead links (90 → 0), archived resolved ai-suggestions, generated and customized muhamed.github.io/{state,roadmap,options}.md

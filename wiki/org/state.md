@@ -19,6 +19,7 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Record — Upstream template sync](../brain/records/upstream-template-sync.md)
 - [Record — pi-brain v0.2.0 release](../brain/records/version-0-2-0.md)
 - [pi-brain home](../index.md)
+- [Update log/log.md with recent work](../muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md)
 - [Record — Update pi-brain to v0.4.0 in this hybrid clone](../muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 <!-- /brain-state -->
 
@@ -46,6 +47,7 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Update pi-brain to v0.4.0 in this hybrid clone](../muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Add cross-links surfaced by the link graph](../muhamed.github.io/ai-suggestions/_archive/add-cross-links-from-link-suggestions.md)
 - [Add the remaining low-confidence cross-links](../muhamed.github.io/ai-suggestions/_archive/add-remaining-link-suggestions.md)
+- [Add the top remaining cross-links from brain-links suggestions](../muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links.md)
 - [Archive resolved ai-suggestions](../muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions.md)
 - [Connect remaining site ADRs to the roadmap](../muhamed.github.io/ai-suggestions/_archive/connect-site-adrs-to-roadmap.md)
 - [Create an index for the resolved-suggestions archive](../muhamed.github.io/ai-suggestions/_archive/create-archive-index.md)
@@ -56,6 +58,7 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Resolved AI-suggestions archive](../muhamed.github.io/ai-suggestions/_archive/index.md)
 - [✅ Link muhamed.github.io decisions into org state/roadmap](../muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md)
 - [Link records and constraints to muhamed.github.io/roadmap](../muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md)
+- [Link recent stream cards into the wiki](../muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki.md)
 - [✅ Create a record for the accepted pi-brain v0.4.0 update](../muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md)
 - [✅ Restore custom content in org state/roadmap/options pages](../muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](../muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)

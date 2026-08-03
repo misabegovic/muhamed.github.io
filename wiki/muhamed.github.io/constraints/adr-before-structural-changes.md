@@ -39,5 +39,6 @@ pi-brain is a contract-first knowledge base. If the agent implements structural 
 - [AGENTS.md](https://github.com/misabegovic/pi-brain/blob/main/AGENTS.md)
 - [ADR: Sync clone with upstream pi-brain guardrails](../adrs/sync-upstream-pi-brain-guardrails.md)
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](../adrs/convert-repo-to-pi-brain-actions.md)
+- [Record — Update pi-brain to v0.4.0 in this hybrid clone](../records/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Roadmap — org](../../org/roadmap.md)
 - [Roadmap — muhamed.github.io](../roadmap.md)
