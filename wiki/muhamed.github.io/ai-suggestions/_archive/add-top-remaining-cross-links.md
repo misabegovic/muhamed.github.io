@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [links, refinement]
 ---
@@ -23,6 +23,11 @@ tags: [links, refinement]
 
 These links would make the relationship between upstream pi-brain decisions and this clone's site-level guardrails explicit. They are optional; the graph is already healthy.
 
-## Suggested action
+## Resolution
 
-Add the natural bidirectional links in `## Related` sections. Skip any that feel forced. This is low priority.
+Added cross-links:
+
+- `brain/records/smarter-autonomy` → `brain/records/upstream-template-sync`
+- `brain/records/smarter-autonomy` → `muhamed.github.io/constraints/adr-before-structural-changes`
+- `brain/records/upstream-template-sync` → `muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone`
+- `muhamed.github.io/constraints/adr-before-structural-changes` → `muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone`

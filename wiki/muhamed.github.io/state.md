@@ -28,6 +28,7 @@ Current truth:
 - [Record — Upstream template sync](../brain/records/upstream-template-sync.md)
 - [Record — pi-brain v0.2.0 release](../brain/records/version-0-2-0.md)
 - [pi-brain home](../index.md)
+- [Update log/log.md with recent work](ai-suggestions/_archive/update-log-with-recent-work.md)
 - [Record — Update pi-brain to v0.4.0 in this hybrid clone](records/update-pi-brain-v0-4-0-hybrid-clone.md)
 <!-- /brain-state -->
 
@@ -55,6 +56,7 @@ Current truth:
 - [Update pi-brain to v0.4.0 in this hybrid clone](adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Add cross-links surfaced by the link graph](ai-suggestions/_archive/add-cross-links-from-link-suggestions.md)
 - [Add the remaining low-confidence cross-links](ai-suggestions/_archive/add-remaining-link-suggestions.md)
+- [Add the top remaining cross-links from brain-links suggestions](ai-suggestions/_archive/add-top-remaining-cross-links.md)
 - [Archive resolved ai-suggestions](ai-suggestions/_archive/archive-resolved-ai-suggestions.md)
 - [Connect remaining site ADRs to the roadmap](ai-suggestions/_archive/connect-site-adrs-to-roadmap.md)
 - [Create an index for the resolved-suggestions archive](ai-suggestions/_archive/create-archive-index.md)
@@ -65,6 +67,7 @@ Current truth:
 - [Resolved AI-suggestions archive](ai-suggestions/_archive/index.md)
 - [✅ Link muhamed.github.io decisions into org state/roadmap](ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md)
 - [Link records and constraints to muhamed.github.io/roadmap](ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md)
+- [Link recent stream cards into the wiki](ai-suggestions/_archive/link-stream-cards-to-wiki.md)
 - [✅ Create a record for the accepted pi-brain v0.4.0 update](ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md)
 - [✅ Restore custom content in org state/roadmap/options pages](ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](ai-suggestions/_archive/review-stale-inbox-items.md)

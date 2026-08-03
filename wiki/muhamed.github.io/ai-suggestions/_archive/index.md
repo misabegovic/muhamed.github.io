@@ -25,3 +25,6 @@ This page indexes agent-initiated refinement suggestions that have been resolved
 | [Link records and constraints to muhamed.github.io/roadmap](link-pages-to-muhamed-roadmap.md) | Added cross-links from brain records and muhamed.github.io records/constraints to the site roadmap. |
 | [Customize the new muhamed.github.io state/roadmap/options pages](customize-muhamed-state-pages.md) | Added human-written summaries to state, roadmap, and options pages. |
 | [Connect remaining site ADRs to the roadmap](connect-site-adrs-to-roadmap.md) | Added links between site ADRs, the structural constraint, and the unified-tag-filtering PRD. |
+| [Update log/log.md with recent work](update-log-with-recent-work.md) | Appended dated entries for ingestions, dependency fixes, v0.4.0 migration, Enola enablement, and refinement passes. |
+| [Add the top remaining cross-links from brain-links suggestions](add-top-remaining-cross-links.md) | Added cross-links between brain records and site-level records/constraints. |
+| [Link recent stream cards into the wiki](link-stream-cards-to-wiki.md) | Added external stream-card links from the Usput RFC and the v0.4.0 record. |

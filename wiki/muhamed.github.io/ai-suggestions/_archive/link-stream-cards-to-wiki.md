@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [stream, links, wiki, refinement]
 ---
@@ -20,11 +20,9 @@ Several recent stream cards in `files/_stream/` explore themes that also have wi
 
 Stream cards are published on the site but not integrated into the brain's permanent layer. Adding wiki citations would make the stream cards discoverable from the relevant decisions and records.
 
-## Suggested action
+## Resolution
 
-Add `## Related` links from the relevant wiki pages to the stream cards:
+Added external stream-card links:
 
-- `wiki/muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md` → recruitment agent stream cards.
-- `wiki/muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md` → pi-brain 0.4.0 / durable-objects stream cards.
-
-Use external URLs for the stream-card links so they work on the published site.
+- `wiki/muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md` → recruitment agents, Jack & Jill, Stapply Data, Agents in Durable Objects.
+- `wiki/muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md` → pi-brain 0.4.0 Enola card, Agents in Durable Objects.

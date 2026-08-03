@@ -38,5 +38,9 @@ The clone is now running pi-brain v0.4.0 while keeping the Jekyll site deploymen
 
 - [ADR — Update pi-brain to v0.4.0 in this hybrid clone](../adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Record — Fix validate workflow to run package-resolved brain-sync](../adrs/fix-validate-workflow-package-resolved-brain-sync.md)
+- [Constraint: ADR before structural changes](../constraints/adr-before-structural-changes.md)
+- [Record — Upstream template sync](../../brain/records/upstream-template-sync.md)
+- [Stream note: pi-brain 0.4.0 adds Enola architecture intelligence](https://muhamed.at/brain/pi-brain-0-4-0-enola-architecture-intelligence/)
+- [Stream note: Agents in Durable Objects](https://muhamed.at/brain/agents-in-durable-objects-specialized-cheap-agents/)
 - [Roadmap — org](../../org/roadmap.md)
 - [Roadmap — muhamed.github.io](../roadmap.md)

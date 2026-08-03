@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T11:44:20.431Z",
-  "node_count": 55,
-  "edge_count": 328,
+  "generated_at": "2026-08-03T11:57:19.689Z",
+  "node_count": 58,
+  "edge_count": 347,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -193,6 +193,13 @@
       "title": "Add the remaining low-confidence cross-links"
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Add the top remaining cross-links from brain-links suggestions"
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions.md",
       "kind": "ai-suggestion",
       "status": "resolved",
@@ -263,6 +270,13 @@
       "title": "Link records and constraints to muhamed.github.io/roadmap"
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Link recent stream cards into the wiki"
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md",
       "kind": "ai-suggestion",
       "status": "resolved",
@@ -289,6 +303,13 @@
       "status": "resolved",
       "confidence": "low",
       "title": "✅ Suppress dead links to package-resolved resources"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "high",
+      "title": "Update log/log.md with recent work"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md",
@@ -595,6 +616,20 @@
     },
     {
       "source": "brain/records/smarter-autonomy",
+      "target": "brain/records/upstream-template-sync",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Upstream template sync"
+    },
+    {
+      "source": "brain/records/smarter-autonomy",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Constraint: ADR before structural changes"
+    },
+    {
+      "source": "brain/records/smarter-autonomy",
       "target": "org/roadmap",
       "kind": "markdown",
       "provenance": "body",
@@ -641,6 +676,20 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Bet — Build `/brain:update` for safe upstream template sync"
+    },
+    {
+      "source": "brain/records/upstream-template-sync",
+      "target": "brain/records/smarter-autonomy",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Smarter autonomy for pi-brain clones"
+    },
+    {
+      "source": "brain/records/upstream-template-sync",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Update pi-brain to v0.4.0 in this hybrid clone"
     },
     {
       "source": "brain/records/upstream-template-sync",
@@ -882,6 +931,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Add the top remaining cross-links from brain-links suggestio"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
       "kind": "markdown",
       "provenance": "body",
@@ -945,6 +1001,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link recent stream cards into the wiki"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update",
       "kind": "markdown",
       "provenance": "body",
@@ -970,6 +1033,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "✅ Suppress dead links to package-resolved resources"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update log/log.md with recent work"
     },
     {
       "source": "index",
@@ -1371,6 +1441,27 @@
       "context": "Connect remaining site ADRs to the roadmap"
     },
     {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update log/log.md with recent work"
+    },
+    {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Add the top remaining cross-links from brain-links suggestio"
+    },
+    {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link recent stream cards into the wiki"
+    },
+    {
       "source": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design",
       "target": "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
       "kind": "markdown",
@@ -1397,6 +1488,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "ADR: Convert repo to pi-brain clone and deploy site via GitH"
+    },
+    {
+      "source": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Update pi-brain to v0.4.0 in this hybrid clone"
     },
     {
       "source": "muhamed.github.io/constraints/adr-before-structural-changes",
@@ -1474,6 +1572,20 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Record — Fix validate workflow to run package-resolved brain"
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Constraint: ADR before structural changes"
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "brain/records/upstream-template-sync",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Upstream template sync"
     },
     {
       "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
@@ -1736,6 +1848,13 @@
     },
     {
       "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update log/log.md with recent work"
+    },
+    {
+      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
       "provenance": "body",
@@ -1890,6 +2009,13 @@
     },
     {
       "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Add the top remaining cross-links from brain-links suggestio"
+    },
+    {
+      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
       "kind": "markdown",
       "provenance": "body",
@@ -1957,6 +2083,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Link records and constraints to muhamed.github.io/roadmap"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link recent stream cards into the wiki"
     },
     {
       "source": "muhamed.github.io/state",
@@ -2345,6 +2478,13 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update log/log.md with recent work"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
       "provenance": "body",
@@ -2499,6 +2639,13 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Add the top remaining cross-links from brain-links suggestio"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions",
       "kind": "markdown",
       "provenance": "body",
@@ -2566,6 +2713,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Link records and constraints to muhamed.github.io/roadmap"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link recent stream cards into the wiki"
     },
     {
       "source": "org/state",
@@ -2718,6 +2872,10 @@
       "incoming": 9
     },
     {
+      "path": "muhamed.github.io/constraints/adr-before-structural-changes.md",
+      "incoming": 9
+    },
+    {
       "path": "muhamed.github.io/roadmap.md",
       "incoming": 9
     },
@@ -2758,16 +2916,16 @@
       "incoming": 7
     },
     {
-      "path": "muhamed.github.io/constraints/adr-before-structural-changes.md",
-      "incoming": 7
-    },
-    {
       "path": "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md",
       "incoming": 7
     },
     {
       "path": "muhamed.github.io/prds/unified-tag-filtering-and-search.md",
       "incoming": 7
+    },
+    {
+      "path": "brain/records/upstream-template-sync.md",
+      "incoming": 6
     },
     {
       "path": "index.md",
@@ -2802,6 +2960,10 @@
       "incoming": 5
     },
     {
+      "path": "brain/records/smarter-autonomy.md",
+      "incoming": 5
+    },
+    {
       "path": "muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md",
       "incoming": 5
     },
@@ -2818,6 +2980,10 @@
       "incoming": 5
     },
     {
+      "path": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md",
+      "incoming": 5
+    },
+    {
       "path": "org/options.md",
       "incoming": 5
     },
@@ -2826,19 +2992,15 @@
       "incoming": 4
     },
     {
-      "path": "brain/records/smarter-autonomy.md",
-      "incoming": 4
-    },
-    {
-      "path": "brain/records/upstream-template-sync.md",
-      "incoming": 4
-    },
-    {
       "path": "muhamed.github.io/ai-suggestions/_archive/add-cross-links-from-link-suggestions.md",
       "incoming": 4
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/add-remaining-link-suggestions.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/add-top-remaining-cross-links.md",
       "incoming": 4
     },
     {
@@ -2878,6 +3040,10 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/link-stream-cards-to-wiki.md",
+      "incoming": 4
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md",
       "incoming": 4
     },
@@ -2894,6 +3060,10 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md",
+      "incoming": 4
+    },
+    {
       "path": "brain/records/stronger-default-implementation-guardrails.md",
       "incoming": 3
     },
@@ -2904,34 +3074,24 @@
     {
       "path": "muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md",
       "incoming": 3
-    },
-    {
-      "path": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md",
-      "incoming": 3
     }
   ],
   "dead_links": [],
   "suggestions": [
     {
       "source": "brain/records/smarter-autonomy",
-      "target": "brain/records/upstream-template-sync",
+      "target": "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
       "via": [
-        "org/roadmap",
-        "muhamed.github.io/roadmap"
-      ]
-    },
-    {
-      "source": "brain/records/smarter-autonomy",
-      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
-      "via": [
-        "org/roadmap",
-        "muhamed.github.io/roadmap"
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "org/roadmap"
       ]
     },
     {
       "source": "brain/records/smarter-autonomy",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "via": [
+        "brain/records/upstream-template-sync",
+        "muhamed.github.io/constraints/adr-before-structural-changes",
         "org/roadmap",
         "muhamed.github.io/roadmap"
       ]
@@ -2940,14 +3100,7 @@
       "source": "brain/records/upstream-template-sync",
       "target": "muhamed.github.io/constraints/adr-before-structural-changes",
       "via": [
-        "org/roadmap",
-        "muhamed.github.io/roadmap"
-      ]
-    },
-    {
-      "source": "brain/records/upstream-template-sync",
-      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
-      "via": [
+        "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
         "org/roadmap",
         "muhamed.github.io/roadmap"
       ]
@@ -2985,6 +3138,14 @@
       ]
     },
     {
+      "source": "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "via": [
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "org/roadmap"
+      ]
+    },
+    {
       "source": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design",
       "target": "muhamed.github.io/roadmap",
       "via": [
@@ -2998,14 +3159,6 @@
       "via": [
         "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
         "org/state"
-      ]
-    },
-    {
-      "source": "muhamed.github.io/constraints/adr-before-structural-changes",
-      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
-      "via": [
-        "org/roadmap",
-        "muhamed.github.io/roadmap"
       ]
     },
     {

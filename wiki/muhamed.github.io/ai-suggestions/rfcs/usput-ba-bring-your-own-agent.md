@@ -137,7 +137,10 @@ Keep agent-to-agent negotiation and provider-facing agents as later phases, gate
 
 ## Related
 
-- Stream note: Recruitment agents: let the agents talk it out first (source: `files/_stream/recruitment-agents-talk-it-out-first.md`)
+- Stream note: [Recruitment agents: let the agents talk it out first](https://muhamed.at/brain/recruitment-agents-talk-it-out-first/)
+- Stream note: [Jack & Jill AI: a recruitment-agent reference](https://muhamed.at/brain/jack-and-jill-ai-recruitment-agent-reference/)
+- Stream note: [Stapply Data: open job-market datasets](https://muhamed.at/brain/stapply-data-open-job-market-datasets/)
+- Stream note: [Agents in Durable Objects](https://muhamed.at/brain/agents-in-durable-objects-specialized-cheap-agents/)
 - Source: Recruitment agents idea conversation (source: `sources/conversation/2026-07-25--recruitment-agents-idea.md`)
 - Source: Usput.ba Platform vision (source: `sources/doc/2026-07-27--vision-md.md`)
 - Inbox item: "User's idea: personal agents as the future of human communication..."
