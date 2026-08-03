@@ -54,8 +54,11 @@ This ADR was written after the fix was already deployed. In future incidents, th
 
 - [ADR: Convert repo to pi-brain clone and deploy site via GitHub Actions](convert-repo-to-pi-brain-actions.md)
 - [ADR: Sync clone with upstream pi-brain guardrails](sync-upstream-pi-brain-guardrails.md)
+- [ADR: Make the brain-card stream the home page](make-brain-cards-the-home-page.md)
+- [Constraint: ADR before structural changes](../constraints/adr-before-structural-changes.md)
 - [RFC: Design directions for a public "brain stream" on muhamed.at](../ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [State — muhamed.github.io](../../org/state.md)
+- [State — muhamed.github.io](../../muhamed.github.io/state.md)
 - `files/_config.yml`
 - `files/CNAME`
 - `.github/workflows/pages.yml`

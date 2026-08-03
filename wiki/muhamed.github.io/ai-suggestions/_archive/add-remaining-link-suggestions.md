@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [links, refinement]
 ---
@@ -21,6 +21,12 @@ tags: [links, refinement]
 
 These are weaker signals than the previous batch, but they connect site-level deployment ADRs to each other and to the structural constraint. The RFC → org/roadmap link is only worth adding if the RFC graduates.
 
-## Suggested action
+## Resolution
 
-Add the three ADR/constraint links if they feel natural in context. Skip the RFC → roadmap link until the RFC is approved.
+Added cross-links:
+
+- `jekyll-vendor-exclude-and-custom-domain` → `make-brain-cards-the-home-page`
+- `jekyll-vendor-exclude-and-custom-domain` → `constraints/adr-before-structural-changes`
+- `make-brain-cards-the-home-page` → `sync-upstream-pi-brain-guardrails`
+
+Skipped the RFC → org/roadmap link because the RFC is still suggested, not approved.

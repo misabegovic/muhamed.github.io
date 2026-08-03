@@ -55,7 +55,10 @@ This is the synthesis layer for this pi-brain instance.
 
 ### ai-suggestion
 - [Add cross-links surfaced by the link graph](muhamed.github.io/ai-suggestions/_archive/add-cross-links-from-link-suggestions.md)
+- [Add the remaining low-confidence cross-links](muhamed.github.io/ai-suggestions/_archive/add-remaining-link-suggestions.md)
 - [Archive resolved ai-suggestions](muhamed.github.io/ai-suggestions/_archive/archive-resolved-ai-suggestions.md)
+- [Create an index for the resolved-suggestions archive](muhamed.github.io/ai-suggestions/_archive/create-archive-index.md)
+- [Create state/roadmap/options pages for the muhamed.github.io scope](muhamed.github.io/ai-suggestions/_archive/create-muhamed-github-io-state-pages.md)
 - [✅ Document expected dead links from internal source citations](muhamed.github.io/ai-suggestions/_archive/document-expected-source-citations.md)
 - [Enable Enola architecture tracking](muhamed.github.io/ai-suggestions/_archive/enable-enola-for-architecture-tracking.md)
 - [✅ Link muhamed.github.io decisions into org state/roadmap](muhamed.github.io/ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md)
@@ -63,29 +66,30 @@ This is the synthesis layer for this pi-brain instance.
 - [✅ Restore custom content in org state/roadmap/options pages](muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)
 - [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
-- [Add the remaining low-confidence cross-links](muhamed.github.io/ai-suggestions/refinement/add-remaining-link-suggestions.md)
-- [Create an index for the resolved-suggestions archive](muhamed.github.io/ai-suggestions/refinement/create-archive-index.md)
-- [Create state/roadmap/options pages for the muhamed.github.io scope](muhamed.github.io/ai-suggestions/refinement/create-muhamed-github-io-state-pages.md)
+
+### note
+- [Resolved AI-suggestions archive](muhamed.github.io/ai-suggestions/_archive/index.md)
+- [Auto-ingest batch 2026-07-23 — synthesis](muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md)
+- [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
 
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
 - [> ⚠️ AI-suggested draft. This is not an approved RFC. Review, edit, and graduate it before treating it as a project decision.](muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md)
 
-### note
-- [Auto-ingest batch 2026-07-23 — synthesis](muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md)
-- [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
+### options
+- [Options — muhamed.github.io](muhamed.github.io/options.md)
+- [Options — org](org/options.md)
 
 ### prd
 - [PRD — Multi-tag filtering and tag explorer](muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md)
 - [PRD — Unified tag filtering and search](muhamed.github.io/prds/unified-tag-filtering-and-search.md)
 
-### options
-- [Options — org](org/options.md)
-
 ### roadmap
+- [Roadmap — muhamed.github.io](muhamed.github.io/roadmap.md)
 - [Roadmap — org](org/roadmap.md)
 
 ### state
+- [State — muhamed.github.io](muhamed.github.io/state.md)
 - [State — org](org/state.md)
 
 ## Getting started
