@@ -8,7 +8,16 @@ confidence: medium
 
 ## Where we are
 
-Summarize the current truth for this scope. Be honest about gaps.
+`muhamed.github.io` is a hybrid pi-brain clone and Jekyll site published at `https://muhamed.at`. The site is built from `files/` and deployed via GitHub Pages. The brain corpus (wiki, sources, log) lives alongside the site source in the same repository.
+
+Current truth:
+
+- Site is live on a custom domain with HTTPS/HSTS.
+- The brain-card stream is the homepage.
+- pi-brain was updated to v0.4.0 using a hybrid-site carve-out.
+- Enola architecture tracking is enabled and the baseline is pinned.
+- Link graph is healthy: 0 dead links.
+- All refinement suggestions from the last few sessions have been resolved and archived.
 
 ## What is stable
 
@@ -19,10 +28,6 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Record — Upstream template sync](../brain/records/upstream-template-sync.md)
 - [Record — pi-brain v0.2.0 release](../brain/records/version-0-2-0.md)
 - [pi-brain home](../index.md)
-- [Archive resolved ai-suggestions](ai-suggestions/_archive/archive-resolved-ai-suggestions.md)
-- [Resolved AI-suggestions archive](ai-suggestions/_archive/index.md)
-- [✅ Create a record for the accepted pi-brain v0.4.0 update](ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md)
-- [✅ Restore custom content in org state/roadmap/options pages](ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [Record — Update pi-brain to v0.4.0 in this hybrid clone](records/update-pi-brain-v0-4-0-hybrid-clone.md)
 <!-- /brain-state -->
 
@@ -50,11 +55,18 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Update pi-brain to v0.4.0 in this hybrid clone](adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
 - [Add cross-links surfaced by the link graph](ai-suggestions/_archive/add-cross-links-from-link-suggestions.md)
 - [Add the remaining low-confidence cross-links](ai-suggestions/_archive/add-remaining-link-suggestions.md)
+- [Archive resolved ai-suggestions](ai-suggestions/_archive/archive-resolved-ai-suggestions.md)
+- [Connect remaining site ADRs to the roadmap](ai-suggestions/_archive/connect-site-adrs-to-roadmap.md)
 - [Create an index for the resolved-suggestions archive](ai-suggestions/_archive/create-archive-index.md)
 - [Create state/roadmap/options pages for the muhamed.github.io scope](ai-suggestions/_archive/create-muhamed-github-io-state-pages.md)
+- [Customize the new muhamed.github.io state/roadmap/options pages](ai-suggestions/_archive/customize-muhamed-state-pages.md)
 - [✅ Document expected dead links from internal source citations](ai-suggestions/_archive/document-expected-source-citations.md)
 - [Enable Enola architecture tracking](ai-suggestions/_archive/enable-enola-for-architecture-tracking.md)
+- [Resolved AI-suggestions archive](ai-suggestions/_archive/index.md)
 - [✅ Link muhamed.github.io decisions into org state/roadmap](ai-suggestions/_archive/link-muhamed-decisions-to-org-state.md)
+- [Link records and constraints to muhamed.github.io/roadmap](ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md)
+- [✅ Create a record for the accepted pi-brain v0.4.0 update](ai-suggestions/_archive/record-pi-brain-v0-4-0-update.md)
+- [✅ Restore custom content in org state/roadmap/options pages](ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](ai-suggestions/_archive/review-stale-inbox-items.md)
 - [✅ Suppress dead links to package-resolved resources](ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
 - [RFC — Design directions for a public "brain stream" on muhamed.at](ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)

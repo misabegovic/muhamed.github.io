@@ -51,3 +51,4 @@ The current, delivered state of the `/brain:update` command for pulling pi-brain
 - [PRD — Upstream template sync for pi-brain clones](../prds/upstream-template-sync.md)
 - [Bet — Build `/brain:update` for safe upstream template sync](../bets/upstream-template-sync.md)
 - [Roadmap — org](../../org/roadmap.md)
+- [Roadmap — muhamed.github.io](../../muhamed.github.io/roadmap.md)

@@ -1,8 +1,8 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
-confidence: medium
+status: resolved
+confidence: low
 tags: [state, roadmap, muhamed.github.io, refinement]
 ---
 
@@ -16,10 +16,10 @@ tags: [state, roadmap, muhamed.github.io, refinement]
 
 Without custom content, the site scope pages are just indexes. A short human summary would make them useful standalone artifacts for reviewing the site's direction.
 
-## Suggested action
+## Resolution
 
-1. In `state.md`, add a "Where we are" paragraph summarizing the site's current state: Jekyll site on GitHub Pages, custom domain, brain stream as homepage, pi-brain v0.4.0, Enola enabled.
-2. In `roadmap.md`, add notes under "Committed" and "In shaping" explaining what is actively being driven.
-3. In `options.md`, add "What we are not doing" and "Triggers for revisiting" sections with site-specific content.
+Customized all three pages while preserving brain-state markers:
 
-Keep the brain-state markers so future regeneration preserves the lists.
+- `state.md` — added "Where we are" with site status, v0.4.0 update, Enola, and link health.
+- `roadmap.md` — populated "Candidate" and "Parked" with site-specific items.
+- `options.md` — filled "What we are not doing" and "Triggers for revisiting".

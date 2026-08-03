@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: low
 tags: [links, adrs, muhamed.github.io, refinement]
 ---
@@ -20,6 +20,11 @@ tags: [links, adrs, muhamed.github.io, refinement]
 
 These are weaker signals than the previous batch, but they would further weave the site ADRs, PRDs, and constraints into a coherent graph.
 
-## Suggested action
+## Resolution
 
-Add the links that feel natural. The custom-domain → PRD link is probably the most useful, as it connects a delivered infrastructure ADR to an open product question (site navigation/discovery).
+Added links from `jekyll-vendor-exclude-and-custom-domain` to:
+
+- `sync-latest-upstream-pi-brain-updates`
+- `prds/unified-tag-filtering-and-search`
+
+Added link from `make-brain-cards-the-home-page` to `constraints/adr-before-structural-changes`.

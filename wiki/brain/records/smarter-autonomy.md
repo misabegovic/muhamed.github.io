@@ -50,3 +50,4 @@ The current, approved state of autonomy mode after the smarter-autonomy bet was 
 - [wiki/brain/prds/smarter-autonomy.md](../prds/smarter-autonomy.md)
 - [wiki/brain/bets/smarter-autonomy.md](../bets/smarter-autonomy.md)
 - [Roadmap — org](../../org/roadmap.md)
+- [Roadmap — muhamed.github.io](../../muhamed.github.io/roadmap.md)
