@@ -28,3 +28,6 @@ This page indexes agent-initiated refinement suggestions that have been resolved
 | [Update log/log.md with recent work](update-log-with-recent-work.md) | Appended dated entries for ingestions, dependency fixes, v0.4.0 migration, Enola enablement, and refinement passes. |
 | [Add the top remaining cross-links from brain-links suggestions](add-top-remaining-cross-links.md) | Added cross-links between brain records and site-level records/constraints. |
 | [Link recent stream cards into the wiki](link-stream-cards-to-wiki.md) | Added external stream-card links from the Usput RFC and the v0.4.0 record. |
+| [Update v0.4.0 artifacts for enabled Enola](update-v0-4-0-artifacts-for-enola-enabled.md) | Updated the v0.4.0 delivery record to reflect that Enola is enabled and baselined. |
+| [Link muhamed.github.io/options to org/options](link-options-scopes.md) | Added bidirectional links between the two options pages. |
+| [Review older stream cards for staleness](review-stale-stream-cards.md) | Reviewed all 21 stream cards; none removed, all remain accurate as observations. |

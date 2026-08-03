@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T11:57:19.689Z",
-  "node_count": 58,
-  "edge_count": 347,
+  "generated_at": "2026-08-03T12:03:07.662Z",
+  "node_count": 61,
+  "edge_count": 361,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -263,6 +263,13 @@
       "title": "✅ Link muhamed.github.io decisions into org state/roadmap"
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/link-options-scopes.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Link muhamed.github.io/options to org/options"
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md",
       "kind": "ai-suggestion",
       "status": "resolved",
@@ -298,6 +305,13 @@
       "title": "✅ Review stale inbox items"
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "low",
+      "title": "Review older stream cards for staleness"
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md",
       "kind": "ai-suggestion",
       "status": "resolved",
@@ -310,6 +324,13 @@
       "status": "resolved",
       "confidence": "high",
       "title": "Update log/log.md with recent work"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "high",
+      "title": "Update v0.4.0 ADR and record to reflect enabled Enola"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md",
@@ -994,6 +1015,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-options-scopes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io/options to org/options"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
       "kind": "markdown",
       "provenance": "body",
@@ -1029,6 +1057,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Review older stream cards for staleness"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links",
       "kind": "markdown",
       "provenance": "body",
@@ -1040,6 +1075,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Update log/log.md with recent work"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update v0.4.0 ADR and record to reflect enabled Enola"
     },
     {
       "source": "index",
@@ -1462,6 +1504,27 @@
       "context": "Link recent stream cards into the wiki"
     },
     {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update v0.4.0 artifacts for enabled Enola"
+    },
+    {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-options-scopes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io/options to org/options"
+    },
+    {
+      "source": "muhamed.github.io/ai-suggestions/_archive/index",
+      "target": "muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Review older stream cards for staleness"
+    },
+    {
       "source": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design",
       "target": "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
       "kind": "markdown",
@@ -1530,6 +1593,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Stream entry: Paul from Tito — cathedrals, Go, and the 11 fa"
+    },
+    {
+      "source": "muhamed.github.io/options",
+      "target": "org/options",
+      "kind": "related",
+      "provenance": "body",
+      "context": "Related section"
     },
     {
       "source": "muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer",
@@ -1855,6 +1925,13 @@
     },
     {
       "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update v0.4.0 ADR and record to reflect enabled Enola"
+    },
+    {
+      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
       "provenance": "body",
@@ -2079,6 +2156,13 @@
     },
     {
       "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-options-scopes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io/options to org/options"
+    },
+    {
+      "source": "muhamed.github.io/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
       "kind": "markdown",
       "provenance": "body",
@@ -2111,6 +2195,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "✅ Review stale inbox items"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Review older stream cards for staleness"
     },
     {
       "source": "muhamed.github.io/state",
@@ -2230,6 +2321,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Stream entry: Paul from Tito — cathedrals, Go, and the 11 fa"
+    },
+    {
+      "source": "org/options",
+      "target": "muhamed.github.io/options",
+      "kind": "related",
+      "provenance": "body",
+      "context": "Related section"
     },
     {
       "source": "org/roadmap",
@@ -2485,6 +2583,13 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Update v0.4.0 ADR and record to reflect enabled Enola"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
       "provenance": "body",
@@ -2709,6 +2814,13 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/link-options-scopes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io/options to org/options"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap",
       "kind": "markdown",
       "provenance": "body",
@@ -2741,6 +2853,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "✅ Review stale inbox items"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Review older stream cards for staleness"
     },
     {
       "source": "org/state",
@@ -2952,7 +3071,15 @@
       "incoming": 6
     },
     {
+      "path": "muhamed.github.io/options.md",
+      "incoming": 6
+    },
+    {
       "path": "muhamed.github.io/state.md",
+      "incoming": 6
+    },
+    {
+      "path": "org/options.md",
       "incoming": 6
     },
     {
@@ -2972,19 +3099,11 @@
       "incoming": 5
     },
     {
-      "path": "muhamed.github.io/options.md",
-      "incoming": 5
-    },
-    {
       "path": "muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md",
       "incoming": 5
     },
     {
       "path": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md",
-      "incoming": 5
-    },
-    {
-      "path": "org/options.md",
       "incoming": 5
     },
     {
@@ -3036,6 +3155,10 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/link-options-scopes.md",
+      "incoming": 4
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/link-pages-to-muhamed-roadmap.md",
       "incoming": 4
     },
@@ -3056,11 +3179,19 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/_archive/review-stale-stream-cards.md",
+      "incoming": 4
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md",
       "incoming": 4
     },
     {
       "path": "muhamed.github.io/ai-suggestions/_archive/update-log-with-recent-work.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/_archive/update-v0-4-0-artifacts-for-enola-enabled.md",
       "incoming": 4
     },
     {
@@ -3159,15 +3290,6 @@
       "via": [
         "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
         "org/state"
-      ]
-    },
-    {
-      "source": "muhamed.github.io/options",
-      "target": "org/options",
-      "via": [
-        "brain/pitches/upstream-template-sync",
-        "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-        "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors"
       ]
     }
   ]

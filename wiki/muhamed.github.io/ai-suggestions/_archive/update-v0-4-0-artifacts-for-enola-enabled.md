@@ -1,7 +1,7 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: high
 tags: [enola, records, adrs, refinement]
 ---
@@ -16,8 +16,7 @@ Both the ADR and the record for the pi-brain v0.4.0 update state that Enola is "
 
 Living documents should describe current truth, not future conditions. Leaving the placeholder language makes the artifacts look stale.
 
-## Suggested action
+## Resolution
 
-1. Update `wiki/muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md` Consequences section to say Enola is enabled and baseline is pinned.
-2. Update `wiki/muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md` Current truth and Consequences sections to reflect the same.
-3. Optionally add an Enola receipt citation to the record or a related wiki page.
+- The ADR already stated Enola was part of the delivered 0.4.0 features; no change needed.
+- Updated the record's "Current truth" and "Consequences" sections to say Enola is enabled, the baseline is pinned, and `brain_enola_capture` reports no regressions.
