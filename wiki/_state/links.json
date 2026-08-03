@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T12:03:07.662Z",
-  "node_count": 61,
-  "edge_count": 361,
+  "generated_at": "2026-08-03T15:14:28.375Z",
+  "node_count": 64,
+  "edge_count": 364,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -331,6 +331,27 @@
       "status": "resolved",
       "confidence": "high",
       "title": "Update v0.4.0 ADR and record to reflect enabled Enola"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/batch-add-remaining-cross-links.md",
+      "kind": "ai-suggestion",
+      "status": "suggested",
+      "confidence": "medium",
+      "title": "Batch-add the remaining natural cross-links"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/link-archive-index-from-home.md",
+      "kind": "ai-suggestion",
+      "status": "suggested",
+      "confidence": "low",
+      "title": "Link the resolved-suggestions archive from the brain home"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/schedule-periodic-refinement.md",
+      "kind": "ai-suggestion",
+      "status": "suggested",
+      "confidence": "low",
+      "title": "Schedule periodic refinement instead of continuous micro-linking"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md",
@@ -1082,6 +1103,27 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Update v0.4.0 ADR and record to reflect enabled Enola"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/refinement/batch-add-remaining-cross-links",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Batch-add the remaining natural cross-links"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/refinement/link-archive-index-from-home",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link the resolved-suggestions archive from the brain home"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/refinement/schedule-periodic-refinement",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Schedule periodic refinement instead of continuous micro-lin"
     },
     {
       "source": "index",

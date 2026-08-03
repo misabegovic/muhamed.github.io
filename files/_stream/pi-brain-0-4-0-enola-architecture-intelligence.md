@@ -1,6 +1,6 @@
 ---
 layout: stream-entry
-title: "pi-brain 0.4.0 adds Enola architecture intelligence"
+title: "shape with ENOLA"
 source: "pi-brain 0.4.0 changelog"
 url_external: "https://github.com/misabegovic/pi-brain/blob/main/CHANGELOG.md"
 type: note
