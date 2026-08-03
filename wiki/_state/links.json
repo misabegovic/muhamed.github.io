@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T10:51:31.137Z",
-  "node_count": 38,
-  "edge_count": 170,
+  "generated_at": "2026-08-03T10:52:53.765Z",
+  "node_count": 39,
+  "edge_count": 173,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -247,6 +247,13 @@
       "status": "accepted",
       "confidence": "low",
       "title": "PRD — Unified tag filtering and search"
+    },
+    {
+      "path": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md",
+      "kind": "record",
+      "status": "current",
+      "confidence": "high",
+      "title": "Record — Update pi-brain to v0.4.0 in this hybrid clone"
     },
     {
       "path": "org/options.md",
@@ -707,6 +714,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Update pi-brain to v0.4.0 in this hybrid clone"
+    },
+    {
+      "source": "index",
       "target": "index",
       "kind": "markdown",
       "provenance": "body",
@@ -998,6 +1012,20 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "State — muhamed.github.io"
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "ADR — Update pi-brain to v0.4.0 in this hybrid clone"
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Fix validate workflow to run package-resolved brain"
     },
     {
       "source": "org/options",
@@ -1533,6 +1561,14 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md",
+      "incoming": 4
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md",
       "incoming": 4
     },
@@ -1573,19 +1609,11 @@
       "incoming": 3
     },
     {
-      "path": "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync.md",
-      "incoming": 3
-    },
-    {
       "path": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md",
       "incoming": 3
     },
     {
       "path": "muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md",
-      "incoming": 3
-    },
-    {
-      "path": "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md",
       "incoming": 3
     },
     {
@@ -1673,6 +1701,22 @@
       "via": [
         "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
         "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "org/roadmap",
+      "via": [
+        "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
+        "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "target": "org/state",
+      "via": [
+        "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
+        "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync"
       ]
     },
     {
