@@ -1,18 +1,11 @@
 {
-  "name": "pi-brain",
+  "name": "muhamed.github.io",
   "version": "0.1.0",
-  "description": "A cozy knowledge home for pi. Brings the brain wiki pattern into pi sessions as an extension, skill, prompt, and theme.",
-  "keywords": ["pi-package", "brain", "knowledge-base", "wiki", "memory"],
+  "description": "pi-brain clone and Jekyll site for muhamed.github.io.",
   "license": "MIT",
   "author": "Muhamed Isabegovic",
-  "pi": {
-    "extensions": ["./extensions/pi-brain.ts"],
-    "skills": ["./skills"],
-    "prompts": ["./prompts"],
-    "themes": ["./themes"]
-  },
-  "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
-    "typebox": "*"
+  "private": true,
+  "devDependencies": {
+    "@misabegovic/pi-brain": "0.4.0"
   }
 }

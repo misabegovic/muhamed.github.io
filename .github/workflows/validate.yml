@@ -19,7 +19,7 @@ jobs:
           node-version: 22
 
       - name: Install pi-brain (pinned to clone template version)
-        run: npm install --no-save @misabegovic/pi-brain@0.3.2
+        run: npm install --no-save @misabegovic/pi-brain@0.4.0
 
       - name: Validate corpus and regenerate views
         run: node node_modules/@misabegovic/pi-brain/tools/brain-sync.mjs
