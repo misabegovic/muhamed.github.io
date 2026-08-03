@@ -69,6 +69,9 @@ This is the synthesis layer for this pi-brain instance.
 - [✅ Restore custom content in org state/roadmap/options pages](muhamed.github.io/ai-suggestions/_archive/restore-org-state-roadmap-content.md)
 - [✅ Review stale inbox items](muhamed.github.io/ai-suggestions/_archive/review-stale-inbox-items.md)
 - [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/_archive/suppress-package-resolved-dead-links.md)
+- [Add the top remaining cross-links from brain-links suggestions](muhamed.github.io/ai-suggestions/refinement/add-top-remaining-cross-links.md)
+- [Link recent stream cards into the wiki](muhamed.github.io/ai-suggestions/refinement/link-stream-cards-to-wiki.md)
+- [Update log/log.md with recent work](muhamed.github.io/ai-suggestions/refinement/update-log-with-recent-work.md)
 
 ### note
 - [Resolved AI-suggestions archive](muhamed.github.io/ai-suggestions/_archive/index.md)
