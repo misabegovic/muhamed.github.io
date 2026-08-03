@@ -1,6 +1,6 @@
 ---
 layout: stream-entry
-title: "shape with ENOLA"
+title: "pi-brain 0.4.0 adds Enola architecture intelligence"
 source: "pi-brain 0.4.0 changelog"
 url_external: "https://github.com/misabegovic/pi-brain/blob/main/CHANGELOG.md"
 type: note
@@ -21,7 +21,11 @@ What Enola adds here:
 
 The idea is to stop guessing about architecture. Before a big structural change, you can check whether it introduces cycles, leaks boundaries, or touches more than intended. After a `/brain:build` or `/brain:sync-code`, you can re-baseline automatically so the corpus stays tied to real code structure.
 
-**We are already using it here.** Enola is enabled in this clone (`enola.enabled: true` in `brain.config.yml`), the baseline is pinned, and `brain_enola_capture` runs during autonomous refinement. That means shaping sessions for code-affecting decisions can now be grounded in the actual structure of the repo, not just prose.
+## shape with ENOLA
+
+**We are already using it here.** Enola is enabled in this clone (`enola.enabled: true` in `brain.config.yml`), the baseline is pinned, and `brain_enola_capture` runs during autonomous refinement.
+
+More importantly, Enola is now embedded in the shaping workflow. The `brain-shape` skill checks Enola impact and runs Enola checks when a shape touches code structure, and it can cite Enola receipts directly in ADRs/PRDs. Shaping code-affecting decisions is no longer just prose — it's grounded in the actual structure of the repo.
 
 Other 0.4.0 additions worth noting:
 
