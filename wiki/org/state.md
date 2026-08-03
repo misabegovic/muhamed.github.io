@@ -20,6 +20,8 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Record — pi-brain v0.2.0 release](../brain/records/version-0-2-0.md)
 - [pi-brain home](../index.md)
 - [Create a record for the accepted pi-brain v0.4.0 update](../muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md)
+- [Restore custom content in org state/roadmap/options pages](../muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content.md)
+- [Record — Update pi-brain to v0.4.0 in this hybrid clone](../muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 <!-- /brain-state -->
 
 ## What is uncertain
@@ -44,6 +46,8 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Sync latest upstream pi-brain updates](../muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](../muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
 - [Update pi-brain to v0.4.0 in this hybrid clone](../muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md)
+- [Document expected dead links from internal source citations](../muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations.md)
+- [Link muhamed.github.io decisions into org state/roadmap](../muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state.md)
 - [Review stale inbox items](../muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items.md)
 - [Suppress dead links to package-resolved resources](../muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links.md)
 - [RFC — Design directions for a public "brain stream" on muhamed.at](../muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)
@@ -53,6 +57,9 @@ Summarize the current truth for this scope. Be honest about gaps.
 - [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](../muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
 - [PRD — Multi-tag filtering and tag explorer](../muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer.md)
 - [PRD — Unified tag filtering and search](../muhamed.github.io/prds/unified-tag-filtering-and-search.md)
+- [Options — org](options.md)
+- [Roadmap — org](roadmap.md)
+- [State — org](state.md)
 <!-- /brain-state -->
 
 ## What changed recently

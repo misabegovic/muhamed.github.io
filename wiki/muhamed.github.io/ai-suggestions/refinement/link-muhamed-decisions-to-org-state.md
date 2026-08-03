@@ -1,12 +1,12 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: medium
 tags: [links, org, muhamed.github.io, state]
 ---
 
-# Link muhamed.github.io decisions into org state/roadmap
+# ✅ Link muhamed.github.io decisions into org state/roadmap
 
 ## Observation
 
@@ -21,9 +21,6 @@ The `org` scope currently only lists upstream `brain/*` decisions. Site-level de
 
 The org scope is supposed to be the high-level view of all committed work. If site-level ADRs live in a separate scope with no links, the org view is incomplete.
 
-## Suggested action
+## Resolution
 
-Add explicit cross-scope links from `org/state.md` and `org/roadmap.md` to the delivered `muhamed.github.io` records and constraints. Since these pages are auto-generated, either:
-
-1. Add the links inside the brain-state markers so they persist, or
-2. Move the most org-relevant records (like the v0.4.0 update and the structural-changes constraint) into the org scope itself.
+`brain-state` regeneration now surfaces `muhamed.github.io` ADRs, records, and constraints in `org/state.md` and `org/roadmap.md` because they share the org scope. The v0.4.0 update record and the structural-changes constraint are visible in the org view.

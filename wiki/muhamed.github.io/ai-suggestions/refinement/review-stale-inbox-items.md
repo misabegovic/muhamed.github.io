@@ -1,12 +1,12 @@
 ---
 kind: ai-suggestion
 ai_suggestion: true
-status: suggested
+status: resolved
 confidence: medium
 tags: [inbox, grooming, refinement]
 ---
 
-# Review stale inbox items
+# ✅ Review stale inbox items
 
 ## Observation
 
@@ -21,10 +21,6 @@ Both have explicit "wait for" conditions.
 
 Inbox items that are blocked on external events can sit indefinitely. Without periodic review, the inbox becomes a low-signal dumping ground.
 
-## Suggested action
+## Resolution
 
-Run a grooming pass:
-
-- If the triggering events have not occurred, add a `review_after` date or move them to a "blocked on external" section so they don't look like unattended work.
-- If enough time has passed, archive them with a note that synthesis was deferred.
-- If either thread has advanced since capture, synthesize now.
+Moved both items to a "Blocked on external developments" section in `wiki/_state/inbox.md` with `review_after: 2026-09-01`. No synthesis needed until the Rails fork / Ruby governance situation or the AI-commons policy thread develops.

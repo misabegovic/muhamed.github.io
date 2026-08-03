@@ -54,12 +54,12 @@ This is the synthesis layer for this pi-brain instance.
 - [pi-brain home](index.md)
 
 ### ai-suggestion
-- [Document expected dead links from internal source citations](muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations.md)
-- [Link muhamed.github.io decisions into org state/roadmap](muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state.md)
-- [Create a record for the accepted pi-brain v0.4.0 update](muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md)
-- [Restore custom content in org state/roadmap/options pages](muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content.md)
-- [Review stale inbox items](muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items.md)
-- [Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links.md)
+- [✅ Document expected dead links from internal source citations](muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations.md)
+- [✅ Link muhamed.github.io decisions into org state/roadmap](muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state.md)
+- [✅ Create a record for the accepted pi-brain v0.4.0 update](muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md)
+- [✅ Restore custom content in org state/roadmap/options pages](muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content.md)
+- [✅ Review stale inbox items](muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items.md)
+- [✅ Suppress dead links to package-resolved resources](muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links.md)
 
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)

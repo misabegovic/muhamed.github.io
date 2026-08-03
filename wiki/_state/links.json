@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T10:52:53.765Z",
-  "node_count": 39,
-  "edge_count": 173,
+  "generated_at": "2026-08-03T11:13:34.456Z",
+  "node_count": 42,
+  "edge_count": 189,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -179,25 +179,46 @@
       "title": "Update pi-brain to v0.4.0 in this hybrid clone"
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "medium",
+      "title": "✅ Document expected dead links from internal source citations"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "medium",
+      "title": "✅ Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md",
       "kind": "ai-suggestion",
-      "status": "suggested",
+      "status": "resolved",
       "confidence": "high",
-      "title": "Create a record for the accepted pi-brain v0.4.0 update"
+      "title": "✅ Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content.md",
+      "kind": "ai-suggestion",
+      "status": "resolved",
+      "confidence": "high",
+      "title": "✅ Restore custom content in org state/roadmap/options pages"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items.md",
       "kind": "ai-suggestion",
-      "status": "suggested",
+      "status": "resolved",
       "confidence": "medium",
-      "title": "Review stale inbox items"
+      "title": "✅ Review stale inbox items"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links.md",
       "kind": "ai-suggestion",
-      "status": "suggested",
+      "status": "resolved",
       "confidence": "medium",
-      "title": "Suppress dead links to package-resolved resources"
+      "title": "✅ Suppress dead links to package-resolved resources"
     },
     {
       "path": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md",
@@ -728,24 +749,45 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Document expected dead links from internal source citation"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update",
       "kind": "markdown",
       "provenance": "body",
-      "context": "Create a record for the accepted pi-brain v0.4.0 update"
+      "context": "✅ Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "✅ Restore custom content in org state/roadmap/options pages"
     },
     {
       "source": "index",
       "target": "muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items",
       "kind": "markdown",
       "provenance": "body",
-      "context": "Review stale inbox items"
+      "context": "✅ Review stale inbox items"
     },
     {
       "source": "index",
       "target": "muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links",
       "kind": "markdown",
       "provenance": "body",
-      "context": "Suppress dead links to package-resolved resources"
+      "context": "✅ Suppress dead links to package-resolved resources"
     },
     {
       "source": "index",
@@ -951,27 +993,6 @@
       "context": "State — muhamed.github.io"
     },
     {
-      "source": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-      "target": "files/_stream/recruitment-agents-talk-it-out-first",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Recruitment agents: let the agents talk it out first"
-    },
-    {
-      "source": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-      "target": "sources/conversation/2026-07-25--recruitment-agents-idea",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Recruitment agents idea conversation"
-    },
-    {
-      "source": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-      "target": "sources/doc/2026-07-27--vision-md",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Usput.ba Platform vision"
-    },
-    {
       "source": "muhamed.github.io/constraints/adr-before-structural-changes",
       "target": "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
       "kind": "markdown",
@@ -1036,10 +1057,31 @@
     },
     {
       "source": "org/options",
+      "target": "muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Document expected dead links from internal source citations"
+    },
+    {
+      "source": "org/options",
+      "target": "muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "org/options",
       "target": "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update",
       "kind": "markdown",
       "provenance": "body",
       "context": "Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "source": "org/options",
+      "target": "muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Restore custom content in org state/roadmap/options pages"
     },
     {
       "source": "org/options",
@@ -1204,6 +1246,27 @@
     },
     {
       "source": "org/roadmap",
+      "target": "org/options",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Options — org"
+    },
+    {
+      "source": "org/roadmap",
+      "target": "org/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — org"
+    },
+    {
+      "source": "org/roadmap",
+      "target": "org/state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "State — org"
+    },
+    {
+      "source": "org/roadmap",
       "target": "brain/pitches/upstream-template-sync",
       "kind": "markdown",
       "provenance": "body",
@@ -1211,10 +1274,31 @@
     },
     {
       "source": "org/roadmap",
+      "target": "muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Document expected dead links from internal source citations"
+    },
+    {
+      "source": "org/roadmap",
+      "target": "muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "org/roadmap",
       "target": "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update",
       "kind": "markdown",
       "provenance": "body",
       "context": "Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "source": "org/roadmap",
+      "target": "muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Restore custom content in org state/roadmap/options pages"
     },
     {
       "source": "org/roadmap",
@@ -1292,6 +1376,20 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Create a record for the accepted pi-brain v0.4.0 update"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Restore custom content in org state/roadmap/options pages"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Update pi-brain to v0.4.0 in this hybrid clone"
     },
     {
       "source": "org/state",
@@ -1428,6 +1526,20 @@
     },
     {
       "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Document expected dead links from internal source citations"
+    },
+    {
+      "source": "org/state",
+      "target": "muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Link muhamed.github.io decisions into org state/roadmap"
+    },
+    {
+      "source": "org/state",
       "target": "muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items",
       "kind": "markdown",
       "provenance": "body",
@@ -1488,6 +1600,27 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "PRD — Unified tag filtering and search"
+    },
+    {
+      "source": "org/state",
+      "target": "org/options",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Options — org"
+    },
+    {
+      "source": "org/state",
+      "target": "org/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — org"
+    },
+    {
+      "source": "org/state",
+      "target": "org/state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "State — org"
     }
   ],
   "orphans": [],
@@ -1501,15 +1634,15 @@
       "incoming": 9
     },
     {
+      "path": "org/state.md",
+      "incoming": 9
+    },
+    {
       "path": "brain/adrs/stronger-default-implementation-guardrails.md",
       "incoming": 7
     },
     {
       "path": "brain/pitches/upstream-template-sync.md",
-      "incoming": 7
-    },
-    {
-      "path": "org/state.md",
       "incoming": 7
     },
     {
@@ -1549,6 +1682,10 @@
       "incoming": 5
     },
     {
+      "path": "org/roadmap.md",
+      "incoming": 5
+    },
+    {
       "path": "brain/feedback/eager-implementation-contract-breach.md",
       "incoming": 4
     },
@@ -1569,7 +1706,19 @@
       "incoming": 4
     },
     {
+      "path": "muhamed.github.io/ai-suggestions/refinement/document-expected-source-citations.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/link-muhamed-decisions-to-org-state.md",
+      "incoming": 4
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update.md",
+      "incoming": 4
+    },
+    {
+      "path": "muhamed.github.io/ai-suggestions/refinement/restore-org-state-roadmap-content.md",
       "incoming": 4
     },
     {
@@ -1625,33 +1774,11 @@
       "incoming": 3
     },
     {
-      "path": "org/roadmap.md",
+      "path": "org/options.md",
       "incoming": 3
     }
   ],
-  "dead_links": [
-    {
-      "source": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-      "target": "files/_stream/recruitment-agents-talk-it-out-first",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Recruitment agents: let the agents talk it out first"
-    },
-    {
-      "source": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-      "target": "sources/conversation/2026-07-25--recruitment-agents-idea",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Recruitment agents idea conversation"
-    },
-    {
-      "source": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-      "target": "sources/doc/2026-07-27--vision-md",
-      "kind": "markdown",
-      "provenance": "body",
-      "context": "Usput.ba Platform vision"
-    }
-  ],
+  "dead_links": [],
   "suggestions": [
     {
       "source": "brain/records/smarter-autonomy",
@@ -1696,6 +1823,14 @@
       ]
     },
     {
+      "source": "muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design",
+      "target": "org/roadmap",
+      "via": [
+        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+        "org/state"
+      ]
+    },
+    {
       "source": "muhamed.github.io/constraints/adr-before-structural-changes",
       "target": "org/roadmap",
       "via": [
@@ -1709,69 +1844,6 @@
       "via": [
         "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
         "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync"
-      ]
-    },
-    {
-      "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
-      "target": "org/state",
-      "via": [
-        "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
-        "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync"
-      ]
-    },
-    {
-      "source": "org/options",
-      "target": "org/roadmap",
-      "via": [
-        "brain/pitches/upstream-template-sync",
-        "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update",
-        "muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items",
-        "muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links",
-        "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-        "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors"
-      ]
-    },
-    {
-      "source": "org/options",
-      "target": "org/state",
-      "via": [
-        "brain/pitches/upstream-template-sync",
-        "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update",
-        "muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items",
-        "muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links",
-        "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-        "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors"
-      ]
-    },
-    {
-      "source": "org/roadmap",
-      "target": "org/state",
-      "via": [
-        "brain/adrs/smarter-autonomy",
-        "brain/adrs/stronger-default-implementation-guardrails",
-        "brain/adrs/upstream-template-sync",
-        "brain/bets/smarter-autonomy",
-        "brain/bets/upstream-template-sync",
-        "brain/prds/smarter-autonomy",
-        "brain/prds/upstream-template-sync",
-        "index",
-        "muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files",
-        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
-        "muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync",
-        "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
-        "muhamed.github.io/adrs/make-brain-cards-the-home-page",
-        "muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0",
-        "muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates",
-        "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
-        "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
-        "muhamed.github.io/prds/multi-tag-filtering-and-tag-explorer",
-        "muhamed.github.io/prds/unified-tag-filtering-and-search",
-        "brain/pitches/upstream-template-sync",
-        "muhamed.github.io/ai-suggestions/refinement/record-pi-brain-v0-4-0-update",
-        "muhamed.github.io/ai-suggestions/refinement/review-stale-inbox-items",
-        "muhamed.github.io/ai-suggestions/refinement/suppress-package-resolved-dead-links",
-        "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent",
-        "muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors"
       ]
     }
   ]
