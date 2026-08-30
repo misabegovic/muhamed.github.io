@@ -10,17 +10,17 @@ tags: [usput, agents, mcp, travel, ai, ideas, platform]
 
 Been thinking about the "bring your own agent" idea and how it could apply to [Usput.ba](https://usput.ba).
 
-The future of human communication feels less like app-to-human and more like **agent-to-agent**: you have your own AI that handles the tedious parts — asking questions, comparing options, negotiating, rescheduling. Why shouldn't travel work the same way?
+The future of human communication feels less like app-to-human and more like **agent-to-agent**: you have your own AI that handles the tedious parts: asking questions, comparing options, negotiating, rescheduling. Why shouldn't travel work the same way?
 
 For Usput.ba, that means exposing the platform through an **MCP server** so agents on both sides of a trip can talk to our Platform agent directly. The agents ask, plan, and negotiate; the humans just approve the final proposal.
 
 This isn't limited to travelers connecting their personal agents. Anyone offering something to a traveler can plug one in too:
 
-- **Hotels, guesthouses, and apartments** — availability, pricing, special requests, check-in details.
-- **Restaurants, cafés, and bars** — reservations, dietary options, group menus, opening hours.
-- **Tour guides and activity operators** — custom tours, group sizes, gear, weather contingencies.
-- **Transfer and rental services** — pickups, routes, vehicle types.
-- **Travel agencies, DMCs, and concierges** — packaged itineraries, negotiated rates, bundled services.
+- **Hotels, guesthouses, and apartments**: availability, pricing, special requests, check-in details.
+- **Restaurants, cafés, and bars**: reservations, dietary options, group menus, opening hours.
+- **Tour guides and activity operators**: custom tours, group sizes, gear, weather contingencies.
+- **Transfer and rental services**: pickups, routes, vehicle types.
+- **Travel agencies, DMCs, and concierges**: packaged itineraries, negotiated rates, bundled services.
 - **Individuals** renting a room, offering a cooking class, or guiding a hike.
 
 The Platform agent becomes a matchmaker between demand-side agents (travelers) and supply-side agents (providers). Instead of a traveler browsing a site, you get agent-to-agent negotiation across the whole ecosystem.
@@ -28,7 +28,7 @@ The Platform agent becomes a matchmaker between demand-side agents (travelers) a
 What changes:
 
 - **Travelers** can plan in natural language across destinations, experiences, and constraints ("4 days in October, family with a toddler, wheelchair accessible").
-- **Preferences** that search forms suck at — "quiet mountain towns with good coffee," "no crowds," "pet-friendly" — become queryable because an agent can iterate.
+- **Preferences** that search forms suck at ("quiet mountain towns with good coffee," "no crowds," "pet-friendly") become queryable because an agent can iterate.
 - **Cross-service trips** get easier: the agent combines Usput.ba data with flights, weather, calendar, and hotels in one conversation.
 - **Custom deals** like "private Una rafting for 8 people on July 14th" can be negotiated agent-to-agent before a human sees the final offer.
 - **Providers** spend less time answering repeat questions and more time hosting.

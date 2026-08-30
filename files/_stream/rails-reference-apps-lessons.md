@@ -9,9 +9,9 @@ created_at: 2026-07-27T10:00:00+02:00
 tags: [rails, ruby, 37signals, best-practices, architecture, hotwire, active-storage, sqlite, notifications, filters]
 ---
 
-Spent more time inside the official [Rails reference apps](https://rubyonrails.org/docs/reference-apps) — Campfire, Writebook, and Fizzy — reading actual code, not just surface docs. Some deeper patterns worth keeping:
+Spent more time inside the official [Rails reference apps](https://rubyonrails.org/docs/reference-apps) (Campfire, Writebook, and Fizzy), reading actual code, not just surface docs. Some deeper patterns worth keeping:
 
-## Campfire — real-time chat
+## Campfire: real-time chat
 
 ### Auth & sessions
 - `Authentication` concern in `app/controllers/concerns/authentication.rb` restores a session from a signed permanent `:session_token` cookie, falls back to bot auth via `params[:bot_key]`, and stores a `return_to` URL for post-login redirects.
@@ -46,7 +46,7 @@ Spent more time inside the official [Rails reference apps](https://rubyonrails.o
 - Web Push via VAPID keys and the `web-push` gem.
 - OpenGraph metadata fetching lives in `app/models/opengraph/` with `Fetch`, `Document`, `Location`, `Metadata::Fetching`.
 
-## Writebook — book publishing
+## Writebook: book publishing
 
 ### Auth & access
 - Same cookie/session pattern as Campfire; `User::Role` is `member`/`administrator`.
@@ -82,7 +82,7 @@ Spent more time inside the official [Rails reference apps](https://rubyonrails.o
 ### Search
 - SQLite FTS `leaf_search_index` with `title` and `content` columns, maintained manually and ordered by `bm25(leaf_search_index, 2.0)`.
 
-## Fizzy — kanban/issue tracking
+## Fizzy: kanban/issue tracking
 
 ### Multi-tenancy & auth
 - URL-path based tenancy: `/{account_id}/boards/...`. Middleware `AccountSlug::Extractor` pulls the account slug, moves it from `PATH_INFO` to `SCRIPT_NAME`, and sets `Current.account`.
@@ -141,10 +141,10 @@ Spent more time inside the official [Rails reference apps](https://rubyonrails.o
 - **REST resources over custom actions.** Closing a card is `Cards::ClosuresController#create`, not `post :close`.
 - **Concerns for behavior slices.** `Card::Commentable`, `Card::Closeable`, `Card::Entropic`, `Message::Searchable`, `User::Mentionable`.
 - **Expanded conditionals over guard clauses.** Guard clauses only at the very top or when the body is large.
-- **Method ordering:** class methods, public methods with `initialize` first, private methods — all ordered by invocation order.
+- **Method ordering:** class methods, public methods with `initialize` first, private methods, all ordered by invocation order.
 - **`!` only when there's a non-`!` counterpart.** Not just to signal mutation.
 - **Test conventions:** use fixtures, `_path` helpers, `assert_in_body`, omit explicit `{ render }` in `respond_to`.
 
 ## What stands out
 
-These apps don't avoid Rails features — they use delegated types, polymorphic associations, concerns, Action Cable, Turbo, Solid Queue. But they avoid adding architectural layers until the domain demands it. The result is code that reads like the product it builds.
+These apps don't avoid Rails features; they use delegated types, polymorphic associations, concerns, Action Cable, Turbo, Solid Queue. But they avoid adding architectural layers until the domain demands it. The result is code that reads like the product it builds.

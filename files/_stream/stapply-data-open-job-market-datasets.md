@@ -9,7 +9,7 @@ created_at: 2026-07-28T10:30:00+02:00
 tags: [ai, agents, recruitment, data, ats, open-data]
 ---
 
-[Stapply Data](https://data.stapply.ai/) publishes **open snapshots of jobs and companies aggregated across 15 ATS platforms** — Ashby, Greenhouse, Lever, Workday, and others — as free CSV or Parquet downloads. The dataset is produced by [`ats-scrapers`](https://github.com/kalil0321/ats-scrapers), an open-source Python toolkit: **4.2M+ live jobs from 63,000+ companies across 49 sources**, with more than 50 reusable scraper adapters.
+[Stapply Data](https://data.stapply.ai/) publishes **open snapshots of jobs and companies aggregated across 15 ATS platforms**: Ashby, Greenhouse, Lever, Workday, and others, as free CSV or Parquet downloads. The dataset is produced by [`ats-scrapers`](https://github.com/kalil0321/ats-scrapers), an open-source Python toolkit: **4.2M+ live jobs from 63,000+ companies across 49 sources**, with more than 50 reusable scraper adapters.
 
 Why this matters for the recruitment-agent thread:
 

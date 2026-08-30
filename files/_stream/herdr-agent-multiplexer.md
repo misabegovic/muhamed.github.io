@@ -13,4 +13,4 @@ tags: [ai, agents, tools, terminal, workflow]
 
 The idea is to run all your agents from one terminal, on any machine, over SSH. Each agent gets its own real terminal on a server that keeps it alive when you close your laptop. You can see states like blocked, working, and done at a glance, and reattach from another device.
 
-This could be a useful piece of the "intent + context + agents" workflow I'm thinking about — a persistent place where long-running agent work lives, instead of losing state every time a local session ends.
+This could be a useful piece of the "intent + context + agents" workflow I'm thinking about: a persistent place where long-running agent work lives, instead of losing state every time a local session ends.

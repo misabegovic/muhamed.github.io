@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     {% seo title=false %}
@@ -7,11 +7,10 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Peek into my brain" href="{{ site.baseurl }}/brain.xml" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Peek into my brain" href="{{ site.baseurl }}/brain.xml" />
 
     <meta name="theme-color" content="#000000">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/profile.jpg">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
     {% include analytics_head.html %}
 
     <style>
@@ -37,7 +36,7 @@
       <div class="wrapper-masthead">
         <div class="container">
           <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.name }}" /></a>
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
               <p class="site-description">{{ site.description }}</p>
@@ -46,6 +45,7 @@
               <a href="{{ site.baseurl }}/">Brain</a>
               <a href="{{ site.baseurl }}/writing">Writing</a>
               <a href="{{ site.baseurl }}/tags">Tags</a>
+              <a href="{{ site.baseurl }}/services">Services</a>
               <a href="{{ site.baseurl }}/about">About</a>
             </nav>
           </header>

@@ -37,12 +37,12 @@ layout: default
 <div class="brain-home">
   <h1>Peek into my brain</h1>
   <p class="subtitle">A card-based browse through what I'm reading, watching, and thinking about.</p>
-  <p class="disclaimer">These entries are raw signals I drop into my brain — articles, books, quotes, half-formed notes — and an AI helps me organize, tag, and present them here. For longer human-written pieces, see <a href="/writing/">Writing</a>.</p>
+  <p class="disclaimer">These entries are raw signals I drop into my brain (articles, books, quotes, half-formed notes), and an AI helps me organize, tag, and present them here. For longer human-written pieces, see <a href="/writing/">Writing</a>.</p>
 
   <div class="controls">
     <input type="text" id="search" placeholder="Search or type #tag to filter...">
     <span id="clear-filters" class="clear-filters hidden">Clear filters</span>
-    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
+    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#agents</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
   <div class="grid" id="cards">
@@ -70,6 +70,10 @@ layout: default
     <p>Nothing here yet. Check back soon, or browse the <a href="/writing/">writing</a> page.</p>
   </div>
   {% endif %}
+
+  <div class="empty-state" id="no-results" hidden>
+    <p>No entries match your filters. <a href="#" id="no-results-clear">Clear filters</a> or browse <a href="/tags/">all tags</a>.</p>
+  </div>
 
   <div class="load-more-wrap">
     <button id="load-more" class="load-more">Load more</button>
@@ -133,6 +137,7 @@ function updateVisibility() {
   const anyHidden = cards.some(c => !c.classList.contains('hidden') && c.classList.contains('page-hidden'));
   loadMoreBtn.style.display = (anyHidden ? 'inline-block' : 'none');
   clearFilters.classList.toggle('hidden', !search.value);
+  document.getElementById('no-results').hidden = !(matched === 0 && cards.length > 0);
   updateTagHighlights(tags);
 }
 
@@ -154,6 +159,14 @@ search.addEventListener('input', () => {
 });
 
 clearFilters.addEventListener('click', () => {
+  search.value = '';
+  setUrlParams([], '');
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
+});
+
+document.getElementById('no-results-clear').addEventListener('click', (e) => {
+  e.preventDefault();
   search.value = '';
   setUrlParams([], '');
   visibleCount = PAGE_SIZE;

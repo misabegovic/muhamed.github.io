@@ -42,3 +42,4 @@
 - 2026-08-03T10:00:00Z — drafted and accepted ADR update-pi-brain-v0-4-0-hybrid-clone; migrated clone to @misabegovic/pi-brain@0.4.0 with hybrid-site carve-out; created delivery record
 - 2026-08-03T10:30:00Z — enabled Enola architecture tracking, pinned baseline; no regressions detected
 - 2026-08-03T11:00:00Z — ran autonomous refinement passes: rewrote package-resolved dead links (90 → 0), archived resolved ai-suggestions, generated and customized muhamed.github.io/{state,roadmap,options}.md
+- 2026-08-30T13:30:00Z - site maintenance on human request: fixed tag-selection and metadata bugs (tags page now links both sections, meta.html elsif/author fixes, single canonical), removed all em dashes from site text, added llms.txt + robots.txt + seo social config for AI-friendliness, added /services/ page and expanded About with enola contributions and the four maintained gems

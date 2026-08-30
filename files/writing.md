@@ -57,6 +57,10 @@ title: Writing
     {% endfor %}
   </div>
 
+  <div class="empty-state" id="no-results" hidden style="text-align: center; color: #666; padding: 3rem 1rem;">
+    <p>No posts match your filters. <a href="#" id="no-results-clear">Clear filters</a> or browse <a href="/tags/">all tags</a>.</p>
+  </div>
+
   <div class="load-more-wrap">
     <button id="load-more" class="load-more">Load more</button>
   </div>
@@ -119,6 +123,7 @@ function updateVisibility() {
   const anyHidden = cards.some(c => !c.classList.contains('hidden') && c.classList.contains('page-hidden'));
   loadMoreBtn.style.display = (anyHidden ? 'inline-block' : 'none');
   clearFilters.classList.toggle('hidden', !search.value);
+  document.getElementById('no-results').hidden = !(matched === 0 && cards.length > 0);
   updateTagHighlights(tags);
 }
 
@@ -140,6 +145,14 @@ search.addEventListener('input', () => {
 });
 
 clearFilters.addEventListener('click', () => {
+  search.value = '';
+  setUrlParams([], '');
+  visibleCount = PAGE_SIZE;
+  updateVisibility();
+});
+
+document.getElementById('no-results-clear').addEventListener('click', (e) => {
+  e.preventDefault();
   search.value = '';
   setUrlParams([], '');
   visibleCount = PAGE_SIZE;

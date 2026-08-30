@@ -15,7 +15,7 @@ The catch for us in Europe: OpenAI webhooks aren't available here yet. Without w
 
 Alternatives to explore:
 
-- **AWS Bedrock** — may have better async/notification support in EU regions.
-- **Azure OpenAI** — often has different regional availability and webhook/eventing options.
+- **AWS Bedrock**: may have better async/notification support in EU regions.
+- **Azure OpenAI**: often has different regional availability and webhook/eventing options.
 
 For now, Flex Processing is on the list, but only if the polling overhead is worth the cost savings.
