@@ -36,6 +36,17 @@ footer-links:
   playconsole:
   mastodon: # <your-mastodon-instance>/@<your-user-name> eg. fosstodon.org/@username
 
+# Structured metadata for jekyll-seo-tag (Twitter cards + JSON-LD sameAs links)
+twitter:
+  username: m_isabegovic
+  card: summary
+social:
+  name: Muhamed Isabegovic
+  links:
+    - https://github.com/misabegovic
+    - https://www.linkedin.com/in/muhamed-isabegovic/
+    - https://twitter.com/m_isabegovic
+
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus:

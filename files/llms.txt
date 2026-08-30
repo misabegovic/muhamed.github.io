@@ -1,0 +1,45 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# {{ site.author }} (muhamed.at)
+
+> Personal site of {{ site.author }}: Ruby/Rails engineer and AI product developer, contributor to enola and maintainer of four related gems, creator of pi-brain, organizer of RubyConf Austria (and EuRuKo 2024 before it). The site has two content sections: a raw, AI-assisted "brain stream" of notes and links, and longer human-written essays under "writing". It also describes consulting and training services for AI-augmented development.
+
+This file follows the llms.txt convention. All pages are static HTML and easy to fetch. Feeds carry full content.
+
+## Key pages
+
+- [About]({{ site.url }}/about/): bio, career history, specialties, open source work
+- [Services]({{ site.url }}/services/): consulting, workshops, and fractional AI product engineering for Rails teams
+- [Writing]({{ site.url }}/writing/): longer essays, written by a human
+- [Brain stream]({{ site.url }}/): short notes on what I am reading and building, organized with AI assistance
+- [Tags]({{ site.url }}/tags/): tag index across both sections
+
+## Feeds
+
+- [Writing feed]({{ site.url }}/feed.xml): Atom feed of essays
+- [Brain stream feed]({{ site.url }}/brain.xml): Atom feed of the brain stream
+- [Sitemap]({{ site.url }}/sitemap.xml)
+
+## Writing
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}{% for post in sorted_posts %}
+- [{{ post.title }}]({{ site.url }}{{ post.url }}) ({{ post.date | date: "%Y-%m-%d" }}){% if post.excerpt %}: {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}{% endif %}{% endfor %}
+
+## Brain stream
+{% assign sorted_stream = site.stream | sort: 'created_at' | reverse %}{% for entry in sorted_stream %}
+- [{{ entry.title }}]({{ site.url }}{{ entry.url }}) ({{ entry.date | date: "%Y-%m-%d" }}, {{ entry.type }}){% if entry.tags and entry.tags != empty %} [tags: {{ entry.tags | join: ', ' }}]{% endif %}{% endfor %}
+
+## Open source
+
+- [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
+- [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
+- [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
+- [enola-guides](https://rubygems.org/gems/enola-guides): the content layer for enola, guides and law catalogue (maintainer)
+- [munola](https://rubygems.org/gems/munola): a personal channel on top of enola with a built-in recipe catalogue (maintainer)
+
+## Contact
+
+- Email: info@muhamed.at
+- GitHub: https://github.com/misabegovic
+- LinkedIn: https://www.linkedin.com/in/muhamed-isabegovic/

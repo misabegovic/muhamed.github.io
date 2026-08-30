@@ -1,0 +1,35 @@
+---
+layout: null
+permalink: /robots.txt
+---
+# muhamed.at
+# Humans and AI agents are both welcome here.
+# Machine-readable index for LLMs: {{ site.url }}/llms.txt
+# Feeds: {{ site.url }}/feed.xml (writing), {{ site.url }}/brain.xml (brain stream)
+
+User-agent: *
+Allow: /
+
+# AI crawlers are explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml
