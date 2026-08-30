@@ -13,7 +13,7 @@ Most teams already have the tools. What's usually missing is a working method: h
 
 - I build AI products for a living. Right now as an AI Product Developer at [Teamtailor](https://www.teamtailor.com/), before that as Technical Lead at [Carv](https://www.carv.com/), both in recruitment and HR.
 - My way of working is public and documented: spec-driven development, decision records, agent workflows. This site is literally maintained by an agent running [pi-brain](https://github.com/misabegovic/pi-brain), an open source knowledge base I built for that purpose.
-- I'm a core contributor to [enola](https://github.com/enola-labs/enola), an architectural regression testing tool built for AI-assisted development. A large part of it is my work, including the constraints program that keeps agent-written code inside the architecture you declared, and I maintain the [four gems](/about/#open-source) that bring it to Ruby and Rails teams.
+- I'm a core contributor to [enola](https://github.com/enola-labs/enola), an architectural regression testing tool built for AI-assisted development. Among other things I contributed the constraints program that keeps agent-written code inside the architecture you declared, and I maintain the [four gems](/about/#open-source) that bring it to Ruby and Rails teams.
 - I organize [RubyConf Austria](https://www.rubyconf.at/) and organized [EuRuKo 2024](https://2024.euruko.org). I spend a lot of time with the people thinking hardest about what Rails development looks like when agents write most of the code.
 
 ## Workshop: AI-augmented development for Rails teams
