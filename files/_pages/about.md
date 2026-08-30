@@ -12,6 +12,10 @@ I have been working with Ruby in a professional setting since 2016, with a singl
 
 Lately, I am building [pi-brain](https://github.com/misabegovic/muhamed.github.io), a cloneable, agent-maintained knowledge base that powers this site, and experimenting with AI agents and workflows around tools like Claude (Opus, Fable), Kimi K3, and [Pi.dev](https://pi.dev).
 
+I am also a contributor to [enola](https://github.com/enola-labs/enola), an architecture intelligence tool that turns a codebase into a queryable graph and checks architectural laws in CI. My Ruby DSL and rule-form work landed upstream and shipped in enola v0.4.4. Around it I maintain four gems that make enola practical for Ruby and Rails teams (see Open source below).
+
+I also work with teams directly on AI-augmented development. See [Services](/services/) for workshops, consulting, and fractional engagements.
+
 ## Career Overview
 
 - (2026 - present) AI Product Developer @ [Teamtailor](https://www.teamtailor.com/)
@@ -33,6 +37,16 @@ Lately, I am building [pi-brain](https://github.com/misabegovic/muhamed.github.i
 - Software Design & Architecture
 - Team & Project Leadership
 - Community Building & Conference Organizing
+
+## Open source
+
+- [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base. This site runs on a clone of it.
+- Contributor to [enola](https://github.com/enola-labs/enola): architecture intelligence for codebases. My Ruby DSL and 21 rule forms merged upstream and shipped in v0.4.4.
+- Maintainer of four enola gems:
+  - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper over the released enola binary, with the Ruby providers (Prism, Rubydex) on by default.
+  - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer. A generator plus `enola:init`, `enola:snapshot`, and `enola:check`; a fresh `rails new` goes from nothing to a caught architecture breach in seconds.
+  - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer. Guides, a catalogue of architectural laws, worked examples, agent skills, and CI tooling.
+  - [munola](https://rubygems.org/gems/munola): my own channel on top of enola, with a built-in recipe catalogue bound by detection.
 
 ## Tech stack
 
