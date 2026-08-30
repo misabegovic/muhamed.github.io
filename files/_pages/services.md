@@ -5,6 +5,29 @@ permalink: /services/
 description: Consulting, workshops, and fractional AI product engineering for Rails and product engineering teams adopting AI-augmented development.
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI-augmented development consulting and training",
+  "url": "https://muhamed.at/services/",
+  "description": "Workshops, consulting, and fractional AI product engineering leadership for Rails and product engineering teams adopting AI-augmented development.",
+  "serviceType": [
+    "Team workshop: AI-augmented development for Rails teams",
+    "Consulting and advisory",
+    "Fractional AI product engineering lead"
+  ],
+  "provider": {
+    "@type": "Person",
+    "@id": "https://muhamed.at/#person",
+    "name": "Muhamed Isabegovic",
+    "email": "mailto:info@muhamed.at",
+    "url": "https://muhamed.at/about/"
+  },
+  "areaServed": ["Remote", "Austria", "Germany", "Switzerland"]
+}
+</script>
+
 I help Rails and product engineering teams adopt AI-augmented development that holds up in production.
 
 Most teams already have the tools. What's usually missing is a working method: how to get from intent to shipped code when agents do most of the typing, without the architecture, the review culture, or the team's understanding of its own system quietly falling apart. That method is what I teach and help set up.

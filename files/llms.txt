@@ -6,7 +6,7 @@ permalink: /llms.txt
 
 > Personal site of {{ site.author }}: Ruby/Rails engineer and AI product developer, core contributor to enola and maintainer of four related gems, creator of pi-brain, organizer of RubyConf Austria (and EuRuKo 2024 before it). The site has two content sections: a raw, AI-assisted "brain stream" of notes and links, and longer human-written essays under "writing". It also describes consulting and training services for AI-augmented development.
 
-This file follows the llms.txt convention. All pages are static HTML and easy to fetch. Feeds carry full content.
+This file follows the llms.txt convention. All pages are static HTML and easy to fetch. Feeds carry full content. The complete text of every page is available in one fetch at {{ site.url }}/llms-full.txt.
 
 ## Key pages
 

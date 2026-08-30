@@ -2,7 +2,42 @@
 layout: page
 title: About
 permalink: /about/
+description: Muhamed Isabegovic is a Ruby and Rails engineer and AI product developer, core contributor to enola, maintainer of four related gems, creator of pi-brain, and organizer of RubyConf Austria.
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://muhamed.at/#person",
+  "name": "Muhamed Isabegovic",
+  "url": "https://muhamed.at/",
+  "image": "https://muhamed.at/images/profile.jpg",
+  "email": "mailto:info@muhamed.at",
+  "jobTitle": "AI Product Developer",
+  "worksFor": [
+    { "@type": "Organization", "name": "Teamtailor", "url": "https://www.teamtailor.com/" },
+    { "@type": "Organization", "name": "Usput.ba", "url": "https://usput.ba" }
+  ],
+  "homeLocation": { "@type": "Place", "name": "Austria" },
+  "knowsAbout": [
+    "Ruby",
+    "Ruby on Rails",
+    "AI-augmented development",
+    "AI agents",
+    "LLM orchestration",
+    "software architecture",
+    "developer tooling",
+    "recruitment technology"
+  ],
+  "sameAs": [
+    "https://github.com/misabegovic",
+    "https://www.linkedin.com/in/muhamed-isabegovic/",
+    "https://twitter.com/m_isabegovic"
+  ],
+  "description": "Ruby and Rails engineer and AI product developer. Core contributor to enola, maintainer of four related gems, creator of pi-brain, organizer of RubyConf Austria and EuRuKo 2024."
+}
+</script>
 
 Software Engineer with 10+ years of industry experience and 7+ years of volunteering and community organizing experience.
 

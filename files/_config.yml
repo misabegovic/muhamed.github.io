@@ -5,6 +5,10 @@
 # Name of your site (displayed in the header)
 name: Muhamed's
 
+# Full site title, used in <title> tags, og:site_name, and JSON-LD.
+# The header keeps the short `name` above.
+title: Muhamed Isabegovic
+
 # Name of the author
 author: Muhamed Isabegovic
 

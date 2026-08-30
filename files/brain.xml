@@ -22,6 +22,8 @@ permalink: /brain.xml
     <link href="{% if entry.url_external %}{{ entry.url_external }}{% else %}{{ site.url }}{{ entry.url }}{% endif %}"/>
     <updated>{{ entry.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ entry.url }}</id>
+    {% for tag in entry.tags %}<category term="{{ tag | xml_escape }}"/>
+    {% endfor %}
     <content type="html">
       {% if entry.quote %}&lt;blockquote&gt;“{{ entry.quote }}”&lt;/blockquote&gt;{% endif %}
       {{ entry.content | xml_escape }}

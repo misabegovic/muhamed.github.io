@@ -1,0 +1,46 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# {{ site.author }} (muhamed.at): full content
+
+> The complete text of every page on this site, for LLMs and agents that prefer one fetch over many. The index version lives at {{ site.url }}/llms.txt.
+
+=====================================
+ABOUT
+{{ site.url }}/about/
+=====================================
+
+{% capture about %}{% for p in site.pages %}{% if p.url == '/about/' %}{{ p.content | markdownify | strip_html }}{% endif %}{% endfor %}{% endcapture %}{{ about | strip }}
+
+=====================================
+SERVICES
+{{ site.url }}/services/
+=====================================
+
+{% capture services %}{% for p in site.pages %}{% if p.url == '/services/' %}{{ p.content | markdownify | strip_html }}{% endif %}{% endfor %}{% endcapture %}{{ services | strip }}
+
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}{% for post in sorted_posts %}
+=====================================
+WRITING: {{ post.title }}
+{{ site.url }}{{ post.url }}
+Published: {{ post.date | date: "%Y-%m-%d" }}{% if post.tags and post.tags != empty %}
+Tags: {{ post.tags | join: ', ' }}{% endif %}
+=====================================
+
+{{ post.content | strip_html | strip }}
+{% endfor %}
+{% assign sorted_stream = site.stream | sort: 'created_at' | reverse %}{% for entry in sorted_stream %}
+=====================================
+BRAIN STREAM ({{ entry.type }}): {{ entry.title }}
+{{ site.url }}{{ entry.url }}
+Published: {{ entry.date | date: "%Y-%m-%d" }}{% if entry.source %}
+Source: {{ entry.source }}{% endif %}{% if entry.url_external %}
+External link: {{ entry.url_external }}{% endif %}{% if entry.tags and entry.tags != empty %}
+Tags: {{ entry.tags | join: ', ' }}{% endif %}
+=====================================
+{% if entry.quote %}
+Quote: "{{ entry.quote }}"
+{% endif %}
+{{ entry.content | strip_html | strip }}
+{% endfor %}

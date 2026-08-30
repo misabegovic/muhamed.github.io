@@ -3,6 +3,7 @@ layout: post
 title: Why I canceled my personal Claude subscription and moved my personal workflow to Pi.dev
 categories: [AI, Workflow]
 tags: [ai, agents, claude, anthropic, pi, moonshot, kimi, workflow, tools, local-first, open-source]
+excerpt: Why I moved my personal workflow from a Claude Max subscription to Pi.dev with Kimi K3, and built pi-brain along the way. Owning your own harness, betting on open source models, and what I gained and lost in the trade.
 ---
 
 Hello! 
