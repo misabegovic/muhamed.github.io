@@ -12,7 +12,7 @@ I have been working with Ruby in a professional setting since 2016, with a singl
 
 Lately, I am building [pi-brain](https://github.com/misabegovic/muhamed.github.io), a cloneable, agent-maintained knowledge base that powers this site, and experimenting with AI agents and workflows around tools like Claude (Opus, Fable), Kimi K3, and [Pi.dev](https://pi.dev).
 
-I am also a contributor to [enola](https://github.com/enola-labs/enola), an architecture intelligence tool that turns a codebase into a queryable graph and checks architectural laws in CI. My Ruby DSL and rule-form work landed upstream and shipped in enola v0.4.4. Around it I maintain four gems that make enola practical for Ruby and Rails teams (see Open source below).
+I am also a core contributor to [enola](https://github.com/enola-labs/enola), an architecture intelligence tool that catches structural regressions builds and tests cannot see. The project's [acknowledgements](https://github.com/enola-labs/enola#acknowledgements) credit me as the author of a large part of what the tool does, including the constraints program (declared architectural law over the fact graph), the fact-provider seam and the providers that ride it, the history store behind `blame` and `diff`, declared intent compiling into the graph, Ember support, the Rails extraction work, and the Ruby surface for writing laws as sentences. Around it I maintain four gems that make enola practical for Ruby and Rails teams (see Open source below).
 
 I also work with teams directly on AI-augmented development. See [Services](/services/) for workshops, consulting, and fractional engagements.
 
@@ -41,7 +41,7 @@ I also work with teams directly on AI-augmented development. See [Services](/ser
 ## Open source
 
 - [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base. This site runs on a clone of it.
-- Contributor to [enola](https://github.com/enola-labs/enola): architecture intelligence for codebases. My Ruby DSL and 21 rule forms merged upstream and shipped in v0.4.4.
+- Core contributor to [enola](https://github.com/enola-labs/enola): architectural regression testing for AI-assisted development. Credited in the project's [acknowledgements](https://github.com/enola-labs/enola#acknowledgements) as the author of a large part of the tool: the constraints program and its verdict vocabulary, `plan` and `constraints mine`, the fact-provider seam and its providers, the shareable history store behind `blame` and `diff`, declared intent compiling into the graph, Ember support, the Rails extraction work with the `dead-methods` and `query-loops` explainers, the Ruby DSL for writing laws as sentences (shipped in v0.4.4), and the verdict writers that put findings where CI reads them.
 - Maintainer of four enola gems:
   - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper over the released enola binary, with the Ruby providers (Prism, Rubydex) on by default.
   - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer. A generator plus `enola:init`, `enola:snapshot`, and `enola:check`; a fresh `rails new` goes from nothing to a caught architecture breach in seconds.

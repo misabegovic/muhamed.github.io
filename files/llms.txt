@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # {{ site.author }} (muhamed.at)
 
-> Personal site of {{ site.author }}: Ruby/Rails engineer and AI product developer, contributor to enola and maintainer of four related gems, creator of pi-brain, organizer of RubyConf Austria (and EuRuKo 2024 before it). The site has two content sections: a raw, AI-assisted "brain stream" of notes and links, and longer human-written essays under "writing". It also describes consulting and training services for AI-augmented development.
+> Personal site of {{ site.author }}: Ruby/Rails engineer and AI product developer, core contributor to enola (credited as author of a large part of the tool) and maintainer of four related gems, creator of pi-brain, organizer of RubyConf Austria (and EuRuKo 2024 before it). The site has two content sections: a raw, AI-assisted "brain stream" of notes and links, and longer human-written essays under "writing". It also describes consulting and training services for AI-augmented development.
 
 This file follows the llms.txt convention. All pages are static HTML and easy to fetch. Feeds carry full content.
 
@@ -33,6 +33,7 @@ This file follows the llms.txt convention. All pages are static HTML and easy to
 ## Open source
 
 - [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
+- [enola](https://github.com/enola-labs/enola): architectural regression testing for AI-assisted development (core contributor; credited in the project's acknowledgements as the author of a large part of the tool, including the constraints program, the fact-provider seam, the blame/diff history store, declared intent, Ember support, the Rails extraction work, and the Ruby DSL for laws)
 - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
 - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
 - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer for enola, guides and law catalogue (maintainer)
