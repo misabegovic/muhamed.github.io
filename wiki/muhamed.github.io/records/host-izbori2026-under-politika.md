@@ -13,6 +13,7 @@ decided_by: wiki/muhamed.github.io/adrs/host-izbori2026-under-politika.md
 sources:
   - sources/doc/2026-09-16--izbori2026-hosting-measurements.md
   - sources/doc/2026-09-16--izbori2026-guide-expansion-measurements.md
+  - sources/doc/2026-09-16--izbori2026-projection-measurements.md
 ---
 
 # Record — Host the Izbori 2026 voter guide on muhamed.at
@@ -56,14 +57,29 @@ Re-run the same day after the guide grew from 1,161 candidate profiles to 7,028
 phone width with no horizontal overflow and a clean console. The mounted tree is
 now 7,499 files and the composed `files/_site` is 79 MB, up from 45 MB.
 
+Re-run again the same day after the guide gained a seat projection and a page
+publishing that projection's own error (source:
+sources/doc/2026-09-16--izbori2026-projection-measurements.md). Fifteen new pages:
+a projection hub, thirteen per-chamber pages including the ten cantonal
+assemblies, and `provjera-modela.html`. A clean shallow clone of the merged
+branch renders in 24 seconds with no broken internal links, the grafting script
+needed no change, and the section sitemap now carries 7,297 pages against 7,282.
+The mounted tree is 7,515 files and 94 MB. The deploy contract is unchanged:
+`requirements.txt` is still jinja2 only, the render reads committed JSON and calls
+no API, and the new pages are guarded so the build survives their data being
+absent.
+
 ## Open items
 
 - `SITE_DISPATCH_TOKEN` is not yet created on `izbori2026`. Until it is, guide
   updates reach the site on the daily schedule rather than immediately. This has
-  now cost a release: the guide's v5 landed on `izbori2026` main on 2026-09-16 at
-  16:41 UTC, the notify workflow skipped its dispatch step for want of the token,
-  and the site kept serving the previous render. Only a push here rebuilds it out
-  of turn, which is a poor reason to touch this repository.
+  now cost two releases. The guide's v5 landed on `izbori2026` main on 2026-09-16
+  at 16:41 UTC and v6 at 20:47 UTC; both notify runs completed green with their
+  dispatch step **skipped** for want of the token, and the site kept serving the
+  previous render each time. A green run that did nothing is the worst shape for
+  this to fail in, because nothing looks wrong. Until the token exists, a guide
+  release has to be followed by a `workflow_dispatch` on `pages.yml` here, or by
+  a push to this repository — a poor reason to touch it.
 - The Railway deploy still serves the same content at a second public URL, and
   no canonical URL is declared. Retiring it, or adding canonical tags, is a
   separate decision.
