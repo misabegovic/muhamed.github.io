@@ -55,3 +55,30 @@ a table cell writes `<0,1` where a sentence writes "manje od 0,1", because insid
 `nowrap` column that phrase is a 100px floor no number can get under. No data changed, no
 projection number changed, and `python seatlaw.py` still reproduces 231 of 231 seat-winning
 lists and 518 mandates per year exactly.
+
+## Follow-up the same evening: the header
+
+The reader who reported the broken layout came back with the obvious question about the
+header: on a phone, why is this a strip that slides? It should be a menu. It now is
+(`izbori2026` #8). Below 700px the five links and the two toggles sit behind a button; above
+it the bar is unchanged.
+
+The reason this is worth recording rather than filing as taste: a strip that scrolls
+sideways hides things without saying it hides them. The measurement that caught the
+projection tables — is the page wider than the window — reports nothing here, because the
+strip clips its own overflow and the page fits. A control nobody can find is not a layout
+bug by any measurement this record has used so far, and it went unnoticed through five
+releases.
+
+Checked at 320 and 390px: the button appears, the menu opens with all five links and both
+toggles, Escape closes it, the Cyrillic switch still transliterates the page from inside the
+open menu. At 768 and 1280px the button is absent and the bar behaves as before.
+
+## Second push, same reason as the first
+
+This document is being extended, rather than left as it was, because extending it is what
+makes a push to this repository honest — and a push to this repository is still the only
+way to get a guide release onto the site. `workflow_dispatch` on `pages.yml` and re-running
+a finished run both return 403 to the GitHub App. That is now three releases in one day
+whose timing was set by the absence of `SITE_DISPATCH_TOKEN` rather than by when the work
+was done.

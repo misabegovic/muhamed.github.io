@@ -93,7 +93,11 @@ passes cleanly on a page that is unreadable on the device most people will open
 it on; viewport width belongs in the same list. Second, the same pass found that
 the site's Cyrillic and larger-text buttons had been falling off the right edge
 of the nav strip at every width, from before this release, because the strip
-scrolls sideways and nothing on screen says so.
+scrolls sideways and nothing on screen says so. Replaced the same evening with a
+menu behind a button below 700px (`izbori2026` #8), which is the honest fix: a
+strip that scrolls sideways hides things without saying it hides them, and no
+check this record uses reports it, because the strip clips its own overflow and
+the page fits.
 
 ## Open items
 
