@@ -82,3 +82,63 @@ way to get a guide release onto the site. `workflow_dispatch` on `pages.yml` and
 a finished run both return 403 to the GitHub App. That is now three releases in one day
 whose timing was set by the absence of `SITE_DISPATCH_TOKEN` rather than by when the work
 was done.
+
+## Fifth look: a table is the wrong shape for a sentence
+
+Same reader, next report: the candidate names on the projection pages are cramped and
+unpleasant to read. They were, in two places, for one reason.
+
+`Ko ulazi` gave each person a percentage, a name and a line of detail, all running together
+in one wrapped paragraph. On a 390px phone that is three dense lines per person with no edge
+between the name and the small print, eighty times down the page.
+
+The presidency races were worse, because they were a four-column table in which two of the
+columns are sentences. The name column was squeezed to about 45px, and the fix from earlier
+the same day — let the first column break inside a word so it can shrink — did exactly what
+it was told:
+
+```
+Kan   Lista        Šansa   Na čemu
+did                        počiva
+at
+Den   Ujedinjeni   58,3%   sam je
+is    za državu            2022/2025.
+Beći  BiH (SDP i           imao 49,9%
+rovi  partneri)            · anketa
+ć                          17,0%
+```
+
+The general lesson, and the reason this is recorded rather than filed as taste: making a
+table shrink and making it readable are different problems, and the first can be solved
+completely while the second gets worse. Both places are now one list component — the number
+is a column, the name is a line, the detail is a line under it — and the table is gone
+(`izbori2026` #9).
+
+## Sixth: names that go nowhere
+
+The reader's next ask was the obvious one: make the names links. Then, more broadly, put a
+link wherever one can go, because that is how you get from a number to the thing behind it.
+
+The guide had 10,331 links to party pages, 9,629 to people and 286 to municipalities. It now
+has 31,781, 10,403 and 7,405 (`izbori2026` #10). The presidency candidates carried an
+identifier in the data all along and were never linked at all. A candidate's timeline named
+the municipality each candidacy happened in as plain text, although the function that
+matches CIK's spellings of a place against the site's own list of municipalities already
+existed for another purpose.
+
+The one rule worth writing down: every link is built through a lookup that returns nothing
+when the target has no page, and then the name prints as plain text. An identifier exists
+for everyone on a ballot; a page does not. Same for parties — only lists with fifteen or
+more candidates, or a published programme, get one. 7,297 pages, 0 broken internal links,
+measured after the change rather than assumed.
+
+A second-order effect worth noting, because it is the sort of thing that makes a page worse
+while every measurement improves: once the small grey line under a name is mostly links, in
+accent blue it shouts louder than the name above it. Those links keep the colour of the text
+they sit in and are marked with a hairline instead.
+
+## Third push, same reason as the first two
+
+Still the only lever: `workflow_dispatch` on `pages.yml` and re-running a finished run both
+return 403 to the GitHub App, and `SITE_DISPATCH_TOKEN` still does not exist. This carries
+`izbori2026` #7, #8, #9 and #10.

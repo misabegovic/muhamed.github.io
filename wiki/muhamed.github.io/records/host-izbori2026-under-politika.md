@@ -99,6 +99,20 @@ strip that scrolls sideways hides things without saying it hides them, and no
 check this record uses reports it, because the strip clips its own overflow and
 the page fits.
 
+Two more rounds the same evening, from the same reader, both worth the record
+because neither is caught by anything measured here. First, the projection pages
+put a person's percentage, name and detail in one wrapped paragraph, and the
+presidency races in a four-column table where two columns are sentences — which
+the earlier fix made narrow and unreadable at the same time (`izbori2026` #9).
+Making a table shrink and making it readable are different problems, and solving
+the first completely can make the second worse. Second, names went nowhere: links
+to party pages went from 10,331 to 31,781, to municipalities from 286 to 7,405,
+and the presidency candidates, who carried an identifier in the data all along,
+were never linked at all (`izbori2026` #10). Every link is now built through a
+lookup that returns nothing when the target has no page — an identifier exists
+for everyone on a ballot, a page does not — and the tree still measures 0 broken
+internal links across 7,297 pages.
+
 ## Open items
 
 - `SITE_DISPATCH_TOKEN` is not yet created on `izbori2026`. Until it is, guide
