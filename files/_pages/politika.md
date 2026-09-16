@@ -17,12 +17,20 @@ them has a page: how many personal votes they have won and where that placed
 them on their own list, what they have actually done, and what it took to win a
 seat in that constituency last time. Each claim carries its source.
 
+No source in Bosnia and Herzegovina publishes a person identifier, so a career
+spread across elections has to be reassembled, and the guide says out loud which
+candidacies it joined and on what grounds. It also carries the offices nobody is
+elected to on a ballot — ministers, delegates in the Houses of Peoples, entity
+prime ministers, and members of the Presidency between 2010 and 2018, whose two
+general elections survive in no readable source at all.
+
 Built from the CIK candidate lists 2006 to 2026, roll-call votes of the
 Parliamentary Assembly of Bosnia and Herzegovina and the National Assembly of
 Republika Srpska, mandate history, biographies and asset filings published by
-[Mashinerija](https://gianniravioli.com/mashinerija/) under CC BY 4.0, council
-sessions from eCitizen.ba, and party programmes collected from media and party
-pages. The guide is in Bosnian, with a Cyrillic and Latin switch in the header.
+[Mashinerija](https://gianniravioli.com/mashinerija/) under CC BY 4.0, offices
+held from [Wikidata](https://www.wikidata.org/) under CC0, council sessions from
+eCitizen.ba, and party programmes collected from media and party pages. The
+guide is in Bosnian, with a Cyrillic and Latin switch in the header.
 
 Source code and data: [github.com/misabegovic/izbori2026](https://github.com/misabegovic/izbori2026).
 How the numbers are made and what they cannot tell you:

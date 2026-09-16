@@ -59,7 +59,11 @@ now 7,499 files and the composed `files/_site` is 79 MB, up from 45 MB.
 ## Open items
 
 - `SITE_DISPATCH_TOKEN` is not yet created on `izbori2026`. Until it is, guide
-  updates reach the site on the daily schedule rather than immediately.
+  updates reach the site on the daily schedule rather than immediately. This has
+  now cost a release: the guide's v5 landed on `izbori2026` main on 2026-09-16 at
+  16:41 UTC, the notify workflow skipped its dispatch step for want of the token,
+  and the site kept serving the previous render. Only a push here rebuilds it out
+  of turn, which is a poor reason to touch this repository.
 - The Railway deploy still serves the same content at a second public URL, and
   no canonical URL is declared. Retiring it, or adding canonical tags, is a
   separate decision.
