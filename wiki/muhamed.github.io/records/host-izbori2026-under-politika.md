@@ -113,6 +113,16 @@ lookup that returns nothing when the target has no page — an identifier exists
 for everyone on a ballot, a page does not — and the tree still measures 0 broken
 internal links across 7,297 pages.
 
+Deploy verification, sharpened. This section has twice said a green run is not a
+live site. The check that actually settles it is a byte comparison: clone
+`izbori2026` `main`, render it here, and diff against what the site serves,
+normalising only the build date and the asset hash. Done across 22 pages covering
+every page type, 20 matched and 2 did not — and the two that did not were not a
+stale deploy but an unsorted directory read in the guide's own build, which let
+two builds of the same commit differ (`izbori2026` #11). So the byte comparison is
+the check worth keeping, and it only works if the build is reproducible. Nothing
+this record measured before would have caught that it was not.
+
 ## Open items
 
 - `SITE_DISPATCH_TOKEN` is not yet created on `izbori2026`. Until it is, guide

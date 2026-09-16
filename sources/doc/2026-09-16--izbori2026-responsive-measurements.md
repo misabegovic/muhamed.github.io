@@ -142,3 +142,31 @@ they sit in and are marked with a hairline instead.
 Still the only lever: `workflow_dispatch` on `pages.yml` and re-running a finished run both
 return 403 to the GitHub App, and `SITE_DISPATCH_TOKEN` still does not exist. This carries
 `izbori2026` #7, #8, #9 and #10.
+
+## Proving the site is current, and what that found
+
+"muhamed.at must have the latest version live" is a claim, and this record has said twice
+that a green run is not one. So it was checked the way a claim should be: a clean clone of
+`izbori2026` `main`, rendered here, then compared byte for byte against what the site
+actually serves, normalising only the build date and the asset hash.
+
+Twenty-two pages across every page type. Twenty were identical. Two were not — `stranke.html`
+and `stranka-snsd.html` — and only in the order of parties in one chart:
+
+```
+< "HDZ BiH", "DF (Komšić)", "Pokret Sigurna Srpska (Stanivuković)"
+> "Pokret Sigurna Srpska (Stanivuković)", "DF (Komšić)", "HDZ BiH"
+```
+
+Same numbers, different order. Not a stale deploy: the guide read its ballot files through
+`glob.glob()`, which returns whatever order the filesystem hands back, and that order decides
+which candidacy counts as a person's first entry and therefore which party label they carry
+into the roll-call analytics. Two builds of the same commit did not have to produce the same
+site, and did not. Fixed by sorting the read and by giving the chart an explicit tie-break
+(`izbori2026` #11), and proved by replacing `glob.glob` with a wrapper that deliberately
+shuffles the list: the output no longer moves.
+
+The lesson for this record, which has been about deploy verification from the first pass: a
+byte comparison against a local build is the check that actually proves a deploy is current,
+and it only works if the build is reproducible. It was not, and nothing here would have said
+so. HTTP status, served content, link counts and page counts all passed throughout.
