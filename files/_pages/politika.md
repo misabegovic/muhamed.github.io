@@ -2,7 +2,7 @@
 layout: page
 title: Politika
 permalink: /politika/
-description: Public-record election projects, including Izbori 2026, a plain-language voter guide to the 2026 general election in Bosnia and Herzegovina.
+description: Public-record election projects, including Izbori 2026, a plain-language voter guide and seat projection for the 2026 general election in Bosnia and Herzegovina.
 ---
 
 Side projects about the public record of politics in Bosnia and Herzegovina.
@@ -16,6 +16,17 @@ ballots as cards, or search any of the 7,028 candidates by name. Every one of
 them has a page: how many personal votes they have won and where that placed
 them on their own list, what they have actually done, and what it took to win a
 seat in that constituency last time. Each claim carries its source.
+
+The guide also projects the election. It takes the 2022 result, moves it by as
+much as the vote moved between the 2020 and 2024 local elections, and lets the
+Election Law hand out the seats ten thousand times: expected seats per list with
+a range, who gets in by name, which groupings add up to a majority, and odds for
+every one of the 7,028 candidates. The rules that turn votes into seats are
+written as code and replayed against 2018 and 2022, where they place all 231
+seat-winning lists and all 518 mandates of each year exactly. The model itself is
+then run backwards on 2022 while being fed only what could be known before it,
+and every error that produced is published — including a correction that was
+tried and dropped because it made the result worse.
 
 No source in Bosnia and Herzegovina publishes a person identifier, so a career
 spread across elections has to be reassembled, and the guide says out loud which
@@ -34,4 +45,6 @@ guide is in Bosnian, with a Cyrillic and Latin switch in the header.
 
 Source code and data: [github.com/misabegovic/izbori2026](https://github.com/misabegovic/izbori2026).
 How the numbers are made and what they cannot tell you:
-[metoda](/politika/analiza-izbora/metoda.html).
+[metoda](/politika/analiza-izbora/metoda.html). How far the projection was off
+when it was replayed on an election that had already happened:
+[provjera modela](/politika/analiza-izbora/provjera-modela.html).
