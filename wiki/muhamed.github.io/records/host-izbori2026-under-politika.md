@@ -69,6 +69,15 @@ The mounted tree is 7,515 files and 94 MB. The deploy contract is unchanged:
 no API, and the new pages are guarded so the build survives their data being
 absent.
 
+Deploy confirmed live rather than merely green, on 2026-09-16 after the Pages run
+triggered by merging #14: `/politika/analiza-izbora/` and each of its new pages —
+`projekcije.html`, `provjera-modela.html`, the per-chamber `projekcija-*.html`,
+`stranke.html` and the section sitemap — answer 200 from `muhamed.at`, and the
+served HTML carries the new content rather than an earlier cached render. Worth
+the extra step: a green Pages run only proves the artifact was uploaded, and the
+failure this section keeps recording is precisely one where everything is green
+and the site still serves the previous version.
+
 ## Open items
 
 - `SITE_DISPATCH_TOKEN` is not yet created on `izbori2026`. Until it is, guide
@@ -80,6 +89,14 @@ absent.
   this to fail in, because nothing looks wrong. Until the token exists, a guide
   release has to be followed by a `workflow_dispatch` on `pages.yml` here, or by
   a push to this repository — a poor reason to touch it.
+
+  Both of those are closed to an automation acting through the GitHub App:
+  `workflow_dispatch` and re-running a finished run each return 403, so a push to
+  this repository is the only lever left. The commit carrying this paragraph is
+  that push, made to bring `izbori2026` 03f041a live rather than let it sit until
+  the 04:00 UTC schedule. It is a workaround, and worth writing down: the site's
+  release cadence currently depends on finding something true to say in this
+  repository at the moment the guide changes.
 - The Railway deploy still serves the same content at a second public URL, and
   no canonical URL is declared. Retiring it, or adding canonical tags, is a
   separate decision.
