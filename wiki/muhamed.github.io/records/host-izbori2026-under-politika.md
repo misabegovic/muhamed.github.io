@@ -14,6 +14,7 @@ sources:
   - sources/doc/2026-09-16--izbori2026-hosting-measurements.md
   - sources/doc/2026-09-16--izbori2026-guide-expansion-measurements.md
   - sources/doc/2026-09-16--izbori2026-projection-measurements.md
+  - sources/doc/2026-09-16--izbori2026-responsive-measurements.md
 ---
 
 # Record — Host the Izbori 2026 voter guide on muhamed.at
@@ -77,6 +78,22 @@ served HTML carries the new content rather than an earlier cached render. Worth
 the extra step: a green Pages run only proves the artifact was uploaded, and the
 failure this section keeps recording is precisely one where everything is green
 and the site still serves the previous version.
+
+Live is not the same as readable. A reader opened `projekcije.html` on a phone the
+same day and reported the layout broken, and it was: the new projection tables
+reused the calibration grid's styling, which forbids wrapping, without the box
+that scrolls it sideways. On a 390px phone the projection hub laid itself out
+901px wide (source:
+sources/doc/2026-09-16--izbori2026-responsive-measurements.md). Fixed in
+`izbori2026` #6 and measured the way the earlier passes should have been: 271
+distinct page shapes at 320, 390, 768 and 1280px, none now wider than the window
+it is given. Two things worth carrying forward. First, every check this section
+had until now — HTTP status, served content, link scan, page and byte counts —
+passes cleanly on a page that is unreadable on the device most people will open
+it on; viewport width belongs in the same list. Second, the same pass found that
+the site's Cyrillic and larger-text buttons had been falling off the right edge
+of the nav strip at every width, from before this release, because the strip
+scrolls sideways and nothing on screen says so.
 
 ## Open items
 
