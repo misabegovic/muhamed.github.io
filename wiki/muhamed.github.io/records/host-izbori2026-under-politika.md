@@ -10,6 +10,9 @@ implemented_in:
   - files/llms.txt
   - README.md
 decided_by: wiki/muhamed.github.io/adrs/host-izbori2026-under-politika.md
+sources:
+  - sources/doc/2026-09-16--izbori2026-hosting-measurements.md
+  - sources/doc/2026-09-16--izbori2026-guide-expansion-measurements.md
 ---
 
 # Record — Host the Izbori 2026 voter guide on muhamed.at
@@ -27,7 +30,7 @@ before, and the Izbori 2026 voter guide is rendered from
   sets up Python 3.11, and runs the grafting step after the Jekyll build.
 - `.github/scripts/build-analiza-izbora.sh` renders the guide and copies
   `dist/` into `files/_site/politika/analiza-izbora/`, then writes a sitemap of
-  1,415 pages for that subtree.
+  7,282 pages for that subtree.
 - The workflow triggers on push to `main`, on `workflow_dispatch`, on a
   `repository_dispatch` of type `izbori-update`, and daily at 04:00 UTC.
 - `izbori2026` sends that dispatch from `.github/workflows/notify-site.yml` on
@@ -46,6 +49,12 @@ Run locally on 2026-09-16 against a composed `files/_site`: the site root,
 `/politika/`, `/politika/analiza-izbora/`, three interior pages, `viz.js`, the
 section sitemap and a portrait asset all returned 200. A scan of all 21,793
 internal references in the mounted tree found no broken or root-absolute link.
+
+Re-run the same day after the guide grew from 1,161 candidate profiles to 7,028
+(source: sources/doc/2026-09-16--izbori2026-guide-expansion-measurements.md).
+110,067 relative references, none broken. Nine page types loaded in Chromium at
+phone width with no horizontal overflow and a clean console. The mounted tree is
+now 7,499 files and the composed `files/_site` is 79 MB, up from 45 MB.
 
 ## Open items
 

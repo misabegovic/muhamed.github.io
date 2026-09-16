@@ -29,7 +29,7 @@ The site will be published from the `files/` directory via the workflow, not fro
 
 The site is not only Jekyll. The Pages workflow also checks out
 [misabegovic/izbori2026](https://github.com/misabegovic/izbori2026), runs its
-`render.py`, and mounts the roughly 1,400 generated pages at
+`render.py`, and mounts the roughly 7,300 generated pages at
 `/politika/analiza-izbora/` before the artifact is uploaded. The grafting logic
 lives in `.github/scripts/build-analiza-izbora.sh`, which also writes a sitemap
 for that section, since `jekyll-sitemap` only indexes pages Jekyll built itself.

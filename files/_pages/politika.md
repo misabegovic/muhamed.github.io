@@ -12,9 +12,10 @@ They take no position and recommend no one. Every claim carries its source.
 
 A plain-language guide to the general election of 4 October 2026, written for
 voters who do not follow politics. Enter your municipality and you get your
-ballots as cards: who is running, who already held office, who switched parties,
-how the sitting members actually voted, and what each party is promising this
-time, with a source next to every claim.
+ballots as cards, or search any of the 7,028 candidates by name. Every one of
+them has a page: how many personal votes they have won and where that placed
+them on their own list, what they have actually done, and what it took to win a
+seat in that constituency last time. Each claim carries its source.
 
 Built from the CIK candidate lists 2006 to 2026, roll-call votes of the
 Parliamentary Assembly of Bosnia and Herzegovina and the National Assembly of
