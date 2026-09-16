@@ -18,6 +18,7 @@ Current truth:
 - Enola architecture tracking is enabled and the baseline is pinned.
 - Link graph is healthy: 0 dead links.
 - All refinement suggestions from the last few sessions have been resolved and archived.
+- The site is now a composite build: the Pages workflow also renders the Izbori 2026 voter guide from `misabegovic/izbori2026` and mounts it at `/politika/analiza-izbora/`. See [Record — Host the Izbori 2026 voter guide on muhamed.at](records/host-izbori2026-under-politika.md).
 
 ## What is stable
 
