@@ -15,6 +15,7 @@ This file follows the llms.txt convention. All pages are static HTML and easy to
 - [Writing]({{ site.url }}/writing/): longer essays, written by a human
 - [Brain stream]({{ site.url }}/): short notes on what I am reading and building, organized with AI assistance
 - [Tags]({{ site.url }}/tags/): tag index across both sections
+- [Politika]({{ site.url }}/politika/): public-record election projects, currently [Izbori 2026]({{ site.url }}/politika/analiza-izbora/), a plain-language voter guide to the 2026 general election in Bosnia and Herzegovina (in Bosnian, roughly 7,300 static pages, own sitemap at {{ site.url }}/politika/analiza-izbora/sitemap.xml)
 
 ## Feeds
 

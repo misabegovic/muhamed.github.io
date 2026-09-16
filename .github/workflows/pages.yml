@@ -4,6 +4,14 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # Fired by misabegovic/izbori2026 when the voter guide changes, so the copy
+  # mounted at /politika/analiza-izbora/ is rebuilt without a site commit.
+  repository_dispatch:
+    types: [izbori-update]
+  # Safety net: the guide is regenerated from committed data, so a daily
+  # rebuild keeps it fresh even when no dispatch arrives.
+  schedule:
+    - cron: "0 4 * * *"
 
 permissions:
   contents: read
@@ -14,6 +22,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  IZBORI_REPO: misabegovic/izbori2026
+  IZBORI_REF: main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,12 +33,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Checkout izbori2026 voter guide
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.IZBORI_REPO }}
+          ref: ${{ env.IZBORI_REF }}
+          path: izbori2026
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
           bundler-cache: true
           working-directory: files
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Setup Pages
         id: pages
@@ -37,6 +61,9 @@ jobs:
         working-directory: files
         env:
           JEKYLL_ENV: production
+
+      - name: Mount voter guide at /politika/analiza-izbora/
+        run: ./.github/scripts/build-analiza-izbora.sh izbori2026 files/_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T15:16:13.670Z",
-  "node_count": 64,
-  "edge_count": 364,
+  "generated_at": "2026-09-16T12:56:10.168Z",
+  "node_count": 66,
+  "edge_count": 376,
   "nodes": [
     {
       "path": "brain/adrs/smarter-autonomy.md",
@@ -135,6 +135,13 @@
       "status": "accepted",
       "confidence": "low",
       "title": "Fix validate workflow to run package-resolved brain-sync (pinned to 0.3.2)"
+    },
+    {
+      "path": "muhamed.github.io/adrs/host-izbori2026-under-politika.md",
+      "kind": "decision",
+      "status": "accepted",
+      "confidence": "low",
+      "title": "Host the Izbori 2026 voter guide at muhamed.at/politika/analiza-izbora"
     },
     {
       "path": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md",
@@ -408,6 +415,13 @@
       "status": "accepted",
       "confidence": "low",
       "title": "PRD — Unified tag filtering and search"
+    },
+    {
+      "path": "muhamed.github.io/records/host-izbori2026-under-politika.md",
+      "kind": "record",
+      "status": "current",
+      "confidence": "medium",
+      "title": "Record — Host the Izbori 2026 voter guide on muhamed.at"
     },
     {
       "path": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md",
@@ -812,6 +826,13 @@
     },
     {
       "source": "index",
+      "target": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Host the Izbori 2026 voter guide at muhamed.at/politika/anal"
+    },
+    {
+      "source": "index",
       "target": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
       "kind": "markdown",
       "provenance": "body",
@@ -942,6 +963,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Record — pi-brain v0.2.0 release"
+    },
+    {
+      "source": "index",
+      "target": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Host the Izbori 2026 voter guide on muhamed.at"
     },
     {
       "source": "index",
@@ -1250,6 +1278,48 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "pi-brain home"
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "ADR: Post-incident fix: exclude vendor/ and configure custom"
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "ADR: Convert repo to pi-brain clone and deploy site via GitH"
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Constraint: ADR before structural changes"
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Host the Izbori 2026 voter guide on muhamed.at"
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "State — muhamed.github.io"
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/roadmap",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Roadmap — muhamed.github.io"
     },
     {
       "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
@@ -1672,6 +1742,27 @@
       "context": "State — muhamed.github.io"
     },
     {
+      "source": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "ADR — Host the Izbori 2026 voter guide at muhamed.at/politik"
+    },
+    {
+      "source": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/constraints/adr-before-structural-changes",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Constraint: ADR before structural changes"
+    },
+    {
+      "source": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/state",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "State — muhamed.github.io"
+    },
+    {
       "source": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
       "target": "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone",
       "kind": "markdown",
@@ -1915,6 +2006,13 @@
       "kind": "markdown",
       "provenance": "body",
       "context": "Stream entry: Paul from Tito — cathedrals, Go, and the 11 fa"
+    },
+    {
+      "source": "muhamed.github.io/state",
+      "target": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "kind": "markdown",
+      "provenance": "body",
+      "context": "Record — Host the Izbori 2026 voter guide on muhamed.at"
     },
     {
       "source": "muhamed.github.io/state",
@@ -3006,6 +3104,10 @@
   "hubs": [
     {
       "path": "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md",
+      "incoming": 12
+    },
+    {
+      "path": "muhamed.github.io/constraints/adr-before-structural-changes.md",
       "incoming": 11
     },
     {
@@ -3025,19 +3127,15 @@
       "incoming": 10
     },
     {
+      "path": "muhamed.github.io/roadmap.md",
+      "incoming": 10
+    },
+    {
       "path": "brain/adrs/stronger-default-implementation-guardrails.md",
       "incoming": 9
     },
     {
       "path": "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md",
-      "incoming": 9
-    },
-    {
-      "path": "muhamed.github.io/constraints/adr-before-structural-changes.md",
-      "incoming": 9
-    },
-    {
-      "path": "muhamed.github.io/roadmap.md",
       "incoming": 9
     },
     {
@@ -3073,6 +3171,14 @@
       "incoming": 8
     },
     {
+      "path": "muhamed.github.io/state.md",
+      "incoming": 8
+    },
+    {
+      "path": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md",
+      "incoming": 7
+    },
+    {
       "path": "muhamed.github.io/ai-suggestions/rfcs/usput-ba-bring-your-own-agent.md",
       "incoming": 7
     },
@@ -3101,10 +3207,6 @@
       "incoming": 6
     },
     {
-      "path": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md",
-      "incoming": 6
-    },
-    {
       "path": "muhamed.github.io/adrs/update-pi-brain-v0-4-0-hybrid-clone.md",
       "incoming": 6
     },
@@ -3114,10 +3216,6 @@
     },
     {
       "path": "muhamed.github.io/options.md",
-      "incoming": 6
-    },
-    {
-      "path": "muhamed.github.io/state.md",
       "incoming": 6
     },
     {
@@ -3247,10 +3345,22 @@
     {
       "path": "muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md",
       "incoming": 3
+    },
+    {
+      "path": "muhamed.github.io/records/host-izbori2026-under-politika.md",
+      "incoming": 3
     }
   ],
   "dead_links": [],
   "suggestions": [
+    {
+      "source": "brain/records/smarter-autonomy",
+      "target": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "via": [
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "muhamed.github.io/roadmap"
+      ]
+    },
     {
       "source": "brain/records/smarter-autonomy",
       "target": "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
@@ -3287,6 +3397,52 @@
       ]
     },
     {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/adrs/make-brain-cards-the-home-page",
+      "via": [
+        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+        "muhamed.github.io/constraints/adr-before-structural-changes"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails",
+      "via": [
+        "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+        "muhamed.github.io/constraints/adr-before-structural-changes"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone",
+      "via": [
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "org/roadmap",
+      "via": [
+        "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+        "muhamed.github.io/state",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/host-izbori2026-under-politika",
+      "target": "org/state",
+      "via": [
+        "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+        "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "muhamed.github.io/state",
+        "muhamed.github.io/roadmap"
+      ]
+    },
+    {
       "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
       "target": "muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0",
       "via": [
@@ -3300,6 +3456,14 @@
       "via": [
         "muhamed.github.io/adrs/make-brain-cards-the-home-page",
         "muhamed.github.io/prds/unified-tag-filtering-and-search"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain",
+      "target": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "via": [
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "muhamed.github.io/state"
       ]
     },
     {
@@ -3332,6 +3496,14 @@
       "via": [
         "muhamed.github.io/adrs/convert-repo-to-pi-brain-actions",
         "org/state"
+      ]
+    },
+    {
+      "source": "muhamed.github.io/records/host-izbori2026-under-politika",
+      "target": "org/state",
+      "via": [
+        "muhamed.github.io/constraints/adr-before-structural-changes",
+        "muhamed.github.io/state"
       ]
     }
   ]

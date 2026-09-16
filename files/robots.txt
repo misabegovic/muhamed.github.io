@@ -33,3 +33,5 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: {{ site.url }}/sitemap.xml
+# The Izbori 2026 voter guide is generated outside Jekyll, so it ships its own sitemap.
+Sitemap: {{ site.url }}/politika/analiza-izbora/sitemap.xml

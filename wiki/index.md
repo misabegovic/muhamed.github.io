@@ -17,6 +17,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Backfill missing upstream pi-brain files](muhamed.github.io/adrs/backfill-missing-upstream-pi-brain-files.md)
 - [Convert repo to pi-brain clone and deploy site via GitHub Actions](muhamed.github.io/adrs/convert-repo-to-pi-brain-actions.md)
 - [Fix validate workflow to run package-resolved brain-sync (pinned to 0.3.2)](muhamed.github.io/adrs/fix-validate-workflow-package-resolved-brain-sync.md)
+- [Host the Izbori 2026 voter guide at muhamed.at/politika/analiza-izbora](muhamed.github.io/adrs/host-izbori2026-under-politika.md)
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Make the brain-card stream the home page](muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
 - [Sync latest upstream pi-brain changes (v0.2.0)](muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
@@ -48,6 +49,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Record — Stronger default guardrails against eager implementation](brain/records/stronger-default-implementation-guardrails.md)
 - [Record — Upstream template sync](brain/records/upstream-template-sync.md)
 - [Record — pi-brain v0.2.0 release](brain/records/version-0-2-0.md)
+- [Record — Host the Izbori 2026 voter guide on muhamed.at](muhamed.github.io/records/host-izbori2026-under-politika.md)
 - [Record — Update pi-brain to v0.4.0 in this hybrid clone](muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 
 ### meta
