@@ -14,9 +14,8 @@ description: Muhamed Isabegovic is a Ruby and Rails engineer and AI product deve
   "url": "https://muhamed.at/",
   "image": "https://muhamed.at/images/profile.jpg",
   "email": "mailto:info@muhamed.at",
-  "jobTitle": "AI Product Developer",
+  "jobTitle": "Technical Lead and AI Product Developer",
   "worksFor": [
-    { "@type": "Organization", "name": "Teamtailor", "url": "https://www.teamtailor.com/" },
     { "@type": "Organization", "name": "Usput.ba", "url": "https://usput.ba" }
   ],
   "homeLocation": { "@type": "Place", "name": "Austria" },
@@ -53,7 +52,7 @@ I also work with teams directly on AI-augmented development. See [Services](/ser
 
 ## Career Overview
 
-- (2026 - present) AI Product Developer @ [Teamtailor](https://www.teamtailor.com/)
+- (2026) AI Product Developer, contract @ [Teamtailor](https://www.teamtailor.com/)
 - (2026 - present) Founder & CTO @ [Usput.ba](https://usput.ba)
 - (2024 - present) Self-employed / Contractor
 - (2025 - present) Chief Organizer @ [RubyConf Austria](https://www.rubyconf.at/)

@@ -1,6 +1,7 @@
 ---
 kind: decision
-status: accepted
+status: superseded
+superseded_by: professional-homepage-with-brain-and-writing.md
 confidence: low
 sources:
   - files/index.html

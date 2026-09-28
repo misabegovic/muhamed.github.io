@@ -1,0 +1,153 @@
+# Everything the homepage says. Edit the words here; the layout reads them.
+# Every claim is taken from the evidence store in ~/projects/hireable
+# (files/hireable/profile/muhamed.yml); the record id is noted beside it, so a
+# claim can be checked, and changed when the evidence changes.
+# A list left empty hides its section.
+
+hero:
+  eyebrow: AI-native engineering · Ruby on Rails · Vienna
+  title: I help engineering teams ship with AI agents, without losing control of their code.
+  lead: >-
+    Specs, guardrails and evals, set up in your own repository. Ten years of
+    building and leading product teams, now focused on making agent-written
+    software hold up in production.
+  # evidence: constraint-earliest-start, constraint-location
+  availability: >-
+    Available now for a senior role or contract work. Based in Vienna, working
+    remotely across Europe.
+  primary: { label: Get in touch, url: "mailto:info@muhamed.at" }
+  secondary: { label: See how I can help, url: "#services" }
+
+proof:
+  # evidence: summary-headline
+  - figure: 10 years
+    label: building and shipping software
+  # evidence: role-experfy-team
+  - figure: 30 engineers
+    label: led across 7 time zones
+  # evidence: oss-enola-constraints
+  - figure: Core contributor
+    label: to enola, architecture checks for AI-written code
+  # evidence: skill-mcp
+  - figure: 3 MCP servers
+    label: built, in Go, Rails and plain Ruby
+
+# Names, not logos, until each company has agreed to be shown.
+companies:
+  - Teamtailor
+  - Carv
+  - Meisterlabs
+  - Experfy
+  - Marvelsoft
+
+services:
+  - number: "01"
+    name: Assess
+    title: How your team uses AI today
+    text: >-
+      A short, concrete review of how your engineers work with coding agents:
+      where it helps, where it quietly erodes quality, and a prioritised plan
+      for what to change first.
+  - number: "02"
+    name: Enable
+    title: Workshop and setup, in your repository
+    text: >-
+      One or two days with your team on your own codebase: a loop from intent
+      to shipped code, specs and decision records as the contract with agents,
+      guardrails agents cannot bypass, and evals for the AI features you ship.
+  - number: "03"
+    name: Build
+    title: Fractional AI product engineering
+    # evidence: role-teamtailor-prescreening
+    text: >-
+      Hands-on design and delivery of AI features in Rails products: LLM
+      pipelines with structured outputs, evaluation and observability, built
+      with EU AI regulation in mind.
+
+services_more: { label: Services in detail, url: /services/ }
+
+approach:
+  - step: Diagnose
+    text: >-
+      I read the code and watch how the team actually works, rather than
+      trusting the documentation about it.
+  - step: Prove
+    text: >-
+      Change one workflow end to end and measure it, before rolling anything
+      out more widely.
+  - step: Hand over
+    text: >-
+      Everything lives in your repository, and your team runs it without me.
+
+work:
+  - title: AI candidate screening at an applicant tracking system
+    org: Teamtailor
+    year: "2026"
+    # evidence: role-teamtailor-prescreening
+    text: >-
+      Designed an AI candidate-prescreening architecture: Sidekiq pipelines,
+      RubyLLM with structured outputs and evaluation tooling, built for EU
+      AI-regulation compliance.
+  - title: A remote team through 150 percent growth
+    org: Experfy
+    year: 2019 to 2021
+    # evidence: role-experfy-team, role-experfy-scaleup
+    text: >-
+      Led a fully remote team of around 30 engineers across 7 time zones as
+      architect, project manager and team lead, and owned planning and delivery
+      through a 150 percent scale-up without missing a deadline.
+  - title: One model for many applicant tracking systems
+    org: Carv
+    year: 2025 to 2026
+    # evidence: role-carv-team, role-carv-ats-integrations, role-carv-event-system, role-carv-devops
+    text: >-
+      Technical lead for 10 engineers on an AI platform for recruiters:
+      normalised data from different applicant tracking systems into one model,
+      built the event system on a single pub/sub, and owned DevOps and CI/CD on
+      Google Cloud.
+
+open_source:
+  - name: enola
+    role: Core contributor
+    url: https://github.com/enola-labs/enola
+    # evidence: oss-enola-constraints
+    text: >-
+      Architectural regression testing for AI-assisted development. I built the
+      constraints program: architectural laws declared over the code graph,
+      checked deterministically in CI, with a Ruby DSL and four gems for Rails
+      teams.
+  - name: pi-brain
+    role: Author and maintainer
+    url: https://github.com/misabegovic/pi-brain
+    # evidence: oss-pi-brain*
+    text: >-
+      An intent store for agentic development on the pi harness: human-gated
+      agent workflows, decision records agents must read before editing, and
+      agent-written knowledge that cannot promote itself. Published on npm, nine tagged releases.
+  - name: tabula
+    role: In private development
+    url: ""
+    # evidence: not yet in the evidence store
+    text: >-
+      Shared memory for teams of agents and people, written in Rust: files and
+      git as the truth, claims as leases so agents never collide, an append-only
+      journal of who did what, and the decisions that belong to people refused
+      by the tool itself.
+
+# evidence: community-rubyconf-austria, community-rubyconf-speakers
+community:
+  # evidence: community-euruko-2024
+  - text: Founded and organised RubyConf Austria 2026 in Vienna, with a programme including Dave Thomas, Chad Fowler, José Valim and Armin Ronacher.
+  - text: Took full ownership of EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference.
+
+# Real, attributed and permitted quotes only. The section stays hidden while
+# this list is empty. Shape of an entry:
+#   - quote: "..."
+#     name: Full name
+#     role: Their role, Company
+testimonials: []
+
+closing:
+  title: Working on something where AI has to hold up in production?
+  text: Tell me what you are building, and I will tell you honestly whether I can help.
+  cta: { label: info@muhamed.at, url: "mailto:info@muhamed.at" }

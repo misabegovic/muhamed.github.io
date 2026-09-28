@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.author }}: {{ site.data.home.hero.title }}</title>
+    {% seo title=false %}
+    <link rel="me" href="https://github.com/misabegovic">
+    <link rel="me" href="https://www.linkedin.com/in/muhamed-isabegovic/">
+    <link rel="me" href="https://twitter.com/m_isabegovic">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/home.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: writing" href="{{ site.baseurl }}/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: brain" href="{{ site.baseurl }}/brain.xml">
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    {% include analytics_head.html %}
+  </head>
+  <body class="home">
+    {% assign h = site.data.home %}
+    <header class="top">
+      <div class="shell top-row">
+        <a class="brand" href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}{{ site.avatar }}" alt="" width="36" height="36">
+          <span>{{ site.author }}</span>
+        </a>
+        <nav class="menu" aria-label="Main">
+          <a href="{{ site.baseurl }}/services/">Services</a>
+          <a href="{{ site.baseurl }}/writing/">Writing</a>
+          <a href="{{ site.baseurl }}/brain/">Brain</a>
+          <a href="{{ site.baseurl }}/about/">About</a>
+          <a class="menu-cta" href="{{ h.hero.primary.url }}">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero shell">
+        <p class="eyebrow">{{ h.hero.eyebrow }}</p>
+        <h1>{{ h.hero.title }}</h1>
+        <p class="lead">{{ h.hero.lead }}</p>
+        <div class="actions">
+          <a class="button" href="{{ h.hero.primary.url }}">{{ h.hero.primary.label }}</a>
+          <a class="button ghost" href="{{ h.hero.secondary.url }}">{{ h.hero.secondary.label }}</a>
+        </div>
+        <p class="availability"><span class="dot" aria-hidden="true"></span>{{ h.hero.availability }}</p>
+      </section>
+
+      {% if h.proof.size > 0 %}
+      <section class="proof" aria-label="In numbers">
+        <div class="shell proof-grid">
+          {% for item in h.proof %}
+          <div class="proof-item">
+            <div class="figure">{{ item.figure }}</div>
+            <div class="label">{{ item.label }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if h.companies.size > 0 %}
+      <section class="companies shell" aria-label="Worked at">
+        <span class="kicker">Worked at</span>
+        <ul>{% for name in h.companies %}<li>{{ name }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+
+      <section id="services" class="block shell">
+        <p class="kicker">What I do</p>
+        <h2>From how your team works today to AI features in production</h2>
+        <div class="cards three">
+          {% for service in h.services %}
+          <article class="card">
+            <div class="card-number">{{ service.number }} · {{ service.name }}</div>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.text }}</p>
+          </article>
+          {% endfor %}
+        </div>
+        <p class="more"><a href="{{ site.baseurl }}{{ h.services_more.url }}">{{ h.services_more.label }} →</a></p>
+      </section>
+
+      {% if h.approach.size > 0 %}
+      <section class="block band">
+        <div class="shell">
+          <p class="kicker">How I work</p>
+          <h2>Small proof first, then scale, then hand over</h2>
+          <ol class="steps">
+            {% for step in h.approach %}
+            <li><span class="step-name">{{ step.step }}</span><p>{{ step.text }}</p></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if h.work.size > 0 %}
+      <section id="work" class="block shell">
+        <p class="kicker">Selected work</p>
+        <h2>What I have built and led</h2>
+        <div class="cards three">
+          {% for item in h.work %}
+          <article class="card">
+            <div class="card-meta">{{ item.org }} · {{ item.year }}</div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if h.open_source.size > 0 %}
+      <section class="block shell">
+        <p class="kicker">Open source and tools</p>
+        <h2>The tools I build for working with agents</h2>
+        <div class="cards three">
+          {% for project in h.open_source %}
+          <article class="card">
+            <div class="card-meta">{{ project.role }}</div>
+            <h3>{% if project.url != "" %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
+            <p>{{ project.text }}</p>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if h.testimonials.size > 0 %}
+      <section class="block band">
+        <div class="shell">
+          <p class="kicker">What people say</p>
+          <div class="cards two">
+            {% for t in h.testimonials %}
+            <figure class="card quote">
+              <blockquote>{{ t.quote }}</blockquote>
+              <figcaption><strong>{{ t.name }}</strong><br>{{ t.role }}</figcaption>
+            </figure>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if h.community.size > 0 %}
+      <section class="block shell">
+        <p class="kicker">Community</p>
+        <ul class="community">
+          {% for item in h.community %}<li>{{ item.text }}</li>{% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      <section class="block shell latest">
+        <div>
+          <p class="kicker">Writing</p>
+          <ul class="list">
+            {% assign posts = site.posts | sort: 'date' | reverse %}
+            {% for post in posts limit:3 %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span>{{ post.date | date: "%Y-%m-%d" }}</span></li>
+            {% endfor %}
+          </ul>
+          <a class="more" href="{{ site.baseurl }}/writing/">All writing →</a>
+        </div>
+        <div>
+          <p class="kicker">From my brain</p>
+          <ul class="list">
+            {% assign notes = site.stream | sort: 'created_at' | reverse %}
+            {% assign shown = 0 %}
+            {% for entry in notes %}{% unless entry.hidden_until and entry.hidden_until > site.time %}{% if shown < 3 %}
+            <li><a href="{{ entry.url }}">{{ entry.title }}</a><span>{{ entry.date | date: "%Y-%m-%d" }}</span></li>
+            {% assign shown = shown | plus: 1 %}{% endif %}{% endunless %}{% endfor %}
+          </ul>
+          <a class="more" href="{{ site.baseurl }}/brain/">Peek into my brain →</a>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="shell">
+          <h2>{{ h.closing.title }}</h2>
+          <p>{{ h.closing.text }}</p>
+          <a class="button light" href="{{ h.closing.cta.url }}">{{ h.closing.cta.label }}</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom">
+      <div class="shell bottom-row">
+        <span>© {{ site.time | date: "%Y" }} {{ site.author }} · Vienna, Austria</span>
+        <span>
+          <a href="https://github.com/misabegovic">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/muhamed-isabegovic/">LinkedIn</a> ·
+          <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+        </span>
+      </div>
+    </footer>
+    {% include analytics.html %}
+  </body>
+</html>
