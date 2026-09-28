@@ -1,0 +1,1 @@
+import{t as e,u as t}from"./D9wjk404.js";var n=t;function r(){return e()}function i(){let t=e();return t.phase=`AWAIT_CHOICE`,t.currentParty=n[0]??null,t.turn=5,t}export{r as n,i as t};

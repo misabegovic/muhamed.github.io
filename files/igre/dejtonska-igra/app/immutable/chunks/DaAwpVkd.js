@@ -1,0 +1,1 @@
+import{C as e,E as t,L as n,U as r,V as i,st as a,w as o}from"./BeNoempL.js";import"./2jRyFEmQ.js";var s=t(`<div class="row svelte-7nggkc"><span class="svelte-7nggkc"> </span> <b class="svelte-7nggkc"> </b></div>`);function c(t,c){var l=s(),u=i(l),d=i(u,!0);a(u);var f=r(u,2),p=i(f,!0);a(f),a(l),n(()=>{e(d,c.label),e(p,c.value)}),o(t,l)}export{c as t};

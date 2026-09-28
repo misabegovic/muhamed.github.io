@@ -1,34 +1,21 @@
 ---
 layout: default
+code: true
 ---
-
-<article class="post detailed">
-  <h1>{{ page.title }}</h1>
-
-  <div>
-    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
-    {% if page.last_modified_at %}
-    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+<article class="wrap post">
+  <header class="page-head">
+    <p class="post-meta"><a href="{{ site.baseurl }}/writing/">Writing</a><span aria-hidden="true">/</span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>{% if page.last_modified_at %}<span>Updated {{ page.last_modified_at | date: "%-d %b %Y" }}</span>{% endif %}</p>
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+    <ul class="chips" role="list">{% for tag in page.tags %}<li><a class="chip" href="{{ site.baseurl }}/writing/?tag={{ tag | url_encode }}">{{ tag }}</a></li>{% endfor %}</ul>
     {% endif %}
-    <div class="post-tags">
-      {% for tag in page.tags %}
-        <a href="/writing/?tag={{ tag | url_encode }}">{{ tag }}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-    
-  <div class="entry">
+  </header>
+  <div class="prose">
     {{ content }}
   </div>
-
-  <div>
-    <p><span class="share-box">Share:</span> <a href="https://x.com/intent/tweet?text={{ page.title | url_encode }}&url={{site.url}}{{page.url}}" target="_blank">X</a>, <a href="https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}" target="_blank">LinkedIn</a></p>
-  </div>
-
-  <!--<div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>-->
-
+  <footer class="post-foot">
+    <p>Share on <a href="https://x.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">X</a> or <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <a class="text-link" href="{{ site.baseurl }}/writing/">All writing</a>
+  </footer>
   {% include disqus.html %}
 </article>

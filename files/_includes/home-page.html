@@ -1,0 +1,219 @@
+{% assign h = site.data.home %}
+{% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
+{% capture marked %}<mark>{{ h.hero.highlight }}</mark>{% endcapture %}
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title">{{ h.hero.title | replace: h.hero.highlight, marked }}</h1>
+        <p class="hero-lead">{{ h.hero.lead }}</p>
+        <div class="hero-actions">
+          <a class="button" href="{{ h.hero.primary.url }}">{{ h.hero.primary.label }}{{ arr }}</a>
+          <a class="text-link" href="#services">{{ h.hero.secondary.label }}</a>
+          <a class="text-link" href="{{ site.baseurl }}{{ h.hero.cv.url }}" download>{{ h.hero.cv.label }} <span class="file-note">(PDF)</span></a>
+        </div>
+        <p class="availability"><span class="dot" aria-hidden="true"></span>{{ h.hero.availability }}</p>
+      </div>
+      <figure class="portrait">
+        <img src="{{ site.baseurl }}{{ site.avatar }}" alt="Muhamed Isabegovic" width="1024" height="1024" fetchpriority="high">
+        <figcaption><strong>{{ site.author }}</strong><span>{{ h.person.role }}</span><span>{{ h.person.credit }}</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  {% if h.companies.size > 0 %}
+  <section class="companies" aria-labelledby="h-companies">
+    <div class="wrap companies-row">
+      <h2 id="h-companies" class="companies-title">Worked with</h2>
+      <ul class="company-list" role="list">
+        {% for company in h.companies %}
+        <li>{% if company.logo and company.logo != "" %}<img class="company-logo" src="{{ site.baseurl }}{{ company.logo }}" alt="{{ company.name }}">{% elsif h.show_placeholders %}<span class="placeholder placeholder-logo" title="Placeholder: add this logo once {{ company.name }} agrees">{{ company.name }}<small>logo</small></span>{% else %}<span class="company-name">{{ company.name }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign sx = h.sections %}
+  <section id="services" class="section" aria-labelledby="h-services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="h-services" class="section-title">{{ sx.services.title }}</h2>
+          <p class="section-intro">{{ sx.services.intro }}</p>
+        </div>
+        <a class="text-link" href="{{ site.baseurl }}{{ h.services_more.url }}">{{ h.services_more.label }}{{ arr }}</a>
+      </div>
+      <ol class="services" role="list">
+        {% for service in h.services %}
+        <li class="service">
+          <h3 class="service-name">{{ service.name }}</h3>
+          <p class="service-fits">{{ service.fits }}</p>
+          <p class="service-title">{{ service.title }}</p>
+          <p class="service-text">{{ service.text }}</p>
+          <p class="service-format">{{ service.format }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+      {% if h.approach.size > 0 %}
+      <ol class="flow" role="list" aria-label="How every engagement runs">
+        {% for step in h.approach %}
+        <li><strong>{{ step.step }}</strong><span>{{ step.text }}</span></li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      <p class="hiring">{{ sx.hiring.text }} <a class="text-link" href="{{ site.baseurl }}{{ sx.hiring.link.url }}">{{ sx.hiring.link.label }}{{ arr }}</a></p>
+    </div>
+  </section>
+
+  {% if h.stack.size > 0 %}
+  <section id="stack" class="section section-rule" aria-labelledby="h-stack">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="h-stack" class="section-title">{{ sx.stack.title }}</h2>
+          <p class="section-intro">{{ sx.stack.intro }}</p>
+        </div>
+      </div>
+      <dl class="stack">
+        {% for group in h.stack %}
+        <div class="stack-group">
+          <dt>{{ group.group }}</dt>
+          <dd><ul class="stack-list" role="list">{% for item in group.items %}<li>{% if item.icon %}<img src="{{ site.baseurl }}/images/stack/{{ item.icon }}.svg" alt="" width="18" height="18">{% endif %}{{ item.name }}</li>{% endfor %}</ul></dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if h.open_source.size > 0 %}
+  <section class="section section-tint" aria-labelledby="h-tools">
+    <div class="wrap feature">
+      <div class="feature-head">
+        <h2 id="h-tools" class="section-title">{{ sx.tools.title }}</h2>
+        <p class="section-intro">{{ sx.tools.intro }}</p>
+      </div>
+      <ul class="rows" role="list">
+        {% for project in h.open_source %}
+        <li class="row">
+          <h3 class="row-name">{% if project.url != "" %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
+          <p class="row-meta">{{ project.role }}</p>
+          <p class="row-text">{{ project.text }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign quotes = h.testimonials | where_exp: "t", "t.placeholder != true" %}
+  {% if h.show_placeholders %}{% assign quotes = h.testimonials %}{% endif %}
+  {% if quotes.size > 0 %}
+  <section class="section section-rule" aria-labelledby="h-quotes">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-quotes" class="section-title">What people I have worked with say.</h2>
+      </div>
+      <ul class="quotes" role="list">
+        {% for t in quotes %}
+        <li class="quote{% if t.placeholder %} placeholder{% endif %}">
+          {% if t.placeholder %}<p class="placeholder-tag">Placeholder</p>{% endif %}
+          <blockquote class="quote-short">{{ t.quote }}</blockquote>
+          {% if t.full %}
+          <details class="quote-more">
+            <summary>Read the full recommendation</summary>
+            <blockquote>{{ t.full }}</blockquote>
+          </details>
+          {% endif %}
+          <div class="quote-by">
+            {% if t.avatar %}<img class="avatar" src="{{ site.baseurl }}{{ t.avatar }}" alt="" width="48" height="48">{% else %}<span class="avatar" aria-hidden="true">{% if t.initials %}{{ t.initials }}{% else %}?{% endif %}</span>{% endif %}
+            <p><strong>{% if t.url %}<a href="{{ t.url }}">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}</strong>{{ t.role }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if h.community.size > 0 %}
+  <section class="community" aria-labelledby="h-community">
+    <div class="wrap community-grid">
+      <div class="community-head">
+        <h2 id="h-community" class="community-title">I also bring the Ruby community together.</h2>
+        <a class="button" href="{{ site.baseurl }}/contact/#speaking">Invite me to speak{{ arr }}</a>
+        {% if h.community_logos.size > 0 %}
+        <ul class="event-logos" role="list">
+          {% for event in h.community_logos %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"></a></li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <ul class="community-list" role="list">
+        {% for item in h.community %}<li>{{ item.text }}</li>{% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if h.highlights.size > 0 %}
+  <section class="section" aria-labelledby="h-highlights">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-highlights" class="section-title">{{ sx.highlights.title }}</h2>
+        <a class="text-link" href="{{ site.baseurl }}{{ sx.highlights.link.url }}">{{ sx.highlights.link.label }}{{ arr }}</a>
+      </div>
+      <ul class="highlights" role="list">
+        {% for item in h.highlights %}
+        <li>
+          <a class="highlight" href="{{ site.baseurl }}/work/#{{ item.anchor }}">
+            <span class="highlight-where">{{ item.where }}</span>
+            <span class="highlight-title">{{ item.title }}</span>
+            <span class="highlight-line">{{ item.line }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section" aria-label="Latest">
+    <div class="wrap latest">
+      <div>
+        <h2 class="latest-title">Writing</h2>
+        <ul class="entries" role="list">
+          {% assign posts = site.posts | sort: 'date' | reverse %}
+          {% for post in posts limit:3 %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b %Y" }}</time></li>
+          {% endfor %}
+        </ul>
+        <a class="text-link" href="{{ site.baseurl }}/writing/">All writing{{ arr }}</a>
+      </div>
+      <div>
+        <h2 class="latest-title">From my brain</h2>
+        <ul class="entries" role="list">
+          {% assign notes = site.stream | sort: 'created_at' | reverse %}
+          {% assign shown = 0 %}
+          {% for entry in notes %}{% unless entry.hidden_until and entry.hidden_until > site.time %}{% if shown < 3 %}
+          <li><a href="{{ entry.url }}">{{ entry.title }}</a><time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%-d %b %Y" }}</time></li>
+          {% assign shown = shown | plus: 1 %}{% endif %}{% endunless %}{% endfor %}
+        </ul>
+        <a class="text-link" href="{{ site.baseurl }}/brain/">Peek into my brain{{ arr }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="h-closing">
+    <div class="wrap closing-row">
+      <div>
+        <h2 id="h-closing" class="closing-title">{{ h.closing.title }}</h2>
+        <p class="closing-text">{{ h.closing.text }}</p>
+      </div>
+      <div class="closing-actions">
+        <a class="button button-dark" href="{{ site.baseurl }}/contact/">Get in touch{{ arr }}</a>
+        <a class="closing-mail" href="{{ h.closing.cta.url }}">{{ h.closing.cta.label }}</a>
+      </div>
+    </div>
+  </section>
+</main>

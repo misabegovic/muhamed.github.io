@@ -1,0 +1,23 @@
+{
+	"name": "Post-Dayton BiH",
+	"short_name": "Post-Dayton",
+	"description": "Post-Dayton BiH — politička strategija o vladanju poslijeratnom Bosnom i Hercegovinom",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#F2E8D3",
+	"theme_color": "#F2E8D3",
+	"orientation": "portrait",
+	"categories": ["games", "entertainment"],
+	"icons": [
+		{
+			"src": "/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

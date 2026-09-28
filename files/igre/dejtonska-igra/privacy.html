@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bs">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="./favicon.png" />
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<link rel="manifest" href="./manifest.json" />
+		<meta name="theme-color" content="#F2E8D3" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="description" content="Post-Dayton BiH — politička strategija o vladanju poslijeratnom Bosnom i Hercegovinom" />
+		<title>Post-Dayton BiH</title>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Post-Dayton BiH" />
+		<meta property="og:description" content="Politička strategija o vladanju poslijeratnom Bosnom i Hercegovinom — svaka odluka ostaje u dosijeu." />
+		<meta property="og:image" content="./icon-512.png" />
+		<meta name="twitter:card" content="summary" />
+		<link href="./app/immutable/entry/start.B7XszTwG.js" rel="modulepreload">
+		<link href="./app/immutable/chunks/Dzxfbepm.js" rel="modulepreload">
+		<link href="./app/immutable/chunks/BeNoempL.js" rel="modulepreload">
+		<link href="./app/immutable/chunks/IbMfyhQ5.js" rel="modulepreload">
+		<link href="./app/immutable/entry/app.CYRqBuC_.js" rel="modulepreload">
+		<link href="./app/immutable/chunks/BJ9tvvuy.js" rel="modulepreload">
+		<link href="./app/immutable/chunks/2jRyFEmQ.js" rel="modulepreload">
+		
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1svut8e = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/igre/dejtonska-igra"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./app/immutable/entry/start.B7XszTwG.js"),
+						import("./app/immutable/entry/app.CYRqBuC_.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = './service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

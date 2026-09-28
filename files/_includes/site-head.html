@@ -1,0 +1,15 @@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo title=false %}
+    {% include meta.html %}
+    <link rel="me" href="https://github.com/misabegovic">
+    <link rel="me" href="https://www.linkedin.com/in/muhamed-isabegovic/">
+    <link rel="me" href="https://twitter.com/m_isabegovic">
+    <link rel="preload" href="{{ site.baseurl }}/assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    {% if include.code %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/code.css">{% endif %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/site.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: writing" href="{{ site.baseurl }}/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: brain" href="{{ site.baseurl }}/brain.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    {% include analytics_head.html %}

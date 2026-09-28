@@ -1,0 +1,57 @@
+---
+layout: default
+title: Work
+permalink: /work/
+description: Selected work by Muhamed Isabegovic, from AI in production and the teams that shipped it to side projects.
+---
+{% assign h = site.data.home %}{% assign sx = h.sections %}
+{% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
+<div class="wrap page">
+  <header class="page-head">
+    <h1 class="page-title">Work</h1>
+    <p class="page-intro">{{ sx.work_page.intro }}</p>
+  </header>
+
+  <section aria-labelledby="h-work">
+    <div class="section-head">
+      <div>
+        <h2 id="h-work" class="section-title">{{ sx.work.title }}</h2>
+        <p class="section-intro">{{ sx.work.intro }}</p>
+      </div>
+    </div>
+    <div class="capabilities">
+      {% for cap in h.capabilities %}
+      <article class="capability" id="{{ cap.id }}">
+        <div class="capability-head">
+          <h3 class="capability-title">{{ cap.title }}</h3>
+          <p class="capability-text">{{ cap.text }}</p>
+          {% if cap.links.size > 0 %}<p class="capability-links">{% for l in cap.links %}<a class="text-link" href="{{ l.url }}">{{ l.label }}{{ arr }}</a>{% endfor %}</p>{% endif %}
+        </div>
+        <ul class="proofs" role="list">
+          {% for proof in cap.proofs %}<li>{{ proof }}</li>{% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if h.side_projects.size > 0 %}
+  <section class="work-side" aria-labelledby="h-side">
+    <div class="section-head">
+      <h2 id="h-side" class="section-title">{{ sx.side.title }}</h2>
+    </div>
+    <ul class="compact" role="list">
+      {% for project in h.side_projects %}
+      <li id="{{ project.id }}">
+        {% if project.logo %}<img class="made-logo" src="{{ site.baseurl }}{{ project.logo }}" alt="" width="48" height="48">{% endif %}
+        <h3>{% if project.url %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}{% if project.note %}<span>{{ project.note }}</span>{% endif %}</h3>
+        <p>{{ project.text }}</p>
+        {% if project.url %}<a class="text-link case-link" href="{{ project.url }}">{{ project.link_label }}{{ arr }}</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <p class="work-cta"><a class="button" href="{{ site.baseurl }}/contact/">Get in touch{{ arr }}</a></p>
+</div>

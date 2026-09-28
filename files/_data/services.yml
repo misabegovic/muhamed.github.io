@@ -1,0 +1,63 @@
+# The services page. Names, "when it fits", formats and summaries come from
+# home.yml (services:), so the homepage and this page cannot drift. This file
+# holds only the longer detail, keyed by service name.
+intro: >-
+  Three ways to work together, and talks at your event. Each starts from your
+  code and how your team actually works, not from a slide deck.
+
+details:
+  Assess:
+    get:
+      - A look at how your engineers work with coding agents today, in your repository and in their daily work.
+      - Where agents help, and where they quietly erode quality, architecture or the team's understanding of its own system.
+      - "Architecture reviews for AI-heavy features: agent orchestration, LLM pipelines, retrieval, evaluation and observability."
+      - A prioritised plan for what to change first.
+  Enable:
+    get:
+      - A working loop from intent to shipped code, with specs and decision records as the contract between people and agents.
+      - Coding agents set up for your codebase, with the context, skills, guardrails and conventions that make them productive instead of chaotic.
+      - Architectural laws declared and checked in CI, so agent-written code cannot quietly erode the architecture.
+      - Evaluation for the AI features you ship, from datasets and scoring to prompt management and observability.
+      - A clear line between what to automate, what to keep human, and how to review agent output without rubber-stamping it.
+    outcome: You leave with a working setup in your own repository that your team keeps running, not slideware.
+  Build:
+    get:
+      - Senior ownership of your AI features without a full-time hire.
+      - Feature architecture end to end, from retrieval and structured outputs to evaluation and observability.
+      - How the team works with agents day to day, built into the way features ship.
+
+talks:
+  title: Talks and workshops at your event.
+  text: >-
+    I founded RubyConf Austria and took full ownership of EuRuKo 2024, so I
+    know what a programme needs. If you are running a conference or meetup and
+    want a talk or a workshop on AI-native engineering, guardrails for coding
+    agents, or Ruby, tell me about your event.
+  link: { label: Tell me about your event, url: /contact/#speaking }
+
+steps:
+  title: How it works.
+  items:
+    - { step: Get in touch, text: "A few lines about your team and what you are trying to do." }
+    - { step: A short call, text: "We talk it through, and I tell you honestly whether I can help." }
+    - { step: A scoped proposal, text: "Clear deliverables, a format and a timeline, in writing." }
+    - { step: The work, text: "Diagnose, prove on one workflow end to end, then hand over." }
+  where: I work remotely from Vienna, and on site across the DACH region.
+
+why:
+  title: Why me.
+  points:
+    # evidence: oss-enola-constraints, oss-pi-brain
+    - I build the tools I teach with. I contributed the constraints program to enola and wrote pi-brain, so the guardrails in your repository are ones I have built and run.
+    # evidence: skill-rag, role-teamtailor-prescreening, proj-usput-ai-layer
+    - I ship AI features, not only advice about them. Retrieval, structured outputs and evaluation are things I have built, in production and for a regulated hiring context.
+    # evidence: role-experfy-team, role-carv-team
+    - I have led engineering teams, from 10 engineers to around 30 across 7 time zones, so the plan fits how teams actually work.
+    # evidence: community-rubyconf-austria
+    - I founded RubyConf Austria, and I spend a lot of time with the people thinking hardest about what software development looks like when agents write most of the code.
+  quote: zlatko
+  link: { label: See the work behind this, url: /work/ }
+
+closing:
+  title: Tell me what you are trying to do.
+  text: A few lines is enough. I will tell you honestly whether I can help, and how.

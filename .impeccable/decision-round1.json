@@ -1,0 +1,130 @@
+{
+  "title": "Choose the visual world for muhamed.at",
+  "question": "The roll assigned The Drawing Sheet. Keep it, take Impeccable's pick or an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Drawing Sheet",
+      "kicker": "THE ROLL",
+      "lineage": "ISO and ÖNORM engineering drawings: title blocks, dimension lines and redline review",
+      "thesis": "Your practice as a drawing under review: agents draft, a human signs the title block.",
+      "palette": ["#e4e8e5", "#24282b", "#d8432f", "#5b7a99"],
+      "materials": ["drafting film", "graphite line weights", "redline markup", "title block"],
+      "viewport": "A full sheet with border and title block; the headline is the drawing's main note, the working loop is drawn as a dimensioned part, and the proof numbers are its dimensions.",
+      "risk": "Reads as CAD cosplay if the lettering or line weights are timid, and heavy line art has to stay scannable for a busy hiring manager.",
+      "raised": [
+        {"from": "challenger-miura", "raise": "Linked constraints: change one dimension and the dependent ones update, so the guardrail idea is felt rather than stated."},
+        {"from": "challenger-wildstyle", "raise": "Motion is the line drawn in sequence: dimension lines and leaders draw themselves once, in construction order."},
+        {"from": "challenger-ink", "raise": "Newest is darkest: the latest posts and notes carry the heaviest line weight, older ones fade to construction grey."},
+        {"from": "challenger-darkroom", "raise": "Stations in order: Diagnose, Prove and Hand over are revision stages with approval stamps that cannot be skipped."},
+        {"from": "challenger-neon", "raise": "One continuous run: a single guardrail line threads the page from the first viewport to the contact block."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "The Vienna Method",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Isotype, Otto Neurath and Gerd Arntz, Vienna from 1925",
+      "thesis": "Your evidence counted in pictograms: facts seen at a glance, in Vienna's own invention.",
+      "palette": ["#ffffff", "#1a1a1a", "#c8372d", "#3d5a80", "#d9a441"],
+      "materials": ["flat pictograms", "counted rows", "geometric sans"],
+      "viewport": "The headline beside one Isotype chart: 30 engineers as 30 figures, 7 time zones, 9 releases, each row a fact you can count.",
+      "risk": "The most familiar strong option, and pictograms need careful authoring to stay clear of infographic kitsch."
+    },
+    {
+      "id": "challenger-monochrome",
+      "label": "Claim and Proof",
+      "verdict": "competitive",
+      "lineage": "modern software product marketing",
+      "thesis": "Every claim followed at once by the artefact that proves it.",
+      "palette": ["#fafafa", "#111111", "#8a8a8a", "#2f6f4e"],
+      "materials": ["one neutral scale", "framed proof artefacts"],
+      "viewport": "Two columns: the claim on the left, a framed real artefact on the right, such as an enola verdict, a pi-brain gate or a CI check.",
+      "case": "Fuses cleanly, since your tools produce real output to frame; holds on clarity, loses on identification to a world engineers recognise.",
+      "risk": "Close to the category standard; distinct only if every framed artefact is genuinely yours.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-monochrome-product-marketing-hero.webp"
+    },
+    {
+      "id": "challenger-miura",
+      "label": "Deployable Fold Sheet",
+      "verdict": "declined",
+      "lineage": "Miura-fold deployable structures",
+      "thesis": "One pull unfolds a whole field of linked creases.",
+      "palette": ["#f7f7f5", "#c9a227", "#1c1c1c"],
+      "materials": ["scored paper", "gold foil"],
+      "viewport": "A folded packet that opens into the full practice.",
+      "case": "Fuses poorly: the metaphor is about deployment, not about the people who hire you.",
+      "risk": "Spectacle before substance.",
+      "kept": "Linked constraints: one change propagates through the whole structure.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-miura-orbit-sheet-hero.webp"
+    },
+    {
+      "id": "challenger-wildstyle",
+      "label": "Blackbook Wildstyle",
+      "verdict": "declined",
+      "lineage": "graffiti blackbook pages",
+      "thesis": "The name as one interlocked mark.",
+      "palette": ["#f2ead7", "#111111", "#e0442e", "#2f8fd8"],
+      "materials": ["marker", "offset keyline"],
+      "viewport": "The name knitted into one mass with arrows as navigation.",
+      "case": "Fuses poorly: unreadable by design, the opposite of what a CTO needs.",
+      "risk": "Illegible to the audience.",
+      "kept": "Motion as a stroke drawn in sequence.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-wildstyle-blackbook-page-hero.webp"
+    },
+    {
+      "id": "challenger-ink",
+      "label": "Marbled Ink Basin",
+      "verdict": "declined",
+      "lineage": "suminagashi marbling",
+      "thesis": "A live surface where the newest drop is darkest.",
+      "palette": ["#f5f5f2", "#1f2a44", "#6b7280"],
+      "materials": ["sumi ink", "water"],
+      "viewport": "A fluid surface the pointer stirs.",
+      "case": "Fuses poorly: beautiful, but it says nothing about engineering control.",
+      "risk": "Decoration without argument.",
+      "kept": "Newest is darkest: recency carried by the material itself.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-fluid-ink-basin-hero.webp"
+    },
+    {
+      "id": "challenger-darkroom",
+      "label": "Darkroom Safelight",
+      "verdict": "declined",
+      "lineage": "photographic darkrooms",
+      "thesis": "Work moves through fixed stations in order.",
+      "palette": ["#3a1f0f", "#e8a33a", "#d9d9d9"],
+      "materials": ["safelight amber", "silver print"],
+      "viewport": "Stations from expose to dry, the work emerging slowly.",
+      "case": "Fuses poorly: moody and slow where visitors want a fast read.",
+      "risk": "Dark and slow for a quick check.",
+      "kept": "Stations in a fixed order, with points you cannot go back past.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay-hero.webp"
+    },
+    {
+      "id": "challenger-neon",
+      "label": "Hand-bent Neon",
+      "verdict": "declined",
+      "lineage": "neon sign fabrication",
+      "thesis": "One continuous glass line that lights as a circuit.",
+      "palette": ["#0b0b10", "#2f5bff", "#e0442e"],
+      "materials": ["glass tube", "gas glow"],
+      "viewport": "A dark room where the name ignites as one line.",
+      "case": "Fuses poorly: nightlife glow is the dark-plus-neon default to avoid.",
+      "risk": "Lands in the dark-and-neon rut.",
+      "kept": "One continuous run that connects everything.",
+      "hero": "https://impeccable.style/worlds/cards/magnetism-electricity-plasma-hand-bent-neon-circuit-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A senior consultant's personal site, executed impeccably.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["clean grid", "headshot", "service list"],
+    "viewport": "Headline and headshot, services, selected work, contact: what visitors expect.",
+    "risk": "Indistinguishable from every other consultant by design."
+  },
+  "steer": true
+}

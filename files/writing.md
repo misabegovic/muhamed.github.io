@@ -4,42 +4,16 @@ permalink: /writing/
 title: Writing
 ---
 
-<style>
-.writing-page { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
-.writing-page h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-.writing-page .subtitle { color: #666; margin-bottom: 0.5rem; }
-.writing-page .disclaimer { font-size: 0.9rem; color: #777; line-height: 1.5; margin-bottom: 1.5rem; max-width: 640px; }
-.writing-page .disclaimer a { color: #555; }
-.writing-page .controls { margin-bottom: 1.5rem; }
-.writing-page input { width: 100%; max-width: 500px; padding: 0.6rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 4px; }
-.writing-page .search-hint { font-size: 0.8rem; color: #888; margin-top: 0.4rem; }
-.writing-page .clear-filters { display: inline-block; margin-left: 0.5rem; font-size: 0.85rem; color: #666; cursor: pointer; }
-.writing-page .clear-filters:hover { text-decoration: underline; }
-.writing-page .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
-.writing-page .card { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2rem; background: #fff; transition: box-shadow 0.15s; text-decoration: none; color: inherit; display: block; }
-.writing-page .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-.writing-page .card-link { text-decoration: none; color: inherit; display: block; }
-.writing-page .card-date { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 0.5rem; }
-.writing-page .card-title { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.6rem; line-height: 1.3; color: #333; }
-.writing-page .card-excerpt { font-size: 0.95rem; color: #444; line-height: 1.45; margin-bottom: 0.8rem; }
-.writing-page .tag { display: inline-block; font-size: 0.7rem; color: #555; background: #f4f4f4; padding: 0.1rem 0.4rem; border-radius: 3px; margin-right: 0.3rem; cursor: pointer; text-decoration: none; }
-.writing-page .tag:hover { background: #e8e8e8; }
-.writing-page .tag.active { background: #333; color: #fff; }
-.writing-page .hidden { display: none; }
-.writing-page .page-hidden { display: none; }
-.writing-page .load-more-wrap { text-align: center; margin-top: 2rem; }
-.writing-page .load-more { padding: 0.6rem 1.4rem; font-size: 0.95rem; border: 1px solid #333; background: #fff; color: #333; border-radius: 4px; cursor: pointer; }
-.writing-page .load-more:hover { background: #333; color: #fff; }
-</style>
 
-<div class="writing-page">
-  <h1>Writing</h1>
-  <p class="subtitle">Longer posts and essays, written by me.</p>
-  <p class="disclaimer">For the raw, AI-assisted stream of things I find interesting, see <a href="/">Peek into my brain</a>.</p>
+<div class="wrap index-page writing-page">
+  <header class="page-head">
+    <h1 class="page-title">Writing</h1>
+    <p class="page-intro">Longer posts and essays, written by me. For the raw, AI-assisted stream of things I find interesting, see <a href="/brain/">Peek into my brain</a>.</p>
+  </header>
 
   <div class="controls">
-    <input type="text" id="search" placeholder="Search or type #tag to filter...">
-    <span id="clear-filters" class="clear-filters hidden">Clear filters</span>
+    <label class="visually-hidden" for="search">Search the writing</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
+    <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
     <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
@@ -57,7 +31,7 @@ title: Writing
     {% endfor %}
   </div>
 
-  <div class="empty-state" id="no-results" hidden style="text-align: center; color: #666; padding: 3rem 1rem;">
+  <div class="empty-state" id="no-results" hidden>
     <p>No posts match your filters. <a href="#" id="no-results-clear">Clear filters</a> or browse <a href="/tags/">all tags</a>.</p>
   </div>
 

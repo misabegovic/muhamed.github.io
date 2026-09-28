@@ -20,6 +20,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Host the Izbori 2026 voter guide at muhamed.at/politika/analiza-izbora](muhamed.github.io/adrs/host-izbori2026-under-politika.md)
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Make the brain-card stream the home page](muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
+- [A professional homepage, with the brain and writing one click away](muhamed.github.io/adrs/professional-homepage-with-brain-and-writing.md)
 - [Sync latest upstream pi-brain changes (v0.2.0)](muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
 - [Sync latest upstream pi-brain updates](muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)

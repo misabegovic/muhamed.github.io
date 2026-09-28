@@ -44,7 +44,7 @@ Extensive experience working in Human Resources, Talent Acquisition, Algorithmic
 
 I have been working with Ruby in a professional setting since 2016, with a single ~2 year exception of working with C++ and Python (had a lot of fun learning about actor systems working with CAF - C++ Actor Framework).
 
-Lately, I am building [pi-brain](https://github.com/misabegovic/muhamed.github.io), a cloneable, agent-maintained knowledge base that powers this site, and experimenting with AI agents and workflows around tools like Claude (Opus, Fable), Kimi K3, and [Pi.dev](https://pi.dev).
+Lately, I am building [pi-brain](https://github.com/misabegovic/pi-brain), a cloneable, agent-maintained knowledge base that powers this site, and experimenting with AI agents and workflows around tools like Claude (Opus, Fable), Kimi K3, and [Pi.dev](https://pi.dev).
 
 I am also a core contributor to [enola](https://github.com/enola-labs/enola), an architectural regression testing tool built for AI-assisted development. My contributions include the constraints program (declared architectural law over the fact graph) and the Ruby DSL that lets you write those laws as sentences; the project's [acknowledgements](https://github.com/enola-labs/enola#acknowledgements) are kind enough to list the rest. Around it I maintain four gems that make enola practical for Ruby and Rails teams (see Open source below).
 

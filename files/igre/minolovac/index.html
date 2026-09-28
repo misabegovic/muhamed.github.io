@@ -1,0 +1,86 @@
+---
+layout: default
+title: Minolovac
+permalink: /igre/minolovac/
+description: An educational minesweeper on real data. The mines sit where recorded mine-suspected areas lie in Bosnia and Herzegovina. An empty cell is never a safety statement.
+---
+<div class="wrap page mines" data-lang="bs" lang="bs">
+  <header class="page-head">
+    <p class="mines-lang" role="group" aria-label="Jezik / Language">
+      <button type="button" class="mines-pill" data-set-lang="bs" aria-pressed="true">Bosanski</button>
+      <button type="button" class="mines-pill" data-set-lang="en" aria-pressed="false">English</button>
+    </p>
+    <h1 class="page-title"><span lang="bs">Minolovac</span><span lang="en">Minesweeper</span></h1>
+    <p class="page-intro">
+      <span lang="bs">Edukativna igra na stvarnim podacima: mine su tamo gdje stvarni podaci bilježe minski sumnjiva područja u Bosni i Hercegovini.</span>
+      <span lang="en">An educational game on real data: the mines are where real records show mine-suspected areas in Bosnia and Herzegovina.</span>
+    </p>
+  </header>
+
+  <section class="mines-warning" aria-labelledby="mines-warning-title">
+    <h2 id="mines-warning-title"><span lang="bs">Edukativna igra sa stvarnim podacima</span><span lang="en">An educational game with real data</span></h2>
+    <p>
+      <span lang="bs">Mine u igri stoje na ćelijama koje se preklapaju sa evidentiranim minski sumnjivim područjima (snimak podataka od <span data-snapshot-bs>31. 7. 2024</span>). Prazna ćelija znači samo da za taj komad terena nema evidentiranih područja, <strong>nikako da je teren siguran</strong>: postoje i neobilježena i neevidentirana polja.</span>
+      <span lang="en">Mines in the game sit on cells that overlap recorded mine-suspected areas (data snapshot of <span data-snapshot-en>31 July 2024</span>). An empty cell means only that no areas are recorded for that piece of ground, <strong>never that the ground is safe</strong>: unmarked and unrecorded fields exist too.</span>
+    </p>
+    <p>
+      <span lang="bs">U stvarnosti nema druge šanse: provjeri prije svakog koraka. Ova stranica ni na koji način ne služi procjeni stvarne sigurnosti terena i <strong>nije za navigaciju</strong>. Za stvarne informacije: BHMAC (<a href="https://www.bhmac.org">bhmac.org</a>, 033 253 800) i službena aplikacija „BH Mine Suspected Areas“.</span>
+      <span lang="en">In reality there is no second chance: check before every step. This page in no way assesses how safe real ground is and is <strong>not for navigation</strong>. For real information: BHMAC (<a href="https://www.bhmac.org">bhmac.org</a>, +387 33 253 800) and the official "BH Mine Suspected Areas" app.</span>
+    </p>
+    <p class="mines-emergency">
+      <span lang="bs">Hitni brojevi: Policija 122, Civilna zaštita 121, BHMAC 033 253 800.</span>
+      <span lang="en">Emergency numbers in Bosnia and Herzegovina: Police 122, Civil Protection 121, BHMAC +387 33 253 800.</span>
+    </p>
+    <p class="mines-stale" data-stale hidden>
+      <span lang="bs">Snimak podataka je stariji od godinu dana. Stvarno stanje se od tada moglo promijeniti.</span>
+      <span lang="en">The data snapshot is more than a year old. The real picture may have changed since.</span>
+    </p>
+  </section>
+
+  <div class="mines-game" data-game>
+    <div class="mines-controls">
+      <div class="mines-control" role="group" aria-labelledby="mines-region-label">
+        <span id="mines-region-label" class="mines-label"><span lang="bs">Predio</span><span lang="en">Region</span></span>
+        <div class="mines-options" data-regions></div>
+      </div>
+      <div class="mines-control" role="group" aria-labelledby="mines-level-label">
+        <span id="mines-level-label" class="mines-label"><span lang="bs">Težina</span><span lang="en">Difficulty</span></span>
+        <div class="mines-options">
+          <button type="button" class="mines-pill" data-level="easy"><span lang="bs">Lako</span><span lang="en">Easy</span></button>
+          <button type="button" class="mines-pill" data-level="medium"><span lang="bs">Srednje</span><span lang="en">Medium</span></button>
+          <button type="button" class="mines-pill" data-level="hard"><span lang="bs">Teško</span><span lang="en">Hard</span></button>
+        </div>
+      </div>
+    </div>
+
+    <p class="mines-note" data-density></p>
+    <p class="mines-full" data-full hidden>
+      <span lang="bs">Cijela ova tabla leži u evidentiranim minski sumnjivim područjima: ovdje nema sigurnog prvog koraka.</span>
+      <span lang="en">This whole board lies inside recorded mine-suspected areas: there is no safe first step here.</span>
+    </p>
+
+    <div class="mines-bar">
+      <span class="mines-count"><span class="mines-flag-icon" aria-hidden="true"></span><span data-left>0</span><span class="visually-hidden"><span lang="bs"> preostalo mina</span><span lang="en"> mines left</span></span></span>
+      <span class="mines-status" data-status aria-live="polite"></span>
+      <span class="mines-time"><span data-timer>0</span> s</span>
+      <button type="button" class="mines-pill" data-flag-mode aria-pressed="false"><span lang="bs">Zastavica</span><span lang="en">Flag</span></button>
+      <button type="button" class="button button-small" data-restart><span lang="bs">Nova igra</span><span lang="en">New game</span></button>
+    </div>
+
+    <div class="mines-board" data-board role="grid" aria-label="Tabla / Board"></div>
+
+    <p class="mines-fact" data-fact hidden></p>
+
+    <p class="mines-hint">
+      <span lang="bs">Klik otkriva ćeliju, desni klik ili duži pritisak postavlja zastavicu, ili uključi „Zastavica“. Tastatura: strelice za kretanje, Enter otkriva, F postavlja zastavicu. Nema zaštite prvog klika: podaci su ono što jesu.</span>
+      <span lang="en">Click reveals a cell; right-click or a long press places a flag, or switch on "Flag". Keyboard: arrows move, Enter reveals, F flags. There is no first-click protection: the data is what it is.</span>
+    </p>
+    <p class="mines-hint"><a data-osm href="https://www.openstreetmap.org/"><span lang="bs">Pogledaj ovaj predio na OpenStreetMapu</span><span lang="en">See this area on OpenStreetMap</span></a></p>
+  </div>
+
+  <p class="mines-origin">
+    <span lang="bs">Tabla je geografska mreža oko odabranog predjela; svaka ćelija koja se preklapa sa evidentiranim sumnjivim područjem je mina. Igra je prvobitno napravljena za <a href="https://usput.ba">Usput.ba</a>. Izvor podataka: evidentirana minski sumnjiva područja u BiH, snimak od <span data-snapshot-bs>31. 7. 2024</span>.</span>
+    <span lang="en">A board is a geographic grid around the chosen region; every cell that overlaps a recorded suspected area is a mine. The game was first made for <a href="https://usput.ba">Usput.ba</a>. Data source: recorded mine-suspected areas in Bosnia and Herzegovina, snapshot of <span data-snapshot-en>31 July 2024</span>.</span>
+  </p>
+</div>
+<script src="{{ site.baseurl }}/igre/minolovac/minolovac.js" defer></script>

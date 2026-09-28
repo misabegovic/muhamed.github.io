@@ -4,9 +4,16 @@
 # claim can be checked, and changed when the evidence changes.
 # A list left empty hides its section.
 
+# The caption beside the portrait in the first screen.
+person:
+  role: Technical lead and AI product developer
+  # evidence: community-rubyconf-austria
+  credit: Founder of RubyConf Austria
+
 hero:
-  eyebrow: AI-native engineering · Ruby on Rails · Vienna
   title: I help engineering teams ship with AI agents, without losing control of their code.
+  # The words of the title drawn with the highlighter. Must appear in the title exactly.
+  highlight: without losing control
   lead: >-
     Specs, guardrails and evals, set up in your own repository. Ten years of
     building and leading product teams, now focused on making agent-written
@@ -15,34 +22,145 @@ hero:
   availability: >-
     Available now for a senior role or contract work. Based in Vienna, working
     remotely across Europe.
-  primary: { label: Get in touch, url: "mailto:info@muhamed.at" }
+  primary: { label: Get in touch, url: /contact/ }
+  cv: { label: Download my CV, url: /cv/Muhamed_Isabegovic_CV.pdf }
   secondary: { label: See how I can help, url: "#services" }
 
-proof:
-  # evidence: summary-headline
-  - figure: 10 years
-    label: building and shipping software
-  # evidence: role-experfy-team
-  - figure: 30 engineers
-    label: led across 7 time zones
-  # evidence: oss-enola-constraints
-  - figure: Core contributor
-    label: to enola, architecture checks for AI-written code
-  # evidence: skill-mcp
-  - figure: 3 MCP servers
-    label: built, in Go, Rails and plain Ruby
+# Three highlights on the homepage: the owner's own projects only.
+highlights:
+  - { anchor: usput, where: Founder and CTO, title: Usput.ba, line: A travel guide to Bosnia and Herzegovina, with AI content grounded in real places. }
+  - { anchor: izbori, where: Side project, title: Izbori 2026, line: A voter guide and seat projection covering all 7,028 candidates. }
+  - { anchor: treasurehunt, where: For RubyConf Austria, title: hunt.rubyconf.at, line: A location-based treasure hunt for conference attendees. }
 
-# Names, not logos, until each company has agreed to be shown.
+# Things the owner made. Link when public; mark private when not.
+side_projects:
+  - id: usput
+    name: Usput.ba
+    note: Founder and CTO
+    logo: /images/logos/usput.png
+    url: https://usput.ba
+    link_label: Visit usput.ba
+    # evidence: proj-usput-web, proj-usput-ai-layer, proj-usput-retrieval-grounding
+    text: >-
+      A travel guide to Bosnia and Herzegovina with curated locations,
+      experiences and audio tours, on Rails 8 with Hotwire, Solid Queue and
+      Kamal, and AI content grounded in real places.
+  - id: izbori
+    name: Izbori 2026
+    url: /politika/analiza-izbora/
+    link_label: Open the guide
+    # evidence: files/_pages/politika.md
+    text: >-
+      A plain-language voter guide and seat projection for the 2026 general
+      election in Bosnia and Herzegovina, covering all 7,028 candidates. The
+      seat rules are written as code and replayed against 2018 and 2022, where
+      they place every seat-winning list and mandate exactly.
+  - id: treasurehunt
+    name: hunt.rubyconf.at
+    note: Built for RubyConf Austria 2026
+    url: https://hunt.rubyconf.at
+    link_label: Visit hunt.rubyconf.at
+    # evidence: proj-treasurehunt, proj-treasurehunt-features
+    text: >-
+      A location-based treasure hunt built for RubyConf Austria 2026: GPS
+      proximity checks for each clue, team play, hints on cooldowns and live
+      leaderboards, as an installable Rails 8.1 web app with offline support.
+  - id: card-game
+    name: Post-Dayton BiH
+    note: A political strategy card game
+    url: /igre/dejtonska-igra/
+    link_label: Play it
+    # evidence: proj-card-game, proj-card-game-tests, proj-card-game-adrs
+    text: >-
+      A card game with a pure TypeScript engine of about 100 modules, held by
+      3,374 tests and 33 decision records that a pre-push hook checks the code
+      against.
+
+  - id: minolovac
+    name: Minolovac
+    note: An educational minesweeper on real data
+    url: /igre/minolovac/
+    link_label: Play it
+    # evidence: ~/projects/usput.ba/app/controllers/minesweeper_controller.rb
+    text: >-
+      A minesweeper on map grids across Bosnia and Herzegovina, where the mines
+      sit exactly on recorded mine-suspected areas. It teaches what the numbers
+      mean, and says plainly that an empty cell is never a safety statement.
+
+# What I work with, AI first. Every entry is backed by the owner's code or
+# evidence store; C is listed on the owner's word (2026-09-28). An icon names a
+# file in files/images/stack/ (Simple Icons, CC0); no icon shows a plain label.
+stack:
+  # evidence: skill-rag, role-teamtailor-prescreening, skill-ai-llm-engineering, skill-spec-driven-development, oss-enola-constraints, oss-pi-brain, oss-brain
+  - group: What I build
+    items:
+      - { name: RAG }
+      - { name: LLM pipelines }
+      - { name: Evals }
+      - { name: Structured outputs }
+      - { name: Spec-driven workflows }
+      - { name: Agent guardrails }
+      - { name: Harness extensions }
+      - { name: Prompt-injection screening }
+  - group: AI and agents
+    items:
+      - { name: Claude, icon: claude }
+      - { name: OpenAI, icon: openai }
+      - { name: Gemini, icon: googlegemini }
+      - { name: Kimi, icon: kimi }
+      - { name: RubyLLM }
+      - { name: MCP, icon: modelcontextprotocol }
+      - { name: Langfuse }
+      - { name: pgvector }
+  - group: Languages
+    items:
+      - { name: Ruby, icon: ruby }
+      - { name: Go, icon: go }
+      - { name: Rust, icon: rust }
+      - { name: TypeScript, icon: typescript }
+      - { name: Python, icon: python }
+      - { name: JavaScript, icon: javascript }
+      - { name: C++, icon: cplusplus }
+      - { name: C, icon: c }
+  - group: Frameworks and data
+    items:
+      - { name: Rails, icon: rubyonrails }
+      - { name: Sidekiq, icon: sidekiq }
+      - { name: Ember, icon: emberdotjs }
+      - { name: React, icon: react }
+      - { name: Vue, icon: vuedotjs }
+      - { name: Svelte, icon: svelte }
+      - { name: PostgreSQL, icon: postgresql }
+      - { name: MySQL, icon: mysql }
+      - { name: DuckDB, icon: duckdb }
+  - group: Infrastructure
+    items:
+      - { name: Docker, icon: docker }
+      - { name: Kubernetes, icon: kubernetes }
+      - { name: Helm, icon: helm }
+      - { name: Google Cloud, icon: googlecloud }
+      - { name: Kamal }
+
+# Show marked placeholders for the logos and quotes that do not exist yet.
+# Turn this off before publishing: a placeholder is a gap, not content.
+show_placeholders: false
+
+# A company shows its logo once it has agreed to be shown; until then, its
+# name. Put the file under files/images/logos/ and set logo to its path.
 companies:
-  - Teamtailor
-  - Carv
-  - Meisterlabs
-  - Experfy
-  - Marvelsoft
+  - { name: Teamtailor, logo: /images/logos/teamtailor.png }
+  - { name: Carv, logo: /images/logos/carv.webp }
+  - { name: Recrubo.ai, logo: /images/logos/recrubo.png }
+  - { name: Doctaphone, logo: /images/logos/doctaphone.png }
+  - { name: Meisterlabs, logo: /images/logos/meisterlabs.png }
+  - { name: Experfy, logo: /images/logos/experfy.webp }
+  - { name: Marvelsoft, logo: /images/logos/marvelsoft.png }
 
 services:
   - number: "01"
     name: Assess
+    fits: When you want to know where your team stands.
+    format: A short, fixed-scope review
     title: How your team uses AI today
     text: >-
       A short, concrete review of how your engineers work with coding agents:
@@ -50,6 +168,8 @@ services:
       for what to change first.
   - number: "02"
     name: Enable
+    fits: When you want your team working this way.
+    format: One or two days, on your codebase
     title: Workshop and setup, in your repository
     text: >-
       One or two days with your team on your own codebase: a loop from intent
@@ -57,14 +177,41 @@ services:
       guardrails agents cannot bypass, and evals for the AI features you ship.
   - number: "03"
     name: Build
+    fits: When you need AI features designed and shipped.
+    format: One to two days a week, embedded
     title: Fractional AI product engineering
     # evidence: role-teamtailor-prescreening
     text: >-
-      Hands-on design and delivery of AI features in Rails products: LLM
+      Hands-on design and delivery of AI features in your product: LLM
       pipelines with structured outputs, evaluation and observability, built
       with EU AI regulation in mind.
 
 services_more: { label: Services in detail, url: /services/ }
+
+# Headings and framing for the middle of the page.
+sections:
+  services:
+    title: Three ways I can help your team.
+    intro: Pick the one that fits where your team is today. Every engagement runs the same way.
+  hiring:
+    text: Hiring rather than contracting? I am also open to a senior engineering, technical lead or AI engineering role.
+    link: { label: Talk about a role, url: /contact/#role }
+  work:
+    title: What I do, and how I know.
+    intro: Grouped by the problem, not by employer. Where the work is public, it is linked.
+  tools:
+    title: I build the guardrails I teach.
+    intro: The tools behind my workshops are ones I build or help build. Most are open source, so you can read how they work before you bring me in.
+  side:
+    title: Stuff I've made, mostly for fun.
+  highlights:
+    title: A few things I have built.
+    link: { label: All work and side projects, url: /work/ }
+  work_page:
+    intro: The problems I am good at, with what I have done about them, and the things I have made myself.
+  stack:
+    title: What I work with.
+    intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
 
 approach:
   - step: Diagnose
@@ -79,32 +226,72 @@ approach:
     text: >-
       Everything lives in your repository, and your team runs it without me.
 
-work:
-  - title: AI candidate screening at an applicant tracking system
-    org: Teamtailor
-    year: "2026"
-    # evidence: role-teamtailor-prescreening
+# The work page, by capability. Proof points name no employer, no client and no
+# date, and link only to public work. Each carries its evidence ids.
+capabilities:
+  - id: ai-in-production
+    title: AI features that hold up in production.
     text: >-
-      Designed an AI candidate-prescreening architecture: Sidekiq pipelines,
-      RubyLLM with structured outputs and evaluation tooling, built for EU
-      AI-regulation compliance.
-  - title: A remote team through 150 percent growth
-    org: Experfy
-    year: 2019 to 2021
-    # evidence: role-experfy-team, role-experfy-scaleup
+      Model output is treated as input to be checked, not an answer to be
+      trusted: retrieval grounds it, schemas shape it, evals measure it.
+    proofs:
+      # evidence: proj-usput-retrieval-grounding
+      - A travel platform whose place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and its own database, not from the model's memory.
+      # evidence: role-teamtailor-prescreening, role-teamtailor-prescreening-retrieval
+      - A retrieval-augmented candidate-screening pipeline for a regulated hiring context, with separate parse, extract, embed, retrieve and evaluate stages, embeddings kept apart per customer, and evaluation tooling, designed with the EU AI Act in mind.
+      # evidence: proj-usput-ai-layer
+      - A production LLM layer with schema-enforced structured output, layered retries, JSON repair and versioned prompts.
+      # evidence: skill-ai-llm-engineering
+      - Prompt-injection screening and deterministic pre-filters in front of model calls.
+    links:
+      - { label: usput.ba, url: "https://usput.ba" }
+  - id: guardrails
+    title: Guardrails for agent-written code.
     text: >-
-      Led a fully remote team of around 30 engineers across 7 time zones as
-      architect, project manager and team lead, and owned planning and delivery
-      through a 150 percent scale-up without missing a deadline.
-  - title: One model for many applicant tracking systems
-    org: Carv
-    year: 2025 to 2026
-    # evidence: role-carv-team, role-carv-ats-integrations, role-carv-event-system, role-carv-devops
+      Agents write most of the code now. What keeps it honest is written down
+      and checked by machines: specs, decision records and architectural laws.
+    proofs:
+      # evidence: oss-enola-constraints
+      - The constraints program in enola, architectural laws declared over the code graph and checked deterministically in CI, with a Ruby DSL and four gems for Rails teams.
+      # evidence: oss-pi-brain, oss-pi-brain-gating
+      - pi-brain, an intent store for agentic development with human-gated workflows and decision records agents must read before they edit.
+      # evidence: proj-card-game-adrs, skill-spec-driven-development
+      - Spec-driven projects where decision records are checked against the code by a pre-push hook.
+      # evidence: skill-mcp
+      - Three MCP servers, in Go, Rails and plain Ruby.
+    links:
+      - { label: enola, url: "https://github.com/enola-labs/enola" }
+      - { label: pi-brain, url: "https://github.com/misabegovic/pi-brain" }
+  - id: one-model
+    title: Many systems, one model.
     text: >-
-      Technical lead for 10 engineers on an AI platform for recruiters:
-      normalised data from different applicant tracking systems into one model,
-      built the event system on a single pub/sub, and owned DevOps and CI/CD on
-      Google Cloud.
+      Most products sit on top of other people's data. The work is making it
+      one shape, early, so everything downstream stays simple.
+    proofs:
+      # evidence: role-carv-ats-integrations, role-carv-channel-normalisation
+      - Normalised data from many third-party systems into one model, and inbound messages from several channels into one shape for a conversation engine.
+      # evidence: role-carv-event-system
+      - An event system on a single pub/sub, with every event defined once and kept normalised across the product.
+      # evidence: proj-market-analysis, proj-market-analysis-scale
+      - A daily job-market pipeline over 4.76 million postings, reading only the columns it needs with DuckDB.
+      # evidence: role-carv-devops, skill-kubernetes
+      - DevOps and CI/CD on Google Cloud and Kubernetes.
+  - id: teams
+    title: Leading teams.
+    text: >-
+      Good teams make their own decisions well. My job is to make the
+      decisions visible, the work small, and the blockers short-lived.
+    proofs:
+      # evidence: role-experfy-team, role-experfy-scaleup
+      - Led a fully remote team of around 30 engineers across 7 time zones through 150 percent growth, without missing a deadline.
+      # evidence: role-carv-team
+      - Technical lead and mentor for a team of 10 engineers, responsible for delivery and technical quality.
+      # evidence: community-rubyconf-austria, community-euruko-2024
+      - Founded RubyConf Austria and took full ownership of EuRuKo 2024.
+      # evidence: community-bhff, cert-bhff-excellence
+      - Three years as a mentor and team lead at the Bosnia and Herzegovina Futures Foundation, with two Certificates of Excellence.
+    links:
+      - { label: RubyConf Austria, url: "https://www.rubyconf.at/" }
 
 open_source:
   - name: enola
@@ -135,17 +322,74 @@ open_source:
       by the tool itself.
 
 # evidence: community-rubyconf-austria, community-rubyconf-speakers
+# The event logos are white on transparent, drawn on the dark section.
+community_logos:
+  - { name: RubyConf Austria, logo: /images/logos/rubyconf-austria.svg, url: "https://www.rubyconf.at/" }
+  - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, url: "https://2024.euruko.org" }
 community:
   # evidence: community-euruko-2024
   - text: Founded and organised RubyConf Austria 2026 in Vienna, with a programme including Dave Thomas, Chad Fowler, José Valim and Armin Ronacher.
   - text: Took full ownership of EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference.
 
-# Real, attributed and permitted quotes only. The section stays hidden while
-# this list is empty. Shape of an entry:
-#   - quote: "..."
-#     name: Full name
-#     role: Their role, Company
-testimonials: []
+# Real, attributed and permitted quotes only. Entries marked placeholder show
+# only while show_placeholders is on; replace each with a real quote (and drop
+# the placeholder line) as people agree to be quoted.
+testimonials:
+  # LinkedIn recommendation, 2021-07-20. quote is the short version shown
+  # first; full is the whole text, behind "Read the full recommendation".
+  # avatar: a photo path under /images/testimonials/, only with the person's consent;
+  # without one, the card shows their initials.
+  - quote: >-
+      Muhamed is one of the most amazing professionals I have ever worked with.
+      He is extremely talented, dependable, and disciplined. … I would strongly
+      recommend Muhamed and would love to work with him again.
+    full: >-
+      Muhamed is one of the most amazing professionals I have ever worked with.
+      He is extremely talented, dependable, and disciplined. Moreover, he is
+      always willing to push himself beyond limits to make a product
+      successful. With Muhamed's excellent communication and engineering
+      management skills everything is possible. At Experfy, Muhamed
+      single-handedly managed the team collaboration consisting of 7+
+      timezones. He has a vast reservoir of talent - enabling him to lead
+      Backend, Frontend, and DevOps teams with flying colors. In design
+      thinking sessions, Muhamed played a vital role with his powerful insight
+      about the product roadmap and technical knowledge. As an engineering
+      manager, he always backed his team with full support. In addition to
+      these Muhamed conducted extremely high-yielding Sprint retrospectives. He
+      was always willing to go the extra mile to increase productivity and
+      eliminate blockers. I would strongly recommend Muhamed and would love to
+      work with him again.
+    name: Hassan Akbar
+    initials: HA
+    avatar: /images/testimonials/hassan-avatar.jpg
+    url: https://www.linkedin.com/in/hassanakbar/
+    role: Worked with Muhamed at Experfy, 2021
+  # Recommendation received 2026-09-28, pasted by the owner.
+  - id: zlatko
+    quote: >-
+      Muhamed leads by doing. When we hit a hard problem, he didn't start with
+      a long discussion. He wrote the code, showed it working, and then we
+      talked. That habit moved the team forward more than once.
+    full: >-
+      I worked with Muhamed on the same team for a year, and he quickly became
+      one of the people I relied on most. Muhamed leads by doing. When we hit a
+      hard problem, he didn't start with a long discussion. He wrote the code,
+      showed it working, and then we talked. That habit moved the team forward
+      more than once. He is a strong Ruby on Rails engineer and a natural
+      architect. He took on leading the technical direction and shaping the
+      code, and his decisions held up as the project grew. No challenge was too
+      big or too unfamiliar for him. He is resourceful and knowledgeable, and
+      when the answer wasn't obvious, he knew where to look. He is precise and
+      professional, and he holds a high bar. He is also direct. When something
+      wasn't good enough, he said so plainly, even when that was hard to hear.
+      It was always about the work and never about the person, and it made
+      both our code and our team better. I would gladly work with Muhamed
+      again, and I recommend him to any team that needs a Rails engineer who
+      can lead.
+    name: Zlatko Alomerovic
+    initials: ZA
+    avatar: /images/testimonials/zlatko.jpeg
+    role: Worked with Muhamed on the same team
 
 closing:
   title: Working on something where AI has to hold up in production?

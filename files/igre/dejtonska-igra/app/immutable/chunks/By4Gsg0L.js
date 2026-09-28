@@ -1,0 +1,1 @@
+import{C as e,E as t,L as n,V as r,a as i,g as a,st as o,w as s}from"./BeNoempL.js";import"./2jRyFEmQ.js";var c=t(`<span> </span>`);function l(t,l){let u=i(l,`tone`,3,`copper`),d=i(l,`filled`,3,!1);var f=c();let p;var m=r(f,!0);o(f),n(()=>{p=a(f,1,`chip tone-${u()??``}`,`svelte-py53oc`,p,{filled:d()}),e(m,l.text)}),s(t,f)}export{l as t};

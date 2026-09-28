@@ -1,0 +1,15 @@
+{% capture here %}{{ page.url | split: "/" | slice: 1 | first }}{% endcapture %}
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="wordmark" href="{{ site.baseurl }}/">Muhamed Isabegovic</a>
+    <nav class="menu" aria-label="Main">
+      <a href="{{ site.baseurl }}/services/"{% if here == "services" %} aria-current="page"{% endif %}>Services</a>
+      <a href="{{ site.baseurl }}/work/"{% if here == "work" %} aria-current="page"{% endif %}>Work</a>
+      <a href="{{ site.baseurl }}/writing/"{% if here == "writing" %} aria-current="page"{% endif %}>Writing</a>
+      <a href="{{ site.baseurl }}/brain/"{% if here == "brain" %} aria-current="page"{% endif %}>Brain</a>
+      <a href="{{ site.baseurl }}/about/"{% if here == "about" %} aria-current="page"{% endif %}>About</a>
+    </nav>
+    <a class="button button-small" href="{{ site.baseurl }}/contact/"{% if here == "contact" %} aria-current="page"{% endif %}>Get in touch</a>
+  </div>
+</header>
