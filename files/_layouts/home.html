@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ site.author }}: {{ site.data.home.hero.title }}</title>
+    <title>{{ page.title | remove: '\' }}</title>
 {% include site-head.html %}
   </head>
   <body class="home">
