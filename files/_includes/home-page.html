@@ -16,7 +16,7 @@
       </div>
       <figure class="portrait">
         <img src="{{ site.baseurl }}{{ site.avatar }}" alt="Muhamed Isabegovic" width="1024" height="1024" fetchpriority="high">
-        <figcaption><strong>{{ site.author }}</strong><span>{{ h.person.role }}</span><span>{{ h.person.credit }}</span></figcaption>
+        <figcaption><strong>{{ site.author }}</strong><span>{{ h.person.role }}</span>{% if h.person.credit %}<span>{{ h.person.credit }}</span>{% endif %}</figcaption>
       </figure>
     </div>
   </section>

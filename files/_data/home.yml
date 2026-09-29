@@ -6,18 +6,18 @@
 
 # The caption beside the portrait in the first screen.
 person:
-  role: Product engineer and tech lead, AI
-  # evidence: community-rubyconf-austria
-  credit: Founder of RubyConf Austria
+  role: Product engineer and technical lead, AI-native
 
 hero:
-  title: I help engineering teams ship with AI agents, without losing control of their code.
+  # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
+  title: I build products and lead the teams that ship them.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
-  highlight: without losing control
+  highlight: ship them
   lead: >-
-    Specs, guardrails and evals, set up in your own repository. Ten years of
-    building and leading product teams, now focused on making agent-written
-    software hold up in production.
+    Ten years of taking software from an idea to production, as a hands-on
+    engineer and as a tech lead, for startups and established product
+    companies alike. I also help teams become AI-native, with open-source
+    tools I build and teach.
   # evidence: constraint-earliest-start, constraint-location
   availability: >-
     Available now for a senior role or contract work. Based in Vienna, working
@@ -158,40 +158,49 @@ companies:
 
 services:
   - number: "01"
-    name: Assess
-    fits: When you want to know where your team stands.
-    format: A short, fixed-scope review
-    title: How your team uses AI today
-    text: >-
-      A short, concrete review of how your engineers work with coding agents:
-      where it helps, where it quietly erodes quality, and a prioritised plan
-      for what to change first.
-  - number: "02"
-    name: Enable
-    fits: When you want your team working this way.
-    format: One or two days, on your codebase
-    title: Workshop and setup, in your repository
-    text: >-
-      One or two days with your team on your own codebase: a loop from intent
-      to shipped code, specs and decision records as the contract with agents,
-      guardrails agents cannot bypass, and evals for the AI features you ship.
-  - number: "03"
     name: Build
-    fits: When you need AI features designed and shipped.
-    format: One to two days a week, embedded
-    title: Fractional AI product engineering
-    # evidence: role-teamtailor-prescreening
+    fits: When you need a product or feature built.
+    format: Embedded, part-time or full-time
+    title: Hands-on product engineering
+    # evidence: role-teamtailor-copilot, role-meisterlabs-permissions, proj-usput-web
     text: >-
-      Hands-on design and delivery of AI features in your product: LLM
-      pipelines with structured outputs, evaluation and observability, built
-      with EU AI regulation in mind.
+      I join your team as a senior engineer and build the product or feature
+      end to end, from spec to production.
+  - number: "02"
+    name: Lead
+    fits: When your team needs technical direction.
+    format: One to two days a week
+    title: Fractional tech lead
+    # evidence: role-carv-team, role-experfy-team
+    text: >-
+      I lead your engineering team part-time: technical direction,
+      architecture, delivery, and the people.
+  - number: "03"
+    name: Review
+    fits: When you want to know where your system stands.
+    format: Fixed scope, one to two weeks
+    title: Architecture review
+    # evidence: skill-software-design, role-carv-ats-integrations, oss-enola-constraints
+    text: >-
+      A short, fixed-scope look at your codebase and system: what holds, what
+      will break, and what to fix first.
+  - number: "04"
+    name: AI-native
+    fits: When you want your company to build with AI.
+    format: A workshop and setup, then follow-up
+    title: Make your company AI-native
+    # evidence: oss-brain, oss-pi-brain, proj-tabula, oss-enola-constraints, oss-enola-gems, role-teamtailor-copilot, proj-usput-retrieval-grounding
+    text: >-
+      How you build and what you build: a knowledge base your people and
+      agents work from, and AI features in your product that hold up in
+      production, with open-source tools I build and teach.
 
 services_more: { label: Services in detail, url: /services/ }
 
 # Headings and framing for the middle of the page.
 sections:
   services:
-    title: Three ways I can help your team.
+    title: Four ways to work together.
     intro: Pick the one that fits where your team is today. Every engagement runs the same way.
   hiring:
     text: Hiring rather than contracting? I am also open to a senior engineering, technical lead or AI engineering role.

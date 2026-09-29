@@ -37,14 +37,22 @@ believing it from evidence they could check, and knowing how to reach him.
 
 ## Positioning
 
-"I help engineering teams ship with AI agents, without losing control of their
-code." Specs, guardrails and evals, set up in the team's own repository.
+"I build products and lead the teams that ship them" (confirmed by the owner,
+2026-09-29). Clients hire him to build and lead; AI is one of the things he
+builds, not the pitch. His edge is making companies AI-native, in how they
+build and in what they build, with open-source tools he builds and teaches.
+Title: Product Engineer and Technical Lead, AI-native. Four services: Build
+(hands-on product engineering), Lead (fractional tech lead), Review
+(architecture review), and AI-native (make your company AI-native). Clients:
+product companies of any size, from startups to enterprises. Talks are not
+sold as a service; the conferences stay as proof.
 
 What a neighbouring consultant or candidate could not truthfully copy: he
 builds and ships the tooling that keeps agent-written software under control
-(the tabula agent memory, pi-brain, the enola constraints program, three MCP
-servers), has led engineering teams in production, stands in the European Ruby
-community as a conference founder and organiser, and works in public.
+(brain, pi-brain, tabula in private development, the enola constraints
+program and four gems, three MCP servers), has led engineering teams in
+production, stands in the European Ruby community as a conference founder and
+organiser, and works in public.
 
 ## Operating Context
 
