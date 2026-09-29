@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-description: Muhamed Isabegovic is a Ruby and Rails engineer and AI product developer, core contributor to enola, maintainer of four related gems, creator of pi-brain, and organizer of RubyConf Austria.
+description: Muhamed Isabegovic is a product engineer and tech lead in AI, based in Vienna. AI engineer on Usput.ba, core contributor to enola, author of pi-brain, and founder of RubyConf Austria.
 ---
 
 <script type="application/ld+json">
@@ -31,21 +31,19 @@ description: Muhamed Isabegovic is a Ruby and Rails engineer and AI product deve
     "https://www.linkedin.com/in/muhamed-isabegovic/",
     "https://twitter.com/m_isabegovic"
   ],
-  "description": "Ruby and Rails engineer and AI product developer. Core contributor to enola, maintainer of four related gems, creator of pi-brain, organizer of RubyConf Austria and EuRuKo 2024."
+  "description": "A product engineer and tech lead in AI, based in Vienna. AI engineer on Usput.ba, core contributor to enola, author of pi-brain, and founder of RubyConf Austria."
 }
 </script>
 
-Software Engineer with 10+ years of industry experience and 7+ years of volunteering and community organizing experience.
+I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack. I have built trading systems in C++, SaaS products in Rails and AI features in hiring software.
 
-Extensive experience working in Human Resources, Talent Acquisition, Algorithmic Trading and Productivity Tools Industry.
+Most recently I built AI screening features for Teamtailor's Co-pilot team. Before that I was tech lead for a team of 10 engineers at Recrubo, through its acquisition by Carv.
 
-I have been working with Ruby in a professional setting since 2016, with a single ~2 year exception of working with C++ and Python (had a lot of fun learning about actor systems working with CAF - C++ Actor Framework).
+On [Usput.ba](https://usput.ba), my own travel guide to Bosnia and Herzegovina, I work as an AI engineer. Descriptions, audio tours and itineraries are generated from real place data rather than from the model's memory, and it is where I try new AI features on real users first.
 
-Lately, I am building [pi-brain](https://github.com/misabegovic/pi-brain), a cloneable, agent-maintained knowledge base that powers this site, and experimenting with AI agents and workflows around tools like Claude (Opus, Fable), Kimi K3, and [Pi.dev](https://pi.dev).
+Lately I also work one layer up, with agents writing the code. I build open-source tools that keep that reliable. [pi-brain](https://github.com/misabegovic/pi-brain) holds the specs and decisions the code is regenerated from, and runs this site. [enola](https://github.com/enola-labs/enola) checks code against architecture rules; I am a core contributor and maintain four gems that bring it to Ruby and Rails teams.
 
-I am also a core contributor to [enola](https://github.com/enola-labs/enola), an architectural regression testing tool built for AI-assisted development. My contributions include the constraints program (declared architectural law over the fact graph) and the Ruby DSL that lets you write those laws as sentences; the project's [acknowledgements](https://github.com/enola-labs/enola#acknowledgements) are kind enough to list the rest. Around it I maintain four gems that make enola practical for Ruby and Rails teams (see Open source below).
-
-I also work with teams directly on AI-augmented development. See [Services](/services/) for workshops, consulting, and fractional work.
+I founded RubyConf Austria and organised EuRuKo 2024. I also work with teams directly on AI-augmented development; see [Services](/services/).
 
 ## Career Overview
 
@@ -61,12 +59,12 @@ I also work with teams directly on AI-augmented development. See [Services](/ser
 
 ## Specialties
 
-- AI Product Development
-- Agentic Workflows & LLM Orchestration
-- Research & Development
-- Software Design & Architecture
-- Team & Project Leadership
-- Community Building & Conference Organizing
+- AI product engineering (RAG, LLM pipelines, evals, structured outputs)
+- AI agents and MCP, with guardrails for agent-written code
+- Spec-driven development
+- Software architecture and design
+- Technical leadership and engineering management
+- Community building and conference organising
 
 ## Open source
 
