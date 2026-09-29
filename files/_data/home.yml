@@ -6,7 +6,7 @@
 
 # The caption beside the portrait in the first screen.
 person:
-  role: Product engineer and technical lead, AI-native
+  role: Senior product engineer and technical lead, AI-native
   # A second line under the role, matching the LinkedIn headline's "| AI Engineer".
   credit: AI Engineer
 

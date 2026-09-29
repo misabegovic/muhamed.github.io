@@ -120,3 +120,7 @@
    diff: 2 files, +12/-1
    restricted-paths: false
    by: agent
+2026-09-29 commit — 98789ac: site: title is Senior Product Engineer and Technical Lead, AI-native
+   diff: 20 files, +13/-13
+   restricted-paths: true
+   by: agent

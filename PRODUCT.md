@@ -41,7 +41,7 @@ believing it from evidence they could check, and knowing how to reach him.
 2026-09-29). Clients hire him to build and lead; AI is one of the things he
 builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
-Title: Product Engineer and Technical Lead, AI-native. Four services: Build
+Title: Senior Product Engineer and Technical Lead, AI-native. Four services: Build
 (hands-on product engineering), Lead (technical lead, part-time or full-time), Review
 (architecture review), and AI-native (make your company AI-native). Clients:
 product companies of any size, from startups to enterprises. Talks are not
