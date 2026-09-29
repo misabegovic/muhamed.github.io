@@ -73,12 +73,13 @@ a { color: inherit; text-decoration: none; }
     <div class="nested">
       <div class="role">
         <h3>AI Product Developer <span class="at">· Teamtailor, Co-pilot team</span></h3>
-        <div class="meta">ATS serving 8,500+ companies, on Rails and Ember.js. I owned features from pitch and spec to rollout.</div>
+        <div class="meta">ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.</div>
         <ul>
-          <li>Pitched, specced with design, and shipped Request Missing Information: it finds what an application lacks (unmet screening criteria, unanswered questions, empty fields), has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening. Live for all customers, with a public support article.</li>
-          <li>Moved AI screening onto the trigger system across seven merged pull requests, so recruiters can save screening criteria on job templates and screen at any stage; backfilled every company and rolled it out to all customers.</li>
-          <li>Shipped automatic candidate moves on screening outcome, a customer request: per-criterion met, unmet or unknown, combined with All or Any, a condition model worked out with the designer.</li>
-          <li>Turned a user's request for a "re-run screening" button into screening that waits for the CV to finish parsing and re-runs when it arrives, so candidates aren't screened before their CV is read.</li>
+          <li>Shipped Request Missing Information to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.</li>
+          <li>Rebuilt AI screening on the trigger system, across seven merged pull requests, so recruiters can screen at any stage and save criteria on job templates; backfilled every company and rolled it out to all customers.</li>
+          <li>Shipped automatic candidate moves on the screening outcome, a customer request: per-criterion met, unmet or unknown, combined with All or Any.</li>
+          <li>Made screening wait until the CV is parsed and re-run when it arrives, so no candidate is screened before their CV is read.</li>
+          <li>Moved AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic, and ran A/B experiments of prompt and model versions there, promoting the winners.</li>
         </ul>
       </div>
       <div class="role">
@@ -106,7 +107,9 @@ a { color: inherit; text-decoration: none; }
   <section>
     <h2>Skills</h2>
     <div class="hat">Product and AI</div>
-    <div class="chips first"><span>LLM features</span><span>RAG</span><span>LLM evaluation</span><span>Structured outputs</span><span>Prompt management</span><span>MCP</span><span>RubyLLM</span><span>pgvector</span></div>
+    <div class="chips first"><span>LLM features</span><span>AI agents</span><span>RAG</span><span>LLM evaluation</span><span>Structured outputs</span><span>Prompt management</span><span>Langfuse</span><span>MCP</span><span>RubyLLM</span><span>pgvector</span></div>
+    <div class="hat">Architecture and leadership</div>
+    <div class="chips"><span>Software architecture</span><span>Technical leadership</span><span>Spec-driven development</span><span>Event-driven architecture</span><span>Data modeling</span><span>Research and development</span></div>
     <div class="hat">Backend</div>
     <div class="chips"><span>Ruby on Rails</span><span>Ruby</span><span>Node.js</span><span>TypeScript</span><span>Go</span><span>Python</span><span>C++</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Sidekiq</span><span>Actor model</span></div>
     <div class="hat">Frontend and mobile</div>
@@ -114,24 +117,21 @@ a { color: inherit; text-decoration: none; }
     <div class="hat">Infrastructure and DevEx</div>
     <div class="chips"><span>Google Cloud</span><span>Kubernetes</span><span>CI/CD</span><span>Kamal</span><span>Docker</span><span>Helm</span></div>
     <div class="hat">Ways of working</div>
-    <div class="chips"><span>Product specs</span><span>User research</span><span>A/B experiments</span><span>Shape Up</span><span>Spec-driven development</span></div>
+    <div class="chips"><span>Product specs</span><span>User research</span><span>A/B experiments</span><span>Shape Up</span></div>
   </section>
   <section>
     <h2>Open Source</h2>
     <div class="role">
       <h3>enola <span class="at">· core contributor</span></h3>
-      <ul><li>An open-source tool that checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems that bring it to Rails teams.</li></ul>
+      <ul><li>Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including enola-guides.</li></ul>
     </div>
     <div class="role">
       <h3>pi-brain <span class="at">· author and maintainer</span></h3>
       <ul><li>An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases.</li></ul>
     </div>
-  </section>
-  <section>
-    <h2>Community</h2>
     <div class="role">
-      <h3>Mentor and team lead</h3>
-      <div class="meta">BH Futures Foundation · 05/2018 - 09/2021 · volunteer; Certificates of Excellence 2019, 2021</div>
+      <h3>brain and tabula <span class="at">· author</span></h3>
+      <ul><li>Knowledge bases people and agents work from: brain on GitHub, and tabula, in Rust, in private development.</li></ul>
     </div>
   </section>
 </div>
@@ -189,6 +189,13 @@ a { color: inherit; text-decoration: none; }
   <section class="plain">
     <h2>Languages</h2>
     <p><b>Bosnian</b> native · <b>English</b> full professional · <b>German</b> limited working · <b>Spanish</b> elementary</p>
+  </section>
+  <section>
+    <h2>Community</h2>
+    <div class="role">
+      <h3>Mentor and team lead</h3>
+      <div class="meta">BH Futures Foundation · 05/2018 - 09/2021 · volunteer; Certificates of Excellence 2019, 2021</div>
+    </div>
   </section>
 </div>
 <div>
