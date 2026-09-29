@@ -144,3 +144,7 @@
    diff: 2 files, +2/-1
    restricted-paths: false
    by: agent
+2026-09-29 commit — d3b2d96: cv: explain Doctaphone, consulting done through the company
+   diff: 5 files, +26/-
+   restricted-paths: false
+   by: agent
