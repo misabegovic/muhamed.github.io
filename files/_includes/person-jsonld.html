@@ -1,0 +1,40 @@
+{%- comment -%}
+  Who the site is about, on every page, so a crawler or an agent that lands
+  anywhere learns the person, the offer and the contact in one read. Kept in
+  step with the presence of record in klosaer/hireable
+  (profile/muhamed.presence.yml) and with _data/home.yml.
+{%- endcomment -%}
+{%- assign h = site.data.home -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/#person",
+  "name": "Muhamed Isabegovic",
+  "url": "{{ site.url }}/",
+  "image": "{{ site.url }}/images/profile.jpg",
+  "email": "mailto:info@muhamed.at",
+  "jobTitle": "Product Engineer and Technical Lead, AI-native",
+  "description": "Product engineer and technical lead, AI-native, based in Vienna, with 10+ years in the industry. He builds products and leads the teams that ship them, as a hands-on engineer, a technical lead (part-time or full-time) or an architecture reviewer, and helps companies become AI-native in how they build and in what they build. Available now for contract work or a senior role, working remotely across Europe.",
+  "homeLocation": { "@type": "Place", "name": "Vienna, Austria" },
+  "worksFor": { "@type": "Organization", "name": "Isabegovic Muhamed e.U.", "url": "{{ site.url }}/" },
+  "knowsLanguage": ["Bosnian", "English", "German"],
+  "knowsAbout": [
+    "AI product engineering", "AI agents", "LLM features in production",
+    "Retrieval-augmented generation", "LLM evaluation", "Langfuse",
+    "Model Context Protocol", "Spec-driven development",
+    "Software architecture", "Technical leadership", "Event-driven architecture",
+    "Data modeling", "Ruby", "Ruby on Rails", "TypeScript", "Ember.js",
+    "PostgreSQL", "Kubernetes", "Applicant tracking systems", "Recruitment technology"
+  ],
+  "makesOffer": [{% for s in h.services %}
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ s.title | jsonify }}, "description": {{ s.text | strip | jsonify }}, "url": "{{ site.url }}/services/#{{ s.name | downcase }}" } }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
+  "subjectOf": { "@type": "DigitalDocument", "name": "CV", "url": "{{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf", "encodingFormat": "application/pdf" },
+  "sameAs": [
+    "https://github.com/misabegovic",
+    "https://www.linkedin.com/in/muhamed-isabegovic/",
+    "https://twitter.com/m_isabegovic"
+  ]
+}
+</script>
