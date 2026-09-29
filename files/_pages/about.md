@@ -35,7 +35,7 @@ description: Muhamed Isabegovic is a product engineer and tech lead in AI, based
 }
 </script>
 
-I take ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack. I have built trading systems in C++, SaaS products in Rails and AI features in hiring software.
+I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack. I have built trading systems in C++, SaaS products in Rails and AI features in hiring software.
 
 Most recently I built AI screening features for Teamtailor's Co-pilot team. Before that I was tech lead for a team of 10 engineers at Recrubo, through its acquisition by Carv.
 
