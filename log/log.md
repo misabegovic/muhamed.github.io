@@ -65,3 +65,7 @@
 - 2026-09-29T20:00:00Z - on human request, the title is Product Engineer and Technical Lead, AI-native everywhere (matching LinkedIn); the CV adds "| AI Engineer", as LinkedIn does, for AI engineer searches; images re-rendered
 - 2026-09-29T20:30:00Z - on human request, the portrait caption adds a second line, AI Engineer, matching the LinkedIn headline
 - 2026-09-29T21:00:00Z - on human request, the homepage drops the Diagnose/Prove/Hand over steps (the services page's How it works covers engagements, its last step reworded without them); stylesheets carry a build-time version so a new layout is not hidden by a cached site.css (the services grid showed three columns from cache)
+2026-09-29 commit — 125c562: cv: sharpen the Teamtailor entry, add Langfuse and an architecture skills group
+   diff: 2 files, +20/-13
+   restricted-paths: false
+   by: agent
