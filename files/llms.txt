@@ -27,6 +27,7 @@ Roles he is open to, permanent or contract: Senior Software Engineer, Staff Engi
 
 - Founder of his own company since 2024, through which he works inside startups:
   - AI Product Developer at Teamtailor (an ATS serving 8,500+ companies): owned AI screening features from pitch to rollout and measurement.
+  - Consultant for Doctaphone, a speech-to-text app for doctors: AI work, an architecture review, and the product vision with the founder.
   - Technical Lead at Recrubo, acquired by Carv: led a team of 10 and the integration of both products after the acquisition.
 - AI Engineer on Usput.ba, his own product: AI content grounded in real place data.
 - Senior Software Engineer at Meisterlabs (MindMeister, MeisterTask), 2021 - 2024.

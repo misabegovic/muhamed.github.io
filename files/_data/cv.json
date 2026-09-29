@@ -46,6 +46,19 @@
       "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement."
     },
     {
+      "title": "Consultant",
+      "at": "Doctaphone",
+      "meta": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder.",
+      "start": null,
+      "end": null,
+      "nested": true,
+      "extra": {},
+      "bullets": [],
+      "dates": null,
+      "location": null,
+      "summary": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder."
+    },
+    {
       "title": "Technical Lead",
       "at": "Recrubo, acquired by Carv",
       "meta": "Seed-stage AI platform for recruiters, around 10 people when I joined; Carv acquired it two months later.",

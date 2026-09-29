@@ -53,6 +53,14 @@
       ]
     },
     {
+      "name": "Doctaphone",
+      "position": "Consultant",
+      "location": null,
+      "startDate": null,
+      "summary": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder.",
+      "highlights": []
+    },
+    {
       "name": "Recrubo, acquired by Carv",
       "position": "Technical Lead",
       "location": null,
