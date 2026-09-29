@@ -58,7 +58,7 @@ I also work with teams directly on AI-augmented development. See [Services](/ser
   - Founder and organiser @ [EuRuKo 2024](https://2024.euruko.org) and [RubyConf Austria](https://www.rubyconf.at/)
   - Founder & CTO @ [Usput.ba](https://usput.ba)
 - (2021 - 2024) Senior Software Engineer @ [Meisterlabs](https://www.meisterlabs.com/)
-- (2019 - 2021) Software Engineering Manager @ [Experfy](https://www.experfy.com/)
+- (2019 - 2021) Lead Software Engineer @ [Experfy](https://www.experfy.com/)
 - (2018 - 2019) Software Engineer @ [Marvelsoft](https://marvelsoft.net/)
 - (2016 - 2017) Junior Software Engineer @ [Experfy](https://www.experfy.com/)
 

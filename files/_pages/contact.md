@@ -31,6 +31,6 @@ description: How to reach Muhamed Isabegovic about a senior engineering role or 
   <div><dt>Email</dt><dd><a href="mailto:info@muhamed.at">info@muhamed.at</a></dd></div>
   <div><dt>Availability</dt><dd>Available now, for a senior role or contract work.</dd></div>
   <div><dt>Location</dt><dd>Vienna, Austria. Remote across Europe, on site in the DACH region.</dd></div>
-  <div><dt>CV</dt><dd><a href="/cv/Muhamed_Isabegovic_CV.pdf" download>Download my CV (PDF, one page)</a></dd></div>
+  <div><dt>CV</dt><dd><a href="/cv/Muhamed_Isabegovic_CV.pdf" download>Download my CV (PDF, two pages)</a></dd></div>
   <div><dt>Elsewhere</dt><dd><a href="https://www.linkedin.com/in/muhamed-isabegovic/">LinkedIn</a>, <a href="https://github.com/misabegovic">GitHub</a></dd></div>
 </dl>
