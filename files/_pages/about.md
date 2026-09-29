@@ -27,6 +27,12 @@ I also help companies become AI-native, in how they build and in what they build
 - (2018 - 2019) Software Engineer @ [Marvelsoft](https://marvelsoft.net/)
 - (2016 - 2017) Junior Software Engineer @ [Experfy](https://www.experfy.com/)
 
+## Education and languages
+
+- Master's studies in Software Engineering and Internet Computing, and Business Informatics, at [TU Wien](https://www.tuwien.ac.at/), part-time alongside work, since 2022
+- BSc in Information Technology, IPI Akademija Tuzla
+- Bosnian (native), English (full professional), German (limited working), Spanish (elementary)
+
 ## Specialties
 
 - AI product engineering (RAG, LLM pipelines, evals, structured outputs)

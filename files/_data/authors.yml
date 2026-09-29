@@ -1,0 +1,6 @@
+# jekyll-seo-tag resolves the site author by name here; without it,
+# twitter:creator came out as "@Muhamed Isabegovic", not a valid handle.
+Muhamed Isabegovic:
+  name: Muhamed Isabegovic
+  twitter: m_isabegovic
+  uri: https://muhamed.at/about/

@@ -108,3 +108,7 @@
    diff: 1 files, +0/-1
    restricted-paths: false
    by: agent
+2026-09-29 commit — 78b0d9b: site: fix the stale meta description, share alt text, twitter:creator and caption text
+   diff: 7 files, +21/-6
+   restricted-paths: false
+   by: agent
