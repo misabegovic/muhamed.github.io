@@ -43,7 +43,7 @@ footer-links:
 # Structured metadata for jekyll-seo-tag (Twitter cards + JSON-LD sameAs links)
 twitter:
   username: m_isabegovic
-  card: summary
+  card: summary_large_image
 social:
   name: Muhamed Isabegovic
   links:
