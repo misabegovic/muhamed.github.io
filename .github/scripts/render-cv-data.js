@@ -3,7 +3,7 @@
 //   files/_data/cv.json  the CV as data, rendered as the one-column /cv/ page
 //   files/cv.json        the same CV in the JSON Resume schema (jsonresume.org)
 // Role dates come from data-start / data-end on each .role, which the PDF does
-// not print. Run after every CV change, alongside the PDF render:
+// not print; roles done through the company carry none. Run after every CV change, alongside the PDF render:
 //   NODE_PATH=<dir with playwright-core> CHROME=<chromium> node .github/scripts/render-cv-data.js
 const { chromium } = require('playwright-core');
 const fs = require('fs');
@@ -30,9 +30,11 @@ function readCv() {
     };
   };
   const section = (name) => [...document.querySelectorAll('section')].find((s) => text(s.querySelector('h2')).startsWith(name));
+  // Roles inside .nested, or marked data-under, belong to the company above
+  // them and carry no dates of their own (the owner's choice, 2026-09-29).
   const roles = (name) => [...document.querySelectorAll('section')]
     .filter((s) => text(s.querySelector('h2')).startsWith(name))
-    .flatMap((s) => [...s.querySelectorAll('.role')].map((r) => role(r, !!r.closest('.nested'))));
+    .flatMap((s) => [...s.querySelectorAll('.role')].map((r) => role(r, !!r.closest('.nested') || !!r.dataset.under)));
   const header = document.querySelector('header');
   const skills = section('Skills');
   return {

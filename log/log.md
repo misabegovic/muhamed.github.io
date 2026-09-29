@@ -128,3 +128,11 @@
    diff: 10 files, +873/-14
    restricted-paths: true
    by: agent
+2026-09-29 commit — b72fcbb: site: CV links open the CV page instead of downloading the PDF
+   diff: 5 files, +5/-5
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — 450c4fe: cv: roles done through the company carry no dates of their own
+   diff: 4 files, +27/-35
+   restricted-paths: true
+   by: agent

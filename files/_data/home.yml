@@ -25,7 +25,7 @@ hero:
     Available now for a senior role or contract work. Based in Vienna, working
     remotely across Europe.
   primary: { label: Get in touch, url: /contact/ }
-  cv: { label: Download my CV, url: /cv/Muhamed_Isabegovic_CV.pdf }
+  cv: { label: View my CV, url: /cv/ }
   secondary: { label: See how I can help, url: "#services" }
 
 # Three highlights on the homepage: the owner's own projects only.
