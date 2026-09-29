@@ -211,6 +211,8 @@ sections:
   work:
     title: What I do, and how I know.
     intro: Grouped by the problem, not by employer. Where the work is public, it is linked.
+  quotes:
+    title: What people I have worked with say.
   tools:
     title: I build the guardrails I teach.
     intro: The tools behind my workshops are ones I build or help build. Most are open source, so you can read how they work before you bring me in.
@@ -220,7 +222,9 @@ sections:
     title: A few things I have built.
     link: { label: All work and side projects, url: /work/ }
   work_page:
-    intro: The problems I am good at, with what I have done about them, and the things I have made myself.
+    intro: >-
+      Ten years of shipping products and leading the teams behind them. These
+      are the problems I am good at, and the work that shows it.
   stack:
     title: What I work with.
     intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
@@ -238,10 +242,13 @@ capabilities:
       Model output is treated as input to be checked, not an answer to be
       trusted: retrieval grounds it, schemas shape it, evals measure it.
     proofs:
-      # evidence: proj-usput-retrieval-grounding
-      - A travel platform whose place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and its own database, not from the model's memory.
+      # evidence: role-teamtailor-ownership, role-teamtailor-screening-triggers, role-teamtailor-request-missing-info, role-teamtailor-smart-move
+      - "AI screening in a hiring product used by 8,500+ companies, owned from pitch to rollout and measurement, and shipped to every customer of its AI add-on: screening at any stage, candidates moved on the outcome, and questionnaires that ask candidates for what their application is missing."
+      # evidence: role-teamtailor-langfuse
+      - Prompts moved into Langfuse, with datasets, LLM judges and live scoring on production traffic, and A/B experiments of prompt and model versions that promoted the winners.
+      # evidence: proj-usput-retrieval-grounding, proj-usput-live
+      - A travel guide with thousands of visits a month, whose place descriptions, audio-tour scripts and itineraries are written from real place data, not from the model's memory.
       # evidence: role-teamtailor-prescreening, role-teamtailor-prescreening-retrieval
-      - "Screening triggers in a hiring product, shipped to every paying customer of its AI add-on: screening criteria as a trigger, candidates moved on the criteria, and requests for missing information."
       - A retrieval-augmented candidate-screening design for a regulated hiring context, with separate parse, extract, embed, retrieve and evaluate stages, embeddings kept apart per customer, and evaluation tooling, designed with the EU AI Act in mind.
       # evidence: proj-usput-ai-layer
       - A production LLM layer with schema-enforced structured output, layered retries, JSON repair and versioned prompts.
@@ -272,9 +279,10 @@ capabilities:
       Most products sit on top of other people's data. The work is making it
       one shape, early, so everything downstream stays simple.
     proofs:
-      # evidence: role-carv-ats-integrations, role-carv-channel-normalisation
-      - Normalised data from 20+ applicant tracking systems into one model, and inbound messages from several channels into one shape for a conversation engine.
+      # evidence: role-carv-integration-lead
       - "Merged two products after an acquisition: one frontend, one database for clients and sessions, and two stacks brought step by step closer."
+      # evidence: role-carv-ats-integrations, role-carv-channel-normalisation
+      - Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and a new integration needed no new code elsewhere.
       - A dynamic plans and permissions system across three apps, replacing hardcoded feature checks so product could run billing experiments without developer time.
       # evidence: role-carv-event-system
       - Part of the team that built an event system on Redis Pub/Sub, with every event defined once and kept normalised across the product.
@@ -288,18 +296,14 @@ capabilities:
       Good teams make their own decisions well. My job is to make the
       decisions visible, the work small, and the blockers short-lived.
     proofs:
-      # evidence: role-carv-team; recommendation zlatko
-      - 'At Recrubo, acquired by Carv: tech lead for a team of 10 engineers, owning delivery with a PM and leading by building. In a teammate''s words: "He wrote the code, showed it working, and then we talked."'
-      # evidence: role-experfy-team, role-experfy-scaleup, role-experfy-direction, role-experfy-product
-      - "At Experfy, an ATS for tech and data-science hiring: set the product and technical direction and led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, through 150 percent growth."
-      # evidence: community-rubyconf-austria, community-euruko-2024
-      - "Founded RubyConf Austria and took full ownership of EuRuKo 2024 in Sarajevo, 700 attendees and 50 speakers, with a small volunteer team."
+      # evidence: role-experfy-team, role-experfy-scaleup, role-experfy-direction
+      - Set the product and technical direction for an ATS and led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, through 150 percent growth without missing a deadline.
+      # evidence: role-carv-team, role-carv-integration-lead; recommendation zlatko
+      - 'Tech lead for a team of 10 at a seed-stage AI startup, through its acquisition and the merger of both products, owning delivery with a PM and leading by building.'
+      # evidence: community-euruko-2024
+      - Ran a 700-attendee European Ruby conference end to end, with 50 speakers and a small volunteer team.
       # evidence: community-bhff, cert-bhff-excellence
-      - Three years as a volunteer mentor and team lead at the Bosnia and Herzegovina Futures Foundation, with two Certificates of Excellence.
-    links:
-      - { label: Carv, url: "https://www.carv.com/" }
-      - { label: Experfy, url: "https://www.experfy.com/" }
-      - { label: RubyConf Austria, url: "https://www.rubyconf.at/" }
+      - Three years as a volunteer mentor and team lead for students, with two Certificates of Excellence.
 
 open_source:
   - name: enola

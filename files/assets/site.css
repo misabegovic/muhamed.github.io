@@ -398,7 +398,9 @@ mark {
 .why { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.5rem clamp(2rem, 1rem + 4vw, 5rem); align-items: start; }
 .why-points { margin-block: 2rem 1.75rem; }
 .why-quote { margin: 0; }
-.work-side { margin-top: var(--section); }
+.work-side,
+.work-quotes { margin-top: var(--section); }
+@media (min-width: 961px) { .capability-head { position: sticky; top: 2rem; align-self: start; } }
 .work-cta { margin-top: calc(var(--section) * 0.75); }
 .cases > li,
 .compact > li { scroll-margin-top: 2rem; }

@@ -115,24 +115,7 @@
       <div class="section-head">
         <h2 id="h-quotes" class="section-title">What people I have worked with say.</h2>
       </div>
-      <ul class="quotes" role="list">
-        {% for t in quotes %}
-        <li class="quote{% if t.placeholder %} placeholder{% endif %}">
-          {% if t.placeholder %}<p class="placeholder-tag">Placeholder</p>{% endif %}
-          <blockquote class="quote-short">{{ t.quote }}</blockquote>
-          {% if t.full %}
-          <details class="quote-more">
-            <summary>Read the full recommendation</summary>
-            <blockquote>{{ t.full }}</blockquote>
-          </details>
-          {% endif %}
-          <div class="quote-by">
-            {% if t.avatar %}<img class="avatar" src="{{ site.baseurl }}{{ t.avatar }}" alt="" width="48" height="48">{% else %}<span class="avatar" aria-hidden="true">{% if t.initials %}{{ t.initials }}{% else %}?{% endif %}</span>{% endif %}
-            <p><strong>{% if t.url %}<a href="{{ t.url }}">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}</strong>{{ t.role }}</p>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
+      {% include quotes.html %}
     </div>
   </section>
   {% endif %}

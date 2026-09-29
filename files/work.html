@@ -10,6 +10,10 @@ description: Selected work by Muhamed Isabegovic, from AI in production and the 
   <header class="page-head">
     <h1 class="page-title">Work</h1>
     <p class="page-intro">{{ sx.work_page.intro }}</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ site.baseurl }}{{ h.hero.primary.url }}">{{ h.hero.primary.label }}{{ arr }}</a>
+      <a class="text-link" href="{{ site.baseurl }}{{ h.hero.cv.url }}" download>{{ h.hero.cv.label }} <span class="file-note">(PDF)</span></a>
+    </div>
   </header>
 
   <section aria-labelledby="h-work">
@@ -34,6 +38,16 @@ description: Selected work by Muhamed Isabegovic, from AI in production and the 
       {% endfor %}
     </div>
   </section>
+
+  {% assign quotes = h.testimonials | where_exp: "t", "t.placeholder != true" %}
+  {% if quotes.size > 0 %}
+  <section class="work-quotes" aria-labelledby="h-quotes">
+    <div class="section-head">
+      <h2 id="h-quotes" class="section-title">{{ sx.quotes.title }}</h2>
+    </div>
+    {% include quotes.html %}
+  </section>
+  {% endif %}
 
   {% if h.side_projects.size > 0 %}
   <section class="work-side" aria-labelledby="h-side">
