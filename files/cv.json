@@ -1,0 +1,285 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Muhamed Isabegovic",
+    "label": "Senior Product Engineer and Technical Lead, AI-native | AI Engineer",
+    "image": "https://muhamed.at/images/profile.jpg",
+    "email": "info@muhamed.at",
+    "url": "https://muhamed.at",
+    "summary": "I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack: trading systems in C++, SaaS products in Rails, AI features in hiring software. Lately I work one layer up, with agents writing the code, and I build open-source tools that keep that reliable: specs and decisions the code is regenerated from, and architecture rules it is checked against.",
+    "location": {
+      "city": "Vienna",
+      "countryCode": "AT"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "muhamed-isabegovic",
+        "url": "https://linkedin.com/in/muhamed-isabegovic"
+      },
+      {
+        "network": "X",
+        "username": "m_isabegovic",
+        "url": "https://x.com/m_isabegovic"
+      },
+      {
+        "network": "GitHub",
+        "username": "misabegovic",
+        "url": "https://github.com/misabegovic"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Isabegovic Muhamed",
+      "position": "Founder",
+      "location": "Vienna, Austria",
+      "startDate": "2024-01",
+      "summary": "My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles inside startups, RubyConf Austria, and Usput.ba, my own product.",
+      "highlights": []
+    },
+    {
+      "name": "Teamtailor, Co-pilot team",
+      "position": "AI Product Developer",
+      "location": null,
+      "startDate": "2026-05",
+      "endDate": "2026-10",
+      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
+      "highlights": [
+        "Shipped Request Missing Information to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
+        "Rebuilt AI screening on the trigger system, across seven merged pull requests, so recruiters can screen at any stage and save criteria on job templates; backfilled every company and rolled it out to all customers.",
+        "Shipped automatic candidate moves on the screening outcome, a customer request: per-criterion met, unmet or unknown, combined with All or Any.",
+        "Made screening wait until the CV is parsed and re-run when it arrives, so no candidate is screened before their CV is read.",
+        "Moved AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic, and ran A/B experiments of prompt and model versions there, promoting the winners."
+      ]
+    },
+    {
+      "name": "Recrubo, acquired by Carv",
+      "position": "Technical Lead",
+      "location": null,
+      "startDate": "2025-01",
+      "endDate": "2026-04",
+      "summary": "Seed-stage AI platform for recruiters, around 10 people when I joined; Carv acquired it two months later.",
+      "highlights": [
+        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Rails and Node/TypeScript stacks on Google Cloud step by step closer.",
+        "Co-built the event system on Redis Pub/Sub that became the integration layer between the two stacks and the base for new functionality, with Google Cloud Tasks as a fallback and for workload management.",
+        "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.",
+        "Tech lead for a team of 10 engineers, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD."
+      ]
+    },
+    {
+      "name": "EuRuKo 2024 and RubyConf Austria 2026",
+      "position": "Founder and organiser",
+      "location": null,
+      "startDate": "2023-09",
+      "highlights": [
+        "EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.",
+        "RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers including Dave Thomas, Chad Fowler, Jose Valim and Armin Ronacher, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).",
+        "Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver."
+      ]
+    },
+    {
+      "name": "Usput.ba, my own product",
+      "position": "AI Engineer",
+      "location": null,
+      "startDate": "2026-01",
+      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.",
+      "highlights": [
+        "Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
+        "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
+        "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
+      ]
+    },
+    {
+      "name": "Meisterlabs",
+      "position": "Senior Software Engineer",
+      "location": "Vienna, Austria",
+      "startDate": "2021-11",
+      "endDate": "2024-12",
+      "summary": "Maker of MindMeister and MeisterTask",
+      "highlights": [
+        "Proposed, designed and built a dynamic plans and permissions system across Accounts, MindMeister and MeisterTask. It replaced hardcoded feature checks scattered across the apps, so product could set up plans and run billing experiments without developer time.",
+        "Built MindMeister product features and ran A/B experiments across markets for three years.",
+        "Split backend and frontend deployments into separate pipelines on Kubernetes, so the frontend team shipped daily, independent of backend releases; maintained and upgraded the cluster setup."
+      ]
+    },
+    {
+      "name": "Experfy",
+      "position": "Lead Software Engineer",
+      "location": "Remote",
+      "startDate": "2019-10",
+      "endDate": "2021-07",
+      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes. First joined as a junior engineer, 2016 - 2017.",
+      "highlights": [
+        "Set the product and technical direction with product and business leads, and made sure the team delivered it.",
+        "Led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, as architect, team lead and hands-on engineer.",
+        "Built recruiter and candidate dashboards across the three apps and the Rails backend.",
+        "Took the team through a 150 percent scale-up, putting in the planning and delivery processes that kept every deadline."
+      ]
+    },
+    {
+      "name": "Marvelsoft",
+      "position": "C++ Software Engineer",
+      "location": "Tuzla, Bosnia and Herzegovina",
+      "startDate": "2018-01",
+      "endDate": "2019-09",
+      "summary": "Fintech building real-time trading software",
+      "highlights": [
+        "Built trading algorithms and worked on the analytics platform traders used, in C++ on a real-time system built on the actor model (C++ Actor Framework).",
+        "Built a Python test environment that emulated markets and simulated trading systems, so algorithms could be tested without live markets."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "BH Futures Foundation",
+      "position": "Mentor and team lead",
+      "startDate": "2018-05",
+      "endDate": "2021-09",
+      "summary": "Volunteer; Certificates of Excellence 2019, 2021"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University Vienna",
+      "studyType": "Master's (part-time, alongside work)",
+      "area": "Software Engineering & Internet Computing, Business Informatics",
+      "startDate": "2022-01"
+    },
+    {
+      "institution": "IPI Akademija Tuzla",
+      "studyType": "BSc",
+      "area": "Information Technology",
+      "startDate": "2016",
+      "endDate": "2019"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Product and AI",
+      "keywords": [
+        "LLM features",
+        "AI agents",
+        "RAG",
+        "LLM evaluation",
+        "Structured outputs",
+        "Prompt management",
+        "Langfuse",
+        "MCP",
+        "RubyLLM",
+        "pgvector"
+      ]
+    },
+    {
+      "name": "Architecture and leadership",
+      "keywords": [
+        "Software architecture",
+        "Technical leadership",
+        "Spec-driven development",
+        "Event-driven architecture",
+        "Data modeling",
+        "Research and development"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "Ruby on Rails",
+        "Ruby",
+        "Node.js",
+        "TypeScript",
+        "Go",
+        "Python",
+        "C++",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Sidekiq",
+        "Actor model"
+      ]
+    },
+    {
+      "name": "Frontend and mobile",
+      "keywords": [
+        "Hotwire",
+        "JavaScript",
+        "Vue.js",
+        "Ember.js",
+        "React"
+      ]
+    },
+    {
+      "name": "Infrastructure and DevEx",
+      "keywords": [
+        "Google Cloud",
+        "Kubernetes",
+        "CI/CD",
+        "Kamal",
+        "Docker",
+        "Helm"
+      ]
+    },
+    {
+      "name": "Ways of working",
+      "keywords": [
+        "Product specs",
+        "A/B experiments",
+        "Shape Up"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Bosnian",
+      "fluency": "native"
+    },
+    {
+      "language": "English",
+      "fluency": "full professional"
+    },
+    {
+      "language": "German",
+      "fluency": "limited working"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "elementary"
+    }
+  ],
+  "projects": [
+    {
+      "name": "enola",
+      "roles": [
+        "core contributor"
+      ],
+      "description": "Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including enola-guides."
+    },
+    {
+      "name": "pi-brain",
+      "roles": [
+        "author and maintainer"
+      ],
+      "description": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases."
+    },
+    {
+      "name": "brain and tabula",
+      "roles": [
+        "author"
+      ],
+      "description": "Knowledge bases people and agents work from: brain on GitHub, and tabula, in Rust, in private development."
+    }
+  ],
+  "references": [
+    {
+      "name": "Zlatko Alomerovic, worked with me at Recrubo/Carv",
+      "reference": "I worked with Muhamed on the same team for a year, and he quickly became one of the people I relied on most. Muhamed leads by doing. When we hit a hard problem, he didn't start with a long discussion. He wrote the code, showed it working, and then we talked. That habit moved the team forward more than once. He is a strong Ruby on Rails engineer and a natural architect. He took on leading the technical direction and shaping the code, and his decisions held up as the project grew. No challenge was too big or too unfamiliar for him. He is resourceful and knowledgeable, and when the answer wasn't obvious, he knew where to look. He is precise and professional, and he holds a high bar. He is also direct. When something wasn't good enough, he said so plainly, even when that was hard to hear. It was always about the work and never about the person, and it made both our code and our team better. I would gladly work with Muhamed again, and I recommend him to any team that needs a Rails engineer who can lead."
+    },
+    {
+      "name": "Hassan Akbar, worked with me at Experfy, 2021",
+      "reference": "Muhamed is one of the most amazing professionals I have ever worked with. He is extremely talented, dependable, and disciplined. Moreover, he is always willing to push himself beyond limits to make a product successful. With Muhamed's excellent communication and engineering management skills everything is possible. At Experfy, Muhamed single-handedly managed the team collaboration consisting of 7+ timezones. He has a vast reservoir of talent - enabling him to lead Backend, Frontend, and DevOps teams with flying colors. In design thinking sessions, Muhamed played a vital role with his powerful insight about the product roadmap and technical knowledge. As an engineering manager, he always backed his team with full support. In addition to these Muhamed conducted extremely high-yielding Sprint retrospectives. He was always willing to go the extra mile to increase productivity and eliminate blockers. I would strongly recommend Muhamed and would love to work with him again."
+    }
+  ],
+  "meta": {
+    "canonical": "https://muhamed.at/cv.json"
+  }
+}

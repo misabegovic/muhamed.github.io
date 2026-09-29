@@ -575,6 +575,24 @@ mark {
 
 .prose { max-width: 42rem; }
 
+/* CV: the PDF's content in one column, for people and parsers alike. */
+.cv-page > * { max-width: 52rem; }
+.cv-title { margin-top: 0.75rem; font-size: var(--t-h3); font-weight: 750; letter-spacing: -0.02em; }
+.cv-contact, .cv-formats { margin-top: 1rem; font-size: var(--t-small); color: var(--ink-3); }
+.cv-formats { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+.cv-section { margin-top: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
+.cv-heading { padding-bottom: 0.75rem; margin-bottom: 0.5rem; border-bottom: 3px solid var(--ink); font-size: var(--t-h3); font-weight: 800; letter-spacing: -0.02em; }
+.cv-role { display: grid; gap: 0.5rem; padding-block: 1.25rem; border-bottom: 1px solid var(--line); }
+.cv-role h3 { font-size: 1.125rem; font-weight: 750; }
+.cv-role h3 span { font-weight: 500; color: var(--ink-2); }
+.cv-nested { margin-left: clamp(1rem, 3vw, 2rem); padding-left: clamp(1rem, 2vw, 1.5rem); border-left: 3px solid var(--line); }
+.cv-meta { font-size: var(--t-small); color: var(--ink-3); }
+.cv-meta:empty { display: none; }
+.cv-summary { color: var(--ink-2); }
+.cv-role .proofs { gap: 0.6rem; margin-top: 0.25rem; }
+.cv-quote { margin: 1.25rem 0 0; padding: 1.25rem 1.5rem; background: var(--tint, #f3f3f1); border-radius: var(--radius); }
+.cv-quote footer { margin-top: 0.75rem; font-size: var(--t-small); color: var(--ink-3); }
+
 /* About: the text beside a card with the photo, availability and the ways to reach out. */
 .about-grid { display: grid; grid-template-columns: minmax(0, 42rem) minmax(16rem, 22rem); justify-content: space-between; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
 .about-card { position: sticky; top: 2rem; display: grid; gap: 0.9rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
