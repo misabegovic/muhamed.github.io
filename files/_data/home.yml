@@ -238,7 +238,8 @@ capabilities:
       # evidence: proj-usput-retrieval-grounding
       - A travel platform whose place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and its own database, not from the model's memory.
       # evidence: role-teamtailor-prescreening, role-teamtailor-prescreening-retrieval
-      - A retrieval-augmented candidate-screening pipeline for a regulated hiring context, with separate parse, extract, embed, retrieve and evaluate stages, embeddings kept apart per customer, and evaluation tooling, designed with the EU AI Act in mind.
+      - Screening triggers in a hiring product, shipped to every paying customer of its AI add-on: screening criteria as a trigger, candidates moved on the criteria, and requests for missing information.
+      - A retrieval-augmented candidate-screening design for a regulated hiring context, with separate parse, extract, embed, retrieve and evaluate stages, embeddings kept apart per customer, and evaluation tooling, designed with the EU AI Act in mind.
       # evidence: proj-usput-ai-layer
       - A production LLM layer with schema-enforced structured output, layered retries, JSON repair and versioned prompts.
       # evidence: skill-ai-llm-engineering
@@ -269,13 +270,15 @@ capabilities:
       one shape, early, so everything downstream stays simple.
     proofs:
       # evidence: role-carv-ats-integrations, role-carv-channel-normalisation
-      - Normalised data from many third-party systems into one model, and inbound messages from several channels into one shape for a conversation engine.
+      - Normalised data from 20+ applicant tracking systems into one model, and inbound messages from several channels into one shape for a conversation engine.
+      - Merged two products after an acquisition: one frontend, one database for clients and sessions, and two stacks brought step by step closer.
+      - A dynamic plans and permissions system across three apps, replacing hardcoded feature checks so product could run billing experiments without developer time.
       # evidence: role-carv-event-system
-      - An event system on a single pub/sub, with every event defined once and kept normalised across the product.
+      - Part of the team that built an event system on Redis Pub/Sub, with every event defined once and kept normalised across the product.
       # evidence: proj-market-analysis, proj-market-analysis-scale
       - A daily job-market pipeline over 4.76 million postings, reading only the columns it needs with DuckDB.
       # evidence: role-carv-devops, skill-kubernetes
-      - DevOps and CI/CD on Google Cloud and Kubernetes.
+      - DevOps and CI/CD on Google Cloud, and separate frontend and backend deploy pipelines on Kubernetes so a frontend team shipped daily on its own.
   - id: teams
     title: Leading teams.
     text: >-
