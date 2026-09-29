@@ -93,3 +93,7 @@
    diff: 10 files, +19/-18
    restricted-paths: true
    by: agent
+2026-09-29 commit — 416eeeb: work: sell the work without naming employers, and show the recommendations
+   diff: 5 files, +58/-36
+   restricted-paths: false
+   by: agent
