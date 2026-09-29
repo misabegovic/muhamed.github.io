@@ -14,7 +14,7 @@ description: Muhamed Isabegovic is a product engineer and tech lead in AI, based
   "url": "https://muhamed.at/",
   "image": "https://muhamed.at/images/profile.jpg",
   "email": "mailto:info@muhamed.at",
-  "jobTitle": "Product Engineer and Tech Lead, AI",
+  "jobTitle": "Product Engineer and Tech Lead, AI-native",
   "homeLocation": { "@type": "Place", "name": "Austria" },
   "knowsAbout": [
     "Ruby",

@@ -34,10 +34,10 @@ h1, h2 { font-weight: 800; letter-spacing: -.035em; line-height: .98; text-wrap:
 `;
 
 const services = [
-  { slug: 'assess', name: 'Assess', title: 'How your team uses AI today', text: 'A short, concrete review of how your engineers work with coding agents: where it helps, where it quietly erodes quality, and a prioritised plan for what to change first.', format: 'A short, fixed-scope review' },
-  { slug: 'enable', name: 'Enable', title: 'Workshop and setup, in your repository', text: 'One or two days with your team on your own codebase: specs and decision records as the contract with agents, guardrails they cannot bypass, and evals for the AI features you ship.', format: 'One or two days, on your codebase' },
-  { slug: 'build', name: 'Build', title: 'Fractional AI product engineering', text: 'Hands-on design and delivery of AI features in your product: LLM pipelines with structured outputs, evaluation and observability, built with EU AI regulation in mind.', format: 'One to two days a week, embedded' },
-  { slug: 'talks', name: 'Talks', title: 'At your conference or meetup', text: 'On AI-native engineering, guardrails for coding agents, or Ruby. I founded RubyConf Austria and took full ownership of EuRuKo 2024, so I know what a programme needs.', format: 'Conferences and meetups' },
+  { slug: 'build', name: 'Build', title: 'Hands-on product engineering', text: 'I join your team as a senior engineer and build the product or feature end to end, from spec to production.', format: 'Embedded, part-time or full-time' },
+  { slug: 'lead', name: 'Lead', title: 'Fractional tech lead', text: 'I lead your engineering team part-time: technical direction, architecture, delivery, and the people.', format: 'One to two days a week' },
+  { slug: 'review', name: 'Review', title: 'Architecture review', text: 'A short, fixed-scope look at your codebase and system: what holds, what will break, and what to fix first.', format: 'Fixed scope, one to two weeks' },
+  { slug: 'ai-native', name: 'AI-native', title: 'Make your company AI-native', text: 'How you build and what you build: a knowledge base your people and agents work from, and AI features that hold up in production, with open-source tools I build and teach.', format: 'A workshop and setup, then follow-up' },
 ];
 
 function servicePost(s, w, h) {
@@ -45,7 +45,7 @@ function servicePost(s, w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;padding:${64 * u}px ${72 * u}px;display:grid;grid-template-rows:auto 1fr auto;font-size:${22 * u}px">
     <div class="rule" style="padding-top:${18 * u}px;display:flex;justify-content:space-between;align-items:baseline">
       <span class="wordmark" style="font-size:${26 * u}px">Muhamed Isabegovic</span>
-      <span class="muted" style="font-weight:500">AI engineering for product teams</span>
+      <span class="muted" style="font-weight:500">Product Engineer and Tech Lead, AI-native</span>
     </div>
     <div style="align-self:center">
       <h1 style="font-size:${128 * u}px"><mark>${s.name}</mark></h1>
@@ -63,8 +63,8 @@ function share(w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
     <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
-      <h1 style="font-size:66px;align-self:center">I help engineering teams ship with AI agents, <mark>without losing control</mark> of their code.</h1>
-      <div class="muted" style="font-size:22px;font-weight:500">Product Engineer and Tech Lead, AI · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
+      <h1 style="font-size:72px;align-self:center">I build products and lead the teams that <mark>ship them</mark>.</h1>
+      <div class="muted" style="font-size:22px;font-weight:500">Product Engineer and Tech Lead, AI-native · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
     </div>
     <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
   </div>`;

@@ -2,38 +2,32 @@
 # home.yml (services:), so the homepage and this page cannot drift. This file
 # holds only the longer detail, keyed by service name.
 intro: >-
-  Three ways to work together, and talks at your event. Each starts from your
-  code and how your team actually works, not from a slide deck.
+  Four ways to work together. Each starts from your code and how your team
+  actually works, not from a slide deck.
 
 details:
-  Assess:
-    get:
-      - A look at how your engineers work with coding agents today, in your repository and in their daily work.
-      - Where agents help, and where they quietly erode quality, architecture or the team's understanding of its own system.
-      - "Architecture reviews for AI-heavy features: agent orchestration, LLM pipelines, retrieval, evaluation and observability."
-      - A prioritised plan for what to change first.
-  Enable:
-    get:
-      - A working loop from intent to shipped code, with specs and decision records as the contract between people and agents.
-      - Coding agents set up for your codebase, with the context, skills, guardrails and conventions that make them productive instead of chaotic.
-      - Architectural laws declared and checked in CI, so agent-written code cannot quietly erode the architecture.
-      - Evaluation for the AI features you ship, from datasets and scoring to prompt management and observability.
-      - A clear line between what to automate, what to keep human, and how to review agent output without rubber-stamping it.
-    outcome: You leave with a working setup in your own repository that your team keeps running, not slideware.
   Build:
     get:
-      - Senior ownership of your AI features without a full-time hire.
-      - Feature architecture end to end, from retrieval and structured outputs to evaluation and observability.
-      - How the team works with agents day to day, built into the way features ship.
-
-talks:
-  title: Talks and workshops at your event.
-  text: >-
-    I founded RubyConf Austria and took full ownership of EuRuKo 2024, so I
-    know what a programme needs. If you are running a conference or meetup and
-    want a talk or a workshop on AI-native engineering, guardrails for coding
-    agents, or Ruby, tell me about your event.
-  link: { label: Tell me about your event, url: /contact/#speaking }
+      - A senior engineer who owns the work from spec to production, without a full-time hire.
+      - Features built the way your codebase already works, with tests and a clean hand-over.
+      - "AI features where they help your product: grounded in your data, with structured outputs and evals."
+  Lead:
+    get:
+      - Technical direction and architecture decisions, written down so the team can follow them.
+      - "Delivery that holds: planning, priorities and unblocking, together with product."
+      - Support for your engineers, and help hiring the people you need next.
+  Review:
+    get:
+      - A read of your codebase, your architecture and how your team works with it.
+      - What holds, what will break as you grow, and where the risk sits.
+      - A prioritised plan for what to fix first, which your team can act on.
+  AI-native:
+    get:
+      - "A knowledge base your people and agents both work from: specs, decisions and architecture rules, across your whole development lifecycle."
+      - Coding agents set up for your codebase, with guardrails they cannot bypass and architecture rules checked in CI.
+      - "AI features in your product that hold up in production: grounded in your data, with structured outputs, evals and observability."
+      - "Set up with open-source tools I build (brain, pi-brain, enola and its gems, and tabula, in private development) and taught to your team, with enola-guides as the reference."
+    outcome: You leave with a working setup in your own repository that your team keeps running, not slideware.
 
 steps:
   title: How it works.
@@ -47,12 +41,12 @@ steps:
 why:
   title: Why me.
   points:
-    # evidence: oss-enola-constraints, oss-pi-brain
-    - I build the tools I teach with. I contributed the constraints program to enola and wrote pi-brain, so the guardrails in your repository are ones I have built and run.
+    # evidence: role-carv-team, role-experfy-team, role-teamtailor-copilot
+    - I build and I lead. I have shipped products hands-on, and led teams from 10 engineers to around 30 across 7 time zones.
+    # evidence: oss-enola-constraints, oss-pi-brain, oss-brain, oss-enola-gems
+    - I build the tools I teach with. I wrote brain and pi-brain, contributed the constraints program to enola and maintain four gems around it, so the setup in your repository is one I have built and run.
     # evidence: skill-rag, role-teamtailor-prescreening, proj-usput-ai-layer
     - I ship AI features, not only advice about them. Retrieval, structured outputs and evaluation are things I have built, in production and for a regulated hiring context.
-    # evidence: role-experfy-team, role-carv-team
-    - I have led engineering teams, from 10 engineers to around 30 across 7 time zones, so the plan fits how teams actually work.
     # evidence: community-rubyconf-austria
     - I founded RubyConf Austria, and I spend a lot of time with the people thinking hardest about what software development looks like when agents write most of the code.
   quote: zlatko
