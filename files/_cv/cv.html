@@ -7,33 +7,37 @@
 @font-face { font-family: "Schibsted Grotesk"; src: url("../assets/fonts/schibsted-grotesk-latin.woff2") format("woff2"); font-weight: 400 900; }
 @font-face { font-family: "Schibsted Grotesk"; src: url("../assets/fonts/schibsted-grotesk-latin-ext.woff2") format("woff2"); font-weight: 400 900; unicode-range: U+0100-024F; }
 @page { size: A4; margin: 0; }
-:root { --ink: #111; --muted: #555; --rule: #111; --signal: #ffe14d; --chip: #f1f1ef; }
+/* Tokens from files/assets/site.css, the site's one design system. */
+:root { --paper: #ffffff; --tint: #f3f3f1; --ink: #141414; --ink-2: #474747; --ink-3: #666666; --line: #e2e2de; --yellow: #ffd21f; --radius: 6px; }
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { font-family: "Schibsted Grotesk", system-ui, sans-serif; color: var(--ink); font-size: 7.9pt; line-height: 1.3; }
-.page { width: 210mm; height: 297mm; padding: 8mm 10mm 6mm; overflow: hidden; }
-header { display: grid; grid-template-columns: 1.3fr 24mm 1fr; gap: 6mm; align-items: start; padding-bottom: 3.5mm; border-bottom: 2px solid var(--rule); }
-h1 { font-size: 21pt; line-height: .98; margin: 0 0 2mm; font-weight: 800; letter-spacing: -.01em; }
-.title { font-size: 10.5pt; font-weight: 600; margin: 0; display: inline; background: linear-gradient(transparent 58%, var(--signal) 58%); }
-.lead { margin: 1.5mm 0 0; font-size: 8.1pt; }
-.photo { width: 24mm; height: 28mm; object-fit: cover; border-radius: 2mm; }
-.contact { text-align: right; line-height: 1.6; font-size: 8.4pt; }
-main { display: grid; grid-template-columns: 1.62fr 1fr; gap: 6mm; margin-top: 3.5mm; }
-h2 { font-size: 10.5pt; margin: 0 0 1.6mm; padding-top: 1.2mm; border-top: 2px solid var(--rule); }
-section + section { margin-top: 2.4mm; }
-.role { margin-bottom: 1.8mm; }
-.role h3 { font-size: 9.2pt; margin: 0; font-weight: 700; }
-.role h3 .at { font-weight: 400; color: var(--muted); }
-.meta { color: var(--muted); font-size: 7.9pt; margin: .3mm 0 .6mm; }
-.umbrella { border-left: 2px solid var(--signal); padding-left: 3mm; margin: 1.5mm 0 2.5mm; }
-.umbrella .role { margin-bottom: 1.8mm; }
-ul { margin: .4mm 0 0; padding-left: 3.6mm; }
+html, body { margin: 0; padding: 0; background: var(--paper); }
+body { font-family: "Schibsted Grotesk", system-ui, sans-serif; color: var(--ink); font-size: 7.9pt; line-height: 1.32; }
+.page { width: 210mm; height: 297mm; padding: 9mm 10mm 7mm; overflow: hidden; }
+header { display: grid; grid-template-columns: 1.3fr 24mm 1fr; gap: 6mm; align-items: start; padding-bottom: 4mm; }
+h1 { font-size: 22pt; line-height: .95; margin: 0 0 2.2mm; font-weight: 800; letter-spacing: -.03em; }
+.title { font-size: 10pt; font-weight: 650; margin: 0; display: inline; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: .28em; text-decoration-skip-ink: none; }
+.lead { margin: 2.2mm 0 0; font-size: 8.2pt; color: var(--ink-2); }
+.photo { width: 24mm; height: 30mm; object-fit: cover; border-radius: var(--radius); }
+.contact { text-align: right; line-height: 1.6; font-size: 8.2pt; color: var(--ink-2); }
+.contact b { color: var(--ink); font-weight: 650; }
+main { display: grid; grid-template-columns: 1.62fr 1fr; gap: 7mm; }
+h2 { font-size: 10.5pt; font-weight: 800; letter-spacing: -.02em; margin: 0 0 1.8mm; padding-top: 1.6mm; border-top: 3px solid var(--ink); }
+section + section { margin-top: 3.4mm; }
+.role { margin-bottom: 2mm; }
+.role h3 { font-size: 9pt; margin: 0; font-weight: 750; letter-spacing: -.01em; }
+.role h3 .at { font-weight: 400; color: var(--ink-2); }
+.meta { color: var(--ink-3); font-size: 7.7pt; margin: .3mm 0 .6mm; }
+.nested { margin: 1.4mm 0 2.6mm 3.2mm; }
+.nested .role { padding-top: 1.4mm; border-top: 1px solid var(--line); margin-bottom: 1.4mm; }
+ul { margin: .4mm 0 0; padding-left: 3.4mm; }
 li { margin: 0 0 .3mm; }
-li::marker { color: #c9a800; }
+li::marker { color: var(--ink-3); }
 .chips { display: flex; flex-wrap: wrap; gap: 1mm; }
-.chips span { background: var(--chip); border-radius: 3mm; padding: .5mm 2mm; font-size: 7.7pt; }
-.hat { font-weight: 700; font-size: 7.9pt; margin: 1.3mm 0 .6mm; }
-.plain p { margin: 0 0 1.4mm; }
+.chips span { border: 1px solid var(--line); border-radius: 999px; padding: .35mm 1.9mm; font-size: 7.5pt; }
+.chips.first span { border-color: var(--yellow); background: rgb(255 210 31 / .18); }
+.hat { font-weight: 750; font-size: 7.8pt; margin: 1.6mm 0 .7mm; }
+.hat:first-of-type { margin-top: 0; }
+.plain p { margin: 0; }
 a { color: inherit; text-decoration: none; }
 </style>
 </head>
@@ -47,7 +51,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <img class="photo" src="../images/profile.jpg" alt="">
   <div class="contact">
-    info@muhamed.at<br>Vienna, Austria<br>muhamed.at<br>linkedin.com/in/muhamed-isabegovic<br>x.com/m_isabegovic<br>github.com/misabegovic
+    <b>info@muhamed.at</b><br>Vienna, Austria<br>muhamed.at<br>linkedin.com/in/muhamed-isabegovic<br>x.com/m_isabegovic<br>github.com/misabegovic
   </div>
 </header>
 <main>
@@ -59,7 +63,7 @@ a { color: inherit; text-decoration: none; }
       <div class="meta">01/2024 - Present · Vienna, Austria</div>
       <div class="meta">My own company: engineering roles inside startups, two Ruby conferences, and a product of my own.</div>
     </div>
-    <div class="umbrella">
+    <div class="nested">
       <div class="role">
         <h3>Technical Lead <span class="at">· Recrubo, acquired by Carv</span></h3>
         <div class="meta">Seed-stage AI platform for recruiters, around 10 people when I joined.</div>
@@ -116,7 +120,7 @@ a { color: inherit; text-decoration: none; }
   <section>
     <h2>Skills</h2>
     <div class="hat">Product and AI</div>
-    <div class="chips"><span>LLM pipelines</span><span>RAG</span><span>LLM evaluation</span><span>Structured outputs</span><span>Agent guardrails</span><span>MCP</span><span>A/B experiments</span></div>
+    <div class="chips first"><span>LLM pipelines</span><span>RAG</span><span>LLM evaluation</span><span>Structured outputs</span><span>Agent guardrails</span><span>MCP</span><span>A/B experiments</span></div>
     <div class="hat">Backend</div>
     <div class="chips"><span>Ruby on Rails</span><span>Ruby</span><span>Node.js</span><span>TypeScript</span><span>Go</span><span>Python</span><span>PostgreSQL</span><span>Redis</span><span>Event-driven systems</span></div>
     <div class="hat">Frontend and mobile</div>
