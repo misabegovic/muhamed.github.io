@@ -78,13 +78,8 @@ I founded RubyConf Austria and organised EuRuKo 2024. I also work with teams dir
 
 ## Tech stack
 
-- Ruby, C++, Python
-- Ruby on Rails, C++ Actor Framework
-- Ember.js, React
-- PostgreSQL, MySQL
-- Kubernetes, Google Cloud, Azure, AWS
-- LLMs & AI agents (Claude, Kimi K3, Pi.dev)
-- pi-brain
+{% for group in site.data.home.stack %}- **{{ group.group }}:** {{ group.items | map: "name" | join: ", " }}
+{% endfor %}
 
 ## Socials
 

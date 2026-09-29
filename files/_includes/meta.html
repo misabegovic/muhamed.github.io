@@ -5,13 +5,11 @@
 {% comment %}
   Titles, descriptions, canonical URLs, Open Graph, Twitter cards, and
   JSON-LD are emitted by jekyll-seo-tag (see {% raw %}{% seo %}{% endraw %} in the layouts).
-  Only the image fallback lives here, since seo-tag skips og:image when a
-  page has no image of its own.
+  Pages default to images/social/share.png (defaults: in _config.yml); only
+  its size and alt text are added here, when a page keeps that default.
 {% endcomment %}
-{% unless page.image %}
-<meta property="og:image" content="{{ site.url }}/images/social/share.png"/>
+{% if page.image == "/images/social/share.png" %}
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:alt" content="Muhamed Isabegovic: I help engineering teams ship with AI agents, without losing control of their code."/>
-<meta name="twitter:image" content="{{ site.url }}/images/social/share.png"/>
-{% endunless %}
+{% endif %}

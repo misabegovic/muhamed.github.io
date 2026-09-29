@@ -116,3 +116,10 @@ exclude:
   - CNAME
   - vendor
 
+
+# Every page previews with the share image unless it sets its own image:, so
+# jekyll-seo-tag emits og:image and the large Twitter card itself.
+defaults:
+  - scope: { path: "" }
+    values:
+      image: /images/social/share.png
