@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-description: Muhamed Isabegovic is a product engineer and tech lead in AI, based in Vienna. AI engineer on Usput.ba, core contributor to enola, author of pi-brain, and founder of RubyConf Austria.
+description: Muhamed Isabegovic is a product engineer and tech lead, AI-native, based in Vienna. He builds products, leads the teams that ship them, and helps companies become AI-native. Author of pi-brain and core contributor to enola.
 ---
 
 <script type="application/ld+json">
@@ -31,7 +31,7 @@ description: Muhamed Isabegovic is a product engineer and tech lead in AI, based
     "https://www.linkedin.com/in/muhamed-isabegovic/",
     "https://twitter.com/m_isabegovic"
   ],
-  "description": "A product engineer and tech lead in AI, based in Vienna. AI engineer on Usput.ba, core contributor to enola, author of pi-brain, and founder of RubyConf Austria."
+  "description": "A product engineer and tech lead, AI-native, based in Vienna. He builds products, leads the teams that ship them, and helps companies become AI-native. Author of pi-brain and core contributor to enola."
 }
 </script>
 
@@ -43,7 +43,7 @@ On [Usput.ba](https://usput.ba), my own travel guide to Bosnia and Herzegovina, 
 
 Lately I also work one layer up, with agents writing the code. I build open-source tools that keep that reliable. [pi-brain](https://github.com/misabegovic/pi-brain) holds the specs and decisions the code is regenerated from, and runs this site. [enola](https://github.com/enola-labs/enola) checks code against architecture rules; I am a core contributor and maintain four gems that bring it to Ruby and Rails teams.
 
-I founded RubyConf Austria and organised EuRuKo 2024. I also work with teams directly on AI-augmented development; see [Services](/services/).
+I also help companies become AI-native, in how they build and in what they build; see [Services](/services/).
 
 ## Career Overview
 

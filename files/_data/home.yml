@@ -7,8 +7,6 @@
 # The caption beside the portrait in the first screen.
 person:
   role: Product engineer and tech lead, AI-native
-  # evidence: community-rubyconf-austria
-  credit: Founder of RubyConf Austria
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints

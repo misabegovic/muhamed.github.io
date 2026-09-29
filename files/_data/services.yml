@@ -47,8 +47,6 @@ why:
     - I build the tools I teach with. I wrote brain and pi-brain, contributed the constraints program to enola and maintain four gems around it, so the setup in your repository is one I have built and run.
     # evidence: skill-rag, role-teamtailor-prescreening, proj-usput-ai-layer
     - I ship AI features, not only advice about them. Retrieval, structured outputs and evaluation are things I have built, in production and for a regulated hiring context.
-    # evidence: community-rubyconf-austria
-    - I founded RubyConf Austria, and I spend a lot of time with the people thinking hardest about what software development looks like when agents write most of the code.
   quote: zlatko
   link: { label: See the work behind this, url: /work/ }
 
