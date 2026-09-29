@@ -20,6 +20,7 @@ I also help companies become AI-native, in how they build and in what they build
 - (2024 - present) Founder, own company (Isabegovic Muhamed), Vienna: alongside Meisterlabs in 2024, my main work since 2025
   - Technical Lead @ [Recrubo](https://recrubo.ai), acquired by [Carv](https://www.carv.com/)
   - AI Product Developer @ [Teamtailor](https://www.teamtailor.com/), Co-pilot team
+  - Consultant @ [Doctaphone](https://doctaphone.com/en), a speech-to-text app for doctors
   - Founder and organiser @ [EuRuKo 2024](https://2024.euruko.org) and [RubyConf Austria](https://www.rubyconf.at/)
   - AI Engineer @ [Usput.ba](https://usput.ba), my own product
 - (2021 - 2024) Senior Software Engineer @ [Meisterlabs](https://www.meisterlabs.com/)
