@@ -398,7 +398,10 @@ mark {
 .why { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.5rem clamp(2rem, 1rem + 4vw, 5rem); align-items: start; }
 .why-points { margin-block: 2rem 1.75rem; }
 .why-quote { margin: 0; }
-.work-side { margin-top: var(--section); }
+.work-side,
+.work-quotes { margin-top: var(--section); }
+@media (min-width: 961px) { .capability-head { position: sticky; top: 2rem; align-self: start; } }
+.capability .proofs { align-self: start; align-content: start; }
 .work-cta { margin-top: calc(var(--section) * 0.75); }
 .cases > li,
 .compact > li { scroll-margin-top: 2rem; }
@@ -411,6 +414,13 @@ mark {
 .compact h3 a { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.18em; }
 .compact h3 span { font-size: var(--t-small); font-weight: 500; letter-spacing: 0; color: var(--ink-3); }
 .compact p { max-width: 60ch; color: var(--ink-2); }
+
+/* Side projects on the work page: a grid of cards, not a long list. */
+.work-side .compact { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: clamp(1.25rem, 3vw, 2.25rem); border-top: 3px solid var(--ink); padding-top: 1.75rem; }
+.work-side .compact li,
+.work-side .compact li:first-child { display: flex; flex-direction: column; gap: 0.35rem; padding: 0; border-bottom: 0; }
+.work-side .compact h3 { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+.work-side .compact .case-link { align-self: flex-start; margin-top: auto; padding-top: 0.6rem; }
 
 .cases { border-top: 3px solid var(--ink); }
 .case {
@@ -564,6 +574,26 @@ mark {
 .index-page .tag.active { background: var(--ink); color: var(--yellow); }
 
 .prose { max-width: 42rem; }
+
+/* About: the text beside a card with the photo, availability and the ways to reach out. */
+.about-grid { display: grid; grid-template-columns: minmax(0, 42rem) minmax(16rem, 22rem); justify-content: space-between; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
+.about-card { position: sticky; top: 2rem; display: grid; gap: 0.9rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+.about-card img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: 50% 30%; border-radius: var(--radius); background: var(--dark); }
+.nowrap { white-space: nowrap; }
+.about-name { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; }
+.about-role { margin-top: -0.6rem; font-size: var(--t-small); line-height: 1.45; color: var(--ink-2); }
+.about-card .availability { margin-top: 0; }
+.about-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.25rem; }
+.about-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; padding-top: 0.9rem; border-top: 1px solid var(--line); font-size: var(--t-small); }
+.about-links a { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+@media (max-width: 960px) {
+  .about-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-card { position: static; order: -1; grid-template-columns: 6rem 1fr; column-gap: 1.25rem; align-items: center; }
+  .about-card img { grid-row: span 2; }
+  .about-card > :not(img):not(.about-name):not(.about-role) { grid-column: 1 / -1; }
+  .about-role { margin-top: 0; align-self: start; }
+  .about-name { align-self: end; }
+}
 .prose > * + * { margin-top: 1.25em; }
 .prose h2 { margin-top: 2.25em; font-size: var(--t-h3); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
 .prose h3 { margin-top: 2em; font-size: 1.25rem; font-weight: 750; letter-spacing: -0.01em; }

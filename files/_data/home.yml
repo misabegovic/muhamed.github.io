@@ -171,12 +171,12 @@ services:
   - number: "02"
     name: Lead
     fits: When your team needs technical direction.
-    format: One to two days a week
-    title: Fractional tech lead
+    format: Part-time or full-time
+    title: Technical lead for your team
     # evidence: role-carv-team, role-experfy-team
     text: >-
-      I lead your engineering team part-time: technical direction,
-      architecture, delivery, and the people.
+      I lead your engineering team, part-time or full-time: technical
+      direction, architecture, delivery, and the people.
   - number: "03"
     name: Review
     fits: When you want to know where your system stands.
@@ -189,13 +189,14 @@ services:
   - number: "04"
     name: AI-native
     fits: When you want your company to build with AI.
-    format: A workshop and setup, then follow-up
+    format: Workshops, then setup in your codebase
     title: Make your company AI-native
     # evidence: oss-brain, oss-pi-brain, proj-tabula, oss-enola-constraints, oss-enola-gems, role-teamtailor-copilot, proj-usput-retrieval-grounding
     text: >-
-      How you build and what you build: a knowledge base your people and
-      agents work from, and AI features in your product that hold up in
-      production, with open-source tools I build and teach.
+      How you build and what you build. I set up a knowledge base your people
+      and agents work from, with architecture rules checked in CI, and build
+      AI features into your product that hold up in production, using
+      open-source tools I build and teach.
 
 services_more: { label: Services in detail, url: /services/ }
 
@@ -208,8 +209,10 @@ sections:
     text: Hiring rather than contracting? I am also open to a senior engineering, technical lead or AI engineering role.
     link: { label: Talk about a role, url: /contact/#role }
   work:
-    title: What I do, and how I know.
-    intro: Grouped by the problem, not by employer. Where the work is public, it is linked.
+    title: What you get when you hire me.
+    intro: Four things teams hire me for, with the work that shows it. More detail is in my CV.
+  quotes:
+    title: What people I have worked with say.
   tools:
     title: I build the guardrails I teach.
     intro: The tools behind my workshops are ones I build or help build. Most are open source, so you can read how they work before you bring me in.
@@ -219,7 +222,9 @@ sections:
     title: A few things I have built.
     link: { label: All work and side projects, url: /work/ }
   work_page:
-    intro: The problems I am good at, with what I have done about them, and the things I have made myself.
+    intro: >-
+      Ten years of shipping products and leading the teams behind them, for
+      startups and established product companies.
   stack:
     title: What I work with.
     intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
@@ -234,71 +239,51 @@ capabilities:
   - id: ai-in-production
     title: AI features that hold up in production.
     text: >-
-      Model output is treated as input to be checked, not an answer to be
-      trusted: retrieval grounds it, schemas shape it, evals measure it.
+      You get AI features your customers can rely on: grounded in your data,
+      measured once they ship, and easy to improve.
     proofs:
-      # evidence: proj-usput-retrieval-grounding
-      - A travel platform whose place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and its own database, not from the model's memory.
-      # evidence: role-teamtailor-prescreening, role-teamtailor-prescreening-retrieval
-      - "Screening triggers in a hiring product, shipped to every paying customer of its AI add-on: screening criteria as a trigger, candidates moved on the criteria, and requests for missing information."
-      - A retrieval-augmented candidate-screening design for a regulated hiring context, with separate parse, extract, embed, retrieve and evaluate stages, embeddings kept apart per customer, and evaluation tooling, designed with the EU AI Act in mind.
-      # evidence: proj-usput-ai-layer
-      - A production LLM layer with schema-enforced structured output, layered retries, JSON repair and versioned prompts.
-      # evidence: skill-ai-llm-engineering
-      - Prompt-injection screening and deterministic pre-filters in front of model calls.
+      # evidence: role-teamtailor-ownership, role-teamtailor-employer, role-teamtailor-screening-triggers
+      - Shipped AI features to every customer of a hiring product used by 8,500+ companies, from the first pitch to measuring the results.
+      # evidence: role-teamtailor-langfuse
+      - Set up prompt management, evals and A/B experiments, so the team improved AI features with data instead of guesses.
+      # evidence: proj-usput-live, proj-usput-retrieval-grounding
+      - Run my own AI product, where I try new ideas on real users first.
     links:
       - { label: usput.ba, url: "https://usput.ba" }
   - id: guardrails
-    title: Guardrails for agent-written code.
+    title: Teams that use coding agents safely.
     text: >-
-      Agents write most of the code now. What keeps it honest is written down
-      and checked by machines: specs, decision records and architectural laws.
+      You get a team that ships faster with AI agents, with specs, decisions
+      and architecture rules that keep the code in shape.
     proofs:
-      # evidence: oss-enola-constraints
-      - The constraints program in enola, architectural laws declared over the code graph and checked deterministically in CI, with a Ruby DSL and four gems for Rails teams.
-      # evidence: oss-pi-brain, oss-pi-brain-gating
-      - pi-brain, an intent store for agentic development with human-gated workflows and decision records agents must read before they edit.
-      # evidence: proj-card-game-adrs, skill-spec-driven-development
-      - Spec-driven projects where decision records are checked against the code by a pre-push hook.
-      # evidence: skill-mcp
-      - Three MCP servers, in Go, Rails and plain Ruby.
+      # evidence: oss-enola-constraints, oss-enola-gems, oss-pi-brain, oss-brain
+      - Built the open-source tools I teach with, used to keep agent-written code aligned with its specs and architecture.
+      # evidence: skill-spec-driven-development, proj-card-game-adrs
+      - Set up spec-driven workflows where decisions are written down and checked against the code before it ships.
     links:
       - { label: enola, url: "https://github.com/enola-labs/enola" }
       - { label: pi-brain, url: "https://github.com/misabegovic/pi-brain" }
   - id: one-model
-    title: Many systems, one model.
+    title: Systems that stay simple as they grow.
     text: >-
-      Most products sit on top of other people's data. The work is making it
-      one shape, early, so everything downstream stays simple.
+      You get an architecture your team can keep building on: one clear model
+      of your data, and integrations that don't leak everywhere.
     proofs:
-      # evidence: role-carv-ats-integrations, role-carv-channel-normalisation
-      - Normalised data from 20+ applicant tracking systems into one model, and inbound messages from several channels into one shape for a conversation engine.
-      - "Merged two products after an acquisition: one frontend, one database for clients and sessions, and two stacks brought step by step closer."
-      - A dynamic plans and permissions system across three apps, replacing hardcoded feature checks so product could run billing experiments without developer time.
-      # evidence: role-carv-event-system
-      - Part of the team that built an event system on Redis Pub/Sub, with every event defined once and kept normalised across the product.
-      # evidence: proj-market-analysis, proj-market-analysis-scale
-      - A daily job-market pipeline over 4.76 million postings, reading only the columns it needs with DuckDB.
-      # evidence: role-carv-devops, skill-kubernetes
-      - DevOps and CI/CD on Google Cloud, and separate frontend and backend deploy pipelines on Kubernetes so a frontend team shipped daily on its own.
+      # evidence: role-carv-integration-lead
+      - "Led the integration of two products after an acquisition: one frontend, one shared database, and the two stacks brought step by step closer."
+      # evidence: role-carv-ats-integrations
+      - Brought data from 20+ outside systems into one model, so new integrations stopped costing new work elsewhere.
+      # evidence: role-meisterlabs-permissions
+      - Designed a plans and permissions system that let product run billing experiments without developer time.
   - id: teams
-    title: Leading teams.
+    title: Leading teams that deliver.
     text: >-
-      Good teams make their own decisions well. My job is to make the
-      decisions visible, the work small, and the blockers short-lived.
+      You get a team that knows where it is going and ships on time.
     proofs:
-      # evidence: role-carv-team; recommendation zlatko
-      - 'At Recrubo, acquired by Carv: tech lead for a team of 10 engineers, owning delivery with a PM and leading by building. In a teammate''s words: "He wrote the code, showed it working, and then we talked."'
-      # evidence: role-experfy-team, role-experfy-scaleup, role-experfy-direction, role-experfy-product
-      - "At Experfy, an ATS for tech and data-science hiring: set the product and technical direction and led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, through 150 percent growth."
-      # evidence: community-rubyconf-austria, community-euruko-2024
-      - "Founded RubyConf Austria and took full ownership of EuRuKo 2024 in Sarajevo, 700 attendees and 50 speakers, with a small volunteer team."
-      # evidence: community-bhff, cert-bhff-excellence
-      - Three years as a volunteer mentor and team lead at the Bosnia and Herzegovina Futures Foundation, with two Certificates of Excellence.
-    links:
-      - { label: Carv, url: "https://www.carv.com/" }
-      - { label: Experfy, url: "https://www.experfy.com/" }
-      - { label: RubyConf Austria, url: "https://www.rubyconf.at/" }
+      # evidence: role-experfy-team, role-experfy-scaleup
+      - Led around 30 engineers across 7 time zones through 150 percent growth, without missing a deadline.
+      # evidence: role-carv-team
+      - Led a team of 10 at a startup through its acquisition, leading by building.
 
 open_source:
   - name: enola

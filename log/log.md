@@ -81,3 +81,23 @@
    diff: 3 files, +7/-5
    restricted-paths: false
    by: agent
+2026-09-29 commit — bb27826: site: side projects as a grid of cards, and About beside a contact card
+   diff: 3 files, +60/-37
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — ce45519: site: make the site easy for agents to read and recommend
+   diff: 4 files, +125/-6
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — c2196bd: services: Lead is part-time or full-time, and AI-native says what the work is
+   diff: 10 files, +19/-18
+   restricted-paths: true
+   by: agent
+2026-09-29 commit — 416eeeb: work: sell the work without naming employers, and show the recommendations
+   diff: 5 files, +58/-36
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — 0af996e: work: say what a hiring company gets, in plain words
+   diff: 2 files, +33/-52
+   restricted-paths: false
+   by: agent

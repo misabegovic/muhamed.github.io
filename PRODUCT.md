@@ -16,7 +16,7 @@ Two primary audiences, weighted equally (confirmed by the owner, 2026-09-28):
   after an interview. Their job: decide whether he is credible and worth a
   conversation.
 - **Engineering leaders buying help** deciding whether to book him for an
-  assessment, a workshop or fractional AI product engineering, contracted
+  a build, a technical lead, an architecture review or AI-native help, contracted
   through his Austrian sole-trader company (e.U.). Their job: decide whether he
   can solve their team's problem and how to start.
 
@@ -42,7 +42,7 @@ believing it from evidence they could check, and knowing how to reach him.
 builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
 Title: Product Engineer and Technical Lead, AI-native. Four services: Build
-(hands-on product engineering), Lead (fractional tech lead), Review
+(hands-on product engineering), Lead (technical lead, part-time or full-time), Review
 (architecture review), and AI-native (make your company AI-native). Clients:
 product companies of any size, from startups to enterprises. Talks are not
 sold as a service; the conferences stay as proof.

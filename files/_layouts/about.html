@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{%- assign h = site.data.home -%}
+{% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
+<article class="wrap page about-page">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.intro %}<p class="page-intro">{{ page.intro }}</p>{% endif %}
+  </header>
+  <div class="about-grid">
+    <div class="prose">
+      {{ content }}
+    </div>
+    <aside class="about-card" aria-label="At a glance">
+      <img src="{{ site.baseurl }}{{ site.avatar }}" alt="Muhamed Isabegovic" width="1024" height="1024" loading="lazy">
+      <p class="about-name">{{ site.author }}</p>
+      <p class="about-role">{{ h.person.role | replace: ', AI-native', ', <span class="nowrap">AI-native</span>' }}{% if h.person.credit %}<br>{{ h.person.credit }}{% endif %}</p>
+      <p class="availability"><span class="dot" aria-hidden="true"></span>{{ h.hero.availability }}</p>
+      <div class="about-actions">
+        <a class="button" href="{{ site.baseurl }}{{ h.hero.primary.url }}">{{ h.hero.primary.label }}{{ arr }}</a>
+        <a class="text-link" href="{{ site.baseurl }}{{ h.hero.cv.url }}" download>{{ h.hero.cv.label }} <span class="file-note">(PDF)</span></a>
+      </div>
+      <ul class="about-links" role="list">
+        <li><a href="https://www.linkedin.com/in/muhamed-isabegovic/">LinkedIn</a></li>
+        <li><a href="https://github.com/misabegovic">GitHub</a></li>
+        <li><a href="https://twitter.com/m_isabegovic">X</a></li>
+        <li><a href="mailto:info@muhamed.at">info@muhamed.at</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
