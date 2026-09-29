@@ -171,12 +171,12 @@ services:
   - number: "02"
     name: Lead
     fits: When your team needs technical direction.
-    format: One to two days a week
-    title: Fractional tech lead
+    format: Part-time or full-time
+    title: Technical lead for your team
     # evidence: role-carv-team, role-experfy-team
     text: >-
-      I lead your engineering team part-time: technical direction,
-      architecture, delivery, and the people.
+      I lead your engineering team, part-time or full-time: technical
+      direction, architecture, delivery, and the people.
   - number: "03"
     name: Review
     fits: When you want to know where your system stands.
@@ -189,13 +189,14 @@ services:
   - number: "04"
     name: AI-native
     fits: When you want your company to build with AI.
-    format: A workshop and setup, then follow-up
+    format: Workshops, then setup in your codebase
     title: Make your company AI-native
     # evidence: oss-brain, oss-pi-brain, proj-tabula, oss-enola-constraints, oss-enola-gems, role-teamtailor-copilot, proj-usput-retrieval-grounding
     text: >-
-      How you build and what you build: a knowledge base your people and
-      agents work from, and AI features in your product that hold up in
-      production, with open-source tools I build and teach.
+      How you build and what you build. I set up a knowledge base your people
+      and agents work from, with architecture rules checked in CI, and build
+      AI features into your product that hold up in production, using
+      open-source tools I build and teach.
 
 services_more: { label: Services in detail, url: /services/ }
 

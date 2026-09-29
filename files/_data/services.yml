@@ -27,7 +27,7 @@ details:
       - Coding agents set up for your codebase, with guardrails they cannot bypass and architecture rules checked in CI.
       - "AI features in your product that hold up in production: grounded in your data, with structured outputs, evals and observability."
       - "Set up with open-source tools I build (brain, pi-brain, enola and its gems, and tabula, in private development) and taught to your team, with enola-guides as the reference."
-    outcome: You leave with a working setup in your own repository that your team keeps running, not slideware.
+    outcome: Your team ends up with a working setup in its own repositories, and knows how to keep it running.
 
 steps:
   title: How it works.
