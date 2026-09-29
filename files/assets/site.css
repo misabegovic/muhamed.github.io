@@ -166,7 +166,9 @@ mark {
 .availability { display: flex; align-items: baseline; gap: 0.6rem; margin-top: 1.75rem; font-size: var(--t-small); color: var(--ink-3); }
 .dot { position: relative; top: -0.05em; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #1f9d55; box-shadow: 0 0 0 4px rgb(31 157 85 / 0.16); flex: none; }
 
-.portrait { position: relative; margin-bottom: 2rem; }
+/* The caption sits below the photo and overlaps only its bottom edge, so it
+   never covers the face, whatever its height. */
+.portrait { position: relative; }
 .portrait img {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -176,9 +178,8 @@ mark {
   background: var(--dark);
 }
 .portrait figcaption {
-  position: absolute;
-  left: -1.5rem;
-  bottom: -2rem;
+  position: relative;
+  margin: -1.75rem 1.25rem 0 -1.5rem;
   display: grid;
   gap: 0.1rem;
   padding: 1rem 1.25rem;
@@ -724,10 +725,6 @@ mark {
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
   .portrait { max-width: 26rem; margin-left: 1.5rem; }
-  /* On narrow screens the caption wraps and grows; it sits below the photo,
-     overlapping only its bottom edge, so it no longer covers the face. */
-  .portrait { margin-bottom: 0; }
-  .portrait figcaption { position: relative; left: auto; bottom: auto; margin: -1.75rem 1.25rem 0 -1.5rem; }
   .services,
   .tools,
   .highlights,
