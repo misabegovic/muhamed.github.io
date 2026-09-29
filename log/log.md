@@ -140,3 +140,7 @@
    diff: 2 files, +2/-1
    restricted-paths: false
    by: agent
+2026-09-29 commit — 5a92ac9: cv: contact details in the PDF are links
+   diff: 2 files, +2/-1
+   restricted-paths: false
+   by: agent
