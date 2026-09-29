@@ -79,7 +79,7 @@ function header(w, h, safeLeft) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
     <div>
       <h1 style="font-size:${64 * u}px;line-height:1.04">I build products and lead<br>the teams that <span class="hl-dark">ship them</span>.</h1>
-      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:500;color:var(--on-dark-2)">Ten years of taking software from an idea to production. &nbsp;<b style="color:var(--on-dark)">muhamed.at</b></p>
+      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:500;color:var(--on-dark-2)"><b style="color:var(--yellow)">Ten years</b> of taking software from an idea to production. &nbsp;<b style="color:var(--on-dark)">muhamed.at</b></p>
     </div>
   </div>`;
 }
