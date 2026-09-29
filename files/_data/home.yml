@@ -224,18 +224,9 @@ sections:
     title: What I work with.
     intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
 
-approach:
-  - step: Diagnose
-    text: >-
-      I read the code and watch how the team actually works, rather than
-      trusting the documentation about it.
-  - step: Prove
-    text: >-
-      Change one workflow end to end and measure it, before rolling anything
-      out more widely.
-  - step: Hand over
-    text: >-
-      Everything lives in your repository, and your team runs it without me.
+# How every engagement runs, as three steps under the services. Empty: the
+# services page's How it works covers it (owner, 2026-09-29).
+approach: []
 
 # The work page, by capability. Proof points name no employer, no client and no
 # date, and link only to public work. Each carries its evidence ids.

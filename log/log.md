@@ -64,3 +64,4 @@
 - 2026-09-29T19:45:00Z - on human request, founding RubyConf Austria is no longer emphasised: it leaves the portrait caption, the services page's Why me and About's description and intro; the conferences stay in the community section and the CV
 - 2026-09-29T20:00:00Z - on human request, the title is Product Engineer and Technical Lead, AI-native everywhere (matching LinkedIn); the CV adds "| AI Engineer", as LinkedIn does, for AI engineer searches; images re-rendered
 - 2026-09-29T20:30:00Z - on human request, the portrait caption adds a second line, AI Engineer, matching the LinkedIn headline
+- 2026-09-29T21:00:00Z - on human request, the homepage drops the Diagnose/Prove/Hand over steps (the services page's How it works covers engagements, its last step reworded without them); stylesheets carry a build-time version so a new layout is not hidden by a cached site.css (the services grid showed three columns from cache)
