@@ -176,3 +176,7 @@
    diff: 2 files, +5/-1
    restricted-paths: false
    by: agent
+2026-09-29 commit — 8ce339a: home: the portrait caption sits below the photo on every screen
+   diff: 1 files, +5/-8
+   restricted-paths: false
+   by: agent
