@@ -1,3 +1,15 @@
 source "https://rubygems.org"
-gem 'github-pages'
+
+# The site builds in GitHub Actions (.github/workflows/pages.yml), not by
+# GitHub Pages' own builder, so it needs only what it uses. These are the
+# versions the github-pages gem pinned, without its unused plugins (one of
+# which held rubyzip below its path-traversal fix).
+gem "jekyll", "3.10.0"
+gem "kramdown-parser-gfm", "1.1.0"
 gem "webrick", "~> 1.7"
+
+group :jekyll_plugins do
+  gem "jekyll-feed", "0.17.0"
+  gem "jekyll-seo-tag", "2.8.0"
+  gem "jekyll-sitemap", "1.4.0"
+end
