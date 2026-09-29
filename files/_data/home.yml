@@ -285,15 +285,17 @@ capabilities:
       Good teams make their own decisions well. My job is to make the
       decisions visible, the work small, and the blockers short-lived.
     proofs:
+      # evidence: role-carv-team; recommendation zlatko
+      - 'At Recrubo, acquired by Carv: tech lead for a team of 10 engineers, owning delivery with a PM and leading by building. In a teammate''s words: "He wrote the code, showed it working, and then we talked."'
       # evidence: role-experfy-team, role-experfy-scaleup
-      - Led a fully remote team of around 30 engineers across 7 time zones through 150 percent growth, without missing a deadline.
-      # evidence: role-carv-team
-      - Technical lead and mentor for a team of 10 engineers, responsible for delivery and technical quality.
+      - "At Experfy: ran engineering for a fully remote team of around 30 engineers across 7 time zones through 150 percent growth, then helped hire a VP of Engineering to take over management and moved back to building."
       # evidence: community-rubyconf-austria, community-euruko-2024
-      - Founded RubyConf Austria and took full ownership of EuRuKo 2024.
+      - "Founded RubyConf Austria and took full ownership of EuRuKo 2024 in Sarajevo, 700 attendees and 50 speakers, with a small volunteer team."
       # evidence: community-bhff, cert-bhff-excellence
-      - Three years as a mentor and team lead at the Bosnia and Herzegovina Futures Foundation, with two Certificates of Excellence.
+      - Three years as a volunteer mentor and team lead at the Bosnia and Herzegovina Futures Foundation, with two Certificates of Excellence.
     links:
+      - { label: Carv, url: "https://www.carv.com/" }
+      - { label: Experfy, url: "https://www.experfy.com/" }
       - { label: RubyConf Austria, url: "https://www.rubyconf.at/" }
 
 open_source:

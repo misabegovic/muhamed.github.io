@@ -247,7 +247,30 @@ rendering again whenever the CV changes. With the owner's ask to promote the
 work, the redesign is published from `main`; the placeholder switch is off, as
 this decision requires before publishing.
 
+**2026-09-29, twelfth change: the CV is reworked and rendered from its own
+source.** A rejection for a Staff role named what the CV failed to show:
+tenure, ownership outside consulting, early-stage pace, specific personal
+contributions and breadth. The CV is now two pages rendered with Chromium from
+`files/_cv/cv.html` (not published by Jekyll) in the site's design system,
+instead of by hireable. Since 2024 it shows one founder entry for the owner's
+company with no dates on individual engagements; the headline is Product
+Engineer and Tech Lead, AI, and the homepage caption and About metadata match
+it. Experfy is shown as Lead Software Engineer, since no formal title was held.
+The facts behind it are captured in the owner's private hireable repository.
+
+**2026-09-29, thirteenth change: the work page may name employers.** With no
+employer on any proof point, "Leading teams" could link only to RubyConf
+Austria, which read as if leading teams meant the conference. The CV already
+names every employer, so hiding them on the work page no longer protected
+anything. Proof points may now name the employer they come from, and link to
+it. Only "Leading teams" is rewritten this way so far; the other themes keep
+their anonymous wording until they are revisited.
+
 ## Approval
+
+The thirteenth change was chosen by the owner in session on 2026-09-29
+("B I guess", when offered keeping the rule, naming employers, or dropping the
+section).
 
 Approved by the owner in session on 2026-09-28 ("start building a new site"),
 with the instruction not to push or deploy. Built on the local branch
