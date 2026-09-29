@@ -70,22 +70,34 @@ function share(w, h) {
   </div>`;
 }
 
-// Profile headers. LinkedIn and X both put the avatar over the bottom-left,
-// so the copy sits in the right two thirds.
-function header(w, h, safeLeft) {
-  const u = h / 400;
-  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${72 * u}px 0 ${safeLeft}px">
-    <div>
-      <h1 style="font-size:${50 * u}px;line-height:1.1">I help engineering teams ship with AI agents, <span class="hl-dark">without losing control</span> of their code.</h1>
-      <p style="margin-top:${22 * u}px;font-size:${21 * u}px;color:var(--on-dark-2);font-weight:500">Assess · Enable · Build · Talks &nbsp;&nbsp;<b style="color:var(--on-dark)">muhamed.at</b></p>
+// Profile headers: one design for LinkedIn and X, written for hiring
+// managers and clients alike. Both networks put the avatar over the
+// bottom-left and crop the edges on phones, so the copy sits right of
+// safeLeft and away from the top and bottom.
+function header(w, h, safeLeft, theme) {
+  const u = w / 1584;
+  const dark = theme === 'dark';
+  const fg = dark ? 'var(--on-dark)' : 'var(--ink)';
+  const fg2 = dark ? 'var(--on-dark-2)' : 'var(--ink-2)';
+  const hl = dark ? '<span class="hl-dark">hold up in production</span>' : '<mark>hold up in production</mark>';
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:${dark ? 'var(--dark)' : 'var(--paper)'};color:${fg};display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
+    <div style="width:100%">
+      <p style="font-size:${22 * u}px;font-weight:700;color:${fg2};letter-spacing:-.01em">Product Engineer and Tech Lead, AI · 10+ years</p>
+      <h1 style="font-size:${56 * u}px;line-height:1.06;margin-top:${10 * u}px">I build AI features that<br>${hl}.<br>I lead the teams that ship them.</h1>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:${24 * u}px;margin-top:${22 * u}px;padding-top:${14 * u}px;border-top:${Math.max(2, 3 * u)}px solid ${fg};font-size:${19 * u}px;font-weight:500;color:${fg2}">
+        <span>Teamtailor · Recrubo/Carv · Meisterlabs · Founder of RubyConf Austria</span>
+        <span style="white-space:nowrap"><b style="color:${fg}">muhamed.at</b> · roles and contract work</span>
+      </div>
     </div>
   </div>`;
 }
 
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
-  ['linkedin-header.png', 1584, 396, header(1584, 396, 560)],
-  ['x-header.png', 1500, 500, header(1500, 500, 520)],
+  ['linkedin-header.png', 1584, 396, header(1584, 396, 470, 'light')],
+  ['x-header.png', 1500, 500, header(1500, 500, 450, 'light')],
+  ['linkedin-header-dark.png', 1584, 396, header(1584, 396, 470, 'dark')],
+  ['x-header-dark.png', 1500, 500, header(1500, 500, 450, 'dark')],
   ...services.flatMap((s) => [
     [`service-${s.slug}-linkedin.png`, 1200, 627, servicePost(s, 1200, 627)],
     [`service-${s.slug}-x.png`, 1600, 900, servicePost(s, 1600, 900)],
