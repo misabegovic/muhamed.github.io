@@ -104,3 +104,7 @@
 2026-09-29 merge — PR #35: site: sell the work to hiring companies, full-width About, and easier for agents to recommend
    diff: 21 files, +299/-133
    restricted-paths: true
+2026-09-29 commit — 81a8279: site: drop Politika from the footer
+   diff: 1 files, +0/-1
+   restricted-paths: false
+   by: agent
