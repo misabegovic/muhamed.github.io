@@ -97,3 +97,7 @@
    diff: 5 files, +58/-36
    restricted-paths: false
    by: agent
+2026-09-29 commit — 0af996e: work: say what a hiring company gets, in plain words
+   diff: 2 files, +33/-52
+   restricted-paths: false
+   by: agent
