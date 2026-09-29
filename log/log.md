@@ -136,3 +136,7 @@
    diff: 4 files, +27/-35
    restricted-paths: true
    by: agent
+2026-09-29 commit — 207f399: cv: contact details on /cv/ are links, profiles marked rel=me
+   diff: 2 files, +2/-1
+   restricted-paths: false
+   by: agent
