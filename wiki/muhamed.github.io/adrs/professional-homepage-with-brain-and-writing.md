@@ -266,7 +266,20 @@ anything. Proof points may now name the employer they come from, and link to
 it. Only "Leading teams" is rewritten this way so far; the other themes keep
 their anonymous wording until they are revisited.
 
+**2026-09-29, fourteenth change: the card game can be played from its own
+page.** The game's landing at `/igre/dejtonska-igra/` showed only two store
+placeholders marked "soon", so a visitor had no way into the game. The game
+repository now puts a Play button on that landing, and on the web the whole
+game is free (the game's ADR-030 is amended to say so; the store apps keep
+their one purchase). The site copy is rebuilt from that commit with the
+existing build script; nothing else on the site changes.
+
 ## Approval
+
+The fourteenth change was asked for by the owner in session on 2026-09-29
+("needs to have a play button on its homepage, so folks can actually play
+it"), choosing the game repository over a site-only patch and the whole game
+over the free part.
 
 The thirteenth change was chosen by the owner in session on 2026-09-29
 ("B I guess", when offered keeping the rule, naming employers, or dropping the
