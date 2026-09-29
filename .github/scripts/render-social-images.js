@@ -85,7 +85,7 @@ function header(w, h, safeLeft, theme) {
       <p style="font-size:${22 * u}px;font-weight:700;color:${fg2};letter-spacing:-.01em">Product Engineer and Tech Lead, AI · 10+ years</p>
       <h1 style="font-size:${56 * u}px;line-height:1.06;margin-top:${10 * u}px">I build AI features that<br>${hl}.<br>I lead the teams that ship them.</h1>
       <div style="display:flex;justify-content:space-between;align-items:baseline;gap:${24 * u}px;margin-top:${22 * u}px;padding-top:${14 * u}px;border-top:${Math.max(2, 3 * u)}px solid ${fg};font-size:${19 * u}px;font-weight:500;color:${fg2}">
-        <span>Teamtailor · Recrubo/Carv · Meisterlabs · Founder of RubyConf Austria</span>
+        <span>LLM features · Evals · Agent guardrails · Founder of RubyConf Austria</span>
         <span style="white-space:nowrap"><b style="color:${fg}">muhamed.at</b> · roles and contract work</span>
       </div>
     </div>
@@ -94,10 +94,8 @@ function header(w, h, safeLeft, theme) {
 
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
-  ['linkedin-header.png', 1584, 396, header(1584, 396, 470, 'light')],
-  ['x-header.png', 1500, 500, header(1500, 500, 450, 'light')],
-  ['linkedin-header-dark.png', 1584, 396, header(1584, 396, 470, 'dark')],
-  ['x-header-dark.png', 1500, 500, header(1500, 500, 450, 'dark')],
+  ['linkedin-header.png', 1584, 396, header(1584, 396, 470, 'dark')],
+  ['x-header.png', 1500, 500, header(1500, 500, 450, 'dark')],
   ...services.flatMap((s) => [
     [`service-${s.slug}-linkedin.png`, 1200, 627, servicePost(s, 1200, 627)],
     [`service-${s.slug}-x.png`, 1600, 900, servicePost(s, 1600, 900)],
