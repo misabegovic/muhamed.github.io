@@ -152,3 +152,7 @@
    diff: 4 files, +9/-11
    restricted-paths: false
    by: agent
+2026-09-29 commit — 7f753c5: cv: add OpenAI SDK to the skills
+   diff: 4 files, +3/-1
+   restricted-paths: false
+   by: agent
