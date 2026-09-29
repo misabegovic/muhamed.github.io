@@ -401,6 +401,7 @@ mark {
 .work-side,
 .work-quotes { margin-top: var(--section); }
 @media (min-width: 961px) { .capability-head { position: sticky; top: 2rem; align-self: start; } }
+.capability .proofs { align-self: start; align-content: start; }
 .work-cta { margin-top: calc(var(--section) * 0.75); }
 .cases > li,
 .compact > li { scroll-margin-top: 2rem; }
