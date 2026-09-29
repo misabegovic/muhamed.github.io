@@ -172,3 +172,7 @@
    diff: 1 files, +1/-0
    restricted-paths: false
    by: agent
+2026-09-29 commit — 0741bb8: home: on phones the portrait caption sits below the photo
+   diff: 2 files, +5/-1
+   restricted-paths: false
+   by: agent
