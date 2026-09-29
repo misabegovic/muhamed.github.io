@@ -173,6 +173,7 @@
         "Langfuse",
         "MCP",
         "RubyLLM",
+        "OpenAI SDK",
         "pgvector"
       ]
     },

@@ -98,9 +98,9 @@ stack:
     items:
       - { name: RAG }
       - { name: LLM pipelines }
-      - { name: Evals }
+      - { name: LLM evaluation }
       - { name: Structured outputs }
-      - { name: Spec-driven workflows }
+      - { name: Spec-driven development }
       - { name: Agent guardrails }
       - { name: Harness extensions }
       - { name: Prompt-injection screening }
@@ -109,7 +109,6 @@ stack:
       - { name: Claude, icon: claude }
       - { name: OpenAI, icon: openai }
       - { name: Gemini, icon: googlegemini }
-      - { name: Kimi, icon: kimi }
       - { name: RubyLLM }
       - { name: MCP, icon: modelcontextprotocol }
       - { name: Langfuse }
@@ -123,15 +122,16 @@ stack:
       - { name: Python, icon: python }
       - { name: JavaScript, icon: javascript }
       - { name: C++, icon: cplusplus }
-      - { name: C, icon: c }
   - group: Frameworks and data
     items:
-      - { name: Rails, icon: rubyonrails }
+      - { name: Ruby on Rails, icon: rubyonrails }
       - { name: Sidekiq, icon: sidekiq }
-      - { name: Ember, icon: emberdotjs }
+      - { name: Ember.js, icon: emberdotjs }
       - { name: React, icon: react }
-      - { name: Vue, icon: vuedotjs }
-      - { name: Svelte, icon: svelte }
+      - { name: Vue.js, icon: vuedotjs }
+      - { name: Hotwire }
+      - { name: Node.js }
+      - { name: Redis }
       - { name: PostgreSQL, icon: postgresql }
       - { name: MySQL, icon: mysql }
       - { name: DuckDB, icon: duckdb }
@@ -141,6 +141,7 @@ stack:
       - { name: Kubernetes, icon: kubernetes }
       - { name: Helm, icon: helm }
       - { name: Google Cloud, icon: googlecloud }
+      - { name: CI/CD }
       - { name: Kamal }
 
 # Show marked placeholders for the logos and quotes that do not exist yet.
