@@ -14,7 +14,7 @@ description: Muhamed Isabegovic is a Ruby and Rails engineer and AI product deve
   "url": "https://muhamed.at/",
   "image": "https://muhamed.at/images/profile.jpg",
   "email": "mailto:info@muhamed.at",
-  "jobTitle": "Technical Lead and AI Product Developer",
+  "jobTitle": "Product Engineer and Tech Lead, AI",
   "worksFor": [
     { "@type": "Organization", "name": "Usput.ba", "url": "https://usput.ba" }
   ],
