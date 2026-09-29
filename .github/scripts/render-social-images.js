@@ -70,22 +70,24 @@ function share(w, h) {
   </div>`;
 }
 
-// Profile headers. LinkedIn and X both put the avatar over the bottom-left,
-// so the copy sits in the right two thirds.
+// Profile headers: one dark design for LinkedIn and X. One idea, in the
+// owner's words (2026-09-29): ownership, not a list of roles or clients.
+// Both networks put the avatar over the bottom-left and crop the edges on
+// phones, so the copy sits right of safeLeft and away from top and bottom.
 function header(w, h, safeLeft) {
-  const u = h / 400;
-  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${72 * u}px 0 ${safeLeft}px">
+  const u = w / 1584;
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
     <div>
-      <h1 style="font-size:${50 * u}px;line-height:1.1">I help engineering teams ship with AI agents, <span class="hl-dark">without losing control</span> of their code.</h1>
-      <p style="margin-top:${22 * u}px;font-size:${21 * u}px;color:var(--on-dark-2);font-weight:500">Assess · Enable · Build · Talks &nbsp;&nbsp;<b style="color:var(--on-dark)">muhamed.at</b></p>
+      <h1 style="font-size:${64 * u}px;line-height:1.04">I build products and lead<br>the teams that <span class="hl-dark">ship them</span>.</h1>
+      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:500;color:var(--on-dark-2)"><b style="color:var(--yellow)">Ten years</b> of taking software from an idea to production. &nbsp;<b style="color:var(--on-dark)">muhamed.at</b></p>
     </div>
   </div>`;
 }
 
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
-  ['linkedin-header.png', 1584, 396, header(1584, 396, 560)],
-  ['x-header.png', 1500, 500, header(1500, 500, 520)],
+  ['linkedin-header.png', 1584, 396, header(1584, 396, 470)],
+  ['x-header.png', 1500, 500, header(1500, 500, 450)],
   ...services.flatMap((s) => [
     [`service-${s.slug}-linkedin.png`, 1200, 627, servicePost(s, 1200, 627)],
     [`service-${s.slug}-x.png`, 1600, 900, servicePost(s, 1600, 900)],
