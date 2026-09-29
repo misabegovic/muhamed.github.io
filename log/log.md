@@ -69,3 +69,7 @@
    diff: 2 files, +20/-13
    restricted-paths: false
    by: agent
+2026-09-29 commit — 9923c0c: cv: drop the Flutter and User research chips
+   diff: 2 files, +2/-2
+   restricted-paths: false
+   by: agent
