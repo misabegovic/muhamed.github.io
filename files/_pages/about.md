@@ -1,39 +1,9 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 description: Muhamed Isabegovic is a product engineer and technical lead, AI-native, based in Vienna. He builds products, leads the teams that ship them, and helps companies become AI-native. Author of pi-brain and core contributor to enola.
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://muhamed.at/#person",
-  "name": "Muhamed Isabegovic",
-  "url": "https://muhamed.at/",
-  "image": "https://muhamed.at/images/profile.jpg",
-  "email": "mailto:info@muhamed.at",
-  "jobTitle": "Product Engineer and Technical Lead, AI-native",
-  "homeLocation": { "@type": "Place", "name": "Austria" },
-  "knowsAbout": [
-    "Ruby",
-    "Ruby on Rails",
-    "AI-augmented development",
-    "AI agents",
-    "LLM orchestration",
-    "software architecture",
-    "developer tooling",
-    "recruitment technology"
-  ],
-  "sameAs": [
-    "https://github.com/misabegovic",
-    "https://www.linkedin.com/in/muhamed-isabegovic/",
-    "https://twitter.com/m_isabegovic"
-  ],
-  "description": "A product engineer and technical lead, AI-native, based in Vienna. He builds products, leads the teams that ship them, and helps companies become AI-native. Author of pi-brain and core contributor to enola."
-}
-</script>
 
 I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack. I have built trading systems in C++, SaaS products in Rails and AI features in hiring software.
 
@@ -80,12 +50,6 @@ I also help companies become AI-native, in how they build and in what they build
 
 {% for group in site.data.home.stack %}- **{{ group.group }}:** {{ group.items | map: "name" | join: ", " }}
 {% endfor %}
-
-## Socials
-
-- [LinkedIn](https://www.linkedin.com/in/muhamed-isabegovic/)
-- [Twitter / X](https://twitter.com/m_isabegovic)
-- [GitHub](https://github.com/misabegovic)
 
 ## Things I love
 
