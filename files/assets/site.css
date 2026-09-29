@@ -579,6 +579,7 @@ mark {
 .cv-page > * { max-width: 52rem; }
 .cv-title { margin-top: 0.75rem; font-size: var(--t-h3); font-weight: 750; letter-spacing: -0.02em; }
 .cv-contact, .cv-formats { margin-top: 1rem; font-size: var(--t-small); color: var(--ink-3); }
+.cv-contact a { color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
 .cv-formats { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
 .cv-section { margin-top: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .cv-heading { padding-bottom: 0.75rem; margin-bottom: 0.5rem; border-bottom: 3px solid var(--ink); font-size: var(--t-h3); font-weight: 800; letter-spacing: -0.02em; }
