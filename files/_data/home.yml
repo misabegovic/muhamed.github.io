@@ -28,7 +28,7 @@ hero:
 
 # Three highlights on the homepage: the owner's own projects only.
 highlights:
-  - { anchor: usput, where: Founder and CTO, title: Usput.ba, line: A travel guide to Bosnia and Herzegovina, with AI content grounded in real places. }
+  - { anchor: usput, where: "Side project, where I experiment", title: Usput.ba, line: A travel guide to Bosnia and Herzegovina, with AI content grounded in real places. }
   - { anchor: izbori, where: Side project, title: Izbori 2026, line: A voter guide and seat projection covering all 7,028 candidates. }
   - { anchor: treasurehunt, where: For RubyConf Austria, title: hunt.rubyconf.at, line: A location-based treasure hunt for conference attendees. }
 
@@ -36,7 +36,7 @@ highlights:
 side_projects:
   - id: usput
     name: Usput.ba
-    note: Founder and CTO
+    note: Side project, where I experiment
     logo: /images/logos/usput.png
     url: https://usput.ba
     link_label: Visit usput.ba
