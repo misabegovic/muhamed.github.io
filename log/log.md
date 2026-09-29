@@ -112,3 +112,7 @@
    diff: 7 files, +21/-6
    restricted-paths: false
    by: agent
+2026-09-29 commit — 5a6d65d: cv, about: show the company ran alongside Meisterlabs in 2024
+   diff: 3 files, +2/-2
+   restricted-paths: false
+   by: agent
