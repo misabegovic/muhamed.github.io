@@ -35,7 +35,7 @@ steps:
     - { step: Get in touch, text: "A few lines about your team and what you are trying to do." }
     - { step: A short call, text: "We talk it through, and I tell you honestly whether I can help." }
     - { step: A scoped proposal, text: "Clear deliverables, a format and a timeline, in writing." }
-    - { step: The work, text: "Diagnose, prove on one workflow end to end, then hand over." }
+    - { step: The work, text: "I get to work, and keep you posted on what changed and what is next." }
   where: I work remotely from Vienna, and on site across the DACH region.
 
 why:

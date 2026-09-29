@@ -7,6 +7,8 @@
 # The caption beside the portrait in the first screen.
 person:
   role: Product engineer and technical lead, AI-native
+  # A second line under the role, matching the LinkedIn headline's "| AI Engineer".
+  credit: AI Engineer
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
@@ -222,18 +224,9 @@ sections:
     title: What I work with.
     intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
 
-approach:
-  - step: Diagnose
-    text: >-
-      I read the code and watch how the team actually works, rather than
-      trusting the documentation about it.
-  - step: Prove
-    text: >-
-      Change one workflow end to end and measure it, before rolling anything
-      out more widely.
-  - step: Hand over
-    text: >-
-      Everything lives in your repository, and your team runs it without me.
+# How every engagement runs, as three steps under the services. Empty: the
+# services page's How it works covers it (owner, 2026-09-29).
+approach: []
 
 # The work page, by capability. Proof points name no employer, no client and no
 # date, and link only to public work. Each carries its evidence ids.
@@ -296,8 +289,8 @@ capabilities:
     proofs:
       # evidence: role-carv-team; recommendation zlatko
       - 'At Recrubo, acquired by Carv: tech lead for a team of 10 engineers, owning delivery with a PM and leading by building. In a teammate''s words: "He wrote the code, showed it working, and then we talked."'
-      # evidence: role-experfy-team, role-experfy-scaleup
-      - "At Experfy: ran engineering for a fully remote team of around 30 engineers across 7 time zones through 150 percent growth, then helped hire a VP of Engineering to take over management and moved back to building."
+      # evidence: role-experfy-team, role-experfy-scaleup, role-experfy-direction, role-experfy-product
+      - "At Experfy, an ATS for tech and data-science hiring: set the product and technical direction and led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, through 150 percent growth."
       # evidence: community-rubyconf-austria, community-euruko-2024
       - "Founded RubyConf Austria and took full ownership of EuRuKo 2024 in Sarajevo, 700 attendees and 50 speakers, with a small volunteer team."
       # evidence: community-bhff, cert-bhff-excellence

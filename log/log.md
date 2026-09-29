@@ -63,3 +63,21 @@
 - 2026-09-29T19:30:00Z - on human request, the site is realigned to the offer the owner chose: the hero is "I build products and lead the teams that ship them" with an AI-native line, the title is Product Engineer and Tech Lead, AI-native (caption, About, CV), four services replace Assess/Enable/Build (Build, Lead, Review, AI-native), the talks section leaves the services page, the services grid is two by two, PRODUCT.md's positioning follows, and the share image and service post images are re-rendered
 - 2026-09-29T19:45:00Z - on human request, founding RubyConf Austria is no longer emphasised: it leaves the portrait caption, the services page's Why me and About's description and intro; the conferences stay in the community section and the CV
 - 2026-09-29T20:00:00Z - on human request, the title is Product Engineer and Technical Lead, AI-native everywhere (matching LinkedIn); the CV adds "| AI Engineer", as LinkedIn does, for AI engineer searches; images re-rendered
+- 2026-09-29T20:30:00Z - on human request, the portrait caption adds a second line, AI Engineer, matching the LinkedIn headline
+- 2026-09-29T21:00:00Z - on human request, the homepage drops the Diagnose/Prove/Hand over steps (the services page's How it works covers engagements, its last step reworded without them); stylesheets carry a build-time version so a new layout is not hidden by a cached site.css (the services grid showed three columns from cache)
+2026-09-29 commit — 125c562: cv: sharpen the Teamtailor entry, add Langfuse and an architecture skills group
+   diff: 2 files, +20/-13
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — 9923c0c: cv: drop the Flutter and User research chips
+   diff: 2 files, +2/-2
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — ab7f5bb: deps: fix the Dependabot alerts (rubyzip, json, undici, brace-expansion)
+   diff: 3 files, +813/-915
+   restricted-paths: false
+   by: agent
+2026-09-29 commit — 9383ef0: cv, home: rewrite the Experfy entry around the product and the direction
+   diff: 3 files, +7/-5
+   restricted-paths: false
+   by: agent
