@@ -77,3 +77,7 @@
    diff: 3 files, +813/-915
    restricted-paths: false
    by: agent
+2026-09-29 commit — 9383ef0: cv, home: rewrite the Experfy entry around the product and the direction
+   diff: 3 files, +7/-5
+   restricted-paths: false
+   by: agent
