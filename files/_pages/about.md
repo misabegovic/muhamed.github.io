@@ -15,9 +15,6 @@ description: Muhamed Isabegovic is a Ruby and Rails engineer and AI product deve
   "image": "https://muhamed.at/images/profile.jpg",
   "email": "mailto:info@muhamed.at",
   "jobTitle": "Product Engineer and Tech Lead, AI",
-  "worksFor": [
-    { "@type": "Organization", "name": "Usput.ba", "url": "https://usput.ba" }
-  ],
   "homeLocation": { "@type": "Place", "name": "Austria" },
   "knowsAbout": [
     "Ruby",
@@ -56,7 +53,7 @@ I also work with teams directly on AI-augmented development. See [Services](/ser
   - Technical Lead @ [Recrubo](https://recrubo.ai), acquired by [Carv](https://www.carv.com/)
   - AI Product Developer @ [Teamtailor](https://www.teamtailor.com/), Co-pilot team
   - Founder and organiser @ [EuRuKo 2024](https://2024.euruko.org) and [RubyConf Austria](https://www.rubyconf.at/)
-  - Founder & CTO @ [Usput.ba](https://usput.ba)
+  - My own product, live: [Usput.ba](https://usput.ba)
 - (2021 - 2024) Senior Software Engineer @ [Meisterlabs](https://www.meisterlabs.com/)
 - (2019 - 2021) Lead Software Engineer @ [Experfy](https://www.experfy.com/)
 - (2018 - 2019) Software Engineer @ [Marvelsoft](https://marvelsoft.net/)
