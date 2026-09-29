@@ -30,13 +30,10 @@
       "title": "AI Product Developer",
       "at": "Teamtailor, Co-pilot team",
       "meta": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
-      "start": "2026-05",
-      "end": "2026-10",
+      "start": null,
+      "end": null,
       "nested": true,
-      "extra": {
-        "start": "2026-05",
-        "end": "2026-10"
-      },
+      "extra": {},
       "bullets": [
         "Shipped Request Missing Information to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
         "Rebuilt AI screening on the trigger system, across seven merged pull requests, so recruiters can screen at any stage and save criteria on job templates; backfilled every company and rolled it out to all customers.",
@@ -44,7 +41,7 @@
         "Made screening wait until the CV is parsed and re-run when it arrives, so no candidate is screened before their CV is read.",
         "Moved AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic, and ran A/B experiments of prompt and model versions there, promoting the winners."
       ],
-      "dates": "05/2026 - 10/2026",
+      "dates": null,
       "location": null,
       "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement."
     },
@@ -52,20 +49,17 @@
       "title": "Technical Lead",
       "at": "Recrubo, acquired by Carv",
       "meta": "Seed-stage AI platform for recruiters, around 10 people when I joined; Carv acquired it two months later.",
-      "start": "2025-01",
-      "end": "2026-04",
+      "start": null,
+      "end": null,
       "nested": true,
-      "extra": {
-        "start": "2025-01",
-        "end": "2026-04"
-      },
+      "extra": {},
       "bullets": [
         "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Rails and Node/TypeScript stacks on Google Cloud step by step closer.",
         "Co-built the event system on Redis Pub/Sub that became the integration layer between the two stacks and the base for new functionality, with Google Cloud Tasks as a fallback and for workload management.",
         "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.",
         "Tech lead for a team of 10 engineers, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD."
       ],
-      "dates": "01/2025 - 04/2026",
+      "dates": null,
       "location": null,
       "summary": "Seed-stage AI platform for recruiters, around 10 people when I joined; Carv acquired it two months later."
     },
@@ -73,18 +67,16 @@
       "title": "Founder and organiser",
       "at": "EuRuKo 2024 and RubyConf Austria 2026",
       "meta": "",
-      "start": "2023-09",
+      "start": null,
       "end": null,
       "nested": true,
-      "extra": {
-        "start": "2023-09"
-      },
+      "extra": {},
       "bullets": [
         "EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.",
         "RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers including Dave Thomas, Chad Fowler, Jose Valim and Armin Ronacher, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).",
         "Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver."
       ],
-      "dates": "09/2023 - Present",
+      "dates": null,
       "location": null,
       "summary": null
     },
@@ -92,18 +84,18 @@
       "title": "AI Engineer",
       "at": "Usput.ba, my own product",
       "meta": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.",
-      "start": "2026-01",
+      "start": null,
       "end": null,
-      "nested": false,
+      "nested": true,
       "extra": {
-        "start": "2026-01"
+        "under": "founder"
       },
       "bullets": [
         "Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
         "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
       ],
-      "dates": "01/2026 - Present",
+      "dates": null,
       "location": null,
       "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first."
     },
