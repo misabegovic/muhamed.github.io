@@ -45,7 +45,7 @@ function servicePost(s, w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;padding:${64 * u}px ${72 * u}px;display:grid;grid-template-rows:auto 1fr auto;font-size:${22 * u}px">
     <div class="rule" style="padding-top:${18 * u}px;display:flex;justify-content:space-between;align-items:baseline">
       <span class="wordmark" style="font-size:${26 * u}px">Muhamed Isabegovic</span>
-      <span class="muted" style="font-weight:500">Product Engineer and Tech Lead, AI-native</span>
+      <span class="muted" style="font-weight:500">Product Engineer and Technical Lead, AI-native</span>
     </div>
     <div style="align-self:center">
       <h1 style="font-size:${128 * u}px"><mark>${s.name}</mark></h1>
@@ -64,7 +64,7 @@ function share(w, h) {
     <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
       <h1 style="font-size:72px;align-self:center">I build products and lead the teams that <mark>ship them</mark>.</h1>
-      <div class="muted" style="font-size:22px;font-weight:500">Product Engineer and Tech Lead, AI-native · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
+      <div class="muted" style="font-size:22px;font-weight:500">Product Engineer and Technical Lead, AI-native · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
     </div>
     <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
   </div>`;

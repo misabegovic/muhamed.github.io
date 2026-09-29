@@ -6,7 +6,7 @@
 
 # The caption beside the portrait in the first screen.
 person:
-  role: Product engineer and tech lead, AI-native
+  role: Product engineer and technical lead, AI-native
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
