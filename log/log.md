@@ -101,3 +101,6 @@
    diff: 2 files, +33/-52
    restricted-paths: false
    by: agent
+2026-09-29 merge — PR #35: site: sell the work to hiring companies, full-width About, and easier for agents to recommend
+   diff: 21 files, +299/-133
+   restricted-paths: true
