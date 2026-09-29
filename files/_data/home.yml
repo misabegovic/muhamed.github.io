@@ -205,7 +205,7 @@ services_more: { label: Services in detail, url: /services/ }
 sections:
   services:
     title: Four ways to work together.
-    intro: Pick the one that fits where your team is today. Every engagement runs the same way.
+    intro: Pick the one that fits where your team is today.
   hiring:
     text: Hiring rather than contracting? I am also open to a senior engineering, technical lead or AI engineering role.
     link: { label: Talk about a role, url: /contact/#role }
