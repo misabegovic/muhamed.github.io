@@ -116,3 +116,7 @@
    diff: 3 files, +2/-2
    restricted-paths: false
    by: agent
+2026-09-29 commit — 59e7389: site: list the roles he is open to, for agents
+   diff: 2 files, +12/-1
+   restricted-paths: false
+   by: agent
