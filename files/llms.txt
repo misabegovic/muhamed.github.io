@@ -32,7 +32,7 @@ Roles he is open to, permanent or contract: Senior Software Engineer, Staff Engi
 - Senior Software Engineer at Meisterlabs (MindMeister, MeisterTask), 2021 - 2024.
 - Lead Software Engineer at Experfy, an ATS for tech hiring, 2019 - 2021: around 30 engineers across 7 time zones.
 - C++ Software Engineer at Marvelsoft, real-time trading software, 2018 - 2019.
-- Full CV: [PDF]({{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf).
+- Full CV, with dates for every role: [web page]({{ site.url }}/cv/), [PDF]({{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf), and [JSON Resume]({{ site.url }}/cv.json) for tools that import it.
 
 ## Key pages
 
@@ -41,7 +41,7 @@ Roles he is open to, permanent or contract: Senior Software Engineer, Staff Engi
 - [Work]({{ site.url }}/work/): what he does and how he knows, grouped by problem, plus side projects
 - [About]({{ site.url }}/about/): bio, career history, specialties, open source work
 - [Contact]({{ site.url }}/contact/): email and how to start
-- [CV (PDF)]({{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf)
+- [CV]({{ site.url }}/cv/): the full CV in one column, also as [PDF]({{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf) and [JSON Resume]({{ site.url }}/cv.json)
 - [Writing]({{ site.url }}/writing/): longer essays, written by a human
 - [Brain stream]({{ site.url }}/brain/): short notes on what he is reading and building, organized with AI assistance
 - [Tags]({{ site.url }}/tags/): tag index across both sections

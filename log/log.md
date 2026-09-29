@@ -124,3 +124,7 @@
    diff: 20 files, +13/-13
    restricted-paths: true
    by: agent
+2026-09-29 commit — 0450442: cv: a one-column /cv/ page and /cv.json in JSON Resume, generated from the CV
+   diff: 10 files, +873/-14
+   restricted-paths: true
+   by: agent

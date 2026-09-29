@@ -10,6 +10,7 @@
     {% if include.code %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/code.css?v={{ site.time | date: '%s' }}">{% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/site.css?v={{ site.time | date: '%s' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: writing" href="{{ site.baseurl }}/feed.xml">
+    {% if page.url == "/cv/" %}<link rel="alternate" type="application/json" title="JSON Resume" href="{{ site.baseurl }}/cv.json">{% endif %}
     <link rel="alternate" type="text/plain" title="{{ site.author }}: profile for LLMs and agents" href="{{ site.baseurl }}/llms.txt">
     <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: brain" href="{{ site.baseurl }}/brain.xml">
     <meta name="theme-color" content="#ffffff">

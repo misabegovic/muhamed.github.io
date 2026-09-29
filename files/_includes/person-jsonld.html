@@ -41,7 +41,11 @@
   "makesOffer": [{% for s in h.services %}
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ s.title | jsonify }}, "description": {{ s.text | strip | jsonify }}, "url": "{{ site.url }}/services/#{{ s.name | downcase }}" } }{% unless forloop.last %},{% endunless %}{% endfor %}
   ],
-  "subjectOf": { "@type": "DigitalDocument", "name": "CV", "url": "{{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf", "encodingFormat": "application/pdf" },
+  "subjectOf": [
+    { "@type": "WebPage", "name": "CV", "url": "{{ site.url }}/cv/" },
+    { "@type": "DigitalDocument", "name": "CV (PDF)", "url": "{{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf", "encodingFormat": "application/pdf" },
+    { "@type": "DigitalDocument", "name": "CV (JSON Resume)", "url": "{{ site.url }}/cv.json", "encodingFormat": "application/json" }
+  ],
   "sameAs": [
     "https://github.com/misabegovic",
     "https://www.linkedin.com/in/muhamed-isabegovic/",
