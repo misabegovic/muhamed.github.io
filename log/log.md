@@ -160,3 +160,7 @@
    diff: 1 files, +2/-1
    restricted-paths: false
    by: agent
+2026-09-29 commit — 92d30a4: home: drop "Every engagement runs the same way."
+   diff: 1 files, +1/-1
+   restricted-paths: false
+   by: agent
