@@ -73,7 +73,7 @@ a { color: inherit; text-decoration: none; }
           <li>Pitched, specced with design, and shipped Request Missing Information: it finds what an application lacks (unmet screening criteria, unanswered questions, empty fields), has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening. Live for all customers, with a public support article.</li>
           <li>Moved AI screening onto the trigger system across seven merged pull requests, so recruiters can save screening criteria on job templates and screen at any stage; backfilled every company and rolled it out to all customers.</li>
           <li>Shipped automatic candidate moves on screening outcome, a customer request: per-criterion met, unmet or unknown, combined with All or Any, a condition model worked out with the designer.</li>
-          <li>Turned a user's request for a "re-run screening" button into screening that waits for the CV to finish parsing and re-runs when it arrives, so it no longer judges candidates on missing data.</li>
+          <li>Turned a user's request for a "re-run screening" button into screening that waits for the CV to finish parsing and re-runs when it arrives, so candidates aren't screened before their CV is read.</li>
         </ul>
       </div>
       <div class="role">
@@ -82,7 +82,7 @@ a { color: inherit; text-decoration: none; }
         <ul>
           <li>Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Rails and Node/TypeScript stacks on Google Cloud step by step closer.</li>
           <li>Co-built the event system on Redis Pub/Sub that became the integration layer between the two stacks and the base for new functionality, with Google Cloud Tasks as a fallback and for workload management.</li>
-          <li>Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and each new integration plugged into one shape.</li>
+          <li>Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.</li>
           <li>Tech lead for a team of 10 engineers, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD.</li>
         </ul>
       </div>
@@ -91,7 +91,7 @@ a { color: inherit; text-decoration: none; }
         <ul>
           <li>EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.</li>
           <li>RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers including Dave Thomas, Chad Fowler, Jose Valim and Armin Ronacher, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).</li>
-          <li>Led both end to end, budget and sponsorships included, with a small volunteer team. What EuRuKo taught me shaped RubyConf Austria: a venue chosen to cut risk, and an event sized to what I could reliably deliver.</li>
+          <li>Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver.</li>
         </ul>
       </div>
     </div>
@@ -132,7 +132,7 @@ a { color: inherit; text-decoration: none; }
     <div class="role">
       <h3>Usput.ba <span class="at">· my own product, live, within my own company</span></h3>
       <ul>
-        <li>A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone as a testbed for AI features: its content is written from real places pulled from a places API and its own database, not from the model's memory.</li>
+        <li>A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. I use it to try AI features on real users; descriptions are written from real place data, so the model doesn't make things up.</li>
       </ul>
     </div>
     <div class="role">
