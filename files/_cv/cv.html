@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Muhamed Isabegovic, CV</title>
+<style>
+@font-face { font-family: "Schibsted Grotesk"; src: url("../assets/fonts/schibsted-grotesk-latin.woff2") format("woff2"); font-weight: 400 900; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../assets/fonts/schibsted-grotesk-latin-ext.woff2") format("woff2"); font-weight: 400 900; unicode-range: U+0100-024F; }
+@page { size: A4; margin: 0; }
+:root { --ink: #111; --muted: #555; --rule: #111; --signal: #ffe14d; --chip: #f1f1ef; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Schibsted Grotesk", system-ui, sans-serif; color: var(--ink); font-size: 7.9pt; line-height: 1.3; }
+.page { width: 210mm; height: 297mm; padding: 8mm 10mm 6mm; overflow: hidden; }
+header { display: grid; grid-template-columns: 1.3fr 24mm 1fr; gap: 6mm; align-items: start; padding-bottom: 3.5mm; border-bottom: 2px solid var(--rule); }
+h1 { font-size: 21pt; line-height: .98; margin: 0 0 2mm; font-weight: 800; letter-spacing: -.01em; }
+.title { font-size: 10.5pt; font-weight: 600; margin: 0; display: inline; background: linear-gradient(transparent 58%, var(--signal) 58%); }
+.lead { margin: 1.5mm 0 0; font-size: 8.1pt; }
+.photo { width: 24mm; height: 28mm; object-fit: cover; border-radius: 2mm; }
+.contact { text-align: right; line-height: 1.6; font-size: 8.4pt; }
+main { display: grid; grid-template-columns: 1.62fr 1fr; gap: 6mm; margin-top: 3.5mm; }
+h2 { font-size: 10.5pt; margin: 0 0 1.6mm; padding-top: 1.2mm; border-top: 2px solid var(--rule); }
+section + section { margin-top: 2.4mm; }
+.role { margin-bottom: 1.8mm; }
+.role h3 { font-size: 9.2pt; margin: 0; font-weight: 700; }
+.role h3 .at { font-weight: 400; color: var(--muted); }
+.meta { color: var(--muted); font-size: 7.9pt; margin: .3mm 0 .6mm; }
+.umbrella { border-left: 2px solid var(--signal); padding-left: 3mm; margin: 1.5mm 0 2.5mm; }
+.umbrella .role { margin-bottom: 1.8mm; }
+ul { margin: .4mm 0 0; padding-left: 3.6mm; }
+li { margin: 0 0 .3mm; }
+li::marker { color: #c9a800; }
+.chips { display: flex; flex-wrap: wrap; gap: 1mm; }
+.chips span { background: var(--chip); border-radius: 3mm; padding: .5mm 2mm; font-size: 7.7pt; }
+.hat { font-weight: 700; font-size: 7.9pt; margin: 1.3mm 0 .6mm; }
+.plain p { margin: 0 0 1.4mm; }
+a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <div>
+    <h1>Muhamed<br>Isabegovic</h1>
+    <p class="title">Technical Lead / AI Product Developer</p>
+    <p class="lead">Product engineer with 10 years across product, backend, frontend and infrastructure, Ruby on Rails underneath. Since 2024 I have run my own company: founded two Ruby conferences and a product, and led engineering at a seed-stage startup through its acquisition by Carv.</p>
+  </div>
+  <img class="photo" src="../images/profile.jpg" alt="">
+  <div class="contact">
+    info@muhamed.at<br>Vienna, Austria<br>muhamed.at<br>linkedin.com/in/muhamed-isabegovic<br>x.com/m_isabegovic<br>github.com/misabegovic
+  </div>
+</header>
+<main>
+<div>
+  <section>
+    <h2>Experience</h2>
+    <div class="role">
+      <h3>Founder <span class="at">· Isabegovic Muhamed</span></h3>
+      <div class="meta">01/2024 - Present · Vienna, Austria</div>
+      <div class="meta">My own company: engineering roles inside startups, two Ruby conferences, and a product of my own.</div>
+    </div>
+    <div class="umbrella">
+      <div class="role">
+        <h3>Technical Lead <span class="at">· Recrubo, acquired by Carv</span></h3>
+        <div class="meta">Seed-stage AI platform for recruiters, around 10 people when I joined.</div>
+        <ul>
+          <li>After the acquisition, led the integration of both products: one Vue.js frontend, a shared database for clients and sessions, common ATS integrations, and the Rails, Node/TypeScript on Google Cloud and Flutter stacks brought step by step closer.</li>
+          <li>Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and new integrations plugged into one shape.</li>
+          <li>Co-built an event-driven system on Redis Pub/Sub with normalised events, and Google Cloud Tasks as fallback and for workload management.</li>
+          <li>Owned delivery with a PM, mentored 10 engineers, and owned DevOps on Google Cloud and CI/CD.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>AI Product Developer <span class="at">· Teamtailor, Co-pilot team</span></h3>
+        <div class="meta">ATS serving 8,500+ companies, on Rails and Ember.js.</div>
+        <ul>
+          <li>Built and shipped screening triggers in the hiring pipeline: screening criteria as a trigger, smart moves of candidates based on the criteria, and requests for missing information. Long-awaited screening upgrades, used extensively by every Co-pilot customer.</li>
+          <li>Designed a retrieval-augmented prescreening architecture: staged Sidekiq pipelines, pgvector per tenant, RubyLLM structured outputs and evals, built for the EU AI Act.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>Founder and organiser <span class="at">· EuRuKo 2024 and RubyConf Austria 2026</span></h3>
+        <ul>
+          <li>EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.</li>
+          <li>RubyConf Austria 2026, Vienna: up to 200 attendees, 13 speakers including Dave Thomas, Chad Fowler, Jose Valim and Armin Ronacher, workshops, 4 concerts, and a community day with a treasure hunt for €3,000 of rubies on hunt.rubyconf.at, an app I built (473 tests).</li>
+          <li>Led both end to end, budget and sponsorships included, with a few helpers; took EuRuKo's lessons into RubyConf Austria with a venue chosen to cut risk and an event sized to what I could deliver.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>Founder and CTO <span class="at">· Usput.ba</span></h3>
+        <ul>
+          <li>Rails 8.1 travel guide on RubyLLM, Hotwire and Kamal; content grounded in places retrieved from a places API and its own database, with schema-enforced output.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="role">
+      <h3>Senior Software Engineer <span class="at">· Meisterlabs</span></h3>
+      <div class="meta">11/2021 - 12/2024 · Vienna, Austria · Maker of MindMeister and MeisterTask</div>
+      <ul>
+        <li>Proposed, designed and built a dynamic plans and permissions system across Accounts, MindMeister and MeisterTask, replacing hardcoded feature checks scattered across apps, so product could set up plans and run billing experiments without developer time.</li>
+        <li>Built MindMeister product features and ran A/B experiments across markets for three years.</li>
+        <li>Split backend and frontend deployments into separate pipelines on Kubernetes, so the frontend team shipped daily, independent of backend releases; maintained and upgraded the cluster setup.</li>
+      </ul>
+    </div>
+    <div class="role">
+      <h3>Software Engineering Manager <span class="at">· Experfy</span></h3>
+      <div class="meta">10/2019 - 07/2021 (rejoined; junior engineer 2016 - 2017) · Led a remote team of ~30 engineers across 7 time zones through a 150 percent scale-up.</div>
+    </div>
+    <div class="role">
+      <h3>C++ Software Engineer <span class="at">· Marvelsoft</span></h3>
+      <div class="meta">01/2018 - 09/2019 · Fintech building trading workflow software</div>
+    </div>
+  </section>
+</div>
+<div>
+  <section>
+    <h2>Skills</h2>
+    <div class="hat">Product and AI</div>
+    <div class="chips"><span>LLM pipelines</span><span>RAG</span><span>LLM evaluation</span><span>Structured outputs</span><span>Agent guardrails</span><span>MCP</span><span>A/B experiments</span></div>
+    <div class="hat">Backend</div>
+    <div class="chips"><span>Ruby on Rails</span><span>Ruby</span><span>Node.js</span><span>TypeScript</span><span>Go</span><span>Python</span><span>PostgreSQL</span><span>Redis</span><span>Event-driven systems</span></div>
+    <div class="hat">Frontend and mobile</div>
+    <div class="chips"><span>Hotwire</span><span>Vue.js</span><span>Ember.js</span><span>Flutter</span></div>
+    <div class="hat">Infrastructure and DevEx</div>
+    <div class="chips"><span>Google Cloud</span><span>Kubernetes</span><span>CI/CD</span><span>Kamal</span><span>Architecture testing</span><span>Technical leadership</span><span>Mentoring</span></div>
+  </section>
+  <section>
+    <h2>Open Source</h2>
+    <div class="role">
+      <h3>enola <span class="at">· architectural regression testing</span></h3>
+      <ul><li>Core contributor: built the constraints program, declarative architecture rules evaluated over enola's fact graph, deterministic and fail-closed; maintain four Ruby gems around it.</li></ul>
+    </div>
+    <div class="role">
+      <h3>pi-brain <span class="at">· intent store for agentic development</span></h3>
+      <ul><li>Author and maintainer: human-gated agent workflows on the pi coding harness; on npm, 9 tagged releases.</li></ul>
+    </div>
+  </section>
+  <section>
+    <h2>Community</h2>
+    <div class="role">
+      <h3>Mentor and team lead</h3>
+      <div class="meta">BH Futures Foundation · 05/2018 - 09/2021 · Certificates of Excellence 2019, 2021</div>
+    </div>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <div class="role">
+      <h3>Technical University Vienna</h3>
+      <div class="meta">01/2022 - Present · Master student, Software Engineering & Internet Computing, Business Informatics</div>
+    </div>
+    <div class="role">
+      <h3>BSc Information Technology</h3>
+      <div class="meta">IPI Akademija Tuzla · 2016 - 2019 · C++ and Qt</div>
+    </div>
+  </section>
+  <section class="plain">
+    <h2>Languages</h2>
+    <p><b>Bosnian</b> native · <b>English</b> full professional · <b>German</b> limited working · <b>Spanish</b> elementary</p>
+  </section>
+</div>
+</main>
+</div>
+</body>
+</html>

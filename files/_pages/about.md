@@ -52,12 +52,11 @@ I also work with teams directly on AI-augmented development. See [Services](/ser
 
 ## Career Overview
 
-- (2026) AI Product Developer, contract @ [Teamtailor](https://www.teamtailor.com/)
-- (2026 - present) Founder & CTO @ [Usput.ba](https://usput.ba)
-- (2024 - present) Self-employed / Contractor
-- (2025 - present) Chief Organizer @ [RubyConf Austria](https://www.rubyconf.at/)
-- (2024 - 2026) Technical Lead @ [Carv](https://www.carv.com/)
-- (2023 - 2024) Chief Organizer @ [EuRuKo 2024](https://2024.euruko.org)
+- (2024 - present) Founder, own company (Isabegovic Muhamed), Vienna
+  - Technical Lead @ [Recrubo](https://recrubo.ai), acquired by [Carv](https://www.carv.com/)
+  - AI Product Developer @ [Teamtailor](https://www.teamtailor.com/), Co-pilot team
+  - Founder and organiser @ [EuRuKo 2024](https://2024.euruko.org) and [RubyConf Austria](https://www.rubyconf.at/)
+  - Founder & CTO @ [Usput.ba](https://usput.ba)
 - (2021 - 2024) Senior Software Engineer @ [Meisterlabs](https://www.meisterlabs.com/)
 - (2019 - 2021) Software Engineering Manager @ [Experfy](https://www.experfy.com/)
 - (2018 - 2019) Software Engineer @ [Marvelsoft](https://marvelsoft.net/)
