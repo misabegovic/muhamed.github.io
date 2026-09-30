@@ -320,9 +320,9 @@ community_logos:
   - { name: RubyConf Austria, logo: /images/logos/rubyconf-austria.svg, url: "https://www.rubyconf.at/" }
   - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, url: "https://2024.euruko.org" }
 community:
-  # evidence: community-euruko-2024
+  # evidence: community-rubyconf-austria, community-rubyconf-scale; community-euruko-2024
   - text: "Founded and organised RubyConf Austria 2026 in Vienna: up to 200 attendees and 13 speakers."
-  - text: Took full ownership of EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference.
+  - text: "Organised EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference: 700 attendees and 50 speakers from 25+ countries."
 
 # Real, attributed and permitted quotes only. Entries marked placeholder show
 # only while show_placeholders is on; replace each with a real quote (and drop
