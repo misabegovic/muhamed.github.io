@@ -321,7 +321,7 @@ community_logos:
   - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, url: "https://2024.euruko.org" }
 community:
   # evidence: community-euruko-2024
-  - text: Founded and organised RubyConf Austria 2026 in Vienna, with a programme including Dave Thomas, Chad Fowler, José Valim and Armin Ronacher.
+  - text: "Founded and organised RubyConf Austria 2026 in Vienna: up to 200 attendees and 13 speakers."
   - text: Took full ownership of EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference.
 
 # Real, attributed and permitted quotes only. Entries marked placeholder show
