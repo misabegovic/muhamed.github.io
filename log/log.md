@@ -180,3 +180,7 @@
    diff: 1 files, +5/-8
    restricted-paths: false
    by: agent
+2026-09-30 commit — 5e186d1: cv, home: drop the conference speakers' names
+   diff: 5 files, +4/-4
+   restricted-paths: false
+   by: agent
