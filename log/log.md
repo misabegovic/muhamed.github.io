@@ -184,3 +184,7 @@
    diff: 5 files, +4/-4
    restricted-paths: false
    by: agent
+2026-09-30 commit — b6fba46: home: the EuRuKo line gives its size, like the RubyConf one
+   diff: 1 files, +2/-2
+   restricted-paths: false
+   by: agent
