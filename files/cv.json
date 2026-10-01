@@ -255,6 +255,14 @@
   ],
   "projects": [
     {
+      "name": "treasure_hunt",
+      "roles": [
+        "author"
+      ],
+      "url": "https://github.com/Ruby-Austria/treasure_hunt",
+      "description": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS-verified clues, team play, hints on cooldowns, live leaderboards, offline support). Built for RubyConf Austria 2026 and open-sourced under MIT for any conference organizer."
+    },
+    {
       "name": "enola",
       "roles": [
         "core contributor"

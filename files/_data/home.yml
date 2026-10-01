@@ -59,7 +59,7 @@ side_projects:
       they place every seat-winning list and mandate exactly.
   - id: treasurehunt
     name: hunt.rubyconf.at
-    note: Built for RubyConf Austria 2026
+    note: Built for RubyConf Austria 2026 · open source
     url: https://hunt.rubyconf.at
     link_label: Visit hunt.rubyconf.at
     # evidence: proj-treasurehunt, proj-treasurehunt-features
@@ -67,6 +67,8 @@ side_projects:
       A location-based treasure hunt built for RubyConf Austria 2026: GPS
       proximity checks for each clue, team play, hints on cooldowns and live
       leaderboards, as an installable Rails 8.1 web app with offline support.
+      Now open source as <a href="https://github.com/Ruby-Austria/treasure_hunt">treasure_hunt</a>,
+      ready for any conference organizer to rebrand and self-host.
   - id: card-game
     name: Post-Dayton BiH
     note: A political strategy card game

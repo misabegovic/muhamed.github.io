@@ -188,3 +188,7 @@
    diff: 1 files, +2/-2
    restricted-paths: false
    by: agent
+
+## 2026-10-01
+
+- site: add treasure_hunt to /work (home.yml side project, open-source note + repo link), llms.txt open-source list, both CVs (_data/cv.json open_source + static cv.json projects); new brain stream note 'Your conference can have a treasure hunt now'. Jekyll build verified locally (llms.txt, /work/, /brain/, cv.json all render the new content).

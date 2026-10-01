@@ -64,6 +64,7 @@ Roles he is open to, permanent or contract: Senior Software Engineer, Staff Engi
 
 ## Open source
 
+- [treasure_hunt](https://github.com/Ruby-Austria/treasure_hunt): a location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints on cooldowns, live leaderboards); built for RubyConf Austria 2026, open-sourced under MIT for any organizer (author)
 - [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
 - [brain](https://github.com/misabegovic/brain): a spec-driven engineering knowledge base that people and agents work from
 - tabula: a local knowledge base for agents, written in Rust (in private development)

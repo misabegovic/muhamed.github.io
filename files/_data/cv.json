@@ -250,6 +250,11 @@
   ],
   "open_source": [
     {
+      "name": "treasure_hunt",
+      "role": "author",
+      "text": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS-verified clues, team play, hints on cooldowns, live leaderboards, offline support). Built for RubyConf Austria 2026 and open-sourced under MIT for any conference organizer."
+    },
+    {
       "name": "enola",
       "role": "core contributor",
       "text": "Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including enola-guides."
