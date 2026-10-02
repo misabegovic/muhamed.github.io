@@ -385,6 +385,30 @@ testimonials:
     initials: ZA
     avatar: /images/testimonials/zlatko.jpeg
     role: Worked with Muhamed at Recrubo/Carv
+  # Recommendation received 2026-10-01, pasted by the owner. Photo is his
+  # published avatar from hansschnedlitz.com.
+  - id: hans
+    quote: >-
+      The word that best describes Muhamed is "visionary". … I would gladly
+      work with him again. I have merely learned to be careful when he begins
+      a sentence with, "I have an idea."
+    full: >-
+      The word that best describes Muhamed is "visionary". I had the pleasure
+      of co-organising RubyConf Austria with him. For more than a year, I
+      watched Muhamed take ideas that sounded wildly unreasonable and somehow
+      make them a reality. His standard response was: "Don't worry about it.
+      It's going to be fine. We'll deal with it." When things went wrong,
+      Muhamed stayed calm, made a decision and got moving. He expected a great
+      deal from himself while remaining patient and generous with everyone
+      around him. His enthusiasm pushed the whole team to aim higher, and he
+      was genuinely fun to work with. Muhamed is a kind and capable leader. I
+      would gladly work with him again. I have merely learned to be careful
+      when he begins a sentence with, "I have an idea."
+    name: Hans Schnedlitz
+    initials: HS
+    avatar: /images/testimonials/hans.png
+    url: https://www.hansschnedlitz.com/
+    role: Co-organised RubyConf Austria with Muhamed
 
 closing:
   title: Working on something where AI has to hold up in production?
