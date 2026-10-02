@@ -193,3 +193,4 @@
 
 - site: add treasure_hunt to /work (home.yml side project, open-source note + repo link), llms.txt open-source list, both CVs (_data/cv.json open_source + static cv.json projects); new brain stream note 'Your conference can have a treasure hunt now'. Jekyll build verified locally (llms.txt, /work/, /brain/, cv.json all render the new content).
 - site: add Hans Schnedlitz testimonial (RubyConf Austria co-organizer) to home testimonials + both CVs; photo is his published avatar from hansschnedlitz.com (512x512 PNG), pending his explicit consent confirmation
+- site: Hans Schnedlitz confirmed consent for photo + recommendation (owner confirmed 2026-10-02); consent caveat closed
