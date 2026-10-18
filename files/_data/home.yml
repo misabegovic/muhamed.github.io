@@ -318,10 +318,13 @@ open_source:
 
 # evidence: community-rubyconf-austria, community-rubyconf-speakers
 # The event logos are white on transparent, drawn on the dark section.
+# goatconf: not yet in the evidence store; facts from misabegovic/goatconf (files/PRODUCT.md).
 community_logos:
+  - { name: GoatConf 2027, logo: /images/logos/goatconf.svg, url: "https://goatconf.com/" }
   - { name: RubyConf Austria, logo: /images/logos/rubyconf-austria.svg, url: "https://www.rubyconf.at/" }
   - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, url: "https://2024.euruko.org" }
 community:
+  - text: "Founding and organising GoatConf 2027 in Tuzla, Bosnia and Herzegovina, 3–5 June 2027: a free conference for people who build and sell software, hosted by IPI Academy."
   # evidence: community-rubyconf-austria, community-rubyconf-scale; community-euruko-2024
   - text: "Founded and organised RubyConf Austria 2026 in Vienna: up to 200 attendees and 13 speakers."
   - text: "Organised EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference: 700 attendees and 50 speakers from 25+ countries."

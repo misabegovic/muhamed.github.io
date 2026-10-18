@@ -194,3 +194,9 @@
 - site: add treasure_hunt to /work (home.yml side project, open-source note + repo link), llms.txt open-source list, both CVs (_data/cv.json open_source + static cv.json projects); new brain stream note 'Your conference can have a treasure hunt now'. Jekyll build verified locally (llms.txt, /work/, /brain/, cv.json all render the new content).
 - site: add Hans Schnedlitz testimonial (RubyConf Austria co-organizer) to home testimonials + both CVs; photo is his published avatar from hansschnedlitz.com (512x512 PNG), pending his explicit consent confirmation
 - site: Hans Schnedlitz confirmed consent for photo + recommendation (owner confirmed 2026-10-02); consent caveat closed
+
+## 2026-10-18
+
+- site: add GoatConf 2027 (goatconf.com) as the first community item. Home: new white-wordmark logo `images/logos/goatconf.svg` (built from goatconf's `site/brand/lockup-horizontal.svg`, text outlined), a lead line, and the heading drops "Ruby" ("I also bring the community together."). About, CV (source, `_data/cv.json`, `cv.json`) and llms.txt name it too; llms-full.txt picks it up from About. Facts from misabegovic/goatconf `files/PRODUCT.md`; not yet in the evidence store. Owner chose the wording, logo and scope in session.
+- cv: the PDF is re-rendered with Chromium and becomes three pages (owner's choice): page 1's Open Source column overflowed since the 2026-10-02 treasure_hunt entry, so "brain and tabula" moves to page 2 with Education, Languages and Community, and Recommendations get page 3. This supersedes "two pages" in the twelfth change of the homepage ADR; the contact page now says three-page PDF. The PDF now also carries the Hans Schnedlitz recommendation and treasure_hunt.
+- cv: known drift, left as is: running `.github/scripts/render-cv-data.js` would overwrite hand edits in both JSON files (the treasure_hunt URL and longer text, double quotes in the Hans quote), so the GoatConf lines were added to the JSON by hand.
