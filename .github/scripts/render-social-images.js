@@ -5,6 +5,7 @@ const { chromium } = require('playwright-core');
 // Renders the share preview, the LinkedIn and X headers and the service post
 // images into files/images/social/. Run from the repository root:
 //   CHROME=/path/to/chrome node .github/scripts/render-social-images.js
+// ONLY=<file name> renders just that image and leaves the others untouched.
 // Needs playwright-core. Copy comes from files/_data/home.yml and services.yml;
 // update it here when the services change.
 const SITE = path.join(__dirname, '..', '..', 'files');
@@ -12,6 +13,7 @@ const OUT = path.join(SITE, 'images/social');
 fs.mkdirSync(OUT, { recursive: true });
 const font = (f) => 'file://' + path.join(SITE, 'assets/fonts', f);
 const photo = 'file://' + path.join(SITE, 'images/profile.jpg');
+const goatconf = 'file://' + path.join(SITE, 'images/logos/goatconf.svg');
 
 const base = `
 @font-face { font-family: "SG"; src: url("${font('schibsted-grotesk-latin.woff2')}") format("woff2"); font-weight: 400 900; }
@@ -70,6 +72,19 @@ function share(w, h) {
   </div>`;
 }
 
+// One card per brain note that earns its own preview, in the share card's
+// layout: the note's title on the left, its subject's mark on the right.
+function goatconfNote(w, h) {
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
+    <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
+      <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
+      <h1 style="font-size:68px;align-self:center">GoatConf: a free conference in Tuzla, built like <mark>Pi</mark>.</h1>
+      <div class="muted" style="font-size:22px;font-weight:500">Tuzla · 3–5 June 2027 · Free to attend · <b style="color:var(--ink)">goatconf.com</b></div>
+    </div>
+    <div style="background:#0b3d91;display:grid;place-items:center"><img src="${goatconf}" alt="" style="width:280px;height:280px;object-fit:cover;object-position:left center"></div>
+  </div>`;
+}
+
 // Profile headers: one dark design for LinkedIn and X. One idea, in the
 // owner's words (2026-09-29): ownership, not a list of roles or clients.
 // Both networks put the avatar over the bottom-left and crop the edges on
@@ -86,6 +101,7 @@ function header(w, h, safeLeft) {
 
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
+  ['goatconf-2027.png', 1200, 630, goatconfNote(1200, 630)],
   ['linkedin-header.png', 1584, 396, header(1584, 396, 470)],
   ['x-header.png', 1500, 500, header(1500, 500, 450)],
   ...services.flatMap((s) => [
@@ -96,7 +112,7 @@ const jobs = [
 
 (async () => {
   const b = await chromium.launch({ executablePath: process.env.CHROME, args: ['--allow-file-access-from-files'] });
-  for (const [name, w, h, html] of jobs) {
+  for (const [name, w, h, html] of jobs.filter(([n]) => !process.env.ONLY || n === process.env.ONLY)) {
     const p = await b.newPage({ viewport: { width: w, height: h } });
     const file = path.join(require('os').tmpdir(), 'render-social.html');
     fs.writeFileSync(file, `<!doctype html><html><head><meta charset="utf-8"><style>${base}</style></head><body>${html}</body></html>`);

@@ -7,6 +7,11 @@ type: note
 date: 2026-10-18
 created_at: 2026-10-18T18:00:00+02:00
 tags: [conferences, goatconf, tuzla, bosnia, community, pi]
+image:
+  path: /images/social/goatconf-2027.png
+  width: 1200
+  height: 630
+  alt: "GoatConf: a free conference in Tuzla, built like Pi. Tuzla, 3–5 June 2027, free to attend, goatconf.com. The GoatConf goat seal on blue."
 ---
 
 After [EuRuKo 2024](https://2024.euruko.org) in Sarajevo and [RubyConf Austria](https://www.rubyconf.at/) in Vienna, I am starting a third conference: [GoatConf](https://goatconf.com/), in Tuzla, Bosnia and Herzegovina, on 3–5 June 2027. It is free to attend, and [IPI Academy](https://goatconf.com/supporter-ipi-academy.html), where I studied, is the host.
