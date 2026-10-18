@@ -14,7 +14,7 @@ image:
   alt: "GoatConf: a free conference in Tuzla, built like Pi. Tuzla, 3–5 June 2027, free to attend, goatconf.com. The GoatConf goat seal on blue."
 ---
 
-After [EuRuKo 2024](https://2024.euruko.org) in Sarajevo and [RubyConf Austria](https://www.rubyconf.at/) in Vienna, I am starting a third conference: [GoatConf](https://goatconf.com/), in Tuzla, Bosnia and Herzegovina, on 3–5 June 2027. It is free to attend, and [IPI Academy](https://goatconf.com/supporter-ipi-academy.html), where I studied, is the host.
+After [EuRuKo 2024](https://2024.euruko.org) in Sarajevo and [RubyConf Austria](https://www.rubyconf.at/) in Vienna, I am starting a third conference: [GoatConf](https://goatconf.com/), in Tuzla, Bosnia and Herzegovina, on 3–5 June 2027. It is free to attend, with [IPI Academy](https://goatconf.com/supporter-ipi-academy.html) as host and partner.
 
 **Why.** The goal fits in one sentence: get great minds together in an affordable environment, hang out, spend time together, learn, share experiences. Tuzla makes the affordable part easy. It is a cheap city, the food is very good, and the Pannonian Lakes, three salt lakes with a beach, sit in the middle of town.
 
