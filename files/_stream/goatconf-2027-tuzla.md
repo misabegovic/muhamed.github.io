@@ -13,7 +13,7 @@ After [EuRuKo 2024](https://2024.euruko.org) in Sarajevo and [RubyConf Austria](
 
 **Why.** The goal fits in one sentence: get great minds together in an affordable environment, hang out, spend time together, learn, share experiences. Tuzla makes the affordable part easy. It is a cheap city, the food is very good, and the Pannonian Lakes, three salt lakes with a beach, sit in the middle of town.
 
-**Not a Ruby conference.** GoatConf is for people who build and sell software: engineers, designers, product people, founders. Any language, any stack. Several speakers come from the Ruby world because I do, but the program does not.
+**Who it is for.** People who build and sell software: engineers, designers, product people, founders. Ruby is home for me and for several of the speakers, and Rubyists are very welcome. So is every other language and stack: the more mixed the rooms, the better the hallway conversations.
 
 **Built like Pi.** I like how [Pi](https://pi.dev/) works: a small core that others extend. GoatConf works the same way. I provide the core:
 
