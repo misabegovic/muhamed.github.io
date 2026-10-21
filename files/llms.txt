@@ -39,7 +39,7 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 ## Key pages
 
 - [Home]({{ site.url }}/): who he is, what he offers, and how to get in touch
-- [Services]({{ site.url }}/services/): the four ways to work together, and how an engagement runs
+- [Services]({{ site.url }}/services/): where teams usually start working with him (not a closed list), and how an engagement runs
 - [Work]({{ site.url }}/work/): what he does and how he knows, grouped by problem, plus side projects
 - [About]({{ site.url }}/about/): bio, career history, specialties, open source work
 - [Contact]({{ site.url }}/contact/): email and how to start

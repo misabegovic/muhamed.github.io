@@ -200,11 +200,12 @@ services_more: { label: Services in detail, url: /services/ }
 # Headings and framing for the middle of the page.
 sections:
   services:
-    title: Four ways to work together.
-    intro: Pick the one that fits where your team is today.
+    # Where teams usually start, not a closed list (owner, 2026-10-21).
+    title: How I can help.
+    intro: Where teams usually start with me. Something else in mind? Tell me about&nbsp;it.
   work:
     title: What teams bring me in for.
-    intro: Four problems teams bring me in for, with the work that shows it. More detail is in my CV.
+    intro: Problems teams bring me in for, with the work that shows it. More detail is in my CV.
   quotes:
     title: What people I have worked with say.
   tools:
