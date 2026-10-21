@@ -45,6 +45,16 @@ CONFIG
 # its own form.
 grep -rl 'src="/icon-192.png"' "$work/game/src" | xargs -r sed -i 's|src="/icon-192.png"|src="icon-192.png"|g'
 
+# The manifest has the same root-absolute paths: its icons 404 and an installed
+# copy would open the site's homepage. Paths in a manifest resolve against the
+# manifest's own URL, so relative ones stay under the base.
+sed -i -e 's|"start_url": "/"|"start_url": "./", "scope": "./"|' \
+  -e 's|"src": "/icon-|"src": "icon-|g' "$work/game/static/manifest.json"
+
+# The native apps lock zoom; on the web that blocks pinch-zoom for people who
+# need it, so the web edition leaves zoom to the browser.
+sed -i 's|, maximum-scale=1, user-scalable=no||' "$work/game/src/app.html"
+
 (cd "$work/game" && npx vite build >/dev/null)
 
 rm -rf "$dest"
