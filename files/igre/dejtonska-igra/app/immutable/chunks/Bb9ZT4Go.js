@@ -1,0 +1,1 @@
+import{_ as e}from"./BgrBaXk8.js";import{d as t}from"./AmyExFJ2.js";function n(e,n){return r(t(e)?.name??e,n)}function r(t,n){return n===`sr-Cyrl`?e(t):t}function i(e){return`${Math.round(e*100)}%`}export{i as n,n as r,r as t};

@@ -1,0 +1,1 @@
+import{A as e,D as t,H as n,K as r,O as i,_ as a,a as o,ft as s}from"./BHKXXJGT.js";import"./CLGWGhc9.js";var c=e(`<span> </span>`);function l(e,l){let u=o(l,`tone`,3,`copper`),d=o(l,`filled`,3,!1);var f=c();let p;var m=r(f,!0);s(f),n(()=>{p=a(f,1,`chip tone-${u()??``}`,`svelte-py53oc`,p,{filled:d()}),t(m,l.text)}),i(e,f)}export{l as t};

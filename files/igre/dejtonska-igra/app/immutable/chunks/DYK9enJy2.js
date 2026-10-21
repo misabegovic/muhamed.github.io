@@ -1,0 +1,1 @@
+import{t as e}from"./BmwSGdTN.js";import{t}from"./rY468nVZ.js";var n=t;function r(){return e()}function i(){let t=e();return t.phase=`AWAIT_CHOICE`,t.currentParty=n[0]??null,t.turn=5,t}export{r as n,i as t};

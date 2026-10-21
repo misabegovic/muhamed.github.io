@@ -1,0 +1,1 @@
+import{A as e,D as t,H as n,J as r,K as i,O as a,ft as o}from"./BHKXXJGT.js";import"./CLGWGhc9.js";var s=e(`<div class="row svelte-7nggkc"><span class="svelte-7nggkc"> </span> <b class="svelte-7nggkc"> </b></div>`);function c(e,c){var l=s(),u=i(l),d=i(u,!0);o(u);var f=r(u,2),p=i(f,!0);o(f),o(l),n(()=>{t(d,c.label),t(p,c.value)}),a(e,l)}export{c as t};

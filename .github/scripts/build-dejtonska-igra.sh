@@ -51,6 +51,10 @@ grep -rl 'src="/icon-192.png"' "$work/game/src" | xargs -r sed -i 's|src="/icon-
 sed -i -e 's|"start_url": "/"|"start_url": "./", "scope": "./"|' \
   -e 's|"src": "/icon-|"src": "icon-|g' "$work/game/static/manifest.json"
 
+# The layout widens /play-v4 by matching the pathname from the root, which
+# under the base path is "$base/play-v4"; match the segment anywhere instead.
+sed -i "s|page.url.pathname.startsWith('/play-v4')|page.url.pathname.includes('/play-v4')|" "$work/game/src/routes/+layout.svelte"
+
 # The native apps lock zoom; on the web that blocks pinch-zoom for people who
 # need it, so the web edition leaves zoom to the browser.
 sed -i 's|, maximum-scale=1, user-scalable=no||' "$work/game/src/app.html"
