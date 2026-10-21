@@ -28,12 +28,6 @@ hero:
   cv: { label: View my CV, url: /cv/ }
   secondary: { label: See how I can help, url: "#services" }
 
-# Three highlights on the homepage: the owner's own projects only.
-highlights:
-  - { anchor: usput, where: "AI Engineer, my own product", title: Usput.ba, line: A travel guide to Bosnia and Herzegovina, with AI content grounded in real places. }
-  - { anchor: izbori, where: Side project, title: Izbori 2026, line: A voter guide and seat projection covering all 7,028 candidates. }
-  - { anchor: treasurehunt, where: For RubyConf Austria, title: hunt.rubyconf.at, line: A location-based treasure hunt for conference attendees. }
-
 # Things the owner made. Link when public; mark private when not.
 side_projects:
   - id: usput
@@ -221,9 +215,6 @@ sections:
     intro: The tools behind my workshops are ones I build or help build. Most are open source, so you can read how they work before you bring me in.
   side:
     title: Stuff I've made, mostly for fun.
-  highlights:
-    title: A few things I have built.
-    link: { label: All work and side projects, url: /work/ }
   work_page:
     intro: >-
       Ten years of shipping products and leading the teams behind them, for
@@ -231,6 +222,9 @@ sections:
   stack:
     title: What I work with.
     intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
+    # The homepage shows the first two groups as pills; the rest is this line.
+    more: Plus Ruby, Rails, Go, Rust, TypeScript, PostgreSQL, Kubernetes and more.
+    more_link: { label: Full stack on About, url: /about/#tech-stack }
 
 # How every engagement runs, as three steps under the services. Empty: the
 # services page's How it works covers it (owner, 2026-09-29).
@@ -292,6 +286,7 @@ open_source:
   - name: enola
     role: Core contributor
     url: https://github.com/enola-labs/enola
+    outcome: Catches architecture drift in CI, so agent-written code keeps to the rules your team agreed on.
     # evidence: oss-enola-constraints
     text: >-
       Architectural regression testing for AI-assisted development. I built the
@@ -301,6 +296,7 @@ open_source:
   - name: pi-brain
     role: Author and maintainer
     url: https://github.com/misabegovic/pi-brain
+    outcome: Makes agents read your decisions before they edit, and keeps a person in charge of what they learn.
     # evidence: oss-pi-brain*
     text: >-
       An intent store for agentic development on the pi harness: human-gated
@@ -309,6 +305,7 @@ open_source:
   - name: tabula
     role: In private development
     url: ""
+    outcome: Lets teams of agents and people work in the same repository without stepping on each other.
     # evidence: not yet in the evidence store
     text: >-
       Shared memory for teams of agents and people, written in Rust: files and
@@ -326,42 +323,15 @@ community_logos:
 community:
   - text: "Founding and organising GoatConf 2027 in Tuzla, Bosnia and Herzegovina, 3–5 June 2027: a free conference for people who build and sell software, hosted by IPI Academy."
   # evidence: community-rubyconf-austria, community-rubyconf-scale; community-euruko-2024
-  - text: "Founded and organised RubyConf Austria 2026 in Vienna: up to 200 attendees and 13 speakers."
-  - text: "Organised EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference: 700 attendees and 50 speakers from 25+ countries."
+  - text: "Founded and organised RubyConf Austria 2026 in Vienna: up to <strong>200 attendees</strong> and <strong>13 speakers</strong>."
+  - text: "Organised EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference: <strong>700 attendees</strong> and <strong>50 speakers</strong> from <strong>25+ countries</strong>."
 
 # Real, attributed and permitted quotes only. Entries marked placeholder show
 # only while show_placeholders is on; replace each with a real quote (and drop
 # the placeholder line) as people agree to be quoted.
 testimonials:
-  # LinkedIn recommendation, 2021-07-20. quote is the short version shown
-  # first; full is the whole text, behind "Read the full recommendation".
   # avatar: a photo path under /images/testimonials/, only with the person's consent;
   # without one, the card shows their initials.
-  - quote: >-
-      Muhamed is one of the most amazing professionals I have ever worked with.
-      He is extremely talented, dependable, and disciplined. … I would strongly
-      recommend Muhamed and would love to work with him again.
-    full: >-
-      Muhamed is one of the most amazing professionals I have ever worked with.
-      He is extremely talented, dependable, and disciplined. Moreover, he is
-      always willing to push himself beyond limits to make a product
-      successful. With Muhamed's excellent communication and engineering
-      management skills everything is possible. At Experfy, Muhamed
-      single-handedly managed the team collaboration consisting of 7+
-      timezones. He has a vast reservoir of talent - enabling him to lead
-      Backend, Frontend, and DevOps teams with flying colors. In design
-      thinking sessions, Muhamed played a vital role with his powerful insight
-      about the product roadmap and technical knowledge. As an engineering
-      manager, he always backed his team with full support. In addition to
-      these Muhamed conducted extremely high-yielding Sprint retrospectives. He
-      was always willing to go the extra mile to increase productivity and
-      eliminate blockers. I would strongly recommend Muhamed and would love to
-      work with him again.
-    name: Hassan Akbar
-    initials: HA
-    avatar: /images/testimonials/hassan-avatar.webp
-    url: https://www.linkedin.com/in/hassanakbar/
-    role: Worked with Muhamed at Experfy, 2021
   # Recommendation received 2026-09-28, pasted by the owner.
   - id: zlatko
     quote: >-
@@ -388,6 +358,33 @@ testimonials:
     initials: ZA
     avatar: /images/testimonials/zlatko.webp
     role: Worked with Muhamed at Recrubo/Carv
+  # LinkedIn recommendation, 2021-07-20. quote is the short version shown
+  # first; full is the whole text, behind "Read the full recommendation".
+  - quote: >-
+      Muhamed is one of the most amazing professionals I have ever worked with.
+      He is extremely talented, dependable, and disciplined. … I would strongly
+      recommend Muhamed and would love to work with him again.
+    full: >-
+      Muhamed is one of the most amazing professionals I have ever worked with.
+      He is extremely talented, dependable, and disciplined. Moreover, he is
+      always willing to push himself beyond limits to make a product
+      successful. With Muhamed's excellent communication and engineering
+      management skills everything is possible. At Experfy, Muhamed
+      single-handedly managed the team collaboration consisting of 7+
+      timezones. He has a vast reservoir of talent - enabling him to lead
+      Backend, Frontend, and DevOps teams with flying colors. In design
+      thinking sessions, Muhamed played a vital role with his powerful insight
+      about the product roadmap and technical knowledge. As an engineering
+      manager, he always backed his team with full support. In addition to
+      these Muhamed conducted extremely high-yielding Sprint retrospectives. He
+      was always willing to go the extra mile to increase productivity and
+      eliminate blockers. I would strongly recommend Muhamed and would love to
+      work with him again.
+    name: Hassan Akbar
+    initials: HA
+    avatar: /images/testimonials/hassan-avatar.webp
+    url: https://www.linkedin.com/in/hassanakbar/
+    role: Worked with Muhamed at Experfy, 2021
   # Recommendation received 2026-10-01, pasted by the owner. Photo is his
   # published avatar from hansschnedlitz.com.
   - id: hans

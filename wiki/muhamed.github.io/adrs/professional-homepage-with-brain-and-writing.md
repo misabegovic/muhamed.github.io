@@ -10,6 +10,8 @@ sources:
   - files/_pages/about.md
   - files/_data/home.yml
   - files/_includes/home-page.html
+  - files/_includes/site-header.html
+  - files/assets/site.js
   - files/assets/home.css
   - files/assets/fonts/
 ---
@@ -274,7 +276,38 @@ game is free (the game's ADR-030 is amended to say so; the store apps keep
 their one purchase). The site copy is rebuilt from that commit with the
 existing build script; nothing else on the site changes.
 
+**2026-10-21, fifteenth change: the proof comes earlier, and the header works
+on phones.** A design critique of every page at 390, 820 and 1440 px
+(`.impeccable/critique/2026-10-21T12-57-56Z__files-index-html.md`, 24/36)
+found the evidence arriving late on a phone (the recommendations around screen
+8 of 15), a phone header that broke into three rows at 360 px with "About"
+clipped and 26 px tap targets, and two homepage cards cut short by unquoted
+commas in `home.yml`. The homepage order becomes hero, logos,
+recommendations (Zlatko first), services, community, stack, tools, latest,
+closing. The "A few things I have built" highlights leave the homepage: the
+owner did not want the Izbori voter guide promoted there, and chose to drop
+the section rather than swap the card. Izbori and the other side projects stay
+on the work page, and the guide stays at /politika/. The community heading drops "I also" and its
+items share one brightness, with the numbers in bold. The stack shows pills
+only for "What I build" and "AI and agents", without the yellow tint, and
+names the rest in one line linking to the full stack on About. Each tool
+leads with a one-line outcome above its paragraph. Under 860 px the header is
+the name and a Menu button that opens the links as full-width rows; on every
+width it slides away while scrolling down and returns on scroll up. Header,
+footer and text-link targets are at least 44 px. The work page stays
+anonymous and the CV engagements stay undated (twelfth change); the CV says
+once that they ran through the company, and its PDF link is a button.
+
 ## Approval
+
+The fifteenth change was chosen by the owner in session on 2026-10-21, one
+decision at a time from the critique's findings: the Menu toggle and the
+header that returns on scroll up, moving the recommendations up rather than
+adding a numbers strip, the community after services, the AI groups only in
+the stack, outcome lines first for the tools, keeping /work/ anonymous and the
+CV undated; then "yes" to the summary. Dropping the highlights section came after ("I
+don't think I should brag about that on my homepage", then "remove this from
+the homepage completely as a section"), with Izbori kept everywhere else.
 
 The fourteenth change was asked for by the owner in session on 2026-09-29
 ("needs to have a play button on its homepage, so folks can actually play

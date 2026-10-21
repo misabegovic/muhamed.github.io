@@ -1,15 +1,19 @@
 {% capture here %}{{ page.url | split: "/" | slice: 1 | first }}{% endcapture %}
+{% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
   <div class="wrap top-row">
     <a class="wordmark" href="{{ site.baseurl }}/">Muhamed Isabegovic</a>
-    <nav class="menu" aria-label="Main">
-      <a href="{{ site.baseurl }}/services/"{% if here == "services" %} aria-current="page"{% endif %}>Services</a>
-      <a href="{{ site.baseurl }}/work/"{% if here == "work" %} aria-current="page"{% endif %}>Work</a>
-      <a href="{{ site.baseurl }}/writing/"{% if here == "writing" %} aria-current="page"{% endif %}>Writing</a>
-      <a href="{{ site.baseurl }}/brain/"{% if here == "brain" %} aria-current="page"{% endif %}>Brain</a>
-      <a href="{{ site.baseurl }}/about/"{% if here == "about" %} aria-current="page"{% endif %}>About</a>
-    </nav>
-    <a class="button button-small" href="{{ site.baseurl }}/contact/"{% if here == "contact" %} aria-current="page"{% endif %}>Get in touch</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden><span class="menu-toggle-label">Menu</span></button>
+    <div class="top-menu" id="site-menu">
+      <nav class="menu" aria-label="Main">
+        <a href="{{ site.baseurl }}/services/"{% if here == "services" %} aria-current="page"{% endif %}>Services{{ arr }}</a>
+        <a href="{{ site.baseurl }}/work/"{% if here == "work" %} aria-current="page"{% endif %}>Work{{ arr }}</a>
+        <a href="{{ site.baseurl }}/writing/"{% if here == "writing" %} aria-current="page"{% endif %}>Writing{{ arr }}</a>
+        <a href="{{ site.baseurl }}/brain/"{% if here == "brain" %} aria-current="page"{% endif %}>Brain{{ arr }}</a>
+        <a href="{{ site.baseurl }}/about/"{% if here == "about" %} aria-current="page"{% endif %}>About{{ arr }}</a>
+      </nav>
+      <a class="button button-small" href="{{ site.baseurl }}/contact/"{% if here == "contact" %} aria-current="page"{% endif %}>Get in touch</a>
+    </div>
   </div>
 </header>
