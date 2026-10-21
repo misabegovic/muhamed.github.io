@@ -331,6 +331,24 @@ the tools I teach are ones I wrote.") and the three recommendations, instead
 of three self-claims and a single quote. The AI-native outcome line loses its
 yellow side stripe.
 
+**2026-10-21, eighteenth change: the site asks for collaboration, not a job.**
+Teams bring the owner in through his company; the site no longer advertises
+him as a candidate. The hero's availability line becomes "I work with teams
+through my own company, Isabegovic Muhamed e.U." instead of "Available now for
+a senior role or contract work", and the same wording replaces it in the site
+description, the Person JSON-LD and llms.txt. The homepage's "Hiring rather
+than contracting?" line is gone. The band that ends every page keeps two
+paths, now both ways to start working together: "Building something?" (to the
+contact page) and "Want a second opinion?" (the fixed-scope architecture
+review, as the small first step). The contact page drops "Hiring for a role"
+for "A second opinion", with the review's prefilled email, and its
+Availability row becomes "How I work: Through my own company". Lead's format
+reads "Fractional or interim" instead of "Part-time or full-time". /work/'s
+heading becomes "What teams bring me in for." llms.txt lists the ways teams
+bring him in instead of the roles he is open to, and the JSON-LD occupations
+drop Staff Engineer, Engineering Manager and VP of Engineering. The CV, its
+nav link and the role line are unchanged.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -355,6 +373,12 @@ nothing about price; "home chooses, page explains"; a Review deliverable
 outline; nothing that reads like an agency. The owner then asked for "Why me"
 to be improved and chose "let others say it" while keeping Zlatko, and asked
 for it to be delivered ("nice, lets deliver it to remote").
+
+The eighteenth change was asked for by the owner in session on 2026-10-21:
+optimise for contract work and consulting, not a full-time hire ("I want to
+make it so folks want to reach out to collaborate with me, to help them with
+something, provide a service etc."). The wording and the review as the second
+path are the agent's drafts, for the owner to adjust.
 
 The fourteenth change was asked for by the owner in session on 2026-09-29
 ("needs to have a play button on its homepage, so folks can actually play

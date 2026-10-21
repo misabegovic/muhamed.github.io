@@ -25,7 +25,7 @@ details:
     email:
       label: Email about leading your team
       subject: A technical lead for our team
-      body: ["The team and its size:", "What needs direction:", "Part-time or full-time:"]
+      body: ["The team and its size:", "What needs direction:", "How much of my time you need:"]
   Review:
     # The written review, part by part, in the order it is read. Built from
     # the earlier "What you get" lines; nothing added.

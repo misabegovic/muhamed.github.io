@@ -3,21 +3,21 @@ layout: page
 title: Get in touch
 permalink: /contact/
 intro: Email is the best way to reach me. Pick what fits and your mail app opens a short draft; a few lines is plenty to start.
-description: How to reach Muhamed Isabegovic about a senior engineering role or about help for your team with AI-native engineering.
+description: How to reach Muhamed Isabegovic about building something with your team, an architecture review, or a talk at your event.
 ---
 
 <div class="contact-options">
-  <section class="contact-option" id="role">
-    <h2>Hiring for a role</h2>
-    <p>You are looking for a senior engineer, a technical lead or an AI product developer, as an employee or on contract.</p>
-    <p class="contact-hint">Useful to include: the role, the team, and a link to the posting.</p>
-    <a class="button" href="mailto:info@muhamed.at?subject=A%20role%20on%20our%20team&amp;body=The%20role%3A%0D%0AThe%20team%3A%0D%0ALink%20to%20the%20posting%3A%0D%0A">Email about a role<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></a>
-  </section>
   <section class="contact-option" id="team">
     <h2>Help for your team</h2>
-    <p>You want a product or feature built, a technical lead for your team, a review of your architecture, or help making your company AI-native.</p>
+    <p>You want a product or feature built, a technical lead for your team, or help making your company AI-native.</p>
     <p class="contact-hint">Useful to include: what your team builds, how it uses AI today, and what you would like to change.</p>
     <a class="button" href="mailto:info@muhamed.at?subject=Help%20for%20our%20team&amp;body=What%20we%20build%3A%0D%0AHow%20we%20use%20AI%20today%3A%0D%0AWhat%20we%20would%20like%20to%20change%3A%0D%0A">Email about your team<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></a>
+  </section>
+  <section class="contact-option" id="review">
+    <h2>A second opinion</h2>
+    <p>You want an outside look at your codebase and architecture before a big change: fixed scope, one to two weeks.</p>
+    <p class="contact-hint">Useful to include: your product and stack, what worries you about it, and any deadline.</p>
+    <a class="button" href="mailto:info@muhamed.at?subject=An%20architecture%20review&amp;body=Our%20product%20and%20stack%3A%0D%0AWhat%20worries%20us%20about%20it%3A%0D%0AAny%20deadline%3A%0D%0A">Email about a review<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></a>
   </section>
   <section class="contact-option" id="speaking">
     <h2>Speaking at your event</h2>
@@ -29,7 +29,7 @@ description: How to reach Muhamed Isabegovic about a senior engineering role or 
 
 <dl class="contact-facts">
   <div><dt>Email</dt><dd><a href="mailto:info@muhamed.at">info@muhamed.at</a></dd></div>
-  <div><dt>Availability</dt><dd>Available now, for a senior role or contract work.</dd></div>
+  <div><dt>How I work</dt><dd>Through my own company, Isabegovic Muhamed e.U.</dd></div>
   <div><dt>Location</dt><dd>Vienna, Austria. Remote across Europe, on site in the DACH region.</dd></div>
   <div><dt>CV</dt><dd><a href="/cv/">View my CV</a>, also as a <a href="/cv/Muhamed_Isabegovic_CV.pdf" download>three-page PDF</a></dd></div>
   <div><dt>Elsewhere</dt><dd><a href="https://www.linkedin.com/in/muhamed-isabegovic/">LinkedIn</a>, <a href="https://github.com/misabegovic">GitHub</a></dd></div>

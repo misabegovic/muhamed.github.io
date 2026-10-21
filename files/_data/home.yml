@@ -20,9 +20,10 @@ hero:
     companies alike. I also help teams become AI-native, with open-source
     tools I build and teach.
   # evidence: constraint-earliest-start, constraint-location
+  # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   availability: >-
-    Available now for a senior role or contract work. Based in Vienna, working
-    remotely across Europe.
+    I work with teams through my own company, Isabegovic Muhamed e.U. Based in
+    Vienna, working remotely across Europe.
   primary: { label: Get in touch, url: /contact/ }
   cv: { label: View my CV, url: /cv/ }
   secondary: { label: See how I can help, url: "#services" }
@@ -167,12 +168,12 @@ services:
   - number: "02"
     name: Lead
     fits: When your team needs technical direction.
-    format: Part-time or full-time
+    format: Fractional or interim
     title: Technical lead for your team
     # evidence: role-carv-team, role-experfy-team
     text: >-
-      I lead your engineering team, part-time or full-time: technical
-      direction, architecture, delivery, and the people.
+      I lead your engineering team as a fractional or interim technical lead:
+      technical direction, architecture, delivery, and the people.
   - number: "03"
     name: Review
     fits: When you want to know where your system stands.
@@ -201,12 +202,9 @@ sections:
   services:
     title: Four ways to work together.
     intro: Pick the one that fits where your team is today.
-  hiring:
-    text: Hiring rather than contracting? I am also open to a senior engineering, technical lead or AI engineering role.
-    link: { label: Talk about a role, url: /contact/#role }
   work:
-    title: What you get when you hire me.
-    intro: Four things teams hire me for, with the work that shows it. More detail is in my CV.
+    title: What teams bring me in for.
+    intro: Four problems teams bring me in for, with the work that shows it. More detail is in my CV.
   quotes:
     title: What people I have worked with say.
   tools:
@@ -410,18 +408,18 @@ testimonials:
     url: https://www.hansschnedlitz.com/
     role: Co-organised RubyConf Austria with Muhamed
 
-# The band that ends every page (_includes/closing.html): one path for each
-# audience. The hiring text is the homepage's hiring line; the help text is
-# the band's earlier text.
+# The band that ends every page (_includes/closing.html): two ways to start
+# working together, the open conversation and the small fixed-scope first
+# step, then the plain address. No hiring path (owner, 2026-10-21).
 closing:
-  hire:
-    title: Hiring?
-    text: I am open to a senior engineering, technical lead or AI engineering role.
-    cta: Talk about a role
-    url: /contact/#role
   help:
-    title: Need help?
+    title: Building something?
     text: Tell me what you are building, and I will tell you honestly whether I can help.
     cta: Get in touch
-    url: /contact/
+    url: /contact/#team
+  review:
+    title: Want a second opinion?
+    text: Start with an architecture review. Fixed scope, one to two weeks, and a plan your team can act on.
+    cta: About the review
+    url: /services/#review
   email: info@muhamed.at
