@@ -13,7 +13,7 @@ layout: default
       {{ content }}
     </div>
     <aside class="about-card" aria-label="At a glance">
-      <img src="{{ site.baseurl }}{{ site.avatar }}" alt="Muhamed Isabegovic" width="1024" height="1024" loading="lazy">
+      <img src="{{ site.baseurl }}/images/profile-480.webp" srcset="{{ site.baseurl }}/images/profile-480.webp 480w, {{ site.baseurl }}/images/profile-800.webp 800w, {{ site.baseurl }}/images/profile-1200.webp 1200w" sizes="(max-width: 960px) 6rem, 22rem" alt="Muhamed Isabegovic" width="1024" height="1024" loading="lazy">
       <p class="about-name">{{ site.author }}</p>
       <p class="about-role">{{ h.person.role | replace: ', AI-native', ', <span class="nowrap">AI-native</span>' }}{% if h.person.credit %}<br>{{ h.person.credit }}{% endif %}</p>
       <p class="availability"><span class="dot" aria-hidden="true"></span>{{ h.hero.availability }}</p>

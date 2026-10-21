@@ -834,7 +834,6 @@ mark {
 
 .mines-board {
   display: grid;
-  grid-template-columns: repeat(var(--cols), var(--cell));
   gap: 2px;
   width: fit-content;
   max-width: 100%;
@@ -842,6 +841,7 @@ mark {
   border-radius: 0 0 var(--radius) var(--radius);
   background: var(--ink);
 }
+.mines-row { display: grid; grid-template-columns: repeat(var(--cols), var(--cell)); gap: 2px; }
 .mines-cell {
   display: grid;
   place-items: center;

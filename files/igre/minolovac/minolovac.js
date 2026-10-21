@@ -126,14 +126,21 @@
     board.innerHTML = "";
     board.style.setProperty("--cols", cols);
     cells = [];
+    let row;
     for (let i = 0; i < rows * cols; i++) {
+      if (i % cols === 0) {
+        row = document.createElement("div");
+        row.className = "mines-row";
+        row.setAttribute("role", "row");
+        board.appendChild(row);
+      }
       const b = document.createElement("button");
       b.type = "button";
       b.className = "mines-cell";
       b.setAttribute("role", "gridcell");
       b.tabIndex = i === 0 ? 0 : -1;
       b.dataset.i = i;
-      board.appendChild(b);
+      row.appendChild(b);
       cells.push({ el: b, revealed: false, flagged: false });
     }
     focusIndex = 0;

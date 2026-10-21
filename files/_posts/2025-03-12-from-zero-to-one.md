@@ -28,7 +28,7 @@ I wish I could tell you how, since then, I have completed the two master program
 
 At the time, my brain went into survival mode and I just focused on surviving at the company and providing value. For my first 2 years in Austria that was the top priority and, however small of an achievement this may seem, thank God, I was able to do it and secure a better legal status for my family.
 
-![statue, Bruno Catalano](/assets/images/statue.webp)
+![statue, Bruno Catalano](/assets/images/statue.webp){: width="528" height="600" loading="lazy"}
 
 If you've ever left your country to live somewhere else, you will understand what it means to go through the journey.
 The image above is of a sculpture by artist Bruno Catalano which symbolizes the hole created by leaving your country, your people, your life, everything you know. I see myself in this sculpture as well.
@@ -37,7 +37,7 @@ I had a successful life in Bosnia where I invested a lot of effort and time into
 
 ### The EuRuKo revolution
 
-![EuRuKo 2023](/assets/images/euruko2023.jpeg)
+![EuRuKo 2023](/assets/images/euruko2023.webp){: width="1400" height="933" loading="lazy"}
 
 Fast forward to 2023 and my attending of [EuRuKo in Vilnius, Lithuania](https://2023.euruko.org/).
 
@@ -46,7 +46,7 @@ Some angel must have watched over me, because I was able to survive the layoffs 
 
 I can't tell you exactly why I did it... maybe because I finally felt that I can or my nostalgia for Bosnia and my life there kicked in and was just too strong to ignore, I guess that's the best way I can explain it... but I pitched to host the [2024 edition of EuRuKo](https://2024.euruko.org/) and I won, with support from my teammates from Meister of course.
 
-![Meister - EuRuKo 2023](/assets/images/meisterfolks.jpg)
+![Meister - EuRuKo 2023](/assets/images/meisterfolks.webp){: width="1400" height="933" loading="lazy"}
 
 Just look at the vibe on this picture. As much as I knocked it out of the park with the pitch, my socially awkward persona, especially at the time, could never have won the vote without the support from them (and others that attended).
 
@@ -95,7 +95,7 @@ At the time of writing this blog post, I'm just a few months away from becoming 
 
 I am not sure what folks usually go through when they find out they will become a parent, but I can tell you that I freaked out. I was and still am very happy about it, don't get me wrong. However, the type of person I am, I immediately started analyzing everything in my life to see if it was stable enough to support and raise a small human being, where I could almost hear Sergey's words again echoing in my head "This is your problem now."
 
-![Baby photo](/assets/images/baby.jpg)
+![Baby photo](/assets/images/baby.webp){: width="330" height="220" loading="lazy"}
 
 Behold, the beautiful image that petrified me.
 

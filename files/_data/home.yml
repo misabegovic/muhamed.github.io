@@ -39,7 +39,7 @@ side_projects:
   - id: usput
     name: Usput.ba
     note: AI Engineer, my own product
-    logo: /images/logos/usput.png
+    logo: /images/logos/usput.webp
     url: https://usput.ba
     link_label: Visit usput.ba
     # evidence: proj-usput-web, proj-usput-ai-layer, proj-usput-retrieval-grounding
@@ -153,13 +153,13 @@ show_placeholders: false
 # A company shows its logo once it has agreed to be shown; until then, its
 # name. Put the file under files/images/logos/ and set logo to its path.
 companies:
-  - { name: Teamtailor, logo: /images/logos/teamtailor.png }
+  - { name: Teamtailor, logo: /images/logos/teamtailor.webp }
   - { name: Carv, logo: /images/logos/carv.webp }
-  - { name: Recrubo.ai, logo: /images/logos/recrubo.png }
-  - { name: Doctaphone, logo: /images/logos/doctaphone.png }
-  - { name: Meisterlabs, logo: /images/logos/meisterlabs.png }
+  - { name: Recrubo.ai, logo: /images/logos/recrubo.webp }
+  - { name: Doctaphone, logo: /images/logos/doctaphone.webp }
+  - { name: Meisterlabs, logo: /images/logos/meisterlabs.webp }
   - { name: Experfy, logo: /images/logos/experfy.webp }
-  - { name: Marvelsoft, logo: /images/logos/marvelsoft.png }
+  - { name: Marvelsoft, logo: /images/logos/marvelsoft.webp }
 
 services:
   - number: "01"
@@ -359,7 +359,7 @@ testimonials:
       work with him again.
     name: Hassan Akbar
     initials: HA
-    avatar: /images/testimonials/hassan-avatar.jpg
+    avatar: /images/testimonials/hassan-avatar.webp
     url: https://www.linkedin.com/in/hassanakbar/
     role: Worked with Muhamed at Experfy, 2021
   # Recommendation received 2026-09-28, pasted by the owner.
@@ -386,7 +386,7 @@ testimonials:
       can lead.
     name: Zlatko Alomerovic
     initials: ZA
-    avatar: /images/testimonials/zlatko.jpeg
+    avatar: /images/testimonials/zlatko.webp
     role: Worked with Muhamed at Recrubo/Carv
   # Recommendation received 2026-10-01, pasted by the owner. Photo is his
   # published avatar from hansschnedlitz.com.
@@ -409,7 +409,7 @@ testimonials:
       when he begins a sentence with, "I have an idea."
     name: Hans Schnedlitz
     initials: HS
-    avatar: /images/testimonials/hans.png
+    avatar: /images/testimonials/hans.webp
     url: https://www.hansschnedlitz.com/
     role: Co-organised RubyConf Austria with Muhamed
 
