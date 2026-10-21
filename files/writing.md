@@ -15,6 +15,7 @@ title: Writing
     <label class="visually-hidden" for="search">Search the writing</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
     <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
     <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
   </div>
 
   <div class="grid" id="cards">
@@ -22,11 +23,11 @@ title: Writing
     {% for post in sorted_posts %}
     <div class="card" data-text="{{ post.title | downcase }} {{ post.excerpt | strip_html | downcase }}" data-tags="{{ post.tags | join: ',' }}">
       <a class="card-link" href="{{ site.baseurl }}{{ post.url }}">
-        <div class="card-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+        <div class="card-date"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b %Y" }}</time></div>
         <h2 class="card-title">{{ post.title }}</h2>
         <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
       </a>
-      <div class="tags">{% for tag in post.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button">{{ tag }}</span>{% endfor %}</div>
+      <div class="tags">{% for tag in post.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button" aria-pressed="false">{{ tag }}</span>{% endfor %}</div>
     </div>
     {% endfor %}
   </div>
@@ -43,6 +44,7 @@ title: Writing
 <script>
 const search = document.getElementById('search');
 const clearFilters = document.getElementById('clear-filters');
+const resultCount = document.getElementById('result-count');
 const cards = Array.from(document.querySelectorAll('.card'));
 const loadMoreBtn = document.getElementById('load-more');
 const PAGE_SIZE = 6;
@@ -55,11 +57,12 @@ function parseQuery(input) {
   return { tags, text: textTokens.join(' ').toLowerCase() };
 }
 
+// Tags first, then a space, so typing after a tag click starts a new word
+// instead of extending the tag ("#ruby" + "x" used to become "#rubyx").
 function buildInput(tags, text) {
-  const parts = [];
+  const parts = tags.map(t => '#' + t);
   if (text) parts.push(text);
-  tags.forEach(t => parts.push('#' + t));
-  return parts.join(' ');
+  return parts.join(' ') + (parts.length && !text ? ' ' : '');
 }
 
 function setUrlParams(tags, text) {
@@ -76,7 +79,9 @@ function setUrlParams(tags, text) {
 
 function updateTagHighlights(tags) {
   document.querySelectorAll('.card .tag').forEach(tagEl => {
-    tagEl.classList.toggle('active', tags.includes(tagEl.dataset.tag.toLowerCase()));
+    const on = tags.includes(tagEl.dataset.tag.toLowerCase());
+    tagEl.classList.toggle('active', on);
+    tagEl.setAttribute('aria-pressed', String(on));
   });
 }
 
@@ -99,6 +104,7 @@ function updateVisibility() {
   clearFilters.classList.toggle('hidden', !search.value);
   document.getElementById('no-results').hidden = !(matched === 0 && cards.length > 0);
   updateTagHighlights(tags);
+  resultCount.textContent = search.value.trim() ? `${matched} of ${cards.length} posts` : '';
 }
 
 function toggleTag(tag) {

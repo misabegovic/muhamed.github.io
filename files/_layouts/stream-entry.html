@@ -4,7 +4,7 @@ code: true
 ---
 <article class="wrap post">
   <header class="page-head">
-    <p class="post-meta"><a href="{{ site.baseurl }}/brain/">Brain</a><span aria-hidden="true">/</span><span>{{ page.type }}</span><span aria-hidden="true">/</span><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    <p class="post-meta"><a href="{{ site.baseurl }}/brain/">Brain</a><span aria-hidden="true">/</span><span>{{ page.type }}</span><span aria-hidden="true">/</span><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %b %Y" }}</time></p>
     <h1 class="page-title">{{ page.title }}</h1>
     <p class="page-intro">{% if page.url_external %}From <a href="{{ page.url_external }}" target="_blank" rel="noopener">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</p>
   </header>
@@ -19,3 +19,4 @@ code: true
     <a class="text-link" href="{{ site.baseurl }}/brain/">Back to the brain</a>
   </footer>
 </article>
+{% include closing.html %}

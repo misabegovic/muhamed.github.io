@@ -1,0 +1,22 @@
+{%- comment -%}
+  The yellow band that ends every page: one path for each audience, then the
+  plain address. Copy in _data/home.yml (closing). A page may pass its own
+  help_title, help_text and help_url for the "need help" path.
+{%- endcomment -%}
+{%- assign c = site.data.home.closing -%}
+{%- capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture -%}
+<section class="closing" aria-label="Get in touch">
+  <div class="wrap closing-grid">
+    <div class="closing-path">
+      <h2 class="closing-title">{{ c.hire.title }}</h2>
+      <p class="closing-text">{{ c.hire.text }}</p>
+      <a class="button button-dark" href="{{ site.baseurl }}{{ c.hire.url }}">{{ c.hire.cta }}{{ arr }}</a>
+    </div>
+    <div class="closing-path">
+      <h2 class="closing-title">{{ include.help_title | default: c.help.title }}</h2>
+      <p class="closing-text">{{ include.help_text | default: c.help.text }}</p>
+      <a class="button button-dark" href="{{ site.baseurl }}{{ include.help_url | default: c.help.url }}">{{ c.help.cta }}{{ arr }}</a>
+    </div>
+    <p class="closing-mail-line">Or email <a class="closing-mail" href="mailto:{{ c.email }}">{{ c.email }}</a></p>
+  </div>
+</section>

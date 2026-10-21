@@ -1,7 +1,7 @@
 ---
 layout: stream-entry
 title: "Your conference can have a treasure hunt now"
-source: "shipped 1 October 2026"
+source: "GitHub: Ruby-Austria/treasure_hunt"
 url_external: "https://github.com/Ruby-Austria/treasure_hunt"
 type: note
 date: 2026-10-01

@@ -71,15 +71,4 @@ description: Hands-on product engineering, a technical lead for your team, archi
   </section>
 </div>
 
-<section class="closing" aria-labelledby="h-closing">
-  <div class="wrap closing-row">
-    <div>
-      <h2 id="h-closing" class="closing-title">{{ sv.closing.title }}</h2>
-      <p class="closing-text">{{ sv.closing.text }}</p>
-    </div>
-    <div class="closing-actions">
-      <a class="button button-dark" href="{{ site.baseurl }}/contact/#team">Get in touch{{ arr }}</a>
-      <a class="closing-mail" href="mailto:info@muhamed.at">info@muhamed.at</a>
-    </div>
-  </div>
-</section>
+{% include closing.html help_title=sv.closing.title help_text=sv.closing.text help_url="/contact/#team" %}

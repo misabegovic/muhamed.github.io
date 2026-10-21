@@ -15,33 +15,7 @@ Lately I also work one layer up, with agents writing the code. I build open-sour
 
 I also help companies become AI-native, in how they build and in what they build; see [Services](/services/).
 
-## Career Overview
-
-- (2024 - present) Founder, own company (Isabegovic Muhamed), Vienna: alongside Meisterlabs in 2024, my main work since 2025
-  - Technical Lead @ [Recrubo](https://recrubo.ai), acquired by [Carv](https://www.carv.com/)
-  - AI Product Developer @ [Teamtailor](https://www.teamtailor.com/), Co-pilot team
-  - Consultant @ [Doctaphone](https://doctaphone.com/en), a speech-to-text app for doctors
-  - Founder and organiser @ [EuRuKo 2024](https://2024.euruko.org), [RubyConf Austria](https://www.rubyconf.at/) and [GoatConf](https://goatconf.com/)
-  - AI Engineer @ [Usput.ba](https://usput.ba), my own product
-- (2021 - 2024) Senior Software Engineer @ [Meisterlabs](https://www.meisterlabs.com/)
-- (2019 - 2021) Lead Software Engineer @ [Experfy](https://www.experfy.com/)
-- (2018 - 2019) Software Engineer @ [Marvelsoft](https://marvelsoft.net/)
-- (2016 - 2017) Junior Software Engineer @ [Experfy](https://www.experfy.com/)
-
-## Education and languages
-
-- Master's studies in Software Engineering and Internet Computing, and Business Informatics, at [TU Wien](https://www.tuwien.ac.at/), part-time alongside work, since 2022
-- BSc in Information Technology, IPI Akademija Tuzla
-- Bosnian (native), English (full professional), German (limited working), Spanish (elementary)
-
-## Specialties
-
-- AI product engineering (RAG, LLM pipelines, evals, structured outputs)
-- AI agents and MCP, with guardrails for agent-written code
-- Spec-driven development
-- Software architecture and design
-- Technical leadership and engineering management
-- Community building and conference organising
+My career, education, languages and full skill set are on [my CV](/cv/).
 
 ## Open source
 
@@ -52,11 +26,6 @@ I also help companies become AI-native, in how they build and in what they build
   - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer. A generator plus `enola:init`, `enola:snapshot`, and `enola:check`; a fresh `rails new` goes from nothing to a caught architecture breach in seconds.
   - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer. Guides, a catalogue of architectural laws, worked examples, agent skills, and CI tooling.
   - [munola](https://rubygems.org/gems/munola): my own channel on top of enola, with a built-in recipe catalogue bound by detection.
-
-## Tech stack
-
-{% for group in site.data.home.stack %}- **{{ group.group }}:** {{ group.items | map: "name" | join: ", " }}
-{% endfor %}
 
 ## Things I love
 

@@ -417,7 +417,6 @@ mark {
 .work-quotes { margin-top: var(--section); }
 @media (min-width: 961px) { .capability-head { position: sticky; top: 2rem; align-self: start; } }
 .capability .proofs { align-self: start; align-content: start; }
-.work-cta { margin-top: calc(var(--section) * 0.75); }
 .cases > li,
 .compact > li { scroll-margin-top: 2rem; }
 .cases > li:target,
@@ -527,15 +526,17 @@ mark {
 .entries li { display: grid; gap: 0.2rem; padding-block: 1rem; border-bottom: 1px solid var(--line); }
 .entries a { font-weight: 600; line-height: 1.35; text-decoration: none; }
 .entries a:hover { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; }
+.entries .entry-text { font-size: var(--t-small); line-height: 1.45; color: var(--ink-2); }
 .entries time { font-size: var(--t-small); color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
 /* Closing */
 
 .closing { background: var(--yellow); padding-block: clamp(4rem, 2.5rem + 5vw, 7rem); }
-.closing-row { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 2rem 4rem; }
+.closing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem clamp(2rem, 1rem + 4vw, 5rem); }
+.closing-path { display: grid; justify-items: start; align-content: start; gap: 1.1rem; }
+.closing-mail-line { grid-column: 1 / -1; padding-top: 1.5rem; border-top: 1px solid rgb(0 0 0 / 0.15); font-size: var(--t-lead); color: #2b2a24; }
 .closing-title { max-width: 18ch; font-size: var(--t-h2); font-weight: 800; line-height: 1.04; letter-spacing: -0.03em; text-wrap: balance; }
-.closing-text { margin-top: 1.1rem; max-width: 44ch; font-size: var(--t-lead); color: #2b2a24; }
-.closing-actions { display: grid; justify-items: start; gap: 0.9rem; }
+.closing-text { max-width: 44ch; font-size: var(--t-lead); color: #2b2a24; }
 .closing-mail { font-weight: 600; }
 
 
@@ -684,6 +685,18 @@ mark {
 .index-page input[type="search"]:hover { border-color: var(--ink-3); }
 .index-page input[type="search"]:focus { outline: 3px solid var(--yellow); outline-offset: 0; border-color: var(--ink); }
 .index-page input::placeholder { color: var(--ink-3); }
+.index-page input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background: var(--ink);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3l10 10M13 3 3 13' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3l10 10M13 3 3 13' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  cursor: pointer;
+}
+.result-count { flex-basis: 100%; font-size: var(--t-small); font-weight: 600; color: var(--ink-2); }
+.result-count:empty { display: none; }
 .clear-filters { padding: 0; border: 0; background: none; color: var(--ink); font: inherit; font-weight: 600; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.3em; cursor: pointer; }
 .search-hint { flex-basis: 100%; font-size: var(--t-small); color: var(--ink-3); }
 .search-hint code { padding: 0.05em 0.35em; border-radius: 4px; background: var(--tint); font-size: 0.9em; }
@@ -739,10 +752,15 @@ mark {
 .contact-facts dt { font-weight: 700; }
 .contact-facts dd { margin: 0; color: var(--ink-2); }
 
-@media (max-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .portrait { max-width: 26rem; margin-left: 1.5rem; }
+/* Tablets keep the two-column hero and services down to 700px. */
+@media (max-width: 700px) {
+  .hero-grid,
   .services,
+  .closing-grid { grid-template-columns: 1fr; }
+  .portrait { max-width: 26rem; margin-left: 1.5rem; }
+}
+
+@media (max-width: 960px) {
   .tools,
   .flow,
   .flow-4 { grid-template-columns: 1fr; }
@@ -788,6 +806,9 @@ mark {
   .js .top.is-open .menu a { justify-content: space-between; min-height: 3.5rem; border-bottom: 1px solid var(--line); }
   .js .top.is-open .menu .arr { display: block; }
   .js .top.is-open .top-menu .button { justify-content: center; padding-block: 1.05rem; font-size: 1rem; }
+  .js .top.is-open { border-bottom: 3px solid var(--ink); }
+  .menu-open,
+  .menu-open body { overflow: hidden; }
 
   /* The webring widget sizes itself; keep it inside the narrowest screens. */
   #webring-widget,
@@ -796,7 +817,7 @@ mark {
   .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .foot-about { grid-column: 1 / -1; }
   .foot-nav ul { gap: 0; }
-  .foot-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  .foot-nav a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
 }
 
 @media (max-width: 380px) {
@@ -807,8 +828,20 @@ mark {
    how they look. */
 @media (pointer: coarse) {
   .text-link,
-  .quote-more summary { min-height: 44px; }
-  .quote-more summary { display: inline-flex; align-items: center; }
+  .button-small,
+  .quote-more summary,
+  .closing-mail,
+  .about-links a,
+  .row-name a,
+  .compact h3 a { min-height: 44px; }
+  .quote-more summary,
+  .closing-mail,
+  .about-links a,
+  .row-name a,
+  .compact h3 a { display: inline-flex; align-items: center; }
+  .about-links a { min-width: 44px; }
+  .chip,
+  .index-page .tag { min-height: 36px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

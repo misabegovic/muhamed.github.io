@@ -6,9 +6,8 @@
 
 # The caption beside the portrait in the first screen.
 person:
-  role: Senior product engineer and technical lead, AI-native
-  # A second line under the role, matching the LinkedIn headline's "| AI Engineer".
-  credit: AI Engineer
+  # One form everywhere, as on the CV and the LinkedIn headline.
+  role: Senior Product Engineer and Technical Lead, AI-native | AI Engineer
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
@@ -224,7 +223,7 @@ sections:
     intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
     # The homepage shows the first two groups as pills; the rest is this line.
     more: Plus Ruby, Rails, Go, Rust, TypeScript, PostgreSQL, Kubernetes and more.
-    more_link: { label: Full stack on About, url: /about/#tech-stack }
+    more_link: { label: Full stack on my CV, url: /cv/#cv-skills }
 
 # How every engagement runs, as three steps under the services. Empty: the
 # services page's How it works covers it (owner, 2026-09-29).
@@ -410,7 +409,18 @@ testimonials:
     url: https://www.hansschnedlitz.com/
     role: Co-organised RubyConf Austria with Muhamed
 
+# The band that ends every page (_includes/closing.html): one path for each
+# audience. The hiring text is the homepage's hiring line; the help text is
+# the band's earlier text.
 closing:
-  title: Working on something where AI has to hold up in production?
-  text: Tell me what you are building, and I will tell you honestly whether I can help.
-  cta: { label: info@muhamed.at, url: "mailto:info@muhamed.at" }
+  hire:
+    title: Hiring?
+    text: I am open to a senior engineering, technical lead or AI engineering role.
+    cta: Talk about a role
+    url: /contact/#role
+  help:
+    title: Need help?
+    text: Tell me what you are building, and I will tell you honestly whether I can help.
+    cta: Get in touch
+    url: /contact/
+  email: info@muhamed.at

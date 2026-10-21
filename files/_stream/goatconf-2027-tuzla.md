@@ -1,7 +1,7 @@
 ---
 layout: stream-entry
 title: "GoatConf: a free conference in Tuzla, built like Pi"
-source: "announced 18 October 2026"
+source: "goatconf.com"
 url_external: "https://goatconf.com/"
 type: note
 date: 2026-10-18

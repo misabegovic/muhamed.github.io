@@ -15,6 +15,7 @@ permalink: /brain/
     <label class="visually-hidden" for="search">Search the brain</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
     <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
     <div class="search-hint">Tip: type <code>#ruby</code> or <code>#agents</code> to filter by tag. Click a tag chip to toggle it.</div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
   </div>
 
   <div class="grid" id="cards">
@@ -23,14 +24,14 @@ permalink: /brain/
     {% unless entry.hidden_until and entry.hidden_until > site.time %}
     <div class="card" data-text="{{ entry.title | downcase }} {{ entry.source | downcase }} {{ entry.excerpt | strip_html | downcase }}" data-tags="{{ entry.tags | join: ',' }}">
       <a class="card-link" href="{{ entry.url }}">
-        <div class="card-type">{{ entry.type }}</div>
+        {% if entry.type != "note" %}<div class="card-type">{{ entry.type }}</div>{% endif %}
         <h2 class="card-title">{{ entry.title }}</h2>
         <div class="card-source">{{ entry.source }}</div>
         <p class="card-note">{{ entry.excerpt | strip_html | truncatewords: 24 }}</p>
       </a>
       <div class="card-meta">
-        <span class="tags">{% for tag in entry.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button">{{ tag }}</span>{% endfor %}</span>
-        <span>{{ entry.date | date: "%Y-%m-%d" }}</span>
+        <span class="tags">{% for tag in entry.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button" aria-pressed="false">{{ tag }}</span>{% endfor %}</span>
+        <time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%-d %b %Y" }}</time>
       </div>
     </div>
     {% endunless %}
@@ -55,6 +56,7 @@ permalink: /brain/
 <script>
 const search = document.getElementById('search');
 const clearFilters = document.getElementById('clear-filters');
+const resultCount = document.getElementById('result-count');
 const cards = Array.from(document.querySelectorAll('.card'));
 const loadMoreBtn = document.getElementById('load-more');
 const PAGE_SIZE = 6;
@@ -67,11 +69,12 @@ function parseQuery(input) {
   return { tags, text: textTokens.join(' ').toLowerCase() };
 }
 
+// Tags first, then a space, so typing after a tag click starts a new word
+// instead of extending the tag ("#ruby" + "x" used to become "#rubyx").
 function buildInput(tags, text) {
-  const parts = [];
+  const parts = tags.map(t => '#' + t);
   if (text) parts.push(text);
-  tags.forEach(t => parts.push('#' + t));
-  return parts.join(' ');
+  return parts.join(' ') + (parts.length && !text ? ' ' : '');
 }
 
 function setUrlParams(tags, text) {
@@ -88,7 +91,9 @@ function setUrlParams(tags, text) {
 
 function updateTagHighlights(tags) {
   document.querySelectorAll('.card .tag').forEach(tagEl => {
-    tagEl.classList.toggle('active', tags.includes(tagEl.dataset.tag.toLowerCase()));
+    const on = tags.includes(tagEl.dataset.tag.toLowerCase());
+    tagEl.classList.toggle('active', on);
+    tagEl.setAttribute('aria-pressed', String(on));
   });
 }
 
@@ -111,6 +116,7 @@ function updateVisibility() {
   clearFilters.classList.toggle('hidden', !search.value);
   document.getElementById('no-results').hidden = !(matched === 0 && cards.length > 0);
   updateTagHighlights(tags);
+  resultCount.textContent = search.value.trim() ? `${matched} of ${cards.length} entries` : '';
 }
 
 function toggleTag(tag) {

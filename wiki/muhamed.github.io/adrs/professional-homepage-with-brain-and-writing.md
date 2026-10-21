@@ -298,6 +298,26 @@ footer and text-link targets are at least 44 px. The work page stays
 anonymous and the CV engagements stay undated (twelfth change); the CV says
 once that they ran through the company, and its PDF link is a button.
 
+**2026-10-21, sixteenth change: every page ends with two paths, and About
+becomes the story.** The re-run critique
+(`.impeccable/critique/2026-10-21T13-26-54Z__files-index-html.md`, 25/36) found
+the hiring manager without a final ask on most pages, the role written three
+ways, About duplicating the CV in older styling, and the CV missing from the
+header. The yellow band becomes one shared include with two paths, "Hiring?"
+(Talk about a role) and "Need help?" (Get in touch), then the address, on Home,
+Services, Work, About, the CV, posts and brain entries; Services keeps its own
+text for the second path. The header swaps Brain for CV (Brain stays in the
+footer and the homepage list). The role is written one way everywhere, as on
+the CV and LinkedIn: "Senior Product Engineer and Technical Lead, AI-native |
+AI Engineer". About keeps the story, the open-source detail and the personal
+list, and points to the CV for career, education, languages and skills; the
+homepage's stack link now points to the CV's skills. Dates read "23 Jul 2026"
+everywhere; brain cards drop the "note" label; two brain entries name their
+source instead of an event; the tag filters show a pressed state and a count,
+and typing after a tag click no longer extends the tag. Tablets keep the
+two-column hero and services down to 700 px. The homepage keeps all three
+recommendations on phones.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -308,6 +328,13 @@ the stack, outcome lines first for the tools, keeping /work/ anonymous and the
 CV undated; then "yes" to the summary. Dropping the highlights section came after ("I
 don't think I should brag about that on my homepage", then "remove this from
 the homepage completely as a section"), with Izbori kept everywhere else.
+
+The sixteenth change was chosen by the owner in session on 2026-10-21 from the
+re-run critique: keep all three recommendations on phones, replace Brain with
+CV in the header, one date format, About as the story page, the two-path band
+everywhere, "AI Engineer" kept visible and written one way, and post
+descriptions in the homepage list. The services offer was left for a separate
+rework ("we should probably completely rework that section").
 
 The fourteenth change was asked for by the owner in session on 2026-09-29
 ("needs to have a play button on its homepage, so folks can actually play
