@@ -60,11 +60,12 @@
       <ol class="services" role="list">
         {% for service in h.services %}
         <li class="service">
-          <h3 class="service-name">{{ service.name }}</h3>
-          <p class="service-fits">{{ service.fits }}</p>
-          <p class="service-title">{{ service.title }}</p>
-          <p class="service-text">{{ service.text }}</p>
-          <p class="service-format">{{ service.format }}</p>
+          <a class="service-card" href="{{ site.baseurl }}/services/#{{ service.name | downcase }}">
+            <h3 class="service-name">{{ service.name }}</h3>
+            <p class="service-fits">{{ service.fits }}</p>
+            <p class="service-format">{{ service.format }}</p>
+            <span class="service-go">What you get{{ arr }}</span>
+          </a>
         </li>
         {% endfor %}
       </ol>

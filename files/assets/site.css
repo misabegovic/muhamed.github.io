@@ -277,7 +277,13 @@ mark {
 }
 
 .services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 1rem + 3vw, 3.5rem); }
-.service { padding-top: 1.5rem; border-top: 3px solid var(--ink); }
+.service { border-top: 3px solid var(--ink); }
+.service-card { display: grid; align-content: start; gap: 0.75rem; height: 100%; padding-top: 1.5rem; text-decoration: none; }
+.service-card:hover .service-name { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.15em; }
+.service-card .service-fits,
+.service-card .service-format { margin-top: 0; }
+.service-go { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.25rem; font-weight: 600; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.3em; }
+.service-card:hover .service-go { text-decoration-color: var(--ink); }
 .service-name { font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
 .service-title { margin-top: 0.5rem; font-weight: 650; }
 .service-text { margin-top: 0.9rem; color: var(--ink-2); }
@@ -285,15 +291,7 @@ mark {
 .section-intro { margin-top: 1rem; max-width: 44ch; font-size: var(--t-lead); line-height: 1.5; color: var(--ink-2); }
 .service-fits { margin-top: 0.6rem; font-size: var(--t-lead); line-height: 1.4; font-weight: 500; color: var(--ink); }
 .service-title { margin-top: 1.25rem; }
-.service-format {
-  display: inline-block;
-  margin-top: 1.25rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  background: var(--tint);
-  font-size: var(--t-small);
-  font-weight: 600;
-}
+.service-format { margin-top: 1.25rem; font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
 
 .flow {
   display: grid;
@@ -394,7 +392,13 @@ mark {
 .offer-title { margin-top: 1.1rem; font-weight: 650; }
 .offer-summary { font-size: var(--t-lead); line-height: 1.5; color: var(--ink); }
 .offer-label { margin: 1.75rem 0 1rem; font-size: var(--t-body); font-weight: 750; }
-.offer-outcome { margin-top: 1.5rem; padding-left: 1rem; border-left: 4px solid var(--yellow); font-weight: 500; }
+.offer-outcome { margin-top: 1.5rem; font-weight: 650; color: var(--ink); }
+.offer-cta { margin-top: 2rem; }
+.delivers { counter-reset: part; border-top: 1px solid var(--line); }
+.delivers li { counter-increment: part; display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); column-gap: 0.75rem; row-gap: 0.15rem; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+.delivers li::before { content: counter(part); grid-row: span 2; font-size: var(--t-h3); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+.delivers strong { font-weight: 750; }
+.delivers span { color: var(--ink-2); }
 .talks {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
@@ -410,9 +414,6 @@ mark {
 .svc-section { margin-top: var(--section); }
 .flow-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 2rem; }
 .svc-where { margin-top: 1.5rem; color: var(--ink-2); }
-.why { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.5rem clamp(2rem, 1rem + 4vw, 5rem); align-items: start; }
-.why-points { margin-block: 2rem 1.75rem; }
-.why-quote { margin: 0; }
 .work-side,
 .work-quotes { margin-top: var(--section); }
 @media (min-width: 961px) { .capability-head { position: sticky; top: 2rem; align-self: start; } }
@@ -769,7 +770,6 @@ mark {
   .capability,
   .offer,
   .talks,
-  .why,
   .stack-group,
   .row { grid-template-columns: 1fr; }
   .feature-head { position: static; }

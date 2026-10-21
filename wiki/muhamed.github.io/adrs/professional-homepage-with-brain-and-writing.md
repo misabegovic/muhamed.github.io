@@ -318,6 +318,19 @@ and typing after a tag click no longer extends the tag. Tablets keep the
 two-column hero and services down to 700 px. The homepage keeps all three
 recommendations on phones.
 
+**2026-10-21, seventeenth change: the services are presented as a choice,
+then an offer with its own email.** The offers, their names, formats and the
+absence of prices stay; only the presentation changes. The homepage's four
+cards show the name, the "When you..." line and the format, and each card
+links to its offer on /services/. On /services/ every offer ends with its own
+email button, prefilled like the contact page's cards. Review lists what the
+review delivers as four parts in reading order (where you stand, what holds,
+what will break, what to fix first), from its earlier "What you get" lines.
+"Why me" becomes "Why teams bring me in.": one line ("I build and I lead, and
+the tools I teach are ones I wrote.") and the three recommendations, instead
+of three self-claims and a single quote. The AI-native outcome line loses its
+yellow side stripe.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -335,6 +348,13 @@ CV in the header, one date format, About as the story page, the two-path band
 everywhere, "AI Engineer" kept visible and written one way, and post
 descriptions in the homepage list. The services offer was left for a separate
 rework ("we should probably completely rework that section").
+
+The seventeenth change was shaped with the owner in session on 2026-10-21:
+the problem is the presentation, not the offers; email stays the first step;
+nothing about price; "home chooses, page explains"; a Review deliverable
+outline; nothing that reads like an agency. The owner then asked for "Why me"
+to be improved and chose "let others say it" while keeping Zlatko, and asked
+for it to be delivered ("nice, lets deliver it to remote").
 
 The fourteenth change was asked for by the owner in session on 2026-09-29
 ("needs to have a play button on its homepage, so folks can actually play
