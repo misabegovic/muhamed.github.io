@@ -146,6 +146,7 @@ a:hover .arr { transform: translateX(3px); }
 .menu-toggle {
   display: none;
   align-items: center;
+  gap: 0.6rem;
   min-height: 44px;
   margin-left: auto;
   padding: 0 1rem;
@@ -158,8 +159,26 @@ a:hover .arr { transform: translateX(3px); }
   font-weight: 650;
   cursor: pointer;
 }
-.menu-toggle:hover,
-.menu-toggle[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+/* Three bars for Menu; the outer two turn into a cross for Close. The button
+   keeps its outline in both states. */
+.menu-toggle::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+  box-shadow: 0 -5px 0 currentColor, 0 5px 0 currentColor;
+}
+.menu-toggle[aria-expanded="true"]::before {
+  height: 14px;
+  box-shadow: none;
+  background:
+    linear-gradient(45deg, transparent calc(50% - 1px), currentColor calc(50% - 1px), currentColor calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(-45deg, transparent calc(50% - 1px), currentColor calc(50% - 1px), currentColor calc(50% + 1px), transparent calc(50% + 1px));
+}
+@media (hover: hover) {
+  .menu-toggle:hover { background: var(--ink); color: var(--paper); }
+}
 .menu a:hover,
 .menu a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.35em; }
 .button[aria-current="page"] { background: var(--ink); color: var(--yellow); }
@@ -782,6 +801,9 @@ mark {
    under the name instead. */
 @media (max-width: 860px) {
   .top-row { flex-wrap: wrap; gap: 0 1rem; min-height: 3.75rem; }
+  /* The name sets the first line's height, so the row does not shift up
+     when the open menu wraps in under it. */
+  .wordmark { min-height: 3.75rem; }
   .top-menu { width: 100%; flex-wrap: wrap; gap: 0 1.5rem; margin-left: 0; padding-bottom: 0.5rem; }
   .menu { flex-wrap: wrap; gap: 0 1.25rem; font-size: 1rem; }
   .js .menu-toggle { display: inline-flex; }
@@ -798,8 +820,9 @@ mark {
   .js .top.is-open .menu .arr { display: block; }
   .js .top.is-open .top-menu .button { justify-content: center; padding-block: 1.05rem; font-size: 1rem; }
   .js .top.is-open { border-bottom: 3px solid var(--ink); }
-  .menu-open,
-  .menu-open body { overflow: hidden; }
+  /* Lock the page on the root only: overflow on body as well would make body
+     the scroll container and unstick the header. */
+  .menu-open { overflow: hidden; }
 
   /* The webring widget sizes itself; keep it inside the narrowest screens. */
   #webring-widget,

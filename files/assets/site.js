@@ -17,7 +17,7 @@
     toggle.setAttribute("aria-expanded", String(open));
     label.textContent = open ? "Close" : "Menu";
     document.documentElement.classList.toggle("menu-open", open);
-    if (open) panel.querySelector("a").focus();
+    if (open) panel.querySelector("a").focus({ preventScroll: true });
     else if (returnFocus) toggle.focus();
   };
 
