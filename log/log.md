@@ -235,3 +235,5 @@
    by: agent
 - wiki: project-profile ADR draft takes the owner's answers: the pages promote the owner; enola-guides points to `misabegovic/enola-guides` ("Mine, it's the original one"); enola points to `enola-labs/enola`, leading with the owner's part. Still proposed.
    by: agent
+- site: removed four check screenshots the agent committed by mistake into `files/` (in 28bceaa and 12db719: menu-close-*.png, svc-head-*.png), which were also published at the site root. Cause: the check scripts wrote relative paths from the working directory; they now write to /tmp/impl only.
+   by: agent
