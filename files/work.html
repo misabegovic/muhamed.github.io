@@ -49,24 +49,16 @@ description: Selected work by Muhamed Isabegovic, from AI in production and the 
   </section>
   {% endif %}
 
-  {% if h.side_projects.size > 0 %}
-  <section class="work-side" aria-labelledby="h-side">
+  <section class="work-projects" aria-labelledby="h-projects">
     <div class="section-head">
-      <h2 id="h-side" class="section-title">{{ sx.side.title }}</h2>
+      <div>
+        <h2 id="h-projects" class="section-title">Projects.</h2>
+        <p class="section-intro">The tools I build and teach, and the things I make for fun, each with a page of its own.</p>
+      </div>
       <a class="text-link" href="{{ site.baseurl }}/projects/">All projects{{ arr }}</a>
     </div>
-    <ul class="compact" role="list">
-      {% for project in h.side_projects %}
-      <li id="{{ project.id }}">
-        {% if project.logo %}<img class="made-logo" src="{{ site.baseurl }}{{ project.logo }}" alt="" width="48" height="48">{% endif %}
-        <h3>{% if project.profile %}<a href="{{ site.baseurl }}{{ project.profile }}">{{ project.name }}</a>{% elsif project.url %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}{% if project.note %}<span>{{ project.note }}</span>{% endif %}</h3>
-        <p>{{ project.text }}</p>
-        {% if project.profile %}<a class="text-link case-link" href="{{ site.baseurl }}{{ project.profile }}">Read more{{ arr }}</a>{% elsif project.url %}<a class="text-link case-link" href="{{ project.url }}">{{ project.link_label }}{{ arr }}</a>{% endif %}
-      </li>
-      {% endfor %}
-    </ul>
+    {% include project-cards.html heading="h3" %}
   </section>
-  {% endif %}
 
 </div>
 {% include closing.html %}

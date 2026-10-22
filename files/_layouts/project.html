@@ -20,7 +20,9 @@ layout: default
         <p class="project-lead">{{ page.lead | default: entry.outcome | default: entry.text }}</p>
         <div class="hero-actions">
           {% if page.cta %}<a class="button" href="{% if page.cta.url contains '://' %}{{ page.cta.url }}{% else %}{{ site.baseurl }}{{ page.cta.url }}{% endif %}">{{ page.cta.label }}{{ arr }}</a>{% endif %}
-          {% for l in page.links limit: 2 %}<a class="text-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+          {%- assign cta_url = page.cta.url -%}
+          {%- assign hero_links = page.links | where_exp: "l", "l.url != cta_url" -%}
+          {% for l in hero_links limit: 2 %}<a class="text-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
         </div>
       </div>
       {% if page.facts.size > 0 %}

@@ -46,6 +46,7 @@ side_projects:
     name: Izbori 2026
     url: /politika/analiza-izbora/
     link_label: Open the guide
+    thumb: /images/projects/izbori/thumb
     # evidence: files/_pages/politika.md
     text: >-
       A plain-language voter guide and seat projection for the 2026 general
@@ -57,11 +58,12 @@ side_projects:
     note: Built for RubyConf Austria 2026 · open source
     url: https://hunt.rubyconf.at
     link_label: Visit hunt.rubyconf.at
+    profile: /projects/treasure-hunt/
     # evidence: proj-treasurehunt, proj-treasurehunt-features
     text: >-
       A location-based treasure hunt built for RubyConf Austria 2026: GPS
       proximity checks for each clue, team play, hints on cooldowns and live
-      leaderboards, as an installable Rails 8.1 web app with offline support.
+      leaderboards, as an installable Rails 8.1 web app with an offline fallback.
       Now open source as <a href="https://github.com/Ruby-Austria/treasure_hunt">treasure_hunt</a>,
       ready for any conference organizer to rebrand and self-host.
   - id: card-game
@@ -69,17 +71,20 @@ side_projects:
     note: A political strategy card game
     url: /igre/dejtonska-igra/
     link_label: Play it
-    # evidence: proj-card-game, proj-card-game-tests, proj-card-game-adrs
+    profile: /projects/post-dayton/
+    # evidence: proj-card-game, proj-card-game-tests, proj-card-game-adrs;
+    # numbers from klosaer/card-game at c3aa816, 2026-10-22
     text: >-
-      A card game with a pure TypeScript engine of about 100 modules, held by
-      3,374 tests and 33 decision records that a pre-push hook checks the code
-      against.
+      A card game with a pure TypeScript engine of about 110 modules, held by
+      4,161 tests and 42 decision records that a pre-push hook keeps
+      implemented.
 
   - id: minolovac
     name: Minolovac
     note: An educational minesweeper on real data
     url: /igre/minolovac/
     link_label: Play it
+    thumb: /images/projects/minolovac/thumb
     # evidence: ~/projects/usput.ba/app/controllers/minesweeper_controller.rb
     text: >-
       A minesweeper on map grids across Bosnia and Herzegovina, where a cell is
@@ -329,6 +334,7 @@ open_source:
   - name: tabula
     role: In private development
     url: ""
+    thumb: /images/projects/tabula/thumb
     outcome: Lets teams of agents and people work in the same repository without stepping on each other.
     # evidence: not yet in the evidence store
     text: >-
