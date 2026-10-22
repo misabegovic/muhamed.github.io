@@ -231,3 +231,5 @@
    by: agent
 - wiki: drafted the AI-suggested ADR `ai-suggestions/adrs/project-profile-pages.md` on the owner's ask: a `projects` collection published at `/work/<slug>/`, one layout, real screenshots and terminal captures (no video yet), the homepage and /work/ lists linking to the profiles, starting with enola and Usput.ba. Proposed, awaiting approval; nothing built.
    by: agent
+- wiki: revised the project-profile ADR draft on the owner's input: addresses `/projects/<slug>/` with a `/projects/` index (owner's choice); optional Remotion videos, click to play, size-capped, sources in their own repositories (owner: "Remotion can be a good option for videos on those pages too"); brain and enola-guides join the homepage tools list (brain was never in it since 4a4497a); enola-guides becomes a first profile, plus a brain stream entry on working with knowledge bases. Still proposed.
+   by: agent
