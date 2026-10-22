@@ -271,3 +271,5 @@
    by: agent
 - brain: new entry `tabula-taha-and-enola` on the owner's ask ("Process tabula, taha and cardo/enola combo as a brain stream card"): enola sees the code, tabula holds the intent and judges, taha does the work inside a mandate, and the loop between them, with the not-yet-built step (working a gap until it closes on its own) and taha's granted merges stated as they are. Written as "enola", not the codename, as on the rest of the site. Draft in the owner's voice, for his read before it ships.
    by: agent
+- site: the Ruby Webring widget in the footer loads with its layout styles only and takes the footer's look (Schibsted Grotesk, the muted title, outlined buttons that turn yellow on hover, a yellow focus ring, 44px targets on touch), instead of the white box with a system font it drew on the dark footer. One row on desktop; on phones the title sits above the buttons. Follows the homepage ADR's design system.
+   by: agent

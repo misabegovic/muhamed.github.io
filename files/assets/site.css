@@ -568,6 +568,18 @@ mark {
 .foot-nav a:hover { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; }
 .foot-base { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgb(255 255 255 / 0.14); font-size: var(--t-small); }
 
+/* The Ruby Webring widget loads with its layout styles only (data-styles
+   "layout"); these give it the footer's type and colours. Its reset sets
+   every property on its own elements, so each rule here is scoped to win. */
+.foot .webring-nav { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; max-width: 100%; margin: 0; padding: 0; font-family: var(--font); font-size: var(--t-small); }
+.foot .webring-nav .webring-title { margin: 0; color: var(--on-dark-2); font-weight: 500; line-height: 1.4; }
+.foot .webring-nav .webring-title:hover { color: var(--on-dark); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+.foot .webring-nav nav { flex-wrap: wrap; justify-content: flex-start; gap: 0.5rem; width: auto; }
+.foot .webring-nav .webring-btn { min-height: 2.5rem; padding: 0.4rem 0.85rem; border: 1px solid rgb(255 255 255 / 0.28); border-radius: var(--radius); color: var(--on-dark); font-weight: 600; line-height: 1.2; white-space: nowrap; transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out; }
+.foot .webring-nav .webring-btn:hover { border-color: var(--yellow); background: var(--yellow); color: var(--ink); }
+.foot .webring-nav a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+.foot .webring-nav svg { width: 1.05em; height: 1.05em; }
+
 /* Pages */
 
 .page,
@@ -835,10 +847,6 @@ mark {
      the scroll container and unstick the header. */
   .menu-open { overflow: hidden; }
 
-  /* The webring widget sizes itself; keep it inside the narrowest screens. */
-  #webring-widget,
-  #webring-widget .webring-nav { max-width: 100%; flex-wrap: wrap; }
-
   .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .foot-about { grid-column: 1 / -1; }
   .foot-nav ul { gap: 0; }
@@ -858,7 +866,8 @@ mark {
   .closing-mail,
   .about-links a,
   .row-name a,
-  .compact h3 a { min-height: 44px; }
+  .compact h3 a,
+  .foot .webring-nav .webring-btn { min-height: 44px; }
   .quote-more summary,
   .closing-mail,
   .about-links a,
