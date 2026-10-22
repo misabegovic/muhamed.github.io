@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "hook-2debaf5e-e812-4d4e-b480-d471fdade696-01792583278521251852-w1792653661976276440-entered-knowledge-base-promo",
+  "at": "2026-10-22T07:21:42Z",
+  "agent": "session",
+  "kind": "hook-injected",
+  "ref": "2debaf5e-e812-4d4e-b480-d471fdade696",
+  "note": "gate intent-first: knowledge-base-promo/src/Promo.tsx",
+  "written_ns": 1792653702749117383
+}

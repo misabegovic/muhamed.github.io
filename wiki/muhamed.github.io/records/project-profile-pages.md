@@ -22,6 +22,9 @@ sources:
   - files/_projects/enola.md
   - files/_projects/enola-guides.md
   - files/_projects/usput.md
+  - files/_projects/knowledge-bases.md
+  - files/_projects/brain.md
+  - files/_projects/pi-brain.md
 ---
 
 # Record — Project profile pages
@@ -33,7 +36,9 @@ Delivered on 2026-10-22 in a831a16 and cd9513a, pushed with 6c9286f, deployed an
 - brain and enola-guides joined the homepage tools list; the tool rows, /work/ and the footer link to the profiles; llms.txt and llms-full.txt list them.
 - A brain entry, "How I work with knowledge bases", drawn from enola-guides guides 9 to 12.
 
-Open: later profiles (brain, pi-brain, hunt.rubyconf.at, the card game); desktop screenshots of usput.ba are 1440 px wide and should be retaken from a normal browser or a local server; Usput.ba's own minesweeper still has the boards Minolovac replaced on 2026-10-22.
+First amendment delivered on 2026-10-22 in 1d5330b, deployed and checked live: `/projects/knowledge-bases/` (the practice, led by a 37 s Remotion video from ~/projects/knowledge-base-promo), `/projects/brain/` and `/projects/pi-brain/` answer 200 (source: files/_projects/knowledge-bases.md, files/_projects/brain.md, files/_projects/pi-brain.md). Nothing on them names or sizes a client's system.
+
+Open: later profiles (hunt.rubyconf.at, the card game); desktop screenshots of usput.ba are 1440 px wide and should be retaken from a normal browser or a local server; Usput.ba's own minesweeper still has the boards Minolovac replaced on 2026-10-22.
 
 ## Related
 

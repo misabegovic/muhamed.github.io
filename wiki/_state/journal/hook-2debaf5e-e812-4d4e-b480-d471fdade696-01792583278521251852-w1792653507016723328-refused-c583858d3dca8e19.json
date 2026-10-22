@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "hook-2debaf5e-e812-4d4e-b480-d471fdade696-01792583278521251852-w1792653507016723328-refused-c583858d3dca8e19",
+  "at": "2026-10-22T07:20:21Z",
+  "agent": "session",
+  "kind": "hook-blocked",
+  "ref": "2debaf5e-e812-4d4e-b480-d471fdade696",
+  "note": "gate intent-first: refused knowledge-base-promo/src/Promo.tsx",
+  "written_ns": 1792653621498180402
+}
