@@ -14,6 +14,17 @@ sources:
   - files/assets/site.js
   - files/assets/home.css
   - files/assets/fonts/
+  - ~/projects/usput.ba/wiki/decisions/minesweeper-safe-start.md
+  - ~/projects/usput.ba/app/controllers/minesweeper_controller.rb
+  - ~/projects/usput.ba/app/services/mine_checker
+  - ~/projects/usput.ba/app/javascript/controllers/minesweeper_controller.js
+  - ~/projects/usput.ba/app/views/minesweeper
+  - ~/projects/usput.ba/config/locales
+  - ~/projects/usput.ba/config/routes.rb
+  - ~/projects/usput.ba/test/services/mine_checker
+  - ~/projects/usput.ba/test/controllers/minesweeper_controller_test.rb
+  - ~/projects/usput.ba/wiki/decisions
+  - ~/projects/usput.ba/wiki/product/features.md
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -365,6 +376,12 @@ instead (larger boards or cells at the preset) was measured and rejected:
 Sarajevo stays at 25% or more even at 30 by 30 cells of 600 m. The density
 line no longer says the count "mirrors real statistics"; it gives the
 board's own share. The map link points at each board's centre.
+The same change goes to Usput.ba's minesweeper, the same game on real map
+tiles, under Usput's own decision (usput.ba wiki/decisions/minesweeper-safe-start.md):
+its preset boards take these centres, and `MineChecker::SafeStart` opens
+the largest safe pocket before the first move, on custom boards too. It is
+built on a local branch, `minesweeper-safe-start`, for the owner to review
+and ship with Usput's own checks.
 
 ## Approval
 
