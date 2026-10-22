@@ -25,6 +25,8 @@ sources:
   - files/_projects/knowledge-bases.md
   - files/_projects/brain.md
   - files/_projects/pi-brain.md
+  - files/_projects/treasure-hunt.md
+  - files/_projects/post-dayton.md
 ---
 
 # Record — Project profile pages
@@ -38,7 +40,9 @@ Delivered on 2026-10-22 in a831a16 and cd9513a, pushed with 6c9286f, deployed an
 
 First amendment delivered on 2026-10-22 in 1d5330b, deployed and checked live: `/projects/knowledge-bases/` (the practice, led by a 37 s Remotion video from ~/projects/knowledge-base-promo), `/projects/brain/` and `/projects/pi-brain/` answer 200 (source: files/_projects/knowledge-bases.md, files/_projects/brain.md, files/_projects/pi-brain.md). Nothing on them names or sizes a client's system.
 
-Open: later profiles (hunt.rubyconf.at, the card game); desktop screenshots of usput.ba are 1440 px wide and should be retaken from a normal browser or a local server; Usput.ba's own minesweeper still has the boards Minolovac replaced on 2026-10-22.
+Delivered on 2026-10-22 in 06dfc49, deployed and checked live: `/projects/treasure-hunt/` and `/projects/post-dayton/` answer 200, and /projects/ and /work/ render the same project cards from one include, every project with a thumbnail (source: files/_projects/treasure-hunt.md, files/_projects/post-dayton.md).
+
+Open: desktop screenshots of usput.ba are 1440 px wide and should be retaken from a normal browser or a local server; Usput.ba's own minesweeper still has the boards Minolovac replaced on 2026-10-22.
 
 ## Related
 
