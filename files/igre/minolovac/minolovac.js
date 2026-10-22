@@ -60,12 +60,14 @@
 
   const t = () => TEXT[lang];
 
-  function setLang(next) {
+  // Only a click on the toggle is remembered (under a new key, so the
+  // "bs" earlier versions stored on every first visit is ignored).
+  function setLang(next, remember) {
     lang = next === "bs" ? "bs" : "en";
     root.dataset.lang = lang;
     root.lang = lang;
     root.querySelectorAll("[data-set-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
-    try { localStorage.setItem("minolovac-lang", lang); } catch (e) {}
+    if (remember) { try { localStorage.setItem("minolovac-lang-choice", lang); } catch (e) {} }
     if (data) { renderDensity(); relabelAll(); if (!factEl.hidden) showFact(true); if (over) statusEl.textContent = statusEl.dataset.won === "1" ? t().win : t().lose; }
   }
 
@@ -297,14 +299,12 @@
   flagModeBtn.addEventListener("click", () => flagModeBtn.setAttribute("aria-pressed", String(flagModeBtn.getAttribute("aria-pressed") !== "true")));
   $("[data-restart]").addEventListener("click", () => newGame(false));
   root.querySelectorAll("[data-level]").forEach((b) => b.addEventListener("click", () => { level = b.dataset.level; newGame(true); }));
-  root.querySelectorAll("[data-set-lang]").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.setLang)));
+  root.querySelectorAll("[data-set-lang]").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.setLang, true)));
 
   let saved = null;
-  try { saved = localStorage.getItem("minolovac-lang"); } catch (e) {}
-  // English, like the rest of the site, unless the visitor chose otherwise
-  // or reads in Bosnian, Croatian, Serbian or Montenegrin.
-  const local = (navigator.languages || [navigator.language || ""]).some((l) => /^(bs|hr|sr|sh|cnr)\b/i.test(l));
-  setLang(saved || (local ? "bs" : "en"));
+  try { saved = localStorage.getItem("minolovac-lang-choice"); } catch (e) {}
+  // English, like the rest of the site, unless the visitor chose Bosnian.
+  setLang(saved || "en");
 
   fetch("boards.json")
     .then((res) => res.json())
