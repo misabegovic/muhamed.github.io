@@ -52,6 +52,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Record — Upstream template sync](brain/records/upstream-template-sync.md)
 - [Record — pi-brain v0.2.0 release](brain/records/version-0-2-0.md)
 - [Record — Host the Izbori 2026 voter guide on muhamed.at](muhamed.github.io/records/host-izbori2026-under-politika.md)
+- [Record — Project profile pages](muhamed.github.io/records/project-profile-pages.md)
 - [Record — Update pi-brain to v0.4.0 in this hybrid clone](muhamed.github.io/records/update-pi-brain-v0-4-0-hybrid-clone.md)
 
 ### meta

@@ -249,3 +249,5 @@
    by: agent
 - igre: Minolovac opens in English, like the rest of the site, on the owner's ask ("Why not have it in English?"); Bosnian when the browser lists Bosnian, Croatian, Serbian or Montenegrin, and a saved choice from the toggle still wins. Checked with en-US, bs-BA, de-AT+hr and bs with a saved English choice.
    by: agent
+- wiki: record `records/project-profile-pages.md` after delivery (pushed 6c9286f, deploy and validate green, all profile URLs 200 live; the four stray screenshots now 404). brain_sync run.
+   by: agent
