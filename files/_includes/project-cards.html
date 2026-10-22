@@ -35,7 +35,7 @@
     <li class="project-card" id="{{ item.id | default: item.name }}">
       {% if href %}<a class="project-card-link" href="{{ href }}">{% else %}<div class="project-card-link">{% endif %}
         {% if thumb %}<img class="project-card-thumb" src="{{ site.baseurl }}{{ thumb }}-800.webp" alt="" width="800" height="500" loading="lazy">{% endif %}
-        <h3>{{ profile.title | default: item.name }}</h3>
+        <h3>{{ profile.title | default: item.name }}{% if profile.coming_soon %} <span class="soon-badge soon-badge-inline">Coming soon</span>{% endif %}</h3>
         <p class="project-card-role">{{ item.role | default: item.note }}</p>
         <p class="project-card-text">{{ item.outcome | default: item.text | strip_html }}</p>
         {% if profile %}<span class="service-go">Read more{{ arr }}</span>{% elsif href %}<span class="service-go">{{ item.link_label | default: "Visit" }}{{ arr }}</span>{% endif %}

@@ -4,7 +4,7 @@
 # profile; nothing here names or sizes a client's system. The video is
 # rendered from ~/projects/knowledge-base-promo (Remotion), 2026-10-22.
 title: How I work with knowledge bases
-description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, across brain, pi-brain, enola, enola-guides and tabula.
+description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, across brain, pi-brain, enola, enola-guides, tabula and taha.
 thumb: /images/projects/knowledge-bases/thumb
 image: /images/social/project-knowledge-bases.png
 lead: Decisions written down, anchored to the code they govern, checked in CI, and read by agents before they write. The method I run my own work on, and what I set up for teams.
@@ -14,12 +14,13 @@ links:
   - { label: pi-brain, url: "/projects/pi-brain/", note: "decisions agents must read, on pi" }
   - { label: enola, url: "/projects/enola/", note: "one graph of the code, laws in CI" }
   - { label: enola-guides, url: "/projects/enola-guides/", note: "the method written down" }
-  - { label: "tabula", url: "/projects/#tools", note: "shared memory for teams; in private development" }
+  - { label: tabula, url: "/projects/tabula/", note: "hold every agent to what you wrote; coming soon" }
+  - { label: taha, url: "/projects/taha/", note: "agents that work unattended inside a mandate; coming soon" }
   - { label: The method in plain words, url: "/brain/how-i-work-with-knowledge-bases/", note: "a note in my brain" }
 facts:
-  - { label: Tools, value: "brain, pi-brain, enola, enola-guides and tabula, all built by me" }
+  - { label: Tools, value: "brain, pi-brain, enola, enola-guides, tabula and taha, all built by me" }
   - { label: Scale, value: "One knowledge base across all the repositories of a system" }
-  - { label: In the open, value: "Four of the five tools, and this site's own wiki" }
+  - { label: In the open, value: "Four of the six tools, and this site's own wiki" }
   - { label: For, value: "Teams that build with coding agents" }
 hero:
   kind: video
@@ -100,9 +101,9 @@ features:
         41eceaa wiki: project profile ADR draft takes the owner's answers on repositories
         d1293af wiki: revise project profile ADR draft (projects URLs, video, brain, enola-guides)
         01b5101 wiki: draft ADR for project profile pages
-  - title: Share it across a team.
+  - title: One tool for all of it, and agents you can leave alone.
     text: |
-      When several agents and people work in the same repositories, tabula is their shared memory: files and git as the truth, claims as leases so agents never collide, and a journal of who did what. It is in private development.
+      [tabula](/projects/tabula/) brings the practice into one tool: understand a system you inherited, write down what it should become, and hold every agent to it, with claims as leases and a journal no command rewrites. [taha](/projects/taha/) runs an agent unattended inside a mandate, with tabula holding the gates. Both are coming soon.
 shows:
   title: What I set up for a team.
   text: |

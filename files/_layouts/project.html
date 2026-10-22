@@ -16,6 +16,7 @@ layout: default
     <a class="project-back" href="{{ site.baseurl }}/projects/"><svg class="arr arr-back" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>All projects</a>
     <div class="project-hero-grid">
       <div class="project-hero-copy">
+        {% if page.coming_soon %}<p class="soon-badge">Coming soon</p>{% endif %}
         <h1 class="project-title">{{ page.title }}</h1>
         <p class="project-lead">{{ page.lead | default: entry.outcome | default: entry.text }}</p>
         <div class="hero-actions">
@@ -95,6 +96,21 @@ layout: default
   {% if story != "" %}
   <section class="section section-rule" aria-label="The story">
     <div class="wrap"><div class="prose project-story">{{ content }}</div></div>
+  </section>
+  {% endif %}
+
+  {% if page.coming_soon %}
+  <section class="section section-rule" aria-labelledby="p-soon">
+    <div class="wrap feature">
+      <div>
+        <p class="soon-badge">Coming soon</p>
+        <h2 id="p-soon" class="section-title">{{ page.coming_soon.title | default: "Screens and real runs, soon." }}</h2>
+      </div>
+      <div>
+        <div class="project-text project-shows">{{ page.coming_soon.text | markdownify }}</div>
+        {% if page.coming_soon.email %}<p class="project-shows-link"><a class="button" href="mailto:{{ site.data.home.closing.email }}?subject={{ page.coming_soon.email.subject | url_encode | replace: '+', '%20' }}&amp;body={{ page.coming_soon.email.body | url_encode | replace: '+', '%20' }}">{{ page.coming_soon.email.label }}{{ arr }}</a></p>{% endif %}
+      </div>
+    </div>
   </section>
   {% endif %}
 

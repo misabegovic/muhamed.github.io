@@ -1170,3 +1170,7 @@ div.project-card-link { cursor: default; }
 .closing-mail-line .copy-email { margin-left: 0.6rem; }
 .contact-nomail .copy-email { display: flex; width: fit-content; margin: 0.75rem 0 0; }
 @media (max-width: 640px) { .closing-mail-line .copy-email { margin-left: 0; } }
+
+/* Coming soon: a project with a page and no release yet. */
+.soon-badge { display: inline-flex; align-items: center; width: fit-content; margin-bottom: 1rem; padding: 0.2rem 0.7rem; border-radius: 999px; background: var(--yellow); color: var(--ink); font-size: var(--t-small); font-weight: 700; letter-spacing: 0.01em; }
+.soon-badge-inline { margin: 0 0 0 0.5rem; padding: 0.1rem 0.55rem; font-size: 0.75rem; vertical-align: 0.35em; letter-spacing: 0; }

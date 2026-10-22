@@ -202,6 +202,20 @@ ink, one yellow, Schibsted Grotesk), and every terminal or file line in it
 is real output already shown on the enola and enola-guides profiles. The
 site commits only the rendered web cut and its poster.
 
+**2026-10-22, second amendment: coming-soon profiles for tabula and taha.**
+The owner asked to "refresh the tabula entry from claude-brain intent", add
+its page "but leave space for coming soon", and introduce the tabula harness
+(taha) "the same way". A profile can now be marked `coming_soon`: a badge on
+the page and its card, a section that keeps room for the screens and real
+runs to come, and an early-access email instead of repository links (both
+repositories are private). The copy comes from the intent in the owner's
+private brain, product-level only: no client, employer or third-party
+names, no private test cases, no commercial plans, and no date, as none is
+stated. tabula's line on the homepage becomes "Understand a system you
+inherited, write down what it should become, and hold every agent to it."
+The knowledge-bases page and its video (knowledge-base-promo/src/Promo.tsx)
+count six tools instead of five.
+
 ## Approval
 
 Approved by the owner in session on 2026-10-22 ("Approved."), with the
