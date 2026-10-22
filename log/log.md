@@ -233,3 +233,5 @@
    by: agent
 - wiki: revised the project-profile ADR draft on the owner's input: addresses `/projects/<slug>/` with a `/projects/` index (owner's choice); optional Remotion videos, click to play, size-capped, sources in their own repositories (owner: "Remotion can be a good option for videos on those pages too"); brain and enola-guides join the homepage tools list (brain was never in it since 4a4497a); enola-guides becomes a first profile, plus a brain stream entry on working with knowledge bases. Still proposed.
    by: agent
+- wiki: project-profile ADR draft takes the owner's answers: the pages promote the owner; enola-guides points to `misabegovic/enola-guides` ("Mine, it's the original one"); enola points to `enola-labs/enola`, leading with the owner's part. Still proposed.
+   by: agent

@@ -172,19 +172,26 @@ change of the homepage ADR).
   owner's part clear and use enola's name and any logo the way the project
   allows.
 
+## Answered by the owner
+
+- **The pages promote the owner** ("Point is to promote me"). Each profile
+  leads with what he made and why it matters to a team that might bring him
+  in.
+- **enola-guides is the owner's**, and its profile points to
+  `misabegovic/enola-guides`, the original ("Mine, it's the original one");
+  `enola-labs/enola-guides` is a fork of it.
+- **enola points to `enola-labs/enola`** ("For enola, point to enola-labs").
+  The page leads with the owner's part (the constraints program, the Ruby
+  DSL, the gems) and links the project at enola-labs.
+
 ## Open questions for the human reviewer
 
-1. For enola: should the page show only your part (constraints, DSL, gems),
-   or enola as a whole with your part highlighted? Should anyone at
-   enola-labs see it before it goes live?
+1. For enola: should anyone at enola-labs see the page before it goes live?
 2. For Usput.ba: which screens best show it (a place page, an audio tour, the
    map)? Is anything on the site not ready to be shown? Is the July promo
    still current enough to cut for the web, and does its sound need
    captions (speech) or none (music only)?
-3. For enola-guides: should the profile live under enola-labs's name (the
-   `enola-labs/enola-guides` fork) or yours (`misabegovic/enola-guides`,
-   which the gem's source link points to)?
-4. Should the homepage tool rows link to the profile instead of the
+3. Should the homepage tool rows link to the profile instead of the
    repository (the proposal), or keep the repository link and add the
    profile?
 
