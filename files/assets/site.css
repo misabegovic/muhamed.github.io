@@ -1174,3 +1174,7 @@ div.project-card-link { cursor: default; }
 /* Coming soon: a project with a page and no release yet. */
 .soon-badge { display: inline-flex; align-items: center; width: fit-content; margin-bottom: 1rem; padding: 0.2rem 0.7rem; border-radius: 999px; background: var(--yellow); color: var(--ink); font-size: var(--t-small); font-weight: 700; letter-spacing: 0.01em; }
 .soon-badge-inline { margin: 0 0 0 0.5rem; padding: 0.1rem 0.55rem; font-size: 0.75rem; vertical-align: 0.35em; letter-spacing: 0; }
+.project-plan { margin-top: 0; }
+.plan-status { display: inline-flex; width: fit-content; margin-bottom: 0.75rem; padding: 0.1rem 0.6rem; border: 1px solid var(--line); border-radius: 999px; font-size: 0.8125rem; font-weight: 650; color: var(--ink-2); }
+.plan-status-built { border-color: var(--ink); background: var(--ink); color: var(--yellow); }
+.plan-status-in-progress { border-color: var(--yellow); background: rgb(255 210 31 / 0.25); color: var(--ink); }

@@ -78,6 +78,31 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.plan.size > 0 %}
+  {%- comment -%} The full plan of a coming-soon project, theme by theme, each
+  with where it stands: working (built, not yet released), in progress, or
+  planned. {%- endcomment -%}
+  <section class="section section-rule" aria-labelledby="p-plan">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="p-plan" class="section-title">{{ page.plan_title | default: "Everything it will do." }}</h2>
+          {% if page.plan_intro %}<p class="section-intro">{{ page.plan_intro }}</p>{% endif %}
+        </div>
+      </div>
+      <ul class="project-more project-plan" role="list">
+        {% for t in page.plan %}
+        <li>
+          <p class="plan-status plan-status-{{ t.status | slugify }}">{% case t.status %}{% when "built" %}Working today{% when "in progress" %}In progress{% else %}Planned{% endcase %}</p>
+          <h3>{{ t.title }}</h3>
+          <div class="project-text">{{ t.text | markdownify }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
   {% if page.video %}
   <section class="project-video" aria-labelledby="p-video">
     <div class="wrap">

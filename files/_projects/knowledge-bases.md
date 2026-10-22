@@ -4,21 +4,21 @@
 # profile; nothing here names or sizes a client's system. The video is
 # rendered from ~/projects/knowledge-base-promo (Remotion), 2026-10-22.
 title: How I work with knowledge bases
-description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, across brain, pi-brain, enola, enola-guides, tabula and taha.
+description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, on enola, tabula and taha, his main tools.
 thumb: /images/projects/knowledge-bases/thumb
 image: /images/social/project-knowledge-bases.png
 lead: Decisions written down, anchored to the code they govern, checked in CI, and read by agents before they write. The method I run my own work on, and what I set up for teams.
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:
-  - { label: brain, url: "/projects/brain/", note: "the knowledge base an agent maintains" }
-  - { label: pi-brain, url: "/projects/pi-brain/", note: "decisions agents must read, on pi" }
   - { label: enola, url: "/projects/enola/", note: "one graph of the code, laws in CI" }
-  - { label: enola-guides, url: "/projects/enola-guides/", note: "the method written down" }
-  - { label: tabula, url: "/projects/tabula/", note: "hold every agent to what you wrote; coming soon" }
+  - { label: tabula, url: "/projects/tabula/", note: "understand what you inherited, hold every agent to it; coming soon" }
   - { label: taha, url: "/projects/taha/", note: "agents that work unattended inside a mandate; coming soon" }
+  - { label: enola-guides, url: "/projects/enola-guides/", note: "the method written down" }
+  - { label: pi-brain, url: "/projects/pi-brain/", note: "decisions agents must read, on pi; usable today" }
+  - { label: brain, url: "/projects/brain/", note: "the knowledge base it started with" }
   - { label: The method in plain words, url: "/brain/how-i-work-with-knowledge-bases/", note: "a note in my brain" }
 facts:
-  - { label: Tools, value: "brain, pi-brain, enola, enola-guides, tabula and taha, all built by me" }
+  - { label: Main tools, value: "enola, tabula and taha, with enola-guides, pi-brain and brain beside them; enola I build with its team, the rest are mine" }
   - { label: Scale, value: "One knowledge base across all the repositories of a system" }
   - { label: In the open, value: "Four of the six tools, and this site's own wiki" }
   - { label: For, value: "Teams that build with coding agents" }

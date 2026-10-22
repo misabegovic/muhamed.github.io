@@ -9,17 +9,17 @@ home_key: taha
 coming_soon:
   title: Real runs, soon.
   text: |
-    taha, the tabula harness, is in private development and runs a single operator's work today. This page will show real runs once it has earned them: finished mandates, a crash recovered, and work that passed tabula's gates.
+    taha, the tabula harness, is in private development and runs my own work today, one person at a time. This page will show real runs once it has earned them: finished mandates, a crash recovered, and work that passed tabula's gates.
 
     If you want an agent that works unattended inside limits you set, write to me.
   email:
     label: Ask about early access
     subject: taha, early access
     body: "What we would hand to an agent:\nWhat it must never do:\n"
-description: taha, the tabula harness by Muhamed Isabegovic, runs a coding agent durably inside a mandate, with tabula holding the intent and the gates, and comes back with draft pull requests. Coming soon.
+description: taha, the tabula harness by Muhamed Isabegovic, runs a coding agent durably inside a mandate, with tabula holding the intent and the gates, and comes back with checked work. Coming soon.
 image: /images/social/project-taha.png
 thumb: /images/projects/taha/thumb
-lead: Lets a coding agent work unattended inside a mandate you set, and come back with draft pull requests you can trust.
+lead: Lets a coding agent work unattended inside a mandate you set, and come back with finished, checked work you can trust.
 cta: { label: Ask about early access, url: "#p-soon" }
 links:
   - { label: tabula, url: "/projects/tabula/", note: "holds the intent, the journal and the gates; coming soon too" }
@@ -35,33 +35,56 @@ hero:
   src: /images/projects/taha/thumb
   width: 1600
   height: 1000
-  alt: "taha, the tabula harness, in private development: lets a coding agent work unattended inside a mandate and come back with draft pull requests you can trust."
+  alt: "taha, the tabula harness, in private development: lets a coding agent work unattended inside a mandate and come back with finished, checked work you can trust."
 problem:
   title: An agent you can leave alone needs limits it cannot argue with.
   text: |
     Handing a coding agent a task and walking away means trusting it with your repositories, your credentials and your time. taha makes the limits part of the run instead.
 
     The host decides nothing tabula can decide. A bug in the host can at worst stop a run, never pass a gate.
-features_title: What it will do.
-features:
-  - title: Durable runs.
+plan_title: Everything taha will do.
+plan_intro: "The full plan, theme by theme. Working today means built and in use on my own work, though not yet released."
+plan:
+  - title: Runs that survive a crash.
+    status: built
     text: |
-      Each piece of work is one durable conversation on pi and Pi Durable. Kill the process mid-task and it resumes where it was, without running anything twice.
+      Each piece of work is one durable conversation on Pi Durable, kept in a local database. Kill the process and it resumes where it stopped, with nothing run twice; every run a dead process left behind can be picked up again, and every step is mirrored into tabula's journal.
   - title: A mandate bounds every run.
+    status: built
     text: |
-      A file says which repositories are in scope, which acts are allowed, the budget in tokens and minutes, when it expires, and whether a person watches. A mandate can only tighten, and changing it halts the run.
-  - title: Halts end with a report.
+      You write one mandate: the repositories in scope, the acts allowed, an expiry, and budgets in tokens, minutes, steps and, if you like, money. A mandate can only tighten, and changing its file halts the run. A halt ends with its reason and a report. A queue is worked to the end, follow-ups included, and workflow pages run as flows with subagents and fan-out.
+  - title: Every act recorded before it happens.
+    status: built
     text: |
-      A spent budget, an expired mandate, an act reserved for the operator, a review that does not agree: the run stops and says why, instead of pushing on.
-  - title: Every outward act is journaled first.
+      Each tool says what happens if a crash cuts it off: safe to run again, check whether it already happened, or wait for a person. Every outward write is recorded in the journal as an intent before it runs.
+  - title: One GitHub connector, with firm rules.
+    status: built
     text: |
-      Before the agent touches anything outside its sandbox, the intent goes into tabula's journal. Each tool says what happens if a crash cuts it off halfway.
-  - title: Drafts, never merges.
+      It creates branches, pushes, opens draft pull requests and comments. It never pushes to the default branch, never force-pushes, and refuses AI attribution. Anything public or someone else's waits for the person in charge. Pull requests stay drafts unless a mandate grants merging for your own private repository, and then only after local CI, evaluation, a clean merge and a reviewer's yes; the first bad merge takes the grant away.
+  - title: No credentials, and a sandbox.
+    status: built
     text: |
-      Pull requests are always drafts. It never merges, never pushes to the default branch, and the agent's shell holds no credentials, so it has nothing to act outward with.
-  - title: Done is tabula's call.
+      The agent's shell holds no tokens, keys or SSH, and a guard reads every command word by word. Each piece of work can run in its own KVM guest with no network, and the host reviews the diff before taking it. Without KVM the run stops; it never falls back to your machine.
+  - title: tabula is the judge.
+    status: built
     text: |
-      Whether work is finished, which decisions govern it and what comes next are answered by tabula, not by the agent or the host.
+      No file changes until the work is aligned with its intent in tabula. A piece is done, or opens its draft, only when `tabula evaluate` reads every line as met; tabula decides which decisions go into the brief and which steps are open. The host decides nothing tabula can decide.
+  - title: Review that converges, and a council.
+    status: built
+    text: |
+      A reviewer with fresh eyes finds defects, independent verifiers confirm them, and review runs for a bounded number of rounds. A council of three, on worth, fit for the user and technical soundness, must quote what it read and agree unanimously or escalate; it never takes a person's place. How often it agrees with the person in charge is measured.
+  - title: Models per role, cheapest first.
+    status: built
+    text: |
+      Each role has a ladder of models: a retry climbs a rung, a clean step comes back down. The finish report gives tokens and cost per step. taha also runs inside pi's own interface.
+  - title: Earning the name Tabula Agent.
+    status: in progress
+    text: |
+      tabula, taha and a model working under a mandate become Tabula Agent only when the journal shows it was earned: real mandates worked to the end unattended, every finished piece evaluated as met, drafts reviewed, a crash recovered on real work, and each claim measured against a single-call baseline.
+  - title: Beyond GitHub.
+    status: planned
+    text: |
+      More connectors, each only for a workspace the person in charge names as their own, every write through an intent. Then the rest of the development cycle, including watching checks and errors after release.
 shows:
   title: What it shows about how I work.
   text: |

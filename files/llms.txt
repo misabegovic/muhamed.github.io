@@ -64,17 +64,20 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 {% assign sorted_stream = site.stream | sort: 'created_at' | reverse %}{% for entry in sorted_stream %}
 - [{{ entry.title }}]({{ site.url }}{{ entry.url }}) ({{ entry.date | date: "%Y-%m-%d" }}, {{ entry.type }}){% if entry.tags and entry.tags != empty %} [tags: {{ entry.tags | join: ', ' }}]{% endif %}{% endfor %}
 
-## Open source
+## Tools he builds, and open source
 
-- [treasure_hunt](https://github.com/Ruby-Austria/treasure_hunt): a location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints on cooldowns, live leaderboards); built for RubyConf Austria 2026, open-sourced under MIT for any organizer (author)
-- [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
-- [brain](https://github.com/misabegovic/brain): a spec-driven engineering knowledge base that people and agents work from
-- tabula: a local knowledge base for agents, written in Rust (in private development)
+His main tools are enola, tabula and taha.
+
 - [enola](https://github.com/enola-labs/enola): architectural regression testing for AI-assisted development (core contributor; contributions include the constraints program, the fact-provider seam, the blame/diff history store, declared intent, Ember support, the Rails extraction work, and the Ruby DSL for laws)
+- tabula ({{ site.url }}/projects/tabula/): one of his main tools, coming soon: understand a system you inherited, write down what it should become, and hold every agent to it; a single Rust tool keeping a project's memory, decisions and contract as plain files, with architecture drawn on a canvas and compiled into enola constraints (in private development)
+- taha ({{ site.url }}/projects/taha/): the tabula harness, one of his main tools, coming soon: runs a coding agent durably inside a mandate on pi and Pi Durable, with tabula as the judge (in private development)
+- [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
+- [brain](https://github.com/misabegovic/brain): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
 - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
 - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
 - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer for enola, guides and law catalogue (maintainer)
 - [munola](https://rubygems.org/gems/munola): a personal channel on top of enola with a built-in recipe catalogue (maintainer)
+- [treasure_hunt](https://github.com/Ruby-Austria/treasure_hunt): a location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints on cooldowns, live leaderboards); built for RubyConf Austria 2026, open-sourced under MIT for any organizer (author)
 
 ## Contact
 

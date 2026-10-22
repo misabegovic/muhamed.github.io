@@ -46,7 +46,7 @@ details:
       - "A knowledge base your people and agents both work from: specs, decisions and architecture rules, across your whole development lifecycle."
       - Coding agents set up for your codebase, with guardrails they cannot bypass and architecture rules checked in CI.
       - "AI features in your product that hold up in production: grounded in your data, with structured outputs, evals and observability."
-      - "Set up with open-source tools I build (brain, pi-brain, enola and its gems, and tabula, in private development) and taught to your team, with enola-guides as the reference."
+      - "Set up with the tools I build: enola and its gems today, tabula and taha as they ship, and taught to your team, with enola-guides as the reference."
     outcome: Your team ends up with a working setup in its own repositories, and knows how to keep it running.
     email:
       label: Email about going AI-native

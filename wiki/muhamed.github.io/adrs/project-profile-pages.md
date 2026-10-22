@@ -216,6 +216,21 @@ inherited, write down what it should become, and hold every agent to it."
 The knowledge-bases page and its video (knowledge-base-promo/src/Promo.tsx)
 count six tools instead of five.
 
+**2026-10-22, third amendment: the full plans, and the main tools.** The
+owner asked the tabula and taha pages to "promise what's planned, the full
+extent of it", and said "These will be my main tools also. Together with
+enola." A coming-soon profile can now carry a `plan`: every theme of the
+product, each tagged working today (built, not yet released), in progress
+or planned, from the intent and the code, with the same publication rules
+as the second amendment; internal engine names in the docs read "enola".
+taha's page says pull requests stay drafts unless a mandate grants merging
+on the owner's own private repository, as its code now allows, instead of
+"never merges". enola, tabula and taha lead the tools wherever they are
+listed: the homepage, /projects/, /work/, llms.txt, the knowledge-bases
+page and its video (knowledge-base-promo/src/Promo.tsx), with enola-guides,
+pi-brain and brain after them. The AI-native offer says enola is set up
+today and tabula and taha as they ship.
+
 ## Approval
 
 Approved by the owner in session on 2026-10-22 ("Approved."), with the

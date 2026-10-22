@@ -289,6 +289,7 @@ capabilities:
       - Led a startup's engineering team through its acquisition, leading by building.
 
 open_source:
+  # The owner's main tools first: enola, tabula and taha (2026-10-22).
   - name: enola
     role: Core contributor
     url: https://github.com/enola-labs/enola
@@ -300,6 +301,34 @@ open_source:
       constraints program: architectural laws declared over the code graph,
       checked deterministically in CI, with a Ruby DSL, and the gems that bring
       it to Rails teams, enola-guides among them.
+  # evidence: not yet in the evidence store; intent in the owner's private
+  # brain (wiki/tabula), refreshed 2026-10-22.
+  - name: tabula
+    role: In private development · coming soon
+    url: ""
+    profile: /projects/tabula/
+    thumb: /images/projects/tabula/thumb
+    outcome: Understand a system you inherited, write down what it should become, and hold every agent to it.
+    text: >-
+      A single Rust tool that keeps a project's memory, decisions and contract
+      as plain files git carries. Agents claim work on leases, every act is
+      journaled, and finished work is judged against its stated outcomes by
+      something other than the agent that did it. Steps that belong to a
+      person are refused to the agent.
+  # evidence: not yet in the evidence store; intent in the owner's private
+  # brain (wiki/tabula-harness), 2026-10-22.
+  - name: taha
+    role: The tabula harness · coming soon
+    url: ""
+    profile: /projects/taha/
+    thumb: /images/projects/taha/thumb
+    outcome: Lets a coding agent work unattended inside a mandate and come back with finished, checked work you can trust.
+    text: >-
+      A durable host on pi and Pi Durable: a killed run resumes without
+      repeating anything. tabula holds the intent, the journal and the gates;
+      every outward act is journaled first, pull requests stay drafts unless
+      you grant a merge on your own private repository, and the agent's shell
+      holds no credentials.
   # evidence: oss-enola-gems; https://rubygems.org/gems/enola-guides; misabegovic/enola-guides README
   - name: enola-guides
     role: Author and maintainer
@@ -331,33 +360,6 @@ open_source:
       the agent keeps a wiki where every claim cites its source, and specs and
       decision records sit next to the code. The method behind my agentic
       SDLC work, and where pi-brain started.
-  # evidence: not yet in the evidence store; intent in the owner's private
-  # brain (wiki/tabula), refreshed 2026-10-22.
-  - name: tabula
-    role: In private development · coming soon
-    url: ""
-    profile: /projects/tabula/
-    thumb: /images/projects/tabula/thumb
-    outcome: Understand a system you inherited, write down what it should become, and hold every agent to it.
-    text: >-
-      A single Rust tool that keeps a project's memory, decisions and contract
-      as plain files git carries. Agents claim work on leases, every act is
-      journaled, and finished work is judged against its stated outcomes by
-      something other than the agent that did it. Steps that belong to a
-      person are refused to the agent.
-  # evidence: not yet in the evidence store; intent in the owner's private
-  # brain (wiki/tabula-harness), 2026-10-22.
-  - name: taha
-    role: The tabula harness · coming soon
-    url: ""
-    profile: /projects/taha/
-    thumb: /images/projects/taha/thumb
-    outcome: Lets a coding agent work unattended inside a mandate and come back with draft pull requests you can trust.
-    text: >-
-      A durable host on pi and Pi Durable: a killed run resumes without
-      repeating anything. tabula holds the intent, the journal and the gates;
-      every outward act is journaled first, pull requests stay drafts, and the
-      agent's shell holds no credentials.
 
 # evidence: community-rubyconf-austria, community-rubyconf-speakers
 # The event logos are white on transparent, drawn on the dark section.
