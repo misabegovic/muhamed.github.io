@@ -1,10 +1,9 @@
 ---
 title: "A profile page for each project, starting with enola, enola-guides and Usput.ba"
 scope: muhamed.github.io
-kind: adr
-status: proposed
+kind: decision
+status: accepted
 confidence: low
-ai_suggestion: true
 sources:
   - files/_data/home.yml
   - files/_includes/home-page.html
@@ -17,9 +16,6 @@ created: 2026-10-22
 updated: 2026-10-22
 author: pi-brain-agent
 ---
-
-> **This is an AI-suggested draft.** It has not been approved. Treat every
-> statement as a proposal awaiting human review, not as a decision.
 
 ## Context
 
@@ -58,7 +54,7 @@ the pages ("Remotion can be a good option for videos on those pages too").
 A Remotion project for Usput.ba already exists in `~/projects/usput-promo`: a
 35-second 1920×1080 promo with sound, 17 MB.
 
-## Decision (proposed)
+## Decision
 
 1. **A `projects` collection.** Each project gets one Markdown file in
    `files/_projects/<slug>.md`, published at `/projects/<slug>/`.
@@ -184,18 +180,16 @@ change of the homepage ADR).
   The page leads with the owner's part (the constraints program, the Ruby
   DSL, the gems) and links the project at enola-labs.
 
-## Open questions for the human reviewer
+## Approval
 
-1. For enola: should anyone at enola-labs see the page before it goes live?
-2. For Usput.ba: which screens best show it (a place page, an audio tour, the
-   map)? Is anything on the site not ready to be shown? Is the July promo
-   still current enough to cut for the web, and does its sound need
-   captions (speech) or none (music only)?
-3. Should the homepage tool rows link to the profile instead of the
-   repository (the proposal), or keep the repository link and add the
-   profile?
+Approved by the owner in session on 2026-10-22 ("Approved."), with the
+remaining questions answered: no review by enola-labs before the enola page
+goes live ("No need for them to review"); the Usput.ba screens and the promo
+cut left to the agent ("You choose. Make it nice."); and the homepage tool
+rows link to the profiles, with the repository links on each profile ("3.
+Yes"). Drafted in `ai-suggestions/adrs/` and graduated on approval.
 
 ## Related
 
-- [ADR: A professional homepage, with the brain and writing one click away](../../adrs/professional-homepage-with-brain-and-writing.md)
-- [Constraint: ADR before structural changes](../../constraints/adr-before-structural-changes.md)
+- [ADR: A professional homepage, with the brain and writing one click away](professional-homepage-with-brain-and-writing.md)
+- [Constraint: ADR before structural changes](../constraints/adr-before-structural-changes.md)

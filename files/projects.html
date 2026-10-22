@@ -1,0 +1,49 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+description: The tools Muhamed Isabegovic builds for AI-native engineering, and the things he makes for fun, each with what it does and why.
+---
+{%- comment -%}
+  Every project in _data/home.yml, in two groups. A project with a profile
+  page (files/_projects, matched by home_key) links there and shows its
+  thumbnail; the rest link out, as the lists did before.
+{%- endcomment -%}
+{%- assign h = site.data.home -%}
+{%- capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-intro">The tools I build and teach, and the things I make for fun. Each one is something I use, run or play myself.</p>
+  </header>
+
+  {% assign groups = "tools,made" | split: "," %}
+  {% for g in groups %}
+  {% if g == "tools" %}{% assign items = h.open_source %}{% assign gtitle = h.sections.tools.title %}{% assign gid = "tools" %}{% else %}{% assign items = h.side_projects %}{% assign gtitle = h.sections.side.title %}{% assign gid = "made" %}{% endif %}
+  <section class="project-group" aria-labelledby="g-{{ gid }}" id="{{ gid }}">
+    <h2 id="g-{{ gid }}" class="section-title">{{ gtitle }}</h2>
+    <ul class="project-cards" role="list">
+      {% for item in items %}
+      {% assign key = item.id | default: item.name %}
+      {% assign profile = site.projects | where: "home_key", key | first %}
+      <li class="project-card{% if profile %} has-profile{% endif %}">
+        {% if profile %}
+        <a class="project-card-link" href="{{ site.baseurl }}{{ profile.url }}">
+          {% if profile.thumb %}<img class="project-card-thumb" src="{{ site.baseurl }}{{ profile.thumb }}-800.webp" alt="" width="800" height="500" loading="lazy">{% endif %}
+          <h3>{{ profile.title }}</h3>
+          <p class="project-card-role">{{ item.role | default: item.note }}</p>
+          <p class="project-card-text">{{ item.outcome | default: item.text }}</p>
+          <span class="service-go">Read more{{ arr }}</span>
+        </a>
+        {% else %}
+        <h3>{% if item.url != "" %}<a href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ site.baseurl }}{{ item.url }}{% endif %}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</h3>
+        <p class="project-card-role">{{ item.role | default: item.note }}</p>
+        <p class="project-card-text">{{ item.outcome | default: item.text }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+{% include closing.html %}

@@ -36,6 +36,7 @@ side_projects:
     logo: /images/logos/usput.webp
     url: https://usput.ba
     link_label: Visit usput.ba
+    profile: /projects/usput/
     # evidence: proj-usput-web, proj-usput-ai-layer, proj-usput-retrieval-grounding
     text: >-
       A travel guide to Bosnia and Herzegovina with curated locations,
@@ -284,13 +285,24 @@ open_source:
   - name: enola
     role: Core contributor
     url: https://github.com/enola-labs/enola
+    profile: /projects/enola/
     outcome: Catches architecture drift in CI, so agent-written code keeps to the rules your team agreed on.
     # evidence: oss-enola-constraints
     text: >-
       Architectural regression testing for AI-assisted development. I built the
       constraints program: architectural laws declared over the code graph,
-      checked deterministically in CI, with a Ruby DSL and four gems for Rails
-      teams.
+      checked deterministically in CI, with a Ruby DSL, and the gems that bring
+      it to Rails teams, enola-guides among them.
+  # evidence: oss-enola-gems; https://rubygems.org/gems/enola-guides; misabegovic/enola-guides README
+  - name: enola-guides
+    role: Author and maintainer
+    url: https://github.com/misabegovic/enola-guides
+    profile: /projects/enola-guides/
+    outcome: Shows a team how to work this way, with decisions anchored to code, laws in CI, and agents that read before they write.
+    text: >-
+      A Ruby gem of guides, a catalogue of 26 architecture laws, worked
+      examples, agent skills and hooks, for teams adopting enola. Eight
+      releases on rubygems.org since August 2026.
   - name: pi-brain
     role: Author and maintainer
     url: https://github.com/misabegovic/pi-brain
@@ -300,6 +312,16 @@ open_source:
       An intent store for agentic development on the pi harness: human-gated
       agent workflows, decision records agents must read before editing, and
       agent-written knowledge that cannot promote itself. Published on npm, nine tagged releases.
+  # evidence: oss-brain; misabegovic/brain README
+  - name: brain
+    role: Author
+    url: https://github.com/misabegovic/brain
+    outcome: Gives people and agents one record of what was decided and why, kept current by the agent.
+    text: >-
+      A knowledge base your coding agent maintains: sources go in unchanged,
+      the agent keeps a wiki where every claim cites its source, and specs and
+      decision records sit next to the code. The method behind my agentic
+      SDLC work, and where pi-brain started.
   - name: tabula
     role: In private development
     url: ""

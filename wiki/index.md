@@ -21,6 +21,7 @@ This is the synthesis layer for this pi-brain instance.
 - [Post-incident fix: exclude vendor/ and configure custom domain for GitHub Pages](muhamed.github.io/adrs/jekyll-vendor-exclude-and-custom-domain.md)
 - [Make the brain-card stream the home page](muhamed.github.io/adrs/make-brain-cards-the-home-page.md)
 - [A professional homepage, with the brain and writing one click away](muhamed.github.io/adrs/professional-homepage-with-brain-and-writing.md)
+- [Context](muhamed.github.io/adrs/project-profile-pages.md)
 - [Sync latest upstream pi-brain changes (v0.2.0)](muhamed.github.io/adrs/sync-latest-pi-brain-v0-2-0.md)
 - [Sync latest upstream pi-brain updates](muhamed.github.io/adrs/sync-latest-upstream-pi-brain-updates.md)
 - [Sync clone with upstream pi-brain guardrails](muhamed.github.io/adrs/sync-upstream-pi-brain-guardrails.md)
@@ -86,6 +87,9 @@ This is the synthesis layer for this pi-brain instance.
 - [Resolved AI-suggestions archive](muhamed.github.io/ai-suggestions/_archive/index.md)
 - [Auto-ingest batch 2026-07-23 — synthesis](muhamed.github.io/notes/auto-ingest-batch-2026-07-23-synthesis.md)
 - [Stream entry: Paul from Tito — cathedrals, Go, and the 11 factors](muhamed.github.io/notes/paul-from-tito-cathedrals-go-and-11-factors.md)
+
+### adr
+- [> **This is an AI-suggested draft.** It has not been approved. Treat every](muhamed.github.io/ai-suggestions/adrs/cv-pdf-ci-render.md)
 
 ### rfc
 - [RFC — Design directions for a public "brain stream" on muhamed.at](muhamed.github.io/ai-suggestions/rfcs/muhamed-at-sharing-section-design.md)

@@ -106,6 +106,10 @@ collections:
   stream:
     output: true
     permalink: /brain/:slug/
+  # One profile page per project (ADR: project-profile-pages).
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # Exclude these files from your production _site
 exclude:
@@ -123,3 +127,6 @@ defaults:
   - scope: { path: "" }
     values:
       image: /images/social/share.png
+  - scope: { path: "", type: projects }
+    values:
+      layout: project

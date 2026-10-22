@@ -1,0 +1,30 @@
+{%- comment -%}
+  One piece of media on a project page: a screenshot, phone screenshots side
+  by side, real code or terminal output, or a click-to-play video. Pass the
+  item as m. An image is WebP at its full width (m.max, 1600 by default) with
+  an 800 px copy beside it (name-1600.webp, name-800.webp); pass src without
+  the width and extension. Phone screenshots are one WebP each (src without
+  the extension).
+{%- endcomment -%}
+{%- assign m = include.m -%}
+<figure class="pm pm--{{ m.kind }}{% if include.lead %} pm-lead{% endif %}">
+  {%- case m.kind -%}
+  {%- when "image" -%}
+  {%- assign max = m.max | default: 1600 -%}
+  <img src="{{ site.baseurl }}{{ m.src }}-{{ max }}.webp" srcset="{{ site.baseurl }}{{ m.src }}-800.webp 800w, {{ site.baseurl }}{{ m.src }}-{{ max }}.webp {{ max }}w" sizes="(max-width: 1260px) calc(100vw - 2.5rem), 76rem" alt="{{ m.alt }}" width="{{ m.width | default: 1600 }}" height="{{ m.height | default: 1000 }}"{% unless include.lead %} loading="lazy"{% endunless %}>
+  {%- when "phones" -%}
+  <div class="pm-phones">{% for p in m.items %}<img src="{{ site.baseurl }}{{ p.src }}.webp" alt="{{ p.alt }}" width="{{ p.width | default: 780 }}" height="{{ p.height | default: 1688 }}"{% unless include.lead %} loading="lazy"{% endunless %}>{% endfor %}</div>
+  {%- when "code" -%}
+  <div class="pm-code">
+    {% if m.label %}<p class="pm-code-label">{{ m.label }}</p>{% endif %}
+    <pre tabindex="0"><code>{{ m.code | strip | xml_escape }}</code></pre>
+  </div>
+  {%- when "video" -%}
+  <video controls preload="none" playsinline poster="{{ site.baseurl }}{{ m.poster }}" width="{{ m.width | default: 1280 }}" height="{{ m.height | default: 720 }}">
+    <source src="{{ site.baseurl }}{{ m.src }}" type="video/mp4">
+    {% if m.captions %}<track kind="captions" src="{{ site.baseurl }}{{ m.captions }}" srclang="en" label="English" default>{% endif %}
+    <a href="{{ site.baseurl }}{{ m.src }}">Download the video</a>
+  </video>
+  {%- endcase -%}
+  {% if m.caption %}<figcaption>{{ m.caption }}</figcaption>{% endif %}
+</figure>

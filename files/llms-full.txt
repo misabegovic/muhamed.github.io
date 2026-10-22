@@ -22,6 +22,31 @@ WORK
 ## {{ h.sections.side.title }}
 {% for project in h.side_projects %}
 - {{ project.name }}{% if project.note %} ({{ project.note }}){% endif %}{% if project.url %}, {% if project.url contains '://' %}{{ project.url }}{% else %}{{ site.url }}{{ project.url }}{% endif %}{% endif %}: {{ project.text | strip }}{% endfor %}
+{% for p in site.projects %}
+=====================================
+PROJECT: {{ p.title | upcase }}
+{{ site.url }}{{ p.url }}
+=====================================
+{% assign e = h.open_source | where: "name", p.home_key | first %}{% unless e %}{% assign e = h.side_projects | where: "id", p.home_key | first %}{% endunless %}
+{{ p.lead | default: e.outcome | default: e.text | strip }}
+{% for f in p.facts %}
+- {{ f.label }}: {{ f.value }}{% endfor %}
+
+## {{ p.problem.title }}
+
+{{ p.problem.text | markdownify | strip_html | strip }}
+{% for f in p.features %}
+## {{ f.title }}
+
+{{ f.text | markdownify | strip_html | strip }}
+{% endfor %}{% if p.shows %}
+## {{ p.shows.title }}
+
+{{ p.shows.text | markdownify | strip_html | strip }}
+{% endif %}
+Links:{% for l in p.links %}
+- {{ l.label }}: {% if l.url contains '://' %}{{ l.url }}{% else %}{{ site.url }}{{ l.url }}{% endif %}{% if l.note %} ({{ l.note }}){% endif %}{% endfor %}
+{% endfor %}
 
 =====================================
 ABOUT

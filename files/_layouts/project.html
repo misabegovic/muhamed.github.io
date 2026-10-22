@@ -1,0 +1,116 @@
+---
+layout: default
+---
+{%- comment -%}
+  A project profile (ADR: project-profile-pages). The one-liner and the role
+  come from the project's entry in _data/home.yml (open_source or
+  side_projects, matched by page.home_key), so the lists and this page say
+  the same thing. Everything else is the page's front matter.
+{%- endcomment -%}
+{%- assign h = site.data.home -%}
+{%- assign entry = h.open_source | where: "name", page.home_key | first -%}
+{%- unless entry -%}{%- assign entry = h.side_projects | where: "id", page.home_key | first -%}{%- endunless -%}
+{%- capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture -%}
+<article class="project">
+  <header class="wrap project-hero">
+    <a class="project-back" href="{{ site.baseurl }}/projects/"><svg class="arr arr-back" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>All projects</a>
+    <div class="project-hero-grid">
+      <div class="project-hero-copy">
+        <h1 class="project-title">{{ page.title }}</h1>
+        <p class="project-lead">{{ page.lead | default: entry.outcome | default: entry.text }}</p>
+        <div class="hero-actions">
+          {% if page.cta %}<a class="button" href="{% if page.cta.url contains '://' %}{{ page.cta.url }}{% else %}{{ site.baseurl }}{{ page.cta.url }}{% endif %}">{{ page.cta.label }}{{ arr }}</a>{% endif %}
+          {% for l in page.links limit: 2 %}<a class="text-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+        </div>
+      </div>
+      {% if page.facts.size > 0 %}
+      <dl class="project-facts">
+        {% for f in page.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}
+      </dl>
+      {% endif %}
+    </div>
+    {% if page.hero %}{% include project-media.html m=page.hero lead=true %}{% endif %}
+  </header>
+
+  {% if page.problem %}
+  <section class="section section-rule" aria-labelledby="p-problem">
+    <div class="wrap feature">
+      <h2 id="p-problem" class="section-title">{{ page.problem.title }}</h2>
+      <div class="project-text">{{ page.problem.text | markdownify }}</div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.features.size > 0 %}
+  <section class="section section-rule project-features-section" aria-labelledby="p-features">
+    <div class="wrap">
+      <div class="section-head"><h2 id="p-features" class="section-title">{{ page.features_title | default: "What it does." }}</h2></div>
+      {%- comment -%} Features with media alternate sides; the ones without sit in a grid after them. {%- endcomment -%}
+      {% assign with_media = page.features | where_exp: "f", "f.media" %}
+      {% assign text_only = page.features | where_exp: "f", "f.media == nil" %}
+      {% if with_media.size > 0 %}
+      <ol class="project-features" role="list">
+        {% for f in with_media %}
+        <li class="project-feature">
+          <div class="project-feature-copy">
+            <h3>{{ f.title }}</h3>
+            <div class="project-text">{{ f.text | markdownify }}</div>
+          </div>
+          {% include project-media.html m=f.media %}
+        </li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      {% if text_only.size > 0 %}
+      <ul class="project-more" role="list">
+        {% for f in text_only %}
+        <li>
+          <h3>{{ f.title }}</h3>
+          <div class="project-text">{{ f.text | markdownify }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.video %}
+  <section class="project-video" aria-labelledby="p-video">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="p-video" class="section-title">{{ page.video.title }}</h2>
+          {% if page.video.text %}<p class="section-intro">{{ page.video.text }}</p>{% endif %}
+        </div>
+      </div>
+      {% include project-media.html m=page.video %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign story = content | strip %}
+  {% if story != "" %}
+  <section class="section section-rule" aria-label="The story">
+    <div class="wrap"><div class="prose project-story">{{ content }}</div></div>
+  </section>
+  {% endif %}
+
+  {% if page.shows %}
+  <section class="section section-tint" aria-labelledby="p-shows">
+    <div class="wrap feature">
+      <h2 id="p-shows" class="section-title">{{ page.shows.title }}</h2>
+      <div>
+        <div class="project-text project-shows">{{ page.shows.text | markdownify }}</div>
+        {% if page.shows.link %}<p class="project-shows-link"><a class="text-link" href="{{ site.baseurl }}{{ page.shows.link.url }}">{{ page.shows.link.label }}{{ arr }}</a></p>{% endif %}
+        {% if page.links.size > 0 %}
+        <ul class="project-links" role="list">
+          {% for l in page.links %}<li><a href="{{ l.url }}">{{ l.label }}</a>{% if l.note %}<span>{{ l.note }}</span>{% endif %}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+</article>
+{% include closing.html help_title=page.closing.title help_text=page.closing.text help_url=page.closing.url %}
