@@ -27,8 +27,10 @@ description: How to reach Muhamed Isabegovic about building something with your 
   </section>
 </div>
 
+<p class="contact-nomail">No mail app on this device? Write to <a href="mailto:info@muhamed.at">info@muhamed.at</a> from any inbox. {% include copy-email.html %}</p>
+
 <dl class="contact-facts">
-  <div><dt>Email</dt><dd><a href="mailto:info@muhamed.at">info@muhamed.at</a></dd></div>
+  <div><dt>Email</dt><dd><a href="mailto:info@muhamed.at">info@muhamed.at</a> {% include copy-email.html %}</dd></div>
   <div><dt>How I work</dt><dd>Through my own company, Isabegovic Muhamed e.U.</dd></div>
   <div><dt>Location</dt><dd>Vienna, Austria. Remote across Europe, on site in the DACH region.</dd></div>
   <div><dt>CV</dt><dd><a href="/cv/">View my CV</a>, also as a <a href="/cv/Muhamed_Isabegovic_CV.pdf" download>three-page PDF</a></dd></div>

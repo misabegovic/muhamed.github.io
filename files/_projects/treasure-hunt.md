@@ -7,6 +7,7 @@
 title: hunt.rubyconf.at
 home_key: treasurehunt
 description: hunt.rubyconf.at, the location-based treasure hunt Muhamed Isabegovic built for RubyConf Austria 2026 in Vienna, now open source for any conference to rebrand and self-host.
+image: /images/social/project-treasure-hunt.png
 thumb: /images/projects/treasure-hunt/thumb
 lead: A treasure hunt across Vienna for RubyConf Austria 2026, where every clue unlocks only near its real place. Now open source, so any conference can run its own.
 cta: { label: Visit hunt.rubyconf.at, url: "https://hunt.rubyconf.at" }

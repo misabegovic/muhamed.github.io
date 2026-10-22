@@ -9,6 +9,7 @@
 title: Post-Dayton BiH
 home_key: card-game
 description: Post-Dayton BiH, a political strategy card game by Muhamed Isabegovic about a career in Bosnia and Herzegovina's politics, on a pure TypeScript engine with 4,161 tests and 42 decision records.
+image: /images/social/project-post-dayton.png
 thumb: /images/projects/post-dayton/thumb
 lead: A card game where you build a political career in the most complex country in the world. You see what each decision costs; the consequences stay hidden until after you decide.
 cta: { label: Play it, url: /igre/dejtonska-igra/ }

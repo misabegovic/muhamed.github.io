@@ -7,6 +7,7 @@
 title: pi-brain
 home_key: pi-brain
 description: pi-brain, Muhamed Isabegovic's knowledge home for the pi coding agent, where decisions go through a person, agents draft but cannot promote what they write, and structural changes wait for an approved ADR.
+image: /images/social/project-pi-brain.png
 thumb: /images/projects/pi-brain/thumb
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:

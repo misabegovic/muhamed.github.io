@@ -1158,3 +1158,15 @@ div.project-card-link { cursor: default; }
   .project-card .service-go { margin-top: 0.25rem; font-size: var(--t-small); }
   .project-card-link:hover .project-card-thumb { transform: none; box-shadow: none; }
 }
+
+/* Copy-address buttons beside the email address. */
+.copy-email { display: inline-flex; align-items: center; min-height: 36px; margin-left: 0.4rem; padding: 0.2rem 0.85rem; border: 1.5px solid currentColor; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-size: var(--t-small); font-weight: 650; vertical-align: middle; cursor: pointer; transition: background-color 0.15s ease-out, color 0.15s ease-out; }
+.copy-email:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.copy-email.is-copied { background: var(--ink); border-color: var(--ink); color: var(--yellow); }
+.closing .copy-email:hover { color: var(--yellow); }
+.contact-nomail { max-width: 48rem; margin-top: 2rem; color: var(--ink-2); }
+.contact-nomail a { color: var(--ink); text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+.closing-mail-line { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.4em; }
+.closing-mail-line .copy-email { margin-left: 0.6rem; }
+.contact-nomail .copy-email { display: flex; width: fit-content; margin: 0.75rem 0 0; }
+@media (max-width: 640px) { .closing-mail-line .copy-email { margin-left: 0; } }

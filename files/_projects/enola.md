@@ -9,6 +9,7 @@
 title: enola
 home_key: enola
 description: Muhamed Isabegovic's work on enola, the architecture graph that catches what a change broke in CI, including the constraints program, laws written in Ruby, and the gems that bring it to Rails teams.
+image: /images/social/project-enola.png
 thumb: /images/projects/enola/thumb
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:

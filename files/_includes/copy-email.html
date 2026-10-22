@@ -1,0 +1,5 @@
+{%- comment -%}
+  A button that copies the address, for visitors without a mail app (a
+  mailto link does nothing for them). Hidden until site.js wires it up.
+{%- endcomment -%}
+<button type="button" class="copy-email" data-copy="{{ include.email | default: site.data.home.closing.email }}" hidden><span data-copy-label>Copy address</span></button>

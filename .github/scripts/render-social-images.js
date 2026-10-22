@@ -1,13 +1,29 @@
 const path = require('path');
 const fs = require('fs');
-const { chromium } = require('playwright-core');
+// playwright-core when installed, else puppeteer-core (the same Chrome either way).
+let launchBrowser;
+try {
+  const { chromium } = require('playwright-core');
+  launchBrowser = async (opts) => {
+    const b = await chromium.launch(opts);
+    return { page: (w, h) => b.newPage({ viewport: { width: w, height: h } }), close: () => b.close() };
+  };
+} catch (e) {
+  const puppeteer = require('puppeteer-core');
+  launchBrowser = async (opts) => {
+    const b = await puppeteer.launch({ ...opts, args: [...(opts.args || []), '--no-sandbox'] });
+    return { page: async (w, h) => { const p = await b.newPage(); await p.setViewport({ width: w, height: h }); return p; }, close: () => b.close() };
+  };
+}
 
 // Renders the share preview, the LinkedIn and X headers and the service post
 // images into files/images/social/. Run from the repository root:
 //   CHROME=/path/to/chrome node .github/scripts/render-social-images.js
 // ONLY=<file name> renders just that image and leaves the others untouched.
-// Needs playwright-core. Copy comes from files/_data/home.yml and services.yml;
-// update it here when the services change.
+// Needs playwright-core or puppeteer-core. Copy comes from
+// files/_data/home.yml and services.yml; update it here when the services
+// change. Project cards read each profile in files/_projects/ (its title and
+// lead, else its entry's outcome or text in home.yml) and its thumbnail.
 const SITE = path.join(__dirname, '..', '..', 'files');
 const OUT = path.join(SITE, 'images/social');
 fs.mkdirSync(OUT, { recursive: true });
@@ -37,7 +53,7 @@ h1, h2 { font-weight: 800; letter-spacing: -.035em; line-height: .98; text-wrap:
 
 const services = [
   { slug: 'build', name: 'Build', title: 'Hands-on product engineering', text: 'I join your team as a senior engineer and build the product or feature end to end, from spec to production.', format: 'Embedded, part-time or full-time' },
-  { slug: 'lead', name: 'Lead', title: 'Technical lead for your team', text: 'I lead your engineering team, part-time or full-time: technical direction, architecture, delivery, and the people.', format: 'Part-time or full-time' },
+  { slug: 'lead', name: 'Lead', title: 'Technical lead for your team', text: 'I lead your engineering team as a fractional or interim technical lead: technical direction, architecture, delivery, and the people.', format: 'Fractional or interim' },
   { slug: 'review', name: 'Review', title: 'Architecture review', text: 'A short, fixed-scope look at your codebase and system: what holds, what will break, and what to fix first.', format: 'Fixed scope, one to two weeks' },
   { slug: 'ai-native', name: 'AI-native', title: 'Make your company AI-native', text: 'How you build and what you build. I set up a knowledge base your people and agents work from, with architecture rules checked in CI, and build AI features into your product that hold up in production, using open-source tools I build and teach.', format: 'Workshops, then setup in your codebase' },
 ];
@@ -99,6 +115,48 @@ function header(w, h, safeLeft) {
   </div>`;
 }
 
+// Project profiles: one share card per page in files/_projects/, in the
+// share card's layout: the project and its one-liner on the left, its
+// thumbnail on the right.
+const homeYml = fs.readFileSync(path.join(SITE, '_data/home.yml'), 'utf8');
+const field = (text, key) => { const m = text.match(new RegExp('^' + key + ': *"?(.*?)"?$', 'm')); return m ? m[1] : null; };
+const entryLine = (key) => {
+  // The block of the open_source (name:) or side_projects (id:) entry, and its outcome or text.
+  const start = homeYml.search(new RegExp('^  - (name|id): ' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'm'));
+  if (start < 0) return null;
+  const block = homeYml.slice(start).split(/\n  - /)[0];
+  const outcome = block.match(/^    outcome: (.*)$/m);
+  if (outcome) return outcome[1];
+  const text = block.match(/^    text: >-\n((?:      .*\n?)+)/m);
+  return text ? text[1].replace(/\s+/g, ' ').replace(/<[^>]+>/g, '').trim() : null;
+};
+const escapeHtml = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const projects = fs.readdirSync(path.join(SITE, '_projects')).filter((f) => f.endsWith('.md')).map((f) => {
+  const fm = fs.readFileSync(path.join(SITE, '_projects', f), 'utf8').split(/^---$/m)[1];
+  return { slug: f.replace(/\.md$/, ''), title: field(fm, 'title'), lead: field(fm, 'lead') || entryLine(field(fm, 'home_key')), thumb: field(fm, 'thumb') };
+});
+
+function projectCard(pr, w, h) {
+  // The largest copy of the thumbnail there is (screenshots of usput.ba stop at 1440).
+  const sized = ['-1600', '-1440', '-800'].map((w) => path.join(SITE, pr.thumb.replace(/^\//, '') + w + '.webp'));
+  const thumb = 'file://' + (sized.find((f) => fs.existsSync(f)) || sized[0]);
+  const n = pr.title.length;
+  const size = n <= 8 ? 80 : n <= 14 ? 68 : n <= 20 ? 58 : 56;
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 520px;">
+    <div style="padding:64px 48px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
+      <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
+      <div style="align-self:center">
+        <h1 style="font-size:${size}px;${n <= 20 ? 'white-space:nowrap;' : ''}"><mark>${escapeHtml(pr.title)}</mark></h1>
+        <p class="muted" style="font-size:24px;line-height:1.45;margin-top:22px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden">${escapeHtml(pr.lead || '')}</p>
+      </div>
+      <div class="muted" style="font-size:22px;font-weight:500"><b style="color:var(--ink)">muhamed.at/projects/${pr.slug}</b></div>
+    </div>
+    <div style="background:#f3f3f1;display:grid;place-items:center;padding:40px">
+      <img src="${thumb}" alt="" style="width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border:1px solid var(--line);border-radius:8px;box-shadow:0 24px 48px -24px rgba(20,20,20,.35)">
+    </div>
+  </div>`;
+}
+
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
   ['goatconf-2027.png', 1200, 630, goatconfNote(1200, 630)],
@@ -108,12 +166,13 @@ const jobs = [
     [`service-${s.slug}-linkedin.png`, 1200, 627, servicePost(s, 1200, 627)],
     [`service-${s.slug}-x.png`, 1600, 900, servicePost(s, 1600, 900)],
   ]),
+  ...projects.map((pr) => [`project-${pr.slug}.png`, 1200, 630, projectCard(pr, 1200, 630)]),
 ];
 
 (async () => {
-  const b = await chromium.launch({ executablePath: process.env.CHROME, args: ['--allow-file-access-from-files'] });
+  const b = await launchBrowser({ executablePath: process.env.CHROME, args: ['--allow-file-access-from-files'] });
   for (const [name, w, h, html] of jobs.filter(([n]) => !process.env.ONLY || n === process.env.ONLY)) {
-    const p = await b.newPage({ viewport: { width: w, height: h } });
+    const p = await b.page(w, h);
     const file = path.join(require('os').tmpdir(), 'render-social.html');
     fs.writeFileSync(file, `<!doctype html><html><head><meta charset="utf-8"><style>${base}</style></head><body>${html}</body></html>`);
     await p.goto('file://' + file, { waitUntil: 'load' });

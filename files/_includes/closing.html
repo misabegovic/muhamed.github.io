@@ -17,6 +17,6 @@
       <p class="closing-text">{{ c.review.text }}</p>
       <a class="button button-dark" href="{{ site.baseurl }}{{ c.review.url }}">{{ c.review.cta }}{{ arr }}</a>
     </div>
-    <p class="closing-mail-line">Or email <a class="closing-mail" href="mailto:{{ c.email }}">{{ c.email }}</a></p>
+    <p class="closing-mail-line">Or email <a class="closing-mail" href="mailto:{{ c.email }}">{{ c.email }}</a> {% include copy-email.html email=c.email %}</p>
   </div>
 </section>

@@ -4,6 +4,35 @@
 (() => {
   const top = document.querySelector(".top");
   const toggle = top && top.querySelector(".menu-toggle");
+
+  // Copy-address buttons: shown only with this script, for visitors whose
+  // device has no mail app to open a mailto link.
+  document.querySelectorAll("[data-copy]").forEach((button) => {
+    const label = button.querySelector("[data-copy-label]");
+    const status = document.createElement("span");
+    status.className = "visually-hidden";
+    status.setAttribute("aria-live", "polite");
+    button.after(status);
+    button.hidden = false;
+    button.addEventListener("click", async () => {
+      const text = button.dataset.copy;
+      let done = false;
+      try { await navigator.clipboard.writeText(text); done = true; } catch (e) {
+        const area = Object.assign(document.createElement("textarea"), { value: text });
+        area.setAttribute("readonly", "");
+        area.style.cssText = "position:fixed;opacity:0";
+        document.body.append(area);
+        area.select();
+        try { done = document.execCommand("copy"); } catch (e2) {}
+        area.remove();
+      }
+      label.textContent = done ? "Copied" : text;
+      status.textContent = done ? `Copied ${text}` : `Select and copy ${text}`;
+      button.classList.toggle("is-copied", done);
+      clearTimeout(button.copyTimer);
+      button.copyTimer = setTimeout(() => { label.textContent = "Copy address"; button.classList.remove("is-copied"); status.textContent = ""; }, 2500);
+    });
+  });
   const panel = document.getElementById("site-menu");
   if (!top || !toggle || !panel) return;
 

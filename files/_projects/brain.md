@@ -6,6 +6,7 @@
 title: brain
 home_key: brain
 description: brain, Muhamed Isabegovic's open-source knowledge base that a coding agent maintains, with immutable sources, a wiki where every claim cites its source, and no scheduled LLM runs.
+image: /images/social/project-brain.png
 thumb: /images/projects/brain/onboarding
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:

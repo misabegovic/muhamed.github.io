@@ -6,7 +6,7 @@
 title: How I work with knowledge bases
 description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, across brain, pi-brain, enola, enola-guides and tabula.
 thumb: /images/projects/knowledge-bases/thumb
-image: /videos/projects/knowledge-bases/promo-poster.webp
+image: /images/social/project-knowledge-bases.png
 lead: Decisions written down, anchored to the code they govern, checked in CI, and read by agents before they write. The method I run my own work on, and what I set up for teams.
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:
