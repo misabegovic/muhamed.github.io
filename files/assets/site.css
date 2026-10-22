@@ -347,6 +347,7 @@ mark {
 }
 .feature-head { position: sticky; top: 2rem; }
 .feature-more { margin-top: 1.5rem; }
+.feature-more-2 { margin-top: 0.75rem; }
 .rows { border-top: 3px solid var(--ink); }
 .row { display: grid; grid-template-columns: minmax(11.5rem, 0.8fr) minmax(0, 2fr); gap: 0.25rem 2rem; padding-block: 1.6rem; border-bottom: 1px solid rgb(0 0 0 / 0.1); }
 .row-name { grid-row: span 3; font-size: clamp(1.5rem, 1.25rem + 0.8vw, 2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
@@ -584,23 +585,32 @@ mark {
 .post-meta a { font-weight: 600; color: var(--ink); text-decoration: none; }
 .post-meta a:hover { text-decoration: underline; }
 
-.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
-.chip,
+/* Tags. On a post or entry: a quiet "Filed under" line of #tag links. On
+   the index cards: small outlined filters, ink and yellow when active. */
+.taglist { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.9rem; margin-top: 1.5rem; }
+.taglist-label { font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
+.chips { display: flex; flex-wrap: wrap; gap: 0 0.9rem; }
+.chip { display: inline-flex; align-items: center; padding-block: 0.15rem; font-size: var(--t-small); font-weight: 600; color: var(--ink-2); text-decoration: none; }
+.chip::before { content: "#"; margin-right: 0.08em; color: var(--ink-3); font-weight: 500; }
+.chip:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.3em; }
 .index-page .tag {
-  display: inline-block;
-  padding: 0.25rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--tint);
-  color: var(--ink-2);
-  font-size: 0.875rem;
+  background: transparent;
+  color: var(--ink-3);
+  font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.4;
   text-decoration: none;
   cursor: pointer;
+  transition: border-color 0.15s ease-out, color 0.15s ease-out;
 }
-.chip:hover,
-.index-page .tag:hover { background: #e6e6e2; color: var(--ink); }
-.index-page .tag.active { background: var(--ink); color: var(--yellow); }
+.index-page .tag:hover { border-color: var(--ink-3); color: var(--ink); }
+.index-page .tag.active,
+.index-page .tag[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--yellow); }
 
 .prose { max-width: 42rem; }
 
@@ -680,7 +690,7 @@ mark {
 .prose .highlight { background: #1c1c1c; padding: 0; }
 
 .post-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; max-width: 42rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--ink-3); }
-.post-foot .chips { margin-top: 0; }
+.post-foot .taglist { flex-basis: 100%; margin-top: 0; }
 
 /* Writing and brain indexes */
 
@@ -855,8 +865,8 @@ mark {
   .row-name a,
   .compact h3 a { display: inline-flex; align-items: center; }
   .about-links a { min-width: 44px; }
-  .chip,
-  .index-page .tag { min-height: 36px; }
+  .chip { min-height: 32px; }
+  .index-page .tag { min-height: 32px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1119,3 +1129,12 @@ a:hover .arr-back { transform: scaleX(-1) translateX(3px); }
   .project-card-thumb { transition: none; }
   .project-card-link:hover .project-card-thumb { transform: none; }
 }
+.project-hub { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 2rem clamp(2rem, 1rem + 3vw, 4rem); align-items: center; margin-bottom: var(--section); padding: clamp(1.25rem, 1rem + 1.5vw, 2.25rem); border-radius: var(--radius); background: var(--tint); text-decoration: none; }
+.project-hub img { border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1.25rem 2.5rem -1.25rem rgb(20 20 20 / 0.28); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+.project-hub:hover img { transform: translateY(-4px); }
+.project-hub-title { font-size: var(--t-h2); font-weight: 800; line-height: 1.04; letter-spacing: -0.03em; text-wrap: balance; }
+.project-hub:hover .project-hub-title { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 5px; text-underline-offset: 0.12em; }
+.project-hub-text { margin-block: 1rem 1.25rem; font-size: var(--t-lead); line-height: 1.5; color: var(--ink-2); }
+.project-hub:hover .service-go { text-decoration-color: var(--ink); }
+@media (max-width: 960px) { .project-hub { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .project-hub img { transition: none; } .project-hub:hover img { transform: none; } }

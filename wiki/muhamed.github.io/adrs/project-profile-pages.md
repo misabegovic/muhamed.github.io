@@ -12,6 +12,7 @@ sources:
   - wiki/muhamed.github.io/adrs/professional-homepage-with-brain-and-writing.md
   - ~/projects/hireable/files/hireable/profile/muhamed.yml
   - ~/projects/usput-promo/package.json
+  - ~/projects/knowledge-base-promo/src
 created: 2026-10-22
 updated: 2026-10-22
 author: pi-brain-agent
@@ -179,6 +180,27 @@ change of the homepage ADR).
 - **enola points to `enola-labs/enola`** ("For enola, point to enola-labs").
   The page leads with the owner's part (the constraints program, the Ruby
   DSL, the gems) and links the project at enola-labs.
+
+## Amendments
+
+**2026-10-22, first amendment: a hub for the method, and two more profiles.**
+The owner asked for "the how I work with knowledge bases and enola-guides"
+to be "its own projects entry with promo stuff", spanning enola, brain and
+the other tools. So the collection gains one entry that is a practice, not a
+product: `/projects/knowledge-bases/`, "How I work with knowledge bases",
+which links every tool's profile and carries the promo. It is listed first
+on `/projects/`, apart from the two groups, and linked from the homepage's
+tools section. brain and pi-brain get their own profiles, as the later
+candidates above named.
+
+The promo is a Remotion video in its own project, as point 4 requires:
+`knowledge-base-promo` beside the other projects, with its composition in
+knowledge-base-promo/src/Promo.tsx, knowledge-base-promo/src/Root.tsx and
+knowledge-base-promo/src/index.ts. It reuses the Remotion install of
+usput-promo through a `node_modules` link, follows this site's look (paper,
+ink, one yellow, Schibsted Grotesk), and every terminal or file line in it
+is real output already shown on the enola and enola-guides profiles. The
+site commits only the rendered web cut and its poster.
 
 ## Approval
 

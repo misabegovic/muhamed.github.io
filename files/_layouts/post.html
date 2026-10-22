@@ -7,7 +7,7 @@ code: true
     <p class="post-meta"><a href="{{ site.baseurl }}/writing/">Writing</a><span aria-hidden="true">/</span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>{% if page.last_modified_at %}<span>Updated {{ page.last_modified_at | date: "%-d %b %Y" }}</span>{% endif %}</p>
     <h1 class="page-title">{{ page.title }}</h1>
     {% if page.tags.size > 0 %}
-    <ul class="chips" role="list">{% for tag in page.tags %}<li><a class="chip" href="{{ site.baseurl }}/writing/?tag={{ tag | url_encode }}">{{ tag }}</a></li>{% endfor %}</ul>
+    <div class="taglist"><span class="taglist-label">Filed under</span><ul class="chips" role="list">{% for tag in page.tags %}<li><a class="chip" href="{{ site.baseurl }}/writing/?tag={{ tag | url_encode }}">{{ tag }}</a></li>{% endfor %}</ul></div>
     {% endif %}
   </header>
   <div class="prose">

@@ -14,7 +14,7 @@ code: true
   </div>
   <footer class="post-foot">
     {% if page.tags.size > 0 %}
-    <ul class="chips" role="list">{% for tag in page.tags %}<li><a class="chip" href="{{ site.baseurl }}/brain/?tag={{ tag | url_encode }}">{{ tag }}</a></li>{% endfor %}</ul>
+    <div class="taglist"><span class="taglist-label">Filed under</span><ul class="chips" role="list">{% for tag in page.tags %}<li><a class="chip" href="{{ site.baseurl }}/brain/?tag={{ tag | url_encode }}">{{ tag }}</a></li>{% endfor %}</ul></div>
     {% endif %}
     <a class="text-link" href="{{ site.baseurl }}/brain/">Back to the brain</a>
   </footer>

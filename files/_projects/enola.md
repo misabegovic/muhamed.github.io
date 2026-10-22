@@ -16,6 +16,7 @@ links:
   - { label: enola.tech, url: "https://enola.tech", note: "the project's site" }
   - { label: enola-rb, url: "https://github.com/misabegovic/enola-rb", note: "my Rails and Bundler gems for enola" }
   - { label: enola-guides, url: "/projects/enola-guides/", note: "my guides for working this way" }
+  - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice enola is part of" }
 facts:
   - { label: Role, value: Core contributor }
   - { label: Project, value: "enola-labs/enola, Apache-2.0" }
@@ -66,7 +67,7 @@ features:
         A report, never a gate: these verdicts are for the caller to weigh before editing.
   - title: Laws written as Ruby sentences.
     text: |
-      A law reads like the rule a team would say out loud, with the reason next to it. Twenty-one rule forms, laws over the whole graph, a date a law starts from, and a ratchet mode that reports the breaches already there and fails only new ones. It was measured on a hundred-repository corpus and a 1.7-million-fact monolith before it shipped in v0.4.4.
+      A law reads like the rule a team would say out loud, with the reason next to it. Twenty-one rule forms, laws over the whole graph, a date a law starts from, and a ratchet mode that reports the breaches already there and fails only new ones. It was measured on a hundred-repository corpus before it shipped in v0.4.4.
     media:
       kind: code
       label: enola/constraints/background-jobs-never-invoke-controller-code.rb

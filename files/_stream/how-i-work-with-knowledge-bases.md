@@ -9,7 +9,7 @@ created_at: 2026-10-22T10:00:00+02:00
 tags: [knowledge-base, agents, enola, enola-guides, adr, architecture, hooks, ai-native]
 ---
 
-This is how I work with coding agents day to day: a knowledge base that the code and the agents both answer to. I wrote the method down in [enola-guides](/projects/enola-guides/), guides 9 to 12; this is the version without the YAML.
+This is how I work with coding agents day to day: a knowledge base that the code and the agents both answer to. I wrote the method down in [enola-guides](/projects/enola-guides/), guides 9 to 12; this is the version without the YAML. The whole practice, with the tools and a short video, is on [its own page](/projects/knowledge-bases/).
 
 **Decisions live next to the code they govern.** A decision page names the files it governs. So any file can answer "which decision applies to me?", and a law can require that code under a decision has its page. When the code moves and the decision does not, that is visible, not a surprise three months later.
 
@@ -23,4 +23,4 @@ This is how I work with coding agents day to day: a knowledge base that the code
 
 **When the tool is missing, say so.** The wrapper under the skills prints one line and exits cleanly when enola or its config is not there. "The graph was not asked" stays different from "the graph agreed".
 
-I run my own work this way, across twenty repositories, and this site runs on the same idea through [pi-brain](https://github.com/misabegovic/pi-brain). If you want it in your team, that is [what I set up](/services/#ai-native).
+I run my own work this way, and this site runs on the same idea through [pi-brain](https://github.com/misabegovic/pi-brain). If you want it in your team, that is [what I set up](/services/#ai-native).

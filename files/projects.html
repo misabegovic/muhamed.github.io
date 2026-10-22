@@ -17,6 +17,18 @@ description: The tools Muhamed Isabegovic builds for AI-native engineering, and 
     <p class="page-intro">The tools I build and teach, and the things I make for fun. Each one is something I use, run or play myself.</p>
   </header>
 
+  {% assign hub = site.projects | where: "slug", "knowledge-bases" | first %}
+  {% if hub %}
+  <a class="project-hub" href="{{ site.baseurl }}{{ hub.url }}">
+    <img src="{{ site.baseurl }}{{ hub.thumb }}-800.webp" srcset="{{ site.baseurl }}{{ hub.thumb }}-800.webp 800w, {{ site.baseurl }}{{ hub.thumb }}-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 38rem" alt="" width="800" height="500">
+    <div>
+      <h2 class="project-hub-title">{{ hub.title }}</h2>
+      <p class="project-hub-text">{{ hub.lead }}</p>
+      <span class="service-go">The practice, the tools and a short video{{ arr }}</span>
+    </div>
+  </a>
+  {% endif %}
+
   {% assign groups = "tools,made" | split: "," %}
   {% for g in groups %}
   {% if g == "tools" %}{% assign items = h.open_source %}{% assign gtitle = h.sections.tools.title %}{% assign gid = "tools" %}{% else %}{% assign items = h.side_projects %}{% assign gtitle = h.sections.side.title %}{% assign gid = "made" %}{% endif %}

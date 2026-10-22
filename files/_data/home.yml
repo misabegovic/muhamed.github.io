@@ -308,6 +308,7 @@ open_source:
   - name: pi-brain
     role: Author and maintainer
     url: https://github.com/misabegovic/pi-brain
+    profile: /projects/pi-brain/
     outcome: Makes agents read your decisions before they edit, and keeps a person in charge of what they learn.
     # evidence: oss-pi-brain*
     text: >-
@@ -318,6 +319,7 @@ open_source:
   - name: brain
     role: Author
     url: https://github.com/misabegovic/brain
+    profile: /projects/brain/
     outcome: Gives people and agents one record of what was decided and why, kept current by the agent.
     text: >-
       A knowledge base your coding agent maintains: sources go in unchanged,

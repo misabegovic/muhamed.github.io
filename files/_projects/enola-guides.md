@@ -12,7 +12,7 @@ links:
   - { label: Source on GitHub, url: "https://github.com/misabegovic/enola-guides", note: "misabegovic/enola-guides, the original" }
   - { label: rubygems.org, url: "https://rubygems.org/gems/enola-guides", note: "gem install enola-guides" }
   - { label: enola, url: "/projects/enola/", note: "the tool the guides are for" }
-  - { label: How I work with knowledge bases, url: "/brain/how-i-work-with-knowledge-bases/", note: "the method, in plain words" }
+  - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice, across all my tools" }
 facts:
   - { label: Role, value: Author and maintainer }
   - { label: What, value: "A Ruby gem: 12 guides, 26 laws to copy, worked examples, 9 agent skills, 4 hooks" }
@@ -133,7 +133,7 @@ features:
 shows:
   title: How I work with knowledge bases.
   text: |
-    This is the method I run my own work on: one knowledge base across twenty repositories, decisions written down before structural changes, and agents that read them before they write. This site runs the same way, on [pi-brain](https://github.com/misabegovic/pi-brain), and [brain](https://github.com/misabegovic/brain) is where it started.
+    This is the method I run my own work on: one knowledge base across all the repositories of a system, decisions written down before structural changes, and agents that read them before they write. This site runs the same way, on [pi-brain](https://github.com/misabegovic/pi-brain), and [brain](https://github.com/misabegovic/brain) is where it started.
 
     The guides are that practice written down, so a team can adopt it, pin it as a gem, and keep it after I leave. When I help a team become AI-native, this is what I set up.
   link: { label: The AI-native offer, url: /services/#ai-native }
