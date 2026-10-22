@@ -61,7 +61,7 @@
     {
       "title": "Technical Lead",
       "at": "Recrubo, acquired by Carv",
-      "meta": "Seed-stage AI platform for recruiters, around 10 people when I joined; Carv acquired it two months later.",
+      "meta": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
       "start": null,
       "end": null,
       "nested": true,
@@ -70,11 +70,11 @@
         "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Rails and Node/TypeScript stacks on Google Cloud step by step closer.",
         "Co-built the event system on Redis Pub/Sub that became the integration layer between the two stacks and the base for new functionality, with Google Cloud Tasks as a fallback and for workload management.",
         "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.",
-        "Tech lead for a team of 10 engineers, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD."
+        "Tech lead for the engineering team, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD."
       ],
       "dates": null,
       "location": null,
-      "summary": "Seed-stage AI platform for recruiters, around 10 people when I joined; Carv acquired it two months later."
+      "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined."
     },
     {
       "title": "Founder and organiser",
