@@ -46,7 +46,7 @@
   };
 
   let data = null;
-  let lang = "bs";
+  let lang = "en";
   let region = "sarajevo";
   let level = "easy";
   let rows = 0, cols = 0;
@@ -61,7 +61,7 @@
   const t = () => TEXT[lang];
 
   function setLang(next) {
-    lang = next === "en" ? "en" : "bs";
+    lang = next === "bs" ? "bs" : "en";
     root.dataset.lang = lang;
     root.lang = lang;
     root.querySelectorAll("[data-set-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
@@ -301,7 +301,10 @@
 
   let saved = null;
   try { saved = localStorage.getItem("minolovac-lang"); } catch (e) {}
-  setLang(saved || "bs");
+  // English, like the rest of the site, unless the visitor chose otherwise
+  // or reads in Bosnian, Croatian, Serbian or Montenegrin.
+  const local = (navigator.languages || [navigator.language || ""]).some((l) => /^(bs|hr|sr|sh|cnr)\b/i.test(l));
+  setLang(saved || (local ? "bs" : "en"));
 
   fetch("boards.json")
     .then((res) => res.json())

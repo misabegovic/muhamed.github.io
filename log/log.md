@@ -247,3 +247,5 @@
    by: agent
 - igre: Minolovac layout, on the owner's note ("nije centrirano. Toliko prostora na stranici nije iskorišteno"). From 1000 px the intro and the warning sit side by side, and the game is two areas: controls, notes and help in a 19rem column, the board centred in the rest, its cells sized to that width and to the screen height (up to 3.5rem; the hard board fits one screen at 1440x900). Phones keep one column, with a tighter game bar so it stays on one line. No overflow at 1440, 1024 or 390.
    by: agent
+- igre: Minolovac opens in English, like the rest of the site, on the owner's ask ("Why not have it in English?"); Bosnian when the browser lists Bosnian, Croatian, Serbian or Montenegrin, and a saved choice from the toggle still wins. Checked with en-US, bs-BA, de-AT+hr and bs with a saved English choice.
+   by: agent
