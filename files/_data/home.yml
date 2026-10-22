@@ -82,9 +82,11 @@ side_projects:
     link_label: Play it
     # evidence: ~/projects/usput.ba/app/controllers/minesweeper_controller.rb
     text: >-
-      A minesweeper on map grids across Bosnia and Herzegovina, where the mines
-      sit exactly on recorded mine-suspected areas. It teaches what the numbers
-      mean, and says plainly that an empty cell is never a safety statement.
+      A minesweeper on map grids across Bosnia and Herzegovina, where a cell is
+      a mine when it touches a recorded mine-suspected area. A static,
+      keyboard-friendly copy of the game in Usput.ba. It teaches what the
+      numbers mean, and says plainly that an empty cell is never a safety
+      statement.
 
 # What I work with, AI first. Every entry is backed by the owner's code or
 # evidence store; C is listed on the owner's word (2026-09-28). An icon names a

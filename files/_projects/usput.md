@@ -16,7 +16,9 @@ cta: { label: Visit usput.ba, url: "https://usput.ba" }
 links:
   - { label: usput.ba, url: "https://usput.ba", note: "live, in 16 interface languages" }
   - { label: Source on GitHub, url: "https://github.com/misabegovic/usput.ba", note: "misabegovic/usput.ba" }
-  - { label: Minolovac, url: "/igre/minolovac/", note: "the minesweeper on real data, also on this site" }
+  - { label: Mine check, url: "https://usput.ba/mine-check", note: "is this point near a recorded mine-suspected area?" }
+  - { label: Minesweeper, url: "https://usput.ba/minesweeper", note: "the game, on real map tiles" }
+  - { label: Minolovac, url: "/igre/minolovac/", note: "a static, keyboard-friendly copy on this site" }
 facts:
   - { label: Role, value: "My own product: I build it and run it on my own" }
   - { label: What, value: "Places, experiences, plans and audio tours across Bosnia and Herzegovina" }
@@ -47,9 +49,9 @@ features:
         - { src: /images/projects/usput/audio-phone, alt: "The Baščaršija audio tour on a phone: a five and a half minute player, then the description of the bazaar." }
   - title: Mine safety, built in.
     text: |
-      Bosnia and Herzegovina still has recorded mine-suspected areas. Every place's coordinates are checked against them, and a place within 500 metres of one cannot be saved. The public mine check shows the areas on a map and answers in coarse bands only, and it says plainly that it is education, not navigation: the only authoritative source is BHMAC.
+      Bosnia and Herzegovina still has recorded mine-suspected areas. Every place's coordinates are checked against them, and a place within 500 metres of one cannot be saved. The public [mine check](https://usput.ba/mine-check) takes your position, coordinates or a tap on the map, and answers in bands only: within 500 metres, within 2 kilometres, or nothing recorded, which it never calls safe. When its data is missing it fails closed and points to BHMAC, the only authoritative source.
 
-      [Minolovac](/igre/minolovac/), a minesweeper on real map tiles, teaches what the data means. It runs on this site too.
+      Usput's [minesweeper](https://usput.ba/minesweeper) teaches what the data means, on real map tiles. A static copy, [Minolovac](/igre/minolovac/), runs on this site and can be played with a keyboard.
     media:
       kind: image
       src: /images/projects/usput/minecheck
