@@ -349,6 +349,23 @@ bring him in instead of the roles he is open to, and the JSON-LD occupations
 drop Staff Engineer, Engineering Manager and VP of Engineering. The CV, its
 nav link and the role line are unchanged.
 
+**2026-10-22, nineteenth change: Minolovac opens with a safe start and never
+ends on the first click.** Each preset was centred on the largest recorded
+area near its town, so most boards were 63 to 100% mines and Sarajevo/easy
+was 81 of 81: the first click always lost (source: files/igre/minolovac/boards.json
+before the change). Mines still sit only where the data puts them; the
+boards move instead. The build (.github/scripts/build-minolovac.py) searches
+real ground within 12 km of each preset for the nearest board, per level,
+with 15 to 36% mines whose safe ground is broken into pockets: the game
+reveals the largest pocket before the first move, and at least a quarter of
+the safe ground stays hidden, to be read across the edges of the areas.
+Below about a quarter mines, real areas cluster so that one opening clears
+the board, so classic densities (12 to 21%) are not used. Zooming out
+instead (larger boards or cells at the preset) was measured and rejected:
+Sarajevo stays at 25% or more even at 30 by 30 cells of 600 m. The density
+line no longer says the count "mirrors real statistics"; it gives the
+board's own share. The map link points at each board's centre.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -379,6 +396,10 @@ optimise for contract work and consulting, not a full-time hire ("I want to
 make it so folks want to reach out to collaborate with me, to help them with
 something, provide a service etc."). The wording and the review as the second
 path are the agent's drafts, for the owner to adjust.
+
+The nineteenth change was asked for by the owner in session on 2026-10-22
+("needs better ux, can't have games end on one click", then "Could also be
+achieved with zoom out and more squares", which was measured).
 
 The fourteenth change was asked for by the owner in session on 2026-09-29
 ("needs to have a play button on its homepage, so folks can actually play

@@ -18,7 +18,7 @@
     bs: {
       win: "Bravo! Tabla je očišćena.",
       lose: "Bum! Pokušaj ponovo.",
-      density: (name, km2) => `Broj mina na tabli odražava stvarnu statistiku: u snimku podataka predio ${name} ima oko ${km2} km² minski sumnjivih područja u krugu od 30 km.`,
+      density: (name, km2, pct) => `Ova tabla leži na stvarnom terenu u predjelu ${name}: ${pct}% njenih ćelija dodiruje evidentirana minski sumnjiva područja. U krugu od 30 km podaci za ovaj predio bilježe oko ${km2} km² takvih područja.`,
       facts: (d, region) => [
         `Stvarnost: u BiH je i dalje oko ${d.country_km2} km² označeno kao minski sumnjivo područje (BHMAC).`,
         `Stvarnost: predio ${region.name} ima oko ${Math.round(region.km2)} km² minski sumnjivih područja u krugu od 30 km (snimak ${d.snapshotBs}).`,
@@ -32,7 +32,7 @@
     en: {
       win: "Well done! Board cleared.",
       lose: "Boom! Try again.",
-      density: (name, km2) => `The number of mines mirrors real statistics: in the data snapshot, the ${name} region has about ${km2} km² of mine-suspected areas within 30 km.`,
+      density: (name, km2, pct) => `This board sits on real ground in the ${name} region: ${pct}% of its cells touch recorded mine-suspected areas. Within 30 km, the data records about ${km2} km² of them for this region.`,
       facts: (d, region) => [
         `Reality: about ${d.country_km2} km² of Bosnia and Herzegovina is still marked as mine-suspected (BHMAC).`,
         `Reality: the ${region.name} region has about ${Math.round(region.km2)} km² of mine-suspected areas within 30 km (snapshot of ${d.snapshotEn}).`,
@@ -104,7 +104,9 @@
 
   function renderDensity() {
     const r = currentRegion();
-    densityEl.textContent = t().density(r.name, Math.round(r.km2));
+    const spec = data.levels[level];
+    const pct = Math.round((data.boards[`${region}/${level}`].length / (spec.rows * spec.cols)) * 100);
+    densityEl.textContent = t().density(r.name, Math.round(r.km2), pct);
   }
 
   function newGame(pushHash) {
@@ -120,8 +122,10 @@
     if (pushHash) history.replaceState(null, "", `#${region}/${level}`);
     markSelected();
     renderDensity();
-    const r = currentRegion();
-    osmLink.href = `https://www.openstreetmap.org/?mlat=${r.lat}&mlon=${r.lon}#map=14/${r.lat}/${r.lon}`;
+    // The board's own centre: the build moves each board off the densest
+    // ground so it is playable, and never moves a mine.
+    const [lat, lon] = (data.centres && data.centres[`${region}/${level}`]) || [currentRegion().lat, currentRegion().lon];
+    osmLink.href = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=14/${lat}/${lon}`;
 
     board.innerHTML = "";
     board.style.setProperty("--cols", cols);
@@ -146,6 +150,14 @@
     focusIndex = 0;
     relabelAll();
     updateLeft();
+    // A safe start, opened before the first move, so no game ends on a blind
+    // first click. The timer starts with the player's own first move.
+    const start = data.starts && data.starts[`${region}/${level}`];
+    if (start !== undefined && start !== null && !mines.has(start)) {
+      reveal(start, true);
+      cells[start].el.classList.add("is-start");
+      cells[0].el.tabIndex = -1; focusIndex = start; cells[start].el.tabIndex = 0;
+    }
   }
 
   function neighbours(i) {
@@ -171,11 +183,11 @@
 
   function relabelAll() { for (let i = 0; i < cells.length; i++) label(i); }
 
-  function reveal(i) {
+  function reveal(i, auto) {
     if (over) return;
     const cell = cells[i];
     if (cell.revealed || cell.flagged) return;
-    if (!started) { started = true; startTimer(); }
+    if (!started && !auto) { started = true; startTimer(); }
     if (mines.has(i)) { lose(i); return; }
     const stack = [i];
     while (stack.length) {

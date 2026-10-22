@@ -18,7 +18,7 @@ links:
   - { label: Source on GitHub, url: "https://github.com/misabegovic/usput.ba", note: "misabegovic/usput.ba" }
   - { label: Mine check, url: "https://usput.ba/mine-check", note: "is this point near a recorded mine-suspected area?" }
   - { label: Minesweeper, url: "https://usput.ba/minesweeper", note: "the game, on real map tiles" }
-  - { label: Minolovac, url: "/igre/minolovac/", note: "a static, keyboard-friendly copy on this site" }
+  - { label: Minolovac, url: "/igre/minolovac/", note: "the same game, as a static, keyboard-friendly page on this site" }
 facts:
   - { label: Role, value: "My own product: I build it and run it on my own" }
   - { label: What, value: "Places, experiences, plans and audio tours across Bosnia and Herzegovina" }
@@ -51,7 +51,7 @@ features:
     text: |
       Bosnia and Herzegovina still has recorded mine-suspected areas. Every place's coordinates are checked against them, and a place within 500 metres of one cannot be saved. The public [mine check](https://usput.ba/mine-check) takes your position, coordinates or a tap on the map, and answers in bands only: within 500 metres, within 2 kilometres, or nothing recorded, which it never calls safe. When its data is missing it fails closed and points to BHMAC, the only authoritative source.
 
-      Usput's [minesweeper](https://usput.ba/minesweeper) teaches what the data means, on real map tiles. A static copy, [Minolovac](/igre/minolovac/), runs on this site and can be played with a keyboard.
+      Usput's [minesweeper](https://usput.ba/minesweeper) teaches what the data means, on real map tiles. The same game, [Minolovac](/igre/minolovac/), runs on this site as a static page that can be played with a keyboard.
     media:
       kind: image
       src: /images/projects/usput/minecheck

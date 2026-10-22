@@ -965,6 +965,7 @@ mark {
 .mines-cell:hover { background: #4d4d49; }
 .mines-cell:focus-visible { outline: 3px solid var(--yellow); outline-offset: -2px; position: relative; z-index: 1; }
 .mines-cell.is-open { background: var(--paper); cursor: default; }
+.mines-cell.is-start { box-shadow: inset 0 0 0 3px var(--yellow); }
 .mines-cell.is-mine { background: var(--mine); }
 .mines-cell.is-mine::after { content: ""; width: 42%; height: 42%; border-radius: 50%; background: var(--paper); }
 .mines-cell.is-hit { background: #7a1010; box-shadow: inset 0 0 0 3px var(--yellow); }

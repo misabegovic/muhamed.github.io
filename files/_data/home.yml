@@ -83,9 +83,9 @@ side_projects:
     # evidence: ~/projects/usput.ba/app/controllers/minesweeper_controller.rb
     text: >-
       A minesweeper on map grids across Bosnia and Herzegovina, where a cell is
-      a mine when it touches a recorded mine-suspected area. A static,
-      keyboard-friendly copy of the game in Usput.ba. It teaches what the
-      numbers mean, and says plainly that an empty cell is never a safety
+      a mine when it touches a recorded mine-suspected area, and every game
+      opens with a safe start. The same game runs in Usput.ba. It teaches what
+      the numbers mean, and says plainly that an empty cell is never a safety
       statement.
 
 # What I work with, AI first. Every entry is backed by the owner's code or

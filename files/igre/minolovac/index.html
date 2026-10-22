@@ -72,15 +72,15 @@ description: An educational minesweeper on real data. The mines sit where record
     <p class="mines-fact" data-fact hidden></p>
 
     <p class="mines-hint">
-      <span lang="bs">Klik otkriva ćeliju, desni klik ili duži pritisak postavlja zastavicu, ili uključi „Zastavica“. Tastatura: strelice za kretanje, Enter otkriva, F postavlja zastavicu. Nema zaštite prvog klika: podaci su ono što jesu.</span>
-      <span lang="en">Click reveals a cell; right-click or a long press places a flag, or switch on "Flag". Keyboard: arrows move, Enter reveals, F flags. There is no first-click protection: the data is what it is.</span>
+      <span lang="bs">Klik otkriva ćeliju, desni klik ili duži pritisak postavlja zastavicu, ili uključi „Zastavica“. Tastatura: strelice za kretanje, Enter otkriva, F postavlja zastavicu. Igra na početku otvori sigurno polje, označeno na tabli; mine se nikad ne pomjeraju, pa nakon toga podaci su ono što jesu.</span>
+      <span lang="en">Click reveals a cell; right-click or a long press places a flag, or switch on "Flag". Keyboard: arrows move, Enter reveals, F flags. The game opens a safe start for you, marked on the board; mines never move, so after that the data is what it is.</span>
     </p>
     <p class="mines-hint"><a data-osm href="https://www.openstreetmap.org/"><span lang="bs">Pogledaj ovaj predio na OpenStreetMapu</span><span lang="en">See this area on OpenStreetMap</span></a></p>
   </div>
 
   <p class="mines-origin">
-    <span lang="bs">Tabla je geografska mreža oko odabranog predjela; svaka ćelija koja se preklapa sa evidentiranim sumnjivim područjem je mina. Igra je prvobitno napravljena za <a href="https://usput.ba">Usput.ba</a>. Izvor podataka: evidentirana minski sumnjiva područja u BiH, snimak od <span data-snapshot-bs>31. 7. 2024</span>.</span>
-    <span lang="en">A board is a geographic grid around the chosen region; every cell that overlaps a recorded suspected area is a mine. The game was first made for <a href="https://usput.ba">Usput.ba</a>. Data source: recorded mine-suspected areas in Bosnia and Herzegovina, snapshot of <span data-snapshot-en>31 July 2024</span>.</span>
+    <span lang="bs">Tabla je geografska mreža na stvarnom terenu u odabranom predjelu, pomjerena sa najgušćeg dijela tako da se igra može igrati; svaka ćelija koja se preklapa sa evidentiranim sumnjivim područjem je mina. Ista igra radi i na <a href="https://usput.ba/minesweeper">Usput.ba</a>, na stvarnoj karti. Izvor podataka: evidentirana minski sumnjiva područja u BiH, snimak od <span data-snapshot-bs>31. 7. 2024</span>.</span>
+    <span lang="en">A board is a geographic grid on real ground in the chosen region, moved off the densest part so the game can be played; every cell that overlaps a recorded suspected area is a mine. The same game runs on <a href="https://usput.ba/minesweeper">Usput.ba</a>, on a real map. Data source: recorded mine-suspected areas in Bosnia and Herzegovina, snapshot of <span data-snapshot-en>31 July 2024</span>.</span>
   </p>
 </div>
 <script src="{{ site.baseurl }}/igre/minolovac/minolovac.js?v={{ '/igre/minolovac/minolovac.js' | asset_digest }}" defer></script>
