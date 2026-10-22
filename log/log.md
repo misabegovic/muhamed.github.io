@@ -229,3 +229,5 @@
    by: agent
 - site: on the owner's ask (the services heading "sounds a bit restricting"), the offers read as where teams usually start, not a closed list: the homepage heading "Four ways to work together." / "Pick the one that fits..." becomes "How I can help." / "Where teams usually start with me. Something else in mind? Tell me about it."; the /services/ intro says the offers often overlap and that work fitting none of them is welcome; /work/ drops "Four"; llms.txt says "not a closed list". Refines the homepage ADR's seventeenth change.
    by: agent
+- wiki: drafted the AI-suggested ADR `ai-suggestions/adrs/project-profile-pages.md` on the owner's ask: a `projects` collection published at `/work/<slug>/`, one layout, real screenshots and terminal captures (no video yet), the homepage and /work/ lists linking to the profiles, starting with enola and Usput.ba. Proposed, awaiting approval; nothing built.
+   by: agent
