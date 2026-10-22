@@ -900,7 +900,16 @@ mark {
 .mines-emergency { font-weight: 650; color: var(--ink) !important; }
 .mines-stale { font-weight: 600; color: var(--mine) !important; }
 
-.mines-game { margin-top: clamp(2rem, 1.5rem + 2vw, 3rem); }
+/* Two areas on wide screens: the controls and notes beside the board, which
+   is centred in the rest of the width and sized to it and to the screen
+   height. One column on narrow screens: controls, board, then help. */
+.mines-game { display: grid; grid-template-areas: "side" "play" "help"; gap: 1.5rem; margin-top: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.mines-side { grid-area: side; }
+.mines-play { grid-area: play; display: grid; justify-self: center; width: fit-content; max-width: 100%; }
+.mines-help { grid-area: help; }
+.mines-play .mines-bar { width: auto; margin-top: 0; justify-content: space-between; }
+.mines-play .mines-fact { width: 0; min-width: 100%; max-width: none; }
+.mines-help .mines-hint:first-child { margin-top: 0; }
 .mines-controls { display: grid; gap: 1rem; }
 .mines-control { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
 .mines-label { min-width: 5.5rem; font-weight: 700; }
@@ -992,10 +1001,32 @@ mark {
 .mines-origin { max-width: 60ch; margin-top: clamp(2.5rem, 2rem + 2vw, 3.5rem); padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: var(--t-small); color: var(--ink-3); }
 .mines-origin a { color: var(--ink); }
 
+@media (min-width: 1000px) {
+  .mines-top { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 2rem clamp(2.5rem, 1rem + 4vw, 5rem); align-items: start; }
+  .mines-top .page-head { margin-bottom: 0; }
+  .mines-warning { max-width: none; }
+  .mines-game {
+    --side: 19rem;
+    grid-template-columns: var(--side) minmax(0, 1fr);
+    grid-template-areas: "side play" "help play";
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem clamp(2.5rem, 1rem + 4vw, 5rem);
+    align-items: start;
+  }
+  .mines-label { min-width: 0; width: 100%; }
+  .mines-board {
+    --play: calc(min(100vw - 2 * var(--pad), var(--wrap)) - var(--side) - clamp(2.5rem, 1rem + 4vw, 5rem));
+    --cell: min(3.5rem, calc((var(--play) - 4px) / var(--cols) - 2px), calc((100dvh - 11rem) / var(--rows) - 2px));
+  }
+}
+
 @media (max-width: 640px) {
   .mines-board { --cell: min(2rem, calc((100vw - 2 * var(--pad) - 4px - 2px * (var(--cols) - 1)) / var(--cols))); }
   .mines-label { min-width: 0; width: 100%; }
   .mines-status { min-width: 0; }
+  .mines-play .mines-bar { gap: 0.5rem 0.6rem; padding: 0.6rem 0.65rem; }
+  .mines-play .mines-bar .button-small { padding: 0.55rem 0.8rem; }
+  .mines-status:empty { display: none; }
 }
 
 /* Project profiles (/projects/<slug>/) and their index (/projects/). */

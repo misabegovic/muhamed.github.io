@@ -129,6 +129,8 @@
 
     board.innerHTML = "";
     board.style.setProperty("--cols", cols);
+    root.style.setProperty("--cols", cols);
+    root.style.setProperty("--rows", rows);
     cells = [];
     let row;
     for (let i = 0; i < rows * cols; i++) {
