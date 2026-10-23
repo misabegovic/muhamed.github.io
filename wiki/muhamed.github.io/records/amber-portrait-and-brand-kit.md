@@ -17,6 +17,9 @@ implemented_in:
   - files/images/profile.jpg
   - files/images/social/share.png
   - files/cv/Muhamed_Isabegovic_CV.pdf
+  - files/_cv/cv.html
+  - files/images/social/linkedin-header.png
+  - files/images/social/x-header.png
 decided_by: wiki/muhamed.github.io/adrs/amber-portrait-and-brand-kit.md
 sources:
   - files/brand/muhamed-isabegovic-amber.jpg
@@ -26,8 +29,10 @@ sources:
 
 # Record: amber portrait and brand kit
 
-Delivered on 2026-10-23 on branch `ccr-1b4fabe3-wdd1mj`. Checked in a local
-build, not yet live.
+Delivered on 2026-10-23 in #66 (squash-merged as ea6448c), deployed and
+checked live: `/brand/`, its zip, the photos, the LinkedIn header, About,
+llms.txt and the CV PDF answer 200, and the live `images/profile.jpg` and CV
+PDF are byte-identical to the built ones.
 
 - Both masters are in `files/brand/`. The render script reproduces the old
   `profile.jpg` byte for byte and the old Apple touch icon pixel for pixel
@@ -35,7 +40,7 @@ build, not yet live.
   files/brand/muhamed-isabegovic-original.jpg).
 - Re-rendered with the new photo: `share.png`, the eight service images and
   the three-page CV PDF, which stays tagged. Only page 1 changed, at the
-  photo. The project cards and the LinkedIn and X headers carry no photo
+  photo. The project cards carry no photo
   and were left as they were.
 - `/brand/`: photos with four downloads each, terms, name, title and
   contacts, eight colour swatches with copy buttons, the typeface, and
@@ -46,6 +51,11 @@ build, not yet live.
   bytes, and a changed colour stops the build.
 - The copy buttons in `site.js` now restore their own label after copying,
   and announce long text by name to screen readers.
+- In the same PR: the LinkedIn and X headers moved from black to the amber
+  gradient (the ADR's first change); the site keeps its yellow accent. The CV
+  became one column for parsers, with the photo as a full 30 mm square and
+  its projects and events linked (15 links in all), under the homepage ADR's
+  twentieth change (source: files/_cv/cv.html).
 
 ## Related
 
