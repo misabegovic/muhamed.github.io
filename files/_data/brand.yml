@@ -3,7 +3,7 @@
 # _pages/about.md and _data/home.yml; change them there first, then here.
 
 intro: >-
-  My photos, colours, typeface and bios, for event pages, articles,
+  My photos, banners, colours, typeface and bios, for event pages, articles,
   introductions or anything else. Take what you need.
 
 # Terms the owner chose (2026-10-23): free use, no credit asked.
@@ -24,6 +24,12 @@ photos:
   - id: original
     name: Studio dark
     note: The original studio portrait, for dark layouts.
+
+# Profile headers, rendered into images/social/ by
+# .github/scripts/render-social-images.js; the kit links them there.
+banners:
+  - { name: LinkedIn header, file: images/social/linkedin-header.png, size: "1584 × 396 px", note: "The left third stays clear for the profile photo." }
+  - { name: X header, file: images/social/x-header.png, size: "1500 × 500 px", note: "The left side stays clear for the profile photo." }
 
 # token: the site.css custom property the value must match (the build checks).
 colors:

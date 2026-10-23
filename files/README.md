@@ -14,7 +14,7 @@ bundle exec jekyll serve
 
 ## Images
 
-Ship images at the size they are shown, as WebP: about 3× the CSS size for logos and avatars, and 1400 px wide for photos in posts. `images/profile.jpg` stays full size because the CV PDF, the share images and the JSON-LD use it; pages show `images/profile-{480,800,1200}.webp` through `srcset`.
+Ship images at the size they are shown, as WebP: about 3× the CSS size for logos and avatars, and 1400 px wide for photos in posts. `images/profile.jpg` stays full size because the CV PDF, the share images and the JSON-LD use it; pages show `images/profile-{480,800,1200}.webp` through `srcset`. Those and the favicons are linked with a `?v=` content hash (`asset_digest`), like the CSS, so a new photo reaches returning visitors instead of their cached copy.
 
 ## The portrait and the brand kit
 
