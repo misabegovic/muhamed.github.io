@@ -81,6 +81,10 @@ the amber backdrop with ink type and the highlight in ink. That was against
 the agent's advice: the amber avatar stands out least on it. Only those two
 images change (source: .github/scripts/render-social-images.js).
 
+The site's accent stays yellow: after a mockup with amber as the accent on
+every page, the owner chose to keep it (2026-10-23). Amber stays the
+portrait's and the banners' backdrop, not a UI colour.
+
 ## Related
 
 - [Record: amber portrait and brand kit](../records/amber-portrait-and-brand-kit.md)
