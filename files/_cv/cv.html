@@ -41,6 +41,8 @@ li::marker { color: var(--ink-3); }
 .chips.first span { background: linear-gradient(transparent 62%, rgb(255 210 31 / .55) 62%); }
 .plain p { margin: 0; }
 a { color: inherit; text-decoration: none; }
+/* Links in the body: underlined in yellow, so a reader of the PDF sees they open. */
+main a { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 1.5px; text-underline-offset: .18em; text-decoration-skip-ink: none; }
 .quote { margin: 0 0 3mm; break-inside: avoid; }
 .quote p { margin: 0 0 .8mm; color: var(--ink); }
 .quote .who { color: var(--ink-3); font-size: 8.4pt; }
@@ -99,16 +101,16 @@ a { color: inherit; text-decoration: none; }
         </ul>
       </div>
       <div class="role">
-        <h3>Founder and organiser <span class="at">· EuRuKo, RubyConf Austria, GoatConf</span></h3>
+        <h3>Founder and organiser <span class="at">· <a href="https://2024.euruko.org">EuRuKo</a>, <a href="https://rubyconf.at">RubyConf Austria</a>, <a href="https://goatconf.com/">GoatConf</a></span></h3>
         <ul>
           <li>EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.</li>
-          <li>RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).</li>
+          <li>RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (<a href="https://hunt.rubyconf.at">hunt.rubyconf.at</a>).</li>
           <li>Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver.</li>
           <li>GoatConf 2027, Tuzla, 3–5 June: free, for people who build and sell software.</li>
         </ul>
       </div>
       <div class="role" data-under="founder">
-        <h3>AI Engineer <span class="at">· Usput.ba, my own product</span></h3>
+        <h3>AI Engineer <span class="at">· <a href="https://usput.ba">Usput.ba</a>, my own product</span></h3>
         <div class="meta">A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.</div>
         <ul>
           <li>Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.</li>
@@ -160,20 +162,20 @@ a { color: inherit; text-decoration: none; }
   <section>
     <h2>Open Source</h2>
     <div class="role">
-      <h3>treasure_hunt <span class="at">· author</span></h3>
+      <h3><a href="https://github.com/Ruby-Austria/treasure_hunt">treasure_hunt</a> <span class="at">· author</span></h3>
       <ul><li>A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organizer.</li></ul>
     </div>
     <div class="role">
-      <h3>enola <span class="at">· core contributor</span></h3>
-      <ul><li>Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including enola-guides.</li></ul>
+      <h3><a href="https://github.com/enola-labs/enola">enola</a> <span class="at">· core contributor</span></h3>
+      <ul><li>Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including <a href="https://rubygems.org/gems/enola-guides">enola-guides</a>.</li></ul>
     </div>
     <div class="role">
-      <h3>pi-brain <span class="at">· author and maintainer</span></h3>
+      <h3><a href="https://github.com/misabegovic/pi-brain">pi-brain</a> <span class="at">· author and maintainer</span></h3>
       <ul><li>An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases.</li></ul>
     </div>
     <div class="role">
       <h3>brain and tabula <span class="at">· author</span></h3>
-      <ul><li>Knowledge bases people and agents work from: brain on GitHub, and tabula, in Rust, in private development.</li></ul>
+      <ul><li>Knowledge bases people and agents work from: <a href="https://github.com/misabegovic/brain">brain on GitHub</a>, and tabula, in Rust, in private development.</li></ul>
     </div>
   </section>
   <section>
