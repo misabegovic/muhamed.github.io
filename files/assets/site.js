@@ -5,10 +5,13 @@
   const top = document.querySelector(".top");
   const toggle = top && top.querySelector(".menu-toggle");
 
-  // Copy-address buttons: shown only with this script, for visitors whose
-  // device has no mail app to open a mailto link.
+  // Copy buttons: shown only with this script. Beside an email address, for
+  // visitors whose device has no mail app to open a mailto link; on the brand
+  // kit, for its bios and colours. data-copy-name names long text for screen
+  // readers, which would otherwise hear it all read back.
   document.querySelectorAll("[data-copy]").forEach((button) => {
     const label = button.querySelector("[data-copy-label]");
+    const idle = label.textContent;
     const status = document.createElement("span");
     status.className = "visually-hidden";
     status.setAttribute("aria-live", "polite");
@@ -16,6 +19,7 @@
     button.hidden = false;
     button.addEventListener("click", async () => {
       const text = button.dataset.copy;
+      const name = button.dataset.copyName || text;
       let done = false;
       try { await navigator.clipboard.writeText(text); done = true; } catch (e) {
         const area = Object.assign(document.createElement("textarea"), { value: text });
@@ -26,11 +30,11 @@
         try { done = document.execCommand("copy"); } catch (e2) {}
         area.remove();
       }
-      label.textContent = done ? "Copied" : text;
-      status.textContent = done ? `Copied ${text}` : `Select and copy ${text}`;
+      label.textContent = done ? "Copied" : (button.dataset.copyName ? "Copy failed" : text);
+      status.textContent = done ? `Copied ${name}` : `Select and copy ${name}`;
       button.classList.toggle("is-copied", done);
       clearTimeout(button.copyTimer);
-      button.copyTimer = setTimeout(() => { label.textContent = "Copy address"; button.classList.remove("is-copied"); status.textContent = ""; }, 2500);
+      button.copyTimer = setTimeout(() => { label.textContent = idle; button.classList.remove("is-copied"); status.textContent = ""; }, 2500);
     });
   });
   const panel = document.getElementById("site-menu");

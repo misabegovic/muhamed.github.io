@@ -1,0 +1,95 @@
+---
+layout: default
+title: Brand kit
+permalink: /brand/
+description: Photos, colours, typeface and bios of Muhamed Isabegovic, free to use for event pages, articles and introductions.
+---
+{%- comment -%}
+  The brand kit. Words, photos and colours come from _data/brand.yml; the
+  photo sizes from .github/scripts/render-profile-images.py; the zip from
+  _plugins/brand_kit.rb, built with the site.
+{%- endcomment -%}
+{% assign b = site.data.brand %}{% assign h = site.data.home %}
+{% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
+{% capture down %}<svg class="arr arr-down" viewBox="0 0 12 16" aria-hidden="true"><path d="M6 1v13M1.5 9 6 14l4.5-5"/></svg>{% endcapture %}
+<div class="wrap page brand-page">
+  <header class="page-head">
+    <h1 class="page-title">Brand kit</h1>
+    <p class="page-intro">{{ b.intro }}</p>
+    <p class="brand-all"><a class="button" href="{{ site.baseurl }}/brand/{{ b.zip }}" download>Download everything{{ down }}</a> <span>Zip, {{ b.zip_size }}: photos, colours, bios</span></p>
+  </header>
+
+  <section class="brand-section" aria-labelledby="h-photos">
+    <h2 id="h-photos" class="brand-title">Photos</h2>
+    <div class="brand-photos">
+      {% for p in b.photos %}{% assign base = site.baseurl | append: "/brand/muhamed-isabegovic-" | append: p.id %}
+      <figure class="brand-photo">
+        <img src="{{ base }}-400.jpg" srcset="{{ base }}-400.jpg 400w, {{ base }}-1080.jpg 1080w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 34rem" alt="{{ site.author }}, {{ p.name | downcase }}" width="1080" height="1080" loading="lazy">
+        <figcaption>
+          <strong>{{ p.name }}</strong>
+          <span>{{ p.note }}</span>
+          <ul class="brand-downloads" role="list">
+            <li><a href="{{ base }}.jpg" download>Full size <small>2048 px, JPG</small></a></li>
+            <li><a href="{{ base }}-1080.jpg" download>1080 px <small>JPG</small></a></li>
+            <li><a href="{{ base }}-400.jpg" download>400 px <small>JPG</small></a></li>
+            <li><a href="{{ base }}-avatar.png" download>Round avatar <small>800 px, PNG</small></a></li>
+          </ul>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="brand-section" aria-labelledby="h-use">
+    <h2 id="h-use" class="brand-title">Using them</h2>
+    <ul class="proofs brand-usage" role="list">{% for u in b.usage %}<li>{{ u }}</li>{% endfor %}</ul>
+    <dl class="brand-facts">
+      <div><dt>Name</dt><dd>{{ site.author }}</dd></div>
+      <div><dt>Title</dt><dd>{{ h.person.role }}</dd></div>
+      <div><dt>Website</dt><dd><a href="{{ site.url }}">{{ site.url | remove: "https://" }}</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:{{ h.closing.email }}">{{ h.closing.email }}</a></dd></div>
+    </dl>
+  </section>
+
+  <section class="brand-section" aria-labelledby="h-colours">
+    <h2 id="h-colours" class="brand-title">Colours</h2>
+    <ul class="brand-colors" role="list">
+      {% for c in b.colors %}
+      <li>
+        <span class="brand-swatch" style="background: {{ c.hex }}" aria-hidden="true"></span>
+        <strong>{{ c.name }}</strong>
+        <code>{{ c.hex }}</code>
+        <span class="brand-role">{{ c.role }}</span>
+        <button type="button" class="copy-email brand-copy" data-copy="{{ c.hex }}" hidden><span data-copy-label>Copy</span></button>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="brand-section" aria-labelledby="h-type">
+    <h2 id="h-type" class="brand-title">Typeface</h2>
+    <div class="brand-type">
+      <p class="brand-type-sample" aria-hidden="true">Aa</p>
+      <div>
+        <p class="brand-type-name">{{ b.font.name }}</p>
+        <p>{{ b.font.use }}</p>
+        <p class="brand-meta">{{ b.font.license }}. <a class="text-link" href="{{ b.font.url }}">Get it from Google Fonts{{ arr }}</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand-section" aria-labelledby="h-bios">
+    <h2 id="h-bios" class="brand-title">Bios</h2>
+    <div class="brand-bios">
+      {% for bio in b.bios %}{% assign words = bio.text | number_of_words %}
+      <article class="brand-bio" id="bio-{{ bio.id }}">
+        <header>
+          <h3>{{ bio.name }} <small>{{ words }} words</small></h3>
+          <button type="button" class="copy-email" data-copy="{{ bio.text | strip }}" data-copy-name="the {{ bio.name | downcase }} bio" hidden><span data-copy-label>Copy</span></button>
+        </header>
+        <p>{{ bio.text }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>

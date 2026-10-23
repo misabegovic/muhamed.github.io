@@ -1168,7 +1168,7 @@ div.project-card-link { cursor: default; }
   .project-card-link:hover .project-card-thumb { transform: none; box-shadow: none; }
 }
 
-/* Copy-address buttons beside the email address. */
+/* Copy buttons: beside the email address, and for the brand kit's colours and bios. */
 .copy-email { display: inline-flex; align-items: center; min-height: 36px; margin-left: 0.4rem; padding: 0.2rem 0.85rem; border: 1.5px solid currentColor; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-size: var(--t-small); font-weight: 650; vertical-align: middle; cursor: pointer; transition: background-color 0.15s ease-out, color 0.15s ease-out; }
 .copy-email:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .copy-email.is-copied { background: var(--ink); border-color: var(--ink); color: var(--yellow); }
@@ -1187,3 +1187,52 @@ div.project-card-link { cursor: default; }
 .plan-status { display: inline-flex; width: fit-content; margin-bottom: 0.75rem; padding: 0.1rem 0.6rem; border: 1px solid var(--line); border-radius: 999px; font-size: 0.8125rem; font-weight: 650; color: var(--ink-2); }
 .plan-status-built { border-color: var(--ink); background: var(--ink); color: var(--yellow); }
 .plan-status-in-progress { border-color: var(--yellow); background: rgb(255 210 31 / 0.25); color: var(--ink); }
+
+/* Brand kit (/brand/): photos, colours, type and bios to download or copy. */
+.arr-down { width: 0.75em; height: 1em; }
+a:hover .arr-down { transform: translateY(2px); }
+.brand-all { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; margin-top: 2rem; font-size: var(--t-small); color: var(--ink-3); }
+.brand-section { margin-top: clamp(3rem, 2.25rem + 2.5vw, 4.5rem); }
+.brand-title { padding-top: 0.9rem; margin-bottom: 1.5rem; border-top: 3px solid var(--ink); font-size: var(--t-h3); font-weight: 800; letter-spacing: -0.02em; }
+.brand-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 1rem + 2vw, 3rem); }
+.brand-photo { margin: 0; }
+.brand-photo img { display: block; width: 100%; height: auto; aspect-ratio: 1; border-radius: var(--radius); background: var(--tint); }
+.brand-photo figcaption { display: grid; gap: 0.3rem; margin-top: 1rem; }
+.brand-photo figcaption > strong { font-size: 1.25rem; font-weight: 750; }
+.brand-photo figcaption > span { color: var(--ink-2); }
+.brand-downloads { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.brand-downloads a { display: inline-flex; align-items: baseline; gap: 0.4rem; padding: 0.45rem 0.85rem; border: 1px solid var(--line); border-radius: 999px; font-size: var(--t-small); font-weight: 650; text-decoration: none; transition: border-color 0.15s ease-out, background-color 0.15s ease-out; }
+.brand-downloads a:hover { border-color: var(--ink); background: var(--yellow); }
+.brand-downloads small { font-size: 0.8125rem; font-weight: 500; color: var(--ink-3); }
+.brand-downloads a:hover small { color: var(--ink-2); }
+.brand-usage { max-width: 48rem; }
+.brand-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem 2rem; margin-top: 2rem; }
+.brand-facts dt { font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
+.brand-facts dd { margin: 0.2rem 0 0; font-weight: 600; }
+.brand-facts a { color: inherit; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+.brand-colors { display: grid; grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr)); gap: 1.75rem 1.5rem; }
+.brand-colors li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-content: start; column-gap: 0.75rem; row-gap: 0.15rem; }
+.brand-swatch { grid-column: 1 / -1; height: 5.5rem; margin-bottom: 0.6rem; border: 1px solid rgb(0 0 0 / 0.08); border-radius: var(--radius); }
+.brand-colors strong { font-weight: 700; }
+.brand-colors code { grid-column: 1; font-size: var(--t-small); color: var(--ink-2); }
+.brand-role { grid-column: 1 / -1; font-size: var(--t-small); line-height: 1.45; color: var(--ink-3); }
+.brand-copy { grid-column: 2; grid-row: 2 / span 2; align-self: center; margin-left: 0; }
+.brand-type { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 1rem clamp(1.5rem, 1rem + 3vw, 3.5rem); max-width: 48rem; }
+.brand-type-sample { font-size: clamp(5rem, 3.5rem + 6vw, 9rem); font-weight: 800; letter-spacing: -0.05em; line-height: 0.9; }
+.brand-type-name { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.brand-type div > * + * { margin-top: 0.5rem; }
+.brand-type div p:not(.brand-type-name) { color: var(--ink-2); }
+.brand-meta { font-size: var(--t-small); }
+.brand-bios { display: grid; gap: 1.25rem; max-width: 48rem; }
+.brand-bio { padding: 1.25rem 1.5rem 1.5rem; border-radius: var(--radius); background: var(--tint); }
+.brand-bio header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; margin-bottom: 0.75rem; }
+.brand-bio h3 { font-size: 1.125rem; font-weight: 750; }
+.brand-bio h3 small { margin-left: 0.4rem; font-size: var(--t-small); font-weight: 500; color: var(--ink-3); }
+.brand-bio .copy-email { margin-left: 0; }
+.brand-bio p { line-height: 1.6; color: var(--ink-2); }
+@media (max-width: 700px) {
+  .brand-photos { grid-template-columns: 1fr; }
+  .brand-type { grid-template-columns: 1fr; }
+  .brand-colors { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; }
+  .brand-swatch { height: 4rem; }
+}

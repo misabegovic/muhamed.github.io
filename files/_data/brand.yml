@@ -1,0 +1,80 @@
+# Everything the brand kit says (/brand/ and its zip). Edit the words here; the
+# page and _plugins/brand_kit.rb read them. The facts in the bios come from
+# _pages/about.md and _data/home.yml; change them there first, then here.
+
+intro: >-
+  My photos, colours, typeface and bios, for event pages, articles,
+  introductions or anything else. Take what you need.
+
+# Terms the owner chose (2026-10-23): free use, no credit asked.
+usage:
+  - Free to use for anything about me or my work, including talks, articles, event and podcast pages, and introductions. No credit needed.
+  - Crop and resize as you need. Please don't otherwise edit the photos.
+  - Don't use them in a way that suggests I endorse something I haven't.
+
+# The kit's zip, built from this file and files/brand/ on every site build.
+zip: muhamed-isabegovic-brand-kit.zip
+
+# Masters in files/brand/; .github/scripts/render-profile-images.py makes the
+# sizes and the round avatar from each. The first is the one the site shows.
+photos:
+  - id: amber
+    name: On amber
+    note: The current photo, used on this site and my profiles.
+  - id: original
+    name: Studio dark
+    note: The original studio portrait, for dark layouts.
+
+# token: the site.css custom property the value must match (the build checks).
+colors:
+  - { name: Yellow, hex: "#ffd21f", token: --yellow, role: "Highlights, buttons, underlines" }
+  - { name: Ink, hex: "#141414", token: --ink, role: "Text and rules" }
+  - { name: Paper, hex: "#ffffff", token: --paper, role: "Background" }
+  - { name: Tint, hex: "#f3f3f1", token: --tint, role: "Panels" }
+  - { name: Ink 2, hex: "#474747", token: --ink-2, role: "Secondary text" }
+  - { name: Line, hex: "#e2e2de", token: --line, role: "Hairlines" }
+  - { name: Dark, hex: "#111111", token: --dark, role: "Footer and dark sections" }
+  - { name: Amber, hex: "#f5a623", role: "The portrait's backdrop, a gradient from #ffb93f to #e8920c" }
+
+font:
+  name: Schibsted Grotesk
+  url: https://fonts.google.com/specimen/Schibsted+Grotesk
+  license: SIL Open Font License, free for any use
+  use: Headings in ExtraBold (800) with tight tracking, text in Regular (400).
+
+# In the third person, for organisers and press.
+bios:
+  - id: short
+    name: Short
+    text: >-
+      Muhamed Isabegovic is a senior product engineer and technical lead in
+      Vienna. He builds products, leads the teams that ship them, and helps
+      companies become AI-native.
+  - id: medium
+    name: Medium
+    text: >-
+      Muhamed Isabegovic is a senior product engineer and technical lead in
+      Vienna. For more than ten years he has taken software from an idea to
+      production, as a hands-on engineer and as a tech lead, for startups and
+      established product companies alike: trading systems in C++, SaaS
+      products in Rails and AI features in hiring software. He is the author
+      of pi-brain, an agent-maintained knowledge base, and a core contributor
+      to enola, which checks code against architecture rules.
+  - id: long
+    name: Long
+    text: >-
+      Muhamed Isabegovic is a senior product engineer and technical lead in
+      Vienna, working remotely across Europe through his company, Isabegovic
+      Muhamed e.U. For more than ten years he has owned products and the teams
+      that build them, from deciding what to build to running it in
+      production: trading systems in C++, SaaS products in Rails and AI
+      features in hiring software. Most recently he built AI screening
+      features for Teamtailor's Co-pilot team; before that he was tech lead at
+      Recrubo through its acquisition by Carv. He also builds Usput.ba, his
+      own travel guide to Bosnia and Herzegovina, as its AI engineer. Lately
+      he works one layer up, with agents writing the code, and builds
+      open-source tools that keep that reliable: pi-brain holds the specs and
+      decisions code is regenerated from, and enola, where he is a core
+      contributor and maintains four Ruby gems, checks code against
+      architecture rules. He helps companies become AI-native, in how they
+      build and in what they build.
