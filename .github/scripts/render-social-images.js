@@ -107,10 +107,11 @@ function goatconfNote(w, h) {
 // phones, so the copy sits right of safeLeft and away from top and bottom.
 function header(w, h, safeLeft) {
   const u = w / 1584;
-  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
+  // On the portrait's amber backdrop (files/_data/brand.yml), so banner and photo match.
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:linear-gradient(100deg,#ffb93f,#e8920c);color:var(--ink);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
     <div>
-      <h1 style="font-size:${64 * u}px;line-height:1.04">I build products and lead<br>the teams that <span class="hl-dark">ship them</span>.</h1>
-      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:500;color:var(--on-dark-2)"><b style="color:var(--yellow)">Ten years</b> of taking software from an idea to production. &nbsp;<b style="color:var(--on-dark)">muhamed.at</b></p>
+      <h1 style="font-size:${64 * u}px;line-height:1.04">I build products and lead<br>the teams that <span class="hl-dark" style="background:var(--ink);color:#ffb93f">ship them</span>.</h1>
+      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:500"><b>Ten years</b> of taking software from an idea to production. &nbsp;<b>muhamed.at</b></p>
     </div>
   </div>`;
 }

@@ -73,6 +73,14 @@ tokens plus the amber backdrop (source: files/assets/site.css).
   render only by anti-aliasing. Images without the photo were left
   untouched.
 
+## First change: amber banners (2026-10-23)
+
+The LinkedIn and X headers were black. The owner found that too aggressive
+and chose, from five mockups (black, white, light grey, site yellow, amber),
+the amber backdrop with ink type and the highlight in ink. That was against
+the agent's advice: the amber avatar stands out least on it. Only those two
+images change (source: .github/scripts/render-social-images.js).
+
 ## Related
 
 - [Record: amber portrait and brand kit](../records/amber-portrait-and-brand-kit.md)
