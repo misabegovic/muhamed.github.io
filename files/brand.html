@@ -2,7 +2,7 @@
 layout: default
 title: Brand kit
 permalink: /brand/
-description: Photos, colours, typeface and bios of Muhamed Isabegovic, free to use for event pages, articles and introductions.
+description: Photos, banners, colours, typeface and bios of Muhamed Isabegovic, free to use for event pages, articles and introductions.
 ---
 {%- comment -%}
   The brand kit. Words, photos and colours come from _data/brand.yml; the
@@ -16,7 +16,7 @@ description: Photos, colours, typeface and bios of Muhamed Isabegovic, free to u
   <header class="page-head">
     <h1 class="page-title">Brand kit</h1>
     <p class="page-intro">{{ b.intro }}</p>
-    <p class="brand-all"><a class="button" href="{{ site.baseurl }}/brand/{{ b.zip }}" download>Download everything{{ down }}</a> <span>Zip, {{ b.zip_size }}: photos, colours, bios</span></p>
+    <p class="brand-all"><a class="button" href="{{ site.baseurl }}/brand/{{ b.zip }}" download>Download everything{{ down }}</a> <span>Zip, {{ b.zip_size }}: photos, banners, colours, bios</span></p>
   </header>
 
   <section class="brand-section" aria-labelledby="h-photos">
@@ -34,6 +34,22 @@ description: Photos, colours, typeface and bios of Muhamed Isabegovic, free to u
             <li><a href="{{ base }}-400.jpg" download>400 px <small>JPG</small></a></li>
             <li><a href="{{ base }}-avatar.png" download>Round avatar <small>800 px, PNG</small></a></li>
           </ul>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="brand-section" aria-labelledby="h-banners">
+    <h2 id="h-banners" class="brand-title">Banners</h2>
+    <div class="brand-banners">
+      {% for bn in b.banners %}
+      <figure class="brand-banner">
+        <img src="{{ site.baseurl }}/{{ bn.file }}" alt="{{ bn.name }}: I build products and lead the teams that ship them, on amber" loading="lazy">
+        <figcaption>
+          <strong>{{ bn.name }}</strong>
+          <span>{{ bn.note }}</span>
+          <ul class="brand-downloads" role="list"><li><a href="{{ site.baseurl }}/{{ bn.file }}" download>Download <small>{{ bn.size }}, PNG</small></a></li></ul>
         </figcaption>
       </figure>
       {% endfor %}

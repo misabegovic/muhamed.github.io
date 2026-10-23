@@ -25,6 +25,8 @@ sources:
   - files/brand/muhamed-isabegovic-amber.jpg
   - files/brand/muhamed-isabegovic-original.jpg
   - files/_data/brand.yml
+  - files/images/social/linkedin-header.png
+  - files/images/social/x-header.png
 ---
 
 # Record: amber portrait and brand kit
@@ -56,6 +58,10 @@ PDF are byte-identical to the built ones.
   became one column for parsers, with the photo as a full 30 mm square and
   its projects and events linked (15 links in all), under the homepage ADR's
   twentieth change (source: files/_cv/cv.html).
+- Later on 2026-10-23, on the owner's ask: a Banners section on `/brand/`
+  with the LinkedIn and X headers, linked where the render script writes
+  them, and a `banners/` folder in the zip (now 4.0 MB) (source:
+  files/_data/brand.yml).
 
 ## Related
 

@@ -1,8 +1,9 @@
 # The brand kit (/brand/): checks its colours against site.css, and builds its
-# zip from _data/brand.yml and files/brand/ on every build, so the download
-# never drifts from the page. The Gemfile keeps rubyzip out on purpose, so the
-# zip is written here with Zlib: deflated text, stored images (already
-# compressed), and a fixed date so an unchanged kit gives the same bytes.
+# zip from _data/brand.yml, files/brand/ and the banners on every build, so
+# the download never drifts from the page. The Gemfile keeps rubyzip out on
+# purpose, so the zip is written here with Zlib: deflated text, stored images
+# (already compressed), and a fixed date so an unchanged kit gives the same
+# bytes.
 require "zlib"
 
 module BrandKit
@@ -31,6 +32,8 @@ module BrandKit
     lines += ["How to use these", ""] + kit["usage"].map { |u| "- #{u}" } + [""]
     lines += ["Photos (photos/)", ""]
     kit["photos"].each { |p| lines << "- #{p['name']}: #{p['note']} Full size (2048 px), 1080 px, 400 px, and a round 800 px avatar with a transparent background." }
+    lines += ["", "Banners (banners/)", ""]
+    kit["banners"].each { |b| lines << "- #{b['name']}, #{b['size']}: #{b['note']}" }
     lines += ["", "Colours (also as colors.css)", ""]
     kit["colors"].each { |c| lines << format("- %-7s %s  %s", c["name"], c["hex"], c["role"]) }
     f = kit["font"]
@@ -51,7 +54,8 @@ module BrandKit
   def entries(site, kit)
     text = [["README.txt", readme(site, kit)], ["bios.txt", bios(kit)], ["colors.css", colors_css(kit)]]
     photos = Dir[File.join(site.source, DIR, "*.{jpg,png}")].sort.map { |f| ["photos/#{File.basename(f)}", File.binread(f), false] }
-    text.map { |n, s| [n, s.encode("UTF-8").b, true] } + photos
+    banners = kit["banners"].map { |b| ["banners/#{File.basename(b['file'])}", File.binread(File.join(site.source, b["file"])), false] }
+    text.map { |n, s| [n, s.encode("UTF-8").b, true] } + photos + banners
   end
 
   def zip(files)

@@ -44,7 +44,7 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 - [Work]({{ site.url }}/work/): what he does and how he knows, grouped by problem, plus side projects
 - [About]({{ site.url }}/about/): bio, career history, specialties, open source work
 - [Contact]({{ site.url }}/contact/): email and how to start
-- [Brand kit]({{ site.url }}/brand/): his photos, colours, typeface and short, medium and long bios, free to use without credit; everything in one zip at {{ site.url }}/brand/{{ site.data.brand.zip }}
+- [Brand kit]({{ site.url }}/brand/): his photos, LinkedIn and X banners, colours, typeface and short, medium and long bios, free to use without credit; everything in one zip at {{ site.url }}/brand/{{ site.data.brand.zip }}
 - [CV]({{ site.url }}/cv/): the full CV in one column, also as [PDF]({{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf) and [JSON Resume]({{ site.url }}/cv.json)
 - [Writing]({{ site.url }}/writing/): longer essays, written by a human
 - [Brain stream]({{ site.url }}/brain/): short notes on what he is reading and building, organized with AI assistance

@@ -1205,6 +1205,13 @@ a:hover .arr-down { transform: translateY(2px); }
 .brand-downloads a:hover { border-color: var(--ink); background: var(--yellow); }
 .brand-downloads small { font-size: 0.8125rem; font-weight: 500; color: var(--ink-3); }
 .brand-downloads a:hover small { color: var(--ink-2); }
+.brand-banners { display: grid; gap: clamp(1.5rem, 1rem + 2vw, 2.5rem); }
+@media (min-width: 901px) { .brand-banners { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.brand-banner { margin: 0; }
+.brand-banner img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+.brand-banner figcaption { display: grid; gap: 0.3rem; margin-top: 0.9rem; }
+.brand-banner figcaption > strong { font-size: 1.125rem; font-weight: 750; }
+.brand-banner figcaption > span { color: var(--ink-2); }
 .brand-usage { max-width: 48rem; }
 .brand-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem 2rem; margin-top: 2rem; }
 .brand-facts dt { font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
