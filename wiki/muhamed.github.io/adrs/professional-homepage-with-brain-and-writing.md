@@ -383,6 +383,19 @@ the largest safe pocket before the first move, on custom boards too. It is
 built on a local branch, `minesweeper-safe-start`, for the owner to review
 and ship with Usput's own checks.
 
+**2026-10-23, twentieth change: the CV is one column, for parsers.** Text
+pulled from the two-column PDF interleaved the columns ("Experience / Skills /
+Founder · Isabegovic Muhamed e.U. / Product and AI"), which is how an
+applicant tracking system reads it (source: files/cv/Muhamed_Isabegovic_CV.pdf
+before the change). `files/_cv/cv.html` now flows in one column in reading
+order: header, experience, skills, open source, education, languages,
+community, recommendations. The page-sized blocks, running headers and
+"continued" sections are gone; Usput.ba sits with the other roles under the
+company; skills are comma-separated lists, and contacts one line. Every word
+is kept, and `render-cv-data.js` reads the same data from it. Still three
+pages, tagged. Roles under the company stay undated, as the owner chose
+again.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -430,6 +443,10 @@ section).
 Approved by the owner in session on 2026-09-28 ("start building a new site"),
 with the instruction not to push or deploy. Built on the local branch
 `redesign-homepage`, taken from the published `origin/main`.
+
+The twentieth change was chosen by the owner in session on 2026-10-23: "One
+single-column PDF" over a second ATS copy, after comparing the current PDF
+with a one-column prototype, and keeping the roles under the company undated.
 
 ## Related
 

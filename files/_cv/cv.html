@@ -6,55 +6,51 @@
 <style>
 @font-face { font-family: "Schibsted Grotesk"; src: url("../assets/fonts/schibsted-grotesk-latin.woff2") format("woff2"); font-weight: 400 900; }
 @font-face { font-family: "Schibsted Grotesk"; src: url("../assets/fonts/schibsted-grotesk-latin-ext.woff2") format("woff2"); font-weight: 400 900; unicode-range: U+0100-024F; }
-@page { size: A4; margin: 0; }
+@page { size: A4; margin: 12mm 15mm 12mm; }
 /* Tokens from files/assets/site.css, the site's one design system. */
 :root { --paper: #ffffff; --tint: #f3f3f1; --ink: #141414; --ink-2: #474747; --ink-3: #666666; --line: #e2e2de; --yellow: #ffd21f; --radius: 6px; }
+/* One column, in reading order, so applicant tracking systems read it as
+   people do: each role with its dates, skills as comma-separated lists. */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: var(--paper); }
-body { font-family: "Schibsted Grotesk", system-ui, sans-serif; color: var(--ink); font-size: 8.3pt; line-height: 1.33; }
-.page { width: 210mm; height: 297mm; padding: 9mm 10mm 7mm; overflow: hidden; break-after: page; }
-.page:last-child { break-after: auto; }
-.page-2 main { margin-top: 0; }
-.running { display: flex; justify-content: space-between; color: var(--ink-3); font-size: 7.7pt; padding-bottom: 3mm; }
-header { display: grid; grid-template-columns: 1.3fr 24mm 1fr; gap: 6mm; align-items: start; padding-bottom: 4mm; }
-h1 { font-size: 22pt; line-height: .95; margin: 0 0 2.2mm; font-weight: 800; letter-spacing: -.03em; }
-.title { font-size: 10pt; font-weight: 650; margin: 0; display: inline; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: .28em; text-decoration-skip-ink: none; }
-.lead { margin: 2.2mm 0 0; font-size: 8.2pt; color: var(--ink-2); }
-.photo { width: 24mm; height: 30mm; object-fit: cover; border-radius: var(--radius); }
-.contact { text-align: right; line-height: 1.6; font-size: 8.2pt; color: var(--ink-2); }
+body { font-family: "Schibsted Grotesk", system-ui, sans-serif; color: var(--ink); font-size: 8.8pt; line-height: 1.38; }
+header { display: grid; grid-template-columns: minmax(0, 1fr) 30mm; column-gap: 8mm; align-items: start; padding-bottom: 5mm; }
+header > div:first-child { grid-column: 1; grid-row: 1; }
+h1 { font-size: 24pt; line-height: .95; margin: 0 0 2.4mm; font-weight: 800; letter-spacing: -.03em; }
+.title { font-size: 10.5pt; font-weight: 650; margin: 0; display: inline; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: .28em; text-decoration-skip-ink: none; }
+.lead { margin: 2.6mm 0 0; color: var(--ink-2); }
+.photo { grid-column: 2; grid-row: 1 / span 2; width: 30mm; height: 30mm; object-fit: cover; border-radius: var(--radius); }
+.contact { grid-column: 1; grid-row: 2; margin-top: 2.4mm; color: var(--ink-2); }
+.contact br { display: none; }
+.contact br + span::before { content: " · "; color: var(--ink-3); }
 .contact b { color: var(--ink); font-weight: 650; }
 .contact a { color: inherit; text-decoration: none; }
-main { display: grid; grid-template-columns: 1.62fr 1fr; gap: 7mm; }
-h2 { font-size: 11.5pt; font-weight: 800; letter-spacing: -.02em; margin: 0 0 1.8mm; padding-top: 1.6mm; border-top: 3px solid var(--ink); }
-section + section { margin-top: 3.4mm; }
-.role { margin-bottom: 2.2mm; }
-.role h3 { font-size: 9.6pt; margin: 0; font-weight: 750; letter-spacing: -.01em; }
+h2 { font-size: 12pt; font-weight: 800; letter-spacing: -.02em; margin: 0 0 2mm; padding-top: 1.6mm; border-top: 3px solid var(--ink); break-after: avoid; }
+section + section { margin-top: 4.5mm; }
+.role { margin-bottom: 2.6mm; break-inside: avoid; }
+.role h3 { font-size: 10pt; margin: 0; font-weight: 750; letter-spacing: -.01em; break-after: avoid; }
 .role h3 .at { font-weight: 400; color: var(--ink-2); }
-.meta { color: var(--ink-3); font-size: 7.9pt; margin: .3mm 0 .6mm; }
-.nested { margin: 1.4mm 0 2.6mm 3.2mm; }
-.nested .role { padding-top: 1.4mm; border-top: 1px solid var(--line); margin-bottom: 1.4mm; }
-ul { margin: .4mm 0 0; padding-left: 3.4mm; }
-li { margin: 0 0 .3mm; }
+.meta { color: var(--ink-3); font-size: 8.4pt; margin: .3mm 0 .8mm; }
+.nested { margin: 1.6mm 0 3mm 4mm; }
+.nested .role { padding-top: 1.6mm; border-top: 1px solid var(--line); margin-bottom: 1.6mm; }
+ul { margin: .4mm 0 0; padding-left: 3.6mm; }
+li { margin: 0 0 .4mm; }
 li::marker { color: var(--ink-3); }
-.chips { display: flex; flex-wrap: wrap; gap: 1mm; }
-.chips span { border: 1px solid var(--line); border-radius: 999px; padding: .4mm 2mm; font-size: 8pt; }
-.chips.first span { border-color: var(--yellow); background: rgb(255 210 31 / .18); }
-.hat { font-weight: 750; font-size: 7.8pt; margin: 1.6mm 0 .7mm; }
-.hat:first-of-type { margin-top: 0; }
+.hat { float: left; clear: left; width: 42mm; font-weight: 700; }
+.chips { margin: 0 0 1.2mm 42mm; color: var(--ink-2); }
+.chips.first span { background: linear-gradient(transparent 62%, rgb(255 210 31 / .55) 62%); }
 .plain p { margin: 0; }
 a { color: inherit; text-decoration: none; }
-.page-3 main { display: block; }
-.quotes { column-count: 2; column-gap: 7mm; }
-.quotes .quote { break-inside: avoid; }
-.quote { margin: 0 0 2.4mm; }
-.quote p { margin: 0 0 .8mm; font-size: 8.3pt; color: var(--ink); }
-.quote .who { color: var(--ink-3); font-size: 7.9pt; }
+/* Links in the body: underlined in yellow, so a reader of the PDF sees they open. */
+main a { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 1.5px; text-underline-offset: .18em; text-decoration-skip-ink: none; }
+.quote { margin: 0 0 3mm; break-inside: avoid; }
+.quote p { margin: 0 0 .8mm; color: var(--ink); }
+.quote .who { color: var(--ink-3); font-size: 8.4pt; }
 .quote .who b { color: var(--ink); font-weight: 650; }
 
 </style>
 </head>
 <body>
-<div class="page">
 <header>
   <div>
     <h1>Muhamed<br>Isabegovic</h1>
@@ -63,11 +59,15 @@ a { color: inherit; text-decoration: none; }
   </div>
   <img class="photo" src="../images/profile.jpg" alt="">
   <div class="contact">
-    <b><a href="mailto:info@muhamed.at">info@muhamed.at</a></b><br>Vienna, Austria<br><a href="https://muhamed.at">muhamed.at</a><br><a href="https://linkedin.com/in/muhamed-isabegovic">linkedin.com/in/muhamed-isabegovic</a><br><a href="https://x.com/m_isabegovic">x.com/m_isabegovic</a><br><a href="https://github.com/misabegovic">github.com/misabegovic</a>
+    <span><b><a href="mailto:info@muhamed.at">info@muhamed.at</a></b></span><br>
+    <span>Vienna, Austria</span><br>
+    <span><a href="https://muhamed.at">muhamed.at</a></span><br>
+    <span><a href="https://linkedin.com/in/muhamed-isabegovic">linkedin.com/in/muhamed-isabegovic</a></span><br>
+    <span><a href="https://x.com/m_isabegovic">x.com/m_isabegovic</a></span><br>
+    <span><a href="https://github.com/misabegovic">github.com/misabegovic</a></span>
   </div>
 </header>
 <main>
-<div>
   <section>
     <h2>Experience</h2>
     <div class="role" data-start="2024-01">
@@ -101,65 +101,23 @@ a { color: inherit; text-decoration: none; }
         </ul>
       </div>
       <div class="role">
-        <h3>Founder and organiser <span class="at">· EuRuKo, RubyConf Austria, GoatConf</span></h3>
+        <h3>Founder and organiser <span class="at">· <a href="https://2024.euruko.org">EuRuKo</a>, <a href="https://rubyconf.at">RubyConf Austria</a>, <a href="https://goatconf.com/">GoatConf</a></span></h3>
         <ul>
           <li>EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.</li>
-          <li>RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).</li>
+          <li>RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (<a href="https://hunt.rubyconf.at">hunt.rubyconf.at</a>).</li>
           <li>Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver.</li>
           <li>GoatConf 2027, Tuzla, 3–5 June: free, for people who build and sell software.</li>
         </ul>
       </div>
-    </div>
-  </section>
-</div>
-<div>
-  <section>
-    <h2>Skills</h2>
-    <div class="hat">Product and AI</div>
-    <div class="chips first"><span>LLM features</span><span>AI agents</span><span>RAG</span><span>LLM evaluation</span><span>Structured outputs</span><span>Prompt management</span><span>Langfuse</span><span>MCP</span><span>RubyLLM</span><span>OpenAI SDK</span><span>pgvector</span></div>
-    <div class="hat">Architecture and leadership</div>
-    <div class="chips"><span>Software architecture</span><span>Technical leadership</span><span>Spec-driven development</span><span>Event-driven architecture</span><span>Data modeling</span><span>Research and development</span></div>
-    <div class="hat">Backend</div>
-    <div class="chips"><span>Ruby on Rails</span><span>Ruby</span><span>Node.js</span><span>TypeScript</span><span>Go</span><span>Python</span><span>C++</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Sidekiq</span><span>Actor model</span></div>
-    <div class="hat">Frontend and mobile</div>
-    <div class="chips"><span>Hotwire</span><span>JavaScript</span><span>Vue.js</span><span>Ember.js</span><span>React</span></div>
-    <div class="hat">Infrastructure and DevEx</div>
-    <div class="chips"><span>Google Cloud</span><span>Kubernetes</span><span>CI/CD</span><span>Kamal</span><span>Docker</span><span>Helm</span></div>
-    <div class="hat">Ways of working</div>
-    <div class="chips"><span>Product specs</span><span>A/B experiments</span><span>Shape Up</span></div>
-  </section>
-  <section>
-    <h2>Open Source</h2>
-    <div class="role">
-      <h3>treasure_hunt <span class="at">· author</span></h3>
-      <ul><li>A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organizer.</li></ul>
-    </div>
-    <div class="role">
-      <h3>enola <span class="at">· core contributor</span></h3>
-      <ul><li>Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including enola-guides.</li></ul>
-    </div>
-    <div class="role">
-      <h3>pi-brain <span class="at">· author and maintainer</span></h3>
-      <ul><li>An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases.</li></ul>
-    </div>
-  </section>
-</div>
-</main>
-</div>
-<div class="page page-2">
-<div class="running"><span><b>Muhamed Isabegovic</b> · Senior Product Engineer and Technical Lead, AI-native | AI Engineer</span><span>info@muhamed.at · muhamed.at</span></div>
-<main>
-<div>
-  <section>
-    <h2>Experience, continued</h2>
-    <div class="role" data-under="founder">
-      <h3>AI Engineer <span class="at">· Usput.ba, my own product</span></h3>
-      <div class="meta">A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.</div>
-      <ul>
-        <li>Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.</li>
-        <li>Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.</li>
-        <li>Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates.</li>
-      </ul>
+      <div class="role" data-under="founder">
+        <h3>AI Engineer <span class="at">· <a href="https://usput.ba">Usput.ba</a>, my own product</span></h3>
+        <div class="meta">A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.</div>
+        <ul>
+          <li>Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.</li>
+          <li>Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.</li>
+          <li>Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates.</li>
+        </ul>
+      </div>
     </div>
     <div class="role" data-start="2021-11" data-end="2024-12">
       <h3>Senior Software Engineer <span class="at">· Meisterlabs</span></h3>
@@ -186,13 +144,38 @@ a { color: inherit; text-decoration: none; }
       <ul><li>Built trading algorithms and worked on the analytics platform traders used, in C++ on a real-time system built on the actor model (C++ Actor Framework).</li><li>Built a Python test environment that emulated markets and simulated trading systems, so algorithms could be tested without live markets.</li></ul>
     </div>
   </section>
-</div>
-<div>
   <section>
-    <h2>Open Source, continued</h2>
+    <h2>Skills</h2>
+    <div class="hat">Product and AI</div>
+    <div class="chips first"><span>LLM features</span>, <span>AI agents</span>, <span>RAG</span>, <span>LLM evaluation</span>, <span>Structured outputs</span>, <span>Prompt management</span>, <span>Langfuse</span>, <span>MCP</span>, <span>RubyLLM</span>, <span>OpenAI SDK</span>, <span>pgvector</span></div>
+    <div class="hat">Architecture and leadership</div>
+    <div class="chips"><span>Software architecture</span>, <span>Technical leadership</span>, <span>Spec-driven development</span>, <span>Event-driven architecture</span>, <span>Data modeling</span>, <span>Research and development</span></div>
+    <div class="hat">Backend</div>
+    <div class="chips"><span>Ruby on Rails</span>, <span>Ruby</span>, <span>Node.js</span>, <span>TypeScript</span>, <span>Go</span>, <span>Python</span>, <span>C++</span>, <span>PostgreSQL</span>, <span>MySQL</span>, <span>Redis</span>, <span>Sidekiq</span>, <span>Actor model</span></div>
+    <div class="hat">Frontend and mobile</div>
+    <div class="chips"><span>Hotwire</span>, <span>JavaScript</span>, <span>Vue.js</span>, <span>Ember.js</span>, <span>React</span></div>
+    <div class="hat">Infrastructure and DevEx</div>
+    <div class="chips"><span>Google Cloud</span>, <span>Kubernetes</span>, <span>CI/CD</span>, <span>Kamal</span>, <span>Docker</span>, <span>Helm</span></div>
+    <div class="hat">Ways of working</div>
+    <div class="chips"><span>Product specs</span>, <span>A/B experiments</span>, <span>Shape Up</span></div>
+  </section>
+  <section>
+    <h2>Open Source</h2>
+    <div class="role">
+      <h3><a href="https://github.com/Ruby-Austria/treasure_hunt">treasure_hunt</a> <span class="at">· author</span></h3>
+      <ul><li>A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organizer.</li></ul>
+    </div>
+    <div class="role">
+      <h3><a href="https://github.com/enola-labs/enola">enola</a> <span class="at">· core contributor</span></h3>
+      <ul><li>Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including <a href="https://rubygems.org/gems/enola-guides">enola-guides</a>.</li></ul>
+    </div>
+    <div class="role">
+      <h3><a href="https://github.com/misabegovic/pi-brain">pi-brain</a> <span class="at">· author and maintainer</span></h3>
+      <ul><li>An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases.</li></ul>
+    </div>
     <div class="role">
       <h3>brain and tabula <span class="at">· author</span></h3>
-      <ul><li>Knowledge bases people and agents work from: brain on GitHub, and tabula, in Rust, in private development.</li></ul>
+      <ul><li>Knowledge bases people and agents work from: <a href="https://github.com/misabegovic/brain">brain on GitHub</a>, and tabula, in Rust, in private development.</li></ul>
     </div>
   </section>
   <section>
@@ -217,12 +200,6 @@ a { color: inherit; text-decoration: none; }
       <div class="meta">BH Futures Foundation · 05/2018 - 09/2021 · volunteer; Certificates of Excellence 2019, 2021</div>
     </div>
   </section>
-</div>
-</main>
-</div>
-<div class="page page-2 page-3">
-<div class="running"><span><b>Muhamed Isabegovic</b> · Senior Product Engineer and Technical Lead, AI-native | AI Engineer</span><span>info@muhamed.at · muhamed.at</span></div>
-<main>
   <section>
     <h2>Recommendations</h2>
     <div class="quotes">
@@ -241,6 +218,5 @@ a { color: inherit; text-decoration: none; }
     </div>
   </section>
 </main>
-</div>
 </body>
 </html>
