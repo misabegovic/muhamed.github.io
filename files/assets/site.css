@@ -803,7 +803,7 @@ mark {
 
 /* Contact */
 
-.contact-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 1rem + 2vw, 2.5rem); max-width: none; }
+.contact-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 1rem + 2vw, 2.5rem); max-width: none; }
 .prose:has(.contact-options) { max-width: 76rem; }
 .contact-option:target { outline: 3px solid var(--yellow); outline-offset: 3px; }
 .contact-option { display: grid; grid-template-rows: auto auto 1fr auto; align-content: stretch; justify-items: start; gap: 0.9rem; padding: clamp(1.5rem, 1rem + 1.5vw, 2.25rem); border-radius: var(--radius); background: var(--tint); }
