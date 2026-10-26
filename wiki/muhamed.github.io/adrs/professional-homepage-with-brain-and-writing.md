@@ -403,17 +403,21 @@ counts.** Rails becomes a fifth service, "Ruby on Rails consulting", for the
 owner to market himself as a Rubyist. On the homepage it is its own band under
 the grid of four, so the grid keeps its 2×2 and the page does not read as
 Rails-only; the full offer is a new page, `/rails/`, linked from the band, the
-Rails entry on `/services/` and the footer. Both start from the buyer's
-problem ("For Rails apps that outgrew their first design."), list six problems
-teams bring, each with what he does and proof from the evidence store or the
-public record (enola's `query-loops` check, per enola's docs/EXPLAINERS.md),
-show four checkable Rubyist facts (Ruby since 2016, RubyConf Austria founded,
-EuRuKo 2024 organised, four gems), Zlatko's recommendation word for word, and
-three formats: a call, a day in the code, a few hours a month. No capacity
-promise: the page invites everyone to write and says that, if he is booked, he
-will say so and point to someone good. Upgrades and performance work are on
-the owner's word, not yet in the evidence store, and carry no proof line
-except the enola check. The words live in `files/_data/rails.yml`; the name,
+Rails entry on `/services/`, the contact page and the footer. The page opens
+on "Rails apps, from the first release to the tenth year.", with four
+checkable Rubyist facts (Ruby since 2016, RubyConf Austria founded, EuRuKo 2024
+organised, four gems) and Zlatko's recommendation word for word, then a menu
+of the work in the owner's terms: maintenance and upgrades, refactoring (back
+to Rails conventions), rewrites, performance, CI/CD and continuous delivery
+(trunk-based development, feature flags), team processes, end-to-end
+ownership and AI features; then three formats: a call, a day in the code, a
+few hours a month. The homepage band lists the same menu. A problem-and-proof
+layout, then a "Done before" proof list, were previewed first and dropped:
+the owner found the proof too specific and weak, and the menu is what buyers
+look for. No capacity promise: the page invites everyone to write and says
+that, if he is booked, he will say so and point to someone good. Upgrades,
+performance, trunk-based development and feature flags are on the owner's
+word, not yet in the evidence store. The words live in `files/_data/rails.yml`; the name,
 format and summary stay in `home.yml` (services:) and the email in
 `services.yml`. In the same change, the site stops quoting a client's customer
 count: "8,500+ companies" is gone from `/work/`, `/rails/` and llms.txt, kept
@@ -482,8 +486,15 @@ someone who would consider hiring me", "The site should always invite folks to
 reach out... I can also recommend someone if I am not available", upgrades and
 performance confirmed as his work, "Keep the full old title", "idk if I want to
 brag too much about teamtailor facts like the 8500 companies", and "keep it on
-the CV, commit the rest". The formats and the wording are the agent's drafts,
-for the owner to adjust.
+the CV, commit the rest". Then, on the page itself: "some of these sound too
+specific... might weird them out", "shipping behind feature flags,
+refactoring, rewrites, maintenance of old Ruby/Rails projects... managing the
+entire lifecycle end to end... the things you mention dont sell that well",
+"done before could also maybe even go", "introducing and optimizing
+processes... improving CI/CD practices... continous delivery with trunk based
+deployments", "Rails best practices", and "ok, sounds good" to the wider
+headline and the shorter copy brought in line. The formats and the wording are
+the agent's drafts, for the owner to adjust.
 
 ## Related
 

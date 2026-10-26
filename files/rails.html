@@ -3,7 +3,7 @@ layout: default
 title: Ruby on Rails consulting
 permalink: /rails/
 image: /images/social/rails.png
-description: Ruby on Rails consulting from Muhamed Isabegovic, a Rubyist since 2016 and founder of RubyConf Austria, for Rails apps that outgrew their first design, stuck upgrades, slow pages and AI features without a rewrite.
+description: Ruby on Rails consulting from Muhamed Isabegovic, a Rubyist since 2016 and founder of RubyConf Austria. Maintenance and upgrades, refactoring and rewrites, performance, CI/CD and continuous delivery, team processes, end-to-end ownership and AI features.
 ---
 {%- comment -%}
   The Rails offer in full. Words in _data/rails.yml; the summary and format
@@ -52,21 +52,13 @@ description: Ruby on Rails consulting from Muhamed Isabegovic, a Rubyist since 2
     </dl>
   </header>
 
-  <section aria-labelledby="h-triggers">
+  <section aria-labelledby="h-work">
     <div class="section-head">
-      <h2 id="h-triggers" class="section-title">What teams bring me.</h2>
+      <h2 id="h-work" class="section-title">{{ r.work_title }}</h2>
     </div>
-    <div class="capabilities">
-      {% for t in r.triggers %}
-      <article class="capability">
-        <div class="capability-head">
-          <h3 class="capability-title">{{ t.problem }}</h3>
-          <p class="capability-text">{{ t.answer }}</p>
-        </div>
-        {% if t.proofs.size > 0 %}<ul class="proofs" role="list">{% for p in t.proofs %}<li>{{ p }}</li>{% endfor %}</ul>{% else %}<div></div>{% endif %}
-      </article>
-      {% endfor %}
-    </div>
+    <ul class="project-more rails-work" role="list">
+      {% for w in r.work %}<li><h3>{{ w.name }}</h3><div class="project-text"><p>{{ w.text }}</p></div></li>{% endfor %}
+    </ul>
   </section>
 
   <section id="formats" class="svc-section" aria-labelledby="h-formats">
@@ -77,6 +69,7 @@ description: Ruby on Rails consulting from Muhamed Isabegovic, a Rubyist since 2
     <p class="svc-where">{{ r.formats.more }} <a class="text-link" href="{{ site.baseurl }}/services/">Services{{ arr }}</a></p>
     <p class="svc-where rails-booked">{{ r.formats.booked }}</p>
   </section>
+
 
 </div>
 

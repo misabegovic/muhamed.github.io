@@ -209,13 +209,13 @@ services:
   - number: "05"
     name: Rails
     band: true
-    fits: When your Rails app has outgrown its first design.
+    fits: When your Rails app needs an experienced Rubyist.
     format: A call, a day, or ongoing advice
     title: Ruby on Rails consulting
     text: >-
-      A Rubyist since 2016 for the part of your Rails app that slows your
-      team down: a tangled monolith, a stuck upgrade, slow pages, or AI
-      features without a rewrite.
+      A Rubyist since 2016 for your Rails app, old or new: maintenance and
+      upgrades, refactoring and rewrites, performance, CI/CD and continuous
+      delivery, and features owned end to end.
 
 services_more: { label: Services in detail, url: /services/ }
 

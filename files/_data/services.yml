@@ -55,8 +55,9 @@ details:
 
   Rails:
     get:
-      - "A Rubyist since 2016 on the part of your app that slows your team down: a tangled monolith, a stuck upgrade, slow pages or job queues."
-      - "AI features inside your Rails app with RubyLLM, without a rewrite."
+      - "Older apps kept healthy and current: maintenance, upgrades in steps your team can ship, refactoring back to Rails conventions, or a rewrite done piece by piece."
+      - "Faster pages and job queues, CI/CD your team trusts, trunk-based development and feature flags, and team processes that let work flow."
+      - "Features owned end to end, AI features included, from the idea to running them."
       - "A call, a day in your code, or a few hours a month as your team's Rails advisor, with notes or a written plan your team can act on."
     more: { label: Rails consulting in detail, url: /rails/ }
     email:

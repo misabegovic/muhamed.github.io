@@ -18,7 +18,7 @@ description: How to reach Muhamed Isabegovic about building something with your 
   </section>
   <section class="contact-option" id="rails">
     <h2>Your Rails app</h2>
-    <p>Your Rails app outgrew its first design: a tangled monolith, a stuck upgrade, slow pages, or AI features you want without a rewrite.</p>
+    <p>You need a Rubyist on your Rails app: maintenance and upgrades, refactoring or a rewrite, performance, CI/CD and continuous delivery, or AI features.</p>
     <p class="contact-hint">Useful to include: your app and its Rails and Ruby versions, what slows you down, and whether a call, a day or ongoing help fits. More on <a href="/rails/">Rails consulting</a>.</p>
     <a class="button" href="{{ rmail | strip }}">{{ rd.email.label }}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></a>
   </section>

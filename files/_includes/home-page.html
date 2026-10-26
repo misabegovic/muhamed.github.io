@@ -98,8 +98,8 @@
         </div>
       </div>
       <div class="rails-body">
-        <h3 class="offer-label">Sound familiar?</h3>
-        <ul class="proofs" role="list">{% for t in r.triggers %}<li>{{ t.problem }}</li>{% endfor %}</ul>
+        <h3 class="offer-label">{{ r.work_title | remove: "." }}</h3>
+        <ul class="proofs rails-work-list" role="list">{% for w in r.work %}<li>{{ w.name }}</li>{% endfor %}</ul>
         <dl class="rails-facts rails-facts-band">
           {% for f in r.facts %}<div><dt>{{ f.value }}</dt><dd>{{ f.label }}</dd></div>{% endfor %}
         </dl>
