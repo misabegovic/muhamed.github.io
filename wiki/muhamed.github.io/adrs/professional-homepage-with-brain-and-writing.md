@@ -495,8 +495,8 @@ processes... improving CI/CD practices... continous delivery with trunk based
 deployments", "Rails best practices", and "ok, sounds good" to the wider
 headline and the shorter copy brought in line; later, of the lead's last line
 ("Bring me the part of your app that slows your team down."): "Sounds weird.
-Remove?", so the lead ends on the experience; and "\"End to end\" also sounds
-wrong without context", so that card is "New features, idea to production".
+Remove?", so the lead ends on the experience; and, of the card "End to end": "also
+sounds wrong without context", so that card is "New features, idea to production".
 The formats and the wording are
 the agent's drafts, for the owner to adjust.
 
