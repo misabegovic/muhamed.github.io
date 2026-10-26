@@ -286,3 +286,5 @@
    by: agent
 - product: `PRODUCT.md` brought up to date on the owner's go: teams buying help first and hiring through a contract with his company second (since the eighteenth change); five services with Rails and its own page; the full title kept; no capacity stated (write anyway; if booked, he refers someone); the amber portrait and brand kit; GoatConf 2027; no client customer counts; no Recrubo/Carv team size; Ruby and Rails evidence, upgrades and performance on the owner's word; three recommendations; the seven homepage logos shown with each company's agreement (owner, 2026-10-26). A pending client engagement is left out until the contract is signed.
    by: agent
+- writing: the unpublished draft `_drafts/ai-augmented-development-how-i-actually-work.md` deleted on the owner's ask ("lets delete it"). It was agent-written (e1e6621, 2026-08-30), so it did not fit /writing/'s "written by me", and its tooling and day-job lines were out of date. Recoverable from git history.
+   by: agent
