@@ -8,17 +8,18 @@ web
 
 ## Users
 
-Two primary audiences, weighted equally (confirmed by the owner, 2026-09-28):
+Two audiences (first set equal by the owner, 2026-09-28; since 2026-10-21 the
+site asks for collaboration, not a job):
 
-- **Hiring managers and CTOs** deciding whether to hire Muhamed Isabegovic into
-  a senior, lead or advisory engineering role. They usually arrive from his CV,
-  a job application or LinkedIn, and check him out in a few minutes before or
-  after an interview. Their job: decide whether he is credible and worth a
-  conversation.
-- **Engineering leaders buying help** deciding whether to book him for an
-  a build, a technical lead, an architecture review or AI-native help, contracted
-  through his Austrian sole-trader company (e.U.). Their job: decide whether he
-  can solve their team's problem and how to start.
+- **Engineering leaders buying help**, first: deciding whether to bring him in
+  for a build, a technical lead, an architecture review, AI-native help or
+  Ruby on Rails consulting, contracted through his Austrian sole-trader
+  company (e.U.). Their job: decide whether he can solve their team's problem
+  and how to start.
+- **Hiring managers and CTOs** filling a senior, staff or lead role through a
+  contract with his company. They usually arrive from his CV or LinkedIn and
+  check him out in a few minutes before or after an interview. Their job:
+  decide whether he is credible and worth a conversation.
 
 Secondary: engineers and the Ruby and AI-engineering community, who read the
 writing and the brain stream.
@@ -41,11 +42,15 @@ believing it from evidence they could check, and knowing how to reach him.
 2026-09-29). Clients hire him to build and lead; AI is one of the things he
 builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
-Title: Senior Product Engineer and Technical Lead, AI-native. Four services: Build
-(hands-on product engineering), Lead (technical lead, part-time or full-time), Review
-(architecture review), and AI-native (make your company AI-native). Clients:
-product companies of any size, from startups to enterprises. Talks are not
-sold as a service; the conferences stay as proof.
+Title, one form everywhere (owner, 2026-10-21, kept 2026-10-26): Senior Product
+Engineer and Technical Lead, AI-native | AI Engineer. Five services: Build
+(hands-on product engineering), Lead (fractional or interim technical lead),
+Review (architecture review), AI-native (make your company AI-native), and
+Rails (Ruby on Rails consulting, added 2026-10-26, for the owner to market
+himself as a Rubyist). Rails has its own page, `/rails/`, and its own band on
+the homepage, so the homepage does not read as Rails-only. Clients: product
+companies of any size, from startups to enterprises. Talks are not sold as a
+service; the conferences stay as proof.
 
 What a neighbouring consultant or candidate could not truthfully copy: he
 builds and ships the tooling that keeps agent-written software under control
@@ -59,8 +64,10 @@ organiser, and works in public.
 - Visitors come from a CV, a job application, LinkedIn, a conference, or a
   shared article or note.
 - Contact is by email (info@muhamed.at). No booking link exists yet.
-- He is available immediately, open to both a senior role and contract work,
-  based in Vienna and working remotely across Europe.
+- He works with teams through his own company, Isabegovic Muhamed e.U., based
+  in Vienna and working remotely across Europe. The site states no capacity:
+  it always invites people to write, and if he is booked he says so and points
+  them to someone good (owner, 2026-10-26).
 
 ## Capabilities and Constraints
 
@@ -73,37 +80,54 @@ organiser, and works in public.
   `/brain/` (collection `_stream`, feed `/brain.xml`), and the Izbori 2026 voter
   guide under `/politika/`, grafted in at build time from
   `misabegovic/izbori2026`.
-- Homepage copy lives in `files/_data/home.yml`; each claim traces to the
-  owner's evidence store (`~/projects/hireable/files/hireable/profile/muhamed.yml`).
+- Copy lives in `files/_data/`: `home.yml` (homepage, work, projects),
+  `services.yml`, `rails.yml` and `brand.yml`. Each claim traces to the
+  owner's evidence store (`~/projects/hireable/files/hireable/profile/muhamed.yml`)
+  or is marked as on the owner's word.
 - All current redesign work is local only. Nothing is pushed or deployed
   without the owner's explicit ask.
 
 ## Brand Commitments
 
-- Name: Muhamed Isabegovic. Domain: muhamed.at. The profile photograph at
-  `files/images/profile.jpg`.
+- Name: Muhamed Isabegovic. Domain: muhamed.at. The portrait on amber
+  (2026-10-23): masters in `files/brand/`, rendered to `files/images/profile.jpg`
+  and the rest by `.github/scripts/render-profile-images.py`; photos, banners,
+  colours, typeface and bios in the brand kit at `/brand/`.
 - Voice from the existing pages: plain, first person, specific, no hype. No em
-  dashes in site text (recorded in the site log, 2026-08-30).
-- Existing identities he organises: RubyConf Austria, EuRuKo 2024.
+  dashes in site text (recorded in the site log, 2026-08-30). No bragging: say
+  what was done, not how big the client is; no client customer counts on the
+  site (owner, 2026-10-26; the CV keeps an employer's size as context).
+- Identities he organises: RubyConf Austria (founder), EuRuKo 2024, GoatConf
+  2027 (founder).
 
 ## Evidence on Hand
 
-- **Tools built and shipped:** pi-brain (published on npm, nine tagged
-  releases), core contributions to enola (the constraints program and four
-  Ruby gems), tabula (Rust, in private development), three MCP servers in Go,
-  Rails and plain Ruby.
-- **Teams led in production:** technical lead for 10 engineers at Carv
-  (2025 to 2026); engineering manager for around 30 engineers across 7 time
-  zones at Experfy (2019 to 2021), through a 150 percent scale-up; the AI
-  candidate-prescreening architecture at Teamtailor (2026).
+- **Tools built and shipped:** his main tools are enola, tabula and taha
+  (owner, 2026-10-22): core contributions to enola (the constraints program)
+  and four Ruby gems for it; tabula (Rust) and taha, its harness, both in
+  private development. Also pi-brain (published on npm, nine tagged
+  releases), brain, and three MCP servers in Go, Rails and plain Ruby.
+- **Teams led in production:** tech lead for the engineering team at Recrubo
+  through its acquisition by Carv (2025 to 2026; no team size on the site,
+  owner, 2026-10-22); engineering manager for around 30 engineers across 7
+  time zones at Experfy (2019 to 2021), through a 150 percent scale-up; the
+  AI candidate-prescreening architecture at Teamtailor (2026).
+- **Ruby and Rails:** Ruby since 2016 and Rails in production at most roles
+  since; Rails upgrades and performance work on the owner's word (2026-10-26),
+  not yet in the evidence store.
 - **Community standing:** founded and organised RubyConf Austria 2026 (with
   Dave Thomas, Chad Fowler, José Valim and Armin Ronacher on the programme);
-  took full ownership of EuRuKo 2024 in Sarajevo.
+  took full ownership of EuRuKo 2024 in Sarajevo; founding GoatConf 2027 in
+  Tuzla.
+- **Recommendations:** three, real and attributed: Zlatko Alomerovic
+  (Recrubo/Carv), Hassan Akbar (Experfy) and Hans Schnedlitz (co-organiser of
+  RubyConf Austria). None is from a client.
 - **Working in public:** the blog (`files/_posts/`) and the brain stream
-  (`files/_stream/`, 20 entries).
-- **Absent, and not to be fabricated:** testimonials (none collected yet),
-  client logos (no permission recorded), outcome metrics beyond the evidence
-  store, a booking link, pricing.
+  (`files/_stream/`).
+- **Company logos:** the seven on the homepage are shown with each company's
+  agreement (owner, 2026-10-26).
+- **Absent, and not to be fabricated:** client testimonials, outcome metrics
+  beyond the evidence store, a booking link, pricing.
 
 ## Product Principles
 
