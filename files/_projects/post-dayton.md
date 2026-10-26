@@ -8,6 +8,8 @@
 # from the game's landing.
 title: Post-Dayton BiH
 home_key: card-game
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: Post-Dayton BiH, a political strategy card game by Muhamed Isabegovic about a career in Bosnia and Herzegovina's politics, on a pure TypeScript engine with 4,161 tests and 42 decision records.
 image: /images/social/project-post-dayton.png
 thumb: /images/projects/post-dayton/thumb

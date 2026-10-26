@@ -6,6 +6,8 @@
 # date (none is stated). pi and Pi Durable are public projects.
 title: taha
 home_key: taha
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 coming_soon:
   title: Real runs, soon.
   text: |
