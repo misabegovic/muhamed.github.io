@@ -5,7 +5,9 @@
 # on the owner's word.
 
 kicker: Ruby on Rails consulting
-title: For Rails apps that outgrew their first design.
+# Widened from "For Rails apps that outgrew their first design." when the
+# menu came to span the whole lifecycle (owner, 2026-10-26).
+title: Rails apps, from the first release to the tenth year.
 # evidence: role-experfy (joined 2016), role-teamtailor-employer, proj-usput-web
 # No customer counts for clients (owner, 2026-10-26: not too much bragging).
 lead: >-
@@ -22,46 +24,37 @@ facts:
   - { value: EuRuKo 2024, label: "organised, 700 attendees" }
   - { value: "4 gems", label: "maintained on rubygems.org" }
 
-# Where teams usually are when they write. The homepage band shows the
-# problems; /rails/ adds what I do and the proof. A proof names no client.
-triggers:
-  - problem: The app grew, and every change touches everything.
-    answer: I find where the boundaries belong and move the code toward them step by step, without a rewrite.
-    proofs:
-      # evidence: role-carv-ats-integrations
-      - Brought data from 20+ outside systems into one model, so new integrations stopped costing work elsewhere.
-      # evidence: role-carv-integration-lead
-      - Led the integration of two products after an acquisition, bringing their stacks together step by step.
-  - problem: An upgrade is stuck.
-    # answer on the owner's word (2026-10-26); proof: usput.ba 57858a5 (#206,
-    # .ruby-version 3.3.5 -> 4.0.9, rails 8.1.3.1 -> 8.1.4) and treasure_hunt
-    # 583cb56 (3.4.11 -> 4.0.9). Own products, small: no client upgrade story yet.
-    answer: Rails and Ruby upgrades planned in steps your team can ship, with the deprecations dealt with on the way instead of in one big branch.
-    # Plain words, no version-by-version detail (owner, 2026-10-26: "too specific").
-    proofs:
-      - I keep my own Rails apps on current Ruby and Rails, Ruby 4.0 and Rails 8.1 today.
-  - problem: Pages are slow, or the job queue never empties.
-    # answer on the owner's word (2026-10-26)
-    answer: I find where the time goes, from queries in loops to the database and background jobs, and fix it in the order your users feel it.
-    # usput.ba 14c2829 (#198) and 0937f81 (#200); kept in plain words, no
-    # timings or query counts (owner, 2026-10-26: "too specific").
-    proofs:
-      - Fixed pages that got slower as the data grew, by letting the database do the filtering and paging, and taking the queries out of loops.
-  - problem: Product changes take longer than they should.
-    answer: I shape the model so the next change is a setting, not a project.
-    proofs:
-      # evidence: role-meisterlabs-permissions
-      - Designed a plans and permissions system that let product run billing experiments without developer time.
-  - problem: You want AI features without a rewrite.
-    answer: AI inside your Rails app with RubyLLM, grounded in your data, with structured outputs and evals.
-    proofs:
-      # evidence: role-teamtailor-ownership, role-teamtailor-employer
-      - Took AI screening features in a mature Rails product from the first pitch to rollout and measuring the results.
-  - problem: Your team has no senior Rubyist right now.
-    answer: I pair with your engineers or lead them until you have one, and help you hire.
-    proofs:
-      # evidence: role-experfy-team, role-experfy-product
-      - Led around 30 engineers across 7 time zones, on three Ember.js apps and a Rails monolith, through 150 percent growth.
+# What I do on Rails apps: the kinds of work buyers look for, in the owner's
+# terms (2026-10-26: "shipping behind feature flags, refactoring, rewrites,
+# maintenance of old Ruby/Rails projects... managing the entire lifecycle end
+# to end", then "introducing and optimizing processes... improving CI/CD
+# practices... continous delivery with trunk based deployments"). Eight, so
+# the grid stays two rows of four. No proof section (owner: "seems a bit
+# weak"); the facts and the recommendation carry it.
+work_title: What I do on Rails apps.
+work:
+  - name: Maintenance and upgrades
+    text: Keep an older Ruby or Rails app healthy and current, with upgrades in steps your team can ship, security fixes, and the bugs nobody has had time for.
+  # "Rails best practices" folded in here (owner, 2026-10-26).
+  - name: Refactoring
+    text: Untangle the parts every change has to touch and bring the code back to Rails conventions, so anyone on the team can find their way around, while features keep shipping.
+  - name: Rewrites
+    text: When a rewrite is the right call, done piece by piece beside the running app, not as a big bang.
+  - name: Performance
+    text: Slow pages and backed-up job queues, fixed in the order your users feel them.
+  # evidence: role-carv-devops, role-meisterlabs-kubernetes; trunk-based
+  # development and feature flags on the owner's word (2026-10-26)
+  - name: CI/CD and continuous delivery
+    text: Pipelines your team trusts, trunk-based development with small daily merges, and new work behind feature flags, switched off without a deploy.
+  # evidence: role-experfy-scaleup, role-carv-devops
+  - name: Team processes
+    text: Introduce and tune how your team plans, reviews and ships, so work flows instead of waiting.
+  # evidence: role-teamtailor-ownership, proj-usput-live
+  - name: End to end
+    text: "One person who owns a feature or a product through its whole lifecycle: the idea, the spec, the build, the rollout and running it."
+  # evidence: role-teamtailor-ownership, role-teamtailor-langfuse, proj-usput-retrieval-grounding
+  - name: AI features
+    text: AI inside your Rails app, grounded in your data and measured with evals, without a second stack.
 
 # Ways to start, smallest first. Drafts for the owner: no prices, no capacity
 # promise (owner, 2026-10-26: always invite people to write).

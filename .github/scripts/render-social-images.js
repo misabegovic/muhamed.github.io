@@ -57,7 +57,7 @@ const services = [
   { slug: 'review', name: 'Review', title: 'Architecture review', text: 'A short, fixed-scope look at your codebase and system: what holds, what will break, and what to fix first.', format: 'Fixed scope, one to two weeks' },
   { slug: 'ai-native', name: 'AI-native', title: 'Make your company AI-native', text: 'How you build and what you build. I set up a knowledge base your people and agents work from, with architecture rules checked in CI, and build AI features into your product that hold up in production, using open-source tools I build and teach.', format: 'Workshops, then setup in your codebase' },
   // Rails has its own page (files/rails.html), so its post points there.
-  { slug: 'rails', name: 'Rails', title: 'Ruby on Rails consulting', text: 'A Rubyist since 2016 for the part of your Rails app that slows your team down: a tangled monolith, a stuck upgrade, slow pages, or AI features without a rewrite.', format: 'A call, a day, or ongoing advice', url: 'muhamed.at/rails' },
+  { slug: 'rails', name: 'Rails', title: 'Ruby on Rails consulting', text: 'A Rubyist since 2016 for your Rails app, old or new: maintenance and upgrades, refactoring and rewrites, performance, CI/CD and continuous delivery, and features owned end to end.', format: 'A call, a day, or ongoing advice', url: 'muhamed.at/rails' },
 ];
 
 function servicePost(s, w, h) {
@@ -96,7 +96,7 @@ function railsShare(w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
     <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px;display:flex;justify-content:space-between;align-items:baseline"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span><span class="muted" style="font-size:18px;font-weight:650;letter-spacing:.08em;text-transform:uppercase">Ruby on Rails consulting</span></div>
-      <h1 style="font-size:70px;align-self:center">For Rails apps that outgrew their <mark>first design</mark>.</h1>
+      <h1 style="font-size:70px;align-self:center">Rails apps, from the first release to the <mark>tenth year</mark>.</h1>
       <div class="muted" style="font-size:21px;font-weight:500;white-space:nowrap">Rubyist since 2016 · RubyConf Austria founder · <b style="color:var(--ink)">muhamed.at/rails</b></div>
     </div>
     <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
