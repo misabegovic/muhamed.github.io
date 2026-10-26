@@ -31,17 +31,22 @@ triggers:
       # evidence: role-carv-ats-integrations
       - Brought data from 20+ outside systems into one model, so new integrations stopped costing work elsewhere.
       # evidence: role-carv-integration-lead
-      - "Led the integration of two products after an acquisition: one frontend, one shared database, the stacks brought step by step closer."
+      - Led the integration of two products after an acquisition, bringing their stacks together step by step.
   - problem: An upgrade is stuck.
-    # on the owner's word (2026-10-26); not yet in the evidence store
+    # answer on the owner's word (2026-10-26); proof: usput.ba 57858a5 (#206,
+    # .ruby-version 3.3.5 -> 4.0.9, rails 8.1.3.1 -> 8.1.4) and treasure_hunt
+    # 583cb56 (3.4.11 -> 4.0.9). Own products, small: no client upgrade story yet.
     answer: Rails and Ruby upgrades planned in steps your team can ship, with the deprecations dealt with on the way instead of in one big branch.
-    proofs: []
-  - problem: Pages are slow, or the job queue never empties.
-    # answer on the owner's word (2026-10-26); proof: about.md (enola
-    # contributions) and enola docs/EXPLAINERS.md (query-loops)
-    answer: I find where the time goes, from queries in loops to the database and background jobs, and fix it in the order your users feel it.
+    # Plain words, no version-by-version detail (owner, 2026-10-26: "too specific").
     proofs:
-      - "Built enola's query-loops check for Rails: it reports a database query run once per pass of a loop over your data, before it reaches production."
+      - I keep my own Rails apps on current Ruby and Rails, Ruby 4.0 and Rails 8.1 today.
+  - problem: Pages are slow, or the job queue never empties.
+    # answer on the owner's word (2026-10-26)
+    answer: I find where the time goes, from queries in loops to the database and background jobs, and fix it in the order your users feel it.
+    # usput.ba 14c2829 (#198) and 0937f81 (#200); kept in plain words, no
+    # timings or query counts (owner, 2026-10-26: "too specific").
+    proofs:
+      - Fixed pages that got slower as the data grew, by letting the database do the filtering and paging, and taking the queries out of loops.
   - problem: Product changes take longer than they should.
     answer: I shape the model so the next change is a setting, not a project.
     proofs:

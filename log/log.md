@@ -288,3 +288,5 @@
    by: agent
 - writing: the unpublished draft `_drafts/ai-augmented-development-how-i-actually-work.md` deleted on the owner's ask ("lets delete it"). It was agent-written (e1e6621, 2026-08-30), so it did not fit /writing/'s "written by me", and its tooling and day-job lines were out of date. Recoverable from git history.
    by: agent
+- site: /rails/ proofs in plain words on the owner's note ("some of these sound too specific... might weird them out"). Upgrades: "I keep my own Rails apps on current Ruby and Rails, Ruby 4.0 and Rails 8.1 today" (usput.ba 57858a5, treasure_hunt 583cb56). Performance: "Fixed pages that got slower as the data grew, by letting the database do the filtering and paging, and taking the queries out of loops" (usput.ba 14c2829, 0937f81; timings and query counts left out). The enola query-loops line is dropped, and the acquisition proof loses its stack detail. Searched first: the hireable evidence store holds no upgrade or performance story.
+   by: agent
