@@ -56,6 +56,8 @@ const services = [
   { slug: 'lead', name: 'Lead', title: 'Technical lead for your team', text: 'I lead your engineering team as a fractional or interim technical lead: technical direction, architecture, delivery, and the people.', format: 'Fractional or interim' },
   { slug: 'review', name: 'Review', title: 'Architecture review', text: 'A short, fixed-scope look at your codebase and system: what holds, what will break, and what to fix first.', format: 'Fixed scope, one to two weeks' },
   { slug: 'ai-native', name: 'AI-native', title: 'Make your company AI-native', text: 'How you build and what you build. I set up a knowledge base your people and agents work from, with architecture rules checked in CI, and build AI features into your product that hold up in production, using open-source tools I build and teach.', format: 'Workshops, then setup in your codebase' },
+  // Rails has its own page (files/rails.html), so its post points there.
+  { slug: 'rails', name: 'Rails', title: 'Ruby on Rails consulting', text: 'A Rubyist since 2016 for the part of your Rails app that slows your team down: a tangled monolith, a stuck upgrade, slow pages, or AI features without a rewrite.', format: 'A call, a day, or ongoing advice', url: 'muhamed.at/rails' },
 ];
 
 function servicePost(s, w, h) {
@@ -71,7 +73,7 @@ function servicePost(s, w, h) {
       <p class="muted" style="font-size:${24 * u}px;line-height:1.5;margin-top:${22 * u}px;max-width:${880 * u}px">${s.text}</p>
     </div>
     <div style="display:flex;justify-content:space-between;align-items:center">
-      <div class="foot"><img src="${photo}" alt=""><span><b>muhamed.at/services</b> · info@muhamed.at</span></div>
+      <div class="foot"><img src="${photo}" alt=""><span><b>${s.url || 'muhamed.at/services'}</b> · info@muhamed.at</span></div>
       <span class="fmt">${s.format}</span>
     </div>
   </div>`;
@@ -83,6 +85,19 @@ function share(w, h) {
       <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
       <h1 style="font-size:72px;align-self:center">I build products and lead the teams that <mark>ship them</mark>.</h1>
       <div class="muted" style="font-size:22px;font-weight:500">Senior Product Engineer and Technical Lead, AI-native · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
+    </div>
+    <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
+  </div>`;
+}
+
+// The Rails page (/rails/): its headline in the share card's layout. Copy
+// from files/_data/rails.yml; update it here when that changes.
+function railsShare(w, h) {
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
+    <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
+      <div class="rule" style="padding-top:18px;display:flex;justify-content:space-between;align-items:baseline"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span><span class="muted" style="font-size:18px;font-weight:650;letter-spacing:.08em;text-transform:uppercase">Ruby on Rails consulting</span></div>
+      <h1 style="font-size:70px;align-self:center">For Rails apps that outgrew their <mark>first design</mark>.</h1>
+      <div class="muted" style="font-size:21px;font-weight:500;white-space:nowrap">Rubyist since 2016 · RubyConf Austria founder · <b style="color:var(--ink)">muhamed.at/rails</b></div>
     </div>
     <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
   </div>`;
@@ -161,6 +176,7 @@ function projectCard(pr, w, h) {
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
   ['goatconf-2027.png', 1200, 630, goatconfNote(1200, 630)],
+  ['rails.png', 1200, 630, railsShare(1200, 630)],
   ['linkedin-header.png', 1584, 396, header(1584, 396, 470)],
   ['x-header.png', 1500, 500, header(1500, 500, 450)],
   ...services.flatMap((s) => [

@@ -418,7 +418,10 @@ format and summary stay in `home.yml` (services:) and the email in
 `services.yml`. In the same change, the site stops quoting a client's customer
 count: "8,500+ companies" is gone from `/work/`, `/rails/` and llms.txt, kept
 on the CV. The role title is unchanged: a shorter caption ("Senior product
-engineer, tech lead and Rubyist") was previewed and declined.
+engineer, tech lead and Rubyist") was previewed and declined. The same day,
+`/rails/` got its own share card (`images/social/rails.png`) and Rails a
+LinkedIn and X post image beside the other four services, rendered by
+`render-social-images.js`.
 
 ## Approval
 
