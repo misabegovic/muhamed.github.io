@@ -57,8 +57,9 @@
         </div>
         <a class="text-link" href="{{ site.baseurl }}{{ h.services_more.url }}">{{ h.services_more.label }}{{ arr }}</a>
       </div>
+      {% assign grid = h.services | where_exp: "s", "s.band != true" %}
       <ol class="services" role="list">
-        {% for service in h.services %}
+        {% for service in grid %}
         <li class="service">
           <a class="service-card" href="{{ site.baseurl }}/services/#{{ service.name | downcase }}">
             <h3 class="service-name">{{ service.name }}</h3>
@@ -78,6 +79,40 @@
       {% endif %}
     </div>
   </section>
+
+  {%- comment -%} The Rails offer as its own band; words in _data/rails.yml, the full page at /rails/. {%- endcomment -%}
+  {% assign r = site.data.rails %}{% assign rs = h.services | where: "name", "Rails" | first %}
+  {% if r and rs %}
+  {% assign rd = site.data.services.details.Rails %}
+  {% assign rq = h.testimonials | where: "id", r.quote.by | first %}
+  {% capture rmail %}mailto:{{ h.closing.email }}?subject={{ rd.email.subject | url_encode | replace: '+', '%20' }}&amp;body={% for line in rd.email.body %}{{ line | url_encode | replace: '+', '%20' }}%0D%0A{% endfor %}{% endcapture %}
+  <section id="rails" class="section section-tint" aria-labelledby="h-rails">
+    <div class="wrap feature">
+      <div class="feature-head">
+        <p class="rails-kicker">{{ r.kicker }}</p>
+        <h2 id="h-rails" class="section-title">{{ r.title }}</h2>
+        <p class="section-intro">{{ r.lead }}</p>
+        <div class="hero-actions rails-actions">
+          <a class="button" href="{{ rmail | strip }}">{{ rd.email.label }}{{ arr }}</a>
+          <a class="text-link" href="{{ site.baseurl }}/rails/">Rails consulting in detail</a>
+        </div>
+      </div>
+      <div class="rails-body">
+        <h3 class="offer-label">Sound familiar?</h3>
+        <ul class="proofs" role="list">{% for t in r.triggers %}<li>{{ t.problem }}</li>{% endfor %}</ul>
+        <dl class="rails-facts rails-facts-band">
+          {% for f in r.facts %}<div><dt>{{ f.value }}</dt><dd>{{ f.label }}</dd></div>{% endfor %}
+        </dl>
+        {% if rq %}
+        <figure class="rails-quote">
+          <blockquote>{{ r.quote.short }}</blockquote>
+          <figcaption class="quote-by">{% if rq.avatar %}<img class="avatar" src="{{ site.baseurl }}{{ rq.avatar }}" alt="" width="48" height="48">{% endif %}<p><strong><a href="{{ rq.url }}">{{ rq.name }}</a></strong>{{ rq.role }}</p></figcaption>
+        </figure>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
   {% if h.community.size > 0 %}
   <section class="community" aria-labelledby="h-community">

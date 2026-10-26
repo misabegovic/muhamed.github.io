@@ -9,6 +9,8 @@ sources:
   - files/_pages/services.md
   - files/_pages/about.md
   - files/_data/home.yml
+  - files/_data/rails.yml
+  - files/rails.html
   - files/_includes/home-page.html
   - files/_includes/site-header.html
   - files/assets/site.js
@@ -396,6 +398,28 @@ is kept, and `render-cv-data.js` reads the same data from it. Still three
 pages, tagged. Roles under the company stay undated, as the owner chose
 again.
 
+**2026-10-26, twenty-first change: a Rails offer, and no client customer
+counts.** Rails becomes a fifth service, "Ruby on Rails consulting", for the
+owner to market himself as a Rubyist. On the homepage it is its own band under
+the grid of four, so the grid keeps its 2×2 and the page does not read as
+Rails-only; the full offer is a new page, `/rails/`, linked from the band, the
+Rails entry on `/services/` and the footer. Both start from the buyer's
+problem ("For Rails apps that outgrew their first design."), list six problems
+teams bring, each with what he does and proof from the evidence store or the
+public record (enola's `query-loops` check, per enola's docs/EXPLAINERS.md),
+show four checkable Rubyist facts (Ruby since 2016, RubyConf Austria founded,
+EuRuKo 2024 organised, four gems), Zlatko's recommendation word for word, and
+three formats: a call, a day in the code, a few hours a month. No capacity
+promise: the page invites everyone to write and says that, if he is booked, he
+will say so and point to someone good. Upgrades and performance work are on
+the owner's word, not yet in the evidence store, and carry no proof line
+except the enola check. The words live in `files/_data/rails.yml`; the name,
+format and summary stay in `home.yml` (services:) and the email in
+`services.yml`. In the same change, the site stops quoting a client's customer
+count: "8,500+ companies" is gone from `/work/`, `/rails/` and llms.txt, kept
+on the CV. The role title is unchanged: a shorter caption ("Senior product
+engineer, tech lead and Rubyist") was previewed and declined.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -447,6 +471,16 @@ with the instruction not to push or deploy. Built on the local branch
 The twentieth change was chosen by the owner in session on 2026-10-23: "One
 single-column PDF" over a second ATS copy, after comparing the current PDF
 with a one-column prototype, and keeping the roles under the company undated.
+
+The twenty-first change was shaped with the owner in session on 2026-10-26
+from previews in the browser: "I also want to market myself as a Rubyist and
+offer Ruby on Rails consultations", then "evaluate it from perspective of
+someone who would consider hiring me", "The site should always invite folks to
+reach out... I can also recommend someone if I am not available", upgrades and
+performance confirmed as his work, "Keep the full old title", "idk if I want to
+brag too much about teamtailor facts like the 8500 companies", and "keep it on
+the CV, commit the rest". The formats and the wording are the agent's drafts,
+for the owner to adjust.
 
 ## Related
 

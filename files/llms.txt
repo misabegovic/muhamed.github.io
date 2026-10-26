@@ -26,7 +26,7 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 ## Experience, in short
 
 - Founder of his own company since 2024, through which he works inside startups:
-  - AI Product Developer at Teamtailor (an ATS serving 8,500+ companies): owned AI screening features from pitch to rollout and measurement.
+  - AI Product Developer at Teamtailor (an applicant tracking system): owned AI screening features from pitch to rollout and measurement.
   - Consultant for Doctaphone, a speech-to-text app for doctors: AI work, an architecture review, and the product vision with the founder.
   - Technical Lead at Recrubo, acquired by Carv: led the engineering team and the integration of both products after the acquisition.
 - AI Engineer on Usput.ba, his own product: AI content grounded in real place data.
@@ -40,6 +40,7 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 
 - [Home]({{ site.url }}/): who he is, what he offers, and how to get in touch
 - [Services]({{ site.url }}/services/): where teams usually start working with him (not a closed list), and how an engagement runs
+- [Rails consulting]({{ site.url }}/rails/): Ruby on Rails consulting for apps that outgrew their first design: tangled monoliths, stuck upgrades, slow pages and job queues, AI features without a rewrite, teams without a senior Rubyist; as a call, a day in the code, or a few hours a month
 - [Projects]({{ site.url }}/projects/): the tools he builds and teaches, and the things he makes for fun; profiles with real output and screenshots:{% for p in site.projects %} [{{ p.title }}]({{ site.url }}{{ p.url }}){% unless forloop.last %},{% endunless %}{% endfor %}
 - [Work]({{ site.url }}/work/): what he does and how he knows, grouped by problem, plus side projects
 - [About]({{ site.url }}/about/): bio, career history, specialties, open source work

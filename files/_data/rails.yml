@@ -1,0 +1,97 @@
+# The Rails offer: the /rails/ page and the band under the services on the
+# homepage. The name, format and summary are the Rails entry in home.yml
+# (services:); the email is in services.yml (details: Rails). Every claim
+# carries its evidence id from the store in ~/projects/hireable, or says it is
+# on the owner's word.
+
+kicker: Ruby on Rails consulting
+title: For Rails apps that outgrew their first design.
+# evidence: role-experfy (joined 2016), role-teamtailor-employer, proj-usput-web
+# No customer counts for clients (owner, 2026-10-26: not too much bragging).
+lead: >-
+  I have written Ruby since 2016 and shipped Rails in production for most of
+  that time, in mature products with many teams on one codebase and in my own
+  products on Rails 8. Bring me the part of your app that slows your team
+  down.
+
+# Why a Rubyist, in four facts anyone can check.
+# evidence: role-experfy, community-rubyconf-austria, community-euruko-2024, oss-enola-gems
+facts:
+  - { value: "2016", label: "writing Ruby since" }
+  - { value: RubyConf Austria, label: "founded and organised, 2026" }
+  - { value: EuRuKo 2024, label: "organised, 700 attendees" }
+  - { value: "4 gems", label: "maintained on rubygems.org" }
+
+# Where teams usually are when they write. The homepage band shows the
+# problems; /rails/ adds what I do and the proof. A proof names no client.
+triggers:
+  - problem: The app grew, and every change touches everything.
+    answer: I find where the boundaries belong and move the code toward them step by step, without a rewrite.
+    proofs:
+      # evidence: role-carv-ats-integrations
+      - Brought data from 20+ outside systems into one model, so new integrations stopped costing work elsewhere.
+      # evidence: role-carv-integration-lead
+      - "Led the integration of two products after an acquisition: one frontend, one shared database, the stacks brought step by step closer."
+  - problem: An upgrade is stuck.
+    # on the owner's word (2026-10-26); not yet in the evidence store
+    answer: Rails and Ruby upgrades planned in steps your team can ship, with the deprecations dealt with on the way instead of in one big branch.
+    proofs: []
+  - problem: Pages are slow, or the job queue never empties.
+    # answer on the owner's word (2026-10-26); proof: about.md (enola
+    # contributions) and enola docs/EXPLAINERS.md (query-loops)
+    answer: I find where the time goes, from queries in loops to the database and background jobs, and fix it in the order your users feel it.
+    proofs:
+      - "Built enola's query-loops check for Rails: it reports a database query run once per pass of a loop over your data, before it reaches production."
+  - problem: Product changes take longer than they should.
+    answer: I shape the model so the next change is a setting, not a project.
+    proofs:
+      # evidence: role-meisterlabs-permissions
+      - Designed a plans and permissions system that let product run billing experiments without developer time.
+  - problem: You want AI features without a rewrite.
+    answer: AI inside your Rails app with RubyLLM, grounded in your data, with structured outputs and evals.
+    proofs:
+      # evidence: role-teamtailor-ownership, role-teamtailor-employer
+      - Took AI screening features in a mature Rails product from the first pitch to rollout and measuring the results.
+  - problem: Your team has no senior Rubyist right now.
+    answer: I pair with your engineers or lead them until you have one, and help you hire.
+    proofs:
+      # evidence: role-experfy-team, role-experfy-product
+      - Led around 30 engineers across 7 time zones, on three Ember.js apps and a Rails monolith, through 150 percent growth.
+
+# Ways to start, smallest first. Drafts for the owner: no prices, no capacity
+# promise (owner, 2026-10-26: always invite people to write).
+formats:
+  title: How we can work.
+  items:
+    - { name: A call, text: "One question, talked through with someone who has seen it before. You get my notes afterwards." }
+    - { name: A day in your code, text: "We work through the problem in your codebase together. You get a written plan your team can act on." }
+    - { name: Ongoing, text: "A few hours a month as your team's Rails advisor, for reviews, decisions and the hard parts." }
+  more: Bigger than that? I also build, lead teams and review architecture.
+  # The owner's words (2026-10-26): "I will let them know then... I can also
+  # recommend someone if I am not available".
+  booked: Write even if you are not sure the timing works. If I am booked, I will say so, and point you to someone good.
+
+community:
+  title: A Rubyist, in the community too.
+  items:
+    # evidence: community-rubyconf-austria, community-rubyconf-speakers
+    - "Founded and organised <strong>RubyConf Austria 2026</strong> in Vienna, with Dave Thomas, Chad Fowler, José Valim and Armin Ronacher on the programme."
+    # evidence: community-euruko-2024
+    - "Organised <strong>EuRuKo 2024</strong> in Sarajevo, Europe's longest-running Ruby conference: 700 attendees and 50 speakers from 25+ countries."
+    # evidence: oss-enola-gems
+    - "Maintain four Ruby gems, <a href=\"https://rubygems.org/gems/enola-rb\">enola-rb</a> for Rails teams among them, and open-sourced <a href=\"https://github.com/Ruby-Austria/treasure_hunt\">treasure_hunt</a>, a Rails 8.1 app."
+  logos: [rubyconf-austria, euruko]
+
+# From Zlatko's recommendation (home.yml testimonials: zlatko), word for word.
+quote:
+  by: zlatko
+  text: >-
+    He is a strong Ruby on Rails engineer and a natural architect. He took on
+    leading the technical direction and shaping the code, and his decisions
+    held up as the project grew. … I recommend him to any team that needs a
+    Rails engineer who can lead.
+  short: I recommend him to any team that needs a Rails engineer who can lead.
+
+closing:
+  title: Tell me about your Rails app.
+  text: A few lines is enough. If I am not the right person, or not free, I will tell you, and point you to someone who is.

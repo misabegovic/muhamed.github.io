@@ -273,3 +273,8 @@
    by: agent
 - site: the Ruby Webring widget in the footer loads with its layout styles only and takes the footer's look (Schibsted Grotesk, the muted title, outlined buttons that turn yellow on hover, a yellow focus ring, 44px targets on touch), instead of the white box with a system font it drew on the dark footer. One row on desktop; on phones the title sits above the buttons. Follows the homepage ADR's design system.
    by: agent
+
+## 2026-10-26
+
+- site: the homepage ADR's twenty-first change, shaped with the owner from browser previews. Rails becomes a fifth service: its own band under the four services on the homepage, and a new page `/rails/` ("For Rails apps that outgrew their first design."), with six buyer problems and their proof, four Rubyist facts, Zlatko's recommendation, three formats (a call, a day, a few hours a month) and the owner's line on availability: write anyway; if booked, he says so and points to someone good. Words in `files/_data/rails.yml`; linked from `/services/`, the footer and llms.txt. Upgrades and performance are on the owner's word. "8,500+ companies" is gone from `/work/`, `/rails/` and llms.txt on the owner's ask, kept on the CV. A shorter title caption was previewed and declined; the role is unchanged. Not done: a Rails option on the contact page, a Rails service image for social posts.
+   by: agent
