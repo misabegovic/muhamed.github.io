@@ -493,7 +493,9 @@ entire lifecycle end to end... the things you mention dont sell that well",
 "done before could also maybe even go", "introducing and optimizing
 processes... improving CI/CD practices... continous delivery with trunk based
 deployments", "Rails best practices", and "ok, sounds good" to the wider
-headline and the shorter copy brought in line. The formats and the wording are
+headline and the shorter copy brought in line; later, of the lead's last line
+("Bring me the part of your app that slows your team down."): "Sounds weird.
+Remove?", so the lead ends on the experience. The formats and the wording are
 the agent's drafts, for the owner to adjust.
 
 ## Related

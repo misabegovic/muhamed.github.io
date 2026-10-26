@@ -13,8 +13,7 @@ title: Rails apps, from the first release to the tenth year.
 lead: >-
   I have written Ruby since 2016 and shipped Rails in production for most of
   that time, in mature products with many teams on one codebase and in my own
-  products on Rails 8. Bring me the part of your app that slows your team
-  down.
+  products on Rails 8.
 
 # Why a Rubyist, in four facts anyone can check.
 # evidence: role-experfy, community-rubyconf-austria, community-euruko-2024, oss-enola-gems
