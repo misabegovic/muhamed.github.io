@@ -282,3 +282,5 @@
    by: agent
 - site: a fourth card on the contact page, "Your Rails app", second in a 2×2 grid (was three in a row); its prefilled email is read from `services.yml` (details: Rails), the same as on /rails/ and /services/, and it links to /rails/. Phones keep one column. On the owner's go.
    by: agent
+- site: leftovers from the Jekyll Now theme removed on the owner's go: `/archive/` and `/categories/` (nothing linked to them; /writing/ and /tags/ cover them; no redirect plugin, so they now 404), and the Constructocat 404 page, rewritten in the site's voice with links to Home, Services, Rails consulting, Projects, Writing, the brain and the CV, kept out of the sitemap. The brain feed's title reads "Muhamed Isabegovic: brain" instead of "Muhamed's - Peek into my brain". `_config.yml`'s unused `name:` and `version:` left for the owner.
+   by: agent
