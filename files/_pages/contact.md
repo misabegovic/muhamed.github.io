@@ -3,8 +3,11 @@ layout: page
 title: Get in touch
 permalink: /contact/
 intro: Email is the best way to reach me. Pick what fits and your mail app opens a short draft; a few lines is plenty to start.
-description: How to reach Muhamed Isabegovic about building something with your team, an architecture review, or a talk at your event.
+description: How to reach Muhamed Isabegovic about building something with your team, your Rails app, an architecture review, or a talk at your event.
 ---
+{%- comment -%} The Rails card's email comes from _data/services.yml (details: Rails), as on /services/ and /rails/. {%- endcomment -%}
+{%- assign rd = site.data.services.details.Rails -%}
+{%- capture rmail %}mailto:info@muhamed.at?subject={{ rd.email.subject | url_encode | replace: '+', '%20' }}&amp;body={% for line in rd.email.body %}{{ line | url_encode | replace: '+', '%20' }}%0D%0A{% endfor %}{% endcapture -%}
 
 <div class="contact-options">
   <section class="contact-option" id="team">
@@ -12,6 +15,12 @@ description: How to reach Muhamed Isabegovic about building something with your 
     <p>You want a product or feature built, a technical lead for your team, or help making your company AI-native.</p>
     <p class="contact-hint">Useful to include: what your team builds, how it uses AI today, and what you would like to change.</p>
     <a class="button" href="mailto:info@muhamed.at?subject=Help%20for%20our%20team&amp;body=What%20we%20build%3A%0D%0AHow%20we%20use%20AI%20today%3A%0D%0AWhat%20we%20would%20like%20to%20change%3A%0D%0A">Email about your team<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></a>
+  </section>
+  <section class="contact-option" id="rails">
+    <h2>Your Rails app</h2>
+    <p>Your Rails app outgrew its first design: a tangled monolith, a stuck upgrade, slow pages, or AI features you want without a rewrite.</p>
+    <p class="contact-hint">Useful to include: your app and its Rails and Ruby versions, what slows you down, and whether a call, a day or ongoing help fits. More on <a href="/rails/">Rails consulting</a>.</p>
+    <a class="button" href="{{ rmail | strip }}">{{ rd.email.label }}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></a>
   </section>
   <section class="contact-option" id="review">
     <h2>A second opinion</h2>

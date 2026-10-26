@@ -280,3 +280,5 @@
    by: agent
 - site: `/rails/` gets its own share card (`images/social/rails.png`: "For Rails apps that outgrew their first design.", the portrait, "Rubyist since 2016 · RubyConf Austria founder · muhamed.at/rails"), and Rails a LinkedIn and X service post beside the other four, pointing to muhamed.at/rails. Rendered with `render-social-images.js` (ONLY= each new file; the other images untouched). On the owner's go.
    by: agent
+- site: a fourth card on the contact page, "Your Rails app", second in a 2×2 grid (was three in a row); its prefilled email is read from `services.yml` (details: Rails), the same as on /rails/ and /services/, and it links to /rails/. Phones keep one column. On the owner's go.
+   by: agent
