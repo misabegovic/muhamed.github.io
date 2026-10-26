@@ -9,6 +9,8 @@
 # the scene whose "3.700+" caption has no source.
 title: Usput.ba
 home_key: usput
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: Usput.ba, a travel guide to Bosnia and Herzegovina built and run by Muhamed Isabegovic, with audio tours, AI content checked against real places, and mine safety built in.
 image: /images/social/project-usput.png
 thumb: /images/projects/usput/home

@@ -5,6 +5,8 @@
 # clone run offline on 2026-10-22, with no private content.
 title: brain
 home_key: brain
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: brain, Muhamed Isabegovic's open-source knowledge base that a coding agent maintains, with immutable sources, a wiki where every claim cites its source, and no scheduled LLM runs.
 image: /images/social/project-brain.png
 thumb: /images/projects/brain/onboarding

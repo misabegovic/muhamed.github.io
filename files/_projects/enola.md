@@ -8,6 +8,8 @@
 # small Rails-shaped repository, 2026-10-22.
 title: enola
 home_key: enola
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: Muhamed Isabegovic's work on enola, the architecture graph that catches what a change broke in CI, including the constraints program, laws written in Ruby, and the gems that bring it to Rails teams.
 image: /images/social/project-enola.png
 thumb: /images/projects/enola/thumb

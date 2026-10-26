@@ -7,6 +7,8 @@
 # stated).
 title: tabula
 home_key: tabula
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 coming_soon:
   title: Screens and real runs, soon.
   text: |

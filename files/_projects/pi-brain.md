@@ -6,6 +6,8 @@
 # run on a copy of this site on 2026-10-22.
 title: pi-brain
 home_key: pi-brain
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: pi-brain, Muhamed Isabegovic's knowledge home for the pi coding agent, where decisions go through a person, agents draft but cannot promote what they write, and structural changes wait for an approved ADR.
 image: /images/social/project-pi-brain.png
 thumb: /images/projects/pi-brain/thumb

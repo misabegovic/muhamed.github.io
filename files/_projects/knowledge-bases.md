@@ -4,6 +4,8 @@
 # profile; nothing here names or sizes a client's system. The video is
 # rendered from ~/projects/knowledge-base-promo (Remotion), 2026-10-22.
 title: How I work with knowledge bases
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, on enola, tabula and taha, his main tools.
 thumb: /images/projects/knowledge-bases/thumb
 image: /images/social/project-knowledge-bases.png

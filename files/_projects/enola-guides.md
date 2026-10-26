@@ -5,6 +5,8 @@
 # a real run on a copy of examples/rails-shop, 2026-10-22.
 title: enola-guides
 home_key: enola-guides
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: enola-guides, a Ruby gem by Muhamed Isabegovic for working with coding agents in a codebase that has decisions, with architecture laws checked in CI, decisions anchored to code, and hooks that make agents read before they write.
 image: /images/social/project-enola-guides.png
 thumb: /images/projects/enola-guides/thumb

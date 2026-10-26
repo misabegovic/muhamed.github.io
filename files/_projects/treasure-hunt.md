@@ -6,6 +6,8 @@
 # demo data only, 2026-10-22: no real players, teams or treasure locations.
 title: hunt.rubyconf.at
 home_key: treasurehunt
+# When this page was first published; without it, every build re-dates it.
+date: 2026-10-22
 description: hunt.rubyconf.at, the location-based treasure hunt Muhamed Isabegovic built for RubyConf Austria 2026 in Vienna, now open source for any conference to rebrand and self-host.
 image: /images/social/project-treasure-hunt.png
 thumb: /images/projects/treasure-hunt/thumb
