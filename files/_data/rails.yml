@@ -49,8 +49,9 @@ work:
   - name: Team processes
     text: Introduce and tune how your team plans, reviews and ships, so work flows instead of waiting.
   # evidence: role-teamtailor-ownership, proj-usput-live
-  - name: End to end
-    text: "One person who owns a feature or a product through its whole lifecycle: the idea, the spec, the build, the rollout and running it."
+  # Was "End to end", which read oddly on its own (owner, 2026-10-26).
+  - name: New features, idea to production
+    text: "One person who owns a new feature or product through its whole lifecycle: the idea, the spec, the build, the rollout and running it."
   # evidence: role-teamtailor-ownership, role-teamtailor-langfuse, proj-usput-retrieval-grounding
   - name: AI features
     text: AI inside your Rails app, grounded in your data and measured with evals, without a second stack.
