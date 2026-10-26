@@ -500,6 +500,36 @@ mark {
 .quote.placeholder .avatar { background: #d6d6d0; color: var(--paper); }
 .quote-by strong { color: var(--ink); font-weight: 700; }
 
+/* Rails: the fifth offer, a band under the grid of four and its page at /rails/. */
+.rails-kicker { margin-bottom: 1rem; font-size: var(--t-small); font-weight: 650; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
+.rails-actions { margin-top: 1.75rem; }
+.rails-body .offer-label { margin-top: 0; }
+.rails-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: clamp(2.5rem, 2rem + 2vw, 3.5rem); border-top: 3px solid var(--ink); }
+.rails-facts > div { padding: 1rem 1.25rem 0 0; }
+.rails-facts > div + div { padding-left: 1.25rem; border-left: 1px solid var(--line); }
+.rails-facts dt { font-size: clamp(1.25rem, 1.05rem + 0.7vw, 1.75rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.025em; }
+.rails-facts dd { margin: 0.35rem 0 0; font-size: var(--t-small); color: var(--ink-2); }
+.rails-facts-band { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 1.25rem; margin-top: 2.25rem; border-top-width: 1px; border-top-color: rgb(0 0 0 / 0.1); }
+.rails-facts-band > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+.rails-quote { display: grid; gap: 1rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgb(0 0 0 / 0.1); }
+.rails-quote blockquote { font-size: var(--t-lead); font-weight: 600; line-height: 1.4; letter-spacing: -0.01em; }
+.rails-quote blockquote::before { content: "\201C"; display: block; height: 2.2rem; font-size: 3.5rem; font-weight: 800; line-height: 1; color: var(--yellow); }
+.rails-hero { margin-bottom: var(--section); }
+.rails-hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 2.5rem clamp(2.5rem, 1rem + 5vw, 6rem); align-items: end; }
+.rails-hero .page-head { margin-bottom: 0; }
+.rails-quote-page { margin-top: 0; padding: clamp(1.5rem, 1rem + 1.5vw, 2.25rem); border: 0; border-radius: var(--radius); background: var(--tint); }
+.rails-quote-page blockquote { font-size: var(--t-body); font-weight: 500; line-height: 1.55; }
+@media (max-width: 960px) { .rails-hero-grid { grid-template-columns: 1fr; } }
+.rails-page .capabilities { margin-top: 0; }
+.rails-booked { font-weight: 600; color: var(--ink); }
+.rails-community { margin-top: var(--section); }
+.rails-community .community-list a { color: var(--on-dark); text-decoration-color: var(--yellow); }
+.offer-more { margin-top: 1.25rem; }
+@media (max-width: 700px) {
+  .rails-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 1.25rem; }
+  .rails-facts > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+}
+
 /* Community, dark to match the portrait */
 
 .community { background: var(--dark); color: var(--on-dark); padding-block: var(--section); }

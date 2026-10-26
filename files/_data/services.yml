@@ -53,6 +53,17 @@ details:
       subject: Making our team AI-native
       body: ["What we build:", "How we use AI today:", "What we would like to change:"]
 
+  Rails:
+    get:
+      - "A Rubyist since 2016 on the part of your app that slows your team down: a tangled monolith, a stuck upgrade, slow pages or job queues."
+      - "AI features inside your Rails app with RubyLLM, without a rewrite."
+      - "A call, a day in your code, or a few hours a month as your team's Rails advisor, with notes or a written plan your team can act on."
+    more: { label: Rails consulting in detail, url: /rails/ }
+    email:
+      label: Email about your Rails app
+      subject: A Rails consultation
+      body: ["Our app, and its Rails and Ruby versions:", "What slows us down:", "A call, a day, or ongoing:"]
+
 steps:
   title: How it works.
   items:

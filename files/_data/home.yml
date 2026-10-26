@@ -202,6 +202,20 @@ services:
       and agents work from, with architecture rules checked in CI, and build
       AI features into your product that hold up in production, using
       open-source tools I build and teach.
+  # evidence: role-experfy (joined 2016), role-experfy-product,
+  # role-teamtailor-employer, proj-usput-web, proj-treasurehunt, oss-enola-gems
+  # band: on the homepage as its own band (_data/rails.yml), not in the grid
+  # of four; the full offer is /rails/.
+  - number: "05"
+    name: Rails
+    band: true
+    fits: When your Rails app has outgrown its first design.
+    format: A call, a day, or ongoing advice
+    title: Ruby on Rails consulting
+    text: >-
+      A Rubyist since 2016 for the part of your Rails app that slows your
+      team down: a tangled monolith, a stuck upgrade, slow pages, or AI
+      features without a rewrite.
 
 services_more: { label: Services in detail, url: /services/ }
 
@@ -246,7 +260,8 @@ capabilities:
       measured once they ship, and easy to improve.
     proofs:
       # evidence: role-teamtailor-ownership, role-teamtailor-employer, role-teamtailor-screening-triggers
-      - Shipped AI features to every customer of a hiring product used by 8,500+ companies, from the first pitch to measuring the results.
+      # No customer count (owner, 2026-10-26).
+      - Took AI features in a hiring product from the first pitch to rollout for every customer, and measured the results.
       # evidence: role-teamtailor-langfuse
       - Set up prompt management, evals and A/B experiments, so the team improved AI features with data instead of guesses.
       # evidence: proj-usput-live, proj-usput-retrieval-grounding

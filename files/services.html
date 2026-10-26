@@ -46,6 +46,7 @@ description: Hands-on product engineering, a technical lead for your team, archi
         {% if d.outcome %}<p class="offer-outcome">{{ d.outcome }}</p>{% endif %}
         {% if d.email %}{% capture mail %}mailto:info@muhamed.at?subject={{ d.email.subject | url_encode | replace: '+', '%20' }}&amp;body={% for line in d.email.body %}{{ line | url_encode | replace: '+', '%20' }}%0D%0A{% endfor %}{% endcapture %}
         <a class="button offer-cta" href="{{ mail | strip }}">{{ d.email.label }}{{ arr }}</a>{% endif %}
+        {% if d.more %}<p class="offer-more"><a class="text-link" href="{{ site.baseurl }}{{ d.more.url }}">{{ d.more.label }}{{ arr }}</a></p>{% endif %}
       </div>
     </article>
     {% endfor %}
