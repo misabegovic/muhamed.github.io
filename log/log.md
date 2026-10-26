@@ -296,3 +296,5 @@
    by: agent
 - projects: every profile in `_projects/` gets `date: 2026-10-22`, the day the pages were added (git). Without one, Jekyll dated each page at build time, so the daily rebuild told search engines and link previews (`article:published_time`, `dateModified`) that all ten were published that day. URLs, card order and llms.txt are unchanged. On the owner's go; found while diffing the tidy-up's builds. A new profile needs its own `date:`.
    by: agent
+- site: the Rails lead loses its last line, "Bring me the part of your app that slows your team down.", on the owner's note ("Sounds weird. Remove?"). It now ends on the experience: mature products with many teams on one codebase, and his own products on Rails 8. Changes /rails/ and the homepage band, which share `files/_data/rails.yml`; the share card and post images never carried it.
+   by: agent
