@@ -5,7 +5,7 @@ layout: default
 {% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
 <article class="wrap page about-page">
   <header class="page-head">
-    <h1 class="page-title">{{ page.title }}</h1>
+    <h1 class="page-title">{{ page.heading | default: page.title }}</h1>
     {% if page.intro %}<p class="page-intro">{{ page.intro }}</p>{% endif %}
   </header>
   <div class="about-grid">

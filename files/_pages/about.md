@@ -1,39 +1,47 @@
 ---
 layout: about
 title: About
+heading: "Hi, I’m Muhamed"
 permalink: /about/
-description: Muhamed Isabegovic is a Staff Engineer, based in Vienna. He builds open-source tools for teams that write code with AI agents, and works with teams through his own company.
+description: Muhamed Isabegovic grew up in Tuzla and lives in Vienna. He is a Staff Engineer, organises conferences in Bosnia and Austria, and builds open-source tools for teams that write code with AI agents.
 ---
 
-I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack. I have built trading systems in C++, SaaS products in Rails and AI features in hiring software.
+I grew up in Tuzla, Bosnia and Herzegovina, and moved to Vienna in 2021 to get married and start a family. I write software, and I organise conferences in Bosnia and Austria.
 
-I currently work as a Staff Engineer at Symphony, through my company. Before that I built AI screening features for Teamtailor's Co-pilot team, and was tech lead for the engineering team at Recrubo, through its acquisition by Carv.
+## Work
 
-On [Usput.ba](https://usput.ba), my own travel guide to Bosnia and Herzegovina, I work as an AI engineer. Descriptions, audio tours and itineraries are generated from real place data rather than from the model's memory, and it is where I try new AI features on real users first.
+I have spent ten years taking software from idea to production: trading systems in C++, SaaS products in Rails, AI features, and leading engineering teams. These days I mostly work as a Staff Engineer.
 
-Lately I also work one layer up, with agents writing the code. I build open-source tools that keep that reliable. [pi-brain](https://github.com/misabegovic/pi-brain) holds the specs and decisions the code is regenerated from, and runs this site. [enola](https://github.com/enola-labs/enola) checks code against architecture rules; I am a core contributor and maintain four gems that bring it to Ruby and Rails teams.
+More on [Work](/work/) and [my CV](/cv/).
 
-I also help companies become AI-native, in how they build and in what they build; see [Services](/services/).
+## Community
 
-My career, education, languages and full skill set are on [my CV](/cv/).
+Conferences are my way of staying part of a community that is close to my heart. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It is my growth engine.
+
+It started with [EuRuKo 2024](https://2024.euruko.org). I pitched it for Tuzla, then moved it to Sarajevo. It was my first conference, EuRuKo is a big name, and out of inexperience I gave in to the pressure of expectations. I wouldn't do that again.
+
+For [RubyConf Austria](https://www.rubyconf.at/) I wanted to give Vienna, the city that became home, the same love. Vienna is the city of music, so music was at the core of it: pianists, jazz musicians and flutes on stage, the Vienna Boys' Choir, and two venues, Haus der Musik and MuTh. That, the [treasure hunt](/brain/treasure-hunt-open-sourced/) and the time with the community made it special.
+
+And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I don't remember experts from outside coming to town to teach and mentor us. GoatConf brings them, so people in Tuzla can learn from them, see fresh perspectives and make them part of their network. It is free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/). In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
+
+I also love being part of a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, and they host a meetup at GoatConf.
 
 ## Open source
 
-- [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base. This site runs on a clone of it.
-- Core contributor to [enola](https://github.com/enola-labs/enola): architectural regression testing for AI-assisted development. My contributions include the constraints program and its verdict vocabulary, `plan` and `constraints mine`, the fact-provider seam and its providers, the history store behind `blame` and `diff`, declared intent compiling into the graph, Ember support, the Rails extraction work (`dead-methods`, `query-loops`), the Ruby DSL for writing laws as sentences, and the verdict writers that put findings where CI reads them (see the project's [acknowledgements](https://github.com/enola-labs/enola#acknowledgements)).
-- Maintainer of four enola gems:
-  - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper over the released enola binary, with the Ruby providers (Prism, Rubydex) on by default.
-  - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer. A generator plus `enola:init`, `enola:snapshot`, and `enola:check`; a fresh `rails new` goes from nothing to a caught architecture breach in seconds.
-  - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer. Guides for Rails, Ember, Python, TypeScript, Go and Rust, a catalogue of architectural laws, worked examples, agent skills, and CI tooling; also one command on npm, PyPI, crates.io, Go and Homebrew.
-  - [munola](https://rubygems.org/gems/munola): my own channel on top of enola, with a built-in recipe catalogue bound by detection.
+Open source comes from the same place as the conferences: when I build something useful, I want others to have it too. The [treasure hunt](https://github.com/Ruby-Austria/treasure_hunt) that sent RubyConf Austria attendees across Vienna is open source, so any conference can run one. GoatConf is planned in a [public repository](https://github.com/misabegovic/goatconf), where anyone can add an event with a pull request.
 
-## Things I love
+I am a core contributor to [enola](https://github.com/enola-labs/enola), which checks code against a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails. I also build [tended](/projects/tended/), a knowledge base that a coding agent maintains.
 
-- My family
-- Committing to a good cause
-- Good people & good stories
-- Movies (since I was very little)
-- Coffee
-- Ruby (Community)
+More on [Projects](/projects/).
 
+## Outside work
 
+Family comes first: my wife and our daughter.
+
+I am Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taking your time over coffee with family and friends, a bit like *fika* in Sweden. I also love filter coffee, and I can't walk past a good coffee house without trying its brew.
+
+As a kid I rented so many tapes that the video store made me an honorary member. I went every day. I still love movies.
+
+I trained football and swimming. I am a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
+
+And I love to travel. Bosnia and Herzegovina is beautiful, and I have not seen all of it yet.
