@@ -246,36 +246,13 @@ mark {
 }
 .portrait strong { color: var(--ink); font-size: 1.0625rem; font-weight: 750; }
 
-/* Companies */
+/* Event logos */
 
-.companies { border-block: 1px solid var(--line); }
-.companies-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 3rem; padding-block: 1.75rem; }
-.companies-title { font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
-.company-list { display: flex; flex-wrap: wrap; gap: 0.5rem 2.75rem; }
-.company-list { align-items: center; }
-.company-list li,
-.company-name { font-size: clamp(1.25rem, 1.05rem + 0.6vw, 1.625rem); font-weight: 750; letter-spacing: -0.02em; color: var(--ink-2); }
-.company-logo { height: 2.25rem; width: auto; max-width: 9rem; object-fit: contain; filter: grayscale(1) contrast(1.1); opacity: 0.75; transition: filter 0.2s ease-out, opacity 0.2s ease-out; }
-.company-list li:hover .company-logo { filter: none; opacity: 1; }
 .event-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem; margin-top: 1rem; }
 .event-logos img { height: 2.75rem; width: auto; opacity: 0.9; }
 .event-logos a:hover img { opacity: 1; }
 
 .placeholder { outline: 1.5px dashed #c9c9c2; outline-offset: -1.5px; background: repeating-linear-gradient(135deg, #fafaf8 0 8px, #f3f3f0 8px 16px); }
-.placeholder-logo {
-  display: inline-grid;
-  place-items: center;
-  min-width: 9rem;
-  height: 3.25rem;
-  padding: 0 1rem;
-  border-radius: var(--radius);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.1;
-  color: var(--ink-3);
-}
-.placeholder-logo small { font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
 .placeholder-tag { justify-self: start; padding: 0.15rem 0.5rem; border-radius: 3px; background: var(--ink); color: var(--paper); font-size: 0.75rem; font-weight: 650; }
 
 /* Sections */
