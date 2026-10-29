@@ -11,14 +11,15 @@ person:
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
-  title: I build products and lead the teams that ship them.
+  # The same line as the LinkedIn and X headers (owner, 2026-10-29).
+  title: Ten years of taking software from idea to production.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
-  highlight: ship them
+  highlight: Ten years
+  # What idea to production covers, in the About page's words (owner, 2026-10-29).
   lead: >-
-    Ten years of taking software from an idea to production, as a hands-on
-    engineer and as a tech lead, for startups and established product
-    companies alike. I also help teams become AI-native, with open-source
-    tools I build and teach.
+    From deciding what to build to running it in production, anywhere in the
+    stack. Lately I also work one layer up, with agents writing the code, and
+    build open-source tools that keep that reliable.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   availability: >-

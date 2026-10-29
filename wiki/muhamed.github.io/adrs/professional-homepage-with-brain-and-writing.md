@@ -453,6 +453,23 @@ write code with AI agents, and that he works with teams through his own
 company. The About page and llms.txt's role list keep their client names,
 like the CV.
 
+**2026-10-29, twenty-fourth change: ten years from idea to production.** The
+hero headline becomes "Ten years of taking software from idea to production."
+(was "I build products and lead the teams that ship them."), the same line as
+the LinkedIn and X banners, with "Ten years" highlighted (source:
+files/_data/home.yml). The lead takes the About page's words: "From deciding
+what to build to running it in production, anywhere in the stack. Lately I
+also work one layer up, with agents writing the code, and build open-source
+tools that keep that reliable." (source: files/_pages/about.md). The owner
+chose each line from options, one question at a time; a lead spoken to the
+visitor ("I join your team to build, to lead, or both") read as a pitch and
+was replaced. The highlighter, site-wide and in every generated image, is now
+a hand-drawn stroke, tilted and uneven, chosen from five mockups; it is an SVG
+background, so each line of a wrapped mark gets its own stroke (source:
+files/assets/site.css, .github/scripts/render-social-images.js). The share
+card, the Rails and GoatConf cards, the ten service posts and the ten project
+cards are re-rendered.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one

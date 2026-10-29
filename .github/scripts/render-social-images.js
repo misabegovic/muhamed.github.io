@@ -38,7 +38,8 @@ const base = `
 * { box-sizing: border-box; margin: 0; }
 html, body { background: var(--paper); }
 body { font-family: "SG", sans-serif; color: var(--ink); overflow: hidden; }
-mark { background: linear-gradient(transparent 58%, var(--yellow) 58%, var(--yellow) 92%, transparent 92%); color: inherit; padding-inline: .04em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* The site's hand-drawn highlighter (files/assets/site.css, mark). */
+mark { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E") 0 100% / 100% .84em no-repeat; color: inherit; padding: 0 .1em .08em; margin-inline: -.06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .stage { position: relative; width: var(--w); height: var(--h); overflow: hidden; }
 .wordmark { font-weight: 800; letter-spacing: -.02em; }
 h1, h2 { font-weight: 800; letter-spacing: -.035em; line-height: .98; text-wrap: balance; }
@@ -83,7 +84,7 @@ function share(w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
     <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
-      <h1 style="font-size:72px;align-self:center">I build products and lead the teams that <mark>ship them</mark>.</h1>
+      <h1 style="font-size:72px;align-self:center"><mark>Ten years</mark> of taking software from idea to production.</h1>
       <div class="muted" style="font-size:22px;font-weight:500">Staff Engineer · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
     </div>
     <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
@@ -122,12 +123,13 @@ function goatconfNote(w, h) {
 // phones, so the copy sits right of safeLeft and away from top and bottom.
 function header(w, h, safeLeft) {
   const u = w / 1584;
-  // Dark, like the site's footer, so the amber portrait stands out against it
-  // (an amber banner almost matched the photo and read as off; owner, 2026-10-29).
-  // Its line comes from the hero lead, so it doesn't repeat the site headline.
-  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
+  // White, like the site, with its hand-drawn highlighter (owner, 2026-10-29;
+  // was dark, and amber before that, which almost matched the photo).
+  // Its line is the site headline, so visitors from LinkedIn or X read the
+  // same line first on the site.
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--paper);color:var(--ink);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
     <div>
-      <h1 style="font-size:${64 * u}px;line-height:1.04"><span style="color:var(--yellow)">Ten years</span> of taking software<br>from an idea to production.</h1>
+      <h1 style="font-size:${64 * u}px;line-height:1.04"><mark>Ten years</mark> of taking software<br>from idea to production.</h1>
       <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:600">Staff Engineer · muhamed.at</p>
     </div>
   </div>`;
