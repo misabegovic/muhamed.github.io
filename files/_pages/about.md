@@ -22,7 +22,7 @@ It started with [EuRuKo 2024](https://2024.euruko.org). I pitched it for Tuzla, 
 
 For [RubyConf Austria](https://www.rubyconf.at/) I wanted to give Vienna, the city that became home, the same love. Vienna is the city of music, so music was at the core of it: pianists, jazz musicians and flutes on stage, the Vienna Boys' Choir, and two venues, Haus der Musik and MuTh. That, the [treasure hunt](/brain/treasure-hunt-open-sourced/) and the time with the community made it special.
 
-Next is [GoatConf](https://goatconf.com/), in Tuzla, on 3–5 June 2027. Growing up there, I don't remember quality experts coming to town to teach and mentor us. Bosnia lives under a smog of negative narrative: constant negativity in the news, corrupt politicians. I want GoatConf to cut through that, and give people in Tuzla access to quality experts who can become part of their network, and fresh perspectives on a path forward.
+Next is [GoatConf](https://goatconf.com/), in Tuzla, on 3–5 June 2027. Growing up there, I don't remember experts from outside coming to town to teach and mentor us. Bosnia lives under a smog of negative narrative: constant negativity in the news, corrupt politicians. I want GoatConf to cut through that, and give people in Tuzla access to quality experts who can become part of their network, and fresh perspectives on a path forward.
 
 It is free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone else is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/). The goat comes from an old Tuzla saying about the one goat that fed the whole town. That is what I want GoatConf to be.
 
