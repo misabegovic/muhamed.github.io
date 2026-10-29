@@ -72,7 +72,8 @@ organiser, and works in public.
   shared article or note.
 - Contact is by email (info@muhamed.at). No booking link exists yet.
 - He works with teams through his own company, Isabegovic Muhamed e.U., based
-  in Vienna and working remotely across Europe. The site states no capacity:
+  in Vienna and working remotely in Europe and beyond (owner, 2026-10-29;
+  was "across Europe"). The site states no capacity:
   it always invites people to write, and if he is booked he says so and points
   them to someone good (owner, 2026-10-26).
 

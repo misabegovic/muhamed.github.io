@@ -22,9 +22,11 @@ hero:
     build open-source tools that keep that reliable.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
+  # Europe and beyond: teams outside Europe too (owner, 2026-10-29). The
+  # company's name is held on one line.
   availability: >-
-    I work with teams through my own company, Isabegovic Muhamed e.U. Based in
-    Vienna, working remotely across Europe.
+    Based in Vienna, I work remotely with teams in Europe and beyond, through my
+    company Isabegovic&nbsp;Muhamed&nbsp;e.U.
   primary: { label: Get in touch, url: /contact/ }
   cv: { label: View my CV, url: /cv/ }
   secondary: { label: See how I can help, url: "#services" }
