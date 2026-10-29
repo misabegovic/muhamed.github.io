@@ -346,16 +346,17 @@ open_source:
       every outward act is journaled first, pull requests stay drafts unless
       you grant a merge on your own private repository, and the agent's shell
       holds no credentials.
-  # evidence: oss-enola-gems; https://rubygems.org/gems/enola-guides; misabegovic/enola-guides README
+  # evidence: oss-enola-gems; misabegovic/enola-guides README and CHANGELOG (0.9.0); rubygems.org, npm, PyPI, crates.io
   - name: enola-guides
     role: Author and maintainer
     url: https://github.com/misabegovic/enola-guides
     profile: /projects/enola-guides/
     outcome: Shows a team how to work this way, with decisions anchored to code, laws in CI, and agents that read before they write.
     text: >-
-      A Ruby gem of guides, a catalogue of 26 architecture laws, worked
-      examples, agent skills and hooks, for teams adopting enola. Eight
-      releases on rubygems.org since August 2026.
+      Guides to enola for Rails, Ember, Python, TypeScript, Go and Rust, with a
+      catalogue of 26 architecture laws, worked examples, agent skills and
+      hooks, as one command in every package manager. Ten releases since
+      August 2026.
   - name: pi-brain
     role: Author and maintainer
     url: https://github.com/misabegovic/pi-brain
@@ -365,12 +366,12 @@ open_source:
     text: >-
       An intent store for agentic development on the pi harness: human-gated
       agent workflows, decision records agents must read before editing, and
-      agent-written knowledge that cannot promote itself. Published on npm, nine tagged releases.
-  # evidence: oss-brain; misabegovic/brain README
-  - name: brain
+      agent-written knowledge that cannot promote itself. Installed once; each project gets a content-only clone. Ten releases on npm.
+  # evidence: oss-brain; misabegovic/tended README (called brain until 2026-10-25)
+  - name: tended
     role: Author
-    url: https://github.com/misabegovic/brain
-    profile: /projects/brain/
+    url: https://github.com/misabegovic/tended
+    profile: /projects/tended/
     outcome: Gives people and agents one record of what was decided and why, kept current by the agent.
     text: >-
       A knowledge base your coding agent maintains: sources go in unchanged,

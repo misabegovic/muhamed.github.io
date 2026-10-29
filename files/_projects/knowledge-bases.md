@@ -17,10 +17,10 @@ links:
   - { label: taha, url: "/projects/taha/", note: "agents that work unattended inside a mandate; coming soon" }
   - { label: enola-guides, url: "/projects/enola-guides/", note: "the method written down" }
   - { label: pi-brain, url: "/projects/pi-brain/", note: "decisions agents must read, on pi; usable today" }
-  - { label: brain, url: "/projects/brain/", note: "the knowledge base it started with" }
+  - { label: tended, url: "/projects/tended/", note: "the knowledge base it started with" }
   - { label: The method in plain words, url: "/brain/how-i-work-with-knowledge-bases/", note: "a note in my brain" }
 facts:
-  - { label: Main tools, value: "enola, tabula and taha, with enola-guides, pi-brain and brain beside them; enola I build with its team, the rest are mine" }
+  - { label: Main tools, value: "enola, tabula and taha, with enola-guides, pi-brain and tended beside them; enola I build with its team, the rest are mine" }
   - { label: Scale, value: "One knowledge base across all the repositories of a system" }
   - { label: In the open, value: "Four of the six tools, and this site's own wiki" }
   - { label: For, value: "Teams that build with coding agents" }
@@ -41,13 +41,13 @@ features_title: The practice, step by step.
 features:
   - title: Write it down, where agents read it.
     text: |
-      Sources go in unchanged; the wiki is the synthesis, and every claim cites its source. Decisions are records with a status and a confidence, and an agent may draft one but not approve it. That is [brain](/projects/brain/), and [pi-brain](/projects/pi-brain/) for the pi coding agent.
+      Sources go in unchanged; the wiki is the synthesis, and every claim cites its source. Decisions are records with a status and a confidence, and an agent may draft one but not approve it. That is [tended](/projects/tended/), and [pi-brain](/projects/pi-brain/) for the pi coding agent.
     media:
       kind: image
-      src: /images/projects/brain/adr
+      src: /images/projects/tended/adr
       width: 1600
       height: 1000
-      alt: "A decision page in brain: decision, accepted, confidence high, six pages rely on this."
+      alt: "A decision page in tended: decision, accepted, confidence high, six pages rely on this."
   - title: Anchor it to the code.
     text: |
       A decision page names the files it governs, so any file can answer which decision applies to it, and numbers cite the receipt they were read from. The method is written down in [enola-guides](/projects/enola-guides/).

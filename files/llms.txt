@@ -75,10 +75,10 @@ His main tools are enola, tabula and taha.
 - tabula ({{ site.url }}/projects/tabula/): one of his main tools, coming soon: understand a system you inherited, write down what it should become, and hold every agent to it; a single Rust tool keeping a project's memory, decisions and contract as plain files, with architecture drawn on a canvas and compiled into enola constraints (in private development)
 - taha ({{ site.url }}/projects/taha/): the tabula harness, one of his main tools, coming soon: runs a coding agent durably inside a mandate on pi and Pi Durable, with tabula as the judge (in private development)
 - [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
-- [brain](https://github.com/misabegovic/brain): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
+- [tended](https://github.com/misabegovic/tended): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
 - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
 - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
-- [enola-guides](https://rubygems.org/gems/enola-guides): the content layer for enola, guides and law catalogue (maintainer)
+- [enola-guides](https://github.com/misabegovic/enola-guides): the content layer for enola, guides for Rails, Ember, Python, TypeScript, Go and Rust and a law catalogue, one command on RubyGems, npm, PyPI, crates.io, Go and Homebrew (maintainer)
 - [munola](https://rubygems.org/gems/munola): a personal channel on top of enola with a built-in recipe catalogue (maintainer)
 - [treasure_hunt](https://github.com/Ruby-Austria/treasure_hunt): a location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints on cooldowns, live leaderboards); built for RubyConf Austria 2026, open-sourced under MIT for any organizer (author)
 

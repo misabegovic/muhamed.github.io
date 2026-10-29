@@ -282,14 +282,14 @@
       "roles": [
         "author and maintainer"
       ],
-      "description": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases."
+      "description": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 10 releases."
     },
     {
-      "name": "brain and tabula",
+      "name": "tended and tabula",
       "roles": [
         "author"
       ],
-      "description": "Knowledge bases people and agents work from: brain on GitHub, and tabula, in Rust, in private development."
+      "description": "Knowledge bases people and agents work from: tended on GitHub, and tabula, in Rust, in private development."
     }
   ],
   "references": [

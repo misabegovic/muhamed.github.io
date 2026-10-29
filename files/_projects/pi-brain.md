@@ -1,9 +1,9 @@
 ---
 # Profile (ADR: project-profile-pages, first amendment). Facts from
-# misabegovic/pi-brain (README, AGENTS.md, CHANGELOG, extensions/), npm
-# (versions), and this site, which is a pi-brain clone (AGENTS.md, wiki/,
-# log/). Terminal output: this site's history (git log) and pi-brain's tools
-# run on a copy of this site on 2026-10-22.
+# misabegovic/pi-brain at 0.5.2 (README, AGENTS.md, CHANGELOG, package.json,
+# extensions/), npm (versions, 2026-10-29), and this site, which is a pi-brain
+# clone (AGENTS.md, wiki/, log/). Terminal output: this site's history (git
+# log), and pi-brain 0.5.2's tools run on a copy of this site on 2026-10-29.
 title: pi-brain
 home_key: pi-brain
 # When this page was first published; without it, every build re-dates it.
@@ -19,8 +19,9 @@ links:
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice it belongs to" }
 facts:
   - { label: Role, value: Author and maintainer }
-  - { label: What, value: "A package for pi: a knowledge base per project or client, in its own clone" }
-  - { label: Releases, value: "9 on npm, July to September 2026; 0.5.1 is the latest" }
+  - { label: What, value: "A pi package, installed once; each project or client gets a clone that holds only its knowledge" }
+  - { label: Runs on, value: "pi, checked against pi 1.4" }
+  - { label: Releases, value: "10 on npm, July to October 2026; 0.5.2 is the latest" }
   - { label: License, value: MIT }
 hero:
   kind: code
@@ -55,6 +56,20 @@ features:
 
         Any structural change to this pi-brain home or the maintained project
         repository MUST have an approved ADR before implementation begins.
+  - title: Install once, a clone per project.
+    text: |
+      pi-brain installs once, as a global pi package: the extension, its commands and tools, skills, prompts, themes and personas. Each project or client then gets a clone that holds only its content and config: the rulebook, the wiki, the sources and the log. The clone inherits everything else from the install, so every pi session is brain-aware wherever a clone is present, and upgrading the package upgrades them all.
+    media:
+      kind: code
+      label: "README · getting started"
+      code: |
+        pi install @misabegovic/pi-brain
+
+        # a content-only brain for a project
+        bash tools/clone-pi-brain.sh ~/projects/my-project-brain "My Org"
+        cd ~/projects/my-project-brain
+        pi
+        /brain:setup
   - title: Agents draft. People promote.
     text: |
       Knowledge moves from the inbox to a suggestion, a draft, an accepted decision, its implementation and a record. Agents may only write suggestions. What an agent writes starts at `confidence: low` and cannot promote itself to `high` in the same change.
@@ -63,17 +78,17 @@ features:
       `brain_sync` validates every page and rebuilds the index, before each commit. Links are graphed for orphans and dead ends. Nothing runs a model on a schedule.
     media:
       kind: code
-      label: "$ node tools/brain-sync.mjs && node tools/brain-links.mjs   (on a copy of this site)"
+      label: "$ node tools/brain-sync.mjs && node tools/brain-links.mjs   (pi-brain 0.5.2, on a copy of this site)"
       code: |
-        Regenerated wiki/index.md with 70 pages across 16 kinds.
-        Link graph: 70 nodes, 389 edges
-        Orphans: 0, Hubs: 63, Dead links: 3, Suggestions: 21
+        Regenerated wiki/index.md with 72 pages across 16 kinds.
+        Link graph: 72 nodes, 395 edges
+        Orphans: 0, Hubs: 63, Dead links: 3, Suggestions: 22
   - title: Forty-four commands, enola built in.
     text: |
-      `/brain:shape`, `/brain:continue`, `/brain:investigate`, `/brain:tend` and forty more, plus nineteen tools for the agent. With [enola](/projects/enola/) switched on, fifteen `/brain:enola-*` commands check changes, keep receipts, and record verdicts on findings; since 0.5.0 the first write into a repository is held once to show the decisions that govern it.
+      `/brain:shape`, `/brain:continue`, `/brain:investigate`, `/brain:tend` and forty more, plus nineteen tools for the agent. With [enola](/projects/enola/) switched on, thirteen `/brain:enola-*` commands check changes, keep receipts, and record verdicts on findings; since 0.5.0 the first write into a repository is held once to show the decisions that govern it.
   - title: This site runs on it.
     text: |
-      muhamed.at is a pi-brain clone: twelve decision records, records of what shipped, a must-constraint on structural changes, and a log line for every change. The wiki is public, so you can read how every page on this site was decided.
+      muhamed.at is a pi-brain clone: thirteen decision records, records of what shipped, a must-constraint on structural changes, and a log line for every change. The wiki is public, so you can read how every page on this site was decided.
 shows:
   title: What it shows about how I work.
   text: |

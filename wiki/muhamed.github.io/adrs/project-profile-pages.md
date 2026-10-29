@@ -14,7 +14,7 @@ sources:
   - ~/projects/usput-promo/package.json
   - ~/projects/knowledge-base-promo/src
 created: 2026-10-22
-updated: 2026-10-22
+updated: 2026-10-29
 author: pi-brain-agent
 ---
 
@@ -230,6 +230,35 @@ listed: the homepage, /projects/, /work/, llms.txt, the knowledge-bases
 page and its video (knowledge-base-promo/src/Promo.tsx), with enola-guides,
 pi-brain and brain after them. The AI-native offer says enola is set up
 today and tabula and taha as they ship.
+
+**2026-10-29, fourth amendment: brain is now tended.** The open-source
+project brain was renamed tended on GitHub and published on PyPI under that
+name on 2026-10-25 (source: files/_projects/tended.md, citing
+misabegovic/tended's README and CHANGELOG). On the owner's ask the site
+calls it tended everywhere, with no "formerly brain": its profile moves to
+`/projects/tended/`, and `/projects/brain/` forwards there, so shared links
+keep working (source: files/_pages/projects-brain-redirect.html). The
+homepage card, the knowledge-bases hub, the enola-guides page, llms.txt and
+the CV (its HTML, both JSON files and the PDF) follow. The commands inside an
+instance keep the old name (`tools/brain.py`), as tended's README says. The
+notes stream at `/brain/` keeps its name: it is "my brain", not the product.
+
+**2026-10-29, fifth amendment: enola-guides and pi-brain as they are now.**
+On the owner's ask, both profiles are brought up to date with their
+repositories. enola-guides went from 0.3.1 to 0.9.0 (0.9.1 is in the
+repository, not yet published): guides for Rails, Ember, Python, TypeScript,
+Go and Rust, 21 of them in tracks, laws in Ruby or YAML, one command on
+RubyGems, npm, PyPI, crates.io, Go and Homebrew, checked against enola
+v0.4.35, and the knowledge base made an optional track (source:
+files/_projects/enola-guides.md). The owner kept the page's knowledge-base
+lead and its intent-first hero; its facts are corrected and two sections
+added, six stacks graded in CI and one command. pi-brain went from 0.5.1 to
+0.5.2, checked against pi 1.4; its page now explains that the package is
+installed once and each project gets a content-only clone, says thirteen
+`/brain:enola-*` commands (it said fifteen; the repository's README was
+corrected on 2026-10-25), counts this site's thirteen decision records, and
+shows fresh output from pi-brain 0.5.2's tools (source:
+files/_projects/pi-brain.md). The homepage cards, About and llms.txt follow.
 
 ## Approval
 
