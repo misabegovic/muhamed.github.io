@@ -203,14 +203,19 @@ a:hover .arr { transform: translateX(3px); }
   letter-spacing: -0.035em;
   text-wrap: balance;
 }
+/* The highlighter is drawn by hand: a tilted, uneven stroke behind the words
+   (owner, 2026-10-29). Each line of a wrapped mark gets its own stroke. The
+   SVG's fill is --yellow, written out because a data URI can't read it;
+   .github/scripts/render-social-images.js draws the same stroke. */
 mark {
-  background: linear-gradient(transparent 58%, var(--yellow) 58%, var(--yellow) 92%, transparent 92%);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E") 0 100% / 100% 0.84em no-repeat;
   color: inherit;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  padding-inline: 0.04em;
+  padding: 0 0.1em 0.08em;
+  margin-inline: -0.06em;
 }
-.hero-lead { margin-top: 1.75rem; max-width: 36rem; font-size: var(--t-lead); line-height: 1.55; color: var(--ink-2); }
+.hero-lead { margin-top: 1.75rem; max-width: 36rem; font-size: var(--t-lead); line-height: 1.55; color: var(--ink-2); text-wrap: pretty; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.1rem 1.75rem; margin-top: 2.25rem; }
 .availability { display: flex; align-items: baseline; gap: 0.6rem; margin-top: 1.75rem; font-size: var(--t-small); color: var(--ink-3); }
 .dot { position: relative; top: -0.05em; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #1f9d55; box-shadow: 0 0 0 4px rgb(31 157 85 / 0.16); flex: none; }
@@ -1242,7 +1247,8 @@ a:hover .arr-down { transform: translateY(2px); }
 .brand-banners { display: grid; gap: clamp(1.5rem, 1rem + 2vw, 2.5rem); }
 @media (min-width: 901px) { .brand-banners { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .brand-banner { margin: 0; }
-.brand-banner img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+/* A hairline, so the white banners keep their edge on the white page. */
+.brand-banner img { display: block; width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 0 0 1px var(--line); }
 .brand-banner figcaption { display: grid; gap: 0.3rem; margin-top: 0.9rem; }
 .brand-banner figcaption > strong { font-size: 1.125rem; font-weight: 750; }
 .brand-banner figcaption > span { color: var(--ink-2); }

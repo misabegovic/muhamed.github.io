@@ -12,7 +12,7 @@ sources:
   - files/_data/home.yml
   - files/README.md
 created: 2026-10-23
-updated: 2026-10-23
+updated: 2026-10-29
 author: pi-brain-agent
 ---
 
@@ -113,6 +113,19 @@ the open-source tools for teams that write code with AI agents and the
 conferences: EuRuKo 2024 organised, RubyConf Austria and GoatConf founded.
 Long adds what GoatConf is: a free conference in Tuzla for people who build
 and sell software (source: files/_data/brand.yml).
+
+## Fourth change: white banners with the site headline (2026-10-29)
+
+The site headline is now the banners' line, "Ten years of taking software
+from idea to production." (homepage ADR, twenty-fourth change), so the
+banners repeat the hero on purpose: visitors from LinkedIn or X read the same
+line first on the site. From mockups in a LinkedIn profile card (dark with
+yellow words, dark with the stroke, white, the site's tint), the owner chose
+white, like the site, with "Ten years" on the site's new hand-drawn
+highlighter in ink (source: .github/scripts/render-social-images.js). The
+mockups showed that white has no edge against LinkedIn's white profile card;
+the owner chose it knowing that. On `/brand/` the banners get a hairline so
+they keep their edge on the white page (source: files/assets/site.css).
 
 ## Related
 

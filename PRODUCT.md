@@ -38,9 +38,15 @@ believing it from evidence they could check, and knowing how to reach him.
 
 ## Positioning
 
-"I build products and lead the teams that ship them" (confirmed by the owner,
-2026-09-29). Clients hire him to build and lead; AI is one of the things he
-builds, not the pitch. His edge is making companies AI-native, in how they
+"Ten years of taking software from idea to production" (owner, 2026-10-29;
+was "I build products and lead the teams that ship them"), the same line as
+the white LinkedIn and X headers, with "Ten years" on the hand-drawn
+highlighter the site and every generated image now use. The
+hero's lead, in the About page's words, says what idea to production covers
+(from deciding what to build to running it in production, anywhere in the
+stack) and that he lately works one layer up, with agents writing the code,
+building open-source tools that keep that reliable. Clients hire him to build and lead; AI is one of the
+things he builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
 Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role
 at Symphony, his current engagement through his company (was Senior Product
