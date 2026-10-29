@@ -478,7 +478,9 @@ Vienna, working remotely across Europe."), since the owner works with teams
 outside Europe too (source: files/_data/home.yml). The footer and the Contact
 page say the same (source: files/_includes/site-footer.html,
 files/_pages/contact.md); the structured data keeps areaServed Europe and
-Remote. The green dot stays, as an open door.
+Remote. The green dot stays, as an open door. On-site work is only in and
+around Vienna (was the DACH region), on the Contact page and the services
+page (source: files/_data/services.yml).
 
 ## Approval
 

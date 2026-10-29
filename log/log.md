@@ -315,3 +315,5 @@
    by: agent
 - site: on the owner's ask, the line under the hero's buttons is one sentence, "Based in Vienna, I work remotely with teams in Europe and beyond, through my company Isabegovic Muhamed e.U." (was two, the second a fragment, "across Europe"), the homepage ADR's twenty-fifth change. The footer ("Vienna, working remotely with teams in Europe and beyond.") and the Contact page ("Remote in Europe and beyond, on site in the DACH region.") follow, and PRODUCT.md. The company's name is held on one line (non-breaking spaces). The green dot stays; areaServed stays Europe and Remote. Chosen from options, one question at a time.
    by: agent
+- site: on the owner's word, on-site work is only in and around Vienna (was the DACH region): the Contact page says "Remote in Europe and beyond, on site in and around Vienna." and the services page "I work remotely from Vienna with teams in Europe and beyond, and on site in and around the city." Part of the homepage ADR's twenty-fifth change.
+   by: agent
