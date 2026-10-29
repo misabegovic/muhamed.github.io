@@ -30,7 +30,9 @@ I also love being part of a good cause. From 2018 to 2021 I volunteered with the
 
 ## Open source
 
-Agents write much of the code now, and I want to own that workflow rather than rent it. This year I moved my personal setup to Pi, an open-source harness, and open models ([why](/why-i-canceled-my-personal-claude-subscription-and-moved-my-personal-workflow-to-pi-dev/)). I am a core contributor to [enola](https://github.com/enola-labs/enola), which checks code against a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails.
+Open source comes from the same place as the conferences: when I build something useful, I want others to have it too. The [treasure hunt](https://github.com/Ruby-Austria/treasure_hunt) that sent RubyConf Austria attendees across Vienna is open source, so any conference can run one. GoatConf is planned in a [public repository](https://github.com/misabegovic/goatconf), where anyone can add an event with a pull request.
+
+I am a core contributor to [enola](https://github.com/enola-labs/enola), which checks code against a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails. I also build [tended](/projects/tended/), a knowledge base that a coding agent maintains.
 
 More on [Projects](/projects/).
 
