@@ -150,20 +150,9 @@ stack:
       - { name: CI/CD }
       - { name: Kamal }
 
-# Show marked placeholders for the logos and quotes that do not exist yet.
+# Show marked placeholders for the quotes that do not exist yet.
 # Turn this off before publishing: a placeholder is a gap, not content.
 show_placeholders: false
-
-# A company shows its logo once it has agreed to be shown; until then, its
-# name. Put the file under files/images/logos/ and set logo to its path.
-companies:
-  - { name: Teamtailor, logo: /images/logos/teamtailor.webp }
-  - { name: Carv, logo: /images/logos/carv.webp }
-  - { name: Recrubo.ai, logo: /images/logos/recrubo.webp }
-  - { name: Doctaphone, logo: /images/logos/doctaphone.webp }
-  - { name: Meisterlabs, logo: /images/logos/meisterlabs.webp }
-  - { name: Experfy, logo: /images/logos/experfy.webp }
-  - { name: Marvelsoft, logo: /images/logos/marvelsoft.webp }
 
 services:
   - number: "01"

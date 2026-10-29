@@ -21,19 +21,6 @@
     </div>
   </section>
 
-  {% if h.companies.size > 0 %}
-  <section class="companies" aria-labelledby="h-companies">
-    <div class="wrap companies-row">
-      <h2 id="h-companies" class="companies-title">Worked with</h2>
-      <ul class="company-list" role="list">
-        {% for company in h.companies %}
-        <li>{% if company.logo and company.logo != "" %}<img class="company-logo" src="{{ site.baseurl }}{{ company.logo }}" alt="{{ company.name }}">{% elsif h.show_placeholders %}<span class="placeholder placeholder-logo" title="Placeholder: add this logo once {{ company.name }} agrees">{{ company.name }}<small>logo</small></span>{% else %}<span class="company-name">{{ company.name }}</span>{% endif %}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-  {% endif %}
-
   {% assign quotes = h.testimonials | where_exp: "t", "t.placeholder != true" %}
   {% if h.show_placeholders %}{% assign quotes = h.testimonials %}{% endif %}
   {% if quotes.size > 0 %}
