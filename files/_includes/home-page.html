@@ -16,7 +16,7 @@
       </div>
       <figure class="portrait">
         <img src="{{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }}" srcset="{{ site.baseurl }}/images/profile-480.webp?v={{ '/images/profile-480.webp' | asset_digest }} 480w, {{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }} 800w, {{ site.baseurl }}/images/profile-1200.webp?v={{ '/images/profile-1200.webp' | asset_digest }} 1200w" sizes="(max-width: 960px) min(26rem, 100vw - 3rem), 24rem" alt="Muhamed Isabegovic" width="1024" height="1024" fetchpriority="high">
-        <figcaption><strong>{{ site.author }}</strong><span>{{ h.person.role | replace: 'AI-native | AI Engineer', '<span class="nowrap">AI-native | AI Engineer</span>' }}</span></figcaption>
+        <figcaption><strong>{{ site.author }}</strong><span>{{ h.person.role }}</span></figcaption>
       </figure>
     </div>
   </section>

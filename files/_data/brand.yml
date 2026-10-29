@@ -53,14 +53,12 @@ bios:
   - id: short
     name: Short
     text: >-
-      Muhamed Isabegovic is a senior product engineer and technical lead in
-      Vienna. He builds products, leads the teams that ship them, and helps
+      Muhamed Isabegovic is a staff engineer in Vienna. He builds products, leads the teams that ship them, and helps
       companies become AI-native.
   - id: medium
     name: Medium
     text: >-
-      Muhamed Isabegovic is a senior product engineer and technical lead in
-      Vienna. For more than ten years he has taken software from an idea to
+      Muhamed Isabegovic is a staff engineer in Vienna. For more than ten years he has taken software from an idea to
       production, as a hands-on engineer and as a tech lead, for startups and
       established product companies alike: trading systems in C++, SaaS
       products in Rails and AI features in hiring software. He is the author
@@ -69,14 +67,14 @@ bios:
   - id: long
     name: Long
     text: >-
-      Muhamed Isabegovic is a senior product engineer and technical lead in
-      Vienna, working remotely across Europe through his company, Isabegovic
+      Muhamed Isabegovic is a staff engineer in Vienna, working remotely across Europe through his company, Isabegovic
       Muhamed e.U. For more than ten years he has owned products and the teams
       that build them, from deciding what to build to running it in
       production: trading systems in C++, SaaS products in Rails and AI
-      features in hiring software. Most recently he built AI screening
-      features for Teamtailor's Co-pilot team; before that he was tech lead at
-      Recrubo through its acquisition by Carv. He also builds Usput.ba, his
+      features in hiring software. He currently works as a Staff Engineer at
+      Symphony; before that he built AI screening features for Teamtailor's
+      Co-pilot team and was tech lead at Recrubo through its acquisition by
+      Carv. He also builds Usput.ba, his
       own travel guide to Bosnia and Herzegovina, as its AI engineer. Lately
       he works one layer up, with agents writing the code, and builds
       open-source tools that keep that reliable: pi-brain holds the specs and

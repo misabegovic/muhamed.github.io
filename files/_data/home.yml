@@ -7,7 +7,7 @@
 # The caption beside the portrait in the first screen.
 person:
   # One form everywhere, as on the CV and the LinkedIn headline.
-  role: Senior Product Engineer and Technical Lead, AI-native | AI Engineer
+  role: Staff Engineer
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints

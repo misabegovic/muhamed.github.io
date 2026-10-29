@@ -42,8 +42,9 @@ believing it from evidence they could check, and knowing how to reach him.
 2026-09-29). Clients hire him to build and lead; AI is one of the things he
 builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
-Title, one form everywhere (owner, 2026-10-21, kept 2026-10-26): Senior Product
-Engineer and Technical Lead, AI-native | AI Engineer. Five services: Build
+Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role
+at Symphony, his current engagement through his company (was Senior Product
+Engineer and Technical Lead, AI-native | AI Engineer). Five services: Build
 (hands-on product engineering), Lead (fractional or interim technical lead),
 Review (architecture review), AI-native (make your company AI-native), and
 Rails (Ruby on Rails consulting, added 2026-10-26, for the owner to market
@@ -125,7 +126,8 @@ organiser, and works in public.
 - **Working in public:** the blog (`files/_posts/`) and the brain stream
   (`files/_stream/`).
 - **Company logos:** the seven on the homepage are shown with each company's
-  agreement (owner, 2026-10-26).
+  agreement (owner, 2026-10-26). Symphony, the current engagement, is not
+  among them for now (owner, 2026-10-29).
 - **Absent, and not to be fabricated:** client testimonials, outcome metrics
   beyond the evidence store, a booking link, pricing.
 

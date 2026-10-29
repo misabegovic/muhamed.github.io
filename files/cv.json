@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Muhamed Isabegovic",
-    "label": "Senior Product Engineer and Technical Lead, AI-native | AI Engineer",
+    "label": "Staff Engineer",
     "image": "https://muhamed.at/images/profile.jpg",
     "email": "info@muhamed.at",
     "url": "https://muhamed.at",
@@ -35,7 +35,15 @@
       "position": "Founder",
       "location": "Vienna, Austria",
       "startDate": "2024-01",
-      "summary": "My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles inside startups, RubyConf Austria, and Usput.ba, my own product.",
+      "summary": "My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles for startups and engineering companies, RubyConf Austria, and Usput.ba, my own product.",
+      "highlights": []
+    },
+    {
+      "name": "Symphony",
+      "position": "Staff Engineer",
+      "location": null,
+      "startDate": null,
+      "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
       "highlights": []
     },
     {
@@ -260,8 +268,7 @@
       "roles": [
         "author"
       ],
-      "url": "https://github.com/Ruby-Austria/treasure_hunt",
-      "description": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS-verified clues, team play, hints on cooldowns, live leaderboards, offline support). Built for RubyConf Austria 2026 and open-sourced under MIT for any conference organizer."
+      "description": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organizer."
     },
     {
       "name": "enola",
@@ -288,7 +295,7 @@
   "references": [
     {
       "name": "Hans Schnedlitz, co-organised RubyConf Austria with me",
-      "reference": "The word that best describes Muhamed is \"visionary\". I had the pleasure of co-organising RubyConf Austria with him. For more than a year, I watched Muhamed take ideas that sounded wildly unreasonable and somehow make them a reality. His standard response was: \"Don't worry about it. It's going to be fine. We'll deal with it.\" When things went wrong, Muhamed stayed calm, made a decision and got moving. He expected a great deal from himself while remaining patient and generous with everyone around him. His enthusiasm pushed the whole team to aim higher, and he was genuinely fun to work with. Muhamed is a kind and capable leader. I would gladly work with him again. I have merely learned to be careful when he begins a sentence with, \"I have an idea.\""
+      "reference": "The word that best describes Muhamed is 'visionary'. I had the pleasure of co-organising RubyConf Austria with him. For more than a year, I watched Muhamed take ideas that sounded wildly unreasonable and somehow make them a reality. His standard response was: 'Don't worry about it. It's going to be fine. We'll deal with it.' When things went wrong, Muhamed stayed calm, made a decision and got moving. He expected a great deal from himself while remaining patient and generous with everyone around him. His enthusiasm pushed the whole team to aim higher, and he was genuinely fun to work with. Muhamed is a kind and capable leader. I would gladly work with him again. I have merely learned to be careful when he begins a sentence with, 'I have an idea.'"
     },
     {
       "name": "Zlatko Alomerovic, worked with me at Recrubo/Carv",

@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # {{ site.author }} (muhamed.at)
 
-> {{ site.author }} is a senior product engineer and technical lead, AI-native, based in Vienna, with 10+ years in the industry. He builds products and leads the teams that ship them, and helps companies become AI-native in how they build (their SDLC) and in what they build (AI features in the product). He works with teams through his own company, Isabegovic Muhamed e.U., based in Vienna and working remotely across Europe. Contact: info@muhamed.at.
+> {{ site.author }} is a staff engineer based in Vienna, with 10+ years in the industry. He builds products and leads the teams that ship them, and helps companies become AI-native in how they build (their SDLC) and in what they build (AI features in the product). He works with teams through his own company, Isabegovic Muhamed e.U., based in Vienna and working remotely across Europe. Contact: info@muhamed.at.
 
 This file follows the llms.txt convention. All pages are static HTML and easy to fetch. Feeds carry full content. The complete text of every page is available in one fetch at {{ site.url }}/llms-full.txt, and every page carries schema.org Person data in JSON-LD.
 
@@ -25,7 +25,8 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 
 ## Experience, in short
 
-- Founder of his own company since 2024, through which he works inside startups:
+- Founder of his own company since 2024, through which he takes engineering roles for startups and engineering companies:
+  - Staff Engineer at Symphony, his current engagement.
   - AI Product Developer at Teamtailor (an applicant tracking system): owned AI screening features from pitch to rollout and measurement.
   - Consultant for Doctaphone, a speech-to-text app for doctors: AI work, an architecture review, and the product vision with the founder.
   - Technical Lead at Recrubo, acquired by Carv: led the engineering team and the integration of both products after the acquisition.

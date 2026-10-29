@@ -427,6 +427,22 @@ engineer, tech lead and Rubyist") was previewed and declined. The same day,
 LinkedIn and X post image beside the other four services, rendered by
 `render-social-images.js`.
 
+**2026-10-29, twenty-second change: Staff Engineer at Symphony.** The
+owner's contract with Symphony is signed, a B2B engagement through his
+company, and it is his latest role. The title, one form everywhere, becomes
+"Staff Engineer" (was "Senior Product Engineer and Technical Lead, AI-native |
+AI Engineer"): the homepage caption, the footer, About, the CV page and PDF,
+page titles and link previews, the JSON-LD, the bios on `/brand/`, llms.txt
+and `_config.yml`'s description. The CV lists "Staff Engineer · Symphony"
+first under the company, described from symphony.is as an AI-native
+engineering company building software and AI for enterprises, high-growth
+startups and private equity portfolio companies; the company's line says
+"engineering roles for startups and engineering companies" (was "inside
+startups"). About, the long bio and llms.txt name Symphony as the current
+engagement, before Teamtailor. Symphony is not in the homepage "Worked with"
+row for now. The share card and the ten service post images are re-rendered
+with the new title.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -499,6 +515,14 @@ Remove?", so the lead ends on the experience; and, of the card "End to end": "al
 sounds wrong without context", so that card is "New features, idea to production".
 The formats and the wording are
 the agent's drafts, for the owner to adjust.
+
+The twenty-second change was asked for by the owner in session on
+2026-10-29: "I've signed a contract with Symphony.is. the role will be Staff
+Engineer", to list it as the latest engagement on the site and the CV and to
+make "Staff Engineer" the title; then "remove Symphony from Worked with for
+now", the CV line "With clients" from drafts taken from symphony.is, "for
+startups and engineering companies", the images re-rendered, each previewed
+in Chrome, and "ok, ship it".
 
 ## Related
 

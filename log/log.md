@@ -300,3 +300,8 @@
    by: agent
 - site: the /rails/ card "End to end" becomes "New features, idea to production", on the owner's note ("also sounds wrong without context"). Its text is otherwise unchanged. The homepage band lists it under the same name; the /rails/ meta description and llms.txt say "new features from idea to production" instead of "end-to-end ownership". "Features owned end to end" stays in the Rails summaries (homepage, /services/, the post image), where the context carries it. Checked in Chrome: the name wraps to two lines like its neighbours.
    by: agent
+
+## 2026-10-29
+
+- site, cv: the homepage ADR's twenty-second change, on the owner's ask: the contract with Symphony is signed, so "Staff Engineer" is the title everywhere (was "Senior Product Engineer and Technical Lead, AI-native | AI Engineer"): homepage caption, footer, About, the CV page and PDF, page titles, link previews, JSON-LD, the `/brand/` bios, llms.txt and `_config.yml`. The CV lists "Staff Engineer · Symphony" first under the company ("AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies", from symphony.is), and the company's line says "engineering roles for startups and engineering companies". About, the long bio and llms.txt name Symphony as the current engagement. Symphony is left out of "Worked with" for now (owner). PDF re-rendered with headless Chromium from `_cv/cv.html` (three pages, tagged), both CV JSON files from `render-cv-data.js`, and `share.png` plus the ten service post images from `render-social-images.js`. The now-unused nowrap filters on the old title are removed. Previewed in Chrome before shipping. The LinkedIn headline is the owner's to change.
+   by: agent

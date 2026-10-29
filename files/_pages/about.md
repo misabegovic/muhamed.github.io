@@ -2,12 +2,12 @@
 layout: about
 title: About
 permalink: /about/
-description: Muhamed Isabegovic is a senior product engineer and technical lead, AI-native, based in Vienna. He builds products, leads the teams that ship them, and helps companies become AI-native. Author of pi-brain and core contributor to enola.
+description: Muhamed Isabegovic is a staff engineer based in Vienna. He builds products, leads the teams that ship them, and helps companies become AI-native. Author of pi-brain and core contributor to enola.
 ---
 
 I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack. I have built trading systems in C++, SaaS products in Rails and AI features in hiring software.
 
-Most recently I built AI screening features for Teamtailor's Co-pilot team. Before that I was tech lead for the engineering team at Recrubo, through its acquisition by Carv.
+I currently work as a Staff Engineer at Symphony, through my company. Before that I built AI screening features for Teamtailor's Co-pilot team, and was tech lead for the engineering team at Recrubo, through its acquisition by Carv.
 
 On [Usput.ba](https://usput.ba), my own travel guide to Bosnia and Herzegovina, I work as an AI engineer. Descriptions, audio tours and itineraries are generated from real place data rather than from the model's memory, and it is where I try new AI features on real users first.
 

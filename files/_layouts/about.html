@@ -15,7 +15,7 @@ layout: default
     <aside class="about-card" aria-label="At a glance">
       <img src="{{ site.baseurl }}/images/profile-480.webp?v={{ '/images/profile-480.webp' | asset_digest }}" srcset="{{ site.baseurl }}/images/profile-480.webp?v={{ '/images/profile-480.webp' | asset_digest }} 480w, {{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }} 800w, {{ site.baseurl }}/images/profile-1200.webp?v={{ '/images/profile-1200.webp' | asset_digest }} 1200w" sizes="(max-width: 960px) 6rem, 22rem" alt="Muhamed Isabegovic" width="1024" height="1024" loading="lazy">
       <p class="about-name">{{ site.author }}</p>
-      <p class="about-role">{{ h.person.role | replace: 'AI-native | AI Engineer', '<span class="nowrap">AI-native | AI Engineer</span>' }}</p>
+      <p class="about-role">{{ h.person.role }}</p>
       <p class="availability"><span class="dot" aria-hidden="true"></span>{{ h.hero.availability }}</p>
       <div class="about-actions">
         <a class="button" href="{{ site.baseurl }}{{ h.hero.primary.url }}">{{ h.hero.primary.label }}{{ arr }}</a>
