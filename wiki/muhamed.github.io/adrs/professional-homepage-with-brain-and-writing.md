@@ -443,6 +443,16 @@ engagement, before Teamtailor. Symphony is not in the homepage "Worked with"
 row for now. The share card and the ten service post images are re-rendered
 with the new title.
 
+**2026-10-29, twenty-third change: plain descriptions.** The four
+descriptions that only search engines, link previews and AI assistants read
+follow the brand kit's plain bios (amber portrait ADR, third change): About's
+meta description, `_config.yml`'s site description (first person), the
+Person JSON-LD and the summary at the top of llms.txt now say "a Staff
+Engineer, based in Vienna", that he builds open-source tools for teams that
+write code with AI agents, and that he works with teams through his own
+company. The About page and llms.txt's role list keep their client names,
+like the CV.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -523,6 +533,10 @@ make "Staff Engineer" the title; then "remove Symphony from Worked with for
 now", the CV line "With clients" from drafts taken from symphony.is, "for
 startups and engineering companies", the images re-rendered, each previewed
 in Chrome, and "ok, ship it".
+
+The twenty-third change was chosen by the owner in session on 2026-10-29:
+"Descriptions only", then "Bio plus one line", so the descriptions say he
+can be hired through his company.
 
 ## Related
 

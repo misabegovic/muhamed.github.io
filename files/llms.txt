@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # {{ site.author }} (muhamed.at)
 
-> {{ site.author }} is a staff engineer based in Vienna, with 10+ years in the industry. He builds products and leads the teams that ship them, and helps companies become AI-native in how they build (their SDLC) and in what they build (AI features in the product). He works with teams through his own company, Isabegovic Muhamed e.U., based in Vienna and working remotely across Europe. Contact: info@muhamed.at.
+> {{ site.author }} is a Staff Engineer, based in Vienna. He builds open-source tools for teams that write code with AI agents, and works with teams through his own company. Contact: info@muhamed.at.
 
 This file follows the llms.txt convention. All pages are static HTML and easy to fetch. Feeds carry full content. The complete text of every page is available in one fetch at {{ site.url }}/llms-full.txt, and every page carries schema.org Person data in JSON-LD.
 
