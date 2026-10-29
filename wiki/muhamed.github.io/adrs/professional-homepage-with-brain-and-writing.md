@@ -480,7 +480,12 @@ page say the same (source: files/_includes/site-footer.html,
 files/_pages/contact.md); the structured data keeps areaServed Europe and
 Remote. The green dot stays, as an open door. On-site work is only in and
 around Vienna (was the DACH region), on the Contact page and the services
-page (source: files/_data/services.yml).
+page (source: files/_data/services.yml). On a second look the owner dropped
+the company's name and "teams" from the line: it now reads "Open to B2B
+contracts. Based in Vienna, working remotely in Europe and beyond.", since
+B2B says how clients hire him and the name is on Contact, the CV and the
+imprint; the footer drops "with teams", and the services page says what Contact
+says.
 
 ## Approval
 

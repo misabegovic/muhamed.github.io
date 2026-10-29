@@ -73,7 +73,7 @@ steps:
     - { step: A scoped proposal, text: "Clear deliverables, a format and a timeline, in writing." }
     - { step: The work, text: "I get to work, and keep you posted on what changed and what is next." }
   # On site only in and around Vienna (owner, 2026-10-29; was the DACH region).
-  where: I work remotely from Vienna with teams in Europe and beyond, and on site in and around the city.
+  where: Remote in Europe and beyond, on site in and around Vienna.
 
 # The recommendations say why; the page's own claim stays one line. The
 # quotes are the homepage's (home.yml testimonials), in the same order.
