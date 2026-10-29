@@ -24,7 +24,7 @@ For [RubyConf Austria](https://www.rubyconf.at/) I wanted to give Vienna, the ci
 
 And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I don't remember experts from outside coming to town to teach and mentor us. GoatConf brings them, so people in Tuzla can learn from them, see fresh perspectives and make them part of their network. It is free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/). In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
 
-I also love being part of a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, and they are running a meetup at GoatConf.
+I also love being part of a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, and they host a meetup at GoatConf.
 
 ## Open source
 
