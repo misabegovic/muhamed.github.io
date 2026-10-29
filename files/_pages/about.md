@@ -24,7 +24,7 @@ My career, education, languages and full skill set are on [my CV](/cv/).
 - Maintainer of four enola gems:
   - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper over the released enola binary, with the Ruby providers (Prism, Rubydex) on by default.
   - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer. A generator plus `enola:init`, `enola:snapshot`, and `enola:check`; a fresh `rails new` goes from nothing to a caught architecture breach in seconds.
-  - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer. Guides, a catalogue of architectural laws, worked examples, agent skills, and CI tooling.
+  - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer. Guides for Rails, Ember, Python, TypeScript, Go and Rust, a catalogue of architectural laws, worked examples, agent skills, and CI tooling; also one command on npm, PyPI, crates.io, Go and Homebrew.
   - [munola](https://rubygems.org/gems/munola): my own channel on top of enola, with a built-in recipe catalogue bound by detection.
 
 ## Things I love

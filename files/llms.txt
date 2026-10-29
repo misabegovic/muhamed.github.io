@@ -78,7 +78,7 @@ His main tools are enola, tabula and taha.
 - [tended](https://github.com/misabegovic/tended): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
 - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
 - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
-- [enola-guides](https://rubygems.org/gems/enola-guides): the content layer for enola, guides and law catalogue (maintainer)
+- [enola-guides](https://github.com/misabegovic/enola-guides): the content layer for enola, guides for Rails, Ember, Python, TypeScript, Go and Rust and a law catalogue, one command on RubyGems, npm, PyPI, crates.io, Go and Homebrew (maintainer)
 - [munola](https://rubygems.org/gems/munola): a personal channel on top of enola with a built-in recipe catalogue (maintainer)
 - [treasure_hunt](https://github.com/Ruby-Austria/treasure_hunt): a location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints on cooldowns, live leaderboards); built for RubyConf Austria 2026, open-sourced under MIT for any organizer (author)
 
