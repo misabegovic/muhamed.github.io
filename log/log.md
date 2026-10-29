@@ -329,3 +329,5 @@
    by: agent
 - site: About, the twenty-sixth change's follow-ups, each the owner's pick from options: "experts from outside" once instead of "quality experts" twice; "go on to speak" and "my growth engine" instead of "grow" twice; "staying part of a community" instead of "close" twice; "A bit like Pi" kept. Open source rewritten as the same instinct as the conferences: the treasure hunt app (Ruby-Austria/treasure_hunt), GoatConf's public repository, enola and its four gems, and tended; the Pi move and "own that workflow rather than rent it" are cut.
    by: agent
+- site: About's GoatConf part becomes one paragraph, on the owner's ask: "the smog of negative narrative" is cut as possibly counterproductive, "Next is GoatConf … 3–5 June 2027" becomes "And then there is GoatConf" so it does not date, and it ends on the charter's idea, "I want GoatConf to be that goat: the one that feeds the community."
+   by: agent

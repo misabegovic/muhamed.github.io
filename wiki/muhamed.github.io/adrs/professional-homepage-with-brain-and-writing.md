@@ -494,8 +494,8 @@ is built around what he cares about, with Bosnia as the thread: a short Work
 section with no employers named (they stay on Work and the CV), Community in
 his own words (why he organises conferences, EuRuKo 2024 pitched for Tuzla and
 moved to Sarajevo out of inexperience, RubyConf Austria built around Vienna's
-music, GoatConf in Tuzla against the smog of negative narrative and run like
-open source), Open source (the same instinct as the conferences: the
+music, GoatConf in Tuzla, run like open source, the goat that feeds the
+community), Open source (the same instinct as the conferences: the
 treasure hunt app, GoatConf's public repository, enola and its four gems,
 tended; pi-brain left out), and Outside work (family, ćejf, the video store, football
 and swimming, travel) (source: files/_pages/about.md; facts from
