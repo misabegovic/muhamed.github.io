@@ -48,37 +48,23 @@ font:
   license: SIL Open Font License, free for any use
   use: Headings in ExtraBold (800) with tight tracking, text in Regular (400).
 
-# In the third person, for organisers and press.
+# In the third person, for organisers and press. Plain sentences, no clients
+# named, nothing that dates them (owner, 2026-10-29).
 bios:
   - id: short
     name: Short
     text: >-
-      Muhamed Isabegovic is a staff engineer in Vienna. He builds products, leads the teams that ship them, and helps
-      companies become AI-native.
+      Muhamed Isabegovic is a Staff Engineer, based in Vienna.
   - id: medium
     name: Medium
     text: >-
-      Muhamed Isabegovic is a staff engineer in Vienna. For more than ten years he has taken software from an idea to
-      production, as a hands-on engineer and as a tech lead, for startups and
-      established product companies alike: trading systems in C++, SaaS
-      products in Rails and AI features in hiring software. He is the author
-      of pi-brain, an agent-maintained knowledge base, and a core contributor
-      to enola, which checks code against architecture rules.
+      Muhamed Isabegovic is a Staff Engineer, based in Vienna. He builds
+      open-source tools for teams that write code with AI agents. He organised
+      EuRuKo 2024 in Sarajevo and founded RubyConf Austria and GoatConf.
   - id: long
     name: Long
     text: >-
-      Muhamed Isabegovic is a staff engineer in Vienna, working remotely across Europe through his company, Isabegovic
-      Muhamed e.U. For more than ten years he has owned products and the teams
-      that build them, from deciding what to build to running it in
-      production: trading systems in C++, SaaS products in Rails and AI
-      features in hiring software. He currently works as a Staff Engineer at
-      Symphony; before that he built AI screening features for Teamtailor's
-      Co-pilot team and was tech lead at Recrubo through its acquisition by
-      Carv. He also builds Usput.ba, his
-      own travel guide to Bosnia and Herzegovina, as its AI engineer. Lately
-      he works one layer up, with agents writing the code, and builds
-      open-source tools that keep that reliable: pi-brain holds the specs and
-      decisions code is regenerated from, and enola, where he is a core
-      contributor and maintains four Ruby gems, checks code against
-      architecture rules. He helps companies become AI-native, in how they
-      build and in what they build.
+      Muhamed Isabegovic is a Staff Engineer, based in Vienna. He builds
+      open-source tools for teams that write code with AI agents. He organised
+      EuRuKo 2024 in Sarajevo and founded RubyConf Austria and GoatConf, a free
+      conference in Tuzla for people who build and sell software.

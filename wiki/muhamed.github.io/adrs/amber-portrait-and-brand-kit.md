@@ -102,6 +102,18 @@ owner), over "Staff Engineer · muhamed.at". The earlier black header
 differed: the site headline, a yellow block highlight, and a longer subline
 (source: .github/scripts/render-social-images.js).
 
+## Third change: plain bios (2026-10-29)
+
+The three bios on `/brand/` are rewritten from scratch with the owner, one
+question at a time. The old ones listed stacks, clients and tools, which the
+owner found "too complicated and not natural language". The rules now: plain
+sentences, no clients or employer named, and nothing that dates them ("dont
+put starting... make it last"). Short is the role and the city. Medium adds
+the open-source tools for teams that write code with AI agents and the
+conferences: EuRuKo 2024 organised, RubyConf Austria and GoatConf founded.
+Long adds what GoatConf is: a free conference in Tuzla for people who build
+and sell software (source: files/_data/brand.yml).
+
 ## Related
 
 - [Record: amber portrait and brand kit](../records/amber-portrait-and-brand-kit.md)

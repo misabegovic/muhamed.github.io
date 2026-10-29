@@ -68,6 +68,11 @@ PDF are byte-identical to the built ones.
   years" in yellow) over "Staff Engineer · muhamed.at" (source:
   .github/scripts/render-social-images.js). The site, the share card and the
   photos are unchanged.
+- 2026-10-29, the ADR's third change: the bios are plain sentences with no
+  clients, no employer and nothing that dates them: Short "Muhamed
+  Isabegovic is a Staff Engineer, based in Vienna." (9 words), Medium with
+  the open-source tools and the three conferences (33), Long adding what
+  GoatConf is (45) (source: files/_data/brand.yml).
 
 ## Related
 
