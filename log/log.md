@@ -317,3 +317,5 @@
    by: agent
 - site: on the owner's word, on-site work is only in and around Vienna (was the DACH region): the Contact page says "Remote in Europe and beyond, on site in and around Vienna." and the services page "I work remotely from Vienna with teams in Europe and beyond, and on site in and around the city." Part of the homepage ADR's twenty-fifth change.
    by: agent
+- site: on the owner's second look, the line under the hero's buttons (and on About) is "Open to B2B contracts. Based in Vienna, working remotely in Europe and beyond." (was "Based in Vienna, I work remotely with teams in Europe and beyond, through my company Isabegovic Muhamed e.U."): B2B says how clients hire him, the company's name stays on Contact, the CV and the imprint, and "teams" was filler. The footer drops "with teams"; the services page says what Contact says, "Remote in Europe and beyond, on site in and around Vienna." "Open to" names the arrangement, not free capacity. Part of the homepage ADR's twenty-fifth change.
+   by: agent
