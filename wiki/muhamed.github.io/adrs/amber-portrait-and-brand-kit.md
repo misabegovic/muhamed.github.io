@@ -85,6 +85,23 @@ The site's accent stays yellow: after a mockup with amber as the accent on
 every page, the owner chose to keep it (2026-10-23). Amber stays the
 portrait's and the banners' backdrop, not a UI colour.
 
+## Second change: dark banners, a new line (2026-10-29)
+
+This reverses the first change for the banners. The owner found the amber
+banner "way off" next to the profile photo: its gradient (#ffb93f to
+#e8920c) is lighter and yellower than the portrait's backdrop (sampled at
+#ed9a16 to #f3a626), so the two almost match and read as a mistake. From
+mockups in LinkedIn's and X's profile layouts (dark, paper, amber matched to
+the photo, dark with an amber panel), the owner chose dark, the site's
+`--dark` #111, where the amber photo stands out. The site headline is no
+longer on the banners, since it is already the hero and the share card: the
+line is the hero lead's, "Ten years of taking software from an idea to
+production.", with "Ten years" in the site's yellow (white type on the yellow
+highlighter was unreadable, and yellow on "production" made no sense to the
+owner), over "Staff Engineer · muhamed.at". The earlier black header
+differed: the site headline, a yellow block highlight, and a longer subline
+(source: .github/scripts/render-social-images.js).
+
 ## Related
 
 - [Record: amber portrait and brand kit](../records/amber-portrait-and-brand-kit.md)

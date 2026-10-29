@@ -122,11 +122,13 @@ function goatconfNote(w, h) {
 // phones, so the copy sits right of safeLeft and away from top and bottom.
 function header(w, h, safeLeft) {
   const u = w / 1584;
-  // On the portrait's amber backdrop (files/_data/brand.yml), so banner and photo match.
-  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:linear-gradient(100deg,#ffb93f,#e8920c);color:var(--ink);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
+  // Dark, like the site's footer, so the amber portrait stands out against it
+  // (an amber banner almost matched the photo and read as off; owner, 2026-10-29).
+  // Its line comes from the hero lead, so it doesn't repeat the site headline.
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--dark);color:var(--on-dark);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
     <div>
-      <h1 style="font-size:${64 * u}px;line-height:1.04">I build products and lead<br>the teams that <span class="hl-dark" style="background:var(--ink);color:#ffb93f">ship them</span>.</h1>
-      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:500"><b>Ten years</b> of taking software from an idea to production. &nbsp;<b>muhamed.at</b></p>
+      <h1 style="font-size:${64 * u}px;line-height:1.04"><span style="color:var(--yellow)">Ten years</span> of taking software<br>from an idea to production.</h1>
+      <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:600">Staff Engineer · muhamed.at</p>
     </div>
   </div>`;
 }

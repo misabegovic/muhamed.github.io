@@ -62,6 +62,12 @@ PDF are byte-identical to the built ones.
   with the LinkedIn and X headers, linked where the render script writes
   them, and a `banners/` folder in the zip (now 4.0 MB) (source:
   files/_data/brand.yml).
+- 2026-10-29, the ADR's second change: the LinkedIn and X headers are dark
+  (#111) again, so the amber photo stands out instead of nearly matching,
+  with "Ten years of taking software from an idea to production." ("Ten
+  years" in yellow) over "Staff Engineer · muhamed.at" (source:
+  .github/scripts/render-social-images.js). The site, the share card and the
+  photos are unchanged.
 
 ## Related
 
