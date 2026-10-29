@@ -16,7 +16,7 @@ More on [Work](/work/) and [my CV](/cv/).
 
 ## Community
 
-Conferences are my way of staying close to a community that is close to my heart. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It is my growth engine.
+Conferences are my way of staying part of a community that is close to my heart. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It is my growth engine.
 
 It started with [EuRuKo 2024](https://2024.euruko.org). I pitched it for Tuzla, then moved it to Sarajevo. It was my first conference, EuRuKo is a big name, and out of inexperience I gave in to the pressure of expectations. I wouldn't do that again.
 
