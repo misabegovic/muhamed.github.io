@@ -22,11 +22,10 @@ hero:
     build open-source tools that keep that reliable.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
-  # B2B says how teams hire me; the company's name is on Contact, the CV and
-  # the imprint. Europe and beyond: clients outside Europe too (owner, 2026-10-29).
+  # Where I work; the company's name is on Contact, the CV and the imprint.
+  # Europe and beyond: clients outside Europe too (owner, 2026-10-29).
   availability: >-
-    Open to B2B contracts. Based in Vienna, working remotely in Europe and
-    beyond.
+    Based in Vienna, working remotely in Europe and beyond.
   primary: { label: Get in touch, url: /contact/ }
   cv: { label: View my CV, url: /cv/ }
   secondary: { label: See how I can help, url: "#services" }

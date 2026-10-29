@@ -485,7 +485,8 @@ the company's name and "teams" from the line: it now reads "Open to B2B
 contracts. Based in Vienna, working remotely in Europe and beyond.", since
 B2B says how clients hire him and the name is on Contact, the CV and the
 imprint; the footer drops "with teams", and the services page says what Contact
-says.
+says. On a third look the owner dropped "Open to B2B contracts." too: the line
+is "Based in Vienna, working remotely in Europe and beyond."
 
 ## Approval
 
