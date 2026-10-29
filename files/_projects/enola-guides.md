@@ -136,7 +136,7 @@ features:
 shows:
   title: How I work with knowledge bases.
   text: |
-    This is the method I run my own work on: one knowledge base across all the repositories of a system, decisions written down before structural changes, and agents that read them before they write. This site runs the same way, on [pi-brain](https://github.com/misabegovic/pi-brain), and [brain](https://github.com/misabegovic/brain) is where it started.
+    This is the method I run my own work on: one knowledge base across all the repositories of a system, decisions written down before structural changes, and agents that read them before they write. This site runs the same way, on [pi-brain](https://github.com/misabegovic/pi-brain), and [tended](https://github.com/misabegovic/tended) is where it started.
 
     The guides are that practice written down, so a team can adopt it, pin it as a gem, and keep it after I leave. When I help a team become AI-native, this is what I set up.
   link: { label: The AI-native offer, url: /services/#ai-native }

@@ -279,9 +279,9 @@
       "text": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 9 releases."
     },
     {
-      "name": "brain and tabula",
+      "name": "tended and tabula",
       "role": "author",
-      "text": "Knowledge bases people and agents work from: brain on GitHub, and tabula, in Rust, in private development."
+      "text": "Knowledge bases people and agents work from: tended on GitHub, and tabula, in Rust, in private development."
     }
   ],
   "education": [

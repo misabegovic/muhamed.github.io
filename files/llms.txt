@@ -75,7 +75,7 @@ His main tools are enola, tabula and taha.
 - tabula ({{ site.url }}/projects/tabula/): one of his main tools, coming soon: understand a system you inherited, write down what it should become, and hold every agent to it; a single Rust tool keeping a project's memory, decisions and contract as plain files, with architecture drawn on a canvas and compiled into enola constraints (in private development)
 - taha ({{ site.url }}/projects/taha/): the tabula harness, one of his main tools, coming soon: runs a coding agent durably inside a mandate on pi and Pi Durable, with tabula as the judge (in private development)
 - [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
-- [brain](https://github.com/misabegovic/brain): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
+- [tended](https://github.com/misabegovic/tended): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
 - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
 - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
 - [enola-guides](https://rubygems.org/gems/enola-guides): the content layer for enola, guides and law catalogue (maintainer)

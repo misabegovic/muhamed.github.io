@@ -366,11 +366,11 @@ open_source:
       An intent store for agentic development on the pi harness: human-gated
       agent workflows, decision records agents must read before editing, and
       agent-written knowledge that cannot promote itself. Published on npm, nine tagged releases.
-  # evidence: oss-brain; misabegovic/brain README
-  - name: brain
+  # evidence: oss-brain; misabegovic/tended README (called brain until 2026-10-25)
+  - name: tended
     role: Author
-    url: https://github.com/misabegovic/brain
-    profile: /projects/brain/
+    url: https://github.com/misabegovic/tended
+    profile: /projects/tended/
     outcome: Gives people and agents one record of what was decided and why, kept current by the agent.
     text: >-
       A knowledge base your coding agent maintains: sources go in unchanged,
