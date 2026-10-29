@@ -4,7 +4,14 @@ kind: inbox
 
 # Inbox
 
-No pending items.
+## Pending
+
+#### about-page-community-photo (2026-10-29)
+
+- **kind:** observation
+- **scope:** muhamed.github.io
+- **status:** waiting on the owner
+- **summary:** The About page is all text. Add one photo to its Community section, from RubyConf Austria (music on stage, the treasure hunt), EuRuKo 2024 or Tuzla, with a one-line caption, once the owner supplies one he has the right to publish. The repo holds no such photo; the EuRuKo 2023 photos are not wanted here. Deferred by the owner during the About rewrite (homepage ADR, twenty-sixth change).
 
 ---
 
