@@ -470,6 +470,16 @@ files/assets/site.css, .github/scripts/render-social-images.js). The share
 card, the Rails and GoatConf cards, the ten service posts and the ten project
 cards are re-rendered.
 
+**2026-10-29, twenty-fifth change: Europe and beyond.** The line under the
+hero's buttons becomes one sentence, "Based in Vienna, I work remotely with
+teams in Europe and beyond, through my company Isabegovic Muhamed e.U." (was
+"I work with teams through my own company, Isabegovic Muhamed e.U. Based in
+Vienna, working remotely across Europe."), since the owner works with teams
+outside Europe too (source: files/_data/home.yml). The footer and the Contact
+page say the same (source: files/_includes/site-footer.html,
+files/_pages/contact.md); the structured data keeps areaServed Europe and
+Remote. The green dot stays, as an open door.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
