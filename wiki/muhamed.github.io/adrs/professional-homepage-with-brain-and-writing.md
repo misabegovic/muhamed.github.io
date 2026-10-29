@@ -488,6 +488,22 @@ imprint; the footer drops "with teams", and the services page says what Contact
 says. On a third look the owner dropped "Open to B2B contracts." too: the line
 is "Based in Vienna, working remotely in Europe and beyond."
 
+**2026-10-29, twenty-sixth change: About, people first.** The About page is
+rewritten for people, not buyers; Services, Work and the CV do the selling. It
+is built around what he cares about, with Bosnia as the thread: a short Work
+section with no employers named (they stay on Work and the CV), Community in
+his own words (why he organises conferences, EuRuKo 2024 pitched for Tuzla and
+moved to Sarajevo out of inexperience, RubyConf Austria built around Vienna's
+music, GoatConf in Tuzla against the smog of negative narrative and run like
+open source), Open source (owning his workflow on Pi, enola and its four gems;
+pi-brain left out), and Outside work (family, ćejf, the video store, football
+and swimming, travel) (source: files/_pages/about.md; facts from
+files/_data/cv.json, files/_stream/goatconf-2027-tuzla.md,
+files/_posts/2025-03-12-from-zero-to-one.md). The heading is "Hi, I’m
+Muhamed" while the nav and tab keep "About" (source: files/_layouts/about.html).
+The meta description and the llms.txt line for About follow (source:
+files/llms.txt). The detailed open-source list and "Things I love" are gone.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -572,6 +588,12 @@ in Chrome, and "ok, ship it".
 The twenty-third change was chosen by the owner in session on 2026-10-29:
 "Descriptions only", then "Bio plus one line", so the descriptions say he
 can be hired through his company.
+
+The twenty-sixth change was shaped with the owner in session on 2026-10-29,
+one question at a time: "Community / people first", "What I care about", the
+themes, and each paragraph redrafted until it sounded like him (Symphony,
+Teamtailor, the company, Usput.ba and the EuRuKo 2023 gong story were cut on
+his word); then "Ok" to the full draft.
 
 ## Related
 
