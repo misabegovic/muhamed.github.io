@@ -18,7 +18,7 @@ More on [Work](/work/) and [my CV](/cv/).
 
 Conferences are my way of staying part of a community that is close to my heart. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It is my growth engine.
 
-It started with [EuRuKo 2024](https://2024.euruko.org). I pitched it for Tuzla, then moved it to Sarajevo. It was my first conference, EuRuKo is a big name, and out of inexperience I gave in to the pressure of expectations. I wouldn't do that again.
+It started with [EuRuKo 2024](https://2024.euruko.org), the European Ruby conference. I pitched to host it in Tuzla, but it was the first conference I organised, EuRuKo is a big name, and out of inexperience I moved it to Sarajevo. It became the first Ruby conference in Bosnia and Herzegovina, and it taught me to trust my gut.
 
 For [RubyConf Austria](https://www.rubyconf.at/) I wanted to give Vienna, the city that became home, the same love. Vienna is the city of music, so music was at the core of it: pianists, jazz musicians and flutes on stage, the Vienna Boys' Choir, and two venues, Haus der Musik and MuTh. That, the [treasure hunt](/brain/treasure-hunt-open-sourced/) and the time with the community made it special.
 
