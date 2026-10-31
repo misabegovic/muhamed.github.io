@@ -30,7 +30,7 @@ I also love working for a good cause. From 2018 to 2021 I volunteered with the B
 
 Open source comes from the same place as the conferences: when I build something useful, I want others to have it too. The [treasure hunt](https://github.com/Ruby-Austria/treasure_hunt) that sent RubyConf Austria attendees across Vienna is open source, so any conference can run one. GoatConf is planned in a [public repository](https://github.com/misabegovic/goatconf), where anyone can add an event with a pull request.
 
-I am a core contributor to [enola](https://github.com/enola-labs/enola), which checks code against a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails. I also build [tended](/projects/tended/), a knowledge base that a coding agent maintains.
+I am a core contributor to [enola](https://github.com/enola-labs/enola), which keeps AI-assisted code in line with a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails. I also build [tended](/projects/tended/), a knowledge base that a coding agent maintains.
 
 More on [Projects](/projects/).
 
