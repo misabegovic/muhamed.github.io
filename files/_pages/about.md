@@ -16,7 +16,7 @@ More on [Work](/work/) and [my CV](/cv/).
 
 ## Community
 
-Conferences are my way of staying part of the Ruby community, and the wider community of people who build software. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It's my growth engine.
+Conferences are my way of staying part of the Ruby community, and the wider community of people who build software. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It's how I keep learning.
 
 It started with [EuRuKo 2024](https://2024.euruko.org), the European Ruby conference. I pitched to host it in Tuzla, but it was the first conference I organised, EuRuKo is a big name, and out of inexperience I moved it to Sarajevo. It became the first Ruby conference in Bosnia and Herzegovina, and it taught me to trust my gut.
 

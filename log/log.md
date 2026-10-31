@@ -331,3 +331,8 @@
    by: agent
 - site: About's GoatConf part becomes one paragraph, on the owner's ask: "the smog of negative narrative" is cut as possibly counterproductive, "Next is GoatConf … 3–5 June 2027" becomes "And then there is GoatConf" so it does not date, and it ends on the charter's idea, "I want GoatConf to be that goat: the one that feeds the community."
    by: agent
+
+## 2026-10-31
+
+- site: About read for a neutral reader, follow-ups to the homepage ADR's twenty-sixth change, each the owner's pick from options, one at a time. EuRuKo 2024 is explained ("the European Ruby conference"), pitched for Tuzla and moved to Sarajevo out of inexperience, and ends on "It became the first Ruby conference in Bosnia and Herzegovina, and it taught me to trust my gut." (was "I wouldn't do that again", which could read as regret about Sarajevo). RubyConf Austria says he started it, with flute players (not flutes) and the venues explained (MuTh, the Vienna Boys' Choir's concert hall). GoatConf "brings them to town, so people there can learn from them, hear fresh perspectives and add them to their network"; Pi is "the open-source coding agent". Community opens with "the Ruby community, and the wider community of people who build software". BH Futures "supports young people in Bosnia and Herzegovina with scholarships and mentoring" (owner's word). Work lists software, "leading engineering teams along the way". enola "keeps AI-assisted code in line with a team's architecture rules", matching the page description. The video store story runs in order (VHS tapes); "trained in football and swimming". Community and Outside work use contractions; "It's how I keep learning" replaces "It's my growth engine".
+   by: agent
