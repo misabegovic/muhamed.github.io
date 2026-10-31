@@ -16,13 +16,13 @@ More on [Work](/work/) and [my CV](/cv/).
 
 ## Community
 
-Conferences are my way of staying part of the Ruby community, and the wider community of people who build software. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It is my growth engine.
+Conferences are my way of staying part of the Ruby community, and the wider community of people who build software. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It's my growth engine.
 
 It started with [EuRuKo 2024](https://2024.euruko.org), the European Ruby conference. I pitched to host it in Tuzla, but it was the first conference I organised, EuRuKo is a big name, and out of inexperience I moved it to Sarajevo. It became the first Ruby conference in Bosnia and Herzegovina, and it taught me to trust my gut.
 
 In Vienna, the city that became home, I started [RubyConf Austria](https://www.rubyconf.at/) and gave it the same love I have for Tuzla. Vienna is the city of music, so music was at its core: pianists, jazz musicians and flute players on stage, the Vienna Boys' Choir, and two music venues, Haus der Musik and MuTh, the choir's own concert hall. Add a [treasure hunt](/brain/treasure-hunt-open-sourced/) across the city and the time with the community, and it became something special.
 
-And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I don't remember experts from outside coming to town to teach and mentor us. GoatConf brings them to town, so people there can learn from them, hear fresh perspectives and add them to their network. It is free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/), the open-source coding agent. In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
+And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I don't remember experts from outside coming to town to teach and mentor us. GoatConf brings them to town, so people there can learn from them, hear fresh perspectives and add them to their network. It's free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/), the open-source coding agent. In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
 
 I also love working for a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, which supports young people in Bosnia and Herzegovina with scholarships and mentoring. They host a meetup at GoatConf.
 
@@ -38,10 +38,10 @@ More on [Projects](/projects/).
 
 Family comes first: my wife and our daughter.
 
-I am Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taking your time over coffee with family and friends, a bit like *fika* in Sweden. I also love filter coffee, and I can't walk past a good coffee house without trying its brew.
+I'm Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taking your time over coffee with family and friends, a bit like *fika* in Sweden. I also love filter coffee, and I can't walk past a good coffee house without trying its brew.
 
 As a kid I went to the video store every day and rented so many VHS tapes that they made me an honorary member. I still love movies.
 
-I trained in football and swimming. I am a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
+I trained in football and swimming. I'm a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
 
-And I love to travel. Bosnia and Herzegovina is beautiful, and I have not seen all of it yet.
+And I love to travel. Bosnia and Herzegovina is beautiful, and I haven't seen all of it yet.
