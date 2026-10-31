@@ -338,3 +338,5 @@
    by: agent
 - site: About's GoatConf part no longer says experts from outside come to teach people in Tuzla, which some could take as a slight (owner's concern); it now reads "Growing up there, I would have loved a conference like this in my own town. Now I'm building one: a place where people who build software, from Tuzla and from everywhere else, meet, share what they know and grow their networks." Owner's pick from options.
    by: agent
+- site: About's EuRuKo part credits the city: "Sarajevo was a wonderful host, and it became the first Ruby conference in Bosnia and Herzegovina. Still, it taught me to trust my gut." Owner's pick from options, so the move does not read as a slight on Sarajevo.
+   by: agent
