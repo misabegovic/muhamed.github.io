@@ -42,6 +42,6 @@ I am Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taki
 
 As a kid I went to the video store every day and rented so many VHS tapes that they made me an honorary member. I still love movies.
 
-I trained football and swimming. I am a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
+I trained in football and swimming. I am a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
 
 And I love to travel. Bosnia and Herzegovina is beautiful, and I have not seen all of it yet.
