@@ -10,27 +10,27 @@ I grew up in Tuzla, Bosnia and Herzegovina, and moved to Vienna in 2021 to get m
 
 ## Work
 
-I have spent ten years taking software from idea to production: trading systems in C++, SaaS products in Rails, AI features, and leading engineering teams. These days I mostly work as a Staff Engineer.
+I have spent ten years taking software from idea to production, from trading systems in C++ to SaaS products in Rails and AI features, leading engineering teams along the way. These days I mostly work as a Staff Engineer.
 
 More on [Work](/work/) and [my CV](/cv/).
 
 ## Community
 
-Conferences are my way of staying part of a community that is close to my heart. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It is my growth engine.
+Conferences are my way of staying part of the Ruby community, and the wider community of people who build software. I get to invite people I respect, spend a few days with them, pick their brains and learn what they are working on right now. I love giving someone their first chance as a speaker and then watching them go on to speak at other conferences. And I like being the least qualified person in the room. It's how I keep learning.
 
-It started with [EuRuKo 2024](https://2024.euruko.org). I pitched it for Tuzla, then moved it to Sarajevo. It was my first conference, EuRuKo is a big name, and out of inexperience I gave in to the pressure of expectations. I wouldn't do that again.
+It started with [EuRuKo 2024](https://2024.euruko.org), the European Ruby conference. I pitched to host it in Tuzla, but it was the first conference I organised, EuRuKo is a big name, and out of inexperience I moved it to Sarajevo. Sarajevo was a wonderful host, and it became the first Ruby conference in Bosnia and Herzegovina. Still, it taught me to trust my gut.
 
-For [RubyConf Austria](https://www.rubyconf.at/) I wanted to give Vienna, the city that became home, the same love. Vienna is the city of music, so music was at the core of it: pianists, jazz musicians and flutes on stage, the Vienna Boys' Choir, and two venues, Haus der Musik and MuTh. That, the [treasure hunt](/brain/treasure-hunt-open-sourced/) and the time with the community made it special.
+In Vienna, the city that became home, I started [RubyConf Austria](https://www.rubyconf.at/) and gave it the same love I have for Tuzla. Vienna is the city of music, so music was at its core: pianists, jazz musicians and flute players on stage, the Vienna Boys' Choir, and two music venues, Haus der Musik and MuTh, the choir's own concert hall. Add a [treasure hunt](/brain/treasure-hunt-open-sourced/) across the city and the time with the community, and it became something special.
 
-And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I don't remember experts from outside coming to town to teach and mentor us. GoatConf brings them, so people in Tuzla can learn from them, see fresh perspectives and make them part of their network. It is free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/). In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
+And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I would have loved a conference like this in my own town. Now I'm building one: a place where people who build software, from Tuzla and from everywhere else, meet, share what they know and grow their networks. It's free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/), the open-source coding agent. In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
 
-I also love being part of a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, and they host a meetup at GoatConf.
+I also love working for a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, which supports young people in Bosnia and Herzegovina with scholarships and mentoring. They host a meetup at GoatConf.
 
 ## Open source
 
 Open source comes from the same place as the conferences: when I build something useful, I want others to have it too. The [treasure hunt](https://github.com/Ruby-Austria/treasure_hunt) that sent RubyConf Austria attendees across Vienna is open source, so any conference can run one. GoatConf is planned in a [public repository](https://github.com/misabegovic/goatconf), where anyone can add an event with a pull request.
 
-I am a core contributor to [enola](https://github.com/enola-labs/enola), which checks code against a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails. I also build [tended](/projects/tended/), a knowledge base that a coding agent maintains.
+I am a core contributor to [enola](https://github.com/enola-labs/enola), which keeps AI-assisted code in line with a team's architecture rules, and I maintain four gems that bring it to Ruby and Rails. I also build [tended](/projects/tended/), a knowledge base that a coding agent maintains.
 
 More on [Projects](/projects/).
 
@@ -38,10 +38,10 @@ More on [Projects](/projects/).
 
 Family comes first: my wife and our daughter.
 
-I am Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taking your time over coffee with family and friends, a bit like *fika* in Sweden. I also love filter coffee, and I can't walk past a good coffee house without trying its brew.
+I'm Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taking your time over coffee with family and friends, a bit like *fika* in Sweden. I also love filter coffee, and I can't walk past a good coffee house without trying its brew.
 
-As a kid I rented so many tapes that the video store made me an honorary member. I went every day. I still love movies.
+As a kid I went to the video store every day and rented so many VHS tapes that they made me an honorary member. I still love movies.
 
-I trained football and swimming. I am a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
+I trained in football and swimming. I'm a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
 
-And I love to travel. Bosnia and Herzegovina is beautiful, and I have not seen all of it yet.
+And I love to travel. Bosnia and Herzegovina is beautiful, and I haven't seen all of it yet.
