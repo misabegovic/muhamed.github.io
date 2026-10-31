@@ -40,7 +40,7 @@ Family comes first: my wife and our daughter.
 
 I am Bosnian, so my coffee is Bosnian coffee, and the best part is *ćejf*: taking your time over coffee with family and friends, a bit like *fika* in Sweden. I also love filter coffee, and I can't walk past a good coffee house without trying its brew.
 
-As a kid I rented so many tapes that the video store made me an honorary member. I went every day. I still love movies.
+As a kid I went to the video store every day and rented so many VHS tapes that they made me an honorary member. I still love movies.
 
 I trained football and swimming. I am a failed football player who still loves the game, and I have exactly one medal: gold in swimming, won as a kid.
 
