@@ -10,7 +10,7 @@ I grew up in Tuzla, Bosnia and Herzegovina, and moved to Vienna in 2021 to get m
 
 ## Work
 
-I have spent ten years taking software from idea to production: trading systems in C++, SaaS products in Rails, AI features, and leading engineering teams. These days I mostly work as a Staff Engineer.
+I have spent ten years taking software from idea to production, from trading systems in C++ to SaaS products in Rails and AI features, leading engineering teams along the way. These days I mostly work as a Staff Engineer.
 
 More on [Work](/work/) and [my CV](/cv/).
 
