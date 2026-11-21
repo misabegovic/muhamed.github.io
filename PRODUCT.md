@@ -44,7 +44,7 @@ because AI suggests it): simple and personal, who he is and how he could
 help, with "Muhamed" on the hand-drawn highlighter the site and every
 generated image use. The hero's text is warm and made of things only he can
 say. Its first sentence is set apart in ink: "I grew up in Tuzla, I live in
-Vienna, and I write software for a living." The rest sits under it, smaller:
+Vienna, and I make software for a living." The rest sits under it, smaller:
 "For ten years that has meant everything from deciding what to build to
 running it in production, anywhere in the stack, and leading teams along the
 way. These days I also work one layer up, with agents writing the code, and

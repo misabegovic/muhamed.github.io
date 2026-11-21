@@ -620,7 +620,11 @@ files/assets/site.css). The images are unchanged: they carry the first
 sentence. Found by the designer and not taken up: a small round photo above
 the headline on phones, the two text links kept together on tablets, the
 columns aligned at the top on tablets, and the name dropped from the
-portrait's caption.
+portrait's caption. Last, on the owner's word, the first sentence says
+"make": "I grew up in Tuzla, I live in Vienna, and I make software for a
+living." (was "write software"), on the page, the share card and the
+headers. "Make" covers deciding what to build, leading and directing agents,
+where "write" named only the typing, which the next lines say agents now do.
 
 ## Approval
 
@@ -768,7 +772,8 @@ he chose "Bring people together". Then: "I have a hunch we can still
 improve it. The right stuff is there... Review from different perspectives".
 Of the four wording fixes the reviews proposed he took all four, and for the
 layout "2: first sentence set apart", over the same with a small photo first
-on phones and over keeping the layout.
+on phones and over keeping the layout. Then: "Instead of write software,
+maybe say make software?"
 
 ## Related
 

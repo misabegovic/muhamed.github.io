@@ -90,6 +90,9 @@ PDF are byte-identical to the built ones.
   living." on the headers and the share card (source:
   .github/scripts/render-social-images.js). All three rendered without
   overflow. Not yet uploaded to the profiles.
+- Last on 2026-11-21: "write software" is "make software" in that
+  sentence, on the owner's word; the three images are re-rendered without
+  overflow.
 
 ## Related
 

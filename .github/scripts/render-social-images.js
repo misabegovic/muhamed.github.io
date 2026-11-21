@@ -83,7 +83,7 @@ function servicePost(s, w, h) {
 // The site's greeting (files/_data/home.yml, hero.title) and, under it, the
 // first sentence of the hero's lead. Update both here when they change.
 // Its line breaks are set by hand, for the card and for the headers.
-const LEAD_CARD = 'I grew up in Tuzla, I live in Vienna,<br>and I write software for a living.';
+const LEAD_CARD = 'I grew up in Tuzla, I live in Vienna,<br>and I make software for a living.';
 const LEAD_HEADER = LEAD_CARD;
 
 function share(w, h) {

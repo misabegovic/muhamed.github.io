@@ -26,7 +26,7 @@ hero:
   # role-carv-team, role-experfy-team (teams led)
   # lead: the first sentence, set apart in ink. more: the rest, under it.
   lead: >-
-    I grew up in Tuzla, I live in Vienna, and I write software for a living.
+    I grew up in Tuzla, I live in Vienna, and I make software for a living.
   more: >-
     For ten years that has meant everything from deciding what to build to
     running it in production, anywhere in the stack, and leading teams along
