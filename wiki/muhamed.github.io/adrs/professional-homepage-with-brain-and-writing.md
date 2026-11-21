@@ -563,7 +563,19 @@ banners' alt text on `/brand/` say the same (source:
 files/_includes/meta.html, files/brand.html). "Ten years" leaves the first
 screen; it stays in About's Work section, the Work page's intro and the
 stack's intro. The caption under the portrait, the buttons and the line under
-them are unchanged.
+them are unchanged. On a second look the same day the owner found the result
+"a step in the right direction" but missed the earlier lead, so the lead is
+his own paragraph again, with a subject now that it follows a greeting and
+not the ten-years headline: "I work on software from deciding what to build
+to running it in production, anywhere in the stack. Lately I also work one
+layer up, with agents writing the code, and build open-source tools that keep
+that reliable." (was "From deciding what to build ..."). The lead no longer
+names the role, the city or the three kinds of help: the caption says Staff
+Engineer, the line under the buttons says Vienna, and how he helps is the
+"See how I can help" link and the services section. So the twenty-fourth
+change's point stands again: no lead spoken to the visitor. The share card
+and the headers carry the greeting over the lead's first sentence, and the
+alt texts follow.
 
 ## Approval
 
@@ -680,7 +692,16 @@ preference on which help to lead with, and "Everything" for how far the line
 travels (hero, share card and both headers). From previews of the built page
 and the three images he chose the lead "Spoken to the visitor" and "About me"
 for the About page's heading. The wording of the lead and of the images' one
-line is the agent's draft, for the owner to adjust.
+line is the agent's draft, for the owner to adjust. Later in the same
+session: "this was just a step in the right direction, I still thing we need
+to improve", and of the earlier lead, "I liked this also... review and find
+ways to improve". The agent's review: the new lead listed three services any
+consultant could list and had lost what was specific in his paragraph. From
+three mockups of the built hero (his paragraph alone; with one sentence of
+help, "If that’s what your team needs, I can help."; with a row of links to
+the four services) he chose "A: paragraph only", and for its opening
+"Without the ten years" over "For ten years I’ve worked on software ..." and
+"I’m a Staff Engineer. I work on software ...".
 
 ## Related
 

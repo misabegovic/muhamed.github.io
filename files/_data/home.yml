@@ -17,11 +17,14 @@ hero:
   title: Hi, I’m Muhamed.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
   highlight: Muhamed
-  # Who I am, then how I help, spoken to the visitor, in the order of the
-  # services below (owner's pick from four drafts, 2026-11-21).
+  # The owner's own paragraph, kept from the ten-years hero, with a subject
+  # now that it follows a greeting; no ten years, no role (owner, 2026-11-21).
+  # How I help is the link below it and the services section.
   lead: >-
-    I’m a Staff Engineer in Vienna. If your team needs someone to build a
-    product, lead its engineering, or get started with AI agents, I can help.
+    I work on software from deciding what to build to running it in
+    production, anywhere in the stack. Lately I also work one layer up, with
+    agents writing the code, and build open-source tools that keep that
+    reliable.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   # Where I work; the company's name is on Contact, the CV and the imprint.

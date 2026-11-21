@@ -42,12 +42,15 @@ believing it from evidence they could check, and knowing how to reach him.
 from idea to production", a line he liked but felt many people now use
 because AI suggests it): simple and personal, who he is and how he could
 help, with "Muhamed" on the hand-drawn highlighter the site and every
-generated image use. The hero's lead says who he is and, spoken to the
-visitor, how he helps: "I'm a Staff Engineer in Vienna. If your team needs
-someone to build a product, lead its engineering, or get started with AI
-agents, I can help." The share card and the white LinkedIn and X headers
-carry the greeting over one line, "I help teams build products, lead
-engineering, and get started with AI agents." Clients hire him to build and lead; AI is one of the
+generated image use. The hero's lead is his own paragraph, kept from the
+ten-years hero and given a subject: "I work on software from deciding what
+to build to running it in production, anywhere in the stack. Lately I also
+work one layer up, with agents writing the code, and build open-source tools
+that keep that reliable." How he helps is the link under it and the services
+section; a lead that listed three services read as something any consultant
+could say and was replaced the same day. The share card and the white
+LinkedIn and X headers carry the greeting over the lead's first sentence.
+Clients hire him to build and lead; AI is one of the
 things he builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
 Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role

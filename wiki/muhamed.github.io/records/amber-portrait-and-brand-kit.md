@@ -80,6 +80,11 @@ PDF are byte-identical to the built ones.
   .github/scripts/render-social-images.js). Both rendered without overflow
   at 1584 × 396 and 1500 × 500; the share card was re-rendered with them.
   Not yet uploaded to the profiles.
+- Later on 2026-11-21: the sentence under the greeting, on the headers and
+  the share card, is the first of the hero's lead, "I work on software from
+  deciding what to build to running it in production, anywhere in the
+  stack." (source: .github/scripts/render-social-images.js). All three
+  rendered without overflow.
 
 ## Related
 

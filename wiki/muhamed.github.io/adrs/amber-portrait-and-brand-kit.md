@@ -138,7 +138,11 @@ Engineer · muhamed.at" (source: .github/scripts/render-social-images.js).
 They stay white, in the same safe area right of the profile photo. The
 banners' alt text on `/brand/` says the new words (source: files/brand.html).
 The owner uploads the new headers to both profiles himself; until then the
-profiles show the ten-years line.
+profiles show the ten-years line. On a second look the same day the hero's
+lead became the owner's own paragraph again (homepage ADR, twenty-eighth
+change), so the sentence under the greeting is its first: "I work on
+software from deciding what to build to running it in production, anywhere
+in the stack."
 
 ## Related
 
