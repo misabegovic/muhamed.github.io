@@ -17,14 +17,18 @@ hero:
   title: Hi, I’m Muhamed.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
   highlight: Muhamed
-  # The owner's own paragraph, kept from the ten-years hero, with a subject
-  # now that it follows a greeting; no ten years, no role (owner, 2026-11-21).
-  # How I help is the link below it and the services section.
+  # Warm and not generic: things only the owner can say (Tuzla, Vienna, the
+  # conferences), with his own "from deciding what to build ..." in the
+  # middle. No stack named, so it does not read as Rails-only (owner,
+  # 2026-11-21). How I help is the link below it and the services section.
+  # evidence: files/_pages/about.md (Tuzla, Vienna, why he organises conferences)
   lead: >-
-    I work on software from deciding what to build to running it in
-    production, anywhere in the stack. Lately I also work one layer up, with
-    agents writing the code, and build open-source tools that keep that
-    reliable.
+    I grew up in Tuzla, I live in Vienna, and I write software for a living.
+    For ten years that has meant everything from deciding what to build to
+    running it in production, anywhere in the stack. Lately it also means AI
+    features, and open-source tools that keep coding agents in line. And I
+    organise conferences, mostly to spend a few days with people I can learn
+    from.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   # Where I work; the company's name is on Contact, the CV and the imprint.
