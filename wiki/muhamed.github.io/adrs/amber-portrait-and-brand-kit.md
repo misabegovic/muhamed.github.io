@@ -142,9 +142,7 @@ profiles show the ten-years line. On a second look the same day the hero's
 lead became the owner's own paragraph again (homepage ADR, twenty-eighth
 change), so the sentence under the greeting is its first: "I work on
 software from deciding what to build to running it in production, anywhere
-in the stack." On a third look the lead was rewritten to be warmer, and the
-sentence under the greeting is again its first: "I grew up in Tuzla, I live
-in Vienna, and I write software for a living."
+in the stack."
 
 ## Related
 

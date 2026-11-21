@@ -85,11 +85,6 @@ PDF are byte-identical to the built ones.
   deciding what to build to running it in production, anywhere in the
   stack." (source: .github/scripts/render-social-images.js). All three
   rendered without overflow.
-- Later again on 2026-11-21: with the hero's lead rewritten, that sentence
-  is "I grew up in Tuzla, I live in Vienna, and I write software for a
-  living." on the headers and the share card (source:
-  .github/scripts/render-social-images.js). All three rendered without
-  overflow. Not yet uploaded to the profiles.
 
 ## Related
 
