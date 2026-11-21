@@ -21,12 +21,13 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 - A product team needs a senior engineer who can own a feature or a product from the idea to production, in Ruby on Rails, TypeScript or across the stack.
 - A team needs a fractional or interim technical lead to set direction, shape the architecture and get delivery moving; he has led engineering teams through an acquisition and, at around 30 engineers, fully remote across 7 time zones.
 - A company wants AI features that hold up in production (retrieval grounded in real data, structured outputs, evals, prompt management and A/B experiments in Langfuse), or wants to adopt coding agents with guardrails: specs and decision records agents work from, and architecture rules checked in CI.
+- A team has an AI proof of concept that has to become a stable production system, or needs the data underneath it: pipelines from multiple sources in a medallion architecture (Azure, Microsoft Fabric, PySpark), knowledge graphs, and agents that enrich and classify data.
 - Someone wants an outside view of an architecture before a big change, or a hands-on engineer with recruitment-technology (ATS) experience.
 
 ## Experience, in short
 
 - Founder of his own company since 2024, through which he takes engineering roles for startups and engineering companies:
-  - Staff Engineer at Symphony, his current engagement.
+  - Staff Engineer at Symphony, his current engagement: took an inherited proof of concept to stable production, with data pipelines on Azure and Microsoft Fabric, knowledge graphs, and agents that enrich and classify data.
   - AI Product Developer at Teamtailor (an applicant tracking system): owned AI screening features from pitch to rollout and measurement.
   - Consultant for Doctaphone, a speech-to-text app for doctors: AI work, an architecture review, and the product vision with the founder.
   - Technical Lead at Recrubo, acquired by Carv: led the engineering team and the integration of both products after the acquisition.
