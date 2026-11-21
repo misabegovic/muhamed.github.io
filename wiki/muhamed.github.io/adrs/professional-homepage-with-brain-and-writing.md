@@ -575,7 +575,25 @@ Engineer, the line under the buttons says Vienna, and how he helps is the
 "See how I can help" link and the services section. So the twenty-fourth
 change's point stands again: no lead spoken to the visitor. The share card
 and the headers carry the greeting over the lead's first sentence, and the
-alt texts follow.
+alt texts follow. On a third look, still the same day, the owner asked for
+the greeting and the paragraph to be warmer, more welcoming and "less AI
+generic". The greeting stays "Hi, I’m Muhamed." with no second line. The
+lead is now made of things only he can say, with his "from deciding what to
+build ..." in the middle: "I grew up in Tuzla, I live in Vienna, and I write
+software for a living. For ten years that has meant everything from deciding
+what to build to running it in production, anywhere in the stack. Lately I
+also work one layer up, with agents writing the code, and build open-source
+tools that keep that reliable. And I organise conferences, mostly to spend a
+few days with people I can learn from." (source: files/_data/home.yml). Its
+third sentence is his own, from the ten-years hero: the draft's "Lately it
+also means AI features, and open-source tools that keep coding agents in
+line." seemed too shallow to him. Tuzla, Vienna and why he
+organises conferences are the About page's (source: files/_pages/about.md).
+It names no stack: a draft that said "For ten years that meant products in
+Rails" left out his other work. The share card and the headers carry "I grew
+up in Tuzla, I live in Vienna, and I write software for a living." under the
+greeting. The order of the homepage's sections is unchanged: quotes, then
+services.
 
 ## Approval
 
@@ -701,7 +719,22 @@ three mockups of the built hero (his paragraph alone; with one sentence of
 help, "If that’s what your team needs, I can help."; with a row of links to
 the four services) he chose "A: paragraph only", and for its opening
 "Without the ten years" over "For ten years I’ve worked on software ..." and
-"I’m a Staff Engineer. I work on software ...".
+"I’m a Staff Engineer. I work on software ...". Then: "mock up services
+above the quotes... Also, maybe rewrite the paragraph and the greeting ? To
+be more warm and welcoming and less AI generic". From mockups of two orders
+with services above the quotes he chose "Keep the current order". Of three
+warmer drafts with a second line in the headline ("Welcome.", "Nice to meet
+you.", "Glad you’re here.") he chose none, then "No second line" and, for
+what was off, "Still sounds generic". Of three paragraphs built from facts
+about him (his path from C++ trading systems; from Tuzla; what he does these
+days) he said: "B version is closest, I don't like Rails mention excluding
+other stuff". The sentence that replaced the Rails one is the agent's
+draft, for the owner to adjust. Of the result: "Sounds better. Lately it
+means also AI features seens too shallow", and from options "Tuzla, with a
+deeper AI line", which is his own "one layer up" sentence. (A message of
+his about earlier mockups, "Horrible. Why are you extending the title?",
+arrived late and was first read as about this paragraph; it was reverted and
+restored within the session.)
 
 ## Related
 
