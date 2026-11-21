@@ -42,13 +42,14 @@ believing it from evidence they could check, and knowing how to reach him.
 from idea to production", a line he liked but felt many people now use
 because AI suggests it): simple and personal, who he is and how he could
 help, with "Muhamed" on the hand-drawn highlighter the site and every
-generated image use. The hero's lead is warm and made of things only he can
-say: "I grew up in Tuzla, I live in Vienna, and I write software for a
-living. For ten years that has meant everything from deciding what to build
-to running it in production, anywhere in the stack. Lately I also work one
-layer up, with agents writing the code, and build open-source tools that
-keep that reliable. And I organise conferences, to get people who build
-software into one room." It names no stack, so the first screen does not read as Rails-only.
+generated image use. The hero's text is warm and made of things only he can
+say. Its first sentence is set apart in ink: "I grew up in Tuzla, I live in
+Vienna, and I write software for a living." The rest sits under it, smaller:
+"For ten years that has meant everything from deciding what to build to
+running it in production, anywhere in the stack, and leading teams along the
+way. These days I also work one layer up, with agents writing the code, and
+build open-source tools that keep it reliable. And I organise conferences to
+get people who build software into one room." It names no stack, so the first screen does not read as Rails-only.
 How he helps is the link under it and the services section; leads that
 listed services or described the job in general terms read as generic and
 were replaced the same day. The share card and the white LinkedIn and X

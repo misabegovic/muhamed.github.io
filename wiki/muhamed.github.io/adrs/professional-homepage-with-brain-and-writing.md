@@ -596,7 +596,31 @@ It names no stack: a draft that said "For ten years that meant products in
 Rails" left out his other work. The share card and the headers carry "I grew
 up in Tuzla, I live in Vienna, and I write software for a living." under the
 greeting. The order of the homepage's sections is unchanged: quotes, then
-services.
+services. On a fourth look the hero was reviewed from four perspectives, an
+engineering leader buying help, a hiring manager, a copy editor and a
+designer, each reading it fresh. All four found the content and its order
+right. The owner took every wording fix and one layout change. The text now
+reads: "I grew up in Tuzla, I live in Vienna, and I write software for a
+living." and, under it, "For ten years that has meant everything from
+deciding what to build to running it in production, anywhere in the stack,
+and leading teams along the way. These days I also work one layer up, with
+agents writing the code, and build open-source tools that keep it reliable.
+And I organise conferences to get people who build software into one room."
+(source: files/_data/home.yml). "and leading teams along the way" is new,
+in the About page's words (source: files/_pages/about.md): to the buyer and
+the hiring manager the paragraph read as a strong developer working alone,
+not a Staff Engineer. "These days" replaces "Lately", which with "I also
+work" read as a slip; "keep it reliable" replaces "keep that reliable", two
+"that" three words apart; and the last sentence loses its comma. The first
+sentence is the lead, in ink at the lead's size, and the rest is a second
+paragraph, smaller and grey (`hero.lead` and `hero.more`; `.hero-lead` and
+`.hero-more`), since one even grey block of eight lines was being skipped
+between the headline and the button (source: files/_includes/home-page.html,
+files/assets/site.css). The images are unchanged: they carry the first
+sentence. Found by the designer and not taken up: a small round photo above
+the headline on phones, the two text links kept together on tablets, the
+columns aligned at the top on tablets, and the name dropped from the
+portrait's caption.
 
 ## Approval
 
@@ -740,7 +764,11 @@ arrived late and was first read as about this paragraph; it was reverted and
 restored within the session.) Then "Better, can we improve the last
 line?", and from four options (back home in Bosnia; the three conferences
 by name; bringing people together; "the least qualified person in the room")
-he chose "Bring people together".
+he chose "Bring people together". Then: "I have a hunch we can still
+improve it. The right stuff is there... Review from different perspectives".
+Of the four wording fixes the reviews proposed he took all four, and for the
+layout "2: first sentence set apart", over the same with a small photo first
+on phones and over keeping the layout.
 
 ## Related
 

@@ -19,16 +19,20 @@ hero:
   highlight: Muhamed
   # Warm and not generic: things only the owner can say (Tuzla, Vienna, the
   # conferences), with his own "from deciding what to build ..." and "one
-  # layer up" sentences in the middle. No stack named, so it does not read as Rails-only (owner,
-  # 2026-11-21). How I help is the link below it and the services section.
-  # evidence: files/_pages/about.md (Tuzla, Vienna, why he organises conferences)
+  # layer up" sentences in the middle. No stack named, so it does not read as
+  # Rails-only (owner, 2026-11-21). How I help is the link below it and the
+  # services section.
+  # evidence: files/_pages/about.md (Tuzla, Vienna, leading teams, the conferences);
+  # role-carv-team, role-experfy-team (teams led)
+  # lead: the first sentence, set apart in ink. more: the rest, under it.
   lead: >-
     I grew up in Tuzla, I live in Vienna, and I write software for a living.
+  more: >-
     For ten years that has meant everything from deciding what to build to
-    running it in production, anywhere in the stack. Lately I also work one
-    layer up, with agents writing the code, and build open-source tools that
-    keep that reliable. And I organise conferences, to get people who build
-    software into one room.
+    running it in production, anywhere in the stack, and leading teams along
+    the way. These days I also work one layer up, with agents writing the
+    code, and build open-source tools that keep it reliable. And I organise
+    conferences to get people who build software into one room.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   # Where I work; the company's name is on Contact, the CV and the imprint.
