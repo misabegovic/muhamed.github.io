@@ -583,8 +583,11 @@ build ..." in the middle: "I grew up in Tuzla, I live in Vienna, and I write
 software for a living. For ten years that has meant everything from deciding
 what to build to running it in production, anywhere in the stack. Lately I
 also work one layer up, with agents writing the code, and build open-source
-tools that keep that reliable. And I organise conferences, mostly to spend a
-few days with people I can learn from." (source: files/_data/home.yml). Its
+tools that keep that reliable. And I organise conferences, to get people who
+build software into one room." (source: files/_data/home.yml). Its last
+sentence first ended "mostly to spend a few days with people I can learn
+from", which said little about the conferences; the owner chose this one,
+close to what the About page says of GoatConf. Its
 third sentence is his own, from the ten-years hero: the draft's "Lately it
 also means AI features, and open-source tools that keep coding agents in
 line." seemed too shallow to him. Tuzla, Vienna and why he
@@ -734,7 +737,10 @@ means also AI features seens too shallow", and from options "Tuzla, with a
 deeper AI line", which is his own "one layer up" sentence. (A message of
 his about earlier mockups, "Horrible. Why are you extending the title?",
 arrived late and was first read as about this paragraph; it was reverted and
-restored within the session.)
+restored within the session.) Then "Better, can we improve the last
+line?", and from four options (back home in Bosnia; the three conferences
+by name; bringing people together; "the least qualified person in the room")
+he chose "Bring people together".
 
 ## Related
 

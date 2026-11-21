@@ -353,3 +353,5 @@
    by: agent
 - site: the twenty-eighth change, the lead's third sentence, on the owner's word ("Lately it means also AI features seens too shallow"): it is his own again, "Lately I also work one layer up, with agents writing the code, and build open-source tools that keep that reliable." The rest of the lead, the headline and the images are as in the entry above. In between, the lead was reverted to the short one and restored (commits bf0b461 and this one), after a late-arriving message about earlier mockups was read as about this paragraph.
    by: agent
+- site: the twenty-eighth change, the lead's last sentence, the owner's pick from four options: "And I organise conferences, to get people who build software into one room." (was "... mostly to spend a few days with people I can learn from."). The images are unchanged.
+   by: agent

@@ -47,8 +47,8 @@ say: "I grew up in Tuzla, I live in Vienna, and I write software for a
 living. For ten years that has meant everything from deciding what to build
 to running it in production, anywhere in the stack. Lately I also work one
 layer up, with agents writing the code, and build open-source tools that
-keep that reliable. And I organise conferences, mostly to spend a few days
-with people I can learn from." It names no stack, so the first screen does not read as Rails-only.
+keep that reliable. And I organise conferences, to get people who build
+software into one room." It names no stack, so the first screen does not read as Rails-only.
 How he helps is the link under it and the services section; leads that
 listed services or described the job in general terms read as generic and
 were replaced the same day. The share card and the white LinkedIn and X
