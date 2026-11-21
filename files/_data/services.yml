@@ -79,7 +79,7 @@ steps:
 # quotes are the homepage's (home.yml testimonials), in the same order.
 why:
   title: Why teams bring me in.
-  text: I build and I lead, and the tools I teach are ones I wrote.
+  text: I build and I lead, and the tools I teach are ones I work on myself.
   link: { label: See the work behind this, url: /work/ }
 
 closing:

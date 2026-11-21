@@ -81,7 +81,7 @@ side_projects:
       proximity checks for each clue, team play, hints on cooldowns and live
       leaderboards, as an installable Rails 8.1 web app with an offline fallback.
       Now open source as <a href="https://github.com/Ruby-Austria/treasure_hunt">treasure_hunt</a>,
-      ready for any conference organizer to rebrand and self-host.
+      ready for any conference organiser to rebrand and self-host.
   - id: card-game
     name: Post-Dayton BiH
     note: A political strategy card game

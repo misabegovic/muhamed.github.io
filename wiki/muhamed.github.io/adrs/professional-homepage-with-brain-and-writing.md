@@ -36,6 +36,9 @@ sources:
   - files/_includes/meta.html
   - files/brand.html
   - .github/scripts/render-social-images.js
+  - files/_config.yml
+  - files/_data/services.yml
+  - files/cv/Muhamed_Isabegovic_CV.pdf
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -657,6 +660,41 @@ files/_includes/meta.html, files/brand.html). The About page's heading is
 the three buttons, the line under them and the order of the sections. Left
 to the owner: uploading the new headers to LinkedIn and X.
 
+**2026-11-21, twenty-ninth change: the rest of the site follows the first
+screen.** A review of the whole site against the new hero found places that
+disagreed with it, and the owner asked for all of them to be fixed. About
+says "I make software" (was "write"), as the hero does, and its Work section
+opens "I have spent ten years making software" (was "taking software from
+idea to production", the retired headline) (source: files/_pages/about.md).
+The description that search results and link previews show, the Person
+JSON-LD's and the summary of llms.txt say what the hero says before they
+name the tooling: "Staff Engineer, based in Vienna. I make software and lead
+teams, build open-source tools for teams that write code with AI agents, and
+work with teams through my own company." (source: files/_config.yml,
+files/_includes/person-jsonld.html, files/llms.txt). This extends the
+twenty-third change's wording; the brand kit's bios, which the owner chose
+for organisers and press, are unchanged. The JSON-LD's occupations gain
+Staff Engineer and lose "Fractional CTO", and llms.txt offers "a fractional
+or interim technical lead" (was "technical lead or CTO"): no page a visitor
+sees offers a CTO, and the Lead service is a technical lead. The services
+page says "the tools I teach are ones I work on myself" (was "ones I
+wrote"), since he is a core contributor to enola, not its author (source:
+files/_data/services.yml, files/_data/home.yml). "organizer" and "organized"
+become "organiser" and "organised" on the homepage, the CV and llms.txt; his
+posts and notes keep his own spelling. The CV's lead says "ten years" (was
+"10+ years"), "These days" (was "Lately") and "keep it reliable" (was "keep
+that reliable"), as the hero does; the PDF is re-rendered with the same
+Chromium and stays at three pages with the same page breaks, and both CV
+data files are regenerated (source: files/_cv/cv.html, files/_data/cv.json,
+files/cv.json, files/cv/Muhamed_Isabegovic_CV.pdf). In the hero the two text
+links are kept together, so "View my CV" no longer wraps alone; the portrait
+starts level with the headline between 701 and 960 px, where the text column
+is much taller than the photo; and the greeting stays on one line down to
+320 px (source: files/_includes/home-page.html, files/assets/site.css).
+Still open from the review: the homepage shows no proof of "leading teams"
+beyond the Lead card (the numbers are on Work and the CV), and it mentions
+the conferences four times.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -807,6 +845,11 @@ on phones and over keeping the layout. Then: "Instead of write software,
 maybe say make software?" Then "Ok, review it all deeply", and after the
 findings: "maybe remove Tuzla and Vienna from the first sentence and just
 say 'I make software for a living' ?"
+
+The twenty-ninth change was asked for by the owner in session on
+2026-11-21: after the review's findings were listed, "Ok, improve all".
+Removing "Fractional CTO", the wording of the description and "ones I work
+on myself" are the agent's calls, for the owner to adjust.
 
 ## Related
 
