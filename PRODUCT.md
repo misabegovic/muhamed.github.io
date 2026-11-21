@@ -38,14 +38,16 @@ believing it from evidence they could check, and knowing how to reach him.
 
 ## Positioning
 
-"Ten years of taking software from idea to production" (owner, 2026-10-29;
-was "I build products and lead the teams that ship them"), the same line as
-the white LinkedIn and X headers, with "Ten years" on the hand-drawn
-highlighter the site and every generated image now use. The
-hero's lead, in the About page's words, says what idea to production covers
-(from deciding what to build to running it in production, anywhere in the
-stack) and that he lately works one layer up, with agents writing the code,
-building open-source tools that keep that reliable. Clients hire him to build and lead; AI is one of the
+"Hi, I'm Muhamed." (owner, 2026-11-21; was "Ten years of taking software
+from idea to production", a line he liked but felt many people now use
+because AI suggests it): simple and personal, who he is and how he could
+help, with "Muhamed" on the hand-drawn highlighter the site and every
+generated image use. The hero's lead says who he is and, spoken to the
+visitor, how he helps: "I'm a Staff Engineer in Vienna. If your team needs
+someone to build a product, lead its engineering, or get started with AI
+agents, I can help." The share card and the white LinkedIn and X headers
+carry the greeting over one line, "I help teams build products, lead
+engineering, and get started with AI agents." Clients hire him to build and lead; AI is one of the
 things he builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
 Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role

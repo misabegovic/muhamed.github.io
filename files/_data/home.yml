@@ -11,15 +11,17 @@ person:
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
-  # The same line as the LinkedIn and X headers (owner, 2026-10-29).
-  title: Ten years of taking software from idea to production.
+  # A greeting, simple and personal: who I am and how I could help (owner,
+  # 2026-11-21; was "Ten years of taking software from idea to production.").
+  # The share card and the LinkedIn and X headers carry the same greeting.
+  title: Hi, I’m Muhamed.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
-  highlight: Ten years
-  # What idea to production covers, in the About page's words (owner, 2026-10-29).
+  highlight: Muhamed
+  # Who I am, then how I help, spoken to the visitor, in the order of the
+  # services below (owner's pick from four drafts, 2026-11-21).
   lead: >-
-    From deciding what to build to running it in production, anywhere in the
-    stack. Lately I also work one layer up, with agents writing the code, and
-    build open-source tools that keep that reliable.
+    I’m a Staff Engineer in Vienna. If your team needs someone to build a
+    product, lead its engineering, or get started with AI agents, I can help.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   # Where I work; the company's name is on Contact, the CV and the imprint.

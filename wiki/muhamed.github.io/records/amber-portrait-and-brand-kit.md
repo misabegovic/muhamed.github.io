@@ -73,6 +73,13 @@ PDF are byte-identical to the built ones.
   Isabegovic is a Staff Engineer, based in Vienna." (9 words), Medium with
   the open-source tools and the three conferences (33), Long adding what
   GoatConf is (45) (source: files/_data/brand.yml).
+- 2026-11-21, the ADR's fifth change: the LinkedIn and X headers carry the
+  site's new greeting, "Hi, I’m Muhamed." ("Muhamed" on the highlighter),
+  over "I help teams build products, lead engineering, and get started with
+  AI agents." and "Staff Engineer · muhamed.at" (source:
+  .github/scripts/render-social-images.js). Both rendered without overflow
+  at 1584 × 396 and 1500 × 500; the share card was re-rendered with them.
+  Not yet uploaded to the profiles.
 
 ## Related
 

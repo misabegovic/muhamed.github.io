@@ -543,6 +543,28 @@ files/llms.txt, files/_includes/person-jsonld.html). Every new claim is on the
 owner's word, not yet in the evidence store. About, Services and the brand
 kit's bios are unchanged.
 
+**2026-11-21, twenty-eighth change: a greeting.** The hero headline becomes
+"Hi, I’m Muhamed." (was "Ten years of taking software from idea to
+production."), with "Muhamed" on the highlighter, and the lead says who he is
+and how he helps, spoken to the visitor: "I’m a Staff Engineer in Vienna. If
+your team needs someone to build a product, lead its engineering, or get
+started with AI agents, I can help." (source: files/_data/home.yml). The
+three kinds of help follow the services below it: Build, Lead and AI-native.
+This reverses one point of the twenty-fourth change, where a lead spoken to
+the visitor read as a pitch and was cut; the owner chose it this time over
+three drafts that spoke about him. The greeting was the About page's heading
+since the twenty-sixth change, so About's heading becomes "About me"; its
+text is unchanged (source: files/_pages/about.md). The share card and the
+LinkedIn and X headers carry the greeting over one sentence, "I help teams
+build products, lead engineering, and get started with AI agents.", with its
+line breaks set by hand (source: .github/scripts/render-social-images.js);
+the three images are re-rendered, and the share image's alt text and the
+banners' alt text on `/brand/` say the same (source:
+files/_includes/meta.html, files/brand.html). "Ten years" leaves the first
+screen; it stays in About's Work section, the Work page's intro and the
+stack's intro. The caption under the portrait, the buttons and the line under
+them are unchanged.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -648,6 +670,17 @@ build. Decision models are, in his words, the "Decisions api through gpt luna
 6", a system one model; he built MCP servers and used existing ones, with
 observability of both agents and pipelines. On the full draft: "Assumptions
 are correct, keep three pages."
+
+The twenty-eighth change was asked for by the owner in session on
+2026-11-21: "The title 'Ten years of taking software from idea to
+production.' Is nice... But I have a feeling so many people use it since AI
+suggests it... Let's keep it simple and personal, who I am and how I could
+help". From options he chose "Just a greeting" for the headline, with no
+preference on which help to lead with, and "Everything" for how far the line
+travels (hero, share card and both headers). From previews of the built page
+and the three images he chose the lead "Spoken to the visitor" and "About me"
+for the About page's heading. The wording of the lead and of the images' one
+line is the agent's draft, for the owner to adjust.
 
 ## Related
 
