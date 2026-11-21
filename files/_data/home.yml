@@ -110,6 +110,9 @@ stack:
       - { name: Agent guardrails }
       - { name: Harness extensions }
       - { name: Prompt-injection screening }
+      # Knowledge graphs and data pipelines: the Symphony engagement, on the owner's word (2026-11-21).
+      - { name: Knowledge graphs }
+      - { name: Data pipelines }
   - group: AI and agents
     items:
       - { name: Claude, icon: claude }
@@ -119,6 +122,9 @@ stack:
       - { name: MCP, icon: modelcontextprotocol }
       - { name: Langfuse }
       - { name: pgvector }
+      # On the owner's word (2026-11-21).
+      - { name: Microsoft Foundry }
+      - { name: FalkorDB }
   - group: Languages
     items:
       - { name: Ruby, icon: ruby }
@@ -141,12 +147,17 @@ stack:
       - { name: PostgreSQL, icon: postgresql }
       - { name: MySQL, icon: mysql }
       - { name: DuckDB, icon: duckdb }
+      # On the owner's word (2026-11-21).
+      - { name: Microsoft Fabric }
+      - { name: PySpark }
   - group: Infrastructure
     items:
       - { name: Docker, icon: docker }
       - { name: Kubernetes, icon: kubernetes }
       - { name: Helm, icon: helm }
       - { name: Google Cloud, icon: googlecloud }
+      # On the owner's word (2026-11-21).
+      - { name: Azure }
       - { name: CI/CD }
       - { name: Kamal }
 
@@ -232,9 +243,9 @@ sections:
       startups and established product companies.
   stack:
     title: What I work with.
-    intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, and ten years of Ruby, Rails and PostgreSQL underneath.
+    intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, data pipelines and knowledge graphs, and ten years of Ruby, Rails and PostgreSQL underneath.
     # The homepage shows the first two groups as pills; the rest is this line.
-    more: Plus Ruby, Rails, Go, Rust, TypeScript, PostgreSQL, Kubernetes and more.
+    more: Plus Ruby, Rails, Python, Go, Rust, TypeScript, PostgreSQL, Azure, Kubernetes and more.
     more_link: { label: Full stack on my CV, url: /cv/#cv-skills }
 
 # How every engagement runs, as three steps under the services. Empty: the
@@ -257,6 +268,8 @@ capabilities:
       - Set up prompt management, evals and A/B experiments, so the team improved AI features with data instead of guesses.
       # evidence: proj-usput-live, proj-usput-retrieval-grounding
       - Run my own AI product, where I try new ideas on real users first.
+      # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
+      - "Took an inherited proof of concept to stable production: data pipelines, knowledge graphs and agents that enrich and classify data, with observability for the pipelines and the agents."
     links:
       - { label: usput.ba, url: "https://usput.ba" }
   - id: guardrails
@@ -269,6 +282,8 @@ capabilities:
       - Built the open-source tools I teach with, used to keep agent-written code aligned with its specs and architecture.
       # evidence: skill-spec-driven-development, proj-card-game-adrs
       - Set up spec-driven workflows where decisions are written down and checked against the code before it ships.
+      # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
+      - Introduced AI-native delivery in a project team, and helped a client's engineers bring AI into their own development lifecycle.
     links:
       - { label: enola, url: "https://github.com/enola-labs/enola" }
       - { label: pi-brain, url: "https://github.com/misabegovic/pi-brain" }
@@ -282,6 +297,8 @@ capabilities:
       - "Led the integration of two products after an acquisition: one frontend, one shared database, and the two stacks brought step by step closer."
       # evidence: role-carv-ats-integrations
       - Brought data from 20+ outside systems into one model, so new integrations stopped costing new work elsewhere.
+      # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
+      - Brought multiple data sources into one platform in a medallion architecture, with knowledge graphs on top.
       # evidence: role-meisterlabs-permissions
       - Designed a plans and permissions system that let product run billing experiments without developer time.
   - id: teams

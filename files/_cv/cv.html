@@ -28,6 +28,8 @@ h1 { font-size: 24pt; line-height: .95; margin: 0 0 2.4mm; font-weight: 800; let
 h2 { font-size: 12pt; font-weight: 800; letter-spacing: -.02em; margin: 0 0 2mm; padding-top: 1.6mm; border-top: 3px solid var(--ink); break-after: avoid; }
 section + section { margin-top: 4.5mm; }
 .role { margin-bottom: 2.6mm; break-inside: avoid; }
+/* The one entry allowed to run over a page end, so the CV stays at three pages. */
+.role.splits { break-inside: auto; }
 .role h3 { font-size: 10pt; margin: 0; font-weight: 750; letter-spacing: -.01em; break-after: avoid; }
 .role h3 .at { font-weight: 400; color: var(--ink-2); }
 .meta { color: var(--ink-3); font-size: 8.4pt; margin: .3mm 0 .8mm; }
@@ -78,6 +80,12 @@ main a { text-decoration: underline; text-decoration-color: var(--yellow); text-
       <div class="role">
         <h3>Staff Engineer <span class="at">· Symphony</span></h3>
         <div class="meta">AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.</div>
+        <ul>
+          <li>Took over a proof of concept with my team and brought it to a stable production environment, with observability for the pipelines and the agents; worked inside the client's team and helped set the technical direction.</li>
+          <li>Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture, integrating multiple sources with PySpark notebooks, and knowledge graphs in FalkorDB on top.</li>
+          <li>Built agents that enrich and classify the data, on OpenAI models in Microsoft Foundry, with OpenAI's Decisions API for fast, typed decisions, and MCP servers that give agents the graph and the data as tools.</li>
+          <li>Introduced AI-native delivery in my team, with agents writing the code and people shaping and reviewing it, and helped the client's engineers bring AI into their own development lifecycle.</li>
+        </ul>
       </div>
       <div class="role">
         <h3>AI Product Developer <span class="at">· Teamtailor, Co-pilot team</span></h3>
@@ -104,7 +112,7 @@ main a { text-decoration: underline; text-decoration-color: var(--yellow); text-
           <li>Tech lead for the engineering team, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD.</li>
         </ul>
       </div>
-      <div class="role">
+      <div class="role splits">
         <h3>Founder and organiser <span class="at">· <a href="https://2024.euruko.org">EuRuKo</a>, <a href="https://rubyconf.at">RubyConf Austria</a>, <a href="https://goatconf.com/">GoatConf</a></span></h3>
         <ul>
           <li>EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.</li>
@@ -151,17 +159,19 @@ main a { text-decoration: underline; text-decoration-color: var(--yellow); text-
   <section>
     <h2>Skills</h2>
     <div class="hat">Product and AI</div>
-    <div class="chips first"><span>LLM features</span>, <span>AI agents</span>, <span>RAG</span>, <span>LLM evaluation</span>, <span>Structured outputs</span>, <span>Prompt management</span>, <span>Langfuse</span>, <span>MCP</span>, <span>RubyLLM</span>, <span>OpenAI SDK</span>, <span>pgvector</span></div>
+    <div class="chips first"><span>LLM features</span>, <span>AI agents</span>, <span>RAG</span>, <span>LLM evaluation</span>, <span>Structured outputs</span>, <span>Decision models</span>, <span>Prompt management</span>, <span>Langfuse</span>, <span>MCP</span>, <span>RubyLLM</span>, <span>OpenAI SDK</span>, <span>Microsoft Foundry</span>, <span>pgvector</span></div>
     <div class="hat">Architecture and leadership</div>
     <div class="chips"><span>Software architecture</span>, <span>Technical leadership</span>, <span>Spec-driven development</span>, <span>Event-driven architecture</span>, <span>Data modeling</span>, <span>Research and development</span></div>
+    <div class="hat">Data</div>
+    <div class="chips"><span>Data engineering</span>, <span>Knowledge graphs</span>, <span>Data integration</span>, <span>Medallion architecture</span>, <span>Microsoft Fabric</span>, <span>PySpark</span>, <span>Notebooks</span>, <span>FalkorDB</span></div>
     <div class="hat">Backend</div>
     <div class="chips"><span>Ruby on Rails</span>, <span>Ruby</span>, <span>Node.js</span>, <span>TypeScript</span>, <span>Go</span>, <span>Python</span>, <span>C++</span>, <span>PostgreSQL</span>, <span>MySQL</span>, <span>Redis</span>, <span>Sidekiq</span>, <span>Actor model</span></div>
     <div class="hat">Frontend and mobile</div>
     <div class="chips"><span>Hotwire</span>, <span>JavaScript</span>, <span>Vue.js</span>, <span>Ember.js</span>, <span>React</span></div>
     <div class="hat">Infrastructure and DevEx</div>
-    <div class="chips"><span>Google Cloud</span>, <span>Kubernetes</span>, <span>CI/CD</span>, <span>Kamal</span>, <span>Docker</span>, <span>Helm</span></div>
+    <div class="chips"><span>Google Cloud</span>, <span>Azure</span>, <span>Kubernetes</span>, <span>CI/CD</span>, <span>Kamal</span>, <span>Docker</span>, <span>Helm</span>, <span>Observability</span></div>
     <div class="hat">Ways of working</div>
-    <div class="chips"><span>Product specs</span>, <span>A/B experiments</span>, <span>Shape Up</span></div>
+    <div class="chips"><span>Product specs</span>, <span>A/B experiments</span>, <span>Shape Up</span>, <span>AI-native delivery</span>, <span>AI SDLC transformation</span></div>
   </section>
   <section>
     <h2>Open Source</h2>

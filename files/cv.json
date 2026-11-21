@@ -44,7 +44,12 @@
       "location": null,
       "startDate": null,
       "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
-      "highlights": []
+      "highlights": [
+        "Took over a proof of concept with my team and brought it to a stable production environment, with observability for the pipelines and the agents; worked inside the client's team and helped set the technical direction.",
+        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture, integrating multiple sources with PySpark notebooks, and knowledge graphs in FalkorDB on top.",
+        "Built agents that enrich and classify the data, on OpenAI models in Microsoft Foundry, with OpenAI's Decisions API for fast, typed decisions, and MCP servers that give agents the graph and the data as tools.",
+        "Introduced AI-native delivery in my team, with agents writing the code and people shaping and reviewing it, and helped the client's engineers bring AI into their own development lifecycle."
+      ]
     },
     {
       "name": "Teamtailor, Co-pilot team",
@@ -178,11 +183,13 @@
         "RAG",
         "LLM evaluation",
         "Structured outputs",
+        "Decision models",
         "Prompt management",
         "Langfuse",
         "MCP",
         "RubyLLM",
         "OpenAI SDK",
+        "Microsoft Foundry",
         "pgvector"
       ]
     },
@@ -195,6 +202,19 @@
         "Event-driven architecture",
         "Data modeling",
         "Research and development"
+      ]
+    },
+    {
+      "name": "Data",
+      "keywords": [
+        "Data engineering",
+        "Knowledge graphs",
+        "Data integration",
+        "Medallion architecture",
+        "Microsoft Fabric",
+        "PySpark",
+        "Notebooks",
+        "FalkorDB"
       ]
     },
     {
@@ -228,11 +248,13 @@
       "name": "Infrastructure and DevEx",
       "keywords": [
         "Google Cloud",
+        "Azure",
         "Kubernetes",
         "CI/CD",
         "Kamal",
         "Docker",
-        "Helm"
+        "Helm",
+        "Observability"
       ]
     },
     {
@@ -240,7 +262,9 @@
       "keywords": [
         "Product specs",
         "A/B experiments",
-        "Shape Up"
+        "Shape Up",
+        "AI-native delivery",
+        "AI SDLC transformation"
       ]
     }
   ],
