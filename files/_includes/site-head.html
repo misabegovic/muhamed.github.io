@@ -13,7 +13,9 @@
     {% if page.url == "/cv/" %}<link rel="alternate" type="application/json" title="JSON Resume" href="{{ site.baseurl }}/cv.json">{% endif %}
     <link rel="alternate" type="text/plain" title="{{ site.author }}: profile for LLMs and agents" href="{{ site.baseurl }}/llms.txt">
     <link rel="alternate" type="application/rss+xml" title="{{ site.author }}: brain" href="{{ site.baseurl }}/brain.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico?v={{ '/favicon.ico' | asset_digest }}" sizes="48x48">
     <link rel="icon" href="{{ site.baseurl }}/images/favicon-32x32.png?v={{ '/images/favicon-32x32.png' | asset_digest }}" type="image/png" sizes="32x32">
     <link rel="icon" href="{{ site.baseurl }}/images/icon-512.png?v={{ '/images/icon-512.png' | asset_digest }}" type="image/png" sizes="512x512">

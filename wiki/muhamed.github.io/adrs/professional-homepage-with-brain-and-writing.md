@@ -695,6 +695,40 @@ Still open from the review: the homepage shows no proof of "leading teams"
 beyond the Lead card (the numbers are on Work and the CV), and it mentions
 the conferences four times.
 
+**2026-11-21, thirtieth change: a dark scheme.** The site had one
+appearance, light, whatever the visitor's system was set to. It now follows
+the system setting (`prefers-color-scheme`), with no switch in the header:
+the owner chose that over a toggle, which would add a control and a script
+to every page. Nearly all of it is the colour tokens redefined in one block
+at the end of the stylesheet: the page is #141414 (the brand's ink), panels
+#1e1e1c, text #f2f2f0 with #c6c6c1 and #a3a39e for secondary text, hairlines
+#32322f, and the dark band and the footer a step darker at #0b0b0b. The
+yellow is unchanged (source: files/assets/site.css). Three tokens are new
+in both schemes, so that no rule assumes ink is dark: `--on-yellow` for text
+on yellow, `--accent-on-ink` for the accent on an ink surface (a pressed
+tag, a hovered button), and `--line-soft` for hairlines on tinted panels;
+their light values are what was written there before. The highlighter is the
+one design decision: light letters cannot sit on yellow, so in the dark
+scheme the same hand-drawn stroke is drawn under the word. It was the
+owner's pick from three mockups (a yellow block with dark letters; the
+stroke underneath; yellow letters and no stroke). The yellow closing band
+and the minesweeper's bar and board keep their light colours, and the
+stack's brand icons, black on transparent, are inverted. Shadows do not show
+on a dark page, so the portrait's caption, the dark band and the footer get
+a hairline edge; screenshots, thumbnails and the white banners, which are
+mostly white, are toned down to 88 percent brightness, and photographs are
+left alone. In Windows contrast themes the highlighted word takes the
+system's highlight colours, since the drawn stroke is removed there. The
+head declares
+`color-scheme: light dark` and a theme colour for each scheme (source:
+files/_includes/site-head.html). Not dark, by their nature: the CV's PDF,
+the share card and the profile headers, and the voter guide and the card
+game, which are separate apps with their own styles. Checked in Chromium:
+in light mode 19 page types at 1440 and 390 px are pixel for pixel what
+they were, one video frame aside; in dark mode no text on 20 page types
+falls below WCAG AA contrast, measured in the browser at both widths with
+the phone menu open.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -850,6 +884,12 @@ The twenty-ninth change was asked for by the owner in session on
 2026-11-21: after the review's findings were listed, "Ok, improve all".
 Removing "Fractional CTO", the wording of the description and "ones I work
 on myself" are the agent's calls, for the owner to adjust.
+
+The thirtieth change was asked for by the owner in session on 2026-11-21:
+"How does it render in light vs dark mode?", and, after a prototype, "Ok,
+build dark mode support", then "B: stroke underneath" for the highlighter
+and "Follow the system only". The palette is the agent's draft, for the
+owner to adjust.
 
 ## Related
 
