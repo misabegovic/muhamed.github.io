@@ -1,16 +1,16 @@
 ---
 layout: about
 title: About
-heading: "Hi, I’m Muhamed"
+heading: "About me"
 permalink: /about/
 description: Muhamed Isabegovic grew up in Tuzla and lives in Vienna. He is a Staff Engineer, organises conferences in Bosnia and Austria, and builds open-source tools for teams that write code with AI agents.
 ---
 
-I grew up in Tuzla, Bosnia and Herzegovina, and moved to Vienna in 2021 to get married and start a family. I write software, and I organise conferences in Bosnia and Austria.
+I grew up in Tuzla, Bosnia and Herzegovina, and moved to Vienna in 2021 to get married and start a family. I make software, and I organise conferences in Bosnia and Austria.
 
 ## Work
 
-I have spent ten years taking software from idea to production, from trading systems in C++ to SaaS products in Rails and AI features, leading engineering teams along the way. These days I mostly work as a Staff Engineer.
+I have spent ten years making software, from trading systems in C++ to SaaS products in Rails and AI features, leading engineering teams along the way. These days I mostly work as a Staff Engineer.
 
 More on [Work](/work/) and [my CV](/cv/).
 

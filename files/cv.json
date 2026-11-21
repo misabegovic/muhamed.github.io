@@ -6,7 +6,7 @@
     "image": "https://muhamed.at/images/profile.jpg",
     "email": "info@muhamed.at",
     "url": "https://muhamed.at",
-    "summary": "I have spent 10+ years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack: trading systems in C++, SaaS products in Rails, AI features in hiring software. Lately I work one layer up, with agents writing the code, and I build open-source tools that keep that reliable: specs and decisions the code is regenerated from, and architecture rules it is checked against.",
+    "summary": "I have spent ten years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack: trading systems in C++, SaaS products in Rails, AI features in hiring software. These days I work one layer up, with agents writing the code, and I build open-source tools that keep it reliable: specs and decisions the code is regenerated from, and architecture rules it is checked against.",
     "location": {
       "city": "Vienna",
       "countryCode": "AT"
@@ -292,7 +292,7 @@
       "roles": [
         "author"
       ],
-      "description": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organizer."
+      "description": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organiser."
     },
     {
       "name": "enola",

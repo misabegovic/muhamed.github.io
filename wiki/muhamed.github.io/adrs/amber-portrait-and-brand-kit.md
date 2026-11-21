@@ -11,8 +11,10 @@ sources:
   - files/_pages/about.md
   - files/_data/home.yml
   - files/README.md
+  - files/brand.html
+  - .github/scripts/render-social-images.js
 created: 2026-10-23
-updated: 2026-10-29
+updated: 2026-11-21
 author: pi-brain-agent
 ---
 
@@ -126,6 +128,33 @@ highlighter in ink (source: .github/scripts/render-social-images.js). The
 mockups showed that white has no edge against LinkedIn's white profile card;
 the owner chose it knowing that. On `/brand/` the banners get a hairline so
 they keep their edge on the white page (source: files/assets/site.css).
+
+## Fifth change: banners with the greeting (2026-11-21)
+
+The site's headline is now a greeting, "Hi, I’m Muhamed." (homepage ADR,
+twenty-eighth change), and the owner chose to carry it everywhere, so the
+LinkedIn and X headers follow: the greeting with "Muhamed" on the
+highlighter, over one sentence the agent drafted from the hero's lead, "I
+help teams build products, lead engineering, and get started with AI
+agents.", over "Staff
+Engineer · muhamed.at" (source: .github/scripts/render-social-images.js).
+They stay white, in the same safe area right of the profile photo. The
+banners' alt text on `/brand/` says the new words (source: files/brand.html).
+The owner uploads the new headers to both profiles himself; until then the
+profiles show the ten-years line. On a second look the same day the hero's
+lead became the owner's own paragraph again (homepage ADR, twenty-eighth
+change), so the sentence under the greeting is its first: "I work on
+software from deciding what to build to running it in production, anywhere
+in the stack." On a third look the lead was rewritten to be warmer, and the
+sentence under the greeting is again its first: "I grew up in Tuzla, I live
+in Vienna, and I write software for a living." Later that day "write"
+became "make", on the owner's word: "I grew up in Tuzla, I live in Vienna,
+and I make software for a living." Last, the owner shortened it to "I make
+software for a living." That is what both headers and the share card say
+now, under the greeting and over "Staff Engineer · muhamed.at"
+(source: .github/scripts/render-social-images.js), and what the banners'
+alt texts say (source: files/brand.html). The upload to both profiles is
+still the owner's to do.
 
 ## Related
 

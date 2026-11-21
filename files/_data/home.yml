@@ -11,15 +11,29 @@ person:
 
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
-  # The same line as the LinkedIn and X headers (owner, 2026-10-29).
-  title: Ten years of taking software from idea to production.
+  # A greeting, simple and personal: who I am and how I could help (owner,
+  # 2026-11-21; was "Ten years of taking software from idea to production.").
+  # The share card and the LinkedIn and X headers carry the same greeting.
+  title: Hi, I’m Muhamed.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
-  highlight: Ten years
-  # What idea to production covers, in the About page's words (owner, 2026-10-29).
+  highlight: Muhamed
+  # Plain and personal, with the owner's own "from deciding what to build
+  # ..." and "one layer up" sentences in the middle. No stack named, so it
+  # does not read as Rails-only (owner, 2026-11-21). Tuzla and Vienna are on
+  # About, and Vienna in the line under the buttons; the lead is just what he
+  # does (owner, 2026-11-21). How I help is the link below it and the
+  # services section.
+  # evidence: files/_pages/about.md (leading teams, the conferences);
+  # role-carv-team, role-experfy-team (teams led)
+  # lead: the first sentence, set apart in ink. more: the rest, under it.
   lead: >-
-    From deciding what to build to running it in production, anywhere in the
-    stack. Lately I also work one layer up, with agents writing the code, and
-    build open-source tools that keep that reliable.
+    I make software for a living.
+  more: >-
+    For ten years that has meant everything from deciding what to build to
+    running it in production, anywhere in the stack, and leading teams along
+    the way. These days I also work one layer up, with agents writing the
+    code, and build open-source tools that keep it reliable. And I organise
+    conferences to get people who build software into one room.
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   # Where I work; the company's name is on Contact, the CV and the imprint.
@@ -67,7 +81,7 @@ side_projects:
       proximity checks for each clue, team play, hints on cooldowns and live
       leaderboards, as an installable Rails 8.1 web app with an offline fallback.
       Now open source as <a href="https://github.com/Ruby-Austria/treasure_hunt">treasure_hunt</a>,
-      ready for any conference organizer to rebrand and self-host.
+      ready for any conference organiser to rebrand and self-host.
   - id: card-game
     name: Post-Dayton BiH
     note: A political strategy card game

@@ -20,6 +20,7 @@ implemented_in:
   - files/_cv/cv.html
   - files/images/social/linkedin-header.png
   - files/images/social/x-header.png
+  - .github/scripts/render-social-images.js
 decided_by: wiki/muhamed.github.io/adrs/amber-portrait-and-brand-kit.md
 sources:
   - files/brand/muhamed-isabegovic-amber.jpg
@@ -73,6 +74,31 @@ PDF are byte-identical to the built ones.
   Isabegovic is a Staff Engineer, based in Vienna." (9 words), Medium with
   the open-source tools and the three conferences (33), Long adding what
   GoatConf is (45) (source: files/_data/brand.yml).
+- 2026-11-21, the ADR's fifth change: the LinkedIn and X headers carry the
+  site's new greeting, "Hi, I’m Muhamed." ("Muhamed" on the highlighter),
+  over "I help teams build products, lead engineering, and get started with
+  AI agents." and "Staff Engineer · muhamed.at" (source:
+  .github/scripts/render-social-images.js). Both rendered without overflow
+  at 1584 × 396 and 1500 × 500; the share card was re-rendered with them.
+  Not yet uploaded to the profiles.
+- Later on 2026-11-21: the sentence under the greeting, on the headers and
+  the share card, is the first of the hero's lead, "I work on software from
+  deciding what to build to running it in production, anywhere in the
+  stack." (source: .github/scripts/render-social-images.js). All three
+  rendered without overflow.
+- Later again on 2026-11-21: with the hero's lead rewritten, that sentence
+  is "I grew up in Tuzla, I live in Vienna, and I write software for a
+  living." on the headers and the share card (source:
+  .github/scripts/render-social-images.js). All three rendered without
+  overflow. Not yet uploaded to the profiles.
+- Last on 2026-11-21: "write software" is "make software" in that
+  sentence, on the owner's word; the three images are re-rendered without
+  overflow (source: .github/scripts/render-social-images.js).
+- After the review on 2026-11-21: the sentence is "I make software for a
+  living.", without Tuzla and Vienna, on the owner's word; the three images
+  are re-rendered without overflow (source:
+  .github/scripts/render-social-images.js). This is the state that stands;
+  the headers are not yet uploaded to the profiles.
 
 ## Related
 

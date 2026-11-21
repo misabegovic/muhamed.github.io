@@ -38,14 +38,24 @@ believing it from evidence they could check, and knowing how to reach him.
 
 ## Positioning
 
-"Ten years of taking software from idea to production" (owner, 2026-10-29;
-was "I build products and lead the teams that ship them"), the same line as
-the white LinkedIn and X headers, with "Ten years" on the hand-drawn
-highlighter the site and every generated image now use. The
-hero's lead, in the About page's words, says what idea to production covers
-(from deciding what to build to running it in production, anywhere in the
-stack) and that he lately works one layer up, with agents writing the code,
-building open-source tools that keep that reliable. Clients hire him to build and lead; AI is one of the
+"Hi, I’m Muhamed." (owner, 2026-11-21; was "Ten years of taking software
+from idea to production", a line he liked but felt many people now use
+because AI suggests it): simple and personal, who he is and how he could
+help, with "Muhamed" on the hand-drawn highlighter the site and every
+generated image use. The hero's text is plain and his own. Its first
+sentence is set apart in ink: "I make software for a living." (Tuzla and
+Vienna, tried there first, are on the About page.) The rest sits under it,
+smaller:
+"For ten years that has meant everything from deciding what to build to
+running it in production, anywhere in the stack, and leading teams along the
+way. These days I also work one layer up, with agents writing the code, and
+build open-source tools that keep it reliable. And I organise conferences to
+get people who build software into one room." It names no stack, so the first screen does not read as Rails-only.
+How he helps is the link under it and the services section; leads that
+listed services or described the job in general terms read as generic and
+were replaced the same day. The share card and the white LinkedIn and X
+headers carry the greeting over the lead's first sentence.
+Clients hire him to build and lead; AI is one of the
 things he builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
 Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role

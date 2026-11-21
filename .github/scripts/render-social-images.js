@@ -80,11 +80,20 @@ function servicePost(s, w, h) {
   </div>`;
 }
 
+// The site's greeting and, under it, the hero's lead (files/_data/home.yml,
+// hero.title with hero.highlight marked, and hero.lead). Update them here
+// when they change there.
+const GREETING = 'Hi, I’m <mark>Muhamed</mark>.';
+const LEAD = 'I make software for a living.';
+
 function share(w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
     <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
-      <h1 style="font-size:72px;align-self:center"><mark>Ten years</mark> of taking software from idea to production.</h1>
+      <div style="align-self:center">
+        <h1 style="font-size:80px;white-space:nowrap">${GREETING}</h1>
+        <p class="muted" style="font-size:30px;line-height:1.35;margin-top:26px">${LEAD}</p>
+      </div>
       <div class="muted" style="font-size:22px;font-weight:500">Staff Engineer · Vienna · <b style="color:var(--ink)">muhamed.at</b></div>
     </div>
     <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
@@ -117,19 +126,20 @@ function goatconfNote(w, h) {
   </div>`;
 }
 
-// Profile headers: one dark design for LinkedIn and X. One idea, in the
-// owner's words (2026-09-29): ownership, not a list of roles or clients.
+// Profile headers: one design for LinkedIn and X, the site's greeting.
 // Both networks put the avatar over the bottom-left and crop the edges on
 // phones, so the copy sits right of safeLeft and away from top and bottom.
 function header(w, h, safeLeft) {
   const u = w / 1584;
   // White, like the site, with its hand-drawn highlighter (owner, 2026-10-29;
   // was dark, and amber before that, which almost matched the photo).
-  // Its line is the site headline, so visitors from LinkedIn or X read the
-  // same line first on the site.
+  // Its lines are the site's greeting and lead, so visitors from LinkedIn or
+  // X read the same words first on the site (owner, 2026-11-21; was "Ten
+  // years of taking software from idea to production.").
   return `<div class="stage" style="--w:${w}px;--h:${h}px;background:var(--paper);color:var(--ink);display:flex;align-items:center;padding:0 ${64 * u}px 0 ${safeLeft}px">
     <div>
-      <h1 style="font-size:${64 * u}px;line-height:1.04"><mark>Ten years</mark> of taking software<br>from idea to production.</h1>
+      <h1 style="font-size:${84 * u}px;line-height:1.04;white-space:nowrap">${GREETING}</h1>
+      <p class="muted" style="margin-top:${20 * u}px;font-size:${30 * u}px;line-height:1.3;font-weight:500;letter-spacing:-.01em">${LEAD}</p>
       <p style="margin-top:${22 * u}px;font-size:${24 * u}px;font-weight:600">Staff Engineer · muhamed.at</p>
     </div>
   </div>`;

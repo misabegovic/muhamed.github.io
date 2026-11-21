@@ -32,6 +32,13 @@ sources:
   - files/cv.json
   - files/llms.txt
   - files/_includes/person-jsonld.html
+  - files/assets/site.css
+  - files/_includes/meta.html
+  - files/brand.html
+  - .github/scripts/render-social-images.js
+  - files/_config.yml
+  - files/_data/services.yml
+  - files/cv/Muhamed_Isabegovic_CV.pdf
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -543,6 +550,151 @@ files/llms.txt, files/_includes/person-jsonld.html). Every new claim is on the
 owner's word, not yet in the evidence store. About, Services and the brand
 kit's bios are unchanged.
 
+**2026-11-21, twenty-eighth change: a greeting.** The hero headline becomes
+"Hi, I’m Muhamed." (was "Ten years of taking software from idea to
+production."), with "Muhamed" on the highlighter, and the lead says who he is
+and how he helps, spoken to the visitor: "I’m a Staff Engineer in Vienna. If
+your team needs someone to build a product, lead its engineering, or get
+started with AI agents, I can help." (source: files/_data/home.yml). The
+three kinds of help follow the services below it: Build, Lead and AI-native.
+This reverses one point of the twenty-fourth change, where a lead spoken to
+the visitor read as a pitch and was cut; the owner chose it this time over
+three drafts that spoke about him. The greeting was the About page's heading
+since the twenty-sixth change, so About's heading becomes "About me"; its
+text is unchanged (source: files/_pages/about.md). The share card and the
+LinkedIn and X headers carry the greeting over one sentence, "I help teams
+build products, lead engineering, and get started with AI agents.", with its
+line breaks set by hand (source: .github/scripts/render-social-images.js);
+the three images are re-rendered, and the share image's alt text and the
+banners' alt text on `/brand/` say the same (source:
+files/_includes/meta.html, files/brand.html). "Ten years" leaves the first
+screen; it stays in About's Work section, the Work page's intro and the
+stack's intro. The caption under the portrait, the buttons and the line under
+them are unchanged. On a second look the same day the owner found the result
+"a step in the right direction" but missed the earlier lead, so the lead is
+his own paragraph again, with a subject now that it follows a greeting and
+not the ten-years headline: "I work on software from deciding what to build
+to running it in production, anywhere in the stack. Lately I also work one
+layer up, with agents writing the code, and build open-source tools that keep
+that reliable." (was "From deciding what to build ..."). The lead no longer
+names the role, the city or the three kinds of help: the caption says Staff
+Engineer, the line under the buttons says Vienna, and how he helps is the
+"See how I can help" link and the services section. So the twenty-fourth
+change's point stands again: no lead spoken to the visitor. The share card
+and the headers carry the greeting over the lead's first sentence, and the
+alt texts follow. On a third look, still the same day, the owner asked for
+the greeting and the paragraph to be warmer, more welcoming and "less AI
+generic". The greeting stays "Hi, I’m Muhamed." with no second line. The
+lead is now made of things only he can say, with his "from deciding what to
+build ..." in the middle: "I grew up in Tuzla, I live in Vienna, and I write
+software for a living. For ten years that has meant everything from deciding
+what to build to running it in production, anywhere in the stack. Lately I
+also work one layer up, with agents writing the code, and build open-source
+tools that keep that reliable. And I organise conferences, to get people who
+build software into one room." (source: files/_data/home.yml). Its last
+sentence first ended "mostly to spend a few days with people I can learn
+from", which said little about the conferences; the owner chose this one,
+close to what the About page says of GoatConf. Its
+third sentence is his own, from the ten-years hero: the draft's "Lately it
+also means AI features, and open-source tools that keep coding agents in
+line." seemed too shallow to him. Tuzla, Vienna and why he
+organises conferences are the About page's (source: files/_pages/about.md).
+It names no stack: a draft that said "For ten years that meant products in
+Rails" left out his other work. The share card and the headers carry "I grew
+up in Tuzla, I live in Vienna, and I write software for a living." under the
+greeting. The order of the homepage's sections is unchanged: quotes, then
+services. On a fourth look the hero was reviewed from four perspectives, an
+engineering leader buying help, a hiring manager, a copy editor and a
+designer, each reading it fresh. All four found the content and its order
+right. The owner took every wording fix and one layout change. The text now
+reads: "I grew up in Tuzla, I live in Vienna, and I write software for a
+living." and, under it, "For ten years that has meant everything from
+deciding what to build to running it in production, anywhere in the stack,
+and leading teams along the way. These days I also work one layer up, with
+agents writing the code, and build open-source tools that keep it reliable.
+And I organise conferences to get people who build software into one room."
+(source: files/_data/home.yml). "and leading teams along the way" is new,
+in the About page's words (source: files/_pages/about.md): to the buyer and
+the hiring manager the paragraph read as a strong developer working alone,
+not a Staff Engineer. "These days" replaces "Lately", which with "I also
+work" read as a slip; "keep it reliable" replaces "keep that reliable", two
+"that" three words apart; and the last sentence loses its comma. The first
+sentence is the lead, in ink at the lead's size, and the rest is a second
+paragraph, smaller and grey (`hero.lead` and `hero.more`; `.hero-lead` and
+`.hero-more`), since one even grey block of eight lines was being skipped
+between the headline and the button (source: files/_includes/home-page.html,
+files/assets/site.css). The images are unchanged: they carry the first
+sentence. Found by the designer and not taken up: a small round photo above
+the headline on phones, the two text links kept together on tablets, the
+columns aligned at the top on tablets, and the name dropped from the
+portrait's caption. Last, on the owner's word, the first sentence says
+"make": "I grew up in Tuzla, I live in Vienna, and I make software for a
+living." (was "write software"), on the page, the share card and the
+headers. "Make" covers deciding what to build, leading and directing agents,
+where "write" named only the typing, which the next lines say agents now do.
+After the review of the whole branch the owner shortened that sentence to
+"I make software for a living.": Tuzla and Vienna leave the hero, since the
+About page opens with them and the line under the buttons says Vienna.
+
+**2026-11-21, the hero as it stands after the twenty-eighth change.** The
+paragraph above keeps every step in the order it happened; where it and this
+one differ, this one holds. The headline is "Hi, I’m Muhamed.", with
+"Muhamed" on the highlighter. The lead, in ink, is "I make software for a
+living." Under it, smaller and grey: "For ten years that has meant everything from deciding what to build
+to running it in production, anywhere in the stack, and leading teams along
+the way. These days I also work one layer up, with agents writing the code,
+and build open-source tools that keep it reliable. And I organise
+conferences to get people who build software into one room." (source:
+files/_data/home.yml, files/_includes/home-page.html, files/assets/site.css).
+One statement above no longer holds: "ten years" is on the first screen
+again. Where the owner is from and where he lives are not in the hero: the
+line under the buttons says Vienna, and the About page says both. The
+share card and the LinkedIn and X headers show the greeting over the lead,
+re-rendered with "make" (source: .github/scripts/render-social-images.js);
+the line "I help teams build products ..." they first carried was the
+agent's draft, not a sentence of the lead. The share image's alt text and
+the banners' alt texts on `/brand/` are the greeting and the lead (source:
+files/_includes/meta.html, files/brand.html). The About page's heading is
+"About me" and its text is unchanged, so it still says "I write software"
+(source: files/_pages/about.md). Unchanged: the caption under the portrait,
+the three buttons, the line under them and the order of the sections. Left
+to the owner: uploading the new headers to LinkedIn and X.
+
+**2026-11-21, twenty-ninth change: the rest of the site follows the first
+screen.** A review of the whole site against the new hero found places that
+disagreed with it, and the owner asked for all of them to be fixed. About
+says "I make software" (was "write"), as the hero does, and its Work section
+opens "I have spent ten years making software" (was "taking software from
+idea to production", the retired headline) (source: files/_pages/about.md).
+The description that search results and link previews show, the Person
+JSON-LD's and the summary of llms.txt say what the hero says before they
+name the tooling: "Staff Engineer, based in Vienna. I make software and lead
+teams, build open-source tools for teams that write code with AI agents, and
+work with teams through my own company." (source: files/_config.yml,
+files/_includes/person-jsonld.html, files/llms.txt). This extends the
+twenty-third change's wording; the brand kit's bios, which the owner chose
+for organisers and press, are unchanged. The JSON-LD's occupations gain
+Staff Engineer and lose "Fractional CTO", and llms.txt offers "a fractional
+or interim technical lead" (was "technical lead or CTO"): no page a visitor
+sees offers a CTO, and the Lead service is a technical lead. The services
+page says "the tools I teach are ones I work on myself" (was "ones I
+wrote"), since he is a core contributor to enola, not its author (source:
+files/_data/services.yml, files/_data/home.yml). "organizer" and "organized"
+become "organiser" and "organised" on the homepage, the CV and llms.txt; his
+posts and notes keep his own spelling. The CV's lead says "ten years" (was
+"10+ years"), "These days" (was "Lately") and "keep it reliable" (was "keep
+that reliable"), as the hero does; the PDF is re-rendered with the same
+Chromium and stays at three pages with the same page breaks, and both CV
+data files are regenerated (source: files/_cv/cv.html, files/_data/cv.json,
+files/cv.json, files/cv/Muhamed_Isabegovic_CV.pdf). In the hero the two text
+links are kept together, so "View my CV" no longer wraps alone; the portrait
+starts level with the headline between 701 and 960 px, where the text column
+is much taller than the photo; and the greeting stays on one line down to
+320 px (source: files/_includes/home-page.html, files/assets/site.css).
+Still open from the review: the homepage shows no proof of "leading teams"
+beyond the Lead card (the numbers are on Work and the CV), and it mentions
+the conferences four times.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -648,6 +800,56 @@ build. Decision models are, in his words, the "Decisions api through gpt luna
 6", a system one model; he built MCP servers and used existing ones, with
 observability of both agents and pipelines. On the full draft: "Assumptions
 are correct, keep three pages."
+
+The twenty-eighth change was asked for by the owner in session on
+2026-11-21: "The title 'Ten years of taking software from idea to
+production.' Is nice... But I have a feeling so many people use it since AI
+suggests it... Let's keep it simple and personal, who I am and how I could
+help". From options he chose "Just a greeting" for the headline, with no
+preference on which help to lead with, and "Everything" for how far the line
+travels (hero, share card and both headers). From previews of the built page
+and the three images he chose the lead "Spoken to the visitor" and "About me"
+for the About page's heading. The wording of the lead and of the images' one
+line is the agent's draft, for the owner to adjust. Later in the same
+session: "this was just a step in the right direction, I still thing we need
+to improve", and of the earlier lead, "I liked this also... review and find
+ways to improve". The agent's review: the new lead listed three services any
+consultant could list and had lost what was specific in his paragraph. From
+three mockups of the built hero (his paragraph alone; with one sentence of
+help, "If that’s what your team needs, I can help."; with a row of links to
+the four services) he chose "A: paragraph only", and for its opening
+"Without the ten years" over "For ten years I’ve worked on software ..." and
+"I’m a Staff Engineer. I work on software ...". Then: "mock up services
+above the quotes... Also, maybe rewrite the paragraph and the greeting ? To
+be more warm and welcoming and less AI generic". From mockups of two orders
+with services above the quotes he chose "Keep the current order". Of three
+warmer drafts with a second line in the headline ("Welcome.", "Nice to meet
+you.", "Glad you’re here.") he chose none, then "No second line" and, for
+what was off, "Still sounds generic". Of three paragraphs built from facts
+about him (his path from C++ trading systems; from Tuzla; what he does these
+days) he said: "B version is closest, I don't like Rails mention excluding
+other stuff". The sentence that replaced the Rails one is the agent's
+draft, for the owner to adjust. Of the result: "Sounds better. Lately it
+means also AI features seens too shallow", and from options "Tuzla, with a
+deeper AI line", which is his own "one layer up" sentence. (A message of
+his about earlier mockups, "Horrible. Why are you extending the title?",
+arrived late and was first read as about this paragraph; it was reverted and
+restored within the session.) Then "Better, can we improve the last
+line?", and from four options (back home in Bosnia; the three conferences
+by name; bringing people together; "the least qualified person in the room")
+he chose "Bring people together". Then: "I have a hunch we can still
+improve it. The right stuff is there... Review from different perspectives".
+Of the four wording fixes the reviews proposed he took all four, and for the
+layout "2: first sentence set apart", over the same with a small photo first
+on phones and over keeping the layout. Then: "Instead of write software,
+maybe say make software?" Then "Ok, review it all deeply", and after the
+findings: "maybe remove Tuzla and Vienna from the first sentence and just
+say 'I make software for a living' ?"
+
+The twenty-ninth change was asked for by the owner in session on
+2026-11-21: after the review's findings were listed, "Ok, improve all".
+Removing "Fractional CTO", the wording of the description and "ones I work
+on myself" are the agent's calls, for the owner to adjust.
 
 ## Related
 
