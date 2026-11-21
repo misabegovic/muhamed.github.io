@@ -32,6 +32,10 @@ sources:
   - files/cv.json
   - files/llms.txt
   - files/_includes/person-jsonld.html
+  - files/assets/site.css
+  - files/_includes/meta.html
+  - files/brand.html
+  - .github/scripts/render-social-images.js
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -625,6 +629,30 @@ portrait's caption. Last, on the owner's word, the first sentence says
 living." (was "write software"), on the page, the share card and the
 headers. "Make" covers deciding what to build, leading and directing agents,
 where "write" named only the typing, which the next lines say agents now do.
+
+**2026-11-21, the hero as it stands after the twenty-eighth change.** The
+paragraph above keeps every step in the order it happened; where it and this
+one differ, this one holds. The headline is "Hi, I’m Muhamed.", with
+"Muhamed" on the highlighter. The lead, in ink, is "I grew up in Tuzla, I
+live in Vienna, and I make software for a living." Under it, smaller and
+grey: "For ten years that has meant everything from deciding what to build
+to running it in production, anywhere in the stack, and leading teams along
+the way. These days I also work one layer up, with agents writing the code,
+and build open-source tools that keep it reliable. And I organise
+conferences to get people who build software into one room." (source:
+files/_data/home.yml, files/_includes/home-page.html, files/assets/site.css).
+Two statements above no longer hold: "ten years" is on the first screen
+again, and the lead names Vienna, as the line under the buttons does. The
+share card and the LinkedIn and X headers show the greeting over the lead,
+re-rendered with "make" (source: .github/scripts/render-social-images.js);
+the line "I help teams build products ..." they first carried was the
+agent's draft, not a sentence of the lead. The share image's alt text and
+the banners' alt texts on `/brand/` are the greeting and the lead (source:
+files/_includes/meta.html, files/brand.html). The About page's heading is
+"About me" and its text is unchanged, so it still says "I write software"
+(source: files/_pages/about.md). Unchanged: the caption under the portrait,
+the three buttons, the line under them and the order of the sections. Left
+to the owner: uploading the new headers to LinkedIn and X.
 
 ## Approval
 

@@ -20,6 +20,7 @@ implemented_in:
   - files/_cv/cv.html
   - files/images/social/linkedin-header.png
   - files/images/social/x-header.png
+  - .github/scripts/render-social-images.js
 decided_by: wiki/muhamed.github.io/adrs/amber-portrait-and-brand-kit.md
 sources:
   - files/brand/muhamed-isabegovic-amber.jpg
@@ -92,7 +93,8 @@ PDF are byte-identical to the built ones.
   overflow. Not yet uploaded to the profiles.
 - Last on 2026-11-21: "write software" is "make software" in that
   sentence, on the owner's word; the three images are re-rendered without
-  overflow.
+  overflow (source: .github/scripts/render-social-images.js). This is the
+  state that stands; the headers are not yet uploaded to the profiles.
 
 ## Related
 

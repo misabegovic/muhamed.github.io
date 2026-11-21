@@ -38,7 +38,7 @@ believing it from evidence they could check, and knowing how to reach him.
 
 ## Positioning
 
-"Hi, I'm Muhamed." (owner, 2026-11-21; was "Ten years of taking software
+"Hi, I’m Muhamed." (owner, 2026-11-21; was "Ten years of taking software
 from idea to production", a line he liked but felt many people now use
 because AI suggests it): simple and personal, who he is and how he could
 help, with "Muhamed" on the hand-drawn highlighter the site and every
