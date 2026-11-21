@@ -93,8 +93,12 @@ PDF are byte-identical to the built ones.
   overflow. Not yet uploaded to the profiles.
 - Last on 2026-11-21: "write software" is "make software" in that
   sentence, on the owner's word; the three images are re-rendered without
-  overflow (source: .github/scripts/render-social-images.js). This is the
-  state that stands; the headers are not yet uploaded to the profiles.
+  overflow (source: .github/scripts/render-social-images.js).
+- After the review on 2026-11-21: the sentence is "I make software for a
+  living.", without Tuzla and Vienna, on the owner's word; the three images
+  are re-rendered without overflow (source:
+  .github/scripts/render-social-images.js). This is the state that stands;
+  the headers are not yet uploaded to the profiles.
 
 ## Related
 

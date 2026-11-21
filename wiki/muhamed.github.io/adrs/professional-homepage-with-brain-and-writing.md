@@ -629,20 +629,23 @@ portrait's caption. Last, on the owner's word, the first sentence says
 living." (was "write software"), on the page, the share card and the
 headers. "Make" covers deciding what to build, leading and directing agents,
 where "write" named only the typing, which the next lines say agents now do.
+After the review of the whole branch the owner shortened that sentence to
+"I make software for a living.": Tuzla and Vienna leave the hero, since the
+About page opens with them and the line under the buttons says Vienna.
 
 **2026-11-21, the hero as it stands after the twenty-eighth change.** The
 paragraph above keeps every step in the order it happened; where it and this
 one differ, this one holds. The headline is "Hi, I’m Muhamed.", with
-"Muhamed" on the highlighter. The lead, in ink, is "I grew up in Tuzla, I
-live in Vienna, and I make software for a living." Under it, smaller and
-grey: "For ten years that has meant everything from deciding what to build
+"Muhamed" on the highlighter. The lead, in ink, is "I make software for a
+living." Under it, smaller and grey: "For ten years that has meant everything from deciding what to build
 to running it in production, anywhere in the stack, and leading teams along
 the way. These days I also work one layer up, with agents writing the code,
 and build open-source tools that keep it reliable. And I organise
 conferences to get people who build software into one room." (source:
 files/_data/home.yml, files/_includes/home-page.html, files/assets/site.css).
-Two statements above no longer hold: "ten years" is on the first screen
-again, and the lead names Vienna, as the line under the buttons does. The
+One statement above no longer holds: "ten years" is on the first screen
+again. Where the owner is from and where he lives are not in the hero: the
+line under the buttons says Vienna, and the About page says both. The
 share card and the LinkedIn and X headers show the greeting over the lead,
 re-rendered with "make" (source: .github/scripts/render-social-images.js);
 the line "I help teams build products ..." they first carried was the
@@ -801,7 +804,9 @@ improve it. The right stuff is there... Review from different perspectives".
 Of the four wording fixes the reviews proposed he took all four, and for the
 layout "2: first sentence set apart", over the same with a small photo first
 on phones and over keeping the layout. Then: "Instead of write software,
-maybe say make software?"
+maybe say make software?" Then "Ok, review it all deeply", and after the
+findings: "maybe remove Tuzla and Vienna from the first sentence and just
+say 'I make software for a living' ?"
 
 ## Related
 

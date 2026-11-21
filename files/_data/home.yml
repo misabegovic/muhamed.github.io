@@ -17,16 +17,17 @@ hero:
   title: Hi, I’m Muhamed.
   # The words of the title drawn with the highlighter. Must appear in the title exactly.
   highlight: Muhamed
-  # Warm and not generic: things only the owner can say (Tuzla, Vienna, the
-  # conferences), with his own "from deciding what to build ..." and "one
-  # layer up" sentences in the middle. No stack named, so it does not read as
-  # Rails-only (owner, 2026-11-21). How I help is the link below it and the
+  # Plain and personal, with the owner's own "from deciding what to build
+  # ..." and "one layer up" sentences in the middle. No stack named, so it
+  # does not read as Rails-only (owner, 2026-11-21). Tuzla and Vienna are on
+  # About, and Vienna in the line under the buttons; the lead is just what he
+  # does (owner, 2026-11-21). How I help is the link below it and the
   # services section.
-  # evidence: files/_pages/about.md (Tuzla, Vienna, leading teams, the conferences);
+  # evidence: files/_pages/about.md (leading teams, the conferences);
   # role-carv-team, role-experfy-team (teams led)
   # lead: the first sentence, set apart in ink. more: the rest, under it.
   lead: >-
-    I grew up in Tuzla, I live in Vienna, and I make software for a living.
+    I make software for a living.
   more: >-
     For ten years that has meant everything from deciding what to build to
     running it in production, anywhere in the stack, and leading teams along

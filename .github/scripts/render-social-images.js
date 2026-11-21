@@ -82,9 +82,9 @@ function servicePost(s, w, h) {
 
 // The site's greeting and, under it, the hero's lead (files/_data/home.yml,
 // hero.title with hero.highlight marked, and hero.lead). Update them here
-// when they change there. The lead's line break is set by hand.
+// when they change there.
 const GREETING = 'Hi, I’m <mark>Muhamed</mark>.';
-const LEAD = 'I grew up in Tuzla, I live in Vienna,<br>and I make software for a living.';
+const LEAD = 'I make software for a living.';
 
 function share(w, h) {
   return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">

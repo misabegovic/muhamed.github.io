@@ -149,8 +149,9 @@ in the stack." On a third look the lead was rewritten to be warmer, and the
 sentence under the greeting is again its first: "I grew up in Tuzla, I live
 in Vienna, and I write software for a living." Later that day "write"
 became "make", on the owner's word: "I grew up in Tuzla, I live in Vienna,
-and I make software for a living." That is what both headers and the share
-card say now, under the greeting and over "Staff Engineer · muhamed.at"
+and I make software for a living." Last, the owner shortened it to "I make
+software for a living." That is what both headers and the share card say
+now, under the greeting and over "Staff Engineer · muhamed.at"
 (source: .github/scripts/render-social-images.js), and what the banners'
 alt texts say (source: files/brand.html). The upload to both profiles is
 still the owner's to do.

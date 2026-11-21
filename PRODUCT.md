@@ -42,9 +42,10 @@ believing it from evidence they could check, and knowing how to reach him.
 from idea to production", a line he liked but felt many people now use
 because AI suggests it): simple and personal, who he is and how he could
 help, with "Muhamed" on the hand-drawn highlighter the site and every
-generated image use. The hero's text is warm and made of things only he can
-say. Its first sentence is set apart in ink: "I grew up in Tuzla, I live in
-Vienna, and I make software for a living." The rest sits under it, smaller:
+generated image use. The hero's text is plain and his own. Its first
+sentence is set apart in ink: "I make software for a living." (Tuzla and
+Vienna, tried there first, are on the About page.) The rest sits under it,
+smaller:
 "For ten years that has meant everything from deciding what to build to
 running it in production, anywhere in the stack, and leading teams along the
 way. These days I also work one layer up, with agents writing the code, and
