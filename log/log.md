@@ -340,3 +340,8 @@
    by: agent
 - site: About's EuRuKo part credits the city: "Sarajevo was a wonderful host, and it became the first Ruby conference in Bosnia and Herzegovina. Still, it taught me to trust my gut." Owner's pick from options, so the move does not read as a slight on Sarajevo.
    by: agent
+
+## 2026-11-21
+
+- site, cv: the homepage ADR's twenty-seventh change, on the owner's ask ("we can add more skills and some generic info not revealing client specific info"): the Symphony work, by technology and role only. The CV's "Staff Engineer · Symphony" gains four bullets (a proof of concept taken over with his team and brought to stable production, with observability for the pipelines and the agents; data pipelines on Azure and Microsoft Fabric in a medallion architecture with PySpark notebooks, and knowledge graphs in FalkorDB; agents that enrich and classify the data on OpenAI models in Microsoft Foundry, with OpenAI's Decisions API and MCP servers; AI-native delivery in his team and with the client's engineers). Skills gain a Data group and items under Product and AI, Infrastructure and DevEx, and Ways of working; `files/_data/cv.json` and `files/cv.json` are re-rendered by `render-cv-data.js` with no drift. The PDF is re-rendered with headless Chromium from `_cv/cv.html`: still three A4 pages (owner's choice), with the "Founder and organiser" entry allowed to run from page 1 to page 2. The homepage stack (four pills, intro, last line), three Work page proof points, llms.txt and the JSON-LD follow. Every new claim is on the owner's word, not yet in the evidence store. The owner approved the full draft: "Assumptions are correct, keep three pages." The site builds, and the homepage shows no sideways scroll at 390 px.
+   by: agent

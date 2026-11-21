@@ -123,6 +123,12 @@ organiser, and works in public.
 - **Ruby and Rails:** Ruby since 2016 and Rails in production at most roles
   since; Rails upgrades and performance work on the owner's word (2026-10-26),
   not yet in the evidence store.
+- **Data and knowledge graphs:** at Symphony, a proof of concept taken to
+  stable production: data pipelines on Azure and Microsoft Fabric (medallion
+  architecture, PySpark), knowledge graphs in FalkorDB, agents that enrich
+  and classify data, MCP servers, and AI-native delivery with the client's
+  engineers; on the owner's word (2026-11-21), not yet in the evidence store,
+  and described by technology and role only, never by client or industry.
 - **Community standing:** founded and organised RubyConf Austria 2026 (with
   Dave Thomas, Chad Fowler, José Valim and Armin Ronacher on the programme);
   took full ownership of EuRuKo 2024 in Sarajevo; founding GoatConf 2027 in

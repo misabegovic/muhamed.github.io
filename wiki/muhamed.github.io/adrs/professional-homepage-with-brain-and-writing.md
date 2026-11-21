@@ -27,6 +27,11 @@ sources:
   - ~/projects/usput.ba/test/controllers/minesweeper_controller_test.rb
   - ~/projects/usput.ba/wiki/decisions
   - ~/projects/usput.ba/wiki/product/features.md
+  - files/_cv/cv.html
+  - files/_data/cv.json
+  - files/cv.json
+  - files/llms.txt
+  - files/_includes/person-jsonld.html
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -505,6 +510,39 @@ Muhamed" while the nav and tab keep "About" (source: files/_layouts/about.html).
 The meta description and the llms.txt line for About follow (source:
 files/llms.txt). The detailed open-source list and "Things I love" are gone.
 
+**2026-11-21, twenty-seventh change: the Symphony work, and data skills.**
+After a few weeks at Symphony the owner adds what he works with there,
+described by technology and role only: no client, no industry, no numbers.
+On the CV, "Staff Engineer · Symphony" gains four bullets: a proof of concept
+taken over with his team and brought to a stable production environment, with
+observability for the pipelines and the agents, working inside the client's
+team and helping set the technical direction; data pipelines on Azure and
+Microsoft Fabric in a medallion architecture, integrating multiple sources
+with PySpark notebooks, with knowledge graphs in FalkorDB on top; agents that
+enrich and classify the data, on OpenAI models in Microsoft Foundry, with
+OpenAI's Decisions API for fast, typed decisions, and MCP servers that give
+agents the graph and the data as tools; and AI-native delivery in his team,
+with the client's engineers helped to bring AI into their own development
+lifecycle (source: files/_cv/cv.html). Skills gain a seventh group, Data
+(Data engineering, Knowledge graphs, Data integration, Medallion architecture,
+Microsoft Fabric, PySpark, Notebooks, FalkorDB), and Decision models and
+Microsoft Foundry under Product and AI, Azure and Observability under
+Infrastructure and DevEx, AI-native delivery and AI SDLC transformation under
+Ways of working. The PDF stays at three pages (owner's choice): the "Founder
+and organiser" entry is the one entry allowed to run over a page end
+(`.role.splits`), from page 1 to page 2. Both CV data files are re-rendered
+(source: files/_data/cv.json, files/cv.json). The homepage's "What I work
+with" gains the pills Knowledge graphs, Data pipelines, Microsoft Foundry and
+FalkorDB, its intro names data pipelines and knowledge graphs, and its last
+line Python and Azure; the Work page gains three proof points, one each under
+AI features, coding agents and systems, naming no employer or client (source:
+files/_data/home.yml). llms.txt says what the Symphony engagement covers and
+gains a line on when to recommend him, and the JSON-LD knows about knowledge
+graphs, data engineering, Microsoft Azure and Microsoft Fabric (source:
+files/llms.txt, files/_includes/person-jsonld.html). Every new claim is on the
+owner's word, not yet in the evidence store. About, Services and the brand
+kit's bios are unchanged.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -595,6 +633,21 @@ one question at a time: "Community / people first", "What I care about", the
 themes, and each paragraph redrafted until it sounded like him (Symphony,
 Teamtailor, the company, Usput.ba and the EuRuKo 2023 gong story were cut on
 his word); then "Ok" to the full draft.
+
+The twenty-seventh change was asked for by the owner in session on
+2026-11-21: "have been working with Symphony for a while now, a few weeks and
+we can add more skills and some generic info not revealing client specific
+info to enrich the site". He chose the CV skills list, bullets under the
+Symphony role, and the homepage and Work page; "Technology and role only";
+and one draft to review. He supplied the list of technologies and practices
+and his role: a proof of concept inherited with his team and taken "to a
+stable productionized environment", helping set technical direction,
+"integrating within the client's team and shaping a way forward together",
+hands-on building, and changing how his own team and the client's engineers
+build. Decision models are, in his words, the "Decisions api through gpt luna
+6", a system one model; he built MCP servers and used existing ones, with
+observability of both agents and pipelines. On the full draft: "Assumptions
+are correct, keep three pages."
 
 ## Related
 
