@@ -112,7 +112,7 @@
         <a class="button" href="{{ site.baseurl }}/contact/#speaking">Invite me to speak{{ arr }}</a>
         {% if h.community_logos.size > 0 %}
         <ul class="event-logos" role="list">
-          {% for event in h.community_logos %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"></a></li>{% endfor %}
+          {% for event in h.community_logos %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"{% if event.width %} width="{{ event.width }}" height="{{ event.height }}"{% endif %}></a></li>{% endfor %}
         </ul>
         {% endif %}
       </div>

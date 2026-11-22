@@ -52,6 +52,7 @@ sources:
   - files/writing.md
   - files/_layouts/project.html
   - files/_includes/project-cards.html
+  - files/_data/brand.yml
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -869,6 +870,16 @@ unused rules in the stylesheet; small differences between card types
 border widths. Checked in Chromium after the changes: the closing band's
 buttons 0 px apart on five pages at three widths; no text below WCAG AA
 contrast in either scheme; no sideways scroll from 320 to 1440 px.
+
+Afterwards, two things with nothing to see. The three conference logos and
+the two banner previews carry their width and height, so the page keeps its
+place while they load; every image on the 21 page types checked now does
+(source: files/_data/home.yml, files/_data/brand.yml, files/brand.html).
+And the stylesheet lost 45 rules and selectors for classes that no page,
+template or script uses (the old tools, cases, talks and side-project lists
+among them): 80 full-page captures, light and dark, at 1440 and 390 px, are
+pixel for pixel the same before and after, one frame of the Usput video
+aside (source: files/assets/site.css).
 
 ## Approval
 

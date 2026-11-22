@@ -403,9 +403,10 @@ open_source:
 # The event logos are white on transparent, drawn on the dark section.
 # goatconf: not yet in the evidence store; facts from misabegovic/goatconf (files/PRODUCT.md).
 community_logos:
-  - { name: GoatConf 2027, logo: /images/logos/goatconf.svg, url: "https://goatconf.com/" }
-  - { name: RubyConf Austria, logo: /images/logos/rubyconf-austria.svg, url: "https://www.rubyconf.at/" }
-  - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, url: "https://2024.euruko.org" }
+  # width and height: the file's own size, so the page keeps its place while it loads.
+  - { name: GoatConf 2027, logo: /images/logos/goatconf.svg, width: 300, height: 101, url: "https://goatconf.com/" }
+  - { name: RubyConf Austria, logo: /images/logos/rubyconf-austria.svg, width: 212, height: 68, url: "https://www.rubyconf.at/" }
+  - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, width: 166, height: 41, url: "https://2024.euruko.org" }
 community:
   - text: "Founding and organising GoatConf 2027 in Tuzla, Bosnia and Herzegovina, 3–5 June 2027: a free conference for people who build and sell software, hosted by IPI Academy."
   # evidence: community-rubyconf-austria, community-rubyconf-scale; community-euruko-2024

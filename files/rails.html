@@ -78,7 +78,7 @@ description: Ruby on Rails consulting from Muhamed Isabegovic, a Rubyist since 2
     <div class="community-head">
       <h2 id="h-rcommunity" class="community-title">{{ r.community.title }}</h2>
       <ul class="event-logos" role="list">
-        {% for event in h.community_logos %}{% assign slug = event.logo | split: "/" | last | split: "." | first %}{% if r.community.logos contains slug %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"></a></li>{% endif %}{% endfor %}
+        {% for event in h.community_logos %}{% assign slug = event.logo | split: "/" | last | split: "." | first %}{% if r.community.logos contains slug %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"{% if event.width %} width="{{ event.width }}" height="{{ event.height }}"{% endif %}></a></li>{% endif %}{% endfor %}
       </ul>
     </div>
     <ul class="community-list" role="list">
