@@ -309,7 +309,7 @@ the same script.
 
 empty-shell leads the tools wherever they are listed, followed by enola,
 tabula and taha as its parts, in the third amendment's order, then
-enola-guides and tended. The engine reads "enola" everywhere, as the third
+enola-guides, tended and pi-brain. The engine reads "enola" everywhere, as the third
 amendment set: on the owner's word the same day, the site uses enola's
 name and never the name of his own build, "to give credit to Dejan and the
 project". The empty-shell page names enola's author, links the project's
@@ -317,15 +317,17 @@ page, and says in one sentence that the shell carries the owner's own build
 of it, measured against upstream. pi-brain keeps its page and its card on `/projects/`
 and `/work/`, listed last as the earlier tool, and leaves the homepage: an
 entry marked `home: false` in `home.yml` has no row there (source:
-files/_includes/home-page.html). Its page says the owner's newer projects
+files/_includes/home-page.html). tended leaves the homepage the same way,
+on the owner's word that empty-shell covers it; its page and its card are
+unchanged. Its page says the owner's newer projects
 start from empty-shell and that this site still runs on pi-brain (source:
 files/_projects/pi-brain.md). Older posts and notes that mention pi-brain
 stay as they were, and so does the CV, which lists published work.
 
-The homepage's tools intro said "Most are open source"; with pi-brain off
-the homepage three of its six rows are open, so it now names them: enola,
-enola-guides and tended are open source today, and empty-shell, tabula and
-taha open soon. The knowledge-bases page, the tabula, taha, enola and tended
+The homepage's tools intro said "Most are open source"; with pi-brain and
+tended off the homepage two of its five rows are open, so it now names
+them: enola and enola-guides are open source today, and empty-shell, tabula
+and taha open soon. The knowledge-bases page, the tabula, taha, enola and tended
 pages, the AI-native offer and llms.txt follow. Not done: the
 knowledge-bases video still counts six tools with pi-brain among them,
 since its source is in another project.

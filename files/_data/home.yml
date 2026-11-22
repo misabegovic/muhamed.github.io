@@ -248,8 +248,8 @@ sections:
     title: What people I have worked with say.
   tools:
     title: I build the guardrails I teach.
-    # Three of the six rows are open today; the rest open soon (owner, 2026-11-22).
-    intro: The tools behind my workshops are ones I build or help build. enola, enola-guides and tended are open source today, and empty-shell, tabula and taha open soon.
+    # Two of the five rows are open today; the rest open soon (owner, 2026-11-22).
+    intro: The tools behind my workshops are ones I build or help build. enola and enola-guides are open source today, and empty-shell, tabula and taha open soon.
   side:
     title: Stuff I've made, mostly for fun.
   work_page:
@@ -397,8 +397,11 @@ open_source:
       hooks, as one command in every package manager. Ten releases since
       August 2026.
   # evidence: oss-brain; misabegovic/tended README (called brain until 2026-10-25)
+  # Off the homepage, since empty-shell covers it (owner, 2026-11-22); its
+  # page and its card on /projects/ and /work/ stay.
   - name: tended
     role: Author
+    home: false
     url: https://github.com/misabegovic/tended
     profile: /projects/tended/
     outcome: Gives people and agents one record of what was decided and why, kept current by the agent.
