@@ -402,7 +402,11 @@ mark {
   border-bottom: 1px solid var(--line);
   scroll-margin-top: 2rem;
 }
-.offer-name { font-size: clamp(2.25rem, 1.6rem + 2vw, 3.25rem); font-weight: 800; line-height: 1; letter-spacing: -0.035em; }
+/* The offers by name under the intro, so all five show on the first screen. */
+.offer-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.75rem; }
+.offer-nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.5rem 1.1rem; border: 1.5px solid var(--ink); border-radius: 999px; font-weight: 650; text-decoration: none; transition: background-color 0.15s ease-out, color 0.15s ease-out; }
+.offer-nav a:hover { background: var(--ink); color: var(--accent-on-ink); }
+.offer-name { font-size: clamp(2.25rem, 1.6rem + 2vw, 2.75rem); font-weight: 800; line-height: 1; letter-spacing: -0.035em; }
 .offer-title { margin-top: 1.1rem; font-weight: 650; }
 .offer-summary { font-size: var(--t-lead); line-height: 1.5; color: var(--ink); }
 .offer-label { margin: 1.75rem 0 1rem; font-size: var(--t-body); font-weight: 750; }
@@ -699,6 +703,22 @@ mark {
 .cv-role .proofs { gap: 0.6rem; margin-top: 0.25rem; }
 .cv-quote { margin: 1.25rem 0 0; padding: 1.25rem 1.5rem; background: var(--tint, #f3f3f1); border-radius: var(--radius); }
 .cv-quote footer { margin-top: 0.75rem; font-size: var(--t-small); color: var(--ink-3); }
+/* Wide screens: the dates and the place get their own column, so a reader
+   can run an eye down the years. */
+@media (min-width: 961px) {
+  .cv-page > * { max-width: 62rem; }
+  .cv-page > .page-head, .cv-page > .cv-contact, .cv-page > .cv-formats { max-width: 52rem; }
+  .cv-role { grid-template-columns: 10.5rem minmax(0, 1fr); column-gap: 2rem; }
+  .cv-role > * { grid-column: 2; }
+  .cv-role > .cv-meta { grid-column: 1; grid-row: 1 / span 4; align-self: start; padding-top: 0.2rem; line-height: 1.45; }
+  .cv-dates { display: block; font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .cv-place { display: block; }
+  .cv-sep { display: none; }
+  .cv-group { margin-left: 12.5rem; }
+  /* A role inside the company keeps its line, drawn once beside the text column. */
+  .cv-nested { margin-left: 0; padding-left: 0; border-left: 0; background: linear-gradient(var(--line), var(--line)) 12.5rem 1.25rem / 3px calc(100% - 2.5rem) no-repeat; }
+  .cv-nested > :not(.cv-meta) { padding-left: 1.5rem; }
+}
 
 /* About: the text beside a card with the photo, availability and the ways to reach out. */
 .about-grid { display: grid; grid-template-columns: minmax(0, 42rem) minmax(16rem, 22rem); justify-content: space-between; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
@@ -863,6 +883,11 @@ mark {
 
 /* Tablets keep the two-column hero and services down to 700px. */
 @media (max-width: 700px) {
+  /* The longest contact button stays on one line. */
+  .contact-option .button { font-size: 1rem; }
+  /* Phones: a tool is its name, its role and one line; the rest is on its page. */
+  .row-text { display: none; }
+  .row { padding-block: 1.25rem; }
   .hero-grid,
   .services,
   .closing-grid { grid-template-columns: 1fr; }

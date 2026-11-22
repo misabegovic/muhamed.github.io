@@ -13,8 +13,11 @@ sources:
   - files/README.md
   - files/brand.html
   - .github/scripts/render-social-images.js
+  - files/_plugins/share_cards.rb
+  - files/_includes/meta.html
+  - files/images/social/cards/post-im-rich.jpg
 created: 2026-10-23
-updated: 2026-11-21
+updated: 2026-11-22
 author: pi-brain-agent
 ---
 
@@ -155,6 +158,42 @@ now, under the greeting and over "Staff Engineer · muhamed.at"
 (source: .github/scripts/render-social-images.js), and what the banners'
 alt texts say (source: files/brand.html). The upload to both profiles is
 still the owner's to do.
+
+## Sixth change: a card for every post and note (2026-11-22)
+
+The owner's pinned post on X linked to his post "I'm rich!" and showed the
+share card with the old headline, a day after the card was redrawn. Two
+things were behind it. X, like LinkedIn and others, keeps its own copy of a
+preview image by its address, and the address had not changed. And every
+post and note previewed with the homepage's card, so even a fresh copy would
+have shown the greeting instead of the post's title.
+
+Now each post and each note has its own card, in the share card's layout
+with the portrait on the right (the owner's pick over a layout with the
+title across the full width): the name, "Writing" or "Brain" with the date,
+the title, on the highlighter when it is short, the post's description or
+the note's source, and its address. They are rendered by the same script as
+the other images, as JPEG, since the portrait makes a PNG about five times
+the size: 27 cards, 2.7 MB (source: .github/scripts/render-social-images.js,
+files/images/social/cards/post-im-rich.jpg). A small build plugin points a
+post or note at its card when the file exists, so one without a card keeps
+the share card; it also gives every local preview image `?v=` and a digest of
+the file, so the address changes when the picture does, and adds the size
+and alt text that the head include used to add for the share card only
+(source: files/_plugins/share_cards.rb, files/_includes/meta.html). The
+GoatConf note keeps its own image.
+
+After adding a post or a note, render its card:
+`ONLY=cards/ node .github/scripts/render-social-images.js`.
+
+A network that already holds a copy for a link refreshes it in its own
+time; for X that is usually within a week, and LinkedIn's Post Inspector
+refreshes a link on request.
+
+Asked for by the owner in session on 2026-11-22 with a screenshot of the
+pinned post ("the link builder should have new images"), then "Own card,
+layout A". Showing the note's source as its second line, and leaving it out
+when it is "Internal note", are the agent's calls, for the owner to adjust.
 
 ## Related
 
