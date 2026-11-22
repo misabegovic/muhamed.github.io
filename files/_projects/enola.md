@@ -20,6 +20,7 @@ links:
   - { label: enola-rb, url: "https://github.com/misabegovic/enola-rb", note: "my Rails and Bundler gems for enola" }
   - { label: enola-guides, url: "/projects/enola-guides/", note: "my guides for working this way" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice enola is part of" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "my family of tools; its engine, cardo, is my build of enola; coming soon" }
 facts:
   - { label: Role, value: Core contributor }
   - { label: Project, value: "enola-labs/enola, Apache-2.0" }

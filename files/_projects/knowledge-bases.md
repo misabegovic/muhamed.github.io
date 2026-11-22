@@ -6,23 +6,24 @@
 title: How I work with knowledge bases
 # When this page was first published; without it, every build re-dates it.
 date: 2026-10-22
-description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, on enola, tabula and taha, his main tools.
+description: How Muhamed Isabegovic works with coding agents, with decisions written down, anchored to the code they govern, checked in CI and read by agents before they write, on enola and the empty-shell family (cardo, tabula and taha), his main tools.
 thumb: /images/projects/knowledge-bases/thumb
 image: /images/social/project-knowledge-bases.png
 lead: Decisions written down, anchored to the code they govern, checked in CI, and read by agents before they write. The method I run my own work on, and what I set up for teams.
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family: the rules and checks, with cardo, tabula and taha inside; coming soon" }
   - { label: enola, url: "/projects/enola/", note: "one graph of the code, laws in CI" }
   - { label: tabula, url: "/projects/tabula/", note: "understand what you inherited, hold every agent to it; coming soon" }
   - { label: taha, url: "/projects/taha/", note: "agents that work unattended inside a mandate; coming soon" }
   - { label: enola-guides, url: "/projects/enola-guides/", note: "the method written down" }
-  - { label: pi-brain, url: "/projects/pi-brain/", note: "decisions agents must read, on pi; usable today" }
+  - { label: pi-brain, url: "/projects/pi-brain/", note: "the earlier tool: decisions agents must read, on pi; usable today" }
   - { label: tended, url: "/projects/tended/", note: "the knowledge base it started with" }
   - { label: The method in plain words, url: "/brain/how-i-work-with-knowledge-bases/", note: "a note in my brain" }
 facts:
-  - { label: Main tools, value: "enola, tabula and taha, with enola-guides, pi-brain and tended beside them; enola I build with its team, the rest are mine" }
+  - { label: Main tools, value: "enola and the empty-shell family (cardo, tabula and taha), with enola-guides, tended and pi-brain beside them; enola I build with its team, cardo is my build of it, the rest are mine" }
   - { label: Scale, value: "One knowledge base across all the repositories of a system" }
-  - { label: In the open, value: "Four of the six tools, and this site's own wiki" }
+  - { label: In the open, value: "enola, enola-guides, tended and pi-brain, and this site's own wiki" }
   - { label: For, value: "Teams that build with coding agents" }
 hero:
   kind: video
@@ -105,7 +106,7 @@ features:
         01b5101 wiki: draft ADR for project profile pages
   - title: One tool for all of it, and agents you can leave alone.
     text: |
-      [tabula](/projects/tabula/) brings the practice into one tool: understand a system you inherited, write down what it should become, and hold every agent to it, with claims as leases and a journal no command rewrites. [taha](/projects/taha/) runs an agent unattended inside a mandate, with tabula holding the gates. Both are coming soon.
+      [tabula](/projects/tabula/) brings the practice into one tool: understand a system you inherited, write down what it should become, and hold every agent to it, with claims as leases and a journal no command rewrites. [taha](/projects/taha/) runs an agent unattended inside a mandate, with tabula holding the gates. [empty-shell](/projects/empty-shell/) is the repository a project starts from, with the rules and checks already in place and both tools inside, next to cardo, my build of enola. All of it is coming soon.
 shows:
   title: What I set up for a team.
   text: |

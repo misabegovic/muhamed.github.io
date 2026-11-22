@@ -17,6 +17,7 @@ links:
   - { label: tended on PyPI, url: "https://pypi.org/project/tended/", note: "uvx tended init my-wiki" }
   - { label: pi-brain, url: "/projects/pi-brain/", note: "the same idea for the pi harness" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice it belongs to" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family of tools my newer projects start from; coming soon" }
 facts:
   - { label: Role, value: Author }
   - { label: What, value: "A markdown wiki an agent maintains, with a local web app to read it" }

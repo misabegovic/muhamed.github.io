@@ -4,6 +4,9 @@
 # extensions/), npm (versions, 2026-10-29), and this site, which is a pi-brain
 # clone (AGENTS.md, wiki/, log/). Terminal output: this site's history (git
 # log), and pi-brain 0.5.2's tools run on a copy of this site on 2026-10-29.
+# Since the eighth amendment (2026-11-22) the page says it is the earlier
+# tool: the owner's newer projects start from empty-shell (his word), and
+# this site still runs on pi-brain.
 title: pi-brain
 home_key: pi-brain
 # When this page was first published; without it, every build re-dates it.
@@ -16,9 +19,11 @@ links:
   - { label: Source on GitHub, url: "https://github.com/misabegovic/pi-brain", note: "misabegovic/pi-brain, MIT" }
   - { label: npm, url: "https://www.npmjs.com/package/@misabegovic/pi-brain", note: "pi install @misabegovic/pi-brain" }
   - { label: This site's wiki, url: "https://github.com/misabegovic/muhamed.github.io/tree/main/wiki", note: "a pi-brain clone, in the open" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family my newer projects start from; coming soon" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice it belongs to" }
 facts:
   - { label: Role, value: Author and maintainer }
+  - { label: Now, value: 'The earlier tool. My newer projects start from <a href="/projects/empty-shell/">empty-shell</a>; this site still runs on pi-brain' }
   - { label: What, value: "A pi package, installed once; each project or client gets a clone that holds only its knowledge" }
   - { label: Runs on, value: "pi, checked against pi 1.4" }
   - { label: Releases, value: "10 on npm, July to October 2026; 0.5.2 is the latest" }
@@ -93,6 +98,8 @@ shows:
   title: What it shows about how I work.
   text: |
     I let agents do the work and keep people in charge of what is true. pi-brain is that rule made into a tool: it slows the agent down exactly where a decision is being made, and nowhere else.
+
+    It is where I first built that rule, for the pi coding agent. My newer projects start from [empty-shell](/projects/empty-shell/), the family of tools that carries the same rule further.
   link: { label: How I work with knowledge bases, url: /projects/knowledge-bases/ }
 closing:
   title: Want this in your team?
