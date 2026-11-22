@@ -53,6 +53,7 @@ sources:
   - files/_layouts/project.html
   - files/_includes/project-cards.html
   - files/_data/brand.yml
+  - files/images/projects/enola/thumb-320.webp
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -881,6 +882,32 @@ among them): 80 full-page captures, light and dark, at 1440 and 390 px, are
 pixel for pixel the same before and after, one frame of the Usput video
 aside (source: files/assets/site.css).
 
+**2026-11-22, thirty-fourth change: loading, and one family of cards.** Two
+of the four directions the owner picked for the next round; the other two
+(the homepage's story, the first screen on a phone) wait on mockups.
+
+*Loading.* Measured in Chromium on a throttled phone (1.6 Mbit/s, 150 ms,
+4x slower CPU). Pages were already light, 170 to 360 KB with no layout
+shift locally, but the live homepage scored a layout shift of 0.107 on a
+phone: the menu's links showed under the name until site.js arrived and
+folded them. A one-line script in the head now sets the `js` class before
+the first paint; with site.js held back 1.5 s the shift is 0 (source:
+files/_includes/site-head.html). On a phone the hero's portrait, which
+sits below the first screen there, loads the 800 px file instead of the
+1200 px one (source: files/_includes/home-page.html), and a project card's
+thumbnail has a 320 px copy for the phone's small rows (source:
+files/_includes/project-cards.html, files/images/projects/enola/thumb-320.webp).
+The homepage went from 324 to 273 KB on a phone and the projects page from
+359 to 256 KB.
+
+*Cards.* Wherever a 3px rule sits above a name, the space under the rule is
+1.5rem (it was 1.25, 1.5 or 1.75) and the name is one size, `--t-card`, on
+the homepage's tools, the Work page's rows and every project card (the Work
+page showed 33.6 px beside 31.5 px); index cards' titles are weight 800 like
+the others (source: files/assets/site.css). Writing and Brain end with the
+yellow closing band, as the other menu pages do (source: files/writing.md,
+files/brain.html).
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1063,6 +1090,10 @@ page is on his word: "When we list social media platforms, we don't mention
 X". The owner also asked whether the light scheme should use the portrait on
 the dark backdrop; mockups of both photos in both schemes were shown with a
 recommendation to keep the amber one everywhere, and no change was asked for.
+
+The thirty-fourth change was chosen by the owner in session on 2026-11-22
+from four offered directions, all of which he took: "Homepage story",
+"First screen on a phone", "One card style" and "Speed and loading".
 
 ## Related
 

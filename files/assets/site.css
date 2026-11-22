@@ -46,6 +46,8 @@
   --t-body: 1.125rem;
   --t-lead: clamp(1.1875rem, 1.05rem + 0.45vw, 1.4375rem);
   --t-h3: clamp(1.3125rem, 1.15rem + 0.5vw, 1.625rem);
+  /* The title of a card or a row: one size wherever a 3px rule sits above a name. */
+  --t-card: clamp(1.5rem, 1.25rem + 0.8vw, 2rem);
   --t-h2: clamp(1.875rem, 1.25rem + 2vw, 3.125rem);
   --t-h1: clamp(2.5rem, 1.4rem + 3.4vw, 4.5rem);
 
@@ -352,7 +354,7 @@ mark {
 .feature-more-2 { margin-top: 0.75rem; }
 .rows { border-top: 3px solid var(--ink); }
 .row { display: grid; grid-template-columns: minmax(11.5rem, 0.8fr) minmax(0, 2fr); gap: 0.25rem 2rem; padding-block: 1.6rem; border-bottom: 1px solid var(--line-soft); }
-.row-name { grid-row: span 3; font-size: clamp(1.5rem, 1.25rem + 0.8vw, 2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.row-name { grid-row: span 3; font-size: var(--t-card); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
 .row-name a { white-space: nowrap; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.18em; }
 .row-name a:hover { text-decoration-color: var(--ink); }
 .row-meta { font-weight: 650; }
@@ -385,7 +387,7 @@ mark {
   padding-block: clamp(2rem, 1.5rem + 2vw, 3rem);
   border-bottom: 1px solid var(--line);
 }
-.capability-title { font-size: clamp(1.5rem, 1.2rem + 1vw, 2.125rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.03em; text-wrap: balance; }
+.capability-title { font-size: var(--t-card); font-weight: 800; line-height: 1.08; letter-spacing: -0.03em; text-wrap: balance; }
 .capability-text { margin-top: 0.9rem; color: var(--ink-2); max-width: 38ch; }
 .capability-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.25rem; }
 .proofs { display: grid; gap: 1rem; }
@@ -792,12 +794,12 @@ mark {
 .search-hint { flex-basis: 100%; font-size: var(--t-small); color: var(--ink-3); }
 .search-hint code { padding: 0.05em 0.35em; border-radius: 4px; background: var(--tint); font-size: 0.9em; }
 .index-page .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 2.75rem clamp(2rem, 1rem + 3vw, 3.5rem); }
-.index-page .card { display: flex; flex-direction: column; padding-top: 1.25rem; border-top: 3px solid var(--ink); }
+.index-page .card { display: flex; flex-direction: column; padding-top: 1.5rem; border-top: 3px solid var(--ink); }
 .index-page .card-link { display: block; flex: 1; text-decoration: none; }
 .index-page .card-link:hover .card-title { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; }
 .index-page .card-type,
 .index-page .card-date { font-size: var(--t-small); color: var(--ink-3); }
-.index-page .card-title { margin-top: 0.4rem; font-size: var(--t-h3); font-weight: 750; line-height: 1.2; letter-spacing: -0.02em; }
+.index-page .card-title { margin-top: 0.4rem; font-size: var(--t-h3); font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
 .index-page .card-source { margin-top: 0.35rem; font-size: var(--t-small); font-weight: 600; color: var(--ink-2); }
 .index-page .card-note,
 .index-page .card-excerpt { margin-top: 0.8rem; color: var(--ink-2); }
@@ -1139,7 +1141,7 @@ a:hover .arr-back { transform: scaleX(-1) translateX(3px); }
 .feature > .project-text { font-size: var(--t-lead); line-height: 1.55; }
 
 .project-features { display: grid; gap: clamp(3.5rem, 2rem + 4vw, 6rem); }
-.project-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 2rem clamp(2rem, 1rem + 4vw, 5rem); align-items: center; padding-top: 1.75rem; border-top: 3px solid var(--ink); }
+.project-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 2rem clamp(2rem, 1rem + 4vw, 5rem); align-items: center; padding-top: 1.5rem; border-top: 3px solid var(--ink); }
 .project-feature:nth-child(even) { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); }
 .project-feature:nth-child(even) .project-feature-copy { order: 2; }
 .project-feature h3 { font-size: var(--t-h3); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance; }
@@ -1189,11 +1191,11 @@ a:hover .arr-back { transform: scaleX(-1) translateX(3px); }
 
 .project-group + .project-group { margin-top: var(--section); }
 .project-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: clamp(2.5rem, 1.5rem + 3vw, 4rem) clamp(2rem, 1rem + 3vw, 3.5rem); margin-top: 2rem; }
-.project-card { display: grid; align-content: start; gap: 0.5rem; padding-top: 1.25rem; border-top: 3px solid var(--ink); }
+.project-card { display: grid; align-content: start; gap: 0.5rem; padding-top: 1.5rem; border-top: 3px solid var(--ink); }
 .project-card-link { display: grid; align-content: start; gap: 0.5rem; height: 100%; text-decoration: none; }
 .project-card-thumb { margin-bottom: 0.75rem; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border: 1px solid var(--line); border-radius: var(--radius); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
 .project-card-link:hover .project-card-thumb { transform: translateY(-4px); box-shadow: 0 1.25rem 2.5rem -1.25rem rgb(20 20 20 / 0.3); }
-.project-card h3 { font-size: clamp(1.5rem, 1.25rem + 0.8vw, 2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.project-card h3 { font-size: var(--t-card); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
 .project-card h3 a,
 .project-card-link:hover h3 { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.18em; }
 .project-card-role { font-size: var(--t-small); font-weight: 650; color: var(--ink-3); }

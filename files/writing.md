@@ -42,3 +42,4 @@ title: Writing
 </div>
 
 <script defer src="{{ site.baseurl }}/assets/index-filter.js?v={{ '/assets/index-filter.js' | asset_digest }}"></script>
+{% include closing.html %}
