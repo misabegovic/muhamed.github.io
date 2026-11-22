@@ -6,6 +6,8 @@
     <link rel="me" href="https://github.com/misabegovic">
     <link rel="me" href="https://www.linkedin.com/in/muhamed-isabegovic/">
     <link rel="me" href="https://twitter.com/m_isabegovic">
+    {%- comment -%} Set before the first paint, so the narrow header starts with its menu folded and nothing shifts when site.js arrives. {%- endcomment %}
+    <script>document.documentElement.classList.add("js")</script>
     <link rel="preload" href="{{ site.baseurl }}/assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     {% if include.code %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/code.css?v={{ '/assets/code.css' | asset_digest }}">{% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/site.css?v={{ '/assets/site.css' | asset_digest }}">

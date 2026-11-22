@@ -19,8 +19,10 @@ lead: >-
 # evidence: role-experfy, community-rubyconf-austria, community-euruko-2024, oss-enola-gems
 facts:
   - { value: "2016", label: "writing Ruby since" }
-  - { value: RubyConf Austria, label: "founded and organised, 2026" }
-  - { value: EuRuKo 2024, label: "organised, 700 attendees" }
+  # home: false keeps a fact off the homepage's Rails band, where the community
+  # band right under it says the same (owner, 2026-11-22). /rails/ shows all four.
+  - { value: RubyConf Austria, label: "founded and organised, 2026", home: false }
+  - { value: EuRuKo 2024, label: "organised, 700 attendees", home: false }
   - { value: "4 gems", label: "maintained on rubygems.org" }
 
 # What I do on Rails apps: the kinds of work buyers look for, in the owner's

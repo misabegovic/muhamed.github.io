@@ -18,7 +18,7 @@
         <p class="availability"><span class="dot" aria-hidden="true"></span>{{ h.hero.availability }}</p>
       </div>
       <figure class="portrait">
-        <img src="{{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }}" srcset="{{ site.baseurl }}/images/profile-480.webp?v={{ '/images/profile-480.webp' | asset_digest }} 480w, {{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }} 800w, {{ site.baseurl }}/images/profile-1200.webp?v={{ '/images/profile-1200.webp' | asset_digest }} 1200w" sizes="(max-width: 960px) min(26rem, 100vw - 3rem), 24rem" alt="Muhamed Isabegovic" width="1024" height="1024" fetchpriority="high">
+        <img src="{{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }}" srcset="{{ site.baseurl }}/images/profile-480.webp?v={{ '/images/profile-480.webp' | asset_digest }} 480w, {{ site.baseurl }}/images/profile-800.webp?v={{ '/images/profile-800.webp' | asset_digest }} 800w, {{ site.baseurl }}/images/profile-1200.webp?v={{ '/images/profile-1200.webp' | asset_digest }} 1200w" sizes="(max-width: 700px) 4.5rem, (max-width: 960px) min(26rem, 100vw - 3rem), 24rem" alt="Muhamed Isabegovic" width="1024" height="1024" fetchpriority="high">
         <figcaption><strong>{{ site.author }}</strong><span>{{ h.person.role }}</span></figcaption>
       </figure>
     </div>
@@ -91,7 +91,7 @@
         <h3 class="offer-label">{{ r.work_title | remove: "." }}</h3>
         <ul class="proofs rails-work-list" role="list">{% for w in r.work %}<li>{{ w.name }}</li>{% endfor %}</ul>
         <dl class="rails-facts rails-facts-band">
-          {% for f in r.facts %}<div><dt>{{ f.value }}</dt><dd>{{ f.label }}</dd></div>{% endfor %}
+          {% assign home_facts = r.facts | where_exp: "f", "f.home != false" %}{% for f in home_facts %}<div><dt>{{ f.value }}</dt><dd>{{ f.label }}</dd></div>{% endfor %}
         </dl>
         {% if rq %}
         <figure class="rails-quote">
@@ -112,7 +112,7 @@
         <a class="button" href="{{ site.baseurl }}/contact/#speaking">Invite me to speak{{ arr }}</a>
         {% if h.community_logos.size > 0 %}
         <ul class="event-logos" role="list">
-          {% for event in h.community_logos %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"></a></li>{% endfor %}
+          {% for event in h.community_logos %}<li><a href="{{ event.url }}"><img src="{{ site.baseurl }}{{ event.logo }}" alt="{{ event.name }}"{% if event.width %} width="{{ event.width }}" height="{{ event.height }}"{% endif %}></a></li>{% endfor %}
         </ul>
         {% endif %}
       </div>
@@ -159,8 +159,8 @@
         <li class="row">
           <h3 class="row-name">{% if project.profile %}<a href="{{ site.baseurl }}{{ project.profile }}">{{ project.name }}</a>{% elsif project.url != "" %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
           <p class="row-meta">{{ project.role }}</p>
-          {% if project.outcome %}<p class="row-outcome">{{ project.outcome }}</p>{% endif %}
-          <p class="row-text">{{ project.text }}</p>
+          {%- comment -%} A tool is its name, its role and one line; the longer text is on its page (owner, 2026-11-22). {%- endcomment -%}
+          {% if project.outcome %}<p class="row-outcome">{{ project.outcome }}</p>{% else %}<p class="row-text">{{ project.text }}</p>{% endif %}
         </li>
         {% endfor %}
       </ul>

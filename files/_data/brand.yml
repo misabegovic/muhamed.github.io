@@ -28,8 +28,8 @@ photos:
 # Profile headers, rendered into images/social/ by
 # .github/scripts/render-social-images.js; the kit links them there.
 banners:
-  - { name: LinkedIn header, file: images/social/linkedin-header.png, size: "1584 × 396 px", note: "The left third stays clear for the profile photo." }
-  - { name: X header, file: images/social/x-header.png, size: "1500 × 500 px", note: "The left side stays clear for the profile photo." }
+  - { name: LinkedIn header, file: images/social/linkedin-header.png, width: 1584, height: 396, size: "1584 × 396 px", note: "The left third stays clear for the profile photo." }
+  - { name: X header, file: images/social/x-header.png, width: 1500, height: 500, size: "1500 × 500 px", note: "The left side stays clear for the profile photo." }
 
 # token: the site.css custom property the value must match (the build checks).
 colors:

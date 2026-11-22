@@ -52,6 +52,9 @@ sources:
   - files/writing.md
   - files/_layouts/project.html
   - files/_includes/project-cards.html
+  - files/_data/brand.yml
+  - files/images/projects/enola/thumb-320.webp
+  - files/_data/rails.yml
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -870,6 +873,65 @@ border widths. Checked in Chromium after the changes: the closing band's
 buttons 0 px apart on five pages at three widths; no text below WCAG AA
 contrast in either scheme; no sideways scroll from 320 to 1440 px.
 
+Afterwards, two things with nothing to see. The three conference logos and
+the two banner previews carry their width and height, so the page keeps its
+place while they load; every image on the 21 page types checked now does
+(source: files/_data/home.yml, files/_data/brand.yml, files/brand.html).
+And the stylesheet lost 45 rules and selectors for classes that no page,
+template or script uses (the old tools, cases, talks and side-project lists
+among them): 80 full-page captures, light and dark, at 1440 and 390 px, are
+pixel for pixel the same before and after, one frame of the Usput video
+aside (source: files/assets/site.css).
+
+**2026-11-22, thirty-fourth change: loading, and one family of cards.** Two
+of the four directions the owner picked for the next round; the other two
+(the homepage's story, the first screen on a phone) wait on mockups.
+
+*Loading.* Measured in Chromium on a throttled phone (1.6 Mbit/s, 150 ms,
+4x slower CPU). Pages were already light, 170 to 360 KB with no layout
+shift locally, but the live homepage scored a layout shift of 0.107 on a
+phone: the menu's links showed under the name until site.js arrived and
+folded them. A one-line script in the head now sets the `js` class before
+the first paint; with site.js held back 1.5 s the shift is 0 (source:
+files/_includes/site-head.html). On a phone the hero's portrait, which
+sits below the first screen there, loads the 800 px file instead of the
+1200 px one (source: files/_includes/home-page.html), and a project card's
+thumbnail has a 320 px copy for the phone's small rows (source:
+files/_includes/project-cards.html, files/images/projects/enola/thumb-320.webp).
+The homepage went from 324 to 273 KB on a phone and the projects page from
+359 to 256 KB.
+
+*Cards.* Wherever a 3px rule sits above a name, the space under the rule is
+1.5rem (it was 1.25, 1.5 or 1.75) and the name is one size, `--t-card`, on
+the homepage's tools, the Work page's rows and every project card (the Work
+page showed 33.6 px beside 31.5 px); index cards' titles are weight 800 like
+the others (source: files/assets/site.css). Writing and Brain end with the
+yellow closing band, as the other menu pages do (source: files/writing.md,
+files/brain.html).
+
+**2026-11-22, thirty-fifth change: the first screen on a phone, and a
+shorter homepage.** The owner's picks from mockups of the other two
+directions.
+
+- *On a phone the portrait is a small round photo beside the greeting*
+  (72 px, his pick of three placements, over a photo with his name above
+  the greeting and a wide photo first). Until now the photo came after the
+  whole paragraph and the buttons, so the first screen had no face. It is
+  the same image element, placed in the hero's grid; its caption is hidden
+  there, and the greeting runs over two lines. From 701 px up nothing
+  changes (source: files/_includes/home-page.html, files/assets/site.css).
+- *The Rails band on the homepage shows two facts*, "2016" and "4 gems".
+  RubyConf Austria and EuRuKo 2024 are in the community band right under
+  it; the Rails page keeps all four (source: files/_data/rails.yml).
+- *A tool is its name, its role and one line on every screen*, as it has
+  been on phones since the thirty-second change; the longer text is on the
+  tool's page. The section is 1,332 px tall at 1440 px, from 2,150, and the
+  homepage 8,078 px, from 8,990.
+
+Not taken: a line of proof in each service card, which would have put the
+team sizes on the homepage. The homepage still names the conferences in the
+hero, in the community band and under one recommendation.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1052,6 +1114,15 @@ page is on his word: "When we list social media platforms, we don't mention
 X". The owner also asked whether the light scheme should use the portrait on
 the dark backdrop; mockups of both photos in both schemes were shown with a
 recommendation to keep the amber one everywhere, and no change was asked for.
+
+The thirty-fourth change was chosen by the owner in session on 2026-11-22
+from four offered directions, all of which he took: "Homepage story",
+"First screen on a phone", "One card style" and "Speed and loading".
+
+The thirty-fifth change was chosen by the owner in session on 2026-11-22
+from mockups: "1: photo beside the greeting"; "B: Rails band without
+conferences" and "C: shorter tools on desktop"; and "No proof in service
+cards".
 
 ## Related
 
