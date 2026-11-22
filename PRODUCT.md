@@ -92,8 +92,9 @@ organiser, and works in public.
 
 - Jekyll site built from `files/`, deployed by GitHub Pages from `main` through
   `.github/workflows/pages.yml`. Plain CSS; no Tailwind. A light and a dark
-  scheme, following the visitor's system setting; no switch (owner,
-  2026-11-21). Posts and notes read in one centred column; a link in
+  scheme: the site starts in the visitor's system setting, and a control in
+  the menu offers System, Light and Dark (owner, 2026-11-22; no switch the
+  day before). Posts and notes read in one centred column; a link in
   running text has a thin grey line on a yellow stroke (owner, 2026-11-22).
 - The repository is also a pi-brain knowledge base (`wiki/`, `sources/`,
   `log/`), and its `AGENTS.md` requires an approved ADR before structural
