@@ -18,5 +18,11 @@ code: true
     {% endif %}
     <a class="text-link" href="{{ site.baseurl }}/brain/">Back to the brain</a>
   </footer>
+  {% if page.next or page.previous %}
+  <nav class="post-next" aria-label="More from the brain">
+    {% if page.next %}<a href="{{ site.baseurl }}{{ page.next.url }}"><span>Newer note</span><strong>{{ page.next.title }}</strong></a>{% endif %}
+    {% if page.previous %}<a href="{{ site.baseurl }}{{ page.previous.url }}"><span>Older note</span><strong>{{ page.previous.title }}</strong></a>{% endif %}
+  </nav>
+  {% endif %}
 </article>
 {% include closing.html %}

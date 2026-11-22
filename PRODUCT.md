@@ -90,7 +90,10 @@ organiser, and works in public.
 ## Capabilities and Constraints
 
 - Jekyll site built from `files/`, deployed by GitHub Pages from `main` through
-  `.github/workflows/pages.yml`. Plain CSS; no Tailwind.
+  `.github/workflows/pages.yml`. Plain CSS; no Tailwind. A light and a dark
+  scheme, following the visitor's system setting; no switch (owner,
+  2026-11-21). Posts and notes read in one centred column; a link in
+  running text has a thin grey line on a yellow stroke (owner, 2026-11-22).
 - The repository is also a pi-brain knowledge base (`wiki/`, `sources/`,
   `log/`), and its `AGENTS.md` requires an approved ADR before structural
   changes (`wiki/muhamed.github.io/constraints/adr-before-structural-changes.md`).

@@ -59,6 +59,8 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && isOpen()) setOpen(false, true); });
   document.addEventListener("click", (e) => { if (isOpen() && !top.contains(e.target)) setOpen(false, false); });
   window.matchMedia("(max-width: 860px)").addEventListener("change", () => { if (isOpen()) setOpen(false, false); });
+  // Tabbing out of the open menu closes it, so focus is never on the page hidden behind it.
+  top.addEventListener("focusout", (e) => { if (isOpen() && e.relatedTarget && !top.contains(e.relatedTarget)) setOpen(false, false); });
 
   let last = window.scrollY;
   let queued = false;
