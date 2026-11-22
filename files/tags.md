@@ -7,7 +7,7 @@ title: Tags
 
 <div class="wrap index-page tags-page">
   <header class="page-head">
-    <h1 class="page-title">Tags</h1>
+    <h1 class="page-title"><mark>Tags</mark></h1>
     <p class="page-intro">Every tag across the brain and the writing. The counts link to the matching section: first the <a href="/brain/">brain</a>, then <a href="/writing/">writing</a>.</p>
   </header>
 

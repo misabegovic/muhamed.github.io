@@ -2,6 +2,7 @@
 layout: about
 title: About
 heading: "About me"
+title_mark: me
 permalink: /about/
 description: Muhamed Isabegovic grew up in Tuzla and lives in Vienna. He is a Staff Engineer, organises conferences in Bosnia and Austria, and builds open-source tools for teams that write code with AI agents.
 ---

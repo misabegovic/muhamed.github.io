@@ -7,7 +7,7 @@ permalink: /brain/
 
 <div class="wrap index-page brain-home">
   <header class="page-head">
-    <h1 class="page-title">Peek into my brain</h1>
+    <h1 class="page-title">Peek into my <mark>brain</mark></h1>
     <p class="page-intro">What I am reading, watching and thinking about. These are raw signals I drop into my brain (articles, books, quotes, half-formed notes), and an AI helps me organise, tag and present them. For longer pieces written by me, see <a href="/writing/">Writing</a>.</p>
   </header>
 
@@ -15,26 +15,39 @@ permalink: /brain/
     <label class="visually-hidden" for="search">Search the brain</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
     <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
     <p class="result-count" id="result-count" aria-live="polite"></p>
-    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#agents</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
-  <div class="grid" id="cards" data-noun="entries">
-    {% assign sorted = site.stream | sort: 'created_at' | reverse %}
-    {% for entry in sorted %}
-    {% unless entry.hidden_until and entry.hidden_until > site.time %}
-    <div class="card" data-text="{{ entry.title | downcase }} {{ entry.source | downcase }} {{ entry.excerpt | strip_html | downcase }}" data-tags="{{ entry.tags | join: ',' }}">
-      <a class="card-link" href="{{ entry.url }}">
-        <div class="card-date"><time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%-d %b %Y" }}</time></div>
-        {% if entry.type != "note" %}<div class="card-type">{{ entry.type }}</div>{% endif %}
-        <h2 class="card-title">{{ entry.title | smartify }}</h2>
-        <div class="card-source">{{ entry.source }}</div>
-        <p class="card-note">{{ entry.excerpt | strip_html | truncatewords: 24 }}</p>
-      </a>
-      <div class="card-meta">
-        <span class="tags">{% for tag in entry.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button" aria-pressed="false">{{ tag }}</span>{% endfor %}</span>
+  {%- comment -%}
+    A dated stream, newest first, grouped by month (owner, 2026-11-22; a grid
+    of cards until then). index-filter.js hides a month with nothing to show
+    and keeps each month's count.
+  {%- endcomment -%}
+  {% assign sorted = site.stream | sort: 'created_at' | reverse %}
+  {% assign shown = "" | split: "" %}
+  {% for entry in sorted %}{% unless entry.hidden_until and entry.hidden_until > site.time %}{% assign shown = shown | push: entry %}{% endunless %}{% endfor %}
+  {% assign months = shown | group_by_exp: "entry", "entry.date | date: '%Y-%m'" %}
+  <div class="grid stream" id="cards" data-noun="entries">
+    {% for month in months %}
+    {% assign first = month.items | first %}
+    <section class="month">
+      <h2 class="month-name">{{ first.date | date: "%B" }} <small>{{ first.date | date: "%Y" }} · <span class="month-count" data-one="note" data-many="notes">{{ month.items.size }} {% if month.items.size == 1 %}note{% else %}notes{% endif %}</span></small></h2>
+      <div class="month-list">
+        {% for entry in month.items %}
+        <div class="card" data-text="{{ entry.title | downcase }} {{ entry.source | downcase }} {{ entry.excerpt | strip_html | downcase }}" data-tags="{{ entry.tags | join: ',' }}">
+          <a class="card-link" href="{{ entry.url }}">
+            <div class="card-date"><time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%-d" }}<span class="visually-hidden"> {{ entry.date | date: "%B %Y" }}</span></time></div>
+            {% if entry.type != "note" %}<div class="card-type">{{ entry.type }}</div>{% endif %}
+            <h3 class="card-title">{{ entry.title | smartify }}</h3>
+            <div class="card-source">{{ entry.source }}</div>
+            <p class="card-note">{{ entry.excerpt | strip_html | truncatewords: 24 }}</p>
+          </a>
+          <div class="card-meta">
+            <span class="tags">{% for tag in entry.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button" aria-pressed="false">{{ tag }}</span>{% endfor %}</span>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-    </div>
-    {% endunless %}
+    </section>
     {% endfor %}
   </div>
 

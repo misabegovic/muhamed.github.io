@@ -1,10 +1,10 @@
 {%- comment -%}
-  The projects, as cards: the knowledge-bases hub first, then the tools and
-  the things made for fun from _data/home.yml. One component for /projects/
-  and /work/, so a project looks the same wherever it is listed. A project
-  with a profile (files/_projects, matched by home_key) links there; one
-  without links out. Thumbnails come from the profile's thumb, else the
-  entry's own thumb in home.yml. Pass heading="h3" where the groups sit under
+  The projects: the knowledge-bases hub first, then the tools as a family
+  and the things made for fun as cards, from _data/home.yml. One component
+  for /projects/ and /work/, so a project looks the same wherever it is
+  listed. A made-for-fun project with a profile (files/_projects, matched by
+  home_key) links there; one without links out. Thumbnails come from the
+  profile's thumb, else the entry's own thumb in home.yml. Pass heading="h3" where the groups sit under
   a page section of their own.
 {%- endcomment -%}
 {%- assign h = site.data.home -%}
@@ -21,20 +21,35 @@
   </div>
 </a>
 {% endif %}
-{% assign groups = "tools,made" | split: "," %}
-{% for g in groups %}
-{% if g == "tools" %}{% assign items = h.open_source %}{% assign gtitle = h.sections.tools.title %}{% else %}{% assign items = h.side_projects %}{% assign gtitle = h.sections.side.title %}{% endif %}
-<section class="project-group" aria-labelledby="g-{{ g }}" id="{{ g }}">
-  <{{ hn }} id="g-{{ g }}" class="section-title">{{ gtitle | smartify }}</{{ hn }}>
-  <ul class="project-cards" role="list">
-    {% for item in items %}
+{%- comment -%}
+  The tools (owner, 2026-11-22): the family as a diagram, then the earlier
+  tools (home: false in home.yml) as plain rows. Seven equal cards until then.
+{%- endcomment -%}
+<section class="project-group" aria-labelledby="g-tools" id="tools">
+  <{{ hn }} id="g-tools" class="section-title">{{ h.sections.tools.title | smartify }}</{{ hn }}>
+  {% include tool-family.html %}
+  {% assign earlier = h.open_source | where: "home", false %}
+  {% if earlier.size > 0 %}
+  <p class="tool-rows-label">Earlier tools</p>
+  <ul class="tool-rows" role="list">
+    {% for item in earlier %}
+    <li id="{{ item.name }}"><a href="{{ site.baseurl }}{{ item.profile }}"><h3 class="tool-name">{{ item.name }}</h3><p class="tool-role">{{ item.role }}</p><p class="tool-text">{{ item.outcome | default: item.text | strip_html }}</p>{{ arr }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{%- comment -%} The things made for fun, as cards; on a wide screen the first leads with a large picture. {%- endcomment -%}
+<section class="project-group" aria-labelledby="g-made" id="made">
+  <{{ hn }} id="g-made" class="section-title">{{ h.sections.side.title | smartify }}</{{ hn }}>
+  <ul class="project-cards project-cards-lead" role="list">
+    {% for item in h.side_projects %}
     {% assign key = item.id | default: item.name %}
     {% assign profile = site.projects | where: "home_key", key | first %}
     {% assign thumb = profile.thumb | default: item.thumb %}
     {% if profile %}{% assign href = profile.url | prepend: site.baseurl %}{% elsif item.url contains "://" %}{% assign href = item.url %}{% elsif item.url != "" and item.url %}{% assign href = item.url | prepend: site.baseurl %}{% else %}{% assign href = nil %}{% endif %}
     <li class="project-card" id="{{ item.id | default: item.name }}">
       {% if href %}<a class="project-card-link" href="{{ href }}">{% else %}<div class="project-card-link">{% endif %}
-        {% if thumb %}<img class="project-card-thumb" src="{{ site.baseurl }}{{ thumb }}-800.webp" srcset="{{ site.baseurl }}{{ thumb }}-320.webp 320w, {{ site.baseurl }}{{ thumb }}-800.webp 800w" sizes="(max-width: 640px) 6.5rem, (max-width: 960px) 50vw, 24rem" alt="" width="800" height="500" loading="lazy">{% endif %}
+        {% if thumb %}<img class="project-card-thumb" src="{{ site.baseurl }}{{ thumb }}-800.webp" srcset="{{ site.baseurl }}{{ thumb }}-320.webp 320w, {{ site.baseurl }}{{ thumb }}-800.webp 800w{% if forloop.first %}{% assign big = profile.thumb_max | default: item.thumb_max | default: 1600 %}, {{ site.baseurl }}{{ thumb }}-{{ big }}.webp {{ big }}w{% endif %}" sizes="(max-width: 640px) 6.5rem, (max-width: 960px) 50vw, {% if forloop.first %}42rem{% else %}18rem{% endif %}" alt="" width="800" height="500" loading="lazy">{% endif %}
         <h3>{{ profile.title | default: item.name }}{% if profile.coming_soon %} <span class="soon-badge soon-badge-inline">Coming soon</span>{% endif %}</h3>
         <p class="project-card-role">{{ item.role | default: item.note }}</p>
         <p class="project-card-text">{{ item.outcome | default: item.text | strip_html }}</p>
@@ -44,4 +59,3 @@
     {% endfor %}
   </ul>
 </section>
-{% endfor %}

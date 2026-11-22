@@ -1,0 +1,43 @@
+{%- comment -%}
+  The tools as a family (owner, 2026-11-22): empty-shell is the box, the
+  three tools that ship in it are the cells inside, and the method sits in a
+  row under it. One component for the homepage, /projects/ and /work/. Which
+  tool goes where, its label and its line are in _data/home.yml (open_source:
+  family, part, short).
+{%- endcomment -%}
+{%- assign tools = site.data.home.open_source -%}
+{%- assign shell = tools | where: "family", "shell" | first -%}
+{%- assign parts = tools | where: "family", "part" -%}
+{%- assign methods = tools | where: "family", "method" -%}
+<div class="family-wrap">
+  <div class="family">
+    <a class="family-shell" href="{{ site.baseurl }}{{ shell.profile }}">
+      <div>
+        <p class="family-kicker">{{ shell.role }}</p>
+        <h3 class="family-name"><span>{{ shell.name }}</span></h3>
+      </div>
+      <p class="family-text">{{ shell.short }}</p>
+    </a>
+    <ul class="family-parts" role="list">
+      {% for t in parts %}
+      <li>
+        <a href="{{ site.baseurl }}{{ t.profile }}">
+          <p class="family-kicker family-part">{{ t.part }}</p>
+          <h3 class="family-name"><span>{{ t.name }}</span></h3>
+          <p class="family-text">{{ t.short }}</p>
+          <p class="family-role">{{ t.role }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% for t in methods %}
+  <a class="family-method" href="{{ site.baseurl }}{{ t.profile }}">
+    <div>
+      <h3 class="family-name"><span>{{ t.name }}</span></h3>
+      <p class="family-role">{{ t.role }}</p>
+    </div>
+    <p class="family-text">{{ t.short }}</p>
+  </a>
+  {% endfor %}
+</div>

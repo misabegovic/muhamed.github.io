@@ -8,7 +8,7 @@ description: Selected work by Muhamed Isabegovic, from AI in production and the 
 {% capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture %}
 <div class="wrap page">
   <header class="page-head">
-    <h1 class="page-title">Work</h1>
+    <h1 class="page-title"><mark>Work</mark></h1>
     <p class="page-intro">{{ sx.work_page.intro }}</p>
     <div class="hero-actions">
       <a class="button" href="{{ site.baseurl }}{{ h.hero.primary.url }}">{{ h.hero.primary.label }}{{ arr }}</a>
@@ -25,15 +25,15 @@ description: Selected work by Muhamed Isabegovic, from AI in production and the 
     </div>
     <div class="capabilities">
       {% for cap in h.capabilities %}
-      <article class="capability" id="{{ cap.id }}">
+      <article class="capability{% if cap.proof %} capability-proof{% endif %}" id="{{ cap.id }}">
         <div class="capability-head">
           <h3 class="capability-title">{{ cap.title }}</h3>
           <p class="capability-text">{{ cap.text }}</p>
-          {% if cap.links.size > 0 %}<p class="capability-links">{% for l in cap.links %}<a class="text-link" href="{{ l.url }}">{{ l.label }}{{ arr }}</a>{% endfor %}</p>{% endif %}
         </div>
         <ul class="proofs" role="list">
           {% for proof in cap.proofs %}<li>{{ proof }}</li>{% endfor %}
         </ul>
+        {% if cap.proof %}{% include proof.html p=cap.proof %}{% endif %}
       </article>
       {% endfor %}
     </div>

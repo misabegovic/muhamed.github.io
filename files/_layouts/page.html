@@ -3,7 +3,9 @@ layout: default
 ---
 <article class="wrap page">
   <header class="page-head">
-    <h1 class="page-title">{{ page.title }}</h1>
+    {%- comment -%} The page's title, with the hand-drawn stroke under the words named in title_mark (owner, 2026-11-22). {%- endcomment -%}
+    {% assign ptitle = page.heading | default: page.title %}{% capture pmark %}<mark>{{ page.title_mark }}</mark>{% endcapture %}
+    <h1 class="page-title">{% if page.title_mark %}{{ ptitle | replace_first: page.title_mark, pmark }}{% else %}{{ ptitle }}{% endif %}</h1>
     {% if page.intro %}<p class="page-intro">{{ page.intro }}</p>{% endif %}
   </header>
   <div class="prose">

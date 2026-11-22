@@ -9,11 +9,11 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden><span class="menu-toggle-label">Menu</span></button>
     <div class="top-menu" id="site-menu">
       <nav class="menu" aria-label="Main">
-        <a href="{{ site.baseurl }}/services/"{% if section == "services" %} aria-current="{% if here == "services" %}page{% else %}true{% endif %}"{% endif %}>Services{{ arr }}</a>
-        <a href="{{ site.baseurl }}/work/"{% if section == "work" %} aria-current="{% if here == "work" %}page{% else %}true{% endif %}"{% endif %}>Work{{ arr }}</a>
-        <a href="{{ site.baseurl }}/writing/"{% if section == "writing" %} aria-current="{% if here == "writing" %}page{% else %}true{% endif %}"{% endif %}>Writing{{ arr }}</a>
-        <a href="{{ site.baseurl }}/about/"{% if section == "about" %} aria-current="{% if here == "about" %}page{% else %}true{% endif %}"{% endif %}>About{{ arr }}</a>
-        <a href="{{ site.baseurl }}/cv/"{% if section == "cv" %} aria-current="{% if here == "cv" %}page{% else %}true{% endif %}"{% endif %}>CV{{ arr }}</a>
+        <a href="{{ site.baseurl }}/services/"{% if section == "services" %} aria-current="{% if here == "services" %}page{% else %}true{% endif %}"{% endif %}><span>Services</span>{{ arr }}</a>
+        <a href="{{ site.baseurl }}/work/"{% if section == "work" %} aria-current="{% if here == "work" %}page{% else %}true{% endif %}"{% endif %}><span>Work</span>{{ arr }}</a>
+        <a href="{{ site.baseurl }}/writing/"{% if section == "writing" %} aria-current="{% if here == "writing" %}page{% else %}true{% endif %}"{% endif %}><span>Writing</span>{{ arr }}</a>
+        <a href="{{ site.baseurl }}/about/"{% if section == "about" %} aria-current="{% if here == "about" %}page{% else %}true{% endif %}"{% endif %}><span>About</span>{{ arr }}</a>
+        <a href="{{ site.baseurl }}/cv/"{% if section == "cv" %} aria-current="{% if here == "cv" %}page{% else %}true{% endif %}"{% endif %}><span>CV</span>{{ arr }}</a>
       </nav>
       {%- comment -%} Colour theme: follow the system, or light, or dark (owner, 2026-11-22). Shown only with scripts; site.js wires it. {%- endcomment %}
       <div class="theme" role="group" aria-label="Colour theme">

@@ -7,7 +7,7 @@ switch between them:
 
 Writes, from the master named on the command line (default: amber):
   files/images/profile.jpg               full size: CV PDF, share images, JSON-LD
-  files/images/profile-{480,800,1200}.webp  the pages' srcset
+  files/images/profile-{480,800,1200,1600}.webp  the pages' srcset
   files/favicon.ico, files/images/favicon-32x32.png, icon-512.png, apple-touch-icon.png
 and, from both masters, the brand kit's downloads (files/brand/):
   muhamed-isabegovic-<photo>-{1080,400}.jpg  and  -avatar.png (800 px, round, transparent)
@@ -47,7 +47,7 @@ def site_images(photo):
     # A byte copy: re-encoding the JPEG would only lose detail.
     shutil.copyfile(BRAND / f"muhamed-isabegovic-{photo}.jpg", SITE / "images/profile.jpg")
     im = master(photo)
-    for w in (480, 800, 1200):
+    for w in (480, 800, 1200, 1600):
         im.resize((w, w), Image.LANCZOS).save(SITE / f"images/profile-{w}.webp", quality=82, method=6)
     face = im.crop(FACE)
     round_(face, 512).save(SITE / "images/icon-512.png", optimize=True)

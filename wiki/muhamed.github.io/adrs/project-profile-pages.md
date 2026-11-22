@@ -21,6 +21,10 @@ sources:
   - files/_projects/pi-brain.md
   - files/_projects/tended.md
   - files/_includes/home-page.html
+  - files/_includes/project-cards.html
+  - files/_includes/tool-family.html
+  - files/projects.html
+  - files/_projects/usput.md
 created: 2026-10-22
 updated: 2026-11-22
 author: pi-brain-agent
@@ -334,6 +338,28 @@ pages, the AI-native offer and llms.txt follow. Not done: the
 knowledge-bases video still counts six tools with pi-brain among them,
 since its source is in another project.
 
+**2026-11-22, ninth amendment: the tools as a family on the projects page,
+and one project leading the rest.** Part of the homepage decision's
+[thirty-ninth change](professional-homepage-with-brain-and-writing.md), from
+the owner's pick of one mockup ("A"). On `/projects/` and `/work/` the seven
+equal tool cards are gone. The tools are the family diagram the homepage
+uses, empty-shell as a box with enola, tabula and taha inside it and
+enola-guides under it as the method, and the two earlier tools, tended and
+pi-brain, are plain rows under an "Earlier tools" label (source:
+files/_includes/project-cards.html, files/_includes/tool-family.html). The
+rows are the tools marked `home: false` in `home.yml`, so the eighth
+amendment's flag now also decides what is listed as earlier. What this gives
+up: the tools' poster thumbnails are no longer on these two pages; they stay
+on each tool's own page and in its share card.
+
+Among the things made for fun, the first, Usput.ba, leads from 961 px with a
+large picture and its text beside it, and the other four share one row with
+their text cut to four lines; below that width they are the cards and the
+phone rows they were (source: files/assets/site.css). A profile may name the
+width of its largest thumbnail (`thumb_max`), since Usput.ba's stops at
+1440 px (source: files/_projects/usput.md). The knowledge-bases card at the
+top is unchanged. The projects page is 4,303 px tall at 1440 px, from 5,488.
+
 ## Approval
 
 Approved by the owner in session on 2026-10-22 ("Approved."), with the
@@ -342,6 +368,9 @@ goes live ("No need for them to review"); the Usput.ba screens and the promo
 cut left to the agent ("You choose. Make it nice."); and the homepage tool
 rows link to the profiles, with the repository links on each profile ("3.
 Yes"). Drafted in `ai-suggestions/adrs/` and graduated on approval.
+
+The ninth amendment was chosen by the owner in session on 2026-11-22 from a
+mockup of the projects page ("A"), both of its parts.
 
 ## Related
 

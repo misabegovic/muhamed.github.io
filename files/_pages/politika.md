@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Politika
+title_mark: Politika
 permalink: /politika/
 description: Public-record election projects, including Izbori 2026, a plain-language voter guide and seat projection for the 2026 general election in Bosnia and Herzegovina.
 ---

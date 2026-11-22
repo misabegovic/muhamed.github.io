@@ -21,12 +21,15 @@ description: Hands-on product engineering, a technical lead for your team, archi
 
 <div class="wrap page">
   <header class="page-head">
-    <h1 class="page-title">Services</h1>
+    <h1 class="page-title"><mark>Services</mark></h1>
     <p class="page-intro">{{ sv.intro }}</p>
-    <nav class="offer-nav" aria-label="Services on this page">
-      {% for s in h.services %}<a href="#{{ s.name | downcase }}">{{ s.name }}</a>{% endfor %}
-    </nav>
   </header>
+
+  {%- comment -%} All five at a glance, before the detail: name, when it fits, format (owner, 2026-11-22; a row of names until then). {%- endcomment -%}
+  <nav class="glance" aria-label="Services on this page">
+    {% for s in h.services %}<a href="#{{ s.name | downcase }}"><strong>{{ s.name }}</strong><span>{{ s.fits }}</span><em>{{ s.format }}</em>{{ arr }}</a>
+    {% endfor %}
+  </nav>
 
   <div class="offers">
     {% for s in h.services %}{% assign d = sv.details[s.name] %}

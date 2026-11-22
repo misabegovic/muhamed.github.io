@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Get in touch
+title_mark: touch
 permalink: /contact/
 intro: Email is the best way to reach me. Pick what fits and your mail app opens a short draft; a few lines is plenty to start.
 description: How to reach Muhamed Isabegovic about building something with your team, your Rails app, an architecture review, or a talk at your event.

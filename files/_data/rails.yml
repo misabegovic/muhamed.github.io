@@ -8,6 +8,8 @@ kicker: Ruby on Rails consulting
 # Widened from "For Rails apps that outgrew their first design." when the
 # menu came to span the whole lifecycle (owner, 2026-10-26).
 title: Rails apps, from the first release to the tenth year.
+# The words of the title under the hand-drawn stroke, on /rails/ (owner, 2026-11-22: one stroke a page title).
+title_mark: tenth year
 # evidence: role-experfy (joined 2016), role-teamtailor-employer, proj-usput-web
 # No customer counts for clients (owner, 2026-10-26: not too much bragging).
 lead: >-
@@ -102,7 +104,6 @@ quote:
     leading the technical direction and shaping the code, and his decisions
     held up as the project grew. … I recommend him to any team that needs a
     Rails engineer who can lead.
-  short: I recommend him to any team that needs a Rails engineer who can lead.
 
 closing:
   title: Tell me about your Rails app.

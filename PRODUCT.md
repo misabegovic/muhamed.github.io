@@ -45,7 +45,8 @@ help, with the hand-drawn yellow stroke under "Muhamed" that the site and
 every generated image use (under the word in both schemes since 2026-11-22). The hero's text is plain and his own. Its first
 sentence is set apart in ink: "I make software for a living." (Tuzla and
 Vienna, tried there first, are on the About page.) The rest sits under it,
-smaller:
+smaller, since 2026-11-22 as three rows, one sentence each, with links to
+Work, Tools and Conferences:
 "For ten years that has meant everything from deciding what to build to
 running it in production, anywhere in the stack, and leading teams along the
 way. These days I also work one layer up, with agents writing the code, and
@@ -96,6 +97,12 @@ organiser, and works in public.
   the menu offers System, Light and Dark (owner, 2026-11-22; no switch the
   day before). Posts and notes read in one centred column; a link in
   running text has a thin grey line on a yellow stroke (owner, 2026-11-22).
+  Pages were recomposed with the look kept (owner, 2026-11-22): the portrait
+  runs to the edge of the first screen on a wide screen, the tools are drawn
+  as a family, the community band carries a photo from RubyConf Austria
+  2026 (credited to Alessandro Bruckheimer), the Brain is a stream by month,
+  and the hand-drawn stroke sits under one word of every page title and
+  marks the current page in the menu.
 - The repository is also a pi-brain knowledge base (`wiki/`, `sources/`,
   `log/`), and its `AGENTS.md` requires an approved ADR before structural
   changes (`wiki/muhamed.github.io/constraints/adr-before-structural-changes.md`).
