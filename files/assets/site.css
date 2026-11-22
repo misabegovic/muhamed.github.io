@@ -354,7 +354,7 @@ mark {
 .feature-more-2 { margin-top: 0.75rem; }
 .rows { border-top: 3px solid var(--ink); }
 .row { display: grid; grid-template-columns: minmax(11.5rem, 0.8fr) minmax(0, 2fr); gap: 0.25rem 2rem; padding-block: 1.6rem; border-bottom: 1px solid var(--line-soft); }
-.row-name { grid-row: span 3; font-size: var(--t-card); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.row-name { grid-row: span 2; font-size: var(--t-card); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
 .row-name a { white-space: nowrap; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.18em; }
 .row-name a:hover { text-decoration-color: var(--ink); }
 .row-meta { font-weight: 650; }
@@ -853,13 +853,20 @@ mark {
 @media (max-width: 700px) {
   /* The longest contact button stays on one line. */
   .contact-option .button { font-size: 1rem; }
-  /* Phones: a tool is its name, its role and one line; the rest is on its page. */
-  .row-text { display: none; }
   .row { padding-block: 1.25rem; }
   .hero-grid,
   .services,
   .closing-grid { grid-template-columns: 1fr; }
-  .portrait { max-width: 26rem; margin-left: 1.5rem; }
+  /* Phones: the portrait is a small round photo beside the greeting, so the
+     face is on the first screen (owner, 2026-11-22). The copy's children
+     join the grid; everything but the greeting spans both columns. */
+  .hero-grid { grid-template-columns: minmax(0, 1fr) auto; gap: 0 1rem; align-items: center; }
+  .hero-copy { display: contents; }
+  .hero-copy > * { grid-column: 1 / -1; }
+  .hero-copy > .hero-title { grid-column: 1; grid-row: 1; }
+  .portrait { grid-column: 2; grid-row: 1; }
+  .portrait img { width: 4.5rem; height: 4.5rem; aspect-ratio: 1; border-radius: 50%; object-position: 50% 28%; }
+  .portrait figcaption { display: none; }
 }
 
 @media (max-width: 960px) {
