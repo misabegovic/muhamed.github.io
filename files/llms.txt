@@ -42,7 +42,7 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 
 - [Home]({{ site.url }}/): who he is, what he offers, and how to get in touch
 - [Services]({{ site.url }}/services/): where teams usually start working with him (not a closed list), and how an engagement runs
-- [Rails consulting]({{ site.url }}/rails/): Ruby on Rails consulting for apps old and new: maintenance and upgrades, refactoring and rewrites, performance, CI/CD and continuous delivery with trunk-based development and feature flags, team processes, new features from idea to production, and AI features; as a call, a day in the code, or a few hours a month
+- [Rails consulting]({{ site.url }}/rails/): Ruby on Rails consulting for apps old and new: maintenance and upgrades, refactoring and rewrites, performance, CI/CD and continuous delivery with trunk-based development and feature flags, team processes, new features from idea to production, AI features, AI quality (evals and observability) and AI-native delivery; as a call, a day in the code, or a few hours a month
 - [Projects]({{ site.url }}/projects/): the tools he builds and teaches, and the things he makes for fun; profiles with real output and screenshots:{% for p in site.projects %} [{{ p.title }}]({{ site.url }}{{ p.url }}){% unless forloop.last %},{% endunless %}{% endfor %}
 - [Work]({{ site.url }}/work/): what he does and how he knows, grouped by problem, plus side projects
 - [About]({{ site.url }}/about/): who he is: work, the conferences he organises in Bosnia and Austria, open source, and life outside work
@@ -70,13 +70,14 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, a frac
 
 ## Tools he builds, and open source
 
-His main tools are enola, tabula and taha.
+His main tools are a family built to work together, empty-shell: enola, tabula and taha.
 
+- empty-shell ({{ site.url }}/projects/empty-shell/): coming soon: a starting repository for a project run with a coding agent, holding the rules the agent works by, the hooks and checks that hold them and an empty wiki, with three tools inside, set up to work together: enola reads the code into one architecture graph, tabula holds the pages and judges the work, and taha runs the agent inside a mandate (in private development, open source soon)
 - [enola](https://github.com/enola-labs/enola): architectural regression testing for AI-assisted development (core contributor; contributions include the constraints program, the fact-provider seam, the blame/diff history store, declared intent, Ember support, the Rails extraction work, and the Ruby DSL for laws)
-- tabula ({{ site.url }}/projects/tabula/): one of his main tools, coming soon: understand a system you inherited, write down what it should become, and hold every agent to it; a single Rust tool keeping a project's memory, decisions and contract as plain files, with architecture drawn on a canvas and compiled into enola constraints (in private development)
-- taha ({{ site.url }}/projects/taha/): the tabula harness, one of his main tools, coming soon: runs a coding agent durably inside a mandate on pi and Pi Durable, with tabula as the judge (in private development)
-- [pi-brain](https://github.com/misabegovic/pi-brain): a cloneable, agent-maintained knowledge base; this site runs on a clone of it
-- [tended](https://github.com/misabegovic/tended): a spec-driven engineering knowledge base that people and agents work from; where pi-brain started
+- tabula ({{ site.url }}/projects/tabula/): part of the empty-shell family, coming soon: understand a system you inherited, write down what it should become, and hold every agent to it; a single Rust tool keeping a project's memory, decisions and contract as plain files, with architecture drawn on a canvas and compiled into enola constraints (in private development)
+- taha ({{ site.url }}/projects/taha/): the tabula harness, part of the empty-shell family, coming soon: runs a coding agent durably inside a mandate on pi and Pi Durable, with tabula as the judge (in private development)
+- [tended](https://github.com/misabegovic/tended): an earlier tool, a spec-driven engineering knowledge base that people and agents work from; where pi-brain started; his newer projects start from empty-shell
+- [pi-brain](https://github.com/misabegovic/pi-brain): an earlier tool, a cloneable, agent-maintained knowledge base for the pi coding agent; this site runs on a clone of it, and his newer projects start from empty-shell
 - [enola](https://rubygems.org/gems/enola): pure-Ruby wrapper gem for the enola architecture intelligence binary (maintainer)
 - [enola-rb](https://rubygems.org/gems/enola-rb): the Rails layer for enola (maintainer)
 - [enola-guides](https://github.com/misabegovic/enola-guides): the content layer for enola, guides for Rails, Ember, Python, TypeScript, Go and Rust and a law catalogue, one command on RubyGems, npm, PyPI, crates.io, Go and Homebrew (maintainer)
