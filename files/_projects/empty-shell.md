@@ -6,7 +6,9 @@
 # family is and does, in prose, with no file contents and no command output
 # until it is public. No client, employer or third-party names, no commercial
 # plans and no release date (none is stated). "How I start a project now" and
-# "open source soon" are on the owner's word (2026-11-22).
+# "open source soon" are on the owner's word (2026-11-22). The engine is
+# called enola here, with its author named, and never by the name of the
+# owner's build, to credit the project (owner, 2026-11-22).
 title: empty-shell
 home_key: empty-shell
 # When this page was first published; without it, every build re-dates it.
@@ -21,21 +23,21 @@ coming_soon:
     label: Ask about early access
     subject: empty-shell, early access
     body: "What we are building:\nHow we work with agents today:\n"
-description: empty-shell, Muhamed Isabegovic's family of tools for running a project with coding agents, is a starting repository with the rules, the checks and an empty wiki, and cardo, tabula and taha inside, built to work together. Coming soon.
+description: empty-shell, Muhamed Isabegovic's family of tools for running a project with coding agents, is a starting repository with the rules, the checks and an empty wiki, and enola, tabula and taha inside, built to work together. Coming soon.
 image: /images/social/project-empty-shell.png
 thumb: /images/projects/empty-shell/thumb
-lead: "One repository to start a project with an agent: the rules, the checks and an empty wiki, with cardo, tabula and taha inside, built to work as one."
+lead: "One repository to start a project with an agent: the rules, the checks and an empty wiki, with enola, tabula and taha inside, built to work as one."
 cta: { label: Ask about early access, url: "#p-soon" }
 links:
   - { label: tabula, url: "/projects/tabula/", note: "holds the pages, the checks and the judge; coming soon too" }
   - { label: taha, url: "/projects/taha/", note: "runs an agent inside a mandate; coming soon too" }
-  - { label: enola, url: "/projects/enola/", note: "the open-source project cardo is a build of" }
+  - { label: enola, url: "/projects/enola/", note: "the open-source engine of the family, which I help build" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice the family carries" }
   - { label: pi-brain, url: "/projects/pi-brain/", note: "the earlier tool, for the pi coding agent; public today" }
 facts:
   - { label: Role, value: Author }
   - { label: What, value: "A starting repository for a project run with an agent, with three tools inside" }
-  - { label: The family, value: "cardo (my build of enola), tabula and taha" }
+  - { label: The family, value: "enola, the open-source engine, with tabula and taha" }
   - { label: For, value: "A person or a team that lets agents do the work and wants to stay in charge of what is decided" }
   - { label: Status, value: "In private development, open source soon" }
 hero:
@@ -55,9 +57,9 @@ features:
   - title: The shell.
     text: |
       A repository you make your own: the rules an agent works by, the skills and commands it uses, the hooks and checks that hold those rules, and an empty wiki. You name your project and its repositories, and start working.
-  - title: cardo sees the code.
+  - title: enola sees the code.
     text: |
-      cardo is my build of [enola](/projects/enola/), the open-source architecture graph I help build. It reads every repository of a project into one graph, with no model in the loop, so "what breaks if this changes" has an exact answer and a team's laws are graded on every change. Before a change becomes the build I use, it is measured against upstream enola on a corpus of 90 repositories, and every difference has to carry a reason.
+      [enola](/projects/enola/) is the open-source architecture graph by Dejan Menges, which I help build. It reads every repository of a project into one graph, with no model in the loop, so "what breaks if this changes" has an exact answer and a team's laws are graded on every change. The shell carries my own build of it: before a change goes into that build, it is measured against upstream enola on a corpus of 90 repositories, and every difference has to carry a reason.
   - title: tabula holds the intent.
     text: |
       [tabula](/projects/tabula/) keeps the pages: what the system is, what it should become, and which decision governs which file. It validates and indexes them, runs the checks, and judges finished work against what was asked, without asking the agent that did it.
@@ -66,7 +68,7 @@ features:
       [taha](/projects/taha/) runs a coding agent on a piece of work inside a mandate: which repositories, which acts, what budget, until when. A killed run resumes without repeating anything, and every outward act is journaled before it runs.
   - title: Each does one job.
     text: |
-      Dependencies point one way. taha uses tabula, and tabula never knows taha. cardo is the engine under both: when tabula needs something the engine lacks, it is built into cardo, never worked around.
+      Dependencies point one way. taha uses tabula, and tabula never knows taha. enola is the engine under both: when tabula needs something the engine lacks, it is built into the engine, never worked around.
 plan_title: What the shell holds.
 plan_intro: "Theme by theme. Working today means built and in use on my own projects, though not yet released."
 plan:
@@ -93,7 +95,7 @@ plan:
   - title: Checks that run where the work is.
     status: built
     text: |
-      One gate on my own machine validates every page, checks that every cited source and link is there, grades the architecture laws through cardo, and reads again the plans a change touched. Nothing is promoted past a failing gate.
+      One gate on my own machine validates every page, checks that every cited source and link is there, grades the architecture laws through enola, and reads again the plans a change touched. Nothing is promoted past a failing gate.
   - title: An empty wiki with a shape.
     status: built
     text: |

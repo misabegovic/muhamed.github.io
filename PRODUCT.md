@@ -71,9 +71,9 @@ service; the conferences stay as proof.
 
 What a neighbouring consultant or candidate could not truthfully copy: he
 builds and ships the tooling that keeps agent-written software under control
-(the empty-shell family in private development: cardo, tabula and taha;
-the enola constraints program and four gems; tended and pi-brain; three MCP
-servers), has led engineering teams in
+(the empty-shell family: tabula and taha in private development, on
+enola, with the enola constraints program and four gems; tended and
+pi-brain; three MCP servers), has led engineering teams in
 production, stands in the European Ruby community as a conference founder and
 organiser, and works in public.
 
@@ -129,9 +129,11 @@ organiser, and works in public.
   and four Ruby gems for it; tabula (Rust) and taha, its harness, both in
   private development. Since 2026-11-22 (owner) the site presents them as a
   family, empty-shell: a starting repository for a project run with an
-  agent, which ships cardo (his build of enola), tabula and taha together,
-  in private development and to be made open source soon. Its page is
-  product-level only until then. pi-brain (published on npm, ten releases)
+  agent, which ships enola, tabula and taha together, in private
+  development and to be made open source soon. Its page is product-level
+  only until then. The engine is called enola in public, never by the name
+  of his own build of it, to credit the project and its author (owner,
+  2026-11-22). pi-brain (published on npm, ten releases)
   stays on the site as the earlier tool, off the homepage. Also tended, and
   three MCP servers in Go, Rails and plain Ruby.
 - **Teams led in production:** tech lead for the engineering team at Recrubo

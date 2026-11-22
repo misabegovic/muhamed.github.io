@@ -248,8 +248,8 @@ sections:
     title: What people I have worked with say.
   tools:
     title: I build the guardrails I teach.
-    # Three of the six rows are open today; the empty-shell family opens soon (owner, 2026-11-22).
-    intro: The tools behind my workshops are ones I build or help build. enola, enola-guides and tended are open source today, and the empty-shell family opens soon.
+    # Three of the six rows are open today; the rest open soon (owner, 2026-11-22).
+    intro: The tools behind my workshops are ones I build or help build. enola, enola-guides and tended are open source today, and empty-shell, tabula and taha open soon.
   side:
     title: Stuff I've made, mostly for fun.
   work_page:
@@ -327,9 +327,10 @@ capabilities:
       - Led a startup's engineering team through its acquisition, leading by building.
 
 open_source:
-  # The family first (owner, 2026-11-22): empty-shell, then its parts tabula
-  # and taha (cardo, its engine, is the owner's build of enola and has no
-  # page of its own), then enola, the open-source project he contributes to.
+  # The family first (owner, 2026-11-22): empty-shell, then its parts enola,
+  # tabula and taha, in the order of 2026-10-22. The engine is called enola
+  # in public, never by the name of the owner's build, to credit the project
+  # (owner, 2026-11-22).
   # evidence: not yet in the evidence store; the owner's private empty-shell
   # repository (README, rules, rule register), 2026-11-22. Product-level only.
   - name: empty-shell
@@ -337,14 +338,25 @@ open_source:
     url: ""
     profile: /projects/empty-shell/
     thumb: /images/projects/empty-shell/thumb
-    outcome: Starts a project with an agent from one repository, with the rules, the checks, and cardo, tabula and taha set up to work together.
+    outcome: Starts a project with an agent from one repository, with the rules, the checks, and enola, tabula and taha set up to work together.
     text: >-
       A starting repository for a project run with an agent: the rules it
       works by, the hooks and checks that hold them, and an empty wiki for
       what the project learns and decides. Three tools ship inside it, built
-      to work together: cardo, my build of enola, reads the code into one
-      architecture graph; tabula holds the pages and judges the work; taha
-      runs the agent inside a mandate.
+      to work together: enola reads the code into one architecture graph;
+      tabula holds the pages and judges the work; taha runs the agent inside
+      a mandate.
+  - name: enola
+    role: Core contributor
+    url: https://github.com/enola-labs/enola
+    profile: /projects/enola/
+    outcome: Catches architecture drift in CI, so agent-written code keeps to the rules your team agreed on.
+    # evidence: oss-enola-constraints
+    text: >-
+      Architectural regression testing for AI-assisted development. I built the
+      constraints program: architectural laws declared over the code graph,
+      checked deterministically in CI, with a Ruby DSL, and the gems that bring
+      it to Rails teams, enola-guides among them.
   # evidence: not yet in the evidence store; intent in the owner's private
   # brain (wiki/tabula), refreshed 2026-10-22.
   - name: tabula
@@ -373,17 +385,6 @@ open_source:
       every outward act is journaled first, pull requests stay drafts unless
       you grant a merge on your own private repository, and the agent's shell
       holds no credentials.
-  - name: enola
-    role: Core contributor
-    url: https://github.com/enola-labs/enola
-    profile: /projects/enola/
-    outcome: Catches architecture drift in CI, so agent-written code keeps to the rules your team agreed on.
-    # evidence: oss-enola-constraints
-    text: >-
-      Architectural regression testing for AI-assisted development. I built the
-      constraints program: architectural laws declared over the code graph,
-      checked deterministically in CI, with a Ruby DSL, and the gems that bring
-      it to Rails teams, enola-guides among them.
   # evidence: oss-enola-gems; misabegovic/enola-guides README and CHANGELOG (0.9.0); rubygems.org, npm, PyPI, crates.io
   - name: enola-guides
     role: Author and maintainer
