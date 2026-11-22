@@ -37,6 +37,30 @@
       button.copyTimer = setTimeout(() => { label.textContent = idle; button.classList.remove("is-copied"); status.textContent = ""; }, 2500);
     });
   });
+  // Colour theme: System follows the device; Light and Dark are remembered on
+  // this device. The head's inline script has already set the scheme for
+  // this page view; this wires the control and keeps the scheme current.
+  const root = document.documentElement;
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const stored = () => { try { return localStorage.getItem("theme"); } catch (e) { return null; } };
+  const applyTheme = (choice) => {
+    const forced = choice === "light" || choice === "dark";
+    if (forced) root.dataset.theme = choice; else delete root.dataset.theme;
+    const dark = forced ? choice === "dark" : systemDark.matches;
+    root.dataset.scheme = dark ? "dark" : "light";
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = dark ? "#141414" : "#ffffff";
+    document.querySelectorAll("[data-theme-set]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.themeSet === (forced ? choice : "system"))));
+  };
+  document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
+    const choice = b.dataset.themeSet;
+    try { if (choice === "system") localStorage.removeItem("theme"); else localStorage.setItem("theme", choice); } catch (e) {}
+    applyTheme(choice);
+  }));
+  systemDark.addEventListener("change", () => applyTheme(stored()));
+  window.addEventListener("storage", (e) => { if (e.key === "theme") applyTheme(e.newValue); });
+  applyTheme(stored());
+
   const panel = document.getElementById("site-menu");
   if (!top || !toggle || !panel) return;
 
@@ -58,7 +82,7 @@
   panel.addEventListener("click", (e) => { if (e.target.closest("a")) setOpen(false, false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && isOpen()) setOpen(false, true); });
   document.addEventListener("click", (e) => { if (isOpen() && !top.contains(e.target)) setOpen(false, false); });
-  window.matchMedia("(max-width: 860px)").addEventListener("change", () => { if (isOpen()) setOpen(false, false); });
+  window.matchMedia("(max-width: 960px)").addEventListener("change", () => { if (isOpen()) setOpen(false, false); });
   // Tabbing out of the open menu closes it, so focus is never on the page hidden behind it.
   top.addEventListener("focusout", (e) => { if (isOpen() && e.relatedTarget && !top.contains(e.relatedTarget)) setOpen(false, false); });
 

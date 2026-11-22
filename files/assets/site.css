@@ -62,7 +62,7 @@
 *::after { box-sizing: border-box; }
 
 html {
-  color-scheme: light dark;
+  color-scheme: light;
   background: var(--paper);
   scrollbar-color: var(--ink-3) var(--paper);
   -webkit-text-size-adjust: 100%;
@@ -155,6 +155,9 @@ a:hover .arr { transform: translateX(3px); }
 .menu { display: flex; gap: 1.75rem; font-weight: 500; font-size: 1.0625rem; }
 .menu a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
 .menu .arr { display: none; }
+.wordmark, .top-menu .button { white-space: nowrap; }
+/* Just above the Menu button's range the header is full: tighter gaps. */
+@media (min-width: 961px) and (max-width: 1120px) { .top-row, .top-menu { gap: 1.25rem; } .menu { gap: 1.25rem; } }
 .menu-toggle {
   display: none;
   align-items: center;
@@ -194,6 +197,20 @@ a:hover .arr { transform: translateX(3px); }
 .menu a:hover,
 .menu a[aria-current] { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.35em; }
 .button[aria-current="page"] { background: var(--ink); color: var(--accent-on-ink); }
+
+/* Colour theme: System, Light, Dark. Icons only in the header; with their
+   words in the phone menu. Needs the script, so it shows only with it. The
+   chosen one is marked from the root's attributes, so it is right from the
+   first paint, before site.js runs. */
+.theme { display: none; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
+.js .theme { display: inline-flex; }
+.theme button { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; width: 2.25rem; height: 2.125rem; padding: 0; border: 0; border-radius: 999px; background: none; color: var(--ink-2); font: inherit; font-size: 1rem; font-weight: 650; cursor: pointer; transition: background-color 0.15s ease-out, color 0.15s ease-out; }
+.theme svg { width: 1.125rem; height: 1.125rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.theme span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.theme button:hover { color: var(--ink); background: var(--tint); }
+:root:not([data-theme]) .theme [data-theme-set="system"],
+:root[data-theme="light"] .theme [data-theme-set="light"],
+:root[data-theme="dark"] .theme [data-theme-set="dark"] { background: var(--ink); color: var(--paper); }
 
 .skip { position: absolute; left: 1rem; top: -4rem; z-index: 30; padding: 0.6rem 1rem; background: var(--ink); color: var(--paper); border-radius: var(--radius); }
 .skip:focus { top: 1rem; }
@@ -894,7 +911,7 @@ mark {
 /* Narrow header: the name and a Menu button on one row; the menu opens as a
    panel of full-width rows under it. Without the script, the links wrap
    under the name instead. */
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .top-row { flex-wrap: wrap; gap: 0 1rem; min-height: 3.75rem; }
   /* The name sets the first line's height, so the row does not shift up
      when the open menu wraps in under it. */
@@ -914,6 +931,10 @@ mark {
   .js .top.is-open .menu a { justify-content: space-between; min-height: 3.5rem; border-bottom: 1px solid var(--line); }
   .js .top.is-open .menu .arr { display: block; }
   .js .top.is-open .top-menu .button { justify-content: center; padding-block: 1.05rem; font-size: 1rem; }
+  /* In the open menu the theme control is a full row, with its words. */
+  .js .top.is-open .theme { display: flex; }
+  .js .top.is-open .theme button { flex: 1; width: auto; height: auto; min-height: 44px; }
+  .js .top.is-open .theme span { position: static; width: auto; height: auto; overflow: visible; clip-path: none; }
   .js .top.is-open { border-bottom: 3px solid var(--ink); }
   /* Lock the page on the root only: overflow on body as well would make body
      the scroll container and unstick the header. */
@@ -959,6 +980,7 @@ mark {
   html { scroll-behavior: auto; }
   .arr,
   .button,
+  .theme button,
   .top { transition: none; }
 }
 
@@ -1347,11 +1369,15 @@ a:hover .arr-down { transform: translateY(2px); }
   .brand-swatch { height: 4rem; }
 }
 
-/* Dark scheme. The site follows the visitor's system setting; there is no
-   switch. Nearly everything is the tokens redefined. The rules after them are
-   the places a swap alone gets wrong. */
-@media screen and (prefers-color-scheme: dark) {
-  :root {
+/* Dark scheme. The site starts in the visitor's system setting, and the
+   control in the menu lets them pick System, Light or Dark (owner,
+   2026-11-22; it followed the system only before). The script in the head
+   sets data-scheme on the root before the first paint, so these rules key off
+   that attribute; without scripts the site is light. Screen only: a printed
+   page is always light. Nearly all of it is the tokens. */
+@media screen {
+  :root[data-scheme="dark"] {
+    color-scheme: dark;
     --paper: #141414;
     --tint: #1e1e1c;
     --ink: #f2f2f0;
@@ -1365,14 +1391,14 @@ a:hover .arr-down { transform: translateY(2px); }
 
   /* The highlighter: light letters cannot sit on yellow, so the same
      hand-drawn stroke is drawn under the word (owner, 2026-11-21). */
-  mark { background-size: 100% 0.3em; background-position: 0 96%; padding-bottom: 0.12em; }
+  :where([data-scheme="dark"]) mark { background-size: 100% 0.3em; background-position: 0 96%; padding-bottom: 0.12em; }
 
   /* Surfaces that keep their light-scheme colours: the yellow closing band,
      and the minesweeper's bar and board, whose number colours are made for
      white cells. */
-  .closing,
-  .mines-bar,
-  .mines-board {
+  :where([data-scheme="dark"]) .closing,
+  :where([data-scheme="dark"]) .mines-bar,
+  :where([data-scheme="dark"]) .mines-board {
     --paper: #ffffff;
     --tint: #f3f3f1;
     --ink: #141414;
@@ -1381,45 +1407,45 @@ a:hover .arr-down { transform: translateY(2px); }
     --line: #e2e2de;
     --accent-on-ink: #ffd21f;
   }
-  .closing { color: var(--ink); }
+  :where([data-scheme="dark"]) .closing { color: var(--ink); }
   /* The minesweeper's red as text on the dark page; mine cells keep the darker red. */
-  .mines { --mine: #ff8a7a; }
-  .mines-board { --mine: #b42318; }
+  :where([data-scheme="dark"]) .mines { --mine: #ff8a7a; }
+  :where([data-scheme="dark"]) .mines-board { --mine: #b42318; }
 
   /* Brand icons are black on transparent. */
-  .stack-list img { filter: invert(1); }
+  :where([data-scheme="dark"]) .stack-list img { filter: invert(1); }
 
   /* Depth: shadows do not show on a dark page, so edges are drawn. The dark
      band and the footer are only a step darker than the page. */
-  .portrait figcaption { border: 1px solid var(--line); }
-  .community { border-block: 1px solid var(--line); }
-  .foot { border-top: 1px solid var(--line); }
+  :where([data-scheme="dark"]) .portrait figcaption { border: 1px solid var(--line); }
+  :where([data-scheme="dark"]) .community { border-block: 1px solid var(--line); }
+  :where([data-scheme="dark"]) .foot { border-top: 1px solid var(--line); }
 
   /* Screenshots, thumbnails and the white banners are mostly white; toned
      down a little so they do not glare. Photographs are left alone. */
-  .pm--image img,
-  .pm--video video,
-  .pm-phones img,
-  .project-card-thumb,
-  .project-hub img { filter: brightness(0.88); }
+  :where([data-scheme="dark"]) .pm--image img,
+  :where([data-scheme="dark"]) .pm--video video,
+  :where([data-scheme="dark"]) .pm-phones img,
+  :where([data-scheme="dark"]) .project-card-thumb,
+  :where([data-scheme="dark"]) .project-hub img { filter: brightness(0.88); }
   /* Code panels and dark thumbnails are almost the page's colour: an edge is drawn. */
-  .pm-code, .prose pre { border: 1px solid var(--line); }
-  .project-card-thumb { border-color: #55554f; }
+  :where([data-scheme="dark"]) .pm-code, :where([data-scheme="dark"]) .prose pre { border: 1px solid var(--line); }
+  :where([data-scheme="dark"]) .project-card-thumb { border-color: #55554f; }
 
   /* Links in running text: yellow is plain to see on the dark page, so the
      line itself is yellow and the stroke behind the letters is dropped. */
-  .page-intro a:where(:not([class])),
-  .prose a:where(:not([class])),
-  .project-text a:where(:not([class])),
-  .contact-nomail a,
-  .brand-facts a,
-  .cv-contact a,
-  .about-links a { text-decoration-color: var(--yellow); text-decoration-thickness: 2px; background: none; }
+  :where([data-scheme="dark"]) .page-intro a:where(:not([class])),
+  :where([data-scheme="dark"]) .prose a:where(:not([class])),
+  :where([data-scheme="dark"]) .project-text a:where(:not([class])),
+  :where([data-scheme="dark"]) .contact-nomail a,
+  :where([data-scheme="dark"]) .brand-facts a,
+  :where([data-scheme="dark"]) .cv-contact a,
+  :where([data-scheme="dark"]) .about-links a { text-decoration-color: var(--yellow); text-decoration-thickness: 2px; background: none; }
 
-  .index-page input[type="search"] { border-color: #55554f; }
-  .brand-swatch { border-color: rgb(255 255 255 / 0.16); }
-  .placeholder { outline-color: #55554f; background: repeating-linear-gradient(135deg, #1a1a19 0 8px, #222220 8px 16px); }
-  .quote.placeholder .avatar { background: #55554f; }
+  :where([data-scheme="dark"]) .index-page input[type="search"] { border-color: #55554f; }
+  :where([data-scheme="dark"]) .brand-swatch { border-color: rgb(255 255 255 / 0.16); }
+  :where([data-scheme="dark"]) .placeholder { outline-color: #55554f; background: repeating-linear-gradient(135deg, #1a1a19 0 8px, #222220 8px 16px); }
+  :where([data-scheme="dark"]) .quote.placeholder .avatar { background: #55554f; }
 }
 
 /* Forced colours (Windows contrast themes): the highlighted word keeps a
@@ -1429,6 +1455,7 @@ a:hover .arr-down { transform: translateY(2px); }
   .page-intro a, .prose a, .project-text a, .contact-nomail a, .brand-facts a, .cv-contact a, .about-links a { background: none; }
   /* Backgrounds are removed, so a button needs an edge to read as one. */
   .button { border: 1px solid ButtonText; }
+  .theme button[aria-pressed="true"] { outline: 2px solid ButtonText; outline-offset: -2px; }
   .proofs li::before { background: CanvasText; }
 }
 

@@ -946,6 +946,41 @@ Evals and prompt experiments are in the evidence store; observability and
 AI-native delivery are on the owner's word of 2026-11-21. The Rails page's
 description and llms.txt name the two new items.
 
+**2026-11-22, thirty-seventh change: a choice of theme in the menu.** The
+thirtieth change made the site follow the system setting, with no switch,
+the owner's choice at the time. A day later he asked for the option: "Let's
+add an option for light/dark theme in menu". From two mockups he chose three
+choices, System, Light and Dark, over one button that flips between light
+and dark, so that a visitor who has chosen can go back to following their
+device.
+
+The control sits between the menu and "Get in touch": three icons in the
+header, and a full row with the words in the phone menu, each button 44 px
+tall there (source: files/_includes/site-header.html). The site still starts
+in the visitor's system setting; Light or Dark is remembered on that device
+in `localStorage`, and System forgets it. A script in the head sets two
+attributes on the root before the first paint: `data-theme`, the visitor's
+choice when there is one, and `data-scheme`, the scheme in use, so a page
+never flashes the wrong scheme (source: files/_includes/site-head.html).
+The dark rules, which were a `prefers-color-scheme` media query, now key off
+`data-scheme`; they are otherwise the same rules, wrapped in `:where()` so
+their weight is unchanged, and still for screens only. site.js wires the
+buttons, follows the system while System is chosen, and keeps open tabs in
+step (source: files/assets/site.js, files/assets/site.css).
+
+What it costs: without scripts the site is light, where it used to follow
+the system (the alternative was a second copy of every dark rule). And the
+header holds one more thing, so the Menu button now takes over at 960 px,
+not 860, and between 961 and 1120 px the header's gaps are tighter.
+
+Checked in Chromium: in both system settings, a fresh visit follows the
+system, a choice holds on the next page from its first paint and when the
+system changes, and System returns to it; the phone menu stays open while
+choosing; a page printed while Dark is chosen is light. Below the header, 8
+page types in both schemes are pixel for pixel what the live site shows. No
+text below WCAG AA contrast in either scheme; no sideways scroll from 320 to
+1440 px.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1140,6 +1175,13 @@ cards".
 
 The thirty-sixth change was asked for and chosen by the owner in session on
 2026-11-22 ("Grow to ten").
+
+The thirty-seventh change was asked for by the owner in session on
+2026-11-22: "Let's add an option for light/dark theme in menu", then "B:
+System, Light, Dark" from two mockups. It replaces his "Follow the system
+only" of the day before. Being light without scripts, and moving the Menu
+button's breakpoint to 960 px, are the agent's calls, for the owner to
+adjust.
 
 ## Related
 
