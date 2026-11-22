@@ -195,6 +195,28 @@ pinned post ("the link builder should have new images"), then "Own card,
 layout A". Showing the note's source as its second line, and leaving it out
 when it is "Internal note", are the agent's calls, for the owner to adjust.
 
+## Seventh change: the stroke under the word (2026-11-22)
+
+The highlighter on the share card, the LinkedIn and X headers and every
+other generated image was a stroke behind the highlighted word. The site now
+draws it under the word in both colour schemes (the homepage decision's
+thirty-eighth change), and the owner chose for the images to follow, so a
+card and the page it leads to look alike. The renderer's highlighter is the
+same stroke, 0.3em tall, at the foot of the word (source:
+.github/scripts/render-social-images.js). 29 images are re-rendered: the
+share card, both headers, the Rails and GoatConf cards, the ten service
+images, the eleven project cards, and the three post and note cards whose
+short titles are highlighted (source: files/images/social/cards/post-im-rich.jpg).
+Two spacings changed with it, so the stroke does not touch the line under
+it: a service image's subtitle sits a little lower, and a highlighted title
+that runs over two lines has more room between them.
+
+The headers need uploading to LinkedIn and X again; the brand kit's zip
+picks them up on the next build. Preview images change their address with
+their content, so networks fetch the new ones.
+
+Asked for by the owner in session on 2026-11-22: "Yes, change them too".
+
 ## Related
 
 - [Record: amber portrait and brand kit](../records/amber-portrait-and-brand-kit.md)

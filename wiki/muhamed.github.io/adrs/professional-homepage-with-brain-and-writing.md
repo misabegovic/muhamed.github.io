@@ -981,6 +981,16 @@ page types in both schemes are pixel for pixel what the live site shows. No
 text below WCAG AA contrast in either scheme; no sideways scroll from 320 to
 1440 px.
 
+**2026-11-22, thirty-eighth change: the stroke under the name in both
+schemes.** Since the thirtieth change the hand-drawn highlighter sat behind
+"Muhamed" in the light scheme and under it in the dark one, where light
+letters cannot sit on yellow. The owner asked for the dark scheme's form in
+the light one too ("Let's have the underscore on the light mode as well").
+The stroke is now drawn under the word in both, from one rule, and the dark
+scheme's override is gone (source: files/assets/site.css). The generated
+images follow, his choice: that is the brand decision's
+[seventh change](amber-portrait-and-brand-kit.md).
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1182,6 +1192,11 @@ System, Light, Dark" from two mockups. It replaces his "Follow the system
 only" of the day before. Being light without scripts, and moving the Menu
 button's breakpoint to 960 px, are the agent's calls, for the owner to
 adjust.
+
+The thirty-eighth change was asked for by the owner in session on
+2026-11-22: "Let's have the underscore on the light mode as well", confirmed
+from a mockup ("Yes, under the name"), with the images to follow ("Yes,
+change them too").
 
 ## Related
 

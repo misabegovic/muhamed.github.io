@@ -39,8 +39,8 @@ const base = `
 * { box-sizing: border-box; margin: 0; }
 html, body { background: var(--paper); }
 body { font-family: "SG", sans-serif; color: var(--ink); overflow: hidden; }
-/* The site's hand-drawn highlighter (files/assets/site.css, mark). */
-mark { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E") 0 100% / 100% .84em no-repeat; color: inherit; padding: 0 .1em .08em; margin-inline: -.06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* The site's hand-drawn highlighter (files/assets/site.css, mark): a stroke under the word (owner, 2026-11-22; behind it before). */
+mark { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E") 0 96% / 100% .3em no-repeat; color: inherit; padding: 0 .1em .12em; margin-inline: -.06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .stage { position: relative; width: var(--w); height: var(--h); overflow: hidden; }
 .wordmark { font-weight: 800; letter-spacing: -.02em; }
 h1, h2 { font-weight: 800; letter-spacing: -.035em; line-height: .98; text-wrap: balance; }
@@ -71,7 +71,7 @@ function servicePost(s, w, h) {
     </div>
     <div style="align-self:center">
       <h1 style="font-size:${128 * u}px"><mark>${s.name}</mark></h1>
-      <h2 style="font-size:${48 * u}px;margin-top:${22 * u}px;max-width:${900 * u}px">${s.title}</h2>
+      <h2 style="font-size:${48 * u}px;margin-top:${36 * u}px;max-width:${900 * u}px">${s.title}</h2>
       <p class="muted" style="font-size:${24 * u}px;line-height:1.5;margin-top:${22 * u}px;max-width:${880 * u}px">${s.text}</p>
     </div>
     <div style="display:flex;justify-content:space-between;align-items:center">
@@ -177,7 +177,7 @@ function projectCard(pr, w, h) {
     <div style="padding:64px 48px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span></div>
       <div style="align-self:center">
-        <h1 style="font-size:${size}px;${n <= 20 ? 'white-space:nowrap;' : ''}"><mark>${escapeHtml(pr.title)}</mark></h1>
+        <h1 style="font-size:${size}px;${n <= 20 ? 'white-space:nowrap;' : 'line-height:1.18;'}"><mark>${escapeHtml(pr.title)}</mark></h1>
         <p class="muted" style="font-size:24px;line-height:1.45;margin-top:22px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden">${escapeHtml(pr.lead || '')}</p>
       </div>
       <div class="muted" style="font-size:22px;font-weight:500"><b style="color:var(--ink)">muhamed.at/projects/${pr.slug}</b></div>
@@ -225,7 +225,7 @@ function writingCard(it, w, h) {
     <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
       <div class="rule" style="padding-top:18px;display:flex;justify-content:space-between;align-items:baseline"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span><span class="muted" style="font-size:18px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap">${it.kicker}</span></div>
       <div style="align-self:center">
-        <h1 style="font-size:${size}px;line-height:1.02">${title}</h1>
+        <h1 style="font-size:${size}px;line-height:${n <= 20 ? 1.18 : 1.02}">${title}</h1>
         <p class="muted" style="font-size:26px;line-height:1.4;margin-top:24px;display:-webkit-box;-webkit-line-clamp:${n <= 50 ? 3 : 2};-webkit-box-orient:vertical;overflow:hidden">${typeset(it.text)}</p>
       </div>
       <div class="muted" style="font-size:22px;font-weight:500"><b style="color:var(--ink)">${url}</b></div>
