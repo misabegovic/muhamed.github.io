@@ -14,8 +14,8 @@ title: Writing
   <div class="controls">
     <label class="visually-hidden" for="search">Search the writing</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
     <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
-    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
     <p class="result-count" id="result-count" aria-live="polite"></p>
+    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
   <div class="grid" id="cards" data-noun="posts">
@@ -24,7 +24,7 @@ title: Writing
     <div class="card" data-text="{{ post.title | downcase }} {{ post.excerpt | strip_html | downcase }}" data-tags="{{ post.tags | join: ',' }}">
       <a class="card-link" href="{{ site.baseurl }}{{ post.url }}">
         <div class="card-date"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b %Y" }}</time></div>
-        <h2 class="card-title">{{ post.title }}</h2>
+        <h2 class="card-title">{{ post.title | smartify }}</h2>
         <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
       </a>
       <div class="tags">{% for tag in post.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button" aria-pressed="false">{{ tag }}</span>{% endfor %}</div>

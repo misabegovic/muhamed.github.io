@@ -32,13 +32,14 @@ layout: default
       </dl>
       {% endif %}
     </div>
-    {% if page.hero %}{% include project-media.html m=page.hero lead=true %}{% endif %}
+    {%- comment -%} A coming-soon page has only its poster, which repeats the heading above it; it stays the card thumbnail and the share image until there are real screens (owner, 2026-11-22). {%- endcomment -%}
+    {% if page.hero %}{% unless page.coming_soon %}{% include project-media.html m=page.hero lead=true %}{% endunless %}{% endif %}
   </header>
 
   {% if page.problem %}
   <section class="section section-rule" aria-labelledby="p-problem">
     <div class="wrap feature">
-      <h2 id="p-problem" class="section-title">{{ page.problem.title }}</h2>
+      <h2 id="p-problem" class="section-title">{{ page.problem.title | smartify }}</h2>
       <div class="project-text">{{ page.problem.text | markdownify }}</div>
     </div>
   </section>
@@ -56,7 +57,7 @@ layout: default
         {% for f in with_media %}
         <li class="project-feature">
           <div class="project-feature-copy">
-            <h3>{{ f.title }}</h3>
+            <h3>{{ f.title | smartify }}</h3>
             <div class="project-text">{{ f.text | markdownify }}</div>
           </div>
           {% include project-media.html m=f.media %}
@@ -68,7 +69,7 @@ layout: default
       <ul class="project-more" role="list">
         {% for f in text_only %}
         <li>
-          <h3>{{ f.title }}</h3>
+          <h3>{{ f.title | smartify }}</h3>
           <div class="project-text">{{ f.text | markdownify }}</div>
         </li>
         {% endfor %}
@@ -94,7 +95,7 @@ layout: default
         {% for t in page.plan %}
         <li>
           <p class="plan-status plan-status-{{ t.status | slugify }}">{% case t.status %}{% when "built" %}Working today{% when "in progress" %}In progress{% else %}Planned{% endcase %}</p>
-          <h3>{{ t.title }}</h3>
+          <h3>{{ t.title | smartify }}</h3>
           <div class="project-text">{{ t.text | markdownify }}</div>
         </li>
         {% endfor %}
@@ -108,7 +109,7 @@ layout: default
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="p-video" class="section-title">{{ page.video.title }}</h2>
+          <h2 id="p-video" class="section-title">{{ page.video.title | smartify }}</h2>
           {% if page.video.text %}<p class="section-intro">{{ page.video.text }}</p>{% endif %}
         </div>
       </div>
@@ -142,7 +143,7 @@ layout: default
   {% if page.shows %}
   <section class="section section-tint" aria-labelledby="p-shows">
     <div class="wrap feature">
-      <h2 id="p-shows" class="section-title">{{ page.shows.title }}</h2>
+      <h2 id="p-shows" class="section-title">{{ page.shows.title | smartify }}</h2>
       <div>
         <div class="project-text project-shows">{{ page.shows.text | markdownify }}</div>
         {% if page.shows.link %}<p class="project-shows-link"><a class="text-link" href="{{ site.baseurl }}{{ page.shows.link.url }}">{{ page.shows.link.label }}{{ arr }}</a></p>{% endif %}

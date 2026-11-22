@@ -48,6 +48,10 @@ sources:
   - files/_pages/contact.md
   - files/services.html
   - files/cv/index.html
+  - files/brain.html
+  - files/writing.md
+  - files/_layouts/project.html
+  - files/_includes/project-cards.html
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -810,6 +814,62 @@ cards; that is the brand decision's
 [sixth change](amber-portrait-and-brand-kit.md). Still open: a few images
 without width and height.
 
+**2026-11-22, thirty-third change: a second round of review.** Three fresh
+independent reviews (the pages that sell; the pages that are read and the
+project pages; consistency across the site, by measurement) were grouped for
+the owner, who took all four groups and two of three calls of taste. All in
+the stylesheet unless a file is named (source: files/assets/site.css).
+
+- *Tablets and small laptops.* Project cards sit two to a row from 641 to
+  960 px (the fluid grid gave one 706 px card per row, and a page 14,000 px
+  tall at 768). Recommendations stack below 1100 px instead of three columns
+  of 21 characters; the Rails page's cards and facts keep two columns up to
+  about 1100 px; the three conference logos stay on one line. A project
+  page's copy starts at the top beside its facts. Terminal output wraps up
+  to 960 px and shows a soft edge when there is more to scroll to. Long
+  lines in the one-column layouts are capped.
+- *Alignment and rhythm.* The two paths of the yellow closing band share
+  their rows, so their buttons line up at every width. A card's "Read more"
+  sits at its foot. The Rails page no longer has a double gap above its dark
+  band; a step list sits the same distance under its title on both pages
+  that have one; the homepage's services section starts with a rule, like
+  its neighbours (source: files/_includes/home-page.html). Paragraphs and
+  list items avoid a stranded last word where the browser supports it. An
+  opened recommendation no longer stretches its neighbours. On the dark band
+  and the footer a hovered link or button turns light, where it used to turn
+  the band's own colour and vanish. An anchor lands at one offset.
+- *Reading and indexes.* A Brain card shows its date first, as a Writing
+  card does (source: files/brain.html); a card shows four tags, and one being
+  filtered on always shows; four posts sit two by two; the count of results
+  comes before the tip (source: files/writing.md). A post's section headings
+  are a clear step above its text (32 and 25 px over 20). Titles are set
+  with typographic apostrophes (source: files/_layouts/post.html,
+  files/_layouts/stream-entry.html, files/_layouts/project.html,
+  files/_includes/project-cards.html). The CV page's section rule is above
+  its heading, as everywhere else, and its recommendations use typographic
+  quotation marks (source: files/cv/index.html). Links in running text have
+  one look: the About card's links, the CV's contact line, the project pages,
+  the contact page and the brand kit's facts now match posts.
+- *Dark scheme.* Code panels and dark thumbnails get an edge; the brand
+  kit's size note reads on a hovered pill; its banner previews are no longer
+  dimmed, since they are the files on offer.
+- *Page titles.* A page's title is a step above its section titles (56 px on
+  a wide screen, 34 on a phone, the size posts already used); it used to
+  equal them. The Rails page's title, a sentence, keeps the section size.
+- *Coming-soon project pages* no longer show their poster under the heading
+  it repeats; that is the project profiles decision's
+  [seventh amendment](project-profile-pages.md).
+
+X joins LinkedIn and GitHub in the contact page's Elsewhere row and in
+llms.txt (owner, with a screenshot; source: files/_pages/contact.md,
+files/llms.txt). Not taken: a "Show less" label on an opened recommendation.
+Found and left: Writing and Brain end without the closing band; about 38
+unused rules in the stylesheet; small differences between card types
+(padding under the rule, title sizes and weights); outlined buttons with two
+border widths. Checked in Chromium after the changes: the closing band's
+buttons 0 px apart on five pages at three widths; no text below WCAG AA
+contrast in either scheme; no sideways scroll from 320 to 1440 px.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -983,6 +1043,15 @@ The thirty-second change was asked for by the owner in session on
 2026-11-22: "let's continue iterating and finding ways to improve the
 overall design", then all four of the offered next steps: a fresh review,
 "Homepage on a phone", "Contact and Services" and "CV page and posts".
+
+The thirty-third change was chosen by the owner in session on 2026-11-22
+from the reviews' findings: "Tablets and small laptops", "Alignment and
+rhythm", "Reading and indexes" and "Dark mode polish", and of the calls of
+taste "Bigger page titles" and "Drop the repeated poster". X on the contact
+page is on his word: "When we list social media platforms, we don't mention
+X". The owner also asked whether the light scheme should use the portrait on
+the dark backdrop; mockups of both photos in both schemes were shown with a
+recommendation to keep the amber one everywhere, and no change was asked for.
 
 ## Related
 
