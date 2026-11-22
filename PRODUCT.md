@@ -61,8 +61,10 @@ things he builds, not the pitch. His edge is making companies AI-native, in how 
 build and in what they build, with open-source tools he builds and teaches.
 Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role
 at Symphony, his current engagement through his company (was Senior Product
-Engineer and Technical Lead, AI-native | AI Engineer). Five services: Build
-(hands-on product engineering), Lead (fractional or interim technical lead),
+Engineer and Technical Lead, AI-native | AI Engineer). Six services: Build
+(hands-on product engineering), Production (from proof of concept to
+production, added 2026-11-22 on the owner's word, for any proof of concept,
+with its own row on the homepage), Lead (fractional or interim technical lead),
 Review (architecture review), AI-native (make your company AI-native), and
 Rails (Ruby on Rails consulting, added 2026-10-26, for the owner to market
 himself as a Rubyist). Rails has its own page, `/rails/`, and its own band on

@@ -353,6 +353,23 @@ mark {
 /* The homepage's sections sit a step closer than other pages' (owner, 2026-11-22). */
 .home { --section: clamp(4rem, 2.5rem + 4vw, 6.5rem); }
 
+/* The offer that leads the section: its own outlined row above the grid,
+   with its title on the left and its text, proof and link on the right
+   (owner, 2026-11-22). The whole row is the link. */
+.offer-lead { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); align-items: start; gap: 1.25rem clamp(2rem, 1rem + 4vw, 5rem); margin-bottom: clamp(2.5rem, 1.5rem + 2.5vw, 3.5rem); padding: clamp(1.5rem, 1rem + 1.5vw, 2.25rem) clamp(1.5rem, 1rem + 2vw, 2.5rem); border: 3px solid var(--ink); border-radius: calc(var(--radius) * 2); text-decoration: none; }
+.offer-lead-kicker { margin-bottom: 0.6rem; font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
+.offer-lead-title { font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.08; text-wrap: balance; }
+.offer-lead:hover .offer-lead-title span { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.15em; }
+.offer-lead-text { font-size: var(--t-lead); font-weight: 500; line-height: 1.4; }
+.offer-lead-proof { position: relative; margin-top: 1rem; padding-left: 1.75rem; line-height: 1.5; color: var(--ink-2); }
+.offer-lead-proof::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--yellow); }
+.offer-lead .service-go { margin-top: 1.25rem; }
+.offer-lead:hover .service-go { text-decoration-color: var(--ink); }
+@media (max-width: 860px) {
+  .offer-lead { grid-template-columns: 1fr; padding: 1.25rem; }
+  .offer-lead-text { font-size: var(--t-body); }
+}
+
 .services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 1rem + 3vw, 3.5rem); }
 /* Wide screens: the four in one row, their lines level (owner, 2026-11-22). */
 @media (min-width: 1100px) {
@@ -1718,7 +1735,7 @@ a:hover .arr-down { transform: translateY(2px); }
   /* Backgrounds are removed, so a button needs an edge to read as one. */
   .button { border: 1px solid ButtonText; }
   .theme button[aria-pressed="true"] { outline: 2px solid ButtonText; outline-offset: -2px; }
-  .proofs li::before { background: CanvasText; }
+  .proofs li::before, .offer-lead-proof::before { background: CanvasText; }
 }
 
 /* Print: the page's own content on white, without the header, the footer,
@@ -1762,7 +1779,7 @@ a:hover .arr-down { transform: translateY(2px); }
   .cv-role h3, .cv-meta { break-after: avoid; }
   .proofs li, .quote, .cv-quote, figure, pre, blockquote, tr, .card, .project-card { break-inside: avoid; }
   a { text-decoration-color: currentColor; }
-  .proofs li::before, mark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .proofs li::before, .offer-lead-proof::before, mark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .page-intro a, .prose a, .project-text a, .contact-nomail a, .brand-facts a, .cv-contact a, .about-links a { background: none; }
   .prose pre, .prose div.highlight, .pm-code { border: 1px solid #999; }
 }

@@ -66,6 +66,7 @@ sources:
   - files/images/community/rubyconf-austria-2026-1800.webp
   - files/images/profile-1600.webp
   - .github/scripts/render-profile-images.py
+  - files/images/social/service-production-linkedin.png
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -1114,6 +1115,49 @@ moves and the page does not; pages print with the dark band as drawn. Not
 done: the generated share images are unchanged, since none shows what
 changed.
 
+**2026-11-22, fortieth change: a sixth offer, from proof of concept to
+production.** After the thirty-ninth change the owner said how else he wants
+to be found: "I'm thinking I should also market myself as someone that comes
+in when the PoC is done and makes everything production ready, AI first and
+AI native and maintainable, easy to extend reliably". Asked how prominent,
+he chose a sixth named offer over reshaping one of the five, a claim on the
+Work page only, or making it the first screen's lead. Asked what kind of
+proof of concept, he chose any, not only an AI product or a prototype
+written with AI: AI-native is how it is made ready, not what it is. The
+name, Production, is his pick of three (with Harden and Ship).
+
+The offer sits second in `home.yml`'s services, after Build: "When your
+proof of concept works and now has to run in production." (source:
+files/_data/home.yml). Its four "what you get" lines and its email draft are
+in `services.yml` (source: files/_data/services.yml). On the homepage it
+leads the services section in its own outlined row above the four cards,
+his pick over a fifth card in the row: its title, its text, and one line of
+proof, the Work page's sentence about the inherited proof of concept taken
+to stable production (source: files/_includes/home-page.html,
+files/assets/site.css). An offer marked `lead: true` gets that row. The row's
+title has no hand-drawn stroke, which the mockup showed, because the
+thirty-ninth change keeps the stroke to one a page, on the page's title. On
+Services it is the second row of the table and the second block of detail
+(source: files/services.html). The services page's description, the
+structured data, llms.txt and the contact page's first card name it, and it
+has its two post images like the other offers (source:
+.github/scripts/render-social-images.js,
+files/images/social/service-production-linkedin.png).
+
+The site says "AI-native" throughout and not "AI-first", the owner's choice
+of 2026-11-22 for the Rails list. The proof is the Symphony engagement, on
+his word of 2026-11-21 and not yet in the evidence store, described by
+technology only; he chose it alone over adding the Teamtailor features or
+Usput.ba. That one engagement, which a visitor cannot check, carries the
+offer: said to him before building, and to be strengthened with a
+recommendation from it or a second case.
+
+What it costs: the homepage is 7,626 px tall at 1440 px, from 7,249 after
+the thirty-ninth change (7,968 before it), and 10,435 px at 390 px, from
+9,837 (11,363 before it). Checked in Chromium: no sideways scroll on 19 page
+types at 21 widths, bar the 5 px on `/politika/` noted above; no text below
+WCAG AA contrast in either scheme.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1334,6 +1378,13 @@ five short lines in the tools diagram, the split of the three community
 sentences, the small headings over the proofs, and the word under the stroke
 in each title. That he may use the conference's photo is the agent's
 assumption from its being his conference, stated to him and not answered.
+
+The fortieth change was asked for by the owner in session on 2026-11-22
+(quoted above), then "A sixth named offer", "Any proof of concept" and
+"Symphony, by technology only", and from two mockups "B, Production". The
+words are the agent's drafts from his message, for him to adjust: when it
+fits, the format ("A short assessment, then hands-on"), the title, the
+text, the four "what you get" lines and the email draft.
 
 ## Related
 

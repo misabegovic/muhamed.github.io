@@ -18,6 +18,17 @@ details:
       label: Email about a build
       subject: A build for our team
       body: ["What we are building:", "Our stack:", "When we would like to start:"]
+  # The agent's drafts from the owner's message of 2026-11-22, for him to adjust.
+  Production:
+    get:
+      - "A system that runs in production: tested, observable, deployed through CI/CD, with the cases the demo skipped handled."
+      - An architecture your team can keep building on, with its decisions written down and its rules checked in CI.
+      - "A codebase set up AI-native: agents work from specs and architecture rules, so extending it stays fast and reliable."
+      - A hand-over your engineers can run and extend without me.
+    email:
+      label: Email about your proof of concept
+      subject: From proof of concept to production
+      body: ["What the proof of concept does:", "What it is built with:", "What production means for us:"]
   Lead:
     get:
       - Technical direction and architecture decisions, written down so the team can follow them.

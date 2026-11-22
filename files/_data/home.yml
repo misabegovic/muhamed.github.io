@@ -199,7 +199,29 @@ services:
     text: >-
       I join your team as a senior engineer and build the product or feature
       end to end, from spec to production.
+  # From proof of concept to production (owner, 2026-11-22: "someone that
+  # comes in when the PoC is done and makes everything production ready, AI
+  # first and AI native and maintainable, easy to extend reliably"). For any
+  # proof of concept; AI-native, the site's term, is how it is made ready.
+  # lead: on the homepage it has its own outlined row above the grid, with
+  # proof under its text (his pick over a fifth card). The name is his pick
+  # of three; fits, format, title and text are the agent's drafts from his
+  # message, for him to adjust.
+  # proof: the Work page's sentence (capabilities: ai-in-production), on the
+  # owner's word, 2026-11-21 (the Symphony engagement; not yet in the
+  # evidence store), by technology only.
   - number: "02"
+    name: Production
+    lead: true
+    fits: When your proof of concept works and now has to run in production.
+    format: A short assessment, then hands-on
+    title: From proof of concept to production
+    text: >-
+      Your proof of concept proved the idea. I take it from there to
+      production: reliable, maintainable, and easy for your team and its
+      agents to extend.
+    proof: "Took an inherited proof of concept to stable production: data pipelines, knowledge graphs and agents that enrich and classify data, with observability for the pipelines and the agents."
+  - number: "03"
     name: Lead
     fits: When your team needs technical direction.
     format: Fractional or interim
@@ -208,7 +230,7 @@ services:
     text: >-
       I lead your engineering team as a fractional or interim technical lead:
       technical direction, architecture, delivery, and the people.
-  - number: "03"
+  - number: "04"
     name: Review
     fits: When you want to know where your system stands.
     format: Fixed scope, one to two weeks
@@ -217,7 +239,7 @@ services:
     text: >-
       A short, fixed-scope look at your codebase and system: what holds, what
       will break, and what to fix first.
-  - number: "04"
+  - number: "05"
     name: AI-native
     fits: When you want your company to build with AI.
     format: Workshops, then setup in your codebase
@@ -232,7 +254,7 @@ services:
   # role-teamtailor-employer, proj-usput-web, proj-treasurehunt, oss-enola-gems
   # band: on the homepage as its own band (_data/rails.yml), not in the grid
   # of four; the full offer is /rails/.
-  - number: "05"
+  - number: "06"
     name: Rails
     band: true
     fits: When your Rails app needs an experienced Rubyist.
