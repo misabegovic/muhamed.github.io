@@ -12,7 +12,7 @@ image: /images/social/project-knowledge-bases.png
 lead: Decisions written down, anchored to the code they govern, checked in CI, and read by agents before they write. The method I run my own work on, and what I set up for teams.
 cta: { label: Set this up in your team, url: /services/#ai-native }
 links:
-  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family: the rules and checks, with enola, tabula and taha inside; coming soon" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "where a project starts: the rules and checks, with enola, tabula and taha inside; coming soon" }
   - { label: enola, url: "/projects/enola/", note: "one graph of the code, laws in CI" }
   - { label: tabula, url: "/projects/tabula/", note: "understand what you inherited, hold every agent to it; coming soon" }
   - { label: taha, url: "/projects/taha/", note: "agents that work unattended inside a mandate; coming soon" }

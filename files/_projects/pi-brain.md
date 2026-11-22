@@ -19,7 +19,7 @@ links:
   - { label: Source on GitHub, url: "https://github.com/misabegovic/pi-brain", note: "misabegovic/pi-brain, MIT" }
   - { label: npm, url: "https://www.npmjs.com/package/@misabegovic/pi-brain", note: "pi install @misabegovic/pi-brain" }
   - { label: This site's wiki, url: "https://github.com/misabegovic/muhamed.github.io/tree/main/wiki", note: "a pi-brain clone, in the open" }
-  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family my newer projects start from; coming soon" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "where my newer projects start; coming soon" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice it belongs to" }
 facts:
   - { label: Role, value: Author and maintainer }

@@ -334,7 +334,7 @@ open_source:
   # evidence: not yet in the evidence store; the owner's private empty-shell
   # repository (README, rules, rule register), 2026-11-22. Product-level only.
   - name: empty-shell
-    role: The family · coming soon
+    role: A starting repository · coming soon
     url: ""
     profile: /projects/empty-shell/
     thumb: /images/projects/empty-shell/thumb

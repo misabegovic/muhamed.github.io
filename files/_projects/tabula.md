@@ -26,7 +26,7 @@ cta: { label: Ask about early access, url: "#p-soon" }
 links:
   - { label: taha, url: "/projects/taha/", note: "the harness that runs agents on tabula; coming soon too" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice tabula grows out of" }
-  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family tabula ships in, with enola and taha; coming soon too" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "the repository tabula ships in, with enola and taha; coming soon too" }
 facts:
   - { label: Role, value: Author }
   - { label: What, value: "One Rust binary that keeps a project's memory, contract and judge as plain files" }

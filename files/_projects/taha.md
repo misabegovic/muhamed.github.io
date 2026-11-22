@@ -26,7 +26,7 @@ cta: { label: Ask about early access, url: "#p-soon" }
 links:
   - { label: tabula, url: "/projects/tabula/", note: "holds the intent, the journal and the gates; coming soon too" }
   - { label: pi, url: "https://pi.dev", note: "the open-source coding agent taha runs on" }
-  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family taha ships in, with enola and tabula; coming soon too" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "the repository taha ships in, with enola and tabula; coming soon too" }
 facts:
   - { label: Role, value: Author }
   - { label: What, value: "A durable host for a coding agent: the tabula harness" }
