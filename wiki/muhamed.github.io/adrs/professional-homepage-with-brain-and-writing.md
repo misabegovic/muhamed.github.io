@@ -39,6 +39,12 @@ sources:
   - files/_config.yml
   - files/_data/services.yml
   - files/cv/Muhamed_Isabegovic_CV.pdf
+  - files/_includes/site-head.html
+  - files/_layouts/post.html
+  - files/_layouts/stream-entry.html
+  - files/_projects/taha.md
+  - files/images/projects/taha/thumb-1600.webp
+  - files/images/social/project-taha.png
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -729,6 +735,61 @@ they were, one video frame aside; in dark mode no text on 20 page types
 falls below WCAG AA contrast, measured in the browser at both widths with
 the phone menu open.
 
+**2026-11-22, thirty-first change: the defects a site-wide review found.**
+Four independent reviews of the whole site (the pages that sell, the pages
+that are read, the project pages, and accessibility) were listed for the
+owner as ten items; he asked for all of them, and chose three where the
+answer was his to give. What changed:
+
+- *The taha card.* Its thumbnail had been a screenshot of the site's 404
+  page since the third amendment of the project profiles decision; it is a
+  poster again, in the style of tabula's, with taha's current line (source:
+  files/images/projects/taha/thumb-1600.webp, files/_projects/taha.md). Its
+  share card is re-rendered from it (source:
+  files/images/social/project-taha.png).
+- *Code in notes.* A fenced block lost its padding and inline code its tint,
+  because two rules meant for the highlighter's wrappers also matched the
+  `pre` and the inline `code`; they now name the wrappers. Numbered lists no
+  longer show a gap before the full stop (source: files/assets/site.css).
+- *Alignment.* The footer's first block sits at the top of its column, the
+  three recommendations end on one line, the steps on the services page
+  start level, and the sticky side headings and the About card stop below
+  the header (source: files/assets/site.css).
+- *Keyboard and touch.* The skip link shows above the header; anchors and
+  focused elements stop below it; tabbing out of the open phone menu closes
+  it; and on touch screens every link on the Tags page is at least 44 px
+  tall (source: files/assets/site.css, files/assets/site.js).
+- *Reading.* On a wide screen a post or a note is one centred column of
+  44rem with text at 20 px (owner's pick over the column on the left), and
+  it ends with the newer and the older piece (source:
+  files/_layouts/post.html, files/_layouts/stream-entry.html).
+- *The menu.* Work is marked on the project pages and Writing on a post
+  (owner's pick over a sixth menu item, Projects); the exact page carries
+  `aria-current="page"`, a page under it `aria-current="true"` (source:
+  files/_includes/site-header.html).
+- *Project pages on a phone.* The product comes before the facts table, and
+  terminal output wraps (source: files/assets/site.css).
+- *Print.* A print stylesheet leaves out the header, the footer, the closing
+  band and the controls; the CV page prints on 7 pages (it was 10), and the
+  PDF stays the CV to send (source: files/assets/site.css).
+- *Links in running text.* The yellow underline alone is 1.45:1 on white.
+  In the light scheme a link in running text now has a thin grey line on a
+  short yellow stroke, like the one under the name (owner's pick from four
+  mockups, over a darker amber and over semibold link text); in the dark
+  scheme, where yellow is plain to see, the line itself is yellow. Buttons,
+  cards, the menu and the standalone text links keep their yellow (source:
+  files/assets/site.css).
+
+The dark scheme is now `screen` only, so a page printed from a dark system
+prints light. Checked in Chromium: no text below WCAG AA contrast in either
+scheme on 20 page types at 1440 and 390 px; no sideways scroll on 20 page
+types at five widths from 320 to 1440 px; the phone menu and the skip link
+by keyboard. Found by the reviews and not done here: the homepage's tools
+section is long on a phone; the contact page shows the address and its copy
+button twice; the services page's first screen shows only the first offer;
+the CV page's dates are hard to scan; a few images have no width and height;
+and tags sit above a post's first sentence.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -890,6 +951,13 @@ The thirtieth change was asked for by the owner in session on 2026-11-21:
 build dark mode support", then "B: stroke underneath" for the highlighter
 and "Follow the system only". The palette is the agent's draft, for the
 owner to adjust.
+
+The thirty-first change was asked for by the owner in session on
+2026-11-22: after the ten findings were listed, "Ok, fix and ship", then
+three picks from mockups: "D: grey line on yellow stroke", "B: centred,
+larger text" and 'Mark "Work"'. The taha poster's last line ("pi + Pi
+Durable · a mandate per run · tabula as the judge") is the agent's draft
+from the page's own facts, for the owner to adjust.
 
 ## Related
 

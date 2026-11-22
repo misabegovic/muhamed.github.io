@@ -13,8 +13,11 @@ sources:
   - ~/projects/hireable/files/hireable/profile/muhamed.yml
   - ~/projects/usput-promo/package.json
   - ~/projects/knowledge-base-promo/src
+  - files/_projects/taha.md
+  - files/images/projects/taha/thumb-1600.webp
+  - files/assets/site.css
 created: 2026-10-22
-updated: 2026-10-29
+updated: 2026-11-22
 author: pi-brain-agent
 ---
 
@@ -259,6 +262,17 @@ installed once and each project gets a content-only clone, says thirteen
 corrected on 2026-10-25), counts this site's thirteen decision records, and
 shows fresh output from pi-brain 0.5.2's tools (source:
 files/_projects/pi-brain.md). The homepage cards, About and llms.txt follow.
+
+**2026-11-22, sixth amendment: taha's poster, and profiles on a phone.**
+taha's thumbnail, which is also its page's first image and the picture on
+its share card, had been a screenshot of the site's 404 page since the third
+amendment. It is a poster again, in the style of tabula's, with the page's
+current line (source: files/images/projects/taha/thumb-1600.webp,
+files/_projects/taha.md). On a phone a profile now shows the product before
+the facts table, and terminal output wraps instead of running off the screen
+(source: files/assets/site.css). Both are part of the homepage decision's
+[thirty-first change](professional-homepage-with-brain-and-writing.md),
+asked for by the owner on 2026-11-22 ("Ok, fix and ship").
 
 ## Approval
 
