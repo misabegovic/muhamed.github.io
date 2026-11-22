@@ -19,6 +19,7 @@ sources:
   - files/_layouts/project.html
   - files/_projects/empty-shell.md
   - files/_projects/pi-brain.md
+  - files/_projects/tended.md
   - files/_includes/home-page.html
 created: 2026-10-22
 updated: 2026-11-22
@@ -318,8 +319,9 @@ of it, measured against upstream. pi-brain keeps its page and its card on `/proj
 and `/work/`, listed last as the earlier tool, and leaves the homepage: an
 entry marked `home: false` in `home.yml` has no row there (source:
 files/_includes/home-page.html). tended leaves the homepage the same way,
-on the owner's word that empty-shell covers it; its page and its card are
-unchanged. Its page says the owner's newer projects
+on the owner's word that empty-shell covers it, and is marked the earlier
+tool too: its card says so, and its page says the owner's newer projects
+start from empty-shell (source: files/_projects/tended.md). Its page says the owner's newer projects
 start from empty-shell and that this site still runs on pi-brain (source:
 files/_projects/pi-brain.md). Older posts and notes that mention pi-brain
 stay as they were, and so does the CV, which lists published work.

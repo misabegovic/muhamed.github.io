@@ -135,8 +135,8 @@ organiser, and works in public.
   of his own build of it, to credit the project and its author (owner,
   2026-11-22). pi-brain (published on npm, ten releases)
   stays on the site as the earlier tool, off the homepage. tended keeps its
-  page and is off the homepage too, since empty-shell covers it (owner,
-  2026-11-22). Also three MCP servers in Go, Rails and plain Ruby.
+  page, marked the earlier tool, and is off the homepage too, since
+  empty-shell covers it (owner, 2026-11-22). Also three MCP servers in Go, Rails and plain Ruby.
 - **Teams led in production:** tech lead for the engineering team at Recrubo
   through its acquisition by Carv (2025 to 2026; no team size on the site,
   owner, 2026-10-22); engineering manager for around 30 engineers across 7

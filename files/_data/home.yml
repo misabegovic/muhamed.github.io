@@ -397,10 +397,10 @@ open_source:
       hooks, as one command in every package manager. Ten releases since
       August 2026.
   # evidence: oss-brain; misabegovic/tended README (called brain until 2026-10-25)
-  # Off the homepage, since empty-shell covers it (owner, 2026-11-22); its
-  # page and its card on /projects/ and /work/ stay.
+  # The earlier tool, off the homepage, since empty-shell covers it (owner,
+  # 2026-11-22); its page and its card on /projects/ and /work/ stay.
   - name: tended
-    role: Author
+    role: Author · the earlier tool
     home: false
     url: https://github.com/misabegovic/tended
     profile: /projects/tended/

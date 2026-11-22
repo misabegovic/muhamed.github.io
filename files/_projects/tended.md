@@ -3,7 +3,9 @@
 # misabegovic/tended, called brain until 2026-10-25 (README, CHANGELOG,
 # VERSION, git log, gh repo view, PyPI) and the evidence store (oss-brain).
 # Screenshots and terminal output from a clean clone run offline on
-# 2026-10-22, with no private content.
+# 2026-10-22, with no private content. Since the eighth amendment
+# (2026-11-22) the page says it is the earlier tool: the owner's newer
+# projects start from empty-shell, which covers it (his word).
 title: tended
 home_key: tended
 # When this page was first published; without it, every build re-dates it.
@@ -17,9 +19,10 @@ links:
   - { label: tended on PyPI, url: "https://pypi.org/project/tended/", note: "uvx tended init my-wiki" }
   - { label: pi-brain, url: "/projects/pi-brain/", note: "the same idea for the pi harness" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice it belongs to" }
-  - { label: empty-shell, url: "/projects/empty-shell/", note: "the family of tools my newer projects start from; coming soon" }
+  - { label: empty-shell, url: "/projects/empty-shell/", note: "where my newer projects start; coming soon" }
 facts:
   - { label: Role, value: Author }
+  - { label: Now, value: 'The earlier tool. My newer projects start from <a href="/projects/empty-shell/">empty-shell</a>' }
   - { label: What, value: "A markdown wiki an agent maintains, with a local web app to read it" }
   - { label: Built with, value: "Python, Astro; local-first, MIT" }
   - { label: Releases, value: "v0.20.0 to v0.31.3, July to October 2026, on PyPI" }
@@ -73,6 +76,8 @@ shows:
   title: What it shows about how I work.
   text: |
     tended holds specifications, decisions and handoffs ADR-first, as a versioned repository. It is the working method behind my AI-native work, and where [pi-brain](/projects/pi-brain/) started. It is how I think a team should keep its knowledge: written once, cited always, tended in the open.
+
+    It is the earlier tool. My newer projects start from [empty-shell](/projects/empty-shell/), which keeps the same method and adds the tools that hold an agent to it.
   link: { label: How I work with knowledge bases, url: /projects/knowledge-bases/ }
 closing:
   title: Want this in your team?
