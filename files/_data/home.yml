@@ -203,13 +203,11 @@ services:
   # comes in when the PoC is done and makes everything production ready, AI
   # first and AI native and maintainable, easy to extend reliably"). For any
   # proof of concept; AI-native, the site's term, is how it is made ready.
-  # lead: on the homepage it has its own outlined row above the grid, with
-  # proof under its text (his pick over a fifth card). The name is his pick
-  # of three; fits, format, title and text are the agent's drafts from his
-  # message, for him to adjust.
-  # proof: the Work page's sentence (capabilities: ai-in-production), on the
-  # owner's word, 2026-11-21 (the Symphony engagement; not yet in the
-  # evidence store), by technology only.
+  # lead: on the homepage it has its own outlined row above the grid (his
+  # pick over a fifth card), with no line of proof in it: the Symphony
+  # engagement is not quoted there (owner, 2026-11-22); the Work page keeps
+  # its sentence. The name is his pick of three; fits, format, title and
+  # text are the agent's drafts from his message, for him to adjust.
   - number: "02"
     name: Production
     lead: true
@@ -220,7 +218,6 @@ services:
       Your proof of concept proved the idea. I take it from there to
       production: reliable, maintainable, and easy for your team and its
       agents to extend.
-    proof: "Took an inherited proof of concept to stable production: data pipelines, knowledge graphs and agents that enrich and classify data, with observability for the pipelines and the agents."
   - number: "03"
     name: Lead
     fits: When your team needs technical direction.

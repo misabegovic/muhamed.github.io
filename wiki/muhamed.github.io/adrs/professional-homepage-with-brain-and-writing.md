@@ -1158,6 +1158,16 @@ the thirty-ninth change (7,968 before it), and 10,435 px at 390 px, from
 types at 21 widths, bar the 5 px on `/politika/` noted above; no text below
 WCAG AA contrast in either scheme.
 
+The same day, after seeing it built, the owner took the proof out of the
+homepage's row: "Maybe don't quote the Symphony thing as proof on the
+homepage, ship without it on that section". The row is now its title, its
+text and its link, with no line of proof; `home.yml` no longer has the
+offer's `proof` field, and the template and stylesheet no longer draw one
+(source: files/_data/home.yml, files/_includes/home-page.html,
+files/assets/site.css). The Work page keeps its sentence about the inherited
+proof of concept, and the CV and llms.txt are unchanged. As it stands the
+homepage is 7,529 px tall at 1440 px and 10,230 px at 390 px.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
