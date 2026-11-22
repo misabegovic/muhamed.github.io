@@ -20,6 +20,7 @@ try {
 // images into files/images/social/. Run from the repository root:
 //   CHROME=/path/to/chrome node .github/scripts/render-social-images.js
 // ONLY=<file name> renders just that image and leaves the others untouched.
+// ONLY=cards/ renders every image in that folder.
 // Needs playwright-core or puppeteer-core. Copy comes from
 // files/_data/home.yml and services.yml; update it here when the services
 // change. Project cards read each profile in files/_projects/ (its title and
@@ -187,6 +188,52 @@ function projectCard(pr, w, h) {
   </div>`;
 }
 
+// Posts and notes: one card each, in the share card's layout with the
+// portrait (owner, 2026-11-22; they used to preview with share.png, so a
+// shared post showed the homepage's greeting instead of its own title).
+// The title and summary come from the file's front matter. JPEG, since the
+// portrait makes a PNG five times the size. files/_plugins/share_cards.rb
+// points a post or note at its card when the file exists; one without a card
+// keeps share.png, so render the cards after adding a post:
+//   ONLY=cards/ node .github/scripts/render-social-images.js
+const unquote = (v) => v.trim().replace(/^(["'])(.*)\1$/, '$2');
+const fmField = (fm, key) => { const m = fm.match(new RegExp('^' + key + ':[ \\t]*(\\S.*)$', 'm')); return m ? unquote(m[1]) : null; };
+const typeset = (t) => { let open = true; return escapeHtml(t).replace(/'/g, '’').replace(/"/g, () => { open = !open; return open ? '”' : '“'; }); };
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const day = (iso) => { const [y, m, d] = iso.slice(0, 10).split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
+const frontMatter = (dir, f) => fs.readFileSync(path.join(SITE, dir, f), 'utf8').split(/^---$/m)[1];
+const writing = [
+  ...fs.readdirSync(path.join(SITE, '_posts')).filter((f) => f.endsWith('.md')).map((f) => {
+    const fm = frontMatter('_posts', f);
+    const slug = f.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, '');
+    return { file: `cards/post-${slug}.jpg`, title: fmField(fm, 'title'), text: fmField(fm, 'description') || fmField(fm, 'excerpt') || '', kicker: `Writing · ${day(f)}`, url: `muhamed.at/${slug}`, section: 'muhamed.at/writing' };
+  }),
+  // A note with its own image: (the GoatConf one) keeps it.
+  ...fs.readdirSync(path.join(SITE, '_stream')).filter((f) => f.endsWith('.md')).map((f) => ({ f, fm: frontMatter('_stream', f) })).filter(({ fm }) => !/^image:/m.test(fm)).map(({ f, fm }) => {
+    const slug = f.replace(/\.md$/, '');
+    return { file: `cards/note-${slug}.jpg`, title: fmField(fm, 'title'), text: (fmField(fm, 'source') || '').replace(/^Internal note$/, ''), kicker: `Brain · ${fmField(fm, 'type') || 'note'} · ${day(fmField(fm, 'date'))}`, url: `muhamed.at/brain/${slug}`, section: 'muhamed.at/brain' };
+  }),
+];
+
+function writingCard(it, w, h) {
+  const n = it.title.length;
+  const size = n <= 12 ? 96 : n <= 28 ? 76 : n <= 50 ? 62 : n <= 80 ? 52 : 46;
+  // A short title sits on the highlighter, like the greeting.
+  const title = n <= 20 ? `<mark>${typeset(it.title)}</mark>` : typeset(it.title);
+  const url = it.url.length <= 42 ? it.url : it.section;
+  return `<div class="stage" style="--w:${w}px;--h:${h}px;display:grid;grid-template-columns:1fr 400px;">
+    <div style="padding:64px 56px 56px 72px;display:grid;grid-template-rows:auto 1fr auto">
+      <div class="rule" style="padding-top:18px;display:flex;justify-content:space-between;align-items:baseline"><span class="wordmark" style="font-size:26px">Muhamed Isabegovic</span><span class="muted" style="font-size:18px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap">${it.kicker}</span></div>
+      <div style="align-self:center">
+        <h1 style="font-size:${size}px;line-height:1.02">${title}</h1>
+        <p class="muted" style="font-size:26px;line-height:1.4;margin-top:24px;display:-webkit-box;-webkit-line-clamp:${n <= 50 ? 3 : 2};-webkit-box-orient:vertical;overflow:hidden">${typeset(it.text)}</p>
+      </div>
+      <div class="muted" style="font-size:22px;font-weight:500"><b style="color:var(--ink)">${url}</b></div>
+    </div>
+    <div style="background:var(--dark)"><img src="${photo}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
+  </div>`;
+}
+
 const jobs = [
   ['share.png', 1200, 630, share(1200, 630)],
   ['goatconf-2027.png', 1200, 630, goatconfNote(1200, 630)],
@@ -198,18 +245,21 @@ const jobs = [
     [`service-${s.slug}-x.png`, 1600, 900, servicePost(s, 1600, 900)],
   ]),
   ...projects.map((pr) => [`project-${pr.slug}.png`, 1200, 630, projectCard(pr, 1200, 630)]),
+  ...writing.map((it) => [it.file, 1200, 630, writingCard(it, 1200, 630)]),
 ];
 
 (async () => {
   const b = await launchBrowser({ executablePath: process.env.CHROME, args: ['--allow-file-access-from-files'] });
-  for (const [name, w, h, html] of jobs.filter(([n]) => !process.env.ONLY || n === process.env.ONLY)) {
+  const only = process.env.ONLY;
+  for (const [name, w, h, html] of jobs.filter(([n]) => !only || n === only || (only.endsWith('/') && n.startsWith(only)))) {
     const p = await b.page(w, h);
     const file = path.join(require('os').tmpdir(), 'render-social.html');
     fs.writeFileSync(file, `<!doctype html><html><head><meta charset="utf-8"><style>${base}</style></head><body>${html}</body></html>`);
     await p.goto('file://' + file, { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
     const over = await p.evaluate(() => { const s = document.querySelector('.stage'); return [...s.querySelectorAll('*')].some((e) => { const r = e.getBoundingClientRect(); return r.bottom > s.clientHeight + 1 || r.right > s.clientWidth + 1; }); });
-    await p.screenshot({ path: path.join(OUT, name) });
+    fs.mkdirSync(path.dirname(path.join(OUT, name)), { recursive: true });
+    await p.screenshot({ path: path.join(OUT, name), ...(name.endsWith('.jpg') ? { type: 'jpeg', quality: 90 } : {}) });
     console.log(name, over ? 'OVERFLOW' : 'ok');
     await p.close();
   }

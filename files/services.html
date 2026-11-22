@@ -23,6 +23,9 @@ description: Hands-on product engineering, a technical lead for your team, archi
   <header class="page-head">
     <h1 class="page-title">Services</h1>
     <p class="page-intro">{{ sv.intro }}</p>
+    <nav class="offer-nav" aria-label="Services on this page">
+      {% for s in h.services %}<a href="#{{ s.name | downcase }}">{{ s.name }}</a>{% endfor %}
+    </nav>
   </header>
 
   <div class="offers">

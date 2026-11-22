@@ -45,6 +45,9 @@ sources:
   - files/_projects/taha.md
   - files/images/projects/taha/thumb-1600.webp
   - files/images/social/project-taha.png
+  - files/_pages/contact.md
+  - files/services.html
+  - files/cv/index.html
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -790,6 +793,23 @@ button twice; the services page's first screen shows only the first offer;
 the CV page's dates are hard to scan; a few images have no width and height;
 and tags sit above a post's first sentence.
 
+**2026-11-22, thirty-second change: the items left over.** The owner asked
+for the rest of that list. On a phone a tool on the homepage is its name,
+its role and its one line, with the longer text left to its page; the
+section is 1,739 px tall at 390 px, from about 2,700 (source:
+files/assets/site.css). The contact page shows the address and its copy
+button once (the Email row of the facts is gone), and its longest button
+stays on one line on a phone (source: files/_pages/contact.md). The services
+page names its five offers under the intro, as links to each, so all five
+are on the first screen, and an offer's name is no larger than the page's
+title (source: files/services.html). On a wide screen the CV page puts each
+role's dates and place in their own column (source: files/cv/index.html). A
+post's tags move from under its title to its end, as on a note (source:
+files/_layouts/post.html). Posts and notes also get their own link preview
+cards; that is the brand decision's
+[sixth change](amber-portrait-and-brand-kit.md). Still open: a few images
+without width and height.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -958,6 +978,11 @@ three picks from mockups: "D: grey line on yellow stroke", "B: centred,
 larger text" and 'Mark "Work"'. The taha poster's last line ("pi + Pi
 Durable · a mandate per run · tabula as the judge") is the agent's draft
 from the page's own facts, for the owner to adjust.
+
+The thirty-second change was asked for by the owner in session on
+2026-11-22: "let's continue iterating and finding ways to improve the
+overall design", then all four of the offered next steps: a fresh review,
+"Homepage on a phone", "Contact and Services" and "CV page and posts".
 
 ## Related
 
