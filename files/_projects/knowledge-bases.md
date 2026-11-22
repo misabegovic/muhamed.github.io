@@ -17,7 +17,7 @@ links:
   - { label: tabula, url: "/projects/tabula/", note: "understand what you inherited, hold every agent to it; coming soon" }
   - { label: taha, url: "/projects/taha/", note: "agents that work unattended inside a mandate; coming soon" }
   - { label: enola-guides, url: "/projects/enola-guides/", note: "the method written down" }
-  - { label: pi-brain, url: "/projects/pi-brain/", note: "the earlier tool: decisions agents must read, on pi; usable today" }
+  - { label: pi-brain, url: "/projects/pi-brain/", note: "an earlier tool: decisions agents must read, on pi; usable today" }
   - { label: tended, url: "/projects/tended/", note: "the knowledge base it started with" }
   - { label: The method in plain words, url: "/brain/how-i-work-with-knowledge-bases/", note: "a note in my brain" }
 facts:

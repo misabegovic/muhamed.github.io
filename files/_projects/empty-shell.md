@@ -33,7 +33,7 @@ links:
   - { label: taha, url: "/projects/taha/", note: "runs an agent inside a mandate; coming soon too" }
   - { label: enola, url: "/projects/enola/", note: "the open-source engine of the family, which I help build" }
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice the family carries" }
-  - { label: pi-brain, url: "/projects/pi-brain/", note: "the earlier tool, for the pi coding agent; public today" }
+  - { label: pi-brain, url: "/projects/pi-brain/", note: "an earlier tool, for the pi coding agent; public today" }
 facts:
   - { label: Role, value: Author }
   - { label: What, value: "A starting repository for a project run with an agent, with three tools inside" }

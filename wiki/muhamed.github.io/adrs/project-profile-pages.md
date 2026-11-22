@@ -316,7 +316,7 @@ name and never the name of his own build, "to give credit to Dejan and the
 project". The empty-shell page names enola's author, links the project's
 page, and says in one sentence that the shell carries the owner's own build
 of it, measured against upstream. pi-brain keeps its page and its card on `/projects/`
-and `/work/`, listed last as the earlier tool, and leaves the homepage: an
+and `/work/`, listed last as an earlier tool, and leaves the homepage: an
 entry marked `home: false` in `home.yml` has no row there (source:
 files/_includes/home-page.html). tended leaves the homepage the same way,
 on the owner's word that empty-shell covers it, and is marked the earlier

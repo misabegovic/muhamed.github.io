@@ -4,7 +4,7 @@
 # VERSION, git log, gh repo view, PyPI) and the evidence store (oss-brain).
 # Screenshots and terminal output from a clean clone run offline on
 # 2026-10-22, with no private content. Since the eighth amendment
-# (2026-11-22) the page says it is the earlier tool: the owner's newer
+# (2026-11-22) the page says it is an earlier tool: the owner's newer
 # projects start from empty-shell, which covers it (his word).
 title: tended
 home_key: tended
@@ -22,7 +22,7 @@ links:
   - { label: empty-shell, url: "/projects/empty-shell/", note: "where my newer projects start; coming soon" }
 facts:
   - { label: Role, value: Author }
-  - { label: Now, value: 'The earlier tool. My newer projects start from <a href="/projects/empty-shell/">empty-shell</a>' }
+  - { label: Now, value: 'An earlier tool. My newer projects start from <a href="/projects/empty-shell/">empty-shell</a>' }
   - { label: What, value: "A markdown wiki an agent maintains, with a local web app to read it" }
   - { label: Built with, value: "Python, Astro; local-first, MIT" }
   - { label: Releases, value: "v0.20.0 to v0.31.3, July to October 2026, on PyPI" }
@@ -77,7 +77,7 @@ shows:
   text: |
     tended holds specifications, decisions and handoffs ADR-first, as a versioned repository. It is the working method behind my AI-native work, and where [pi-brain](/projects/pi-brain/) started. It is how I think a team should keep its knowledge: written once, cited always, tended in the open.
 
-    It is the earlier tool. My newer projects start from [empty-shell](/projects/empty-shell/), which keeps the same method and adds the tools that hold an agent to it.
+    It is an earlier tool. My newer projects start from [empty-shell](/projects/empty-shell/), which keeps the same method and adds the tools that hold an agent to it.
   link: { label: How I work with knowledge bases, url: /projects/knowledge-bases/ }
 closing:
   title: Want this in your team?

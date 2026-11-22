@@ -23,7 +23,7 @@ links:
   - { label: How I work with knowledge bases, url: "/projects/knowledge-bases/", note: "the practice it belongs to" }
 facts:
   - { label: Role, value: Author and maintainer }
-  - { label: Now, value: 'The earlier tool. My newer projects start from <a href="/projects/empty-shell/">empty-shell</a>; this site still runs on pi-brain' }
+  - { label: Now, value: 'An earlier tool. My newer projects start from <a href="/projects/empty-shell/">empty-shell</a>; this site still runs on pi-brain' }
   - { label: What, value: "A pi package, installed once; each project or client gets a clone that holds only its knowledge" }
   - { label: Runs on, value: "pi, checked against pi 1.4" }
   - { label: Releases, value: "10 on npm, July to October 2026; 0.5.2 is the latest" }

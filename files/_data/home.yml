@@ -397,10 +397,10 @@ open_source:
       hooks, as one command in every package manager. Ten releases since
       August 2026.
   # evidence: oss-brain; misabegovic/tended README (called brain until 2026-10-25)
-  # The earlier tool, off the homepage, since empty-shell covers it (owner,
+  # An earlier tool, off the homepage, since empty-shell covers it (owner,
   # 2026-11-22); its page and its card on /projects/ and /work/ stay.
   - name: tended
-    role: Author · the earlier tool
+    role: Author · an earlier tool
     home: false
     url: https://github.com/misabegovic/tended
     profile: /projects/tended/
@@ -410,10 +410,10 @@ open_source:
       the agent keeps a wiki where every claim cites its source, and specs and
       decision records sit next to the code. The method behind my agentic
       SDLC work, and where pi-brain started.
-  # The earlier tool (owner, 2026-11-22): its page stays and it is listed last
+  # An earlier tool (owner, 2026-11-22): its page stays and it is listed last
   # on /projects/ and /work/; home: false keeps it off the homepage.
   - name: pi-brain
-    role: Author and maintainer · the earlier tool
+    role: Author and maintainer · an earlier tool
     home: false
     url: https://github.com/misabegovic/pi-brain
     profile: /projects/pi-brain/
