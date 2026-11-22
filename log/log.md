@@ -378,3 +378,5 @@
    by: agent
 - site: the homepage ADR's thirty-second change, on the owner's ask (all four offered next steps): on a phone a homepage tool is its name, role and one line (the section is 1,739 px tall at 390 px, from about 2,700); the contact page shows the address once and its longest button stays on one line; the services page names its five offers under the intro; the CV page puts dates and place in their own column on a wide screen; a post's tags move to its end. Checked in Chromium: no text below WCAG AA contrast in either scheme, no sideways scroll from 320 to 1440 px. Three fresh independent reviews of the site were started; their findings go to the owner before anything else changes.
    by: agent
+- site: on the owner's word with a screenshot of the contact page ("When we list social media platforms, we don't mention X"): X joins LinkedIn and GitHub in the contact page's Elsewhere row and in llms.txt's contact list. The footer, the About card, the CV and the JSON-LD already listed it.
+   by: agent
