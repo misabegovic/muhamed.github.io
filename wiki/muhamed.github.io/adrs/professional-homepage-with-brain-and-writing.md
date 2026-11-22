@@ -932,6 +932,20 @@ Not taken: a line of proof in each service card, which would have put the
 team sizes on the homepage. The homepage still names the conferences in the
 hero, in the community band and under one recommendation.
 
+**2026-11-22, thirty-sixth change: AI quality and AI-native delivery in
+the Rails list.** The owner, reading the homepage's Rails band on his phone,
+asked whether the list should mention "AI Quality, observability,
+evaluations" and "AI native or AI first delivery". Both are added as items
+of their own, after "AI features": "AI quality: evals and observability"
+and "AI-native delivery", in the site's term and not "AI-first" (source:
+files/_data/rails.yml). The list was eight so the Rails page showed two rows
+of four; offered eight with two items merged, ten, or AI quality alone, he
+chose ten, and the Rails page now shows two rows of five on a wide screen
+(source: files/assets/site.css). On a phone each item is still one line.
+Evals and prompt experiments are in the evidence store; observability and
+AI-native delivery are on the owner's word of 2026-11-21. The Rails page's
+description and llms.txt name the two new items.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1123,6 +1137,9 @@ The thirty-fifth change was chosen by the owner in session on 2026-11-22
 from mockups: "1: photo beside the greeting"; "B: Rails band without
 conferences" and "C: shorter tools on desktop"; and "No proof in service
 cards".
+
+The thirty-sixth change was asked for and chosen by the owner in session on
+2026-11-22 ("Grow to ten").
 
 ## Related
 

@@ -29,9 +29,11 @@ facts:
 # terms (2026-10-26: "shipping behind feature flags, refactoring, rewrites,
 # maintenance of old Ruby/Rails projects... managing the entire lifecycle end
 # to end", then "introducing and optimizing processes... improving CI/CD
-# practices... continous delivery with trunk based deployments"). Eight, so
-# the grid stays two rows of four. No proof section (owner: "seems a bit
-# weak"); the facts and the recommendation carry it.
+# practices... continous delivery with trunk based deployments"). Ten since
+# 2026-11-22, when the owner added AI quality ("AI Quality, observability,
+# evaluations") and AI-native delivery and chose ten over merging items, so
+# the grid on /rails/ is two rows of five. No proof section (owner: "seems a
+# bit weak"); the facts and the recommendation carry it.
 work_title: What I do on Rails apps.
 work:
   - name: Maintenance and upgrades
@@ -57,6 +59,16 @@ work:
   # evidence: role-teamtailor-ownership, role-teamtailor-langfuse, proj-usput-retrieval-grounding
   - name: AI features
     text: AI inside your Rails app, grounded in your data and measured with evals, without a second stack.
+  # evidence: role-teamtailor-langfuse (prompt management, evals, A/B
+  # experiments); observability for pipelines and agents on the owner's word
+  # (2026-11-21, the current engagement; not yet in the evidence store)
+  - name: "AI quality: evals and observability"
+    text: Evals that catch a regression before your users do, prompts managed and compared in experiments, and traces that show what the model did in production.
+  # evidence: oss-enola-gems (enola-rb, for Rails teams), oss-enola-constraints;
+  # AI-native delivery on the owner's word (2026-11-21; not yet in the
+  # evidence store). "AI-native", the site's term, over "AI-first".
+  - name: AI-native delivery
+    text: Your Rails team shipping with coding agents, with decisions written down where agents read them, architecture rules checked in CI, and people in charge of what merges.
 
 # Ways to start, smallest first. Drafts for the owner: no prices, no capacity
 # promise (owner, 2026-10-26: always invite people to write).
