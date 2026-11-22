@@ -14,8 +14,8 @@ permalink: /brain/
   <div class="controls">
     <label class="visually-hidden" for="search">Search the brain</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
     <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
-    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#agents</code> to filter by tag. Click a tag chip to toggle it.</div>
     <p class="result-count" id="result-count" aria-live="polite"></p>
+    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#agents</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
   <div class="grid" id="cards" data-noun="entries">
@@ -24,14 +24,14 @@ permalink: /brain/
     {% unless entry.hidden_until and entry.hidden_until > site.time %}
     <div class="card" data-text="{{ entry.title | downcase }} {{ entry.source | downcase }} {{ entry.excerpt | strip_html | downcase }}" data-tags="{{ entry.tags | join: ',' }}">
       <a class="card-link" href="{{ entry.url }}">
+        <div class="card-date"><time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%-d %b %Y" }}</time></div>
         {% if entry.type != "note" %}<div class="card-type">{{ entry.type }}</div>{% endif %}
-        <h2 class="card-title">{{ entry.title }}</h2>
+        <h2 class="card-title">{{ entry.title | smartify }}</h2>
         <div class="card-source">{{ entry.source }}</div>
         <p class="card-note">{{ entry.excerpt | strip_html | truncatewords: 24 }}</p>
       </a>
       <div class="card-meta">
         <span class="tags">{% for tag in entry.tags %}<span class="tag" data-tag="{{ tag }}" tabindex="0" role="button" aria-pressed="false">{{ tag }}</span>{% endfor %}</span>
-        <time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: "%-d %b %Y" }}</time>
       </div>
     </div>
     {% endunless %}

@@ -74,7 +74,7 @@ description: The CV of Muhamed Isabegovic, Staff Engineer, in one column, with d
   <section class="cv-section" aria-labelledby="cv-recommendations">
     <h2 id="cv-recommendations" class="cv-heading">Recommendations</h2>
     {% for q in cv.recommendations %}
-    <blockquote class="cv-quote"><p>"{{ q.text }}"</p><footer><strong>{{ q.by }}</strong>, {{ q.context }}</footer></blockquote>
+    <blockquote class="cv-quote"><p>&ldquo;{{ q.text | smartify }}&rdquo;</p><footer><strong>{{ q.by }}</strong>, {{ q.context }}</footer></blockquote>
     {% endfor %}
   </section>
 </article>

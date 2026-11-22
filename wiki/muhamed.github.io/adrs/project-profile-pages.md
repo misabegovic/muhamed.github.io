@@ -16,6 +16,7 @@ sources:
   - files/_projects/taha.md
   - files/images/projects/taha/thumb-1600.webp
   - files/assets/site.css
+  - files/_layouts/project.html
 created: 2026-10-22
 updated: 2026-11-22
 author: pi-brain-agent
@@ -273,6 +274,16 @@ the facts table, and terminal output wraps instead of running off the screen
 (source: files/assets/site.css). Both are part of the homepage decision's
 [thirty-first change](professional-homepage-with-brain-and-writing.md),
 asked for by the owner on 2026-11-22 ("Ok, fix and ship").
+
+**2026-11-22, seventh amendment: no poster on a coming-soon page.** The
+tabula and taha pages showed their poster full width under the heading: the
+same badge, name and line a second time, 761 px tall, before any new
+content. A page with `coming_soon` no longer shows its `hero`; the poster
+stays as the card's thumbnail and the share image until there are real
+screens (source: files/_layouts/project.html). On every project page the
+copy now starts at the top beside the facts, and cards sit two to a row on
+tablets (source: files/assets/site.css). The owner's pick ("Drop the
+repeated poster") from the second review's findings.
 
 ## Approval
 
