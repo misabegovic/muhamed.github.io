@@ -17,6 +17,10 @@ sources:
   - files/images/projects/taha/thumb-1600.webp
   - files/assets/site.css
   - files/_layouts/project.html
+  - files/_projects/empty-shell.md
+  - files/_projects/pi-brain.md
+  - files/_projects/tended.md
+  - files/_includes/home-page.html
 created: 2026-10-22
 updated: 2026-11-22
 author: pi-brain-agent
@@ -284,6 +288,51 @@ screens (source: files/_layouts/project.html). On every project page the
 copy now starts at the top beside the facts, and cards sit two to a row on
 tablets (source: files/assets/site.css). The owner's pick ("Drop the
 repeated poster") from the second review's findings.
+
+**2026-11-22, eighth amendment: empty-shell, the family, takes pi-brain's
+place.** The owner asked to "replace pi-brain with empty-shell as a family
+of tools that is meant to work together", made of his build of enola,
+tabula and taha, "for how I work and the tools I will soon make open
+source", and picked four things in session: the site's copy only (this repository stays
+a pi-brain clone, and its rules, config and workflows do not change);
+pi-brain kept as the predecessor; empty-shell first, as the umbrella; and
+its page product-level only until the repository is public.
+
+empty-shell gets a coming-soon profile at `/projects/empty-shell/` (source:
+files/_projects/empty-shell.md): the family in five parts (the shell, enola,
+tabula, taha, and how they depend on each other), then what the shell
+holds, theme by theme, each marked working today or in progress. It is
+drawn from the owner's private empty-shell repository and his private build
+of enola, in prose only: no file contents, no command output, no client,
+employer or third-party names, no commercial plans and no date. Its poster
+is in the style of tabula's and taha's, and its share card is rendered by
+the same script.
+
+empty-shell leads the tools wherever they are listed, followed by enola,
+tabula and taha as its parts, in the third amendment's order, then
+enola-guides, tended and pi-brain. The engine reads "enola" everywhere, as the third
+amendment set: on the owner's word the same day, the site uses enola's
+name and never the name of his own build, "to give credit to Dejan and the
+project". The empty-shell page names enola's author, links the project's
+page, and says in one sentence that the shell carries the owner's own build
+of it, measured against upstream. pi-brain keeps its page and its card on `/projects/`
+and `/work/`, listed last as an earlier tool, and leaves the homepage: an
+entry marked `home: false` in `home.yml` has no row there (source:
+files/_includes/home-page.html). tended leaves the homepage the same way,
+on the owner's word that empty-shell covers it, and is marked the earlier
+tool too: its card says so, and its page says the owner's newer projects
+start from empty-shell (source: files/_projects/tended.md). Its page says the owner's newer projects
+start from empty-shell and that this site still runs on pi-brain (source:
+files/_projects/pi-brain.md). Older posts and notes that mention pi-brain
+stay as they were, and so does the CV, which lists published work.
+
+The homepage's tools intro said "Most are open source"; with pi-brain and
+tended off the homepage two of its five rows are open, so it now names
+them: enola and enola-guides are open source today, and empty-shell, tabula
+and taha open soon. The knowledge-bases page, the tabula, taha, enola and tended
+pages, the AI-native offer and llms.txt follow. Not done: the
+knowledge-bases video still counts six tools with pi-brain among them,
+since its source is in another project.
 
 ## Approval
 

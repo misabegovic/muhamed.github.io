@@ -155,7 +155,8 @@
         <p class="feature-more feature-more-2"><a class="text-link" href="{{ site.baseurl }}/projects/">All projects{{ arr }}</a></p>
       </div>
       <ul class="rows" role="list">
-        {% for project in h.open_source %}
+        {%- comment -%} A tool marked home: false keeps its page and its card on /projects/, and has no row here (owner, 2026-11-22). {%- endcomment -%}
+        {% for project in h.open_source %}{% if project.home == false %}{% continue %}{% endif %}
         <li class="row">
           <h3 class="row-name">{% if project.profile %}<a href="{{ site.baseurl }}{{ project.profile }}">{{ project.name }}</a>{% elsif project.url != "" %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</h3>
           <p class="row-meta">{{ project.role }}</p>

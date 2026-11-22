@@ -248,7 +248,8 @@ sections:
     title: What people I have worked with say.
   tools:
     title: I build the guardrails I teach.
-    intro: The tools behind my workshops are ones I build or help build. Most are open source, so you can read how they work before you bring me in.
+    # Two of the five rows are open today; the rest open soon (owner, 2026-11-22).
+    intro: The tools behind my workshops are ones I build or help build. enola and enola-guides are open source today, and empty-shell, tabula and taha open soon.
   side:
     title: Stuff I've made, mostly for fun.
   work_page:
@@ -326,7 +327,25 @@ capabilities:
       - Led a startup's engineering team through its acquisition, leading by building.
 
 open_source:
-  # The owner's main tools first: enola, tabula and taha (2026-10-22).
+  # The family first (owner, 2026-11-22): empty-shell, then its parts enola,
+  # tabula and taha, in the order of 2026-10-22. The engine is called enola
+  # in public, never by the name of the owner's build, to credit the project
+  # (owner, 2026-11-22).
+  # evidence: not yet in the evidence store; the owner's private empty-shell
+  # repository (README, rules, rule register), 2026-11-22. Product-level only.
+  - name: empty-shell
+    role: A starting repository · coming soon
+    url: ""
+    profile: /projects/empty-shell/
+    thumb: /images/projects/empty-shell/thumb
+    outcome: Starts a project with an agent from one repository, with the rules, the checks, and enola, tabula and taha set up to work together.
+    text: >-
+      A starting repository for a project run with an agent: the rules it
+      works by, the hooks and checks that hold them, and an empty wiki for
+      what the project learns and decides. Three tools ship inside it, built
+      to work together: enola reads the code into one architecture graph;
+      tabula holds the pages and judges the work; taha runs the agent inside
+      a mandate.
   - name: enola
     role: Core contributor
     url: https://github.com/enola-labs/enola
@@ -377,19 +396,12 @@ open_source:
       catalogue of 26 architecture laws, worked examples, agent skills and
       hooks, as one command in every package manager. Ten releases since
       August 2026.
-  - name: pi-brain
-    role: Author and maintainer
-    url: https://github.com/misabegovic/pi-brain
-    profile: /projects/pi-brain/
-    outcome: Makes agents read your decisions before they edit, and keeps a person in charge of what they learn.
-    # evidence: oss-pi-brain*
-    text: >-
-      An intent store for agentic development on the pi harness: human-gated
-      agent workflows, decision records agents must read before editing, and
-      agent-written knowledge that cannot promote itself. Installed once; each project gets a content-only clone. Ten releases on npm.
   # evidence: oss-brain; misabegovic/tended README (called brain until 2026-10-25)
+  # An earlier tool, off the homepage, since empty-shell covers it (owner,
+  # 2026-11-22); its page and its card on /projects/ and /work/ stay.
   - name: tended
-    role: Author
+    role: Author · an earlier tool
+    home: false
     url: https://github.com/misabegovic/tended
     profile: /projects/tended/
     outcome: Gives people and agents one record of what was decided and why, kept current by the agent.
@@ -398,6 +410,19 @@ open_source:
       the agent keeps a wiki where every claim cites its source, and specs and
       decision records sit next to the code. The method behind my agentic
       SDLC work, and where pi-brain started.
+  # An earlier tool (owner, 2026-11-22): its page stays and it is listed last
+  # on /projects/ and /work/; home: false keeps it off the homepage.
+  - name: pi-brain
+    role: Author and maintainer · an earlier tool
+    home: false
+    url: https://github.com/misabegovic/pi-brain
+    profile: /projects/pi-brain/
+    outcome: Makes agents read your decisions before they edit, and keeps a person in charge of what they learn.
+    # evidence: oss-pi-brain*
+    text: >-
+      An intent store for agentic development on the pi harness: human-gated
+      agent workflows, decision records agents must read before editing, and
+      agent-written knowledge that cannot promote itself. Installed once; each project gets a content-only clone. Ten releases on npm.
 
 # evidence: community-rubyconf-austria, community-rubyconf-speakers
 # The event logos are white on transparent, drawn on the dark section.
