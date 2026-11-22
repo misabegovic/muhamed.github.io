@@ -14,6 +14,8 @@ date: 2026-10-22
 description: Usput.ba, a travel guide to Bosnia and Herzegovina built and run by Muhamed Isabegovic, with audio tours, AI content checked against real places, and mine safety built in.
 image: /images/social/project-usput.png
 thumb: /images/projects/usput/home
+# The widest copy of the thumbnail, where it is not 1600 (the lead card on /projects/).
+thumb_max: 1440
 lead: A travel guide to Bosnia and Herzegovina, from the Una to the Drina, built from real places, with audio tours and mine safety built in.
 cta: { label: Visit usput.ba, url: "https://usput.ba" }
 links:

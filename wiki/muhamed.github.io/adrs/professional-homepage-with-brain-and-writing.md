@@ -55,6 +55,18 @@ sources:
   - files/_data/brand.yml
   - files/images/projects/enola/thumb-320.webp
   - files/_data/rails.yml
+  - files/_includes/tool-family.html
+  - files/_includes/proof.html
+  - files/_includes/quotes.html
+  - files/assets/index-filter.js
+  - files/work.html
+  - files/projects.html
+  - files/_layouts/page.html
+  - files/_layouts/about.html
+  - files/images/community/rubyconf-austria-2026-1800.webp
+  - files/images/profile-1600.webp
+  - .github/scripts/render-profile-images.py
+  - files/images/social/service-production-linkedin.png
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -991,6 +1003,171 @@ scheme's override is gone (source: files/assets/site.css). The generated
 images follow, his choice: that is the brand decision's
 [seventh change](amber-portrait-and-brand-kit.md).
 
+**2026-11-22, thirty-ninth change: the pages recomposed, the look kept.** The
+owner asked to "explore how we can improve the design of the website". Asked
+how far, he chose to recompose the pages and keep the look (white, ink, one
+yellow, Schibsted Grotesk), across the homepage, the selling pages, the
+projects and the two indexes, with three aims: show the work, be more
+memorable, and be shorter and faster to scan. Eleven boards of mockups were
+made in the browser from the built pages, each with the page as it stood
+first, and he went through them one at a time. What stands after his picks:
+
+*The homepage's first screen.* The paragraph under "I make software for a
+living." is three rows, one sentence each, his words unchanged, and each row
+ends in a link to where the site shows it: Work, Tools (the tools section)
+and Conferences (the community band) (source: files/_data/home.yml,
+files/_includes/home-page.html). From 961 px the portrait fills the right of
+the first screen, from the header down and out to the edge of the window,
+with the caption card on its lower left; a 1600 px copy of the portrait
+serves it (source: files/assets/site.css, files/images/profile-1600.webp,
+.github/scripts/render-profile-images.py). Phones keep the round photo
+beside the greeting. He chose the rows over a row of four facts with numbers
+under the greeting, which the agent had recommended.
+
+*The recommendations.* On the homepage the first one is set large, with no
+box, and the other two sit beside it as smaller cards; on a phone the three
+are a row to swipe, with a line under it that says so (source:
+files/_includes/quotes.html, files/assets/site.css). The Work, Services and
+Rails pages keep three equal cards.
+
+*The services and the Rails band.* From 1100 px the four services sit in one
+row; on a phone each is a compact row of its name, when it fits and an
+arrow. The Rails band drops its second quote from the same person, who now
+leads the recommendations two sections above; the Rails page keeps it
+(source: files/_includes/home-page.html, files/_data/rails.yml). On a phone
+the band's list is a wrap of pills.
+
+*The community band.* A photo of the audience at RubyConf Austria 2026 runs
+across the top of the band with the heading over it, and under it each
+conference is a column: its logo, his role, the place and date, one line,
+and its numbers set large (source: files/_data/home.yml,
+files/images/community/rubyconf-austria-2026-1800.webp). The photo is from
+the conference's own gallery, which the owner pointed to
+("Photos of RubyConf Austria: https://rubyconf.at/photos/"); it is credited
+in the band to its photographer, Alessandro Bruckheimer, whose watermark the
+crop cuts off. The facts are the three sentences the band had, split up; the
+RubyConf Austria line is the Rails page's, and "200" keeps its limit as
+"attendees at most", since the evidence says up to 200. He chose this over
+the columns without a photo and over the photo beside the old list.
+
+*What I work with.* One strip of pills under a small heading: the intro
+paragraph and the two group labels are gone, and the line that names the
+rest stays (source: files/_includes/home-page.html).
+
+*The tools.* The five equal rows are a diagram of the family: empty-shell is
+an outlined box, enola, tabula and taha are three cells inside it, and
+enola-guides is a row under it as the method (source:
+files/_includes/tool-family.html). Each cell has a label, "The eyes", "The
+memory" and "The hands", from the title of his note on the three tools, and
+a shorter line; which tool sits where, and those words, are in
+`home.yml` (`family`, `part`, `short`). The same diagram is on `/projects/`
+and `/work/`: that is the project profiles decision's
+[ninth amendment](project-profile-pages.md).
+
+*Spacing.* The homepage's sections sit closer together: 104 px apart on a
+wide screen, from 128 (source: files/assets/site.css).
+
+*Services.* Under the intro, the five offers are a table to read at a
+glance, name, when it fits and format, each row a link to its detail; it
+replaces the row of five names (source: files/services.html). He declined a
+piece of proof beside each offer.
+
+*Work.* Each of the four claims has a third column of proof from 1101 px,
+and under its list below that: a picture of Usput.ba, the first lines of
+enola's real output, and one sentence each from two recommendations already
+on the site, word for word (source: files/work.html,
+files/_includes/proof.html, files/_data/home.yml). The two outbound links
+the claims carried, to usput.ba and to two repositories, are replaced by the
+proofs' links to the project pages.
+
+*Writing.* The newest post leads, with a large title and its line beside it;
+the others are a dated list. While a search or a tag is on, every post is a
+row (source: files/writing.md, files/assets/index-filter.js). He chose this
+over grouping by year under large years.
+
+*Brain.* The grid of cards is a stream by date, grouped by month: the month
+and its count on the left, then each note with its day, title, source, two
+lines and tags. A month with nothing to show under a filter is hidden, and
+its count follows the filter (source: files/brain.html,
+files/assets/index-filter.js). Both indexes lose the tip line under the
+search box.
+
+*The stroke.* The hand-drawn yellow stroke, until now only under his name on
+the homepage, is under one word of every page's title, and marks the current
+page in the menu in place of the straight yellow line (source:
+files/_layouts/page.html, files/_layouts/about.html,
+files/_includes/site-header.html, files/assets/site.css). One stroke a page,
+on the page's title only; posts, notes and project pages keep plain titles.
+
+What it changes in numbers, measured in Chromium: the homepage is 7,249 px
+tall at 1440 px, from 7,968, and 9,837 px at 390 px, from 11,363. The
+projects page is 4,303 px at 1440, from 5,488. Services is longer by the
+table (6,914 px from 6,565), and on a phone the Work page is longer by its
+proofs (10,963 px from 9,870), which he chose to keep on phones.
+
+Checked in Chromium: no sideways scroll on 19 page types at 21 widths from
+320 to 2560 px, bar 5 px on `/politika/` at 320 px, which the live site has
+too; no text below WCAG AA contrast in either scheme at 1440 and 390 px;
+search, tags, "Load more" and links with a tag in the address work on both
+indexes, with and without a filter, and every entry shows without scripts;
+the three links in the first screen land on their sections; the swipe row
+moves and the page does not; pages print with the dark band as drawn. Not
+done: the generated share images are unchanged, since none shows what
+changed.
+
+**2026-11-22, fortieth change: a sixth offer, from proof of concept to
+production.** After the thirty-ninth change the owner said how else he wants
+to be found: "I'm thinking I should also market myself as someone that comes
+in when the PoC is done and makes everything production ready, AI first and
+AI native and maintainable, easy to extend reliably". Asked how prominent,
+he chose a sixth named offer over reshaping one of the five, a claim on the
+Work page only, or making it the first screen's lead. Asked what kind of
+proof of concept, he chose any, not only an AI product or a prototype
+written with AI: AI-native is how it is made ready, not what it is. The
+name, Production, is his pick of three (with Harden and Ship).
+
+The offer sits second in `home.yml`'s services, after Build: "When your
+proof of concept works and now has to run in production." (source:
+files/_data/home.yml). Its four "what you get" lines and its email draft are
+in `services.yml` (source: files/_data/services.yml). On the homepage it
+leads the services section in its own outlined row above the four cards,
+his pick over a fifth card in the row: its title, its text, and one line of
+proof, the Work page's sentence about the inherited proof of concept taken
+to stable production (source: files/_includes/home-page.html,
+files/assets/site.css). An offer marked `lead: true` gets that row. The row's
+title has no hand-drawn stroke, which the mockup showed, because the
+thirty-ninth change keeps the stroke to one a page, on the page's title. On
+Services it is the second row of the table and the second block of detail
+(source: files/services.html). The services page's description, the
+structured data, llms.txt and the contact page's first card name it, and it
+has its two post images like the other offers (source:
+.github/scripts/render-social-images.js,
+files/images/social/service-production-linkedin.png).
+
+The site says "AI-native" throughout and not "AI-first", the owner's choice
+of 2026-11-22 for the Rails list. The proof is the Symphony engagement, on
+his word of 2026-11-21 and not yet in the evidence store, described by
+technology only; he chose it alone over adding the Teamtailor features or
+Usput.ba. That one engagement, which a visitor cannot check, carries the
+offer: said to him before building, and to be strengthened with a
+recommendation from it or a second case.
+
+What it costs: the homepage is 7,626 px tall at 1440 px, from 7,249 after
+the thirty-ninth change (7,968 before it), and 10,435 px at 390 px, from
+9,837 (11,363 before it). Checked in Chromium: no sideways scroll on 19 page
+types at 21 widths, bar the 5 px on `/politika/` noted above; no text below
+WCAG AA contrast in either scheme.
+
+The same day, after seeing it built, the owner took the proof out of the
+homepage's row: "Maybe don't quote the Symphony thing as proof on the
+homepage, ship without it on that section". The row is now its title, its
+text and its link, with no line of proof; `home.yml` no longer has the
+offer's `proof` field, and the template and stylesheet no longer draw one
+(source: files/_data/home.yml, files/_includes/home-page.html,
+files/assets/site.css). The Work page keeps its sentence about the inherited
+proof of concept, and the CV and llms.txt are unchanged. As it stands the
+homepage is 7,529 px tall at 1440 px and 10,230 px at 390 px.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1197,6 +1374,27 @@ The thirty-eighth change was asked for by the owner in session on
 2026-11-22: "Let's have the underscore on the light mode as well", confirmed
 from a mockup ("Yes, under the name"), with the images to follow ("Yes,
 change them too").
+
+The thirty-ninth change was asked for by the owner in session on 2026-11-22:
+"Let's explore how we can improve the design of the website", then "Recompose
+pages, keep the look", and, board by board ("Let's go one by one"): "C looks
+nice" and "Ok, edge" for the first screen; "Ok, A" for the recommendations;
+"B" for the tools; "C" for the community band, after "Photos of RubyConf
+Austria: https://rubyconf.at/photos/"; "Ok, all four" for the services row,
+the Rails band, the stack and the spacing; "A" for Services, declining the
+proofs there; and "A" for Work, Projects, Writing, the Brain and the stroke.
+The words the agent wrote are drafts for him to adjust: the three labels and
+five short lines in the tools diagram, the split of the three community
+sentences, the small headings over the proofs, and the word under the stroke
+in each title. That he may use the conference's photo is the agent's
+assumption from its being his conference, stated to him and not answered.
+
+The fortieth change was asked for by the owner in session on 2026-11-22
+(quoted above), then "A sixth named offer", "Any proof of concept" and
+"Symphony, by technology only", and from two mockups "B, Production". The
+words are the agent's drafts from his message, for him to adjust: when it
+fits, the format ("A short assessment, then hands-on"), the title, the
+text, the four "what you get" lines and the email draft.
 
 ## Related
 

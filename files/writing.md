@@ -7,7 +7,7 @@ title: Writing
 
 <div class="wrap index-page writing-page">
   <header class="page-head">
-    <h1 class="page-title">Writing</h1>
+    <h1 class="page-title"><mark>Writing</mark></h1>
     <p class="page-intro">Longer posts and essays, written by me. For the raw, AI-assisted stream of things I find interesting, see <a href="/brain/">Peek into my brain</a>.</p>
   </header>
 
@@ -15,15 +15,15 @@ title: Writing
     <label class="visually-hidden" for="search">Search the writing</label><input type="search" id="search" placeholder="Search, or type #tag to filter">
     <button type="button" id="clear-filters" class="clear-filters hidden">Clear filters</button>
     <p class="result-count" id="result-count" aria-live="polite"></p>
-    <div class="search-hint">Tip: type <code>#ruby</code> or <code>#career</code> to filter by tag. Click a tag chip to toggle it.</div>
   </div>
 
+  {%- comment -%} The newest post leads; the rest is a dated list (owner, 2026-11-22). While a search or a tag is on, every post is a row. {%- endcomment -%}
   <div class="grid" id="cards" data-noun="posts">
     {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% for post in sorted_posts %}
     <div class="card" data-text="{{ post.title | downcase }} {{ post.excerpt | strip_html | downcase }}" data-tags="{{ post.tags | join: ',' }}">
       <a class="card-link" href="{{ site.baseurl }}{{ post.url }}">
-        <div class="card-date"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b %Y" }}</time></div>
+        <div class="card-date">{% if forloop.first %}<span class="card-latest">Latest · </span>{% endif %}<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b %Y" }}</time></div>
         <h2 class="card-title">{{ post.title | smartify }}</h2>
         <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
       </a>

@@ -25,15 +25,25 @@ hero:
   # services section.
   # evidence: files/_pages/about.md (leading teams, the conferences);
   # role-carv-team, role-experfy-team (teams led)
-  # lead: the first sentence, set apart in ink. more: the rest, under it.
+  # lead: the first sentence, set apart in ink. rows: the rest, one sentence
+  # a row, each with a link to where the page shows it (owner, 2026-11-22;
+  # one paragraph until then). The sentences are unchanged.
   lead: >-
     I make software for a living.
-  more: >-
-    For ten years that has meant everything from deciding what to build to
-    running it in production, anywhere in the stack, and leading teams along
-    the way. These days I also work one layer up, with agents writing the
-    code, and build open-source tools that keep it reliable. And I organise
-    conferences to get people who build software into one room.
+  rows:
+    - text: >-
+        For ten years that has meant everything from deciding what to build to
+        running it in production, anywhere in the stack, and leading teams
+        along the way.
+      link: { label: Work, url: /work/ }
+    - text: >-
+        These days I also work one layer up, with agents writing the code, and
+        build open-source tools that keep it reliable.
+      link: { label: Tools, url: "#h-tools" }
+    - text: >-
+        And I organise conferences to get people who build software into one
+        room.
+      link: { label: Conferences, url: "#community" }
   # evidence: constraint-earliest-start, constraint-location
   # Teams bring me in through my company; no job-seeking line (owner, 2026-10-21).
   # Where I work; the company's name is on Contact, the CV and the imprint.
@@ -189,7 +199,26 @@ services:
     text: >-
       I join your team as a senior engineer and build the product or feature
       end to end, from spec to production.
+  # From proof of concept to production (owner, 2026-11-22: "someone that
+  # comes in when the PoC is done and makes everything production ready, AI
+  # first and AI native and maintainable, easy to extend reliably"). For any
+  # proof of concept; AI-native, the site's term, is how it is made ready.
+  # lead: on the homepage it has its own outlined row above the grid (his
+  # pick over a fifth card), with no line of proof in it: the Symphony
+  # engagement is not quoted there (owner, 2026-11-22); the Work page keeps
+  # its sentence. The name is his pick of three; fits, format, title and
+  # text are the agent's drafts from his message, for him to adjust.
   - number: "02"
+    name: Production
+    lead: true
+    fits: When your proof of concept works and now has to run in production.
+    format: A short assessment, then hands-on
+    title: From proof of concept to production
+    text: >-
+      Your proof of concept proved the idea. I take it from there to
+      production: reliable, maintainable, and easy for your team and its
+      agents to extend.
+  - number: "03"
     name: Lead
     fits: When your team needs technical direction.
     format: Fractional or interim
@@ -198,7 +227,7 @@ services:
     text: >-
       I lead your engineering team as a fractional or interim technical lead:
       technical direction, architecture, delivery, and the people.
-  - number: "03"
+  - number: "04"
     name: Review
     fits: When you want to know where your system stands.
     format: Fixed scope, one to two weeks
@@ -207,7 +236,7 @@ services:
     text: >-
       A short, fixed-scope look at your codebase and system: what holds, what
       will break, and what to fix first.
-  - number: "04"
+  - number: "05"
     name: AI-native
     fits: When you want your company to build with AI.
     format: Workshops, then setup in your codebase
@@ -222,7 +251,7 @@ services:
   # role-teamtailor-employer, proj-usput-web, proj-treasurehunt, oss-enola-gems
   # band: on the homepage as its own band (_data/rails.yml), not in the grid
   # of four; the full offer is /rails/.
-  - number: "05"
+  - number: "06"
     name: Rails
     band: true
     fits: When your Rails app needs an experienced Rubyist.
@@ -258,8 +287,8 @@ sections:
       startups and established product companies.
   stack:
     title: What I work with.
-    intro: Retrieval, evals and guardrails, built on the model providers' SDKs and RubyLLM, agents over MCP, data pipelines and knowledge graphs, and ten years of Ruby, Rails and PostgreSQL underneath.
-    # The homepage shows the first two groups as pills; the rest is this line.
+    # The homepage shows the first two groups as one strip of pills, without
+    # an intro paragraph (owner, 2026-11-22); the rest is this line.
     more: Plus Ruby, Rails, Python, Go, Rust, TypeScript, PostgreSQL, Azure, Kubernetes and more.
     more_link: { label: Full stack on my CV, url: /cv/#cv-skills }
 
@@ -269,6 +298,10 @@ approach: []
 
 # The work page, by capability. Proof points name no employer, no client and no
 # date, and link only to public work. Each carries its evidence ids.
+# proof: what sits beside the claim (owner, 2026-11-22): a picture of a
+# product, real output, or a sentence from a recommendation on this site,
+# word for word (testimonials, by id). The small headings are the agent's
+# drafts, for the owner to adjust.
 capabilities:
   - id: ai-in-production
     title: AI features that hold up in production.
@@ -285,8 +318,11 @@ capabilities:
       - Run my own AI product, where I try new ideas on real users first.
       # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
       - "Took an inherited proof of concept to stable production: data pipelines, knowledge graphs and agents that enrich and classify data, with observability for the pipelines and the agents."
-    links:
-      - { label: usput.ba, url: "https://usput.ba" }
+    proof:
+      kicker: Where I try it first
+      image: /images/projects/usput/home
+      alt: The homepage of Usput.ba
+      link: { label: "Usput.ba, my own AI product", url: /projects/usput/ }
   - id: guardrails
     title: Teams that use coding agents safely.
     text: >-
@@ -299,9 +335,17 @@ capabilities:
       - Set up spec-driven workflows where decisions are written down and checked against the code before it ships.
       # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
       - Introduced AI-native delivery in a project team, and helped a client's engineers bring AI into their own development lifecycle.
-    links:
-      - { label: enola, url: "https://github.com/enola-labs/enola" }
-      - { label: pi-brain, url: "https://github.com/misabegovic/pi-brain" }
+    # The output on enola's page (files/_projects/enola.md), cut to its first lines.
+    proof:
+      kicker: Real output, shortened
+      label: "$ enola check --fail-on=constraints ."
+      code: |
+        FAIL — 2 structural regressions introduced.
+        law: 1 rule · 2 breaches · none excused
+
+        OrderReportJob#perform -> OrdersController
+          app/jobs/order_report_job.rb:2
+      link: { label: enola, url: /projects/enola/ }
   - id: one-model
     title: Systems that stay simple as they grow.
     text: >-
@@ -316,6 +360,10 @@ capabilities:
       - Brought multiple data sources into one platform in a medallion architecture, with knowledge graphs on top.
       # evidence: role-meisterlabs-permissions
       - Designed a plans and permissions system that let product run billing experiments without developer time.
+    proof:
+      kicker: From the team
+      quote: He took on leading the technical direction and shaping the code, and his decisions held up as the project grew.
+      by: zlatko
   - id: teams
     title: Leading teams that deliver.
     text: >-
@@ -325,6 +373,10 @@ capabilities:
       - Led around 30 engineers across 7 time zones through 150 percent growth, without missing a deadline.
       # evidence: role-carv-team
       - Led a startup's engineering team through its acquisition, leading by building.
+    proof:
+      kicker: From the team
+      quote: Muhamed single-handedly managed the team collaboration consisting of 7+ timezones.
+      by: hassan
 
 open_source:
   # The family first (owner, 2026-11-22): empty-shell, then its parts enola,
@@ -333,7 +385,14 @@ open_source:
   # (owner, 2026-11-22).
   # evidence: not yet in the evidence store; the owner's private empty-shell
   # repository (README, rules, rule register), 2026-11-22. Product-level only.
+  # family: where a tool sits in the diagram on the homepage, /projects/ and
+  # /work/ (owner, 2026-11-22): shell is the box, part a cell inside it with
+  # its label, method the row under it. short is its line there; the labels
+  # and lines are the agent's drafts from the owner's own text (the note
+  # "tabula, taha and enola: memory, hands and eyes"), for him to adjust.
   - name: empty-shell
+    family: shell
+    short: Starts a project with an agent from one repository, with the rules, the checks, and three tools set up to work together.
     role: A starting repository · coming soon
     url: ""
     profile: /projects/empty-shell/
@@ -347,6 +406,9 @@ open_source:
       tabula holds the pages and judges the work; taha runs the agent inside
       a mandate.
   - name: enola
+    family: part
+    part: The eyes
+    short: Reads the code into one architecture graph, and catches drift in CI.
     role: Core contributor
     url: https://github.com/enola-labs/enola
     profile: /projects/enola/
@@ -360,6 +422,9 @@ open_source:
   # evidence: not yet in the evidence store; intent in the owner's private
   # brain (wiki/tabula), refreshed 2026-10-22.
   - name: tabula
+    family: part
+    part: The memory
+    short: Holds what the project decided, and judges finished work against it.
     role: In private development · coming soon
     url: ""
     profile: /projects/tabula/
@@ -374,6 +439,9 @@ open_source:
   # evidence: not yet in the evidence store; intent in the owner's private
   # brain (wiki/tabula-harness), 2026-10-22.
   - name: taha
+    family: part
+    part: The hands
+    short: Runs the agent unattended inside a mandate, and brings back checked work.
     role: The tabula harness · coming soon
     url: ""
     profile: /projects/taha/
@@ -387,6 +455,8 @@ open_source:
       holds no credentials.
   # evidence: oss-enola-gems; misabegovic/enola-guides README and CHANGELOG (0.9.0); rubygems.org, npm, PyPI, crates.io
   - name: enola-guides
+    family: method
+    short: "The method, written down: shows a team how to work this way, with decisions anchored to code, laws in CI, and agents that read before they write."
     role: Author and maintainer
     url: https://github.com/misabegovic/enola-guides
     profile: /projects/enola-guides/
@@ -432,11 +502,45 @@ community_logos:
   - { name: GoatConf 2027, logo: /images/logos/goatconf.svg, width: 300, height: 101, url: "https://goatconf.com/" }
   - { name: RubyConf Austria, logo: /images/logos/rubyconf-austria.svg, width: 212, height: 68, url: "https://www.rubyconf.at/" }
   - { name: EuRuKo 2024, logo: /images/logos/euruko.svg, width: 166, height: 41, url: "https://2024.euruko.org" }
+# The band's photo: the audience at RubyConf Austria 2026, from the
+# conference's own gallery (rubyconf.at/photos, DSC_5959), used on the owner's
+# word (2026-11-22) and credited to its photographer in the band.
+community_photo:
+  src: /images/community/rubyconf-austria-2026
+  width: 1800
+  height: 1202
+  alt: The audience at RubyConf Austria 2026, in the red seats of the hall
+  credit: "RubyConf Austria 2026 · Photo: Alessandro Bruckheimer"
+# One column an event (owner, 2026-11-22; three sentences until then): logo
+# names its entry in community_logos; the facts are those sentences', split
+# into a role, a place and date, one line and the numbers. The RubyConf
+# Austria line is the Rails page's (_data/rails.yml).
 community:
-  - text: "Founding and organising GoatConf 2027 in Tuzla, Bosnia and Herzegovina, 3–5 June 2027: a free conference for people who build and sell software, hosted by IPI Academy."
-  # evidence: community-rubyconf-austria, community-rubyconf-scale; community-euruko-2024
-  - text: "Founded and organised RubyConf Austria 2026 in Vienna: up to <strong>200 attendees</strong> and <strong>13 speakers</strong>."
-  - text: "Organised EuRuKo 2024 in Sarajevo, Europe's longest-running Ruby conference: <strong>700 attendees</strong> and <strong>50 speakers</strong> from <strong>25+ countries</strong>."
+  - logo: goatconf
+    role: Founding and organising
+    place: Tuzla, 3–5 June 2027
+    note: A free conference for people who build and sell software, hosted by IPI Academy.
+    stats:
+      - { value: "3", label: days }
+      - { value: Free, label: to attend }
+  # evidence: community-rubyconf-austria, community-rubyconf-scale; community-rubyconf-speakers
+  - logo: rubyconf-austria
+    role: Founded and organised
+    place: Vienna, 2026
+    note: The first RubyConf Austria, with Dave Thomas, Chad Fowler, José Valim and Armin Ronacher on the programme.
+    stats:
+      # "up to 200" in the evidence, so the label keeps the limit.
+      - { value: "200", label: attendees at most }
+      - { value: "13", label: speakers }
+  # evidence: community-euruko-2024
+  - logo: euruko
+    role: Organised
+    place: Sarajevo, 2024
+    note: EuRuKo, Europe's longest-running Ruby conference.
+    stats:
+      - { value: "700", label: attendees }
+      - { value: "50", label: speakers }
+      - { value: 25+, label: countries }
 
 # Real, attributed and permitted quotes only. Entries marked placeholder show
 # only while show_placeholders is on; replace each with a real quote (and drop
@@ -473,7 +577,8 @@ testimonials:
     role: Worked with Muhamed at Recrubo/Carv
   # LinkedIn recommendation, 2021-07-20. quote is the short version shown
   # first; full is the whole text, behind "Read the full recommendation".
-  - quote: >-
+  - id: hassan
+    quote: >-
       Muhamed is one of the most amazing professionals I have ever worked with.
       He is extremely talented, dependable, and disciplined. … I would strongly
       recommend Muhamed and would love to work with him again.

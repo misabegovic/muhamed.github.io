@@ -84,5 +84,5 @@ shows:
   title: What it shows about how I work.
   text: |
     I build the thing the event needs, run it live for the people in the room, and then make it useful for the next person: documented, configurable in one place, tested, and open. Organising a conference and shipping its software in the same months is the kind of ownership I bring to a team.
-  link: { label: The community I bring together, url: "/#h-community" }
+  link: { label: The community I bring together, url: "/#community" }
 ---

@@ -33,7 +33,7 @@ description: Ruby on Rails consulting from Muhamed Isabegovic, a Rubyist since 2
     <div class="rails-hero-grid">
       <div class="page-head rails-head">
         <p class="rails-kicker">{{ r.kicker }}</p>
-        <h1 class="page-title">{{ r.title }}</h1>
+        {% capture rmark %}<mark>{{ r.title_mark }}</mark>{% endcapture %}<h1 class="page-title">{% if r.title_mark %}{{ r.title | replace_first: r.title_mark, rmark }}{% else %}{{ r.title }}{% endif %}</h1>
         <p class="page-intro">{{ r.lead }}</p>
         <div class="hero-actions">
           <a class="button" href="{{ rmail | strip }}">{{ rd.email.label }}{{ arr }}</a>

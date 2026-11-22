@@ -1,0 +1,27 @@
+{%- comment -%}
+  A piece of proof beside a claim (owner, 2026-11-22): a picture of a
+  product, real output, or a sentence from a recommendation on the site.
+  Pass it as p (from _data/home.yml, capabilities: proof). An image is src
+  without the width and extension (name-800.webp); a quote names its
+  testimonial by id.
+{%- endcomment -%}
+{%- assign p = include.p -%}
+{%- capture arr %}<svg class="arr" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg>{% endcapture -%}
+<aside class="proof">
+  <p class="proof-kicker">{{ p.kicker }}</p>
+  {% if p.image %}
+  <img class="proof-shot" src="{{ site.baseurl }}{{ p.image }}-800.webp" alt="{{ p.alt }}" width="800" height="500" loading="lazy">
+  {% elsif p.code %}
+  <div class="pm-code proof-code">
+    {% if p.label %}<p class="pm-code-label">{{ p.label }}</p>{% endif %}
+    <pre tabindex="0"><code>{{ p.code | strip | xml_escape }}</code></pre>
+  </div>
+  {% elsif p.quote %}
+  {% assign t = site.data.home.testimonials | where: "id", p.by | first %}
+  <figure class="proof-quote">
+    <blockquote>{{ p.quote }}</blockquote>
+    <figcaption class="quote-by">{% if t.avatar %}<img class="avatar" src="{{ site.baseurl }}{{ t.avatar }}" alt="" width="48" height="48" loading="lazy">{% endif %}<p><strong>{{ t.name }}</strong>{{ t.role }}</p></figcaption>
+  </figure>
+  {% endif %}
+  {% if p.link %}<a class="text-link" href="{{ site.baseurl }}{{ p.link.url }}">{{ p.link.label }}{{ arr }}</a>{% endif %}
+</aside>

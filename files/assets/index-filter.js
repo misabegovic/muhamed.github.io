@@ -7,9 +7,12 @@
   const resultCount = document.getElementById('result-count');
   const cards = Array.from(document.querySelectorAll('.card'));
   const loadMoreBtn = document.getElementById('load-more');
+  const grid = document.getElementById('cards');
+  // The brain groups its entries by month; a month with nothing to show hides.
+  const months = Array.from(document.querySelectorAll('.month'));
   const PAGE_SIZE = 6;
   // What the cards are, for the result count ("3 of 12 posts").
-  const noun = document.getElementById('cards').dataset.noun || 'items';
+  const noun = grid.dataset.noun || 'items';
   let visibleCount = PAGE_SIZE;
 
   function parseQuery(input) {
@@ -66,6 +69,15 @@
     clearFilters.classList.toggle('hidden', !search.value);
     document.getElementById('no-results').hidden = !(matched === 0 && cards.length > 0);
     updateTagHighlights(tags);
+    // While a search or a tag is on, the writing index drops its lead: every post is a row.
+    grid.classList.toggle('is-filtered', Boolean(search.value.trim()));
+    months.forEach(m => {
+      const inMonth = Array.from(m.querySelectorAll('.card'));
+      const matching = inMonth.filter(c => !c.classList.contains('hidden'));
+      m.hidden = !matching.some(c => !c.classList.contains('page-hidden'));
+      const count = m.querySelector('.month-count');
+      if (count) count.textContent = `${matching.length} ${matching.length === 1 ? count.dataset.one : count.dataset.many}`;
+    });
     resultCount.textContent = search.value.trim() ? `${matched} of ${cards.length} ${noun}` : '';
   }
 

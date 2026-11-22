@@ -1,5 +1,6 @@
 {%- comment -%} The recommendations list, shared by the homepage and the work page. Expects `quotes`. {%- endcomment -%}
-      <ul class="quotes" role="list">
+{%- comment -%} lead=true (the homepage): the first one set large, the others beside it; a swipe row on phones (owner, 2026-11-22). {%- endcomment -%}
+      <ul class="quotes{% if include.lead %} quotes-lead{% endif %}" role="list">
         {% for t in quotes %}
         <li class="quote{% if t.placeholder %} placeholder{% endif %}">
           {% if t.placeholder %}<p class="placeholder-tag">Placeholder</p>{% endif %}
@@ -17,3 +18,4 @@
         </li>
         {% endfor %}
       </ul>
+      {% if include.lead and quotes.size > 1 %}<p class="quotes-hint" aria-hidden="true">{{ quotes.size }} recommendations · swipe<svg class="arr" viewBox="0 0 16 12"><path d="M1 6h13M9 1.5 14 6l-5 4.5"/></svg></p>{% endif %}

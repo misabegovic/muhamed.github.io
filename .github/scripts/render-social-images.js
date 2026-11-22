@@ -55,6 +55,7 @@ h1, h2 { font-weight: 800; letter-spacing: -.035em; line-height: .98; text-wrap:
 
 const services = [
   { slug: 'build', name: 'Build', title: 'Hands-on product engineering', text: 'I join your team as a senior engineer and build the product or feature end to end, from spec to production.', format: 'Embedded, part-time or full-time' },
+  { slug: 'production', name: 'Production', title: 'From proof of concept to production', text: 'Your proof of concept proved the idea. I take it from there to production: reliable, maintainable, and easy for your team and its agents to extend.', format: 'A short assessment, then hands-on' },
   { slug: 'lead', name: 'Lead', title: 'Technical lead for your team', text: 'I lead your engineering team as a fractional or interim technical lead: technical direction, architecture, delivery, and the people.', format: 'Fractional or interim' },
   { slug: 'review', name: 'Review', title: 'Architecture review', text: 'A short, fixed-scope look at your codebase and system: what holds, what will break, and what to fix first.', format: 'Fixed scope, one to two weeks' },
   { slug: 'ai-native', name: 'AI-native', title: 'Make your company AI-native', text: 'How you build and what you build. I set up a knowledge base your people and agents work from, with architecture rules checked in CI, and build AI features into your product that hold up in production, using open-source tools I build and teach.', format: 'Workshops, then setup in your codebase' },

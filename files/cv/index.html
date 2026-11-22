@@ -12,7 +12,7 @@ description: The CV of Muhamed Isabegovic, Staff Engineer, in one column, with d
 {%- assign cv = site.data.cv -%}
 <article class="wrap page cv-page">
   <header class="page-head">
-    <h1 class="page-title">{{ cv.name }}</h1>
+    <h1 class="page-title">{{ cv.name | replace_first: "Muhamed", "<mark>Muhamed</mark>" }}</h1>
     <p class="cv-title">{{ cv.title }}</p>
     <p class="page-intro">{{ cv.summary }}</p>
     <p class="cv-contact">{% for c in cv.contact %}{% if c contains "@" %}<a href="mailto:{{ c }}">{{ c }}</a>{% elsif c contains "." %}<a href="https://{{ c }}"{% unless c == "muhamed.at" %} rel="me"{% endunless %}>{{ c }}</a>{% else %}{{ c }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
