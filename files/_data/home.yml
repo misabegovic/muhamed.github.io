@@ -9,6 +9,12 @@ person:
   # One form everywhere, as on the CV and the LinkedIn headline.
   role: Staff Engineer
 
+# Under every post and note: the portrait, the name, this sentence and the
+# links to About and Contact (owner, 2026-11-23). The sentence is the hero's
+# lead with the city added: the agent's draft, for the owner to adjust.
+byline:
+  text: I make software for a living, in Vienna.
+
 hero:
   # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
   # A greeting, simple and personal: who I am and how I could help (owner,
@@ -269,6 +275,8 @@ sections:
   services:
     # Where teams usually start, not a closed list (owner, 2026-10-21).
     title: How I can help.
+    # The word under the hand-drawn stroke on the homepage (owner, 2026-11-23).
+    mark: help
     intro: Where teams usually start with me. Something else in mind? Tell me about&nbsp;it.
   work:
     title: What teams bring me in for.
@@ -277,6 +285,7 @@ sections:
     title: What people I have worked with say.
   tools:
     title: I build the guardrails I teach.
+    mark: guardrails
     # Two of the five rows are open today; the rest open soon (owner, 2026-11-22).
     intro: The tools behind my workshops are ones I build or help build. enola and enola-guides are open source today, and empty-shell, tabula and taha open soon.
   side:
@@ -456,6 +465,8 @@ open_source:
   # evidence: oss-enola-gems; misabegovic/enola-guides README and CHANGELOG (0.9.0); rubygems.org, npm, PyPI, crates.io
   - name: enola-guides
     family: method
+    # The label over its row in the diagram: the agent's draft (2026-11-23).
+    part: The method
     short: "The method, written down: shows a team how to work this way, with decisions anchored to code, laws in CI, and agents that read before they write."
     role: Author and maintainer
     url: https://github.com/misabegovic/enola-guides

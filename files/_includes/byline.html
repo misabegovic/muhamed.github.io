@@ -1,0 +1,10 @@
+{%- comment -%}
+  The signed ending under a post or a note (owner, 2026-11-23): the portrait,
+  the name, the homepage's first sentence, and the way to the About page and
+  to an email. A reader who arrives from a shared link meets the author here.
+{%- endcomment -%}
+{%- assign h = site.data.home -%}
+<aside class="byline" aria-label="About the author">
+  <img src="{{ site.baseurl }}/images/profile-480.webp?v={{ '/images/profile-480.webp' | asset_digest }}" alt="" width="72" height="72" loading="lazy">
+  <p><strong>{{ site.author }}</strong>{{ h.byline.text }} <span class="byline-links"><a href="{{ site.baseurl }}/about/">About me</a> <span aria-hidden="true">·</span> <a href="{{ site.baseurl }}{{ h.hero.primary.url }}">{{ h.hero.primary.label }}</a></span></p>
+</aside>

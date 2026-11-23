@@ -10,8 +10,8 @@ kind: inbox
 
 - **kind:** observation
 - **scope:** muhamed.github.io
-- **status:** waiting on the owner
-- **summary:** The About page is all text. Add one photo to its Community section, from RubyConf Austria (music on stage, the treasure hunt), EuRuKo 2024 or Tuzla, with a one-line caption, once the owner supplies one he has the right to publish. The repo holds no such photo; the EuRuKo 2023 photos are not wanted here. Deferred by the owner during the About rewrite (homepage ADR, twenty-sixth change).
+- **status:** done on 2026-11-23, unless the owner sends a photo of his own
+- **summary:** Done with the photo the repository has: the room at RubyConf Austria 2026 is in the Community section with a one-line caption and the photographer's credit (homepage ADR, forty-first change; the owner's pick, "A: all three"). A photo of his own (music on stage, the treasure hunt, EuRuKo 2024 or Tuzla) could replace it. As first noted: The About page is all text. Add one photo to its Community section, from RubyConf Austria (music on stage, the treasure hunt), EuRuKo 2024 or Tuzla, with a one-line caption, once the owner supplies one he has the right to publish. The repo holds no such photo; the EuRuKo 2023 photos are not wanted here. Deferred by the owner during the About rewrite (homepage ADR, twenty-sixth change).
 
 ---
 

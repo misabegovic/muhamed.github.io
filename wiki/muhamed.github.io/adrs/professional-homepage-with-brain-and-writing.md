@@ -67,6 +67,9 @@ sources:
   - files/images/profile-1600.webp
   - .github/scripts/render-profile-images.py
   - files/images/social/service-production-linkedin.png
+  - files/_includes/byline.html
+  - files/_includes/site-footer.html
+  - files/assets/site.js
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -1168,6 +1171,102 @@ files/assets/site.css). The Work page keeps its sentence about the inherited
 proof of concept, and the CV and llms.txt are unchanged. As it stands the
 homepage is 7,529 px tall at 1440 px and 10,230 px at 390 px.
 
+**2026-11-23, forty-first change: a polish round, with the stroke put to
+work.** The owner asked to "iterate on improving the design of the site".
+Asked how far, he chose to polish what is there over adding character or a
+new direction; asked where, the whole site; asked what bothers him, he named
+"not distinctive enough" and "feels static" and left the rest to the agent's
+audit; and he asked for mockups before anything was built. Nine boards were
+shown, each a capture of the real site with the change applied, with two
+short videos of the motion, and he took the recommended choice on all nine.
+The look is unchanged: the same type, yellow, ink and hand-drawn stroke.
+
+*Motion.* Until now only the arrows moved, on hover. The stroke now moves,
+and little else does (his pick over also letting sections rise in as they
+are scrolled to, and over no motion). It draws itself under his name and
+under a page's title as the page opens, and under a marked word further down
+when that word is reached (source: files/assets/site.css,
+files/assets/site.js). In the menu the current page's stroke is an element
+of its own, the other items draw a stroke under the pointer, and from one
+page to the next the old page fades into the new one while the stroke slides
+to the new item (source: files/_includes/site-header.html). The green dot
+beside "Based in Vienna" lets a slow ring go every few seconds. A visitor who
+asks the device for less motion gets none of it, and without scripts every
+stroke is simply there. The fade and the slide need a browser with view
+transitions between pages (Chrome, Edge and Safari today); elsewhere a page
+loads as it did.
+
+*The stroke on the homepage's section titles.* One word in three titles
+carries the stroke: "How I can help.", "I bring the community together." and
+"I build the guardrails I teach." (his pick over all five sections and over
+none; source: files/_data/home.yml, files/_includes/home-page.html). This
+changes the thirty-ninth change's "one stroke a page" for the homepage,
+which has no page title of its own. The same titles on `/projects/` and
+`/work/` stay plain, since those pages have a marked title.
+
+*Bullets.* Wherever a list had a round yellow dot, on Services, Work, Rails
+and the CV and beside the labels in the tools diagram, the bullet is a short
+dash from the same marker as the stroke (source: files/assets/site.css). The
+stroke is one drawing in the stylesheet now, `--stroke`.
+
+*The footer.* His name is set across the footer's width on every page, with
+the stroke under "Muhamed", and links home; the small name above the
+footer's text is gone (source: files/_includes/site-footer.html). It adds
+about 190 px to a page.
+
+*The header.* The three theme icons between the menu and the button are one
+round button that shows the current choice and opens System, Light and Dark
+(source: files/_includes/site-header.html, files/assets/site.js). This keeps
+the three choices of the thirty-seventh change and takes back its row of
+icons in the header. A choice, Escape, a click elsewhere or a scroll closes
+it. The phone menu keeps the row of three with their words.
+
+*Services.* The page listed the six offers in a table and then all six in
+full, 7,632 px at 1440 px. The offers are now rows that open: a row is the
+name, when it fits and the format, and it opens to the detail and the email
+button (his pick over keeping everything open; source: files/services.html).
+A link to an offer, as from the homepage's cards or the closing band, opens
+that row; rows open without scripts too, and all of them are open on paper.
+With every row closed the page is 3,816 px at 1440 px and 5,361 px at 390 px
+(from 11,384). What it costs, said to him before he chose: a visitor who
+only scrolls sees six lines and not the detail.
+
+*About.* The first paragraph is set as a lead, each section starts under a
+rule as on the CV, and the Community section shows the room at RubyConf
+Austria 2026 after the paragraph about it (source: files/_pages/about.md,
+files/assets/site.css). The photo is the one the community band uses, the
+only one in the repository, credited in its caption; he chose it over
+waiting for one of his own, which closes the inbox's note of 2026-10-29.
+
+*Posts and notes.* Reading time sits beside the date, at 230 words a minute;
+a signed ending under the text shows his portrait, his name, "I make
+software for a living, in Vienna." and links to About and to Contact; and a
+yellow line across the top of the window grows while a text longer than a
+screen and a half is read (all three his picks; source:
+files/_layouts/post.html, files/_layouts/stream-entry.html,
+files/_includes/byline.html, files/assets/site.js).
+
+*The tools diagram* is in the project profiles decision's
+[tenth amendment](project-profile-pages.md).
+
+Two repairs that needed no decision: on Work the terminal output beside
+"Teams that use coding agents safely" breaks at spaces only, in a column
+3 rem wider from 1280 px; and a project's name with no space in it
+(hunt.rubyconf.at) no longer runs 15 px past a 320 px screen.
+
+What it changes in numbers, measured in Chromium: the homepage is 7,741 px
+tall at 1440 px, from 7,529, and 10,278 px at 390 px, from 10,230; About is
+4,697 px from 3,789; a post is about 320 px longer. Checked in Chromium: no
+sideways scroll on 22 page types at 20 widths from 320 to 2560 px in the
+light scheme and at 390 and 1440 px in the dark one; no text below WCAG AA
+contrast and no ARIA fault on nine page types at 1440 and 390 px in both
+schemes, with the theme menu open; no script errors; the strokes draw when
+reached, also in a window taller than the page's last screen; the theme
+button works by pointer and by keyboard; a link to an offer opens its row.
+Not done: the generated share images are unchanged, since none shows what
+changed; the Izbori guide and the games keep their own pages, so a move to
+or from them does not fade.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1395,6 +1494,19 @@ The fortieth change was asked for by the owner in session on 2026-11-22
 words are the agent's drafts from his message, for him to adjust: when it
 fits, the format ("A short assessment, then hands-on"), the title, the
 text, the four "what you get" lines and the email draft.
+
+The forty-first change was asked for by the owner in session on 2026-11-23:
+"Let's iterate on improving the design of the site", then "Polish what is
+there", all four groups of pages, "Nothing specific, you propose", "Not
+distinctive enough" and "Feels static", and "Mockups first, I pick". From
+the nine boards he took the recommended choice each time: "A: the stroke
+only", "A: three sections", "A: marker dashes", "A: the name, large", "A: one
+button", "A: rows that open", "A: all three" for About, all three additions
+for posts and notes, and "A: inside the box" for the tools diagram. He asked
+for the branch to be pushed with a pull request. The words the agent wrote
+are drafts for him to adjust: the three marked words, the label "The
+method", and the sentence in the signed ending. That he may use the
+conference's photo on About rests on the same assumption as on the homepage.
 
 ## Related
 

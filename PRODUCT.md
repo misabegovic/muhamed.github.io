@@ -104,7 +104,15 @@ organiser, and works in public.
   as a family, the community band carries a photo from RubyConf Austria
   2026 (credited to Alessandro Bruckheimer), the Brain is a stream by month,
   and the hand-drawn stroke sits under one word of every page title and
-  marks the current page in the menu.
+  marks the current page in the menu. A polish round followed (owner,
+  2026-11-23), again with the look kept: the stroke draws itself as a page
+  opens and slides between menu items from page to page, three homepage
+  section titles carry it, bullets are short dashes from the same marker,
+  his name is set large across the footer, the theme control in the header
+  is one button that opens the three choices, Services is six rows that
+  open, About has a lead and the conference photo, and a post or note ends
+  with his portrait, name and the links to About and Contact. A visitor who
+  asks for less motion gets none.
 - The repository is also a pi-brain knowledge base (`wiki/`, `sources/`,
   `log/`), and its `AGENTS.md` requires an approved ADR before structural
   changes (`wiki/muhamed.github.io/constraints/adr-before-structural-changes.md`).

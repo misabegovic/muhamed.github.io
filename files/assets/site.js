@@ -61,6 +61,81 @@
   window.addEventListener("storage", (e) => { if (e.key === "theme") applyTheme(e.newValue); });
   applyTheme(stored());
 
+  // In the header the theme control is one button that opens the three
+  // choices; a choice, Escape, a click elsewhere or a scroll closes it. In
+  // the phone menu the three are a row and the button is hidden.
+  const theme = document.querySelector(".theme");
+  const themeToggle = theme && theme.querySelector(".theme-toggle");
+  if (themeToggle) {
+    const themeOpen = () => theme.classList.contains("is-open");
+    const setThemeOpen = (open, returnFocus) => {
+      theme.classList.toggle("is-open", open);
+      themeToggle.setAttribute("aria-expanded", String(open));
+      if (open) theme.querySelector('[data-theme-set][aria-pressed="true"]').focus();
+      else if (returnFocus) themeToggle.focus();
+    };
+    themeToggle.addEventListener("click", () => setThemeOpen(!themeOpen(), false));
+    theme.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => { if (themeOpen()) setThemeOpen(false, true); }));
+    document.addEventListener("click", (e) => { if (themeOpen() && !theme.contains(e.target)) setThemeOpen(false, false); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && themeOpen()) setThemeOpen(false, true); });
+    theme.addEventListener("focusout", (e) => { if (themeOpen() && e.relatedTarget && !theme.contains(e.relatedTarget)) setThemeOpen(false, false); });
+    window.addEventListener("scroll", () => { if (themeOpen()) setThemeOpen(false, false); }, { passive: true });
+  }
+
+  // The stroke under a word further down the page draws itself when the word
+  // is reached. Only words that start below the window are held back, so
+  // nothing that is already on screen changes; with less motion asked for,
+  // or without this script, every stroke is simply there.
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const seen = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-drawn");
+      seen.unobserve(entry.target);
+    }), { threshold: 1 });
+    document.querySelectorAll(".section-title mark, .community-title mark, .foot-sign mark").forEach((mark) => {
+      if (mark.getBoundingClientRect().top < window.innerHeight) return;
+      mark.classList.add("to-draw");
+      seen.observe(mark);
+    });
+  }
+
+  // Services: a link to #name opens that offer's row, and every row is open
+  // on paper.
+  const offers = document.querySelectorAll("details.offer");
+  if (offers.length) {
+    const openTarget = () => {
+      let el = null;
+      try { el = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (e) {}
+      if (el && el.matches("details.offer")) el.open = true;
+    };
+    window.addEventListener("hashchange", openTarget);
+    window.addEventListener("beforeprint", () => offers.forEach((o) => { o.open = true; }));
+    openTarget();
+  }
+
+  // Posts and notes: a line across the top of the window that grows as the
+  // text is read. Only where the text is longer than a screen and a half.
+  const prose = document.querySelector(".post .prose");
+  if (prose && prose.offsetHeight > window.innerHeight * 1.5) {
+    const bar = document.createElement("div");
+    bar.className = "read-progress";
+    bar.setAttribute("aria-hidden", "true");
+    document.body.append(bar);
+    let waiting = false;
+    const draw = () => {
+      waiting = false;
+      const box = prose.getBoundingClientRect();
+      const start = Math.max(0, box.top + window.scrollY - (top ? top.offsetHeight : 0));
+      const end = box.bottom + window.scrollY - window.innerHeight;
+      const done = end > start ? (window.scrollY - start) / (end - start) : 0;
+      bar.style.transform = `scaleX(${Math.min(1, Math.max(0, done))})`;
+    };
+    const ask = () => { if (!waiting) { waiting = true; requestAnimationFrame(draw); } };
+    window.addEventListener("scroll", ask, { passive: true });
+    window.addEventListener("resize", ask);
+    draw();
+  }
+
   const panel = document.getElementById("site-menu");
   if (!top || !toggle || !panel) return;
 
