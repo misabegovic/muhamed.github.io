@@ -2,9 +2,10 @@
 layout: default
 code: true
 ---
+{% assign words = content | strip_html | number_of_words %}{% assign mins = words | plus: 115 | divided_by: 230 | at_least: 1 %}
 <article class="wrap post">
   <header class="page-head">
-    <p class="post-meta"><a href="{{ site.baseurl }}/brain/">Brain</a><span aria-hidden="true">/</span><span>{{ page.type }}</span><span aria-hidden="true">/</span><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %b %Y" }}</time></p>
+    <p class="post-meta"><a href="{{ site.baseurl }}/brain/">Brain</a><span aria-hidden="true">/</span><span>{{ page.type }}</span><span aria-hidden="true">/</span><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %b %Y" }}</time><span aria-hidden="true">/</span><span>{{ mins }} min read</span></p>
     <h1 class="page-title">{{ page.title | smartify }}</h1>
     <p class="page-intro">{% if page.url_external %}From <a href="{{ page.url_external }}" target="_blank" rel="noopener">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</p>
   </header>
@@ -12,6 +13,7 @@ code: true
   <div class="prose">
     {{ content }}
   </div>
+  {% include byline.html %}
   <footer class="post-foot">
     {% if page.tags.size > 0 %}
     <div class="taglist"><span class="taglist-label">Filed under</span><ul class="chips" role="list">{% for tag in page.tags %}<li><a class="chip" href="{{ site.baseurl }}/brain/?tag={{ tag | url_encode }}">{{ tag }}</a></li>{% endfor %}</ul></div>

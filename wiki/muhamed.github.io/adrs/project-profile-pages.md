@@ -360,6 +360,21 @@ width of its largest thumbnail (`thumb_max`), since Usput.ba's stops at
 1440 px (source: files/_projects/usput.md). The knowledge-bases card at the
 top is unchanged. The projects page is 4,303 px tall at 1440 px, from 5,488.
 
+**2026-11-23, tenth amendment: the method is inside the box.** Part of the
+homepage decision's
+[forty-first change](professional-homepage-with-brain-and-writing.md), from
+the owner's pick of one mockup ("A: inside the box"). In the family diagram
+enola-guides sat under empty-shell's box with no edge of its own and read as
+a leftover line. It is now the box's last row, on a tint, under the label
+"The method", so the drawing is one object on the homepage, `/projects/` and
+`/work/` (source: files/_includes/tool-family.html, files/assets/site.css).
+The label is the entry's `part` in `home.yml`, as for the three tools, and
+is the agent's draft (source: files/_data/home.yml). The labels' yellow dots
+are short dashes from the marker, with the site's other bullets. What this
+says that the old drawing did not: that the method belongs to the family as
+the tools do; whether enola-guides ships inside empty-shell is not claimed
+by the page's words, which are unchanged.
+
 ## Approval
 
 Approved by the owner in session on 2026-10-22 ("Approved."), with the
@@ -371,6 +386,9 @@ Yes"). Drafted in `ai-suggestions/adrs/` and graduated on approval.
 
 The ninth amendment was chosen by the owner in session on 2026-11-22 from a
 mockup of the projects page ("A"), both of its parts.
+
+The tenth amendment was chosen by the owner in session on 2026-11-23 from a
+mockup of the diagram ("A: inside the box").
 
 ## Related
 

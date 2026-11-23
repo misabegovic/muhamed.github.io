@@ -51,6 +51,14 @@
   --t-h2: clamp(1.875rem, 1.25rem + 2vw, 3.125rem);
   --t-h1: clamp(2.5rem, 1.4rem + 3.4vw, 4.5rem);
 
+  /* The hand-drawn stroke: one drawing for the highlighted words, the menu,
+     the bullets and the footer's name. Its fill is --yellow, written out
+     because a data URI can't read it; .github/scripts/render-social-images.js
+     draws the same stroke. */
+  --stroke: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E");
+  /* How the stroke moves when it draws itself. */
+  --draw: cubic-bezier(0.25, 0.7, 0.15, 1);
+
   --wrap: 76rem;
   --pad: clamp(1.25rem, 0.6rem + 2.8vw, 3rem);
   --section: clamp(4.5rem, 3rem + 5vw, 8rem);
@@ -194,23 +202,35 @@ a:hover .arr { transform: translateX(3px); }
 @media (hover: hover) {
   .menu-toggle:hover { background: var(--ink); color: var(--paper); }
 }
-.menu a:hover { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.35em; }
 /* The current page carries the hand-drawn stroke, as each page's title does
-   (owner, 2026-11-22; a straight yellow line until then). */
-.menu a[aria-current] span { padding: 0 0.15em 0.2em; margin-inline: -0.15em; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E") 0 100% / 100% 0.38em no-repeat; }
-.menu a[aria-current]:hover { text-decoration: none; }
+   (owner, 2026-11-22; a straight yellow line until then). It is an element
+   of its own, so it slides to the next page's item when the page changes,
+   and the other items draw one under the pointer (owner, 2026-11-23). */
+.menu a span { position: relative; padding: 0 0.15em 0.2em; margin-inline: -0.15em; }
+.menu-stroke { position: absolute; z-index: -1; inset: auto 0 0; height: 0.38em; background: var(--stroke) 0 0 / 100% 100% no-repeat; view-transition-name: menu-stroke; }
+.menu a:not([aria-current]) span { background: var(--stroke) 0 100% / 0% 0.38em no-repeat; transition: background-size 0.3s var(--draw); }
+@media (hover: hover) { .menu a:not([aria-current]):hover span { background-size: 100% 0.38em; } }
 .button[aria-current="page"] { background: var(--ink); color: var(--accent-on-ink); }
 
-/* Colour theme: System, Light, Dark. Icons only in the header; with their
-   words in the phone menu. Needs the script, so it shows only with it. The
-   chosen one is marked from the root's attributes, so it is right from the
-   first paint, before site.js runs. */
-.theme { display: none; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
-.js .theme { display: inline-flex; }
-.theme button { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; width: 2.25rem; height: 2.125rem; padding: 0; border: 0; border-radius: 999px; background: none; color: var(--ink-2); font: inherit; font-size: 1rem; font-weight: 650; cursor: pointer; transition: background-color 0.15s ease-out, color 0.15s ease-out; }
+/* Colour theme: System, Light, Dark. In the header, one round button that
+   shows the current choice and opens the three (owner, 2026-11-23; three
+   icons in a row until then); in the phone menu, a row of three with their
+   words. Needs the script, so it shows only with it. The current choice is
+   marked from the root's attributes, so it is right from the first paint,
+   before site.js runs. */
+.theme { position: relative; display: none; }
+.js .theme { display: block; }
 .theme svg { width: 1.125rem; height: 1.125rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.theme span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.theme button:hover { color: var(--ink); background: var(--tint); }
+.theme-toggle { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: none; color: var(--ink); cursor: pointer; transition: background-color 0.15s ease-out, border-color 0.15s ease-out; }
+.theme-toggle:hover, .theme-toggle[aria-expanded="true"] { border-color: var(--ink-3); background: var(--tint); }
+.theme-now { display: none; }
+:root:not([data-theme]) .theme-now[data-theme-icon="system"],
+:root[data-theme="light"] .theme-now[data-theme-icon="light"],
+:root[data-theme="dark"] .theme-now[data-theme-icon="dark"] { display: grid; }
+.theme-options { position: absolute; z-index: 5; top: calc(100% + 0.6rem); right: 0; display: none; min-width: 10.5rem; padding: 0.35rem; border: 1px solid var(--line); border-radius: calc(var(--radius) * 2); background: var(--paper); box-shadow: 0 1rem 2.25rem -1rem rgb(0 0 0 / 0.35); }
+.theme.is-open .theme-options { display: grid; gap: 2px; }
+.theme-options button { display: flex; align-items: center; gap: 0.7rem; min-height: 2.5rem; padding: 0 0.75rem; border: 0; border-radius: var(--radius); background: none; color: var(--ink-2); font: inherit; font-size: var(--t-small); font-weight: 650; text-align: left; cursor: pointer; transition: background-color 0.15s ease-out, color 0.15s ease-out; }
+.theme-options button:hover { color: var(--ink); background: var(--tint); }
 :root:not([data-theme]) .theme [data-theme-set="system"],
 :root[data-theme="light"] .theme [data-theme-set="light"],
 :root[data-theme="dark"] .theme [data-theme-set="dark"] { background: var(--ink); color: var(--paper); }
@@ -238,16 +258,27 @@ a:hover .arr { transform: translateX(3px); }
 /* The highlighter is drawn by hand: a tilted, uneven stroke under the words,
    in both schemes (owner, 2026-11-22; it sat behind the words in the light
    scheme until then, and light letters cannot sit on yellow in the dark
-   one). Each line of a wrapped mark gets its own stroke. The SVG's fill is
-   --yellow, written out because a data URI can't read it;
-   .github/scripts/render-social-images.js draws the same stroke. */
+   one). Each line of a wrapped mark gets its own stroke. --sh is the
+   stroke's height. */
 mark {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath fill='%23ffd21f' d='M12 9C62 6 130 3 195 1c4 0 5 3 4 8-2 10-5 17-10 20-60 3-124 6-182 10-5 0-7-3-6-8 2-9 5-17 11-22z'/%3E%3C/svg%3E") 0 96% / 100% 0.3em no-repeat;
+  --sh: 0.3em;
+  background: var(--stroke) 0 96% / 100% var(--sh) no-repeat;
   color: inherit;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   padding: 0 0.1em 0.12em;
   margin-inline: -0.06em;
+}
+/* The stroke draws itself (owner, 2026-11-23): under the name and a page's
+   title as the page opens, and under a word further down when it is
+   scrolled to. site.js marks those words to-draw only if they start below
+   the window, then is-drawn when they are reached, so without the script,
+   and for visitors who ask for less motion, every stroke is simply there. */
+@keyframes stroke-in { from { background-size: 0% var(--sh); } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title mark, .page-title mark { animation: stroke-in 0.75s var(--draw) 0.35s both; }
+  mark.to-draw { background-size: 0% var(--sh); }
+  mark.to-draw.is-drawn { background-size: 100% var(--sh); transition: background-size 0.8s var(--draw) 0.15s; }
 }
 /* The lead is one sentence, in ink; the rest of the paragraph sits under it,
    smaller and grey, so the first screen reads in three steps (2026-11-21). */
@@ -268,8 +299,13 @@ mark {
 @media (min-width: 701px) and (max-width: 960px) { .hero-grid { align-items: start; } }
 /* The greeting stays on one line down to 320px. */
 @media (max-width: 400px) { .hero-title { font-size: clamp(2rem, 10.4vw, 2.5rem); } }
+/* So does a project's name with no space to break at (hunt.rubyconf.at ran 15 px past a 320 px screen). */
+@media (max-width: 400px) { .project-title { font-size: clamp(2rem, 10.4vw, 2.5rem); overflow-wrap: break-word; } }
 .availability { display: flex; align-items: baseline; gap: 0.6rem; margin-top: 1.75rem; font-size: var(--t-small); color: var(--ink-3); }
 .dot { position: relative; top: -0.05em; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #1f9d55; box-shadow: 0 0 0 4px rgb(31 157 85 / 0.16); flex: none; }
+/* A slow ring leaves the dot every few seconds (owner, 2026-11-23). */
+@keyframes dot-breathe { 0% { box-shadow: 0 0 0 0 rgb(31 157 85 / 0.5); } 70%, 100% { box-shadow: 0 0 0 9px rgb(31 157 85 / 0); } }
+@media (prefers-reduced-motion: no-preference) { .dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; animation: dot-breathe 2.6s ease-out infinite; } }
 
 /* The caption sits below the photo and overlaps only its bottom edge, so it
    never covers the face, whatever its height. */
@@ -345,6 +381,10 @@ mark {
   letter-spacing: -0.03em;
   text-wrap: balance;
 }
+
+/* On the homepage one word of a section's title carries the stroke (owner,
+   2026-11-23: help, together, guardrails). It takes no room of its own. */
+.section-title mark, .community-title mark { padding-inline: 0.06em; }
 
 /* A head whose title runs on one line, with its links at the right. */
 .section-head-wide .section-title { max-width: none; }
@@ -427,8 +467,9 @@ mark {
 .feature-head { position: sticky; top: 6.25rem; }
 
 /* The tools as a family: empty-shell is the outlined box, the three tools
-   that ship in it are the cells inside, the method is the row under it
-   (owner, 2026-11-22; five equal rows until then). */
+   that ship in it are the cells inside, and the method is the box's last
+   row, on a tint (owner, 2026-11-22; five equal rows until then; the method
+   sat under the box until 2026-11-23). */
 .family { overflow: hidden; border: 3px solid var(--ink); border-radius: calc(var(--radius) * 2); background: var(--paper); }
 .family a, .family-method { text-decoration: none; }
 .family-shell { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); align-items: center; gap: 1rem clamp(2rem, 1rem + 4vw, 5rem); padding: clamp(1.5rem, 1rem + 1.5vw, 2.25rem) clamp(1.5rem, 1rem + 2vw, 2.5rem); }
@@ -442,20 +483,20 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
 .family-parts li + li { border-left: 1px solid var(--line); }
 .family-parts a { display: grid; align-content: start; gap: 0.5rem; height: 100%; padding: clamp(1.25rem, 1rem + 1vw, 1.75rem) clamp(1.5rem, 1rem + 2vw, 2.5rem) clamp(1.5rem, 1rem + 1.5vw, 2rem); }
 .family-part { display: flex; align-items: center; gap: 0.55rem; margin: 0; color: var(--ink); }
-.family-part::before { content: ""; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--yellow); }
+.family-part::before { content: ""; width: 0.95rem; height: 0.42rem; background: var(--stroke) 0 0 / 100% 100% no-repeat; }
 .family-parts .family-text { line-height: 1.5; color: var(--ink-2); }
 .family-role { font-size: var(--t-small); font-weight: 650; color: var(--ink-3); }
-.family-method { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); align-items: baseline; gap: 0.5rem clamp(2rem, 1rem + 4vw, 5rem); margin-top: 1.75rem; padding-inline: calc(clamp(1.5rem, 1rem + 2vw, 2.5rem) + 3px); }
-.family-method .family-role { margin-top: 0.6rem; }
+.family-method { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); align-items: center; gap: 0.5rem clamp(2rem, 1rem + 4vw, 5rem); padding: clamp(1.25rem, 1rem + 1vw, 1.75rem) clamp(1.5rem, 1rem + 2vw, 2.5rem); border-top: 1px solid var(--line); background: var(--tint); background: color-mix(in srgb, var(--tint) 55%, var(--paper)); }
+.family-method .family-role { margin-top: 0.5rem; }
 .family-method .family-text { max-width: 46rem; color: var(--ink-2); }
 @media (max-width: 860px) {
   .family-shell, .family-method { grid-template-columns: 1fr; }
   .family-parts { grid-template-columns: 1fr; }
   .family-parts li + li { border-left: 0; border-top: 1px solid var(--line); }
-  .family-method { padding-inline: 0; }
 }
 @media (max-width: 700px) {
   .family-shell { gap: 0.75rem; padding: 1.25rem; }
+  .family-method { padding: 1.1rem 1.25rem 1.2rem; }
   .family-shell .family-text { font-size: var(--t-body); }
   .family-parts a { gap: 0.35rem; padding: 1.1rem 1.25rem 1.2rem; }
 }
@@ -498,7 +539,7 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
 .proof { display: grid; align-content: start; gap: 0.75rem; max-width: 22rem; }
 .proof-kicker { font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
 .proof-shot { border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1rem 2rem -1.25rem rgb(20 20 20 / 0.3); }
-.proof-code pre { padding: 0.85rem 0.9rem 0.95rem; font-size: 0.6875rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.proof-code pre { padding: 0.85rem 0.9rem 0.95rem; font-size: 0.6875rem; white-space: pre-wrap; overflow-wrap: break-word; }
 .proof-code .pm-code-label { padding: 0.55rem 0.9rem; font-size: 0.6875rem; }
 .proof-quote { display: grid; gap: 0.9rem; }
 .proof-quote blockquote { font-size: var(--t-body); font-weight: 600; line-height: 1.45; letter-spacing: -0.01em; }
@@ -508,36 +549,50 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
   .capability-proof { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) 17rem; gap: 1.5rem clamp(2rem, 1rem + 3vw, 3.5rem); }
   .capability-proof .proof { max-width: none; }
 }
+/* Room for a line of terminal output without breaking a file name. */
+@media (min-width: 1280px) { .capability-proof { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) 20rem; } }
 @media (max-width: 1100px) { .capability-proof .proof { grid-column: 1 / -1; } }
 .proofs { display: grid; gap: 1rem; }
-.proofs li { position: relative; max-width: 40rem; padding-left: 1.75rem; line-height: 1.55; }
-.proofs li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--yellow); }
+/* A bullet is a short dash from the same marker as the stroke (owner,
+   2026-11-23; a round yellow dot until then). */
+.proofs li { position: relative; max-width: 40rem; padding-left: 1.85rem; line-height: 1.55; }
+.proofs li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 0.95rem; height: 0.42rem; background: var(--stroke) 0 0 / 100% 100% no-repeat; }
+/* Services: the offers are rows that open (owner, 2026-11-23; a table of
+   the six and then all six in full until then). A row is the offer's name,
+   when it fits and its format; it opens to the detail and the email button.
+   The detail starts under the second column. */
 .offers { border-top: 3px solid var(--ink); }
-.offer {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-  gap: 1.5rem clamp(2rem, 1rem + 4vw, 5rem);
-  padding-block: clamp(2.25rem, 1.5rem + 2.5vw, 3.5rem);
-  border-bottom: 1px solid var(--line);
+.offer { border-bottom: 1px solid var(--line); }
+.offer summary { display: grid; grid-template-columns: minmax(8rem, 0.5fr) minmax(0, 1.3fr) minmax(0, 1fr) 1.75rem; align-items: baseline; gap: 0.25rem 2rem; padding-block: 1.25rem; cursor: pointer; list-style: none; }
+.offer summary::-webkit-details-marker { display: none; }
+.offer-name { font-size: var(--t-card); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.offer-fits { font-size: var(--t-lead); font-weight: 500; line-height: 1.35; }
+.offer-format { font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
+/* Plus when closed, minus on yellow when open. */
+.offer-sign { position: relative; align-self: center; width: 1.75rem; height: 1.75rem; border: 1.5px solid var(--ink); border-radius: 50%; transition: background-color 0.2s ease-out, border-color 0.2s ease-out; }
+.offer-sign::before, .offer-sign::after { content: ""; position: absolute; left: 50%; top: 50%; width: 0.75rem; height: 2px; margin: -1px 0 0 -0.375rem; background: var(--ink); transition: transform 0.3s var(--draw); }
+.offer-sign::after { transform: rotate(90deg); }
+.offer[open] .offer-sign { border-color: var(--yellow); background: var(--yellow); }
+.offer[open] .offer-sign::before, .offer[open] .offer-sign::after { background: var(--on-yellow); }
+.offer[open] .offer-sign::after { transform: rotate(0deg); }
+@media (hover: hover) { .offer summary:hover .offer-name { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.15em; } }
+.offer summary:focus-visible { outline-offset: -3px; }
+.offer-body { display: grid; grid-template-columns: minmax(8rem, 0.5fr) minmax(0, 1.3fr) minmax(0, 1fr) 1.75rem; gap: 0 2rem; padding: 0.5rem 0 2.75rem; }
+.offer-body > div { grid-column: 2 / span 2; max-width: 46rem; }
+/* Where the browser can, a row opens and closes smoothly. */
+@media (prefers-reduced-motion: no-preference) {
+  .offers { interpolate-size: allow-keywords; }
+  .offer::details-content { block-size: 0; overflow: clip; transition: block-size 0.35s var(--draw), content-visibility 0.35s allow-discrete; }
+  .offer[open]::details-content { block-size: auto; }
 }
-/* All five at a glance under the intro: name, when it fits, format, and an
-   arrow to the detail (owner, 2026-11-22; a row of names until then). */
-.glance { border-top: 3px solid var(--ink); }
-.glance a { display: grid; grid-template-columns: minmax(8rem, 0.5fr) minmax(0, 1.3fr) minmax(0, 1fr) auto; align-items: baseline; gap: 0.25rem 2rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); text-decoration: none; }
-.glance strong { font-size: var(--t-card); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
-.glance span { font-size: var(--t-lead); font-weight: 500; line-height: 1.35; }
-.glance em { font-style: normal; font-size: var(--t-small); font-weight: 600; color: var(--ink-3); }
-.glance .arr { align-self: center; width: 1.25rem; height: 0.95rem; }
-.glance a:hover strong { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; text-underline-offset: 0.15em; }
-.glance + .offers { border-top: 0; }
 @media (max-width: 760px) {
-  .glance a { grid-template-columns: minmax(0, 1fr) auto; }
-  .glance strong, .glance span, .glance em { grid-column: 1; }
-  .glance span { font-size: var(--t-body); }
-  .glance .arr { grid-column: 2; grid-row: 1 / span 3; }
+  .offer summary { grid-template-columns: minmax(0, 1fr) 1.75rem; gap: 0.25rem 1rem; }
+  .offer-name, .offer-fits, .offer-format { grid-column: 1; }
+  .offer-fits { font-size: var(--t-body); }
+  .offer-sign { grid-column: 2; grid-row: 1 / span 3; }
+  .offer-body { display: block; padding-bottom: 2rem; }
 }
-.offer-name { font-size: clamp(1.875rem, 1.4rem + 2vw, 2.75rem); font-weight: 800; line-height: 1; letter-spacing: -0.035em; }
-.offer-title { margin-top: 1.1rem; font-weight: 650; }
+.offer-title { margin-bottom: 0.9rem; font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
 .offer-summary { font-size: var(--t-lead); line-height: 1.5; color: var(--ink); }
 .offer-label { margin: 1.75rem 0 1rem; font-size: var(--t-body); font-weight: 750; }
 .offer-outcome { margin-top: 1.5rem; font-weight: 650; color: var(--ink); }
@@ -758,6 +813,13 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
 .foot-nav ul { display: grid; gap: 0.5rem; }
 .foot-nav a { text-decoration: none; font-weight: 500; }
 .foot-nav a:hover { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; }
+/* The name, large, with the stroke: the last thing on every page (owner,
+   2026-11-23). It fills the wrap at every width: the size follows the
+   container, with the window's width as the fallback. */
+.foot-sign { container-type: inline-size; margin-top: clamp(3rem, 2rem + 3vw, 4.5rem); }
+.foot-sign a { display: block; font-size: clamp(2rem, 8.6vw, 7.4rem); font-size: 9.8cqw; font-weight: 800; line-height: 1; letter-spacing: -0.045em; white-space: nowrap; text-decoration: none; }
+.foot-sign mark { --sh: 0.2em; padding: 0 0.04em 0.06em; margin-inline: -0.04em; }
+.foot-sign + .foot-base { margin-top: clamp(2rem, 1.5rem + 2vw, 3rem); }
 .foot-base { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgb(255 255 255 / 0.14); font-size: var(--t-small); }
 
 /* The Ruby Webring widget loads with its layout styles only (data-styles
@@ -900,6 +962,15 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
   .about-role { margin-top: 0; align-self: start; }
   .about-name { align-self: end; }
 }
+/* About opens on a lead, each section starts under a rule as on the CV, and
+   the Community section shows the room (owner, 2026-11-23; even text with
+   small headings until then). */
+.about-page .prose > p:first-child { font-size: clamp(1.375rem, 1.15rem + 0.9vw, 1.75rem); font-weight: 600; line-height: 1.32; letter-spacing: -0.02em; text-wrap: pretty; }
+.about-page .prose h2 { margin-top: 2.75em; padding-top: 0.9rem; border-top: 3px solid var(--ink); font-size: clamp(1.5rem, 1.25rem + 1vw, 1.875rem); }
+.about-page .prose h2 + * { margin-top: 0.9em; }
+.about-photo { margin-block: 2rem; }
+.about-photo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 62%; background: var(--dark); }
+.about-photo figcaption { margin-top: 0.6rem; font-size: var(--t-small); color: var(--ink-3); }
 .prose > * + * { margin-top: 1.25em; }
 .prose h2 { margin-top: 2.25em; font-size: var(--t-h3); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
 .prose h3 { margin-top: 2em; font-size: 1.25rem; font-weight: 750; letter-spacing: -0.01em; }
@@ -955,6 +1026,20 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
 .post .prose h2 { font-size: clamp(1.5rem, 1.25rem + 1.2vw, 2rem); line-height: 1.15; }
 .post .prose h3 { font-size: clamp(1.3125rem, 1.2rem + 0.6vw, 1.5625rem); line-height: 1.2; }
 .post-foot .text-link { color: var(--ink); }
+/* The signed ending under a post or a note: the portrait, the name, one
+   sentence and two links (owner, 2026-11-23). */
+.byline { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 1.1rem; max-width: 44rem; margin: 3.5rem auto 0; padding-top: 1.75rem; border-top: 3px solid var(--ink); }
+.byline img { width: 4.5rem; height: 4.5rem; border-radius: 50%; object-fit: cover; object-position: 50% 28%; background: var(--dark); }
+.byline p { line-height: 1.45; color: var(--ink-2); }
+.byline strong { display: block; font-size: 1.1875rem; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
+.byline a { font-weight: 600; color: var(--ink); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 0.25em; white-space: nowrap; }
+.byline a:hover { text-decoration-color: var(--ink); }
+/* The two links stay together: they move to the next line as a pair. */
+.byline-links { display: inline-block; white-space: nowrap; }
+.byline + .post-foot { margin-top: 1.75rem; }
+/* A yellow line across the top of the window that grows while a long post
+   is read (owner, 2026-11-23); site.js adds and drives it. */
+.read-progress { position: fixed; z-index: 30; inset: 0 0 auto; height: 4px; background: var(--yellow); transform-origin: 0 50%; transform: scaleX(0); pointer-events: none; }
 /* What to read next: the newer and the older piece. */
 .post-next { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 2.5rem; margin-top: 3rem; }
 .post-next a { display: grid; align-content: start; gap: 0.35rem; padding-top: 1rem; border-top: 3px solid var(--ink); text-decoration: none; }
@@ -1146,7 +1231,6 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
   .flow li + li { border-left: 0; border-top: 1px solid var(--line); }
   .feature,
   .capability,
-  .offer,
   .stack-group { grid-template-columns: 1fr; }
   .feature-head { position: static; }
   .quotes,
@@ -1183,10 +1267,10 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
   .js .top.is-open .menu a { justify-content: space-between; min-height: 3.5rem; border-bottom: 1px solid var(--line); }
   .js .top.is-open .menu .arr { display: block; }
   .js .top.is-open .top-menu .button { justify-content: center; padding-block: 1.05rem; font-size: 1rem; }
-  /* In the open menu the theme control is a full row, with its words. */
-  .js .top.is-open .theme { display: flex; }
-  .js .top.is-open .theme button { flex: 1; width: auto; height: auto; min-height: 44px; }
-  .js .top.is-open .theme span { position: static; width: auto; height: auto; overflow: visible; clip-path: none; }
+  /* In the open menu the theme control is a full row of three, with their words. */
+  .theme-toggle { display: none; }
+  .theme-options, .theme.is-open .theme-options { position: static; display: flex; gap: 2px; min-width: 0; padding: 3px; border-radius: 999px; box-shadow: none; }
+  .theme-options button { flex: 1; justify-content: center; gap: 0.45rem; min-height: 44px; padding: 0 0.5rem; border-radius: 999px; font-size: 1rem; }
   .js .top.is-open { border-bottom: 3px solid var(--ink); }
   /* Lock the page on the root only: overflow on body as well would make body
      the scroll container and unstick the header. */
@@ -1232,7 +1316,18 @@ a:hover > .family-name span, a:hover > div > .family-name span { text-decoration
   .arr,
   .button,
   .theme button,
+  .menu a span,
+  .offer-sign, .offer-sign::before, .offer-sign::after,
   .top { transition: none; }
+}
+
+/* From one page of the site to the next, the old page fades into the new one
+   and the menu's stroke slides to the new item (owner, 2026-11-23). Where
+   the browser has no view transitions the page loads as before. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.22s; }
+  ::view-transition-group(menu-stroke) { animation-duration: 0.4s; animation-timing-function: var(--draw); }
 }
 
 /* Minolovac: the minesweeper at /igre/minolovac/ */
@@ -1733,7 +1828,10 @@ a:hover .arr-down { transform: translateY(2px); }
   /* Backgrounds are removed, so a button needs an edge to read as one. */
   .button { border: 1px solid ButtonText; }
   .theme button[aria-pressed="true"] { outline: 2px solid ButtonText; outline-offset: -2px; }
-  .proofs li::before { background: CanvasText; }
+  .proofs li::before, .family-part::before { background: CanvasText; }
+  .menu a span, .menu-stroke { background: none; }
+  .menu a[aria-current] { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 0.35em; }
+  .offer[open] .offer-sign { background: Highlight; border-color: Highlight; }
 }
 
 /* Print: the page's own content on white, without the header, the footer,
@@ -1754,6 +1852,9 @@ a:hover .arr-down { transform: translateY(2px); }
   .hero-actions,
   .index-page .controls,
   .load-more-wrap,
+  .read-progress,
+  .byline,
+  .offer-sign,
   .quote-more summary,
   [data-copy],
   video { display: none !important; }
@@ -1768,7 +1869,7 @@ a:hover .arr-down { transform: translateY(2px); }
   .post .prose { font-size: inherit; }
   .cv-section { margin-top: 1.25rem; }
   .cv-role { padding-block: 0.6rem; gap: 0.3rem; }
-  .feature-head, .capability-head, .about-card, .offer-head, .month-name { position: static; }
+  .feature-head, .capability-head, .about-card, .month-name { position: static; }
   .quotes-hint { display: none; }
   /* The dark band prints as it is drawn: its text is light. */
   .community, .community-photo::after, .event-stats dt { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -1777,7 +1878,12 @@ a:hover .arr-down { transform: translateY(2px); }
   .cv-role h3, .cv-meta { break-after: avoid; }
   .proofs li, .quote, .cv-quote, figure, pre, blockquote, tr, .card, .project-card { break-inside: avoid; }
   a { text-decoration-color: currentColor; }
-  .proofs li::before, mark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .proofs li::before, .family-part::before, mark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  mark { animation: none; }
+  mark.to-draw { background-size: 100% var(--sh); }
+  /* Every service prints open, where the browser lets a stylesheet open one; site.js opens them before printing everywhere else. */
+  .offer::details-content { content-visibility: visible; block-size: auto; }
+  .offer { break-inside: avoid; }
   .page-intro a, .prose a, .project-text a, .contact-nomail a, .brand-facts a, .cv-contact a, .about-links a { background: none; }
   .prose pre, .prose div.highlight, .pm-code { border: 1px solid #999; }
 }

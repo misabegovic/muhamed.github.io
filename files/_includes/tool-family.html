@@ -1,7 +1,8 @@
 {%- comment -%}
   The tools as a family (owner, 2026-11-22): empty-shell is the box, the
-  three tools that ship in it are the cells inside, and the method sits in a
-  row under it. One component for the homepage, /projects/ and /work/. Which
+  three tools that ship in it are the cells inside, and the method is the
+  box's last row (owner, 2026-11-23; a row under the box until then). One
+  component for the homepage, /projects/ and /work/. Which
   tool goes where, its label and its line are in _data/home.yml (open_source:
   family, part, short).
 {%- endcomment -%}
@@ -30,14 +31,15 @@
       </li>
       {% endfor %}
     </ul>
+    {% for t in methods %}
+    <a class="family-method" href="{{ site.baseurl }}{{ t.profile }}">
+      <div>
+        {% if t.part %}<p class="family-kicker family-part">{{ t.part }}</p>{% endif %}
+        <h3 class="family-name"><span>{{ t.name }}</span></h3>
+        <p class="family-role">{{ t.role }}</p>
+      </div>
+      <p class="family-text">{{ t.short }}</p>
+    </a>
+    {% endfor %}
   </div>
-  {% for t in methods %}
-  <a class="family-method" href="{{ site.baseurl }}{{ t.profile }}">
-    <div>
-      <h3 class="family-name"><span>{{ t.name }}</span></h3>
-      <p class="family-role">{{ t.role }}</p>
-    </div>
-    <p class="family-text">{{ t.short }}</p>
-  </a>
-  {% endfor %}
 </div>

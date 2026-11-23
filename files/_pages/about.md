@@ -23,6 +23,11 @@ It started with [EuRuKo 2024](https://2024.euruko.org), the European Ruby confer
 
 In Vienna, the city that became home, I started [RubyConf Austria](https://www.rubyconf.at/) and gave it the same love I have for Tuzla. Vienna is the city of music, so music was at its core: pianists, jazz musicians and flute players on stage, the Vienna Boys' Choir, and two music venues, Haus der Musik and MuTh, the choir's own concert hall. Add a [treasure hunt](/brain/treasure-hunt-open-sourced/) across the city and the time with the community, and it became something special.
 
+<figure class="about-photo">
+  <img src="{{ site.baseurl }}{{ site.data.home.community_photo.src }}-1200.webp" srcset="{{ site.baseurl }}{{ site.data.home.community_photo.src }}-800.webp 800w, {{ site.baseurl }}{{ site.data.home.community_photo.src }}-1200.webp 1200w, {{ site.baseurl }}{{ site.data.home.community_photo.src }}-1800.webp 1800w" sizes="(max-width: 960px) 100vw, 42rem" alt="{{ site.data.home.community_photo.alt }}" width="{{ site.data.home.community_photo.width }}" height="{{ site.data.home.community_photo.height }}" loading="lazy">
+  <figcaption>The room at RubyConf Austria 2026, in Vienna. Photo: Alessandro Bruckheimer</figcaption>
+</figure>
+
 And then there is [GoatConf](https://goatconf.com/), back home in Tuzla. Growing up there, I would have loved a conference like this in my own town. Now I'm building one: a place where people who build software, from Tuzla and from everywhere else, meet, share what they know and grow their networks. It's free, and it works like open source: I bring the rooms, the talks and the breaks, and everyone is welcome to add their own thing, a workshop, a meetup, a hike. A bit like [Pi](https://pi.dev/), the open-source coding agent. In Tuzla they say the whole town milked one goat. I want GoatConf to be that goat: the one that feeds the community.
 
 I also love working for a good cause. From 2018 to 2021 I volunteered with the BH Futures Foundation, which supports young people in Bosnia and Herzegovina with scholarships and mentoring. They host a meetup at GoatConf.
