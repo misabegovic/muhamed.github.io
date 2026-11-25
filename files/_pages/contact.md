@@ -42,6 +42,6 @@ description: How to reach Muhamed Isabegovic about building something with your 
 <dl class="contact-facts">
   <div><dt>How I work</dt><dd>Through my own company, Isabegovic Muhamed e.U.</dd></div>
   <div><dt>Location</dt><dd>Vienna, Austria. Remote in Europe and beyond, on site in and around Vienna.</dd></div>
-  <div><dt>CV</dt><dd><a href="/cv/">View my CV</a>, also as a <a href="/cv/Muhamed_Isabegovic_CV.pdf" download>three-page PDF</a></dd></div>
+  <div><dt>CV</dt><dd><a href="/cv/">View my CV</a>, also as a <a href="/cv/Muhamed_Isabegovic_CV.pdf" download>four-page PDF</a></dd></div>
   <div><dt>Elsewhere</dt><dd><a href="https://www.linkedin.com/in/muhamed-isabegovic/">LinkedIn</a>, <a href="https://github.com/misabegovic">GitHub</a>, <a href="https://x.com/m_isabegovic">X</a></dd></div>
 </dl>

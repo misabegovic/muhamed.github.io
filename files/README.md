@@ -14,7 +14,7 @@ bundle exec jekyll serve
 
 ## Images
 
-Ship images at the size they are shown, as WebP: about 3× the CSS size for logos and avatars, and 1400 px wide for photos in posts. `images/profile.jpg` stays full size because the CV PDF, the share images and the JSON-LD use it; pages show `images/profile-{480,800,1200}.webp` through `srcset`. Those and the favicons are linked with a `?v=` content hash (`asset_digest`), like the CSS, so a new photo reaches returning visitors instead of their cached copy.
+Ship images at the size they are shown, as WebP: about 3× the CSS size for logos and avatars, and 1400 px wide for photos in posts. `images/profile.jpg` stays full size because the share images and the JSON-LD use it; pages show `images/profile-{480,800,1200}.webp` through `srcset`. Those and the favicons are linked with a `?v=` content hash (`asset_digest`), like the CSS, so a new photo reaches returning visitors instead of their cached copy.
 
 ## The portrait and the brand kit
 
@@ -24,7 +24,7 @@ The portrait has two masters in `brand/`: `muhamed-isabegovic-amber.jpg` (in use
 python3 .github/scripts/render-profile-images.py original   # or amber
 ```
 
-It writes `images/profile.jpg`, the `srcset` WebPs, the favicons and the brand kit's sizes. Then re-render the images that embed the photo: the share and service images (`render-social-images.js`; keep only the files whose photo changed) and the CV PDF (print `_cv/cv.html` with Chromium, A4, tagged).
+It writes `images/profile.jpg`, the `srcset` WebPs, the favicons and the brand kit's sizes. Then re-render the images that embed the photo: the share and service images (`render-social-images.js`; keep only the files whose photo changed). The CV PDF carries no photo; after a change to `_cv/cv.html`, print it with `.github/scripts/render-cv-pdf.js` and refresh its data with `render-cv-data.js`.
 
 `/brand/` (`brand.html`) reads `_data/brand.yml`. Its zip is built with the site by `_plugins/brand_kit.rb`, which also fails the build if a colour there no longer matches `assets/site.css`.
 

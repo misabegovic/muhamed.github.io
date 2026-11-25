@@ -46,7 +46,7 @@ description: The CV of Muhamed Isabegovic, Staff Engineer, in one column, with d
   </section>
 
   <section class="cv-section" aria-labelledby="cv-oss">
-    <h2 id="cv-oss" class="cv-heading">Open source</h2>
+    <h2 id="cv-oss" class="cv-heading">Projects</h2>
     {% for p in cv.open_source %}
     <div class="cv-role"><h3>{{ p.name }} <span>· {{ p.role }}</span></h3><p class="cv-summary">{{ p.text }}</p></div>
     {% endfor %}
@@ -55,7 +55,7 @@ description: The CV of Muhamed Isabegovic, Staff Engineer, in one column, with d
   <section class="cv-section" aria-labelledby="cv-education">
     <h2 id="cv-education" class="cv-heading">Education</h2>
     {% for r in cv.education %}
-    <div class="cv-role"><h3>{{ r.extra.institution }}</h3><p class="cv-meta"><span class="cv-dates">{{ r.dates }}</span></p><p class="cv-summary">{{ r.extra.studyType }}, {{ r.extra.area }}</p></div>
+    <div class="cv-role"><h3>{{ r.title }} <span>· {{ r.at }}</span></h3><p class="cv-meta"><span class="cv-dates">{{ r.dates }}</span></p><p class="cv-summary">{{ r.summary }}</p></div>
     {% endfor %}
   </section>
 
@@ -64,10 +64,10 @@ description: The CV of Muhamed Isabegovic, Staff Engineer, in one column, with d
     <p>{% for l in cv.languages %}<strong>{{ l.language }}</strong> {{ l.fluency }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
   </section>
 
-  <section class="cv-section" aria-labelledby="cv-community">
-    <h2 id="cv-community" class="cv-heading">Community</h2>
-    {% for r in cv.community %}
-    <div class="cv-role"><h3>{{ r.title }} <span>· {{ r.extra.organization }}</span></h3><p class="cv-meta"><span class="cv-dates">{{ r.dates }}</span></p><p class="cv-summary">{{ r.extra.summary }}</p></div>
+  <section class="cv-section" aria-labelledby="cv-volunteering">
+    <h2 id="cv-volunteering" class="cv-heading">Volunteering</h2>
+    {% for r in cv.volunteering %}
+    <div class="cv-role"><h3>{{ r.title }} <span>· {{ r.at }}</span></h3><p class="cv-meta"><span class="cv-dates">{{ r.dates }}</span></p><p class="cv-summary">{{ r.summary }}</p></div>
     {% endfor %}
   </section>
 

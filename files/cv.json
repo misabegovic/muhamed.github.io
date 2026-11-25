@@ -6,7 +6,7 @@
     "image": "https://muhamed.at/images/profile.jpg",
     "email": "info@muhamed.at",
     "url": "https://muhamed.at",
-    "summary": "I have spent ten years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack: trading systems in C++, SaaS products in Rails, AI features in hiring software. These days I work one layer up, with agents writing the code, and I build open-source tools that keep it reliable: specs and decisions the code is regenerated from, and architecture rules it is checked against.",
+    "summary": "I have spent ten years making software and leading the teams that make it, from deciding what to build to running it in production. I have worked across the stack: trading systems in C++, SaaS products in Ruby on Rails, AI features in hiring software, and data pipelines with AI agents. The largest team I led was around 30 engineers, fully remote across seven time zones. These days I work with agents writing the code, and I build open-source tools that keep that code reliable.",
     "location": {
       "city": "Vienna",
       "countryCode": "AT"
@@ -45,10 +45,11 @@
       "startDate": null,
       "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
       "highlights": [
-        "Took over a proof of concept with my team and brought it to a stable production environment, with observability for the pipelines and the agents; worked inside the client's team and helped set the technical direction.",
-        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture, integrating multiple sources with PySpark notebooks, and knowledge graphs in FalkorDB on top.",
-        "Built agents that enrich and classify the data, on OpenAI models in Microsoft Foundry, with OpenAI's Decisions API for fast, typed decisions, and MCP servers that give agents the graph and the data as tools.",
-        "Introduced AI-native delivery in my team, with agents writing the code and people shaping and reviewing it, and helped the client's engineers bring AI into their own development lifecycle."
+        "Took over a proof of concept with my team and brought it to stable production, with observability for its pipelines and agents.",
+        "Worked inside the client's team and helped set the technical direction.",
+        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture: PySpark notebooks bring multiple sources together, and knowledge graphs in FalkorDB sit on top.",
+        "Built AI agents that enrich and classify the data, on OpenAI models in Microsoft Foundry. They use OpenAI's Decisions API for fast, typed decisions, and MCP servers give them the graph and the data as tools.",
+        "Introduced AI-native delivery in my team: agents write the code, people shape and review it. Helped the client's engineers bring AI into their own development lifecycle."
       ]
     },
     {
@@ -58,11 +59,10 @@
       "startDate": null,
       "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
       "highlights": [
-        "Shipped Request Missing Information to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
-        "Rebuilt AI screening on the trigger system, across seven merged pull requests, so recruiters can screen at any stage and save criteria on job templates; backfilled every company and rolled it out to all customers.",
-        "Shipped automatic candidate moves on the screening outcome, a customer request: per-criterion met, unmet or unknown, combined with All or Any.",
-        "Made screening wait until the CV is parsed and re-run when it arrives, so no candidate is screened before their CV is read.",
-        "Moved AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic, and ran A/B experiments of prompt and model versions there, promoting the winners."
+        "Shipped Request Missing Information to all customers. It spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
+        "Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers.",
+        "Moved the AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic. Ran A/B experiments of prompt and model versions there and promoted the winners.",
+        "Shipped automatic candidate moves based on the screening outcome, a customer request, and made screening wait until the CV is parsed, so nobody is screened before their CV is read."
       ]
     },
     {
@@ -80,10 +80,14 @@
       "startDate": null,
       "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
       "highlights": [
-        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Rails and Node/TypeScript stacks on Google Cloud step by step closer.",
-        "Co-built the event system on Redis Pub/Sub that became the integration layer between the two stacks and the base for new functionality, with Google Cloud Tasks as a fallback and for workload management.",
+        "Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.",
+        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations. Step by step, this brought the two stacks closer.",
+        "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.",
+        "Built the data pipelines that bring jobs, candidates and applications in from clients' applicant tracking systems and pass the data on to the AI features.",
         "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.",
-        "Tech lead for the engineering team, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD."
+        "Ran integration and background work on Google Cloud Functions: some triggered by events and queues, some on a schedule for syncs and maintenance.",
+        "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
+        "Owned DevOps and CI/CD on Google Cloud, and monitoring and observability for the parts my teams ran."
       ]
     },
     {
@@ -116,11 +120,12 @@
       "location": "Vienna, Austria",
       "startDate": "2021-11",
       "endDate": "2024-12",
-      "summary": "Maker of MindMeister and MeisterTask",
+      "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React.",
       "highlights": [
-        "Proposed, designed and built a dynamic plans and permissions system across Accounts, MindMeister and MeisterTask. It replaced hardcoded feature checks scattered across the apps, so product could set up plans and run billing experiments without developer time.",
-        "Built MindMeister product features and ran A/B experiments across markets for three years.",
-        "Split backend and frontend deployments into separate pipelines on Kubernetes, so the frontend team shipped daily, independent of backend releases; maintained and upgraded the cluster setup."
+        "Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask.",
+        "It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.",
+        "Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.",
+        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases."
       ]
     },
     {
@@ -129,12 +134,12 @@
       "location": "Remote",
       "startDate": "2019-10",
       "endDate": "2021-07",
-      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes. First joined as a junior engineer, 2016 - 2017.",
+      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes.",
       "highlights": [
-        "Set the product and technical direction with product and business leads, and made sure the team delivered it.",
         "Led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, as architect, team lead and hands-on engineer.",
-        "Built recruiter and candidate dashboards across the three apps and the Rails backend.",
-        "Took the team through a 150 percent scale-up, putting in the planning and delivery processes that kept every deadline."
+        "Set the product and technical direction with product and business leads, and made sure the team delivered it.",
+        "Took the team through a 150% scale-up, putting in the planning and delivery processes that kept every deadline.",
+        "Built recruiter and candidate dashboards across the three apps and the Rails backend."
       ]
     },
     {
@@ -143,31 +148,47 @@
       "location": "Tuzla, Bosnia and Herzegovina",
       "startDate": "2018-01",
       "endDate": "2019-09",
-      "summary": "Fintech building real-time trading software",
+      "summary": "Fintech building real-time trading software.",
       "highlights": [
         "Built trading algorithms and worked on the analytics platform traders used, in C++ on a real-time system built on the actor model (C++ Actor Framework).",
         "Built a Python test environment that emulated markets and simulated trading systems, so algorithms could be tested without live markets."
       ]
+    },
+    {
+      "name": "Experfy",
+      "position": "Software Engineer (junior)",
+      "location": "Remote",
+      "startDate": "2016",
+      "endDate": "2017",
+      "summary": "Joined as a junior engineer; returned in 2019 as lead.",
+      "highlights": []
     }
   ],
   "volunteer": [
     {
       "organization": "BH Futures Foundation",
-      "position": "Mentor and team lead",
+      "position": "Mentor and team lead, Human Potential & Learning",
       "startDate": "2018-05",
       "endDate": "2021-09",
-      "summary": "Volunteer; Certificates of Excellence 2019, 2021"
+      "summary": "Volunteer; Certificates of Excellence 2019 and 2021."
+    },
+    {
+      "organization": "Zemlja Djece",
+      "position": "Volunteer, \"Stariji brat, starija sestra\"",
+      "startDate": "2016-11",
+      "endDate": "2017-07",
+      "summary": "\"Older Brother, Older Sister\"; certificate for exceptional work with children from underprivileged families."
     }
   ],
   "education": [
     {
-      "institution": "Technical University Vienna",
-      "studyType": "Master's (part-time, alongside work)",
-      "area": "Software Engineering & Internet Computing, Business Informatics",
+      "institution": "TU Wien (Vienna University of Technology)",
+      "studyType": "Master's",
+      "area": "Software Engineering & Internet Computing; Business Informatics",
       "startDate": "2022-01"
     },
     {
-      "institution": "IPI Akademija Tuzla",
+      "institution": "IPI Akademija (International Business-Information Academy), Tuzla",
       "studyType": "BSc",
       "area": "Information Technology",
       "startDate": "2016",
@@ -225,6 +246,7 @@
         "Node.js",
         "TypeScript",
         "Go",
+        "Rust",
         "Python",
         "C++",
         "PostgreSQL",
@@ -235,7 +257,7 @@
       ]
     },
     {
-      "name": "Frontend and mobile",
+      "name": "Frontend",
       "keywords": [
         "Hotwire",
         "JavaScript",
@@ -248,6 +270,7 @@
       "name": "Infrastructure and DevEx",
       "keywords": [
         "Google Cloud",
+        "Cloud Functions",
         "Azure",
         "Kubernetes",
         "CI/CD",
@@ -275,45 +298,66 @@
     },
     {
       "language": "English",
-      "fluency": "full professional"
+      "fluency": "C2 (full professional)"
     },
     {
       "language": "German",
-      "fluency": "limited working"
+      "fluency": "B1 (limited working)"
     },
     {
       "language": "Spanish",
-      "fluency": "elementary"
+      "fluency": "A2 (elementary)"
     }
   ],
   "projects": [
     {
-      "name": "treasure_hunt",
+      "name": "empty-shell",
       "roles": [
-        "author"
+        "author · in private development"
       ],
-      "description": "A location-based treasure hunt platform for conferences (Rails 8.1 PWA: GPS clues, teams, hints, live leaderboards). Built for RubyConf Austria 2026, open-sourced under MIT for any organiser."
+      "description": "A starting repository for projects run with a coding agent: rules, checks and an empty wiki, with enola, tabula and taha inside."
     },
     {
       "name": "enola",
       "roles": [
-        "core contributor"
+        "core contributor · open source"
       ],
-      "description": "Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams, including enola-guides."
+      "description": "Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems that bring it to Rails teams."
     },
     {
-      "name": "pi-brain",
+      "name": "tabula",
       "roles": [
-        "author and maintainer"
+        "author · in private development"
       ],
-      "description": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 10 releases."
+      "description": "A Rust tool that keeps a project's memory and decisions as plain files in git, and judges finished work against what was decided."
     },
     {
-      "name": "tended and tabula",
+      "name": "taha",
       "roles": [
-        "author"
+        "author · in private development"
       ],
-      "description": "Knowledge bases people and agents work from: tended on GitHub, and tabula, in Rust, in private development."
+      "description": "Runs a coding agent unattended inside a mandate you set, and comes back with finished, checked work."
+    },
+    {
+      "name": "enola-guides",
+      "roles": [
+        "author and maintainer · open source"
+      ],
+      "description": "Guides to enola for Rails, Ember, Python, TypeScript, Go and Rust, with a catalogue of 26 architecture laws. Ten releases since August 2026, on RubyGems, npm, PyPI and crates.io."
+    },
+    {
+      "name": "tended and pi-brain",
+      "roles": [
+        "author and maintainer · open source"
+      ],
+      "description": "Knowledge bases a coding agent maintains, so people and agents work from the same written specs and decisions. tended is on PyPI; pi-brain is on npm, with ten releases."
+    },
+    {
+      "name": "treasure_hunt",
+      "roles": [
+        "author · open source"
+      ],
+      "description": "A location-based treasure hunt for conferences, built on Rails 8.1 for RubyConf Austria 2026 and open-sourced under MIT."
     }
   ],
   "references": [
