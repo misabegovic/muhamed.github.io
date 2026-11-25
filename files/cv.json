@@ -35,7 +35,7 @@
       "position": "Staff Engineer and Founder",
       "location": "Vienna, Austria",
       "startDate": "2024-01",
-      "summary": "My own company. Since 2025 I work through it on B2B contracts as a staff engineer and technical lead; the roles below were delivered through it. It also runs RubyConf Austria and my product Usput.ba, and in 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs.",
+      "summary": "My own company. Since 2025 I have worked through it on B2B contracts as a staff engineer and technical lead. It also runs my product Usput.ba and RubyConf Austria, and it ran EuRuKo 2024 while I was at Meisterlabs. The indented entries below are those contracts and projects.",
       "highlights": []
     },
     {
@@ -45,10 +45,10 @@
       "startDate": null,
       "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
       "highlights": [
-        "Took over a proof of concept of a data platform with AI agents and brought it to stable production with my team, with observability for its pipelines and agents. Worked inside the client's team and helped set the technical direction.",
-        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture: PySpark notebooks bring multiple sources together, and knowledge graphs in FalkorDB sit on top.",
-        "Built AI agents that enrich and classify the data, on OpenAI models in Microsoft Foundry. They use OpenAI's Decisions API for fast, typed decisions, and MCP servers give them the graph and the data as tools.",
-        "Introduced AI-native delivery in my team: agents write the code, people shape and review it. Helped the client's engineers bring AI into their own development lifecycle."
+        "Took over a proof-of-concept data platform with AI agents and, with my team, brought it to stable production, with observability for its pipelines and agents. Worked inside the client's team and helped set its technical direction.",
+        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture: PySpark notebooks combine the sources, and knowledge graphs in FalkorDB are built on the result.",
+        "Built AI agents on OpenAI models in Microsoft Foundry that enrich and classify the data. They make fast, typed decisions through OpenAI's Decisions API and reach the graph and the data as tools through MCP servers.",
+        "Introduced AI-native delivery in my team: agents write the code; engineers shape the work and review the result. Helped the client's engineers bring AI into their own development lifecycle."
       ]
     },
     {
@@ -56,12 +56,13 @@
       "position": "AI Product Developer",
       "location": null,
       "startDate": null,
-      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js, with retrieval (RAG) on pgvector in the AI features. I owned AI features from pitch and spec to rollout and measurement, working in Shape Up.",
+      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js, with retrieval (RAG) on pgvector in the AI features.",
       "highlights": [
-        "Shipped \"Request Missing Information\" to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
-        "Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers behind Flipper feature flags.",
-        "Moved the AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic. Ran A/B experiments of prompt and model versions there and promoted the winners.",
-        "Shipped automatic candidate moves based on the screening outcome, a customer request. Made screening wait until the CV is parsed, so nobody is screened before their CV is read."
+        "Owned AI features in the Co-pilot team from pitch and spec to rollout and measurement, working in Shape Up.",
+        "Shipped \"Request Missing Information\" to all customers: it detects what an application is missing, drafts a short questionnaire for the candidate with an LLM, saves the answers to the application and re-runs screening.",
+        "Rebuilt AI screening on the product's trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers behind Flipper feature flags.",
+        "Moved the prompts for the AI features into Langfuse, with datasets, LLM judges and live scoring of production traffic. Ran A/B experiments there between prompt and model versions and promoted the winners.",
+        "Shipped a customer-requested feature that moves candidates automatically according to the screening outcome. Made screening wait for CV parsing, so no candidate is screened before their CV has been read."
       ]
     },
     {
@@ -79,12 +80,12 @@
       "startDate": null,
       "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
       "highlights": [
-        "Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.",
-        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, with new functionality shipped behind Flipper flags.",
-        "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.",
-        "Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features, which use retrieval (RAG) on pgvector. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.",
+        "Led two teams, one on Recrubo's Rails product and one on Carv's Node.js/TypeScript product, and owned delivery jointly with a product manager.",
+        "Merged the two products after the acquisition: a single Vue.js frontend, one shared database for clients and login sessions, and common ATS integrations, with new functionality shipped behind Flipper flags.",
+        "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and that new functionality is built on, with Google Cloud Tasks as a fallback and to manage workload.",
+        "Built the data pipelines that import jobs, candidates and applications from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features, which use retrieval (RAG) on pgvector. The AI features worked the same for every client, and adding a new ATS needed no new code elsewhere.",
         "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
-        "Owned DevOps and CI/CD on Google Cloud, with monitoring and observability for the parts my teams ran, and ran integration and background work on Google Cloud Functions, triggered by events and queues or on a schedule."
+        "Owned DevOps and CI/CD on Google Cloud, including monitoring and observability for the parts my teams ran. Ran integration and background jobs on Google Cloud Functions, triggered by events, queues or a schedule."
       ]
     },
     {
@@ -92,11 +93,11 @@
       "position": "Founder and AI Engineer",
       "location": null,
       "startDate": null,
-      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I try AI features on real users first, behind Flipper flags.",
+      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I first try AI features with real users, behind Flipper flags.",
       "highlights": [
-        "Built generation grounded in real data (RAG, on pgvector). Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
+        "Built retrieval-augmented generation (RAG) on pgvector: descriptions, audio-tour scripts and itineraries are written from records retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
-        "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
+        "Wrote an MCP server in plain Ruby, with tests and a rule-based validator that catches invented details in the records the model creates."
       ]
     },
     {
@@ -106,8 +107,8 @@
       "startDate": null,
       "highlights": [
         "EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.",
-        "RubyConf Austria 2026, Vienna: ~200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at). GoatConf follows in June 2027 in Tuzla.",
-        "Led both end to end, budget and sponsorships included, with a small volunteer team."
+        "RubyConf Austria 2026, Vienna: 13 speakers and ~200 attendees, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).",
+        "Led EuRuKo 2024 and RubyConf Austria 2026 end to end, budget and sponsorships included, with a small volunteer team. GoatConf follows in Tuzla in June 2027."
       ]
     },
     {
@@ -129,15 +130,13 @@
       "location": "Remote",
       "startDate": "2019-10",
       "endDate": "2021-07",
-      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes. I returned as lead after joining as a junior engineer in 2016.",
+      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes. I had joined as a junior engineer in 2016 and returned to lead engineering.",
       "highlights": [
-        "Led the engineering team as it grew from about 12 to about 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones. Everyone reported to me, and I reported to the founders.",
-        "Was the bridge between the founders and the engineers: agreed priorities, timelines and trade-offs with the founders, product and design, and sales, and turned them into a technical direction the team delivered.",
-        "Formed an architecture committee. Its members became the tech leads I trusted to shape work and lead delivery.",
-        "Hired for part of that growth: designed the hiring process, ran technical interviews, made the hiring decisions and onboarded the new engineers.",
-        "Introduced and ran the team's processes: sprint planning and estimation, retrospectives, roadmap and release planning, and the rules for code review and releases. They kept delivery on schedule while the team more than doubled.",
-        "Took part in the architecture work throughout: the API between the Ember.js apps and the Rails monolith, framework upgrades, and database and performance work.",
-        "Stayed hands-on: built core backend features and the recruiter and candidate dashboards, reviewed most of the code, and worked on infrastructure and CI/CD with our DevOps engineer."
+        "Led the engineering team as it grew from about 12 to about 30 engineers across backend, frontend and DevOps, fully remote across seven time zones. I reported to the founders.",
+        "Formed an architecture committee; its members became the tech leads I trusted to shape the work and lead delivery.",
+        "Stayed hands-on: built core backend features and the recruiter and candidate dashboards, reviewed code, and worked on the API between the Ember.js apps and the Rails monolith, framework upgrades, database and performance, and on infrastructure and CI/CD with the DevOps engineer.",
+        "Agreed priorities, timelines and trade-offs with the founders, product, design and sales, and ran sprint, roadmap and release planning, retrospectives and the rules for code review.",
+        "Designed the hiring process and, for the engineers I hired, ran the technical interviews, made the decisions and onboarded them."
       ]
     },
     {
@@ -148,8 +147,8 @@
       "endDate": "2019-09",
       "summary": "Fintech building real-time trading software.",
       "highlights": [
-        "Built trading algorithms and worked on the analytics platform traders used, in C++ on a real-time system built on the actor model (C++ Actor Framework).",
-        "Built a Python test environment that emulated markets and simulated trading systems, so algorithms could be tested without live markets."
+        "Built trading algorithms and worked on the traders' analytics platform, in C++ on a real-time actor-model system (C++ Actor Framework).",
+        "Built a Python test environment that emulated markets and trading systems, to test algorithms without live markets."
       ]
     },
     {
@@ -158,7 +157,6 @@
       "location": "Remote",
       "startDate": "2016",
       "endDate": "2017",
-      "summary": "Joined as a junior engineer; returned in 2019 as lead.",
       "highlights": []
     }
   ],
@@ -168,7 +166,7 @@
       "position": "Mentor and team lead, Human Potential & Learning",
       "startDate": "2018-05",
       "endDate": "2021-09",
-      "summary": "Volunteer; Certificates of Excellence 2019 and 2021."
+      "summary": "Certificates of Excellence 2019 and 2021."
     },
     {
       "organization": "Zemlja Djece",
@@ -220,7 +218,7 @@
         "Technical leadership",
         "Spec-driven development",
         "Event-driven architecture",
-        "Data modeling",
+        "Data modelling",
         "Research and development"
       ]
     },
@@ -319,7 +317,7 @@
       "roles": [
         "core contributor · open source"
       ],
-      "description": "Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems that bring it to Rails teams."
+      "description": "Checks a codebase against its architecture rules in CI. I built its rule system and maintain four Ruby gems for Rails teams."
     },
     {
       "name": "tabula",
@@ -333,28 +331,28 @@
       "roles": [
         "author · in private development"
       ],
-      "description": "Runs a coding agent unattended inside a mandate you set, and comes back with finished, checked work."
+      "description": "Runs a coding agent unattended within a set mandate and returns finished, checked work."
     },
     {
       "name": "enola-guides",
       "roles": [
         "author and maintainer · open source"
       ],
-      "description": "Guides to enola for Rails, Ember, Python, TypeScript, Go and Rust, with a catalogue of 26 architecture laws. Ten releases since August 2026, on RubyGems, npm, PyPI and crates.io."
+      "description": "Guides to enola for Rails, Ember.js, Python, TypeScript, Go and Rust, with a catalogue of 26 architecture laws. Ten releases since August 2026, on RubyGems, npm, PyPI and crates.io."
     },
     {
       "name": "tended and pi-brain",
       "roles": [
         "author and maintainer · open source"
       ],
-      "description": "Knowledge bases a coding agent maintains, so people and agents work from the same written specs and decisions. tended is on PyPI; pi-brain is on npm, with ten releases."
+      "description": "Knowledge bases maintained by a coding agent, so that people and agents work from the same written specs and decisions. Published on PyPI (tended) and npm (pi-brain, ten releases)."
     },
     {
       "name": "treasure_hunt",
       "roles": [
         "author · open source"
       ],
-      "description": "A location-based treasure hunt for conferences, built on Rails 8.1 for RubyConf Austria 2026 and open-sourced under MIT."
+      "description": "A location-based treasure hunt for conferences, built on Rails 8.1 for RubyConf Austria 2026. MIT licence."
     }
   ],
   "references": [
