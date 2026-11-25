@@ -71,6 +71,7 @@ sources:
   - files/_includes/site-footer.html
   - files/assets/site.js
   - sources/conversation/2026-11-25--cv-standards-owner-answers.md
+  - sources/conversation/2026-11-25--cv-second-round-owner-answers.md
   - .github/scripts/render-cv-pdf.js
   - .github/scripts/render-cv-data.js
   - files/_cv/fonts/
@@ -1335,6 +1336,52 @@ only the title; the "Moja Praksa" internship certificate is left off; the
 About page keeps its own summary; and the CV wording test in the owner's
 private hireable repository will need the new sentences.
 
+**2026-11-25, forty-third change: the CV after two outside reads.** With the
+CV live in its new form the owner asked to keep improving it. Two reviewers
+who had not seen the earlier work read the published PDF, one as a recruiter
+and a screening system, one as a hiring manager for a Staff role; he chose
+what to act on and supplied the facts (source:
+sources/conversation/2026-11-25--cv-second-round-owner-answers.md).
+
+- **Experfy:** the title is "Engineering Manager". "Lead Software Engineer"
+  had been written for want of a formal title (twelfth change), and he asked
+  what the work is called; Engineering Manager is what a colleague's
+  recommendation on the CV already calls it. The entry has seven bullets from
+  his answers: the team from about 12 to about 30 engineers, everyone
+  reporting to him and he to the founders; the bridge between founders and
+  engineers; the architecture committee whose members became tech leads; his
+  part of the hiring; the processes he introduced; the architecture work he
+  took part in; and what he built himself. "150% scale-up" gives way to the
+  figures and "kept every deadline" to "kept delivery on schedule" (source:
+  files/_cv/cv.html).
+- **The company entry:** "Staff Engineer and Founder", so the current title a
+  parser stores carries the role, and its line says the roles below were B2B
+  contracts through the company. No engagement is marked current, and they
+  stay undated, as he chose.
+- **Conferences:** "Conference organiser · EuRuKo 2024; founder of RubyConf
+  Austria and GoatConf", since he organised EuRuKo 2024 and did not found
+  EuRuKo. RubyConf Austria had about 200 attendees, GoatConf is a short
+  mention, the sentence on what EuRuKo taught him is cut, and the entry moves
+  after Usput.ba so the engineering roles read without a break. llms.txt
+  follows on the Experfy title and the conferences (source: files/llms.txt).
+- **With no new facts, from the two reads:** the name is extracted as two
+  words in every mode; each skill group is one line of text, "Name: a, b, c";
+  bullets are drawn inside the list, since the browser's markers were clipped
+  on top-level roles; descriptions are as dark as the employer's name; the
+  Meisterlabs plans-and-permissions bullet is one again; the Carv entry goes
+  from eight bullets to six with every fact kept; the Symphony entry folds
+  "worked inside the client's team" into its first bullet; "Request Missing
+  Information" is set in quotation marks; the early Experfy title is "Junior
+  Software Engineer"; "Actor model" leaves the skills and stays in the
+  Marvelsoft bullet (source: files/cv/Muhamed_Isabegovic_CV.pdf,
+  files/_data/cv.json, files/cv.json, .github/scripts/render-cv-data.js).
+
+Still four pages, and pdftotext, pdfminer and pypdf still extract the same
+words. Not done, and listed for him: results with numbers, what the Symphony
+system does, skills no role supports, the summary, the order of the
+recommendations, and the homepage's "200 attendees at most" for RubyConf
+Austria.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1584,6 +1631,15 @@ and approved the last: "Yes add Rust, then finalise and deliver". The words
 the agent wrote are drafts for him to adjust: the summary, the Carv and
 Meisterlabs bullets built from his answers, and the one-line project
 descriptions.
+
+The forty-third change was asked for by the owner in session on 2026-11-25
+("let's continue iterating and finding ways to improve it") and decided by
+him from the agent's questions; his answers are kept as a source (source:
+sources/conversation/2026-11-25--cv-second-round-owner-answers.md). He read
+two previews and approved: "Experfy reads right", then "Publish this draft".
+The words the agent wrote are drafts for him to adjust: the seven Experfy
+bullets built from his answers, the company entry's line, and the merged Carv
+bullets.
 
 ## Related
 

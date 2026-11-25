@@ -33,9 +33,9 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, the en
   - Consultant for Doctaphone, a speech-to-text app for doctors: AI work, an architecture review, and the product vision with the founder.
   - Technical Lead at Recrubo, acquired by Carv: led the engineering team and the integration of both products after the acquisition.
 - AI Engineer on Usput.ba, his own product: AI content grounded in real place data.
-- Founder and organiser of conferences: EuRuKo 2024 in Sarajevo (700 attendees), RubyConf Austria 2026 in Vienna (up to 200 attendees), and now [GoatConf 2027](https://goatconf.com/), a free conference for people who build and sell software, in Tuzla, Bosnia and Herzegovina, on 3–5 June 2027.
+- Conference organiser: organised EuRuKo 2024 in Sarajevo (700 attendees), founded RubyConf Austria (2026 in Vienna, about 200 attendees), and now [GoatConf 2027](https://goatconf.com/), a free conference for people who build and sell software, in Tuzla, Bosnia and Herzegovina, on 3–5 June 2027.
 - Senior Software Engineer at Meisterlabs (MindMeister, MeisterTask), 2021 - 2024.
-- Lead Software Engineer at Experfy, an ATS for tech hiring, 2019 - 2021: around 30 engineers across 7 time zones.
+- Engineering Manager at Experfy, an ATS for tech hiring, 2019 - 2021: a team that grew from about 12 to about 30 engineers across 7 time zones.
 - C++ Software Engineer at Marvelsoft, real-time trading software, 2018 - 2019.
 - Full CV, with dates for every role: [web page]({{ site.url }}/cv/), [PDF]({{ site.url }}/cv/Muhamed_Isabegovic_CV.pdf), and [JSON Resume]({{ site.url }}/cv.json) for tools that import it.
 
