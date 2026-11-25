@@ -1538,7 +1538,9 @@ describe these clients by kind ("the consultancy", "the ATS client", "the
 recruiting startup", "the speech-to-text client") where they named them, his
 own quoted words included, with the name in square brackets. Evidence ids
 that carried a client's name are renamed, and he has the list to mirror in
-his evidence store. He chose to keep the repository's history as it is, told
+his evidence store. The same evening, on his word, the spec-driven
+development bullet in the technical-lead group no longer says "in both
+teams" (source: files/_cv/cv.html). He chose to keep the repository's history as it is, told
 that a squash would not remove the old commits from the merged pull requests;
 earlier commits therefore still name them.
 
