@@ -20,11 +20,13 @@ function readCv() {
   const role = (el, nested) => {
     const h3 = el.querySelector('h3');
     const at = h3.querySelector('.at');
+    const name = h3.cloneNode(true);
+    if (name.querySelector('.at')) name.querySelector('.at').remove();
     const about = el.querySelector('.about');
     const place = about && about.querySelector('.place');
     const summary = place ? text(about).slice(text(place).length).replace(/^\s*·\s*/, '') : text(about);
     return {
-      title: text(h3.cloneNode(true).childNodes[0]),
+      title: text(name),
       at: text(at).replace(/^·\s*/, ''),
       location: text(place) || null,
       summary: summary || null,
