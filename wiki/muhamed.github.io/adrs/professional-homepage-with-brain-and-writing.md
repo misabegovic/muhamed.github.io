@@ -73,6 +73,9 @@ sources:
   - sources/conversation/2026-11-25--cv-standards-owner-answers.md
   - sources/conversation/2026-11-25--cv-second-round-owner-answers.md
   - sources/conversation/2026-11-25--cv-third-round-owner-answers.md
+  - sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md
+  - .github/scripts/check-cv-pdf-order.py
+  - .github/scripts/render-cv-docx.js
   - .github/scripts/render-cv-pdf.js
   - .github/scripts/render-cv-data.js
   - files/_cv/fonts/
@@ -1419,6 +1422,40 @@ Still four pages, and pdftotext, pdfminer and pypdf extract the same words
 (source: files/cv/Muhamed_Isabegovic_CV.pdf, files/_data/cv.json,
 files/cv.json).
 
+**2026-11-25, forty-fifth change: a defect in the CV's text order fixed, a
+shorter summary, and Flipper.** Still the same day, the owner asked for
+options for the summary, a Word version and a fresh outside read (source:
+sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md).
+
+- **The defect, and its fix.** The bullet dots drawn in the forty-third change
+  sat in positioned boxes, and Chromium writes positioned boxes to the PDF
+  after everything else. The page looked right and layout-based extraction
+  read it right, but in the file's stored order (pdftotext -raw, pypdf) every
+  heading on a page came before every bullet on it: a parser reading that way
+  gave Meisterlabs, Experfy and Marvelsoft no bullets. It was live from the
+  forty-third change until this one. The agent's check had compared the words
+  extracted, not their order; a reviewer who had not seen the earlier work
+  found it. The dots are now inline boxes with a hanging indent, nothing
+  positioned, and `.github/scripts/check-cv-pdf-order.py` tests that every
+  bullet sits under its own role in stream order (source: files/_cv/cv.html,
+  .github/scripts/check-cv-pdf-order.py, files/cv/Muhamed_Isabegovic_CV.pdf).
+- **Summary:** from four options built from facts on the CV he chose the short,
+  plain one, three sentences with recent work before early work.
+- **Flipper:** he ships features behind Flipper feature flags, at Teamtailor,
+  Meisterlabs, Recrubo/Carv and Usput.ba; each role says so in a clause, and
+  "Feature flags (Flipper)" joins the skills.
+- **Word version:** `.github/scripts/render-cv-docx.js` writes the CV as a
+  Word file from `files/_data/cv.json`, for forms that parse .docx better.
+  The file is not served by the site; whether it should be is open (source:
+  .github/scripts/render-cv-docx.js).
+- **Kept on his word,** against the second pair of reviews: no labels inside
+  the company block, "retrieval (RAG) on pgvector" at Teamtailor and Carv, and
+  the Meisterlabs deployment split inside the Kubernetes bullet.
+
+Four pages. Open from the second pair of reviews: wording and consistency
+fixes that need no new facts, the Experfy entry's length, and the order of
+the Projects.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1685,6 +1722,12 @@ answer to the agent's question, kept as a source (source:
 sources/conversation/2026-11-25--cv-third-round-owner-answers.md). The words the
 agent wrote are drafts for him to adjust: where each skill is named in a
 role, and the Symphony bullet.
+
+The forty-fifth change was asked for by the owner in session on 2026-11-25
+("Offer options for the summary"; "shipping features behind flipper flags")
+and its publication approved by him once he was told of the defect: "Yes,
+publish now". His answers are kept as a source (source:
+sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md).
 
 ## Related
 
