@@ -55,9 +55,13 @@ li { break-inside: avoid; }
 .about { color: var(--ink-2); font-size: 8.6pt; margin: .3mm 0 .9mm; }
 .nested { margin: 1.4mm 0 2.4mm 4mm; }
 .nested .role { padding-top: 1.6mm; border-top: 1px solid var(--line); margin-bottom: 1.6mm; }
+/* The dot is an inline box at the start of the item's first line, with a
+   hanging indent. Nothing here is positioned: Chromium writes positioned
+   boxes to the PDF after everything else, which put every bullet after all
+   the headings in the file's own text order. */
 ul { margin: .4mm 0 0; padding: 0; list-style: none; }
-li { margin: 0 0 .6mm; padding-left: 3.6mm; position: relative; }
-li::before { content: ""; position: absolute; left: .7mm; top: .58em; width: 1.05mm; height: 1.05mm; border-radius: 50%; background: var(--ink-3); }
+li { margin: 0 0 .6mm; padding-left: 3.6mm; text-indent: -3.6mm; }
+li::before { content: ""; display: inline-block; width: 1.05mm; height: 1.05mm; margin: 0 1.85mm 0 .7mm; vertical-align: .22em; border-radius: 50%; background: var(--ink-3); }
 /* One line of text per group, "Name: a, b, c": a parser never separates a
    group's name from its skills. The section is not split over a page end. */
 section:has(.skill) { break-inside: avoid; }
