@@ -83,13 +83,14 @@
       "nested": true,
       "extra": {},
       "bullets": [
-        "Led two teams working on different parts of the system, owning delivery together with a product manager.",
-        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations. Step by step, this brought the Rails and Node.js/TypeScript stacks closer.",
+        "Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.",
+        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations. Step by step, this brought the two stacks closer.",
         "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.",
+        "Built the data pipelines that bring jobs, candidates and applications in from clients' applicant tracking systems and pass the data on to the AI features.",
         "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.",
-        "Built data pipelines and cloud functions on Google Cloud.",
-        "Introduced spec-driven development in both teams.",
-        "Owned DevOps on Google Cloud: CI/CD, monitoring and observability."
+        "Ran integration and background work on Google Cloud Functions: some triggered by events and queues, some on a schedule for syncs and maintenance.",
+        "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
+        "Owned DevOps and CI/CD on Google Cloud, and monitoring and observability for the parts my teams ran."
       ],
       "dates": null
     },
@@ -132,7 +133,7 @@
       "title": "Senior Software Engineer",
       "at": "Meisterlabs",
       "location": "Vienna, Austria",
-      "summary": "Maker of MindMeister and MeisterTask.",
+      "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React.",
       "start": "2021-11",
       "end": "2024-12",
       "nested": false,
@@ -143,9 +144,9 @@
       "bullets": [
         "Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask.",
         "It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.",
-        "Built MindMeister product features and ran A/B experiments across markets for three years.",
+        "Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.",
         "Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases.",
-        "Maintained, monitored and expanded the Kubernetes setup for MindMeister."
+        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: kept its dashboards, metrics and alerts and acted on them, maintained the Helm charts and deployment configuration, and added new services and environments."
       ],
       "dates": "11/2021 - 12/2024"
     },
@@ -277,6 +278,7 @@
       "group": "Infrastructure and DevEx",
       "items": [
         "Google Cloud",
+        "Cloud Functions",
         "Azure",
         "Kubernetes",
         "CI/CD",
@@ -322,9 +324,9 @@
   "education": [
     {
       "title": "Master's programmes, in progress",
-      "at": "TU Wien (Vienna University of Technology)",
+      "at": "TU Wien",
       "location": null,
-      "summary": "Software Engineering & Internet Computing, and Business Informatics; part-time, alongside work.",
+      "summary": "Vienna University of Technology, Austria. Software Engineering & Internet Computing, and Business Informatics; part-time, alongside work.",
       "start": "2022-01",
       "end": null,
       "nested": false,
@@ -339,16 +341,16 @@
     },
     {
       "title": "BSc, Information Technology",
-      "at": "IPI Akademija Tuzla",
+      "at": "IPI Akademija",
       "location": null,
-      "summary": "C++ and Qt.",
+      "summary": "International Business-Information Academy, Tuzla, Bosnia and Herzegovina.",
       "start": "2016",
       "end": "2019",
       "nested": false,
       "extra": {
         "start": "2016",
         "end": "2019",
-        "institution": "IPI Akademija Tuzla",
+        "institution": "IPI Akademija (International Business-Information Academy), Tuzla",
         "studyType": "BSc",
         "area": "Information Technology"
       },

@@ -3,7 +3,7 @@
 // Run after every CV change, alongside render-cv-data.js:
 //   NODE_PATH=<dir with playwright-core> CHROME=<chromium> node .github/scripts/render-cv-pdf.js
 // OUT=<path> writes the PDF elsewhere, for a preview. The CV is meant to be
-// three pages; the script says so when it is not.
+// four pages, the last one the recommendations; the script says so when it is not.
 const { chromium } = require('playwright-core');
 const fs = require('fs');
 const path = require('path');
@@ -11,7 +11,7 @@ const path = require('path');
 const SITE = path.join(__dirname, '..', '..', 'files');
 const SOURCE = path.join(SITE, '_cv', 'cv.html');
 const OUT = process.env.OUT || path.join(SITE, 'cv', 'Muhamed_Isabegovic_CV.pdf');
-const PAGES = 3;
+const PAGES = 4;
 
 (async () => {
   const b = await chromium.launch({ executablePath: process.env.CHROME || undefined });
