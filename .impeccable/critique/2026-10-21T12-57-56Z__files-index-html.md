@@ -30,7 +30,7 @@ Method: dual-agent (A: design-review subagent, B: detector + browser subagent). 
 
 ## Priority Issues
 1. [P1] Truncated homepage copy from unquoted YAML flow mappings, files/_data/home.yml:33-35 ("covering all 7", Usput line cut). Fix: quote values, add a build check. Command: harden.
-2. [P1] Evidence deep, anonymous, undated: testimonials at mobile screen ~8; logos not tied to claims; /work/ bullets do not name companies; nested CV roles (Teamtailor, Doctaphone, Recrubo, Usput) undated. Fix: quote + 3-number proof strip under the logos; name companies in /work/ with CV anchors; date every role. Command: layout, then clarify.
+2. [P1] Evidence deep, anonymous, undated: testimonials at mobile screen ~8; logos not tied to claims; /work/ bullets do not name companies; nested CV roles (the ATS client, the speech-to-text client, the recruiting startup, Usput) undated. Fix: quote + 3-number proof strip under the logos; name companies in /work/ with CV anchors; date every role. Command: layout, then clarify.
 3. [P1] Mobile header: no menu, 26px nav targets, 3-row 137px header at 360 with About clipped, 4px overflow at 320, no sticky nav/CTA. Fix: one-row header + Menu toggle, reveal on scroll-up with Get in touch, 44px targets. Command: adapt.
 4. [P2] Closing band speaks only to AI buyers; /work/, /cv/, /about/, posts end without an ask; no reply-time promise. Fix: two-path band on every evidence page + reply-time line. Command: clarify.
 5. [P2] Mobile density and tablet one-column fallback: stack wall ~1.7 screens, tools jargon, footer ~1.1 screens; 820px hero 45% void, services single column. Fix: shorten stack on home, two columns down to ~720-760, two footer columns on mobile. Command: distill.

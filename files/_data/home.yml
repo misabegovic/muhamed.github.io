@@ -16,7 +16,7 @@ byline:
   text: I make software for a living, in Vienna.
 
 hero:
-  # evidence: summary-headline, role-carv-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
+  # evidence: summary-headline, role-recruiting-startup-team, role-experfy-team, oss-pi-brain, oss-enola-constraints
   # A greeting, simple and personal: who I am and how I could help (owner,
   # 2026-11-21; was "Ten years of taking software from idea to production.").
   # The share card and the LinkedIn and X headers carry the same greeting.
@@ -30,7 +30,7 @@ hero:
   # does (owner, 2026-11-21). How I help is the link below it and the
   # services section.
   # evidence: files/_pages/about.md (leading teams, the conferences);
-  # role-carv-team, role-experfy-team (teams led)
+  # role-recruiting-startup-team, role-experfy-team (teams led)
   # lead: the first sentence, set apart in ink. rows: the rest, one sentence
   # a row, each with a link to where the page shows it (owner, 2026-11-22;
   # one paragraph until then). The sentences are unchanged.
@@ -129,7 +129,7 @@ side_projects:
 # evidence store; C is listed on the owner's word (2026-09-28). An icon names a
 # file in files/images/stack/ (Simple Icons, CC0); no icon shows a plain label.
 stack:
-  # evidence: skill-rag, role-teamtailor-prescreening, skill-ai-llm-engineering, skill-spec-driven-development, oss-enola-constraints, oss-pi-brain, oss-brain
+  # evidence: skill-rag, role-ats-client-prescreening, skill-ai-llm-engineering, skill-spec-driven-development, oss-enola-constraints, oss-pi-brain, oss-brain
   - group: What I build
     items:
       - { name: RAG }
@@ -140,7 +140,7 @@ stack:
       - { name: Agent guardrails }
       - { name: Harness extensions }
       - { name: Prompt-injection screening }
-      # Knowledge graphs and data pipelines: the Symphony engagement, on the owner's word (2026-11-21).
+      # Knowledge graphs and data pipelines: The consultancy engagement, on the owner's word (2026-11-21).
       - { name: Knowledge graphs }
       - { name: Data pipelines }
   - group: AI and agents
@@ -201,7 +201,7 @@ services:
     fits: When you need a product or feature built.
     format: Embedded, part-time or full-time
     title: Hands-on product engineering
-    # evidence: role-teamtailor-copilot, role-meisterlabs-permissions, proj-usput-web
+    # evidence: role-ats-client-ai-team, role-meisterlabs-permissions, proj-usput-web
     text: >-
       I join your team as a senior engineer and build the product or feature
       end to end, from spec to production.
@@ -210,7 +210,7 @@ services:
   # first and AI native and maintainable, easy to extend reliably"). For any
   # proof of concept; AI-native, the site's term, is how it is made ready.
   # lead: on the homepage it has its own outlined row above the grid (his
-  # pick over a fifth card), with no line of proof in it: the Symphony
+  # pick over a fifth card), with no line of proof in it: The consultancy
   # engagement is not quoted there (owner, 2026-11-22); the Work page keeps
   # its sentence. The name is his pick of three; fits, format, title and
   # text are the agent's drafts from his message, for him to adjust.
@@ -229,7 +229,7 @@ services:
     fits: When your team needs technical direction.
     format: Fractional or interim
     title: Technical lead for your team
-    # evidence: role-carv-team, role-experfy-team
+    # evidence: role-recruiting-startup-team, role-experfy-team
     text: >-
       I lead your engineering team as a fractional or interim technical lead:
       technical direction, architecture, delivery, and the people.
@@ -238,7 +238,7 @@ services:
     fits: When you want to know where your system stands.
     format: Fixed scope, one to two weeks
     title: Architecture review
-    # evidence: skill-software-design, role-carv-ats-integrations, oss-enola-constraints
+    # evidence: skill-software-design, role-recruiting-startup-ats-integrations, oss-enola-constraints
     text: >-
       A short, fixed-scope look at your codebase and system: what holds, what
       will break, and what to fix first.
@@ -247,14 +247,14 @@ services:
     fits: When you want your company to build with AI.
     format: Workshops, then setup in your codebase
     title: Make your company AI-native
-    # evidence: oss-brain, oss-pi-brain, proj-tabula, oss-enola-constraints, oss-enola-gems, role-teamtailor-copilot, proj-usput-retrieval-grounding
+    # evidence: oss-brain, oss-pi-brain, proj-tabula, oss-enola-constraints, oss-enola-gems, role-ats-client-ai-team, proj-usput-retrieval-grounding
     text: >-
       How you build and what you build. I set up a knowledge base your people
       and agents work from, with architecture rules checked in CI, and build
       AI features into your product that hold up in production, using
       open-source tools I build and teach.
   # evidence: role-experfy (joined 2016), role-experfy-product,
-  # role-teamtailor-employer, proj-usput-web, proj-treasurehunt, oss-enola-gems
+  # role-ats-client-employer, proj-usput-web, proj-treasurehunt, oss-enola-gems
   # band: on the homepage as its own band (_data/rails.yml), not in the grid
   # of four; the full offer is /rails/.
   - number: "06"
@@ -318,14 +318,14 @@ capabilities:
       You get AI features your customers can rely on: grounded in your data,
       measured once they ship, and easy to improve.
     proofs:
-      # evidence: role-teamtailor-ownership, role-teamtailor-employer, role-teamtailor-screening-triggers
+      # evidence: role-ats-client-ownership, role-ats-client-employer, role-ats-client-screening-triggers
       # No customer count (owner, 2026-10-26).
       - Took AI features in a hiring product from the first pitch to rollout for every customer, and measured the results.
-      # evidence: role-teamtailor-langfuse
+      # evidence: role-ats-client-langfuse
       - Set up prompt management, evals and A/B experiments, so the team improved AI features with data instead of guesses.
       # evidence: proj-usput-live, proj-usput-retrieval-grounding
       - Run my own AI product, where I try new ideas on real users first.
-      # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
+      # on the owner's word, 2026-11-21 (the consultancy engagement; not yet in the evidence store)
       - "Took an inherited proof of concept to stable production: data pipelines, knowledge graphs and agents that enrich and classify data, with observability for the pipelines and the agents."
     proof:
       kicker: Where I try it first
@@ -342,7 +342,7 @@ capabilities:
       - Built the open-source tools I teach with, used to keep agent-written code aligned with its specs and architecture.
       # evidence: skill-spec-driven-development, proj-card-game-adrs
       - Set up spec-driven workflows where decisions are written down and checked against the code before it ships.
-      # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
+      # on the owner's word, 2026-11-21 (the consultancy engagement; not yet in the evidence store)
       - Introduced AI-native delivery in a project team, and helped a client's engineers bring AI into their own development lifecycle.
     # The output on enola's page (files/_projects/enola.md), cut to its first lines.
     proof:
@@ -361,11 +361,11 @@ capabilities:
       You get an architecture your team can keep building on: one clear model
       of your data, and integrations that don't leak everywhere.
     proofs:
-      # evidence: role-carv-integration-lead
+      # evidence: role-recruiting-startup-integration-lead
       - "Led the integration of two products after an acquisition: one frontend, one shared database, and the two stacks brought step by step closer."
-      # evidence: role-carv-ats-integrations
+      # evidence: role-recruiting-startup-ats-integrations
       - Brought data from 20+ outside systems into one model, so new integrations stopped costing new work elsewhere.
-      # on the owner's word, 2026-11-21 (the Symphony engagement; not yet in the evidence store)
+      # on the owner's word, 2026-11-21 (the consultancy engagement; not yet in the evidence store)
       - Brought multiple data sources into one platform in a medallion architecture, with knowledge graphs on top.
       # evidence: role-meisterlabs-permissions
       - Designed a plans and permissions system that let product run billing experiments without developer time.
@@ -380,7 +380,7 @@ capabilities:
     proofs:
       # evidence: role-experfy-team, role-experfy-scaleup
       - Led around 30 engineers across 7 time zones through 150 percent growth, without missing a deadline.
-      # evidence: role-carv-team
+      # evidence: role-recruiting-startup-team
       - Led a startup's engineering team through its acquisition, leading by building.
     proof:
       kicker: From the team

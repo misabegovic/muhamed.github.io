@@ -15,11 +15,11 @@ The agent asked two fresh reviewers to read the published PDF with no knowledge 
 
 - No result on the CV carries a number; every figure is a size.
 - The first entry is titled "Founder", so a parser stores that as the current title, and page 1 never says "contract".
-- The Symphony entry is read first and says least about what the system does.
+- The consultancy entry is read first and says least about what the system does.
 - "Founder and organiser · EuRuKo, RubyConf Austria, GoatConf" claims the founding of EuRuKo; "up to 200 attendees" is a capacity; GoatConf 2027 is an announcement.
 - Experfy carries the largest scope on the thinnest bullets; "150% scale-up" and "kept every deadline" are not believed as written.
 - Skills list items no role supports (pgvector, RAG, Go, MySQL, Sidekiq, Hotwire, Kamal, Shape Up).
-- Defects in the file: the name extracted as one word in one mode; skill group names separated from their lists; bullet markers clipped on top-level roles; a Meisterlabs bullet split in two; the Carv entry long and repeating itself.
+- Defects in the file: the name extracted as one word in one mode; skill group names separated from their lists; bullet markers clipped on top-level roles; a Meisterlabs bullet split in two; the recruiting-startup entry long and repeating itself.
 
 ## The owner on Experfy
 
@@ -40,7 +40,7 @@ His answers to the agent's questions:
 
 - Experfy: "I made up the experfy role tbh... Don't know what to call all that work. What is the suitable role name there?" From the agent's options he chose "Engineering Manager", the name Hassan Akbar's recommendation gives the work.
 - The first Experience entry: "Staff Engineer and Founder".
-- All four engagements (Symphony, Teamtailor, Doctaphone, Recrubo/Carv): "Yes, all four were B2B".
+- All four engagements (the consultancy, the ATS client, the speech-to-text client, the recruiting startup): "Yes, all four were B2B".
 - Marking an engagement as current: "Don't mark any".
 
 ## Conferences

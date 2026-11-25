@@ -21,7 +21,7 @@ From four offers he ticked "Fresh outside review" and "Word version for upload f
 
 ## Flipper
 
-"Also, shipping features behing flipper flags. Flipper feature flags". Asked where: "Teamtailor, Meisterlabs, Recrubo/Carv, Usput.ba".
+"Also, shipping features behing flipper flags. Flipper feature flags". Asked where: "the ATS client, Meisterlabs, the recruiting startup, Usput.ba".
 
 ## The defect a fresh review found
 
@@ -32,5 +32,5 @@ Told this, the owner answered "Yes, publish now" to publishing the fix with the 
 ## Three judgment calls from the reviews
 
 - Two labels inside the company block ("Client engagements", "Own product and events"): "No labels".
-- "Retrieval (RAG) on pgvector" at Teamtailor and Recrubo/Carv, which both reviewers read as bolted on: "Keep the lines as they are".
+- "Retrieval (RAG) on pgvector" at the ATS client and the recruiting startup, which both reviewers read as bolted on: "Keep the lines as they are".
 - Giving the Meisterlabs deployment split its own bullet again: "Keep it folded in".
