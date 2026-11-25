@@ -84,7 +84,7 @@
         "Merged the two products after the acquisition: a single Vue.js frontend, one shared database for clients and login sessions, and common ATS integrations, with new functionality shipped behind Flipper flags.",
         "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and that new functionality is built on, with Google Cloud Tasks as a fallback and to manage workload.",
         "Built the data pipelines that import jobs, candidates and applications from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features. The AI features worked the same for every client, and adding a new ATS needed no new code elsewhere.",
-        "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
+        "Introduced spec-driven development: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
         "Owned DevOps and CI/CD on Google Cloud, including monitoring and observability for the parts my teams ran. Ran integration and background jobs on Google Cloud Functions, triggered by events, queues or a schedule."
       ]
     },

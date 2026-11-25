@@ -47,6 +47,8 @@ section.letters { break-before: page; }
 .role { margin-bottom: 2.3mm; }
 .role h3, .about:not(:last-child) { break-after: avoid; }
 li { break-inside: avoid; }
+/* A list never leaves its last bullet alone at the top of the next page. */
+li:nth-last-child(2) { break-after: avoid; }
 .role h3 { font-size: 10.6pt; margin: 0; font-weight: 750; letter-spacing: -.01em; }
 .role h3 .at { font-weight: 400; color: var(--ink-2); }
 /* Dates sit on the title's line, at the right edge: the column a reader scans. */
@@ -137,7 +139,7 @@ main a { white-space: nowrap; }
           <li>Merged the two products after the acquisition: a single Vue.js frontend, one shared database for clients and login sessions, and common ATS integrations, with new functionality shipped behind Flipper flags.</li>
           <li>Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and that new functionality is built on, with Google Cloud Tasks as a fallback and to manage workload.</li>
           <li>Built the data pipelines that import jobs, candidates and applications from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features. The AI features worked the same for every client, and adding a new ATS needed no new code elsewhere.</li>
-          <li>Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.</li>
+          <li>Introduced spec-driven development: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.</li>
           <li>Owned DevOps and CI/CD on Google Cloud, including monitoring and observability for the parts my teams ran. Ran integration and background jobs on Google Cloud Functions, triggered by events, queues or a schedule.</li>
         </ul>
       </div>
