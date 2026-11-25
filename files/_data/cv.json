@@ -46,7 +46,7 @@
       "title": "AI Product Developer",
       "at": "Teamtailor, Co-pilot team",
       "location": null,
-      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
+      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js, with retrieval (RAG) on pgvector in the AI features. I owned AI features from pitch and spec to rollout and measurement, working in Shape Up.",
       "start": null,
       "end": null,
       "nested": true,
@@ -84,7 +84,7 @@
         "Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.",
         "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations.",
         "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.",
-        "Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.",
+        "Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features, which use retrieval (RAG) on pgvector. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.",
         "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
         "Owned DevOps and CI/CD on Google Cloud, with monitoring and observability for the parts my teams ran, and ran integration and background work on Google Cloud Functions, triggered by events and queues or on a schedule."
       ],
@@ -94,7 +94,7 @@
       "title": "AI Engineer",
       "at": "Usput.ba, my own product",
       "location": null,
-      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.",
+      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I try AI features on real users first.",
       "start": null,
       "end": null,
       "nested": true,
@@ -102,7 +102,7 @@
         "under": "founder"
       },
       "bullets": [
-        "Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
+        "Built generation grounded in real data (RAG, on pgvector). Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
         "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
       ],
@@ -128,7 +128,7 @@
       "title": "Senior Software Engineer",
       "at": "Meisterlabs",
       "location": "Vienna, Austria",
-      "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React.",
+      "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React, with MySQL and Sidekiq.",
       "start": "2021-11",
       "end": "2024-12",
       "nested": false,
@@ -139,7 +139,7 @@
       "bullets": [
         "Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask. It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.",
         "Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.",
-        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend went from shipping about once a week with the backend's release to shipping daily."
+        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend went from weekly releases tied to the backend to daily ones."
       ],
       "dates": "11/2021 - 12/2024"
     },
@@ -239,7 +239,6 @@
         "Medallion architecture",
         "Microsoft Fabric",
         "PySpark",
-        "Notebooks",
         "FalkorDB"
       ]
     },
@@ -287,7 +286,6 @@
     {
       "group": "Ways of working",
       "items": [
-        "Product specs",
         "A/B experiments",
         "Shape Up",
         "AI-native delivery",
