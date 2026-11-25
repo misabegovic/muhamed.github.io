@@ -10,7 +10,7 @@ kicker: Ruby on Rails consulting
 title: Rails apps, from the first release to the tenth year.
 # The words of the title under the hand-drawn stroke, on /rails/ (owner, 2026-11-22: one stroke a page title).
 title_mark: tenth year
-# evidence: role-experfy (joined 2016), role-teamtailor-employer, proj-usput-web
+# evidence: role-experfy (joined 2016), role-ats-client-employer, proj-usput-web
 # No customer counts for clients (owner, 2026-10-26: not too much bragging).
 lead: >-
   I have written Ruby since 2016 and shipped Rails in production for most of
@@ -47,21 +47,21 @@ work:
     text: When a rewrite is the right call, done piece by piece beside the running app, not as a big bang.
   - name: Performance
     text: Slow pages and backed-up job queues, fixed in the order your users feel them.
-  # evidence: role-carv-devops, role-meisterlabs-kubernetes; trunk-based
+  # evidence: role-recruiting-startup-devops, role-meisterlabs-kubernetes; trunk-based
   # development and feature flags on the owner's word (2026-10-26)
   - name: CI/CD and continuous delivery
     text: Pipelines your team trusts, trunk-based development with small daily merges, and new work behind feature flags, switched off without a deploy.
-  # evidence: role-experfy-scaleup, role-carv-devops
+  # evidence: role-experfy-scaleup, role-recruiting-startup-devops
   - name: Team processes
     text: Introduce and tune how your team plans, reviews and ships, so work flows instead of waiting.
-  # evidence: role-teamtailor-ownership, proj-usput-live
+  # evidence: role-ats-client-ownership, proj-usput-live
   # Was "End to end", which read oddly on its own (owner, 2026-10-26).
   - name: New features, idea to production
     text: "One person who owns a new feature or product through its whole lifecycle: the idea, the spec, the build, the rollout and running it."
-  # evidence: role-teamtailor-ownership, role-teamtailor-langfuse, proj-usput-retrieval-grounding
+  # evidence: role-ats-client-ownership, role-ats-client-langfuse, proj-usput-retrieval-grounding
   - name: AI features
     text: AI inside your Rails app, grounded in your data and measured with evals, without a second stack.
-  # evidence: role-teamtailor-langfuse (prompt management, evals, A/B
+  # evidence: role-ats-client-langfuse (prompt management, evals, A/B
   # experiments); observability for pipelines and agents on the owner's word
   # (2026-11-21, the current engagement; not yet in the evidence store)
   - name: "AI quality: evals and observability"

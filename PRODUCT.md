@@ -60,7 +60,7 @@ Clients hire him to build and lead; AI is one of the
 things he builds, not the pitch. His edge is making companies AI-native, in how they
 build and in what they build, with open-source tools he builds and teaches.
 Title, one form everywhere (owner, 2026-10-29): Staff Engineer, the role
-at Symphony, his current engagement through his company (was Senior Product
+at the consultancy, his current engagement through his company (was Senior Product
 Engineer and Technical Lead, AI-native | AI Engineer). Six services: Build
 (hands-on product engineering), Production (from proof of concept to
 production, added 2026-11-22 on the owner's word, for any proof of concept,
@@ -155,15 +155,14 @@ organiser, and works in public.
   stays on the site as an earlier tool, off the homepage. tended keeps its
   page, marked an earlier tool, and is off the homepage too, since
   empty-shell covers it (owner, 2026-11-22). Also three MCP servers in Go, Rails and plain Ruby.
-- **Teams led in production:** tech lead for the engineering team at Recrubo
-  through its acquisition by Carv (2025 to 2026; no team size on the site,
+- **Teams led in production:** tech lead for the engineering team at a recruiting startup through its acquisition (2025 to 2026; no team size on the site,
   owner, 2026-10-22); engineering manager for around 30 engineers across 7
   time zones at Experfy (2019 to 2021), through a 150 percent scale-up; the
-  AI candidate-prescreening architecture at Teamtailor (2026).
+  AI candidate-prescreening architecture at the ATS client (2026).
 - **Ruby and Rails:** Ruby since 2016 and Rails in production at most roles
   since; Rails upgrades and performance work on the owner's word (2026-10-26),
   not yet in the evidence store.
-- **Data and knowledge graphs:** at Symphony, a proof of concept taken to
+- **Data and knowledge graphs:** at the consultancy, a proof of concept taken to
   stable production: data pipelines on Azure and Microsoft Fabric (medallion
   architecture, PySpark), knowledge graphs in FalkorDB, agents that enrich
   and classify data, MCP servers, and AI-native delivery with the client's
@@ -174,12 +173,12 @@ organiser, and works in public.
   took full ownership of EuRuKo 2024 in Sarajevo; founding GoatConf 2027 in
   Tuzla.
 - **Recommendations:** three, real and attributed: Zlatko Alomerovic
-  (Recrubo/Carv), Hassan Akbar (Experfy) and Hans Schnedlitz (co-organiser of
+  (the recruiting startup), Hassan Akbar (Experfy) and Hans Schnedlitz (co-organiser of
   RubyConf Austria). None is from a client.
 - **Working in public:** the blog (`files/_posts/`) and the brain stream
   (`files/_stream/`).
 - **Company logos:** the seven on the homepage are shown with each company's
-  agreement (owner, 2026-10-26). Symphony, the current engagement, is not
+  agreement (owner, 2026-10-26). The consultancy, the current engagement, is not
   among them for now (owner, 2026-10-29).
 - **Absent, and not to be fabricated:** client testimonials, outcome metrics
   beyond the evidence store, a booking link, pricing.

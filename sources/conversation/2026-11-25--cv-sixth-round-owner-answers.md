@@ -11,7 +11,7 @@ summary: The sixth round on the CV the same day. Asked how the CV reads to a neu
 
 "How does the CV look now? If you were a neutral observer looking if they should hire me or just to learn about who tf I am. Who am I based on it?"
 
-The agent's read, in short: a capable senior engineer who can lead and would be interviewed for most roles he aims at, with "Staff" asserted more than shown. Hesitations: four clients since 2025 with no durations, no outcomes, the Staff title only at his own company and a consultancy, many things running in parallel, and Symphony read first and vaguest.
+The agent's read, in short: a capable senior engineer who can lead and would be interviewed for most roles he aims at, with "Staff" asserted more than shown. Hesitations: four clients since 2025 with no durations, no outcomes, the Staff title only at his own company and a consultancy, many things running in parallel, and the consultancy read first and vaguest.
 
 ## His proposal
 
@@ -21,13 +21,13 @@ The agent recommended the same grouping with clients named in passing where cont
 
 ## After the first preview
 
-"Maybe remove hints that help figure out which company, like the Teamtailor hint."
+"Maybe remove hints that help figure out which company, like the ATS-client hint."
 
-Removed: "serving 8,500+ companies" (now "a large applicant tracking system"), "an AI-native engineering company" (now "an engineering consultancy"), "a speech-to-text app for doctors" (now "an early-stage speech-to-text product"), "acquired two months after I joined" (now "acquired shortly after I joined") and "AI platform for recruiters" (now "AI startup in recruiting"), the feature name "Request Missing Information", the names in the two-teams bullet, and "worked with me at Recrubo/Carv" under Zlatko Alomerovic's recommendation (now "worked on my team for a year"; his words are untouched).
+Removed: a client's customer count (now "a large applicant tracking system"), a description taken from a client's own site (now "an engineering consultancy"), who a product's users are (now "an early-stage speech-to-text product"), how soon after his joining an acquisition came (now "acquired shortly after I joined"), a feature's name, the names in the two-teams bullet, and the client's name under Zlatko Alomerovic's recommendation (now "worked on my team for a year"; his words are untouched).
 
 ## pgvector
 
-"Let's not mention pgvector as this important thing...looks weird to mention in the Teamtailor entry". It leaves that entry and the Carv bullet, and stays at Usput.ba and in the skills.
+"Let's not mention pgvector as this important thing...looks weird to mention in the ATS-client entry". It leaves that entry and the recruiting-startup bullet, and stays at Usput.ba and in the skills.
 
 ## Go-ahead
 
@@ -39,6 +39,12 @@ Told that `llms.txt` and the recommendation on the homepage still named these cl
 
 Changed for it: `llms.txt`; the line under Zlatko Alomerovic's recommendation in `files/_data/home.yml`; and his post "From zero to one" (2025-03-12), where the company's name and links become "an AI startup in recruiting", "the founders of both companies" becomes "the founders", and the categories and tag naming it go.
 
-## Told to him, and left open
+## The records
 
-This repository is public and its earlier records name these clients; today's records say which names were removed. His LinkedIn presumably names them too.
+"Reword records... Would be great to rewrite history as well and force push to a single commit with cleaned history". Told that a squash and force-push would not remove the old commits from GitHub, since the merged pull requests keep them, he chose "Reword only, keep history". For the evidence ids in the site's data files that carried a client's name: "Rename to neutral ids".
+
+On Usput.ba, which he asked about moving to the Projects: "Keep it under Experience".
+
+## Left open
+
+His LinkedIn presumably names these clients too. Earlier commits in this repository do.

@@ -96,8 +96,8 @@ and has to find the Services page to learn what the owner offers.
 
 The owner's situation changed on 2026-09-14, when a client contract ended. The
 site is now also the front door for finding the next role or client. Three
-facts on the published site no longer hold: About lists the Teamtailor
-contract as "(2026 - present)", the structured data names Teamtailor as the
+facts on the published site no longer hold: About lists the ATS client
+contract as "(2026 - present)", the structured data names the ATS client as the
 current employer, and the header tagline ("Father since 2025. Rubyist since
 2016.") says nothing about the work.
 
@@ -120,7 +120,7 @@ while keeping a blog and a place to share thoughts.
    `/brain.xml` feed stay as they are. Writing stays at `/writing/`.
 4. **Navigation becomes** Services, Writing, Brain, About, with the homepage on
    the name. The header tagline states the work instead of the biography.
-5. **About is corrected**: the Teamtailor contract is shown as ended in 2026, in
+5. **About is corrected**: the ATS-client contract is shown as ended in 2026, in
    the visible career list and in the structured data.
 6. **Only true, checkable claims appear.** Every number traces to a record in
    the owner's evidence store. Testimonials appear only when real, attributed
@@ -475,26 +475,25 @@ performance, trunk-based development and feature flags are on the owner's
 word, not yet in the evidence store. The words live in `files/_data/rails.yml`; the name,
 format and summary stay in `home.yml` (services:) and the email in
 `services.yml`. In the same change, the site stops quoting a client's customer
-count: "8,500+ companies" is gone from `/work/`, `/rails/` and llms.txt, kept
+count: the figure is gone from `/work/`, `/rails/` and llms.txt, kept
 on the CV. The role title is unchanged: a shorter caption ("Senior product
 engineer, tech lead and Rubyist") was previewed and declined. The same day,
 `/rails/` got its own share card (`images/social/rails.png`) and Rails a
 LinkedIn and X post image beside the other four services, rendered by
 `render-social-images.js`.
 
-**2026-10-29, twenty-second change: Staff Engineer at Symphony.** The
-owner's contract with Symphony is signed, a B2B engagement through his
+**2026-10-29, twenty-second change: Staff Engineer at an engineering consultancy.** The
+owner's contract with the consultancy is signed, a B2B engagement through his
 company, and it is his latest role. The title, one form everywhere, becomes
 "Staff Engineer" (was "Senior Product Engineer and Technical Lead, AI-native |
 AI Engineer"): the homepage caption, the footer, About, the CV page and PDF,
 page titles and link previews, the JSON-LD, the bios on `/brand/`, llms.txt
-and `_config.yml`'s description. The CV lists "Staff Engineer · Symphony"
-first under the company, described from symphony.is as an AI-native
-engineering company building software and AI for enterprises, high-growth
-startups and private equity portfolio companies; the company's line says
+and `_config.yml`'s description. The CV lists "Staff Engineer", for the consultancy,
+first under the company, described in words from the consultancy's own
+site; the company's line says
 "engineering roles for startups and engineering companies" (was "inside
-startups"). About, the long bio and llms.txt name Symphony as the current
-engagement, before Teamtailor. Symphony is not in the homepage "Worked with"
+startups"). About, the long bio and llms.txt name the consultancy as the current
+engagement, before the ATS client. The consultancy is not in the homepage "Worked with"
 row for now. The share card and the ten service post images are re-rendered
 with the new title.
 
@@ -560,10 +559,10 @@ Muhamed" while the nav and tab keep "About" (source: files/_layouts/about.html).
 The meta description and the llms.txt line for About follow (source:
 files/llms.txt). The detailed open-source list and "Things I love" are gone.
 
-**2026-11-21, twenty-seventh change: the Symphony work, and data skills.**
-After a few weeks at Symphony the owner adds what he works with there,
+**2026-11-21, twenty-seventh change: the consultancy work, and data skills.**
+After a few weeks at the consultancy the owner adds what he works with there,
 described by technology and role only: no client, no industry, no numbers.
-On the CV, "Staff Engineer · Symphony" gains four bullets: a proof of concept
+On the CV, "Staff Engineer", for the consultancy, gains four bullets: a proof of concept
 taken over with his team and brought to a stable production environment, with
 observability for the pipelines and the agents, working inside the client's
 team and helping set the technical direction; data pipelines on Azure and
@@ -586,7 +585,7 @@ with" gains the pills Knowledge graphs, Data pipelines, Microsoft Foundry and
 FalkorDB, its intro names data pipelines and knowledge graphs, and its last
 line Python and Azure; the Work page gains three proof points, one each under
 AI features, coding agents and systems, naming no employer or client (source:
-files/_data/home.yml). llms.txt says what the Symphony engagement covers and
+files/_data/home.yml). llms.txt says what the consultancy engagement covers and
 gains a line on when to recommend him, and the JSON-LD knows about knowledge
 graphs, data engineering, Microsoft Azure and Microsoft Fabric (source:
 files/llms.txt, files/_includes/person-jsonld.html). Every new claim is on the
@@ -1160,9 +1159,9 @@ has its two post images like the other offers (source:
 files/images/social/service-production-linkedin.png).
 
 The site says "AI-native" throughout and not "AI-first", the owner's choice
-of 2026-11-22 for the Rails list. The proof is the Symphony engagement, on
+of 2026-11-22 for the Rails list. The proof is the consultancy engagement, on
 his word of 2026-11-21 and not yet in the evidence store, described by
-technology only; he chose it alone over adding the Teamtailor features or
+technology only; he chose it alone over adding the ATS-client features or
 Usput.ba. That one engagement, which a visitor cannot check, carries the
 offer: said to him before building, and to be strengthened with a
 recommendation from it or a second case.
@@ -1174,7 +1173,7 @@ types at 21 widths, bar the 5 px on `/politika/` noted above; no text below
 WCAG AA contrast in either scheme.
 
 The same day, after seeing it built, the owner took the proof out of the
-homepage's row: "Maybe don't quote the Symphony thing as proof on the
+homepage's row: "Maybe don't quote the consultancy thing as proof on the
 homepage, ship without it on that section". The row is now its title, its
 text and its link, with no line of proof; `home.yml` no longer has the
 offer's `proof` field, and the template and stylesheet no longer draw one
@@ -1304,8 +1303,8 @@ files/cv/Muhamed_Isabegovic_CV.pdf before the change).
 - **Wording:** shorter, plainer sentences, on his word ("natural language
   that is easy to digest"); no yellow underline or highlight; the summary
   rewritten in four sentences; two weak bullets folded into their neighbours
-  at Teamtailor and Meisterlabs; "across seven merged pull requests" left
-  out. Every added fact is his: the Carv entry (one team per stack, the data
+  at the ATS client and Meisterlabs; "across seven merged pull requests" left
+  out. Every added fact is his: the recruiting-startup entry (one team per stack, the data
   pipelines, Google Cloud Functions, spec-driven development, monitoring for
   the parts his teams ran) and the Meisterlabs entry (Rails and React, what
   the A/B experiments covered, what maintaining the Kubernetes setup meant)
@@ -1322,7 +1321,7 @@ files/cv/Muhamed_Isabegovic_CV.pdf before the change).
   taha first, on his word, then enola-guides, tended and pi-brain, and
   treasure_hunt. The words come from the project profiles (source:
   files/_data/home.yml).
-- **Four pages, superseding "three pages":** when the Carv and Meisterlabs
+- **Four pages, superseding "three pages":** when the recruiting startup and Meisterlabs
   entries grew he allowed a fourth page. Type goes from 8.8pt to 9pt with
   more room between lines; the CV proper is three pages and the
   recommendations start a page of their own. The contact page says
@@ -1374,8 +1373,8 @@ sources/conversation/2026-11-25--cv-second-round-owner-answers.md).
   words in every mode; each skill group is one line of text, "Name: a, b, c";
   bullets are drawn inside the list, since the browser's markers were clipped
   on top-level roles; descriptions are as dark as the employer's name; the
-  Meisterlabs plans-and-permissions bullet is one again; the Carv entry goes
-  from eight bullets to six with every fact kept; the Symphony entry folds
+  Meisterlabs plans-and-permissions bullet is one again; the recruiting-startup entry goes
+  from eight bullets to six with every fact kept; the consultancy entry folds
   "worked inside the client's team" into its first bullet; "Request Missing
   Information" is set in quotation marks; the early Experfy title is "Junior
   Software Engineer"; "Actor model" leaves the skills and stays in the
@@ -1383,7 +1382,7 @@ sources/conversation/2026-11-25--cv-second-round-owner-answers.md).
   files/_data/cv.json, files/cv.json, .github/scripts/render-cv-data.js).
 
 Still four pages, and pdftotext, pdfminer and pypdf still extract the same
-words. Not done, and listed for him: results with numbers, what the Symphony
+words. Not done, and listed for him: results with numbers, what the consultancy
 system does, skills no role supports, the summary, the order of the
 recommendations, and the homepage's "200 attendees at most" for RubyConf
 Austria.
@@ -1396,15 +1395,15 @@ sources/conversation/2026-11-25--cv-third-round-owner-answers.md).
 - **Results with numbers:** asked role by role for figures he knows and may
   share, he had one. Before the deployment split the Meisterlabs frontend
   shipped about once a week with the backend's release, and daily after it;
-  the bullet says so. Teamtailor, Carv, the plans system and Usput.ba keep
+  the bullet says so. The ATS client, the recruiting startup, the plans system and Usput.ba keep
   their wording.
 - **Skills:** every listed skill the reads found unsupported now appears where
-  he used it: retrieval (RAG) on pgvector at Teamtailor, Carv and Usput.ba;
-  Shape Up at Teamtailor; Hotwire and Kamal on Usput.ba; MySQL and Sidekiq at
+  he used it: retrieval (RAG) on pgvector at the ATS client, the recruiting startup and Usput.ba;
+  Shape Up at the ATS client; Hotwire and Kamal on Usput.ba; MySQL and Sidekiq at
   Meisterlabs. Go stays, from his open-source tooling. "Product specs" and
   "Notebooks" leave the list (source: files/_cv/cv.html).
 - **Summary:** shown two rewrites, he keeps the current one.
-- **Symphony:** the first bullet names the proof of concept as a data platform
+- **The consultancy:** the first bullet names the proof of concept as a data platform
   with AI agents, from what the entry already describes. No client, industry
   or number is added, as he decided in the twenty-seventh change.
 - **Usput.ba:** "Founder and AI Engineer", which keeps the title he chose for
@@ -1414,7 +1413,7 @@ sources/conversation/2026-11-25--cv-third-round-owner-answers.md).
   2022 - 2025" instead of "in progress ... Present".
 - **Recommendations:** the order is Zlatko Alomerovic, Hassan Akbar, Hans
   Schnedlitz, the engineering ones first. The signatures keep their form, and
-  Doctaphone its one line, on his word.
+  the speech-to-text client its one line, on his word.
 - **Homepage:** the RubyConf Austria card says "~200 attendees" where it had
   the limit, "200 attendees at most"; he preferred "~" to "About", and the
   CV's conference line follows (source: files/_data/home.yml,
@@ -1443,15 +1442,15 @@ sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md).
   .github/scripts/check-cv-pdf-order.py, files/cv/Muhamed_Isabegovic_CV.pdf).
 - **Summary:** from four options built from facts on the CV he chose the short,
   plain one, three sentences with recent work before early work.
-- **Flipper:** he ships features behind Flipper feature flags, at Teamtailor,
-  Meisterlabs, Recrubo/Carv and Usput.ba; each role says so in a clause, and
+- **Flipper:** he ships features behind Flipper feature flags, at the ATS client,
+  Meisterlabs, the recruiting startup and Usput.ba; each role says so in a clause, and
   "Feature flags (Flipper)" joins the skills.
 - **Word version:** `.github/scripts/render-cv-docx.js` writes the CV as a
   Word file from `files/_data/cv.json`, for forms that parse .docx better.
   The file is not served by the site; whether it should be is open (source:
   .github/scripts/render-cv-docx.js).
 - **Kept on his word,** against the second pair of reviews: no labels inside
-  the company block, "retrieval (RAG) on pgvector" at Teamtailor and Carv, and
+  the company block, "retrieval (RAG) on pgvector" at the ATS client and the recruiting startup, and
   the Meisterlabs deployment split inside the Kubernetes bullet.
 
 Four pages. Open from the second pair of reviews: wording and consistency
@@ -1468,7 +1467,7 @@ sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md).
   2025 I have worked through it"), with a sentence saying what the indented
   entries are; one style for numbers and names (seven time zones, Ember.js,
   Data modelling); no comma splice and no contraction; clearer sentences in
-  Symphony, Teamtailor, Carv, Usput.ba, Marvelsoft and the Projects;
+  the consultancy, the ATS client, the recruiting startup, Usput.ba, Marvelsoft and the Projects;
   retrieval-augmented generation spelled out once, at Usput.ba; the
   conference lines in one order, "Led EuRuKo 2024 and RubyConf Austria 2026"
   for "Led both" (source: files/_cv/cv.html).
@@ -1477,7 +1476,7 @@ sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md).
   architecture items, stakeholders with planning, and hiring. The growth is
   stated once, "reviewed code" replaces "reviewed most of the code", and the
   description says "returned to lead engineering", in step with the title.
-- **Teamtailor:** owning AI features from pitch and spec to rollout and
+- **The ATS client:** owning AI features from pitch and spec to rollout and
   measurement is the first bullet, not a clause in the grey line.
 - **Master's:** "part-time (on hold, not completed)", so that neither a parser
   nor a reader takes the entry for a finished degree.
@@ -1504,15 +1503,15 @@ sources/conversation/2026-11-25--cv-sixth-round-owner-answers.md).
   acquisition". Each has a line saying in what role and for what kind of
   client. Usput.ba and the conferences follow, named, since they are his
   (source: files/_cv/cv.html).
-- **No client, and no hint of one.** Symphony, Teamtailor, Doctaphone, Recrubo
-  and Carv are not named in the CV, and what pointed to them is gone:
-  "8,500+ companies" (which the twenty-first change had kept on the CV), the
-  feature name "Request Missing Information", "AI-native engineering
-  company", "for doctors", and "two months after I joined". Under Zlatko
+- **No client, and no hint of one.** No client is named in the CV, and what
+  pointed to one is gone: a client's customer count (which the twenty-first
+  change had kept on the CV), a feature's name, a description taken from a
+  client's own site, who a product's users are, and how soon after his
+  joining an acquisition came. Under Zlatko
   Alomerovic's recommendation the line reads "worked on my team for a year";
   his words are untouched. Employers stay named: Meisterlabs, Experfy,
   Marvelsoft.
-- **pgvector** leaves the Teamtailor and Carv text, where it described the
+- **pgvector** leaves the ATS-client and recruiting-startup text, where it described the
   product and not his work, on his read and both outside reviews'. It stays
   at Usput.ba and in the skills.
 - **Data:** in `cv.json` the work done through the company carries the company
@@ -1531,8 +1530,17 @@ signed "Worked on Muhamed's team for a year"; and his post "From zero to
 one" says "an AI startup in recruiting" where it named the company, and
 loses its two categories and one tag for it. No built page names these
 clients (source: files/llms.txt, files/_data/home.yml,
-files/_posts/2025-03-12-from-zero-to-one.md). Earlier records in this
-repository still do, as history.
+files/_posts/2025-03-12-from-zero-to-one.md).
+
+The records follow too ("Reword records"): this decision, the log, the
+product brief, today's source notes and the comments in the site's data files
+describe these clients by kind ("the consultancy", "the ATS client", "the
+recruiting startup", "the speech-to-text client") where they named them, his
+own quoted words included, with the name in square brackets. Evidence ids
+that carried a client's name are renamed, and he has the list to mirror in
+his evidence store. He chose to keep the repository's history as it is, told
+that a squash would not remove the old commits from the merged pull requests;
+earlier commits therefore still name them.
 
 ## Approval
 
@@ -1592,7 +1600,7 @@ offer Ruby on Rails consultations", then "evaluate it from perspective of
 someone who would consider hiring me", "The site should always invite folks to
 reach out... I can also recommend someone if I am not available", upgrades and
 performance confirmed as his work, "Keep the full old title", "idk if I want to
-brag too much about teamtailor facts like the 8500 companies", and "keep it on
+brag too much about [the ATS client] facts like the [customer count]", and "keep it on
 the CV, commit the rest". Then, on the page itself: "some of these sound too
 specific... might weird them out", "shipping behind feature flags,
 refactoring, rewrites, maintenance of old Ruby/Rails projects... managing the
@@ -1608,10 +1616,10 @@ The formats and the wording are
 the agent's drafts, for the owner to adjust.
 
 The twenty-second change was asked for by the owner in session on
-2026-10-29: "I've signed a contract with Symphony.is. the role will be Staff
+2026-10-29: "I've signed a contract with [an engineering consultancy]. the role will be Staff
 Engineer", to list it as the latest engagement on the site and the CV and to
-make "Staff Engineer" the title; then "remove Symphony from Worked with for
-now", the CV line "With clients" from drafts taken from symphony.is, "for
+make "Staff Engineer" the title; then "remove the consultancy from Worked with for
+now", the CV line "With clients" from drafts taken from the consultancy's site, "for
 startups and engineering companies", the images re-rendered, each previewed
 in Chrome, and "ok, ship it".
 
@@ -1621,15 +1629,15 @@ can be hired through his company.
 
 The twenty-sixth change was shaped with the owner in session on 2026-10-29,
 one question at a time: "Community / people first", "What I care about", the
-themes, and each paragraph redrafted until it sounded like him (Symphony,
-Teamtailor, the company, Usput.ba and the EuRuKo 2023 gong story were cut on
+themes, and each paragraph redrafted until it sounded like him (the consultancy,
+the ATS client, the company, Usput.ba and the EuRuKo 2023 gong story were cut on
 his word); then "Ok" to the full draft.
 
 The twenty-seventh change was asked for by the owner in session on
-2026-11-21: "have been working with Symphony for a while now, a few weeks and
+2026-11-21: "have been working with the consultancy for a while now, a few weeks and
 we can add more skills and some generic info not revealing client specific
 info to enrich the site". He chose the CV skills list, bullets under the
-Symphony role, and the homepage and Work page; "Technology and role only";
+the consultancy role, and the homepage and Work page; "Technology and role only";
 and one draft to review. He supplied the list of technologies and practices
 and his role: a proof of concept inherited with his team and taken "to a
 stable productionized environment", helping set technical direction,
@@ -1757,7 +1765,7 @@ assumption from its being his conference, stated to him and not answered.
 
 The fortieth change was asked for by the owner in session on 2026-11-22
 (quoted above), then "A sixth named offer", "Any proof of concept" and
-"Symphony, by technology only", and from two mockups "B, Production". The
+"the consultancy, by technology only", and from two mockups "B, Production". The
 words are the agent's drafts from his message, for him to adjust: when it
 fits, the format ("A short assessment, then hands-on"), the title, the
 text, the four "what you get" lines and the email draft.
@@ -1780,7 +1788,7 @@ The forty-second change was asked for by the owner in session on 2026-11-25
 he supplied are kept as a source (source:
 sources/conversation/2026-11-25--cv-standards-owner-answers.md). He read five previews
 and approved the last: "Yes add Rust, then finalise and deliver". The words
-the agent wrote are drafts for him to adjust: the summary, the Carv and
+the agent wrote are drafts for him to adjust: the summary, the recruiting-startup and
 Meisterlabs bullets built from his answers, and the one-line project
 descriptions.
 
@@ -1790,7 +1798,7 @@ him from the agent's questions; his answers are kept as a source (source:
 sources/conversation/2026-11-25--cv-second-round-owner-answers.md). He read
 two previews and approved: "Experfy reads right", then "Publish this draft".
 The words the agent wrote are drafts for him to adjust: the seven Experfy
-bullets built from his answers, the company entry's line, and the merged Carv
+bullets built from his answers, the company entry's line, and the merged recruiting-startup
 bullets.
 
 The forty-fourth change was asked for by the owner in session on 2026-11-25:
@@ -1799,7 +1807,7 @@ The forty-fourth change was asked for by the owner in session on 2026-11-25:
 answer to the agent's question, kept as a source (source:
 sources/conversation/2026-11-25--cv-third-round-owner-answers.md). The words the
 agent wrote are drafts for him to adjust: where each skill is named in a
-role, and the Symphony bullet.
+role, and the consultancy bullet.
 
 The forty-fifth change was asked for by the owner in session on 2026-11-25
 ("Offer options for the summary"; "shipping features behind flipper flags")

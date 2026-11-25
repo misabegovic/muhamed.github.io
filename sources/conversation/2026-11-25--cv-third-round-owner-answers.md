@@ -13,19 +13,19 @@ Requests (owner, 2026-11-25): "Publish this draft, then go through the numbers i
 
 Asked for figures he knows and may share, role by role:
 
-- Teamtailor (Request Missing Information, the rebuilt AI screening, the Langfuse experiments): "Can't share or don't know" for each; and no span in words for the engagement.
+- The ATS client (the missing-information feature, the rebuilt AI screening, the Langfuse experiments): "Can't share or don't know" for each; and no span in words for the engagement.
 - Meisterlabs, the plans and permissions system: "Can't share or don't know".
 - Meisterlabs, how often the frontend shipped before the deployment split: "Weekly or with backend releases" (about once a week, tied to the backend's release); daily after.
 - Usput.ba traffic: "Keep 'thousands of visits'". Scale of the AI work: "No figures".
-- Carv, time to add a new applicant tracking system, and the length and end state of the integration: "Can't share or don't know" for both.
-- Symphony was not asked, since he decided on 2026-11-21 that it carries no client, industry or numbers.
+- The recruiting startup, time to add a new applicant tracking system, and the length and end state of the integration: "Can't share or don't know" for both.
+- The consultancy was not asked, since he decided on 2026-11-21 that it carries no client, industry or numbers.
 
 ## Skills no role supported
 
-- RAG and pgvector: used at "Usput.ba, Teamtailor, Recrubo/Carv"; pgvector specifically at all three.
+- RAG and pgvector: used at "Usput.ba, the ATS client, the recruiting startup"; pgvector specifically at all three.
 - Go: "Open-source tooling only".
 - Hotwire and Kamal: "Usput.ba, treasure_hunt, Client work" (no client named, so the CV names them at Usput.ba only).
-- "MySQL at Meisterlabs", "Sidekiq in the Rails roles", "Shape Up at Teamtailor".
+- "MySQL at Meisterlabs", "Sidekiq in the Rails roles", "Shape Up at the ATS client".
 - To remove from the list: "Product specs, Notebooks".
 
 ## The summary
@@ -34,10 +34,10 @@ Shown two rewrites built from facts already on the CV, he chose "Keep the curren
 
 ## Six smaller points
 
-- Symphony's first bullet: "Use what the CV already says", so it names the proof of concept as a data platform with AI agents.
+- The consultancy's first bullet: "Use what the CV already says", so it names the proof of concept as a data platform with AI agents.
 - Order of the recommendations: "Zlatko, Hassan, Hans".
 - The recommenders' own roles: "No, leave the signatures".
-- Doctaphone: "Keep it as it is".
+- The speech-to-text client: "Keep it as it is".
 - Usput.ba's title: "Founder and AI Engineer".
 - Master's at TU Wien: "Not actively studying"; "Paused, still enrolled"; last courses taken in "2025".
 - The homepage's RubyConf Austria card: "Yes: 'about 200 attendees'". Then, seeing it: "Instead of About maybe use ~".
