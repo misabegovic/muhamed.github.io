@@ -58,7 +58,9 @@ li { break-inside: avoid; }
 ul { margin: .4mm 0 0; padding-left: 3.6mm; }
 li { margin: 0 0 .6mm; }
 li::marker { color: var(--ink-3); }
-/* A grid, not floats: the group's name is then read before its skills. */
+/* A grid, not floats: the group's name is then read before its skills. The
+   section is not split over a page end. */
+section:has(.skills) { break-inside: avoid; }
 .skills { display: grid; grid-template-columns: 42mm minmax(0, 1fr); row-gap: 1mm; margin: 0; }
 .hat { font-weight: 700; }
 .chips { margin: 0; color: var(--ink-2); }
@@ -116,8 +118,7 @@ main a { white-space: nowrap; }
           <li>Shipped Request Missing Information to all customers. It spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.</li>
           <li>Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers.</li>
           <li>Moved the AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic. Ran A/B experiments of prompt and model versions there and promoted the winners.</li>
-          <li>Shipped automatic candidate moves based on the screening outcome, a customer request: each criterion is met, unmet or unknown, and they combine with All or Any.</li>
-          <li>Made screening wait until the CV is parsed and re-run when it arrives, so nobody is screened before their CV is read.</li>
+          <li>Shipped automatic candidate moves based on the screening outcome, a customer request, and made screening wait until the CV is parsed, so nobody is screened before their CV is read.</li>
         </ul>
       </div>
       <div class="role">
@@ -164,8 +165,7 @@ main a { white-space: nowrap; }
         <li>Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask.</li>
         <li>It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.</li>
         <li>Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.</li>
-        <li>Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases.</li>
-        <li>Maintained, monitored and expanded the Kubernetes setup for MindMeister: kept its dashboards, metrics and alerts and acted on them, maintained the Helm charts and deployment configuration, and added new services and environments.</li>
+        <li>Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases.</li>
       </ul>
     </div>
     <div class="role" data-start="2019-10" data-end="2021-07">
