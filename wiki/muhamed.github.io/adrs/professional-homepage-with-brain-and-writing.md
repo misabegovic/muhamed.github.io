@@ -1524,8 +1524,15 @@ since a named client is evidence; the cost of this choice is that the most
 recognisable name and one of the CV's few figures are gone. Four pages; every
 bullet under its own role in stored order (source:
 files/cv/Muhamed_Isabegovic_CV.pdf, .github/scripts/check-cv-pdf-order.py).
-Not changed, and told to him: `llms.txt` and the homepage's recommendation
-still name these clients.
+The site follows, on his word ("make sure the website respects the same
+approach"): `llms.txt` describes the same four pieces of work with no client
+named; the recommendation on the homepage, Services, Work and Rails pages is
+signed "Worked on Muhamed's team for a year"; and his post "From zero to
+one" says "an AI startup in recruiting" where it named the company, and
+loses its two categories and one tag for it. No built page names these
+clients (source: files/llms.txt, files/_data/home.yml,
+files/_posts/2025-03-12-from-zero-to-one.md). Earlier records in this
+repository still do, as history.
 
 ## Approval
 

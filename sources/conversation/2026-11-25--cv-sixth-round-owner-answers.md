@@ -33,6 +33,12 @@ Removed: "serving 8,500+ companies" (now "a large applicant tracking system"), "
 
 "Go with the no-names version, deliver it".
 
+## The website
+
+Told that `llms.txt` and the recommendation on the homepage still named these clients: "Also make sure the website respects the same approach".
+
+Changed for it: `llms.txt`; the line under Zlatko Alomerovic's recommendation in `files/_data/home.yml`; and his post "From zero to one" (2025-03-12), where the company's name and links become "an AI startup in recruiting", "the founders of both companies" becomes "the founders", and the categories and tag naming it go.
+
 ## Told to him, and left open
 
-The site still names these clients in `llms.txt` and under Zlatko's recommendation on the homepage, and his LinkedIn presumably does. Whether those follow is his to say.
+This repository is public and its earlier records name these clients; today's records say which names were removed. His LinkedIn presumably names them too.

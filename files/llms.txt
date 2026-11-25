@@ -27,12 +27,12 @@ Ways teams bring him in: a hands-on senior engineer embedded in the team, the en
 
 ## Experience, in short
 
-- Founder of his own company since 2024, through which he takes engineering roles for startups and engineering companies:
-  - Staff Engineer at Symphony, his current engagement: took an inherited proof of concept to stable production, with data pipelines on Azure and Microsoft Fabric, knowledge graphs, and agents that enrich and classify data.
-  - AI Product Developer at Teamtailor (an applicant tracking system): owned AI screening features from pitch to rollout and measurement.
-  - Consultant for Doctaphone, a speech-to-text app for doctors: AI work, an architecture review, and the product vision with the founder.
-  - Technical Lead at Recrubo, acquired by Carv: led the engineering team and the integration of both products after the acquisition.
-- AI Engineer on Usput.ba, his own product: AI content grounded in real place data.
+- Staff Engineer and Founder of his own company since 2024. Since 2025 he has worked through it on B2B contracts as a staff engineer and technical lead. The work, with no client named:
+  - A data platform with AI agents, as staff engineer inside a client's team: took an inherited proof of concept to stable production, with data pipelines on Azure and Microsoft Fabric, knowledge graphs, and agents that enrich and classify data.
+  - AI features in hiring software, as AI product developer for a large applicant tracking system: owned AI screening features from pitch to rollout and measurement.
+  - Consulting for an early-stage speech-to-text product: AI work, an architecture review, and the product vision with the founder.
+  - Technical lead through an acquisition, at a seed-stage AI startup in recruiting: led two teams and the integration of both products after the acquisition.
+- Founder and AI Engineer of Usput.ba, his own product: AI content grounded in real place data.
 - Conference organiser: organised EuRuKo 2024 in Sarajevo (700 attendees), founded RubyConf Austria (2026 in Vienna, about 200 attendees), and now [GoatConf 2027](https://goatconf.com/), a free conference for people who build and sell software, in Tuzla, Bosnia and Herzegovina, on 3–5 June 2027.
 - Senior Software Engineer at Meisterlabs (MindMeister, MeisterTask), 2021 - 2024.
 - Engineering Manager at Experfy, an ATS for tech hiring, 2019 - 2021: a team that grew from about 12 to about 30 engineers across 7 time zones.
