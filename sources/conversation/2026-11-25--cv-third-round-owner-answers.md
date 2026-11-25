@@ -40,4 +40,4 @@ Shown two rewrites built from facts already on the CV, he chose "Keep the curren
 - Doctaphone: "Keep it as it is".
 - Usput.ba's title: "Founder and AI Engineer".
 - Master's at TU Wien: "Not actively studying"; "Paused, still enrolled"; last courses taken in "2025".
-- The homepage's RubyConf Austria card: "Yes: 'about 200 attendees'".
+- The homepage's RubyConf Austria card: "Yes: 'about 200 attendees'". Then, seeing it: "Instead of About maybe use ~".

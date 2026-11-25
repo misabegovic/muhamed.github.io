@@ -1410,8 +1410,10 @@ sources/conversation/2026-11-25--cv-third-round-owner-answers.md).
 - **Recommendations:** the order is Zlatko Alomerovic, Hassan Akbar, Hans
   Schnedlitz, the engineering ones first. The signatures keep their form, and
   Doctaphone its one line, on his word.
-- **Homepage:** the RubyConf Austria card says "About 200 attendees" where it
-  had the limit, "200 attendees at most" (source: files/_data/home.yml).
+- **Homepage:** the RubyConf Austria card says "~200 attendees" where it had
+  the limit, "200 attendees at most"; he preferred "~" to "About", and the
+  CV's conference line follows (source: files/_data/home.yml,
+  files/_cv/cv.html).
 
 Still four pages, and pdftotext, pdfminer and pypdf extract the same words
 (source: files/cv/Muhamed_Isabegovic_CV.pdf, files/_data/cv.json,
