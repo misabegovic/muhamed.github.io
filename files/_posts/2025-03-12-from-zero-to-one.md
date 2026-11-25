@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  'From zero to one: Thoughts on the past few years'
-categories: [Ruby, EuRuKo, Meister, Recrubo, Carv]
-tags: [ruby, euruko, career, carv, meister, personal]
+categories: [Ruby, EuRuKo, Meister]
+tags: [ruby, euruko, career, meister, personal]
 excerpt: Thoughts on the past few years
 ---
 
@@ -101,11 +101,11 @@ Behold, the beautiful image that petrified me.
 
 Thankfully, the EuRuKo experience, as stressful as it was, also helped prepare me for this moment. I was now completely used to being outside of my comfort zone and taking on huge amounts of financial risk.
 
-I was now comfortable with owning a small company and, after developing the relationship with the folks at [Recrubo](https://recrubo.ai/) (now [Carv](https://carv.com/)) for the duration of the year I was organizing EuRuKo, I felt ready to take the jump and make a calculated bet on myself.
+I was now comfortable with owning a small company and, after developing the relationship with the folks at an AI startup in recruiting for the duration of the year I was organizing EuRuKo, I felt ready to take the jump and make a calculated bet on myself.
 
-After a bit more than 3 (really good) years at Meister, I joined [Recrubo](https://recrubo.ai/) (now [Carv](https://carv.com/)) in January of this year as a Technical Lead, which is my first self employed engagement of this sort. I haven't done something like this since my time at [Experfy](http://experfy.com/), which is the last time I took on some sort of responsibility for leading a software project in a corporate environment.
+After a bit more than 3 (really good) years at Meister, I joined that startup in January of this year as a Technical Lead, which is my first self employed engagement of this sort. I haven't done something like this since my time at [Experfy](http://experfy.com/), which is the last time I took on some sort of responsibility for leading a software project in a corporate environment.
 
-The vision for the project at Recrubo and Carv looks amazing and I truly believe in the potential of the market offering this company can produce. I'm really happy to be a small part of this story. The founders of both companies did an amazing job thus far.
+The vision for the project looks amazing and I truly believe in the potential of the market offering this company can produce. I'm really happy to be a small part of this story. The founders did an amazing job thus far.
 
 Honestly, on a personal level, it was a huge leap of faith for me.
 Everything could have went completely south and it still can.

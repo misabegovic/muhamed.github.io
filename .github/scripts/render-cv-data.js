@@ -40,6 +40,7 @@ function readCv() {
   const section = (name) => [...document.querySelectorAll('section')].find((s) => text(s.querySelector('h2')).startsWith(name));
   // Roles inside .nested, or marked data-under, belong to the company above
   // them and carry no dates of their own (the owner's choice, 2026-09-29).
+  // Client work there is headed by what was done, not by the client's name.
   const roles = (name) => [...document.querySelectorAll('section')]
     .filter((s) => text(s.querySelector('h2')).startsWith(name))
     .flatMap((s) => [...s.querySelectorAll('.role')].map((r) => role(r, !!r.closest('.nested') || !!r.dataset.under)));
@@ -76,8 +77,11 @@ function display(date) {
 function jsonResume(cv) {
   const [city, country] = cv.contact[1].split(', ');
   const profile = (network, url) => ({ network, username: url.split('/').pop(), url: `https://${url}` });
+  // Work done through the company names no client (the owner's choice,
+  // 2026-11-25): its organisation is the company itself.
+  const company = cv.experience.find((r) => !r.nested);
   const work = cv.experience.map((r) => ({
-    name: r.at, position: r.title, location: r.location, startDate: r.start, endDate: r.end || undefined,
+    name: r.at || (r.nested && company ? company.at : ''), position: r.title, location: r.location, startDate: r.start, endDate: r.end || undefined,
     summary: r.summary || undefined, highlights: r.bullets,
   }));
   return {
