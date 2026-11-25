@@ -35,15 +35,15 @@
       "position": "Staff Engineer and Founder",
       "location": "Vienna, Austria",
       "startDate": "2024-01",
-      "summary": "My own company. Since 2025 I have worked through it on B2B contracts as a staff engineer and technical lead. It also runs my product Usput.ba and RubyConf Austria, and it ran EuRuKo 2024 while I was at Meisterlabs. The indented entries below are those contracts and projects.",
+      "summary": "My own company. Since 2025 I have worked through it on B2B contracts as a staff engineer and technical lead. It also runs my product Usput.ba and RubyConf Austria, and it ran EuRuKo 2024 while I was at Meisterlabs. The work is grouped below.",
       "highlights": []
     },
     {
-      "name": "Symphony",
-      "position": "Staff Engineer",
+      "name": "Isabegovic Muhamed e.U.",
+      "position": "A data platform with AI agents, from proof of concept to production",
       "location": null,
       "startDate": null,
-      "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
+      "summary": "As staff engineer, working inside a client's team through an engineering consultancy.",
       "highlights": [
         "Took over a proof-of-concept data platform with AI agents and, with my team, brought it to stable production, with observability for its pipelines and agents. Worked inside the client's team and helped set its technical direction.",
         "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture: PySpark notebooks combine the sources, and knowledge graphs in FalkorDB are built on the result.",
@@ -52,35 +52,35 @@
       ]
     },
     {
-      "name": "Teamtailor, Co-pilot team",
-      "position": "AI Product Developer",
+      "name": "Isabegovic Muhamed e.U.",
+      "position": "AI features in hiring software",
       "location": null,
       "startDate": null,
-      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js.",
+      "summary": "As AI product developer for a large applicant tracking system, on Rails and Ember.js.",
       "highlights": [
-        "Owned AI features in the Co-pilot team from pitch and spec to rollout and measurement, working in Shape Up.",
-        "Shipped \"Request Missing Information\" to all customers: it detects what an application is missing, drafts a short questionnaire for the candidate with an LLM, saves the answers to the application and re-runs screening.",
+        "Owned AI features from pitch and spec to rollout and measurement, working in Shape Up.",
+        "Shipped a feature that requests missing information to all customers: it detects what an application is missing, drafts a short questionnaire for the candidate with an LLM, saves the answers to the application and re-runs screening.",
         "Rebuilt AI screening on the product's trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers behind Flipper feature flags.",
         "Moved the prompts for the AI features into Langfuse, with datasets, LLM judges and live scoring of production traffic. Ran A/B experiments there between prompt and model versions and promoted the winners.",
         "Shipped a customer-requested feature that moves candidates automatically according to the screening outcome. Made screening wait for CV parsing, so no candidate is screened before their CV has been read."
       ]
     },
     {
-      "name": "Doctaphone",
-      "position": "Consultant",
+      "name": "Isabegovic Muhamed e.U.",
+      "position": "Consulting for an early-stage speech-to-text product",
       "location": null,
       "startDate": null,
-      "summary": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder.",
+      "summary": "AI work, architecture review, and product vision with the founder.",
       "highlights": []
     },
     {
-      "name": "Recrubo, acquired by Carv",
-      "position": "Technical Lead",
+      "name": "Isabegovic Muhamed e.U.",
+      "position": "Technical lead through an acquisition",
       "location": null,
       "startDate": null,
-      "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
+      "summary": "At a seed-stage AI startup in recruiting, acquired shortly after I joined.",
       "highlights": [
-        "Led two teams, one on Recrubo's Rails product and one on Carv's Node.js/TypeScript product, and owned delivery jointly with a product manager.",
+        "Led two teams, one on our Rails product and one on the acquirer's Node.js/TypeScript product, and owned delivery jointly with a product manager.",
         "Merged the two products after the acquisition: a single Vue.js frontend, one shared database for clients and login sessions, and common ATS integrations, with new functionality shipped behind Flipper flags.",
         "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and that new functionality is built on, with Google Cloud Tasks as a fallback and to manage workload.",
         "Built the data pipelines that import jobs, candidates and applications from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features. The AI features worked the same for every client, and adding a new ATS needed no new code elsewhere.",
@@ -357,7 +357,7 @@
   ],
   "references": [
     {
-      "name": "Zlatko Alomerovic, worked with me at Recrubo/Carv",
+      "name": "Zlatko Alomerovic, worked on my team for a year",
       "reference": "I worked with Muhamed on the same team for a year, and he quickly became one of the people I relied on most. Muhamed leads by doing. When we hit a hard problem, he didn't start with a long discussion. He wrote the code, showed it working, and then we talked. That habit moved the team forward more than once. He is a strong Ruby on Rails engineer and a natural architect. He took on leading the technical direction and shaping the code, and his decisions held up as the project grew. No challenge was too big or too unfamiliar for him. He is resourceful and knowledgeable, and when the answer wasn't obvious, he knew where to look. He is precise and professional, and he holds a high bar. He is also direct. When something wasn't good enough, he said so plainly, even when that was hard to hear. It was always about the work and never about the person, and it made both our code and our team better. I would gladly work with Muhamed again, and I recommend him to any team that needs a Rails engineer who can lead."
     },
     {

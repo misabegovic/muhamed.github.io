@@ -75,6 +75,7 @@ sources:
   - sources/conversation/2026-11-25--cv-third-round-owner-answers.md
   - sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md
   - sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md
+  - sources/conversation/2026-11-25--cv-sixth-round-owner-answers.md
   - .github/scripts/check-cv-pdf-order.py
   - .github/scripts/render-cv-docx.js
   - .github/scripts/render-cv-pdf.js
@@ -1488,6 +1489,44 @@ Four pages; every bullet sits under its own role in the file's stored order
 files/cv.json). Open: whether the site serves the Word file, and whether the
 conference line names a co-organiser.
 
+**2026-11-25, forty-seventh change: the CV describes the work done through
+the company and names no client.** Asked how the CV reads to a neutral
+observer, the agent named the block of undated client roles as the main
+hesitation: it read as six jobs since 2024. The owner proposed describing the
+work without naming the clients, also for the sake of NDAs, and chose that
+version from previews (source:
+sources/conversation/2026-11-25--cv-sixth-round-owner-answers.md).
+
+- **One entry, grouped by the work.** Under "Staff Engineer and Founder", four
+  headings say what was done: "A data platform with AI agents, from proof of
+  concept to production", "AI features in hiring software", "Consulting for
+  an early-stage speech-to-text product" and "Technical lead through an
+  acquisition". Each has a line saying in what role and for what kind of
+  client. Usput.ba and the conferences follow, named, since they are his
+  (source: files/_cv/cv.html).
+- **No client, and no hint of one.** Symphony, Teamtailor, Doctaphone, Recrubo
+  and Carv are not named in the CV, and what pointed to them is gone:
+  "8,500+ companies" (which the twenty-first change had kept on the CV), the
+  feature name "Request Missing Information", "AI-native engineering
+  company", "for doctors", and "two months after I joined". Under Zlatko
+  Alomerovic's recommendation the line reads "worked on my team for a year";
+  his words are untouched. Employers stay named: Meisterlabs, Experfy,
+  Marvelsoft.
+- **pgvector** leaves the Teamtailor and Carv text, where it described the
+  product and not his work, on his read and both outside reviews'. It stays
+  at Usput.ba and in the skills.
+- **Data:** in `cv.json` the work done through the company carries the company
+  as its organisation; the `/cv/` page follows (source: files/cv.json,
+  files/_data/cv.json, .github/scripts/render-cv-data.js).
+
+The agent had recommended naming clients in passing where contracts allow,
+since a named client is evidence; the cost of this choice is that the most
+recognisable name and one of the CV's few figures are gone. Four pages; every
+bullet under its own role in stored order (source:
+files/cv/Muhamed_Isabegovic_CV.pdf, .github/scripts/check-cv-pdf-order.py).
+Not changed, and told to him: `llms.txt` and the homepage's recommendation
+still name these clients.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1767,6 +1806,13 @@ answers are kept as a source (source:
 sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md). The words
 the agent wrote are drafts for him to adjust: the reworded sentences and the
 five Experfy bullets.
+
+The forty-seventh change was proposed by the owner in session on 2026-11-25
+("So we don't name and list clients but describe work that I have done") and
+approved by him from previews: "Go with the no-names version, deliver it".
+His words are kept as a source (source:
+sources/conversation/2026-11-25--cv-sixth-round-owner-answers.md). The four
+headings and the lines under them are the agent's drafts for him to adjust.
 
 ## Related
 

@@ -17,7 +17,12 @@ roles = data["experience"]
 ok = True
 for name, t in [("pdftotext -raw", raw), ("pypdf", pp)]:
     n = norm(t); bad = []
-    pos = [n.find(norm(f'{r["title"]} · {r["at"]}')) for r in roles]
+    # Headings are looked for in order, each after the one before, starting at
+    # "Experience": a heading's words may also occur in the summary above it.
+    pos, at = [], n.find("Experience")
+    for r in roles:
+        at = n.find(norm(r["title"] + (f' · {r["at"]}' if r["at"] else "")), at + 1)
+        pos.append(at)
     for i, r in enumerate(roles):
         lo = pos[i]; hi = min([p for p in pos if p > lo] + [n.find("Skills Product and AI")])
         for b in r["bullets"]:
