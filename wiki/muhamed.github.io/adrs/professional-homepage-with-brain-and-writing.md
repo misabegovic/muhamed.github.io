@@ -70,6 +70,11 @@ sources:
   - files/_includes/byline.html
   - files/_includes/site-footer.html
   - files/assets/site.js
+  - sources/conversation/2026-11-25--cv-standards-owner-answers.md
+  - .github/scripts/render-cv-pdf.js
+  - .github/scripts/render-cv-data.js
+  - files/_cv/fonts/
+  - files/README.md
 ---
 
 # A professional homepage, with the brain and writing one click away
@@ -1267,6 +1272,69 @@ Not done: the generated share images are unchanged, since none shows what
 changed; the Izbori guide and the games keep their own pages, so a move to
 or from them does not fade.
 
+**2026-11-25, forty-second change: the CV follows the common conventions of
+screeners and readers.** The owner asked for the CV to be made "optimal both
+for screeners and humans reading, following the most used standards", with no
+fabrications, and decided each point the agent raised (source:
+sources/conversation/2026-11-25--cv-standards-owner-answers.md). What a parser or a recruiter expects and
+the CV did not do: a photo, which is discouraged outside the German-speaking
+countries; no "Summary" heading; dates, place and the employer's description
+on one line; language levels on LinkedIn's scale; a first job that was only a
+sentence in a later entry; fonts embedded as Type 3 (source:
+files/cv/Muhamed_Isabegovic_CV.pdf before the change).
+
+- **Kept, as he chose again:** the engagements under his company carry no
+  dates, and the recommendations are printed in full, word for word.
+- **Header and order:** no photo; name, title, then contact on two lines; the
+  opening paragraph under a "Summary" heading; then Experience, Skills,
+  Projects, Education, Languages, Volunteering, Recommendations (source:
+  files/_cv/cv.html).
+- **Each dated entry:** title and employer at the left with its dates at the
+  right of the same line, then the place and what the employer is, then the
+  work. Extracted text reads title, dates, place in that order in pdftotext,
+  pdfminer and pypdf, which agree word for word (source:
+  files/cv/Muhamed_Isabegovic_CV.pdf).
+- **Wording:** shorter, plainer sentences, on his word ("natural language
+  that is easy to digest"); no yellow underline or highlight; the summary
+  rewritten in four sentences; two weak bullets folded into their neighbours
+  at Teamtailor and Meisterlabs; "across seven merged pull requests" left
+  out. Every added fact is his: the Carv entry (one team per stack, the data
+  pipelines, Google Cloud Functions, spec-driven development, monitoring for
+  the parts his teams ran) and the Meisterlabs entry (Rails and React, what
+  the A/B experiments covered, what maintaining the Kubernetes setup meant)
+  (source: sources/conversation/2026-11-25--cv-standards-owner-answers.md).
+- **Entries:** Experfy 2016 - 2017 is its own entry, years only. Languages
+  carry CEFR levels beside the old wording. Education is degree first: both
+  master's programmes at TU Wien, and the BSc with the institution's full
+  English name and without "C++ and Qt". Community becomes Volunteering, with
+  his role at the BH Futures Foundation in full and Zemlja Djece added.
+  Skills gain Rust and Cloud Functions, and "Frontend and mobile" becomes
+  "Frontend".
+- **Projects:** "Open Source" becomes "Projects", each entry saying whether it
+  is open source or in private development: empty-shell, enola, tabula and
+  taha first, on his word, then enola-guides, tended and pi-brain, and
+  treasure_hunt. The words come from the project profiles (source:
+  files/_data/home.yml).
+- **Four pages, superseding "three pages":** when the Carv and Meisterlabs
+  entries grew he allowed a fourth page. Type goes from 8.8pt to 9pt with
+  more room between lines; the CV proper is three pages and the
+  recommendations start a page of their own. The contact page says
+  four-page PDF (source: files/_pages/contact.md).
+- **The file:** static instances of the site's font, one per weight, in
+  `files/_cv/fonts/`, so Chromium embeds TrueType and not Type 3; ligatures
+  off; the skills in a grid, so each group's name is read before its list.
+  The PDF is 139 KB, from 908 KB. `.github/scripts/render-cv-pdf.js` prints
+  it, so the render can be repeated, and `render-cv-data.js` reads the new
+  structure into both data files, which the `/cv/` page follows (source:
+  .github/scripts/render-cv-pdf.js, .github/scripts/render-cv-data.js,
+  files/_data/cv.json, files/cv.json, files/cv/index.html). The site's
+  README says how to render it (source: files/README.md).
+
+Not done: the PDF has no author or keyword metadata, since Chromium writes
+only the title; the "Moja Praksa" internship certificate is left off; the
+About page keeps its own summary; and the CV wording test in the owner's
+private hireable repository will need the new sentences.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1507,6 +1575,15 @@ for the branch to be pushed with a pull request. The words the agent wrote
 are drafts for him to adjust: the three marked words, the label "The
 method", and the sentence in the signed ending. That he may use the
 conference's photo on About rests on the same assumption as on the homepage.
+
+The forty-second change was asked for by the owner in session on 2026-11-25
+(quoted above) and decided by him point by point; his answers and the facts
+he supplied are kept as a source (source:
+sources/conversation/2026-11-25--cv-standards-owner-answers.md). He read five previews
+and approved the last: "Yes add Rust, then finalise and deliver". The words
+the agent wrote are drafts for him to adjust: the summary, the Carv and
+Meisterlabs bullets built from his answers, and the one-line project
+descriptions.
 
 ## Related
 
