@@ -74,6 +74,7 @@ sources:
   - sources/conversation/2026-11-25--cv-second-round-owner-answers.md
   - sources/conversation/2026-11-25--cv-third-round-owner-answers.md
   - sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md
+  - sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md
   - .github/scripts/check-cv-pdf-order.py
   - .github/scripts/render-cv-docx.js
   - .github/scripts/render-cv-pdf.js
@@ -1456,6 +1457,37 @@ Four pages. Open from the second pair of reviews: wording and consistency
 fixes that need no new facts, the Experfy entry's length, and the order of
 the Projects.
 
+**2026-11-25, forty-sixth change: the CV's wording after the second pair of
+reads.** The two outside reads of the forty-fifth change also listed
+sentences that were hard to read, inconsistent or weak. The agent applied
+those that need no new fact, and the owner decided the rest (source:
+sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md).
+
+- **Wording and consistency:** the company line in the right tense ("Since
+  2025 I have worked through it"), with a sentence saying what the indented
+  entries are; one style for numbers and names (seven time zones, Ember.js,
+  Data modelling); no comma splice and no contraction; clearer sentences in
+  Symphony, Teamtailor, Carv, Usput.ba, Marvelsoft and the Projects;
+  retrieval-augmented generation spelled out once, at Usput.ba; the
+  conference lines in one order, "Led EuRuKo 2024 and RubyConf Austria 2026"
+  for "Led both" (source: files/_cv/cv.html).
+- **Experfy:** five bullets for seven, the same facts regrouped: the team and
+  the reporting line, the architecture committee, hands-on work with the
+  architecture items, stakeholders with planning, and hiring. The growth is
+  stated once, "reviewed code" replaces "reviewed most of the code", and the
+  description says "returned to lead engineering", in step with the title.
+- **Teamtailor:** owning AI features from pitch and spec to rollout and
+  measurement is the first bullet, not a clause in the grey line.
+- **Master's:** "part-time (on hold, not completed)", so that neither a parser
+  nor a reader takes the entry for a finished degree.
+- **Kept on his word:** the summary word for word, and the Projects with the
+  family first.
+
+Four pages; every bullet sits under its own role in the file's stored order
+(source: files/cv/Muhamed_Isabegovic_CV.pdf, files/_data/cv.json,
+files/cv.json). Open: whether the site serves the Word file, and whether the
+conference line names a co-organiser.
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1728,6 +1760,13 @@ The forty-fifth change was asked for by the owner in session on 2026-11-25
 and its publication approved by him once he was told of the defect: "Yes,
 publish now". His answers are kept as a source (source:
 sources/conversation/2026-11-25--cv-fourth-round-owner-answers.md).
+
+The forty-sixth change was decided by the owner in session on 2026-11-25
+from the agent's questions and approved from a preview: "Deliver it". His
+answers are kept as a source (source:
+sources/conversation/2026-11-25--cv-fifth-round-owner-answers.md). The words
+the agent wrote are drafts for him to adjust: the reworded sentences and the
+five Experfy bullets.
 
 ## Related
 
