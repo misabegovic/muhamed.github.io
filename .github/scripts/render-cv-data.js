@@ -52,7 +52,7 @@ function readCv() {
     contact: header.querySelector('.contact').innerHTML.split(/<br[^>]*>/).map((l) => l.replace(/<[^>]+>/g, '').trim()).filter(Boolean),
     experience: roles('Experience'),
     skills: [...skills.querySelectorAll('.hat')].map((hat) => ({
-      group: text(hat),
+      group: text(hat).replace(/:$/, ''),
       items: [...hat.nextElementSibling.querySelectorAll('span')].map(text),
     })),
     open_source: roles('Projects').map((r) => ({ name: r.title, role: r.at, text: r.summary })),
