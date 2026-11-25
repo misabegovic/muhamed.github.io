@@ -1,20 +1,21 @@
 {
   "name": "Muhamed Isabegovic",
   "title": "Staff Engineer",
-  "summary": "I have spent ten years in the industry taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack: trading systems in C++, SaaS products in Rails, AI features in hiring software. These days I work one layer up, with agents writing the code, and I build open-source tools that keep it reliable: specs and decisions the code is regenerated from, and architecture rules it is checked against.",
+  "summary": "Staff engineer with ten years of taking ownership of products and the teams that build them, from deciding what to build to running it in production, anywhere in the stack: real-time trading systems in C++, SaaS products in Ruby on Rails, LLM features in hiring software, and data pipelines with AI agents. I have led around 30 engineers, fully remote across seven time zones. These days I work one layer up, with agents writing the code, and build open-source tools that keep it reliable: specs and decisions the code is regenerated from, and architecture rules it is checked against.",
   "contact": [
     "info@muhamed.at",
     "Vienna, Austria",
     "muhamed.at",
     "linkedin.com/in/muhamed-isabegovic",
-    "x.com/m_isabegovic",
-    "github.com/misabegovic"
+    "github.com/misabegovic",
+    "x.com/m_isabegovic"
   ],
   "experience": [
     {
       "title": "Founder",
       "at": "Isabegovic Muhamed e.U.",
-      "meta": "01/2024 - Present · Vienna, Austria · My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles for startups and engineering companies, RubyConf Austria, and Usput.ba, my own product.",
+      "location": "Vienna, Austria",
+      "summary": "My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles for startups and engineering companies, RubyConf Austria, and Usput.ba, my own product.",
       "start": "2024-01",
       "end": null,
       "nested": false,
@@ -22,82 +23,77 @@
         "start": "2024-01"
       },
       "bullets": [],
-      "dates": "01/2024 - Present",
-      "location": "Vienna, Austria",
-      "summary": "My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles for startups and engineering companies, RubyConf Austria, and Usput.ba, my own product."
+      "dates": "01/2024 - Present"
     },
     {
       "title": "Staff Engineer",
       "at": "Symphony",
-      "meta": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
+      "location": null,
+      "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
       "start": null,
       "end": null,
       "nested": true,
       "extra": {},
       "bullets": [
-        "Took over a proof of concept with my team and brought it to a stable production environment, with observability for the pipelines and the agents; worked inside the client's team and helped set the technical direction.",
-        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture, integrating multiple sources with PySpark notebooks, and knowledge graphs in FalkorDB on top.",
-        "Built agents that enrich and classify the data, on OpenAI models in Microsoft Foundry, with OpenAI's Decisions API for fast, typed decisions, and MCP servers that give agents the graph and the data as tools.",
-        "Introduced AI-native delivery in my team, with agents writing the code and people shaping and reviewing it, and helped the client's engineers bring AI into their own development lifecycle."
+        "Took over a proof of concept with my team and brought it to stable production, with observability for the pipelines and the agents; worked inside the client's team and helped set the technical direction.",
+        "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture, integrating multiple sources with PySpark notebooks, with knowledge graphs in FalkorDB on top.",
+        "Built AI agents that enrich and classify the data on OpenAI models in Microsoft Foundry, with OpenAI's Decisions API for fast, typed decisions and Model Context Protocol (MCP) servers that give the agents the graph and the data as tools.",
+        "Introduced AI-native delivery in my team, with agents writing the code and people shaping and reviewing it, and helped the client's engineers bring AI into their own software development lifecycle (SDLC)."
       ],
-      "dates": null,
-      "location": null,
-      "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies."
+      "dates": null
     },
     {
       "title": "AI Product Developer",
       "at": "Teamtailor, Co-pilot team",
-      "meta": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
+      "location": null,
+      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
       "start": null,
       "end": null,
       "nested": true,
       "extra": {},
       "bullets": [
-        "Shipped Request Missing Information to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
-        "Rebuilt AI screening on the trigger system, across seven merged pull requests, so recruiters can screen at any stage and save criteria on job templates; backfilled every company and rolled it out to all customers.",
+        "Shipped Request Missing Information to all customers: it spots what an application lacks, has a large language model (LLM) draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
+        "Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates; backfilled every company and rolled it out to all customers.",
+        "Moved the AI features' prompts into Langfuse for LLM evaluation, with datasets, LLM judges and live scoring on production traffic, and ran A/B experiments of prompt and model versions there, promoting the winners.",
         "Shipped automatic candidate moves on the screening outcome, a customer request: per-criterion met, unmet or unknown, combined with All or Any.",
-        "Made screening wait until the CV is parsed and re-run when it arrives, so no candidate is screened before their CV is read.",
-        "Moved AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic, and ran A/B experiments of prompt and model versions there, promoting the winners."
+        "Made screening wait until the CV is parsed and re-run when it arrives, so nobody is screened before their CV is read."
       ],
-      "dates": null,
-      "location": null,
-      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement."
+      "dates": null
     },
     {
       "title": "Consultant",
       "at": "Doctaphone",
-      "meta": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder.",
+      "location": null,
+      "summary": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder.",
       "start": null,
       "end": null,
       "nested": true,
       "extra": {},
       "bullets": [],
-      "dates": null,
-      "location": null,
-      "summary": "Speech-to-text app for doctors: AI work, architecture review, and product vision with the founder."
+      "dates": null
     },
     {
       "title": "Technical Lead",
       "at": "Recrubo, acquired by Carv",
-      "meta": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
+      "location": null,
+      "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
       "start": null,
       "end": null,
       "nested": true,
       "extra": {},
       "bullets": [
-        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Rails and Node/TypeScript stacks on Google Cloud step by step closer.",
+        "Led the engineering team, owning delivery with a product manager; owned DevOps on Google Cloud and CI/CD.",
+        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, bringing the Ruby on Rails and Node.js/TypeScript stacks on Google Cloud closer step by step.",
         "Co-built the event system on Redis Pub/Sub that became the integration layer between the two stacks and the base for new functionality, with Google Cloud Tasks as a fallback and for workload management.",
-        "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere.",
-        "Tech lead for the engineering team, owning delivery together with a PM; owned DevOps on Google Cloud and CI/CD."
+        "Normalised data from 20+ applicant tracking systems into one model, so AI features worked the same for every client and adding a new ATS didn't mean new code elsewhere."
       ],
-      "dates": null,
-      "location": null,
-      "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined."
+      "dates": null
     },
     {
       "title": "Founder and organiser",
       "at": "EuRuKo, RubyConf Austria, GoatConf",
-      "meta": "",
+      "location": null,
+      "summary": null,
       "start": null,
       "end": null,
       "nested": true,
@@ -108,14 +104,13 @@
         "Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver.",
         "GoatConf 2027, Tuzla, 3–5 June: free, for people who build and sell software."
       ],
-      "dates": null,
-      "location": null,
-      "summary": null
+      "dates": null
     },
     {
       "title": "AI Engineer",
       "at": "Usput.ba, my own product",
-      "meta": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.",
+      "location": null,
+      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.",
       "start": null,
       "end": null,
       "nested": true,
@@ -123,18 +118,17 @@
         "under": "founder"
       },
       "bullets": [
-        "Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
+        "Built retrieval-augmented generation (RAG), grounded in real data: place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
         "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
       ],
-      "dates": null,
-      "location": null,
-      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first."
+      "dates": null
     },
     {
       "title": "Senior Software Engineer",
       "at": "Meisterlabs",
-      "meta": "11/2021 - 12/2024 · Vienna, Austria · Maker of MindMeister and MeisterTask",
+      "location": "Vienna, Austria",
+      "summary": "Maker of MindMeister and MeisterTask.",
       "start": "2021-11",
       "end": "2024-12",
       "nested": false,
@@ -147,14 +141,13 @@
         "Built MindMeister product features and ran A/B experiments across markets for three years.",
         "Split backend and frontend deployments into separate pipelines on Kubernetes, so the frontend team shipped daily, independent of backend releases; maintained and upgraded the cluster setup."
       ],
-      "dates": "11/2021 - 12/2024",
-      "location": "Vienna, Austria",
-      "summary": "Maker of MindMeister and MeisterTask"
+      "dates": "11/2021 - 12/2024"
     },
     {
       "title": "Lead Software Engineer",
       "at": "Experfy",
-      "meta": "10/2019 - 07/2021 · Remote · An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes. First joined as a junior engineer, 2016 - 2017.",
+      "location": "Remote",
+      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes.",
       "start": "2019-10",
       "end": "2021-07",
       "nested": false,
@@ -163,19 +156,18 @@
         "end": "2021-07"
       },
       "bullets": [
-        "Set the product and technical direction with product and business leads, and made sure the team delivered it.",
         "Led around 30 engineers across backend, frontend and DevOps, fully remote over 7 time zones, as architect, team lead and hands-on engineer.",
-        "Built recruiter and candidate dashboards across the three apps and the Rails backend.",
-        "Took the team through a 150 percent scale-up, putting in the planning and delivery processes that kept every deadline."
+        "Set the product and technical direction with product and business leads, and made sure the team delivered it.",
+        "Took the team through a 150% scale-up, putting in the planning and delivery processes that kept every deadline.",
+        "Built recruiter and candidate dashboards across the three apps and the Rails backend."
       ],
-      "dates": "10/2019 - 07/2021",
-      "location": "Remote",
-      "summary": "An ATS for tech and data-science hiring: three Ember.js apps on a Ruby on Rails monolith, with PostgreSQL on Kubernetes. First joined as a junior engineer, 2016 - 2017."
+      "dates": "10/2019 - 07/2021"
     },
     {
       "title": "C++ Software Engineer",
       "at": "Marvelsoft",
-      "meta": "01/2018 - 09/2019 · Tuzla, Bosnia and Herzegovina · Fintech building real-time trading software",
+      "location": "Tuzla, Bosnia and Herzegovina",
+      "summary": "Fintech building real-time trading software.",
       "start": "2018-01",
       "end": "2019-09",
       "nested": false,
@@ -187,9 +179,22 @@
         "Built trading algorithms and worked on the analytics platform traders used, in C++ on a real-time system built on the actor model (C++ Actor Framework).",
         "Built a Python test environment that emulated markets and simulated trading systems, so algorithms could be tested without live markets."
       ],
-      "dates": "01/2018 - 09/2019",
-      "location": "Tuzla, Bosnia and Herzegovina",
-      "summary": "Fintech building real-time trading software"
+      "dates": "01/2018 - 09/2019"
+    },
+    {
+      "title": "Software Engineer (junior)",
+      "at": "Experfy",
+      "location": "Remote",
+      "summary": "Joined as a junior engineer; returned in 2019 as lead.",
+      "start": "2016",
+      "end": "2017",
+      "nested": false,
+      "extra": {
+        "start": "2016",
+        "end": "2017"
+      },
+      "bullets": [],
+      "dates": "2016 - 2017"
     }
   ],
   "skills": [
@@ -253,7 +258,7 @@
       ]
     },
     {
-      "group": "Frontend and mobile",
+      "group": "Frontend",
       "items": [
         "Hotwire",
         "JavaScript",
@@ -300,7 +305,7 @@
     {
       "name": "pi-brain",
       "role": "author and maintainer",
-      "text": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; published on npm, 10 releases."
+      "text": "An open-source knowledge base that keeps coding agents working from written specs and human approvals; on npm, 10 releases."
     },
     {
       "name": "tended and tabula",
@@ -310,27 +315,27 @@
   ],
   "education": [
     {
-      "title": "Technical University Vienna",
-      "at": "",
-      "meta": "01/2022 - Present · Master's, Software Engineering & Internet Computing, Business Informatics (part-time, alongside work)",
+      "title": "Master's programmes, in progress",
+      "at": "TU Wien (Vienna University of Technology)",
+      "location": null,
+      "summary": "Software Engineering & Internet Computing, and Business Informatics; part-time, alongside work.",
       "start": "2022-01",
       "end": null,
       "nested": false,
       "extra": {
         "start": "2022-01",
-        "institution": "Technical University Vienna",
-        "studyType": "Master's (part-time, alongside work)",
-        "area": "Software Engineering & Internet Computing, Business Informatics"
+        "institution": "TU Wien (Vienna University of Technology)",
+        "studyType": "Master's",
+        "area": "Software Engineering & Internet Computing; Business Informatics"
       },
       "bullets": [],
-      "dates": "01/2022 - Present",
-      "location": null,
-      "summary": null
+      "dates": "01/2022 - Present"
     },
     {
-      "title": "BSc Information Technology",
-      "at": "",
-      "meta": "IPI Akademija Tuzla · 2016 - 2019 · C++ and Qt",
+      "title": "BSc, Information Technology",
+      "at": "IPI Akademija Tuzla",
+      "location": null,
+      "summary": "C++ and Qt.",
       "start": "2016",
       "end": "2019",
       "nested": false,
@@ -342,9 +347,7 @@
         "area": "Information Technology"
       },
       "bullets": [],
-      "dates": "2016 - 2019",
-      "location": null,
-      "summary": null
+      "dates": "2016 - 2019"
     }
   ],
   "languages": [
@@ -354,35 +357,47 @@
     },
     {
       "language": "English",
-      "fluency": "full professional"
+      "fluency": "C2 (full professional)"
     },
     {
       "language": "German",
-      "fluency": "limited working"
+      "fluency": "B1 (limited working)"
     },
     {
       "language": "Spanish",
-      "fluency": "elementary"
+      "fluency": "A2 (elementary)"
     }
   ],
-  "community": [
+  "volunteering": [
     {
-      "title": "Mentor and team lead",
-      "at": "",
-      "meta": "BH Futures Foundation · 05/2018 - 09/2021 · volunteer; Certificates of Excellence 2019, 2021",
+      "title": "Mentor and team lead, Human Potential & Learning",
+      "at": "BH Futures Foundation",
+      "location": null,
+      "summary": "Volunteer; Certificates of Excellence 2019 and 2021.",
       "start": "2018-05",
       "end": "2021-09",
       "nested": false,
       "extra": {
         "start": "2018-05",
-        "end": "2021-09",
-        "organization": "BH Futures Foundation",
-        "summary": "Volunteer; Certificates of Excellence 2019, 2021"
+        "end": "2021-09"
       },
       "bullets": [],
-      "dates": "05/2018 - 09/2021",
+      "dates": "05/2018 - 09/2021"
+    },
+    {
+      "title": "Volunteer",
+      "at": "Zemlja Djece",
       "location": null,
-      "summary": null
+      "summary": "\"Stariji brat, starija sestra\" (Older Brother, Older Sister); certificate for exceptional work with children from underprivileged families.",
+      "start": "2016-11",
+      "end": "2017-07",
+      "nested": false,
+      "extra": {
+        "start": "2016-11",
+        "end": "2017-07"
+      },
+      "bullets": [],
+      "dates": "11/2016 - 07/2017"
     }
   ],
   "recommendations": [
