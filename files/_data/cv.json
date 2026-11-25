@@ -139,7 +139,7 @@
       "bullets": [
         "Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask. It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.",
         "Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.",
-        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases."
+        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend went from shipping about once a week with the backend's release to shipping daily."
       ],
       "dates": "11/2021 - 12/2024"
     },
