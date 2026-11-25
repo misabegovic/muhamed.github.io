@@ -47,6 +47,8 @@ section.letters { break-before: page; }
 .role { margin-bottom: 2.3mm; }
 .role h3, .about:not(:last-child) { break-after: avoid; }
 li { break-inside: avoid; }
+/* A list never leaves its last bullet alone at the top of the next page. */
+li:nth-last-child(2) { break-after: avoid; }
 .role h3 { font-size: 10.6pt; margin: 0; font-weight: 750; letter-spacing: -.01em; }
 .role h3 .at { font-weight: 400; color: var(--ink-2); }
 /* Dates sit on the title's line, at the right edge: the column a reader scans. */
