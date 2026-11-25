@@ -72,6 +72,7 @@ sources:
   - files/assets/site.js
   - sources/conversation/2026-11-25--cv-standards-owner-answers.md
   - sources/conversation/2026-11-25--cv-second-round-owner-answers.md
+  - sources/conversation/2026-11-25--cv-third-round-owner-answers.md
   - .github/scripts/render-cv-pdf.js
   - .github/scripts/render-cv-data.js
   - files/_cv/fonts/
@@ -1382,6 +1383,42 @@ system does, skills no role supports, the summary, the order of the
 recommendations, and the homepage's "200 attendees at most" for RubyConf
 Austria.
 
+**2026-11-25, forty-fourth change: the CV's skills are backed by its roles,
+and six smaller points.** The two outside reads of the forty-third change
+left a list for the owner; he went through it with the agent (source:
+sources/conversation/2026-11-25--cv-third-round-owner-answers.md).
+
+- **Results with numbers:** asked role by role for figures he knows and may
+  share, he had one. Before the deployment split the Meisterlabs frontend
+  shipped about once a week with the backend's release, and daily after it;
+  the bullet says so. Teamtailor, Carv, the plans system and Usput.ba keep
+  their wording.
+- **Skills:** every listed skill the reads found unsupported now appears where
+  he used it: retrieval (RAG) on pgvector at Teamtailor, Carv and Usput.ba;
+  Shape Up at Teamtailor; Hotwire and Kamal on Usput.ba; MySQL and Sidekiq at
+  Meisterlabs. Go stays, from his open-source tooling. "Product specs" and
+  "Notebooks" leave the list (source: files/_cv/cv.html).
+- **Summary:** shown two rewrites, he keeps the current one.
+- **Symphony:** the first bullet names the proof of concept as a data platform
+  with AI agents, from what the entry already describes. No client, industry
+  or number is added, as he decided in the twenty-seventh change.
+- **Usput.ba:** "Founder and AI Engineer", which keeps the title he chose for
+  AI engineer searches and says the product is his.
+- **Master's:** he is enrolled but not studying, and last took courses in
+  2025, so the entry reads "Master's studies, part-time (on hold) · TU Wien,
+  2022 - 2025" instead of "in progress ... Present".
+- **Recommendations:** the order is Zlatko Alomerovic, Hassan Akbar, Hans
+  Schnedlitz, the engineering ones first. The signatures keep their form, and
+  Doctaphone its one line, on his word.
+- **Homepage:** the RubyConf Austria card says "~200 attendees" where it had
+  the limit, "200 attendees at most"; he preferred "~" to "About", and the
+  CV's conference line follows (source: files/_data/home.yml,
+  files/_cv/cv.html).
+
+Still four pages, and pdftotext, pdfminer and pypdf extract the same words
+(source: files/cv/Muhamed_Isabegovic_CV.pdf, files/_data/cv.json,
+files/cv.json).
+
 ## Approval
 
 The fifteenth change was chosen by the owner in session on 2026-10-21, one
@@ -1640,6 +1677,14 @@ two previews and approved: "Experfy reads right", then "Publish this draft".
 The words the agent wrote are drafts for him to adjust: the seven Experfy
 bullets built from his answers, the company entry's line, and the merged Carv
 bullets.
+
+The forty-fourth change was asked for by the owner in session on 2026-11-25:
+"go through the numbers in order", "Skills then summary, ask me in order" and
+"Go through those six, ask me in order, then publish". Each point is his
+answer to the agent's question, kept as a source (source:
+sources/conversation/2026-11-25--cv-third-round-owner-answers.md). The words the
+agent wrote are drafts for him to adjust: where each skill is named in a
+role, and the Symphony bullet.
 
 ## Related
 

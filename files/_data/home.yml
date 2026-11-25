@@ -540,8 +540,8 @@ community:
     place: Vienna, 2026
     note: The first RubyConf Austria, with Dave Thomas, Chad Fowler, José Valim and Armin Ronacher on the programme.
     stats:
-      # "up to 200" in the evidence, so the label keeps the limit.
-      - { value: "200", label: attendees at most }
+      # About 200 attended (owner, 2026-11-25); the evidence had the limit, "up to 200".
+      - { value: "~200", label: attendees }
       - { value: "13", label: speakers }
   # evidence: community-euruko-2024
   - logo: euruko

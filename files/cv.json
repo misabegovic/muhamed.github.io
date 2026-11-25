@@ -45,7 +45,7 @@
       "startDate": null,
       "summary": "AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.",
       "highlights": [
-        "Took over a proof of concept with my team, working inside the client's team, and brought it to stable production with observability for its pipelines and agents. Helped set the technical direction.",
+        "Took over a proof of concept of a data platform with AI agents and brought it to stable production with my team, with observability for its pipelines and agents. Worked inside the client's team and helped set the technical direction.",
         "Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture: PySpark notebooks bring multiple sources together, and knowledge graphs in FalkorDB sit on top.",
         "Built AI agents that enrich and classify the data, on OpenAI models in Microsoft Foundry. They use OpenAI's Decisions API for fast, typed decisions, and MCP servers give them the graph and the data as tools.",
         "Introduced AI-native delivery in my team: agents write the code, people shape and review it. Helped the client's engineers bring AI into their own development lifecycle."
@@ -56,7 +56,7 @@
       "position": "AI Product Developer",
       "location": null,
       "startDate": null,
-      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.",
+      "summary": "ATS serving 8,500+ companies, on Rails and Ember.js, with retrieval (RAG) on pgvector in the AI features. I owned AI features from pitch and spec to rollout and measurement, working in Shape Up.",
       "highlights": [
         "Shipped \"Request Missing Information\" to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
         "Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers.",
@@ -82,19 +82,19 @@
         "Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.",
         "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations.",
         "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.",
-        "Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.",
+        "Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features, which use retrieval (RAG) on pgvector. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.",
         "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
         "Owned DevOps and CI/CD on Google Cloud, with monitoring and observability for the parts my teams ran, and ran integration and background work on Google Cloud Functions, triggered by events and queues or on a schedule."
       ]
     },
     {
-      "name": "Usput.ba, my own product",
-      "position": "AI Engineer",
+      "name": "Usput.ba",
+      "position": "Founder and AI Engineer",
       "location": null,
       "startDate": null,
-      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.",
+      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I try AI features on real users first.",
       "highlights": [
-        "Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
+        "Built generation grounded in real data (RAG, on pgvector). Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
         "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
       ]
@@ -106,7 +106,7 @@
       "startDate": null,
       "highlights": [
         "EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.",
-        "RubyConf Austria 2026, Vienna: about 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at). GoatConf follows in June 2027 in Tuzla.",
+        "RubyConf Austria 2026, Vienna: ~200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at). GoatConf follows in June 2027 in Tuzla.",
         "Led both end to end, budget and sponsorships included, with a small volunteer team."
       ]
     },
@@ -116,11 +116,11 @@
       "location": "Vienna, Austria",
       "startDate": "2021-11",
       "endDate": "2024-12",
-      "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React.",
+      "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React, with MySQL and Sidekiq.",
       "highlights": [
         "Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask. It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.",
         "Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.",
-        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases."
+        "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend went from weekly releases tied to the backend to daily ones."
       ]
     },
     {
@@ -181,9 +181,10 @@
   "education": [
     {
       "institution": "TU Wien (Vienna University of Technology)",
-      "studyType": "Master's",
+      "studyType": "Master's studies, on hold",
       "area": "Software Engineering & Internet Computing; Business Informatics",
-      "startDate": "2022-01"
+      "startDate": "2022",
+      "endDate": "2025"
     },
     {
       "institution": "IPI Akademija (International Business-Information Academy), Tuzla",
@@ -232,7 +233,6 @@
         "Medallion architecture",
         "Microsoft Fabric",
         "PySpark",
-        "Notebooks",
         "FalkorDB"
       ]
     },
@@ -280,7 +280,6 @@
     {
       "name": "Ways of working",
       "keywords": [
-        "Product specs",
         "A/B experiments",
         "Shape Up",
         "AI-native delivery",
@@ -359,16 +358,16 @@
   ],
   "references": [
     {
-      "name": "Hans Schnedlitz, co-organised RubyConf Austria with me",
-      "reference": "The word that best describes Muhamed is 'visionary'. I had the pleasure of co-organising RubyConf Austria with him. For more than a year, I watched Muhamed take ideas that sounded wildly unreasonable and somehow make them a reality. His standard response was: 'Don't worry about it. It's going to be fine. We'll deal with it.' When things went wrong, Muhamed stayed calm, made a decision and got moving. He expected a great deal from himself while remaining patient and generous with everyone around him. His enthusiasm pushed the whole team to aim higher, and he was genuinely fun to work with. Muhamed is a kind and capable leader. I would gladly work with him again. I have merely learned to be careful when he begins a sentence with, 'I have an idea.'"
-    },
-    {
       "name": "Zlatko Alomerovic, worked with me at Recrubo/Carv",
       "reference": "I worked with Muhamed on the same team for a year, and he quickly became one of the people I relied on most. Muhamed leads by doing. When we hit a hard problem, he didn't start with a long discussion. He wrote the code, showed it working, and then we talked. That habit moved the team forward more than once. He is a strong Ruby on Rails engineer and a natural architect. He took on leading the technical direction and shaping the code, and his decisions held up as the project grew. No challenge was too big or too unfamiliar for him. He is resourceful and knowledgeable, and when the answer wasn't obvious, he knew where to look. He is precise and professional, and he holds a high bar. He is also direct. When something wasn't good enough, he said so plainly, even when that was hard to hear. It was always about the work and never about the person, and it made both our code and our team better. I would gladly work with Muhamed again, and I recommend him to any team that needs a Rails engineer who can lead."
     },
     {
       "name": "Hassan Akbar, worked with me at Experfy, 2021",
       "reference": "Muhamed is one of the most amazing professionals I have ever worked with. He is extremely talented, dependable, and disciplined. Moreover, he is always willing to push himself beyond limits to make a product successful. With Muhamed's excellent communication and engineering management skills everything is possible. At Experfy, Muhamed single-handedly managed the team collaboration consisting of 7+ timezones. He has a vast reservoir of talent - enabling him to lead Backend, Frontend, and DevOps teams with flying colors. In design thinking sessions, Muhamed played a vital role with his powerful insight about the product roadmap and technical knowledge. As an engineering manager, he always backed his team with full support. In addition to these Muhamed conducted extremely high-yielding Sprint retrospectives. He was always willing to go the extra mile to increase productivity and eliminate blockers. I would strongly recommend Muhamed and would love to work with him again."
+    },
+    {
+      "name": "Hans Schnedlitz, co-organised RubyConf Austria with me",
+      "reference": "The word that best describes Muhamed is 'visionary'. I had the pleasure of co-organising RubyConf Austria with him. For more than a year, I watched Muhamed take ideas that sounded wildly unreasonable and somehow make them a reality. His standard response was: 'Don't worry about it. It's going to be fine. We'll deal with it.' When things went wrong, Muhamed stayed calm, made a decision and got moving. He expected a great deal from himself while remaining patient and generous with everyone around him. His enthusiasm pushed the whole team to aim higher, and he was genuinely fun to work with. Muhamed is a kind and capable leader. I would gladly work with him again. I have merely learned to be careful when he begins a sentence with, 'I have an idea.'"
     }
   ],
   "meta": {

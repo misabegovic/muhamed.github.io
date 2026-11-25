@@ -104,7 +104,7 @@ main a { white-space: nowrap; }
         <h3>Staff Engineer <span class="at">· Symphony</span></h3>
         <p class="about">AI-native engineering company building software and AI for enterprises, high-growth startups and private equity portfolio companies.</p>
         <ul>
-          <li>Took over a proof of concept with my team, working inside the client's team, and brought it to stable production with observability for its pipelines and agents. Helped set the technical direction.</li>
+          <li>Took over a proof of concept of a data platform with AI agents and brought it to stable production with my team, with observability for its pipelines and agents. Worked inside the client's team and helped set the technical direction.</li>
           <li>Built the data pipelines on Azure and Microsoft Fabric in a medallion architecture: PySpark notebooks bring multiple sources together, and knowledge graphs in FalkorDB sit on top.</li>
           <li>Built AI agents that enrich and classify the data, on OpenAI models in Microsoft Foundry. They use OpenAI's Decisions API for fast, typed decisions, and MCP servers give them the graph and the data as tools.</li>
           <li>Introduced AI-native delivery in my team: agents write the code, people shape and review it. Helped the client's engineers bring AI into their own development lifecycle.</li>
@@ -112,7 +112,7 @@ main a { white-space: nowrap; }
       </div>
       <div class="role">
         <h3>AI Product Developer <span class="at">· Teamtailor, Co-pilot team</span></h3>
-        <p class="about">ATS serving 8,500+ companies, on Rails and Ember.js. I owned AI features from pitch and spec to rollout and measurement.</p>
+        <p class="about">ATS serving 8,500+ companies, on Rails and Ember.js, with retrieval (RAG) on pgvector in the AI features. I owned AI features from pitch and spec to rollout and measurement, working in Shape Up.</p>
         <ul>
           <li>Shipped "Request Missing Information" to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.</li>
           <li>Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers.</li>
@@ -131,16 +131,16 @@ main a { white-space: nowrap; }
           <li>Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.</li>
           <li>Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations.</li>
           <li>Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.</li>
-          <li>Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.</li>
+          <li>Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features, which use retrieval (RAG) on pgvector. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.</li>
           <li>Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.</li>
           <li>Owned DevOps and CI/CD on Google Cloud, with monitoring and observability for the parts my teams ran, and ran integration and background work on Google Cloud Functions, triggered by events and queues or on a schedule.</li>
         </ul>
       </div>
       <div class="role" data-under="founder">
-        <h3>AI Engineer <span class="at">· <a href="https://usput.ba">Usput.ba</a>, my own product</span></h3>
-        <p class="about">A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone. It is where I try AI features on real users first.</p>
+        <h3>Founder and AI Engineer <span class="at">· <a href="https://usput.ba">Usput.ba</a></span></h3>
+        <p class="about">A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I try AI features on real users first.</p>
         <ul>
-          <li>Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.</li>
+          <li>Built generation grounded in real data (RAG, on pgvector). Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.</li>
           <li>Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.</li>
           <li>Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates.</li>
         </ul>
@@ -149,18 +149,18 @@ main a { white-space: nowrap; }
         <h3>Conference organiser <span class="at">· <a href="https://2024.euruko.org">EuRuKo 2024</a>; founder of <a href="https://rubyconf.at">RubyConf Austria</a> and <a href="https://goatconf.com/">GoatConf</a></span></h3>
         <ul>
           <li>EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.</li>
-          <li>RubyConf Austria 2026, Vienna: about 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (<a href="https://hunt.rubyconf.at">hunt.rubyconf.at</a>). GoatConf follows in June 2027 in Tuzla.</li>
+          <li>RubyConf Austria 2026, Vienna: ~200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (<a href="https://hunt.rubyconf.at">hunt.rubyconf.at</a>). GoatConf follows in June 2027 in Tuzla.</li>
           <li>Led both end to end, budget and sponsorships included, with a small volunteer team.</li>
         </ul>
       </div>
     </div>
     <div class="role" data-start="2021-11" data-end="2024-12">
       <div class="head"><h3>Senior Software Engineer <span class="at">· Meisterlabs</span></h3> <span class="dates">11/2021 - 12/2024</span></div>
-      <p class="about"><span class="place">Vienna, Austria</span> · Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React.</p>
+      <p class="about"><span class="place">Vienna, Austria</span> · Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React, with MySQL and Sidekiq.</p>
       <ul>
         <li>Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask. It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.</li>
         <li>Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.</li>
-        <li>Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend team shipped daily, independent of backend releases.</li>
+        <li>Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend went from weekly releases tied to the backend to daily ones.</li>
       </ul>
     </div>
     <div class="role" data-start="2019-10" data-end="2021-07">
@@ -193,11 +193,11 @@ main a { white-space: nowrap; }
     <h2>Skills</h2>
     <p class="skill"><b class="hat">Product and AI:</b> <span class="chips"><span>LLM features</span>, <span>AI agents</span>, <span>RAG</span>, <span>LLM evaluation</span>, <span>Structured outputs</span>, <span>Decision models</span>, <span>Prompt management</span>, <span>Langfuse</span>, <span>MCP</span>, <span>RubyLLM</span>, <span>OpenAI SDK</span>, <span>Microsoft Foundry</span>, <span>pgvector</span></span></p>
     <p class="skill"><b class="hat">Architecture and leadership:</b> <span class="chips"><span>Software architecture</span>, <span>Technical leadership</span>, <span>Spec-driven development</span>, <span>Event-driven architecture</span>, <span>Data modeling</span>, <span>Research and development</span></span></p>
-    <p class="skill"><b class="hat">Data:</b> <span class="chips"><span>Data engineering</span>, <span>Knowledge graphs</span>, <span>Data integration</span>, <span>Medallion architecture</span>, <span>Microsoft Fabric</span>, <span>PySpark</span>, <span>Notebooks</span>, <span>FalkorDB</span></span></p>
+    <p class="skill"><b class="hat">Data:</b> <span class="chips"><span>Data engineering</span>, <span>Knowledge graphs</span>, <span>Data integration</span>, <span>Medallion architecture</span>, <span>Microsoft Fabric</span>, <span>PySpark</span>, <span>FalkorDB</span></span></p>
     <p class="skill"><b class="hat">Backend:</b> <span class="chips"><span>Ruby on Rails</span>, <span>Ruby</span>, <span>Node.js</span>, <span>TypeScript</span>, <span>Go</span>, <span>Rust</span>, <span>Python</span>, <span>C++</span>, <span>PostgreSQL</span>, <span>MySQL</span>, <span>Redis</span>, <span>Sidekiq</span></span></p>
     <p class="skill"><b class="hat">Frontend:</b> <span class="chips"><span>Hotwire</span>, <span>JavaScript</span>, <span>Vue.js</span>, <span>Ember.js</span>, <span>React</span></span></p>
     <p class="skill"><b class="hat">Infrastructure and DevEx:</b> <span class="chips"><span>Google Cloud</span>, <span>Cloud Functions</span>, <span>Azure</span>, <span>Kubernetes</span>, <span>CI/CD</span>, <span>Kamal</span>, <span>Docker</span>, <span>Helm</span>, <span>Observability</span></span></p>
-    <p class="skill"><b class="hat">Ways of working:</b> <span class="chips"><span>Product specs</span>, <span>A/B experiments</span>, <span>Shape Up</span>, <span>AI-native delivery</span>, <span>AI SDLC transformation</span></span></p>
+    <p class="skill"><b class="hat">Ways of working:</b> <span class="chips"><span>A/B experiments</span>, <span>Shape Up</span>, <span>AI-native delivery</span>, <span>AI SDLC transformation</span></span></p>
   </section>
   <section>
     <h2>Projects</h2>
@@ -232,9 +232,9 @@ main a { white-space: nowrap; }
   </section>
   <section>
     <h2>Education</h2>
-    <div class="role" data-start="2022-01" data-institution="TU Wien (Vienna University of Technology)" data-study-type="Master's" data-area="Software Engineering &amp; Internet Computing; Business Informatics">
-      <div class="head"><h3>Master's programmes, in progress <span class="at">· TU Wien</span></h3> <span class="dates">01/2022 - Present</span></div>
-      <p class="about">Vienna University of Technology, Austria. Software Engineering &amp; Internet Computing, and Business Informatics; part-time, alongside work.</p>
+    <div class="role" data-start="2022" data-end="2025" data-institution="TU Wien (Vienna University of Technology)" data-study-type="Master's studies, on hold" data-area="Software Engineering &amp; Internet Computing; Business Informatics">
+      <div class="head"><h3>Master's studies, part-time (on hold) <span class="at">· TU Wien</span></h3> <span class="dates">2022 - 2025</span></div>
+      <p class="about">Vienna University of Technology, Austria. Software Engineering &amp; Internet Computing, and Business Informatics, alongside work.</p>
     </div>
     <div class="role" data-start="2016" data-end="2019" data-institution="IPI Akademija (International Business-Information Academy), Tuzla" data-study-type="BSc" data-area="Information Technology">
       <div class="head"><h3>BSc, Information Technology <span class="at">· IPI Akademija</span></h3> <span class="dates">2016 - 2019</span></div>
@@ -260,16 +260,16 @@ main a { white-space: nowrap; }
     <h2>Recommendations</h2>
     <div class="quotes">
       <div class="quote">
-        <p>"The word that best describes Muhamed is 'visionary'. I had the pleasure of co-organising RubyConf Austria with him. For more than a year, I watched Muhamed take ideas that sounded wildly unreasonable and somehow make them a reality. His standard response was: 'Don't worry about it. It's going to be fine. We'll deal with it.' When things went wrong, Muhamed stayed calm, made a decision and got moving. He expected a great deal from himself while remaining patient and generous with everyone around him. His enthusiasm pushed the whole team to aim higher, and he was genuinely fun to work with. Muhamed is a kind and capable leader. I would gladly work with him again. I have merely learned to be careful when he begins a sentence with, 'I have an idea.'"</p>
-        <div class="who"><b>Hans Schnedlitz</b> · co-organised RubyConf Austria with me</div>
-      </div>
-      <div class="quote">
         <p>"I worked with Muhamed on the same team for a year, and he quickly became one of the people I relied on most. Muhamed leads by doing. When we hit a hard problem, he didn't start with a long discussion. He wrote the code, showed it working, and then we talked. That habit moved the team forward more than once. He is a strong Ruby on Rails engineer and a natural architect. He took on leading the technical direction and shaping the code, and his decisions held up as the project grew. No challenge was too big or too unfamiliar for him. He is resourceful and knowledgeable, and when the answer wasn't obvious, he knew where to look. He is precise and professional, and he holds a high bar. He is also direct. When something wasn't good enough, he said so plainly, even when that was hard to hear. It was always about the work and never about the person, and it made both our code and our team better. I would gladly work with Muhamed again, and I recommend him to any team that needs a Rails engineer who can lead."</p>
         <div class="who"><b>Zlatko Alomerovic</b> · worked with me at Recrubo/Carv</div>
       </div>
       <div class="quote">
         <p>"Muhamed is one of the most amazing professionals I have ever worked with. He is extremely talented, dependable, and disciplined. Moreover, he is always willing to push himself beyond limits to make a product successful. With Muhamed's excellent communication and engineering management skills everything is possible. At Experfy, Muhamed single-handedly managed the team collaboration consisting of 7+ timezones. He has a vast reservoir of talent - enabling him to lead Backend, Frontend, and DevOps teams with flying colors. In design thinking sessions, Muhamed played a vital role with his powerful insight about the product roadmap and technical knowledge. As an engineering manager, he always backed his team with full support. In addition to these Muhamed conducted extremely high-yielding Sprint retrospectives. He was always willing to go the extra mile to increase productivity and eliminate blockers. I would strongly recommend Muhamed and would love to work with him again."</p>
         <div class="who"><b>Hassan Akbar</b> · worked with me at Experfy, 2021</div>
+      </div>
+      <div class="quote">
+        <p>"The word that best describes Muhamed is 'visionary'. I had the pleasure of co-organising RubyConf Austria with him. For more than a year, I watched Muhamed take ideas that sounded wildly unreasonable and somehow make them a reality. His standard response was: 'Don't worry about it. It's going to be fine. We'll deal with it.' When things went wrong, Muhamed stayed calm, made a decision and got moving. He expected a great deal from himself while remaining patient and generous with everyone around him. His enthusiasm pushed the whole team to aim higher, and he was genuinely fun to work with. Muhamed is a kind and capable leader. I would gladly work with him again. I have merely learned to be careful when he begins a sentence with, 'I have an idea.'"</p>
+        <div class="who"><b>Hans Schnedlitz</b> · co-organised RubyConf Austria with me</div>
       </div>
     </div>
   </section>
