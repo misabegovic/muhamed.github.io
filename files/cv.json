@@ -59,7 +59,7 @@
       "summary": "ATS serving 8,500+ companies, on Rails and Ember.js, with retrieval (RAG) on pgvector in the AI features. I owned AI features from pitch and spec to rollout and measurement, working in Shape Up.",
       "highlights": [
         "Shipped \"Request Missing Information\" to all customers: it spots what an application lacks, has an LLM draft a short questionnaire for the candidate, writes the answers back and re-runs screening.",
-        "Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers.",
+        "Rebuilt AI screening on the trigger system, so recruiters can screen at any stage and save criteria on job templates. Backfilled every company and rolled it out to all customers behind Flipper feature flags.",
         "Moved the AI features' prompts into Langfuse, with datasets, LLM judges and live scoring on production traffic. Ran A/B experiments of prompt and model versions there and promoted the winners.",
         "Shipped automatic candidate moves based on the screening outcome, a customer request. Made screening wait until the CV is parsed, so nobody is screened before their CV is read."
       ]
@@ -80,7 +80,7 @@
       "summary": "Seed-stage AI platform for recruiters; Carv acquired it two months after I joined.",
       "highlights": [
         "Led two teams, one on the Rails product that came from Recrubo and one on Carv's Node.js/TypeScript product, owning delivery together with a product manager.",
-        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations.",
+        "Led the integration of both products after the acquisition: one Vue.js frontend, a shared database for clients and login sessions, and common ATS integrations, with new functionality shipped behind Flipper flags.",
         "Co-built and maintained the event-driven system on Redis Pub/Sub that connects the two stacks and carries new functionality, with Google Cloud Tasks as a fallback and for workload management.",
         "Built the data pipelines that bring jobs, candidates and applications in from 20+ applicant tracking systems, normalise them into one model and pass them on to the AI features, which use retrieval (RAG) on pgvector. AI features worked the same for every client, and adding a new ATS didn't mean new code elsewhere.",
         "Introduced spec-driven development in both teams: features are written up as specs and agreed first, then implemented with coding agents and reviewed by engineers.",
@@ -92,7 +92,7 @@
       "position": "Founder and AI Engineer",
       "location": null,
       "startDate": null,
-      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I try AI features on real users first.",
+      "summary": "A travel guide to Bosnia and Herzegovina with thousands of visits a month, which I build and run alone on Rails and Hotwire, deployed with Kamal. It is where I try AI features on real users first, behind Flipper flags.",
       "highlights": [
         "Built generation grounded in real data (RAG, on pgvector). Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
@@ -119,7 +119,7 @@
       "summary": "Maker of MindMeister and MeisterTask. I worked on MindMeister and the accounts system, in Rails and React, with MySQL and Sidekiq.",
       "highlights": [
         "Proposed, designed and built a plans and permissions system shared by Accounts, MindMeister and MeisterTask. It replaced feature checks hardcoded across the apps, so the product team could set up plans and run billing experiments without developer time.",
-        "Built MindMeister product features for three years and ran A/B experiments across markets: on pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before their full release.",
+        "Built MindMeister product features for three years, behind Flipper feature flags, and ran A/B experiments across markets: pricing and plans, paywalls and upgrade prompts, onboarding and sign-up, and new features before release.",
         "Maintained, monitored and expanded the Kubernetes setup for MindMeister: its dashboards, metrics and alerts, the Helm charts and deployment configuration, and new services and environments. Split backend and frontend deployments into separate pipelines, so the frontend went from weekly releases tied to the backend to daily ones."
       ]
     },
@@ -281,6 +281,7 @@
       "name": "Ways of working",
       "keywords": [
         "A/B experiments",
+        "Feature flags (Flipper)",
         "Shape Up",
         "AI-native delivery",
         "AI SDLC transformation"
