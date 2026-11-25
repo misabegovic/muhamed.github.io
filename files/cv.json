@@ -32,10 +32,10 @@
   "work": [
     {
       "name": "Isabegovic Muhamed e.U.",
-      "position": "Founder",
+      "position": "Staff Engineer and Founder",
       "location": "Vienna, Austria",
       "startDate": "2024-01",
-      "summary": "My own company. In 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs; since 2025, engineering roles for startups and engineering companies, RubyConf Austria, and Usput.ba, my own product.",
+      "summary": "My own company. Since 2025 I work through it on B2B contracts as a staff engineer and technical lead; the roles below were delivered through it. It also runs RubyConf Austria and my product Usput.ba, and in 2024 it ran EuRuKo 2024 alongside my role at Meisterlabs.",
       "highlights": []
     },
     {
@@ -88,18 +88,6 @@
       ]
     },
     {
-      "name": "EuRuKo, RubyConf Austria, GoatConf",
-      "position": "Founder and organiser",
-      "location": null,
-      "startDate": null,
-      "highlights": [
-        "EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.",
-        "RubyConf Austria 2026, Vienna: up to 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at).",
-        "Led both end to end, budget and sponsorships included, with a small volunteer team. For RubyConf Austria I applied what EuRuKo taught me: a venue that cut risk, and a size I could deliver.",
-        "GoatConf 2027, Tuzla, 3–5 June: free, for people who build and sell software."
-      ]
-    },
-    {
       "name": "Usput.ba, my own product",
       "position": "AI Engineer",
       "location": null,
@@ -109,6 +97,17 @@
         "Built generation grounded in real data. Place descriptions, audio-tour scripts and itineraries are written from places retrieved from a places API and the site's own database, not from the model's memory.",
         "Built the LLM layer on RubyLLM with schema-enforced structured output, layered retries, JSON repair and versioned prompts, configured for OpenAI, Anthropic and Google Gemini models.",
         "Wrote a tested MCP server in plain Ruby, with a rule-based validator that catches made-up details in records the model creates."
+      ]
+    },
+    {
+      "name": "EuRuKo 2024; founder of RubyConf Austria and GoatConf",
+      "position": "Conference organiser",
+      "location": null,
+      "startDate": null,
+      "highlights": [
+        "EuRuKo 2024, Sarajevo: 3 days, 3 tracks, 50 speakers from 25+ countries, 700 attendees.",
+        "RubyConf Austria 2026, Vienna: about 200 attendees and 13 speakers, with workshops and a community day built around a treasure hunt app I wrote (hunt.rubyconf.at). GoatConf follows in June 2027 in Tuzla.",
+        "Led both end to end, budget and sponsorships included, with a small volunteer team."
       ]
     },
     {
@@ -126,7 +125,7 @@
     },
     {
       "name": "Experfy",
-      "position": "Lead Software Engineer",
+      "position": "Engineering Manager",
       "location": "Remote",
       "startDate": "2019-10",
       "endDate": "2021-07",
