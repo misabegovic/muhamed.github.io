@@ -55,7 +55,7 @@ function readCv() {
       group: text(hat),
       items: [...hat.nextElementSibling.querySelectorAll('span')].map(text),
     })),
-    open_source: roles('Open-source projects').map((r) => ({ name: r.title, role: r.at, text: r.summary })),
+    open_source: roles('Projects').map((r) => ({ name: r.title, role: r.at, text: r.summary })),
     education: roles('Education'),
     languages: [...section('Languages').querySelectorAll('b')].map((b) => ({ language: text(b), fluency: text(b.nextSibling).replace(/\s*·\s*$/, '') })),
     volunteering: roles('Volunteering'),

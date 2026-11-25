@@ -176,10 +176,10 @@
     },
     {
       "organization": "Zemlja Djece",
-      "position": "Volunteer",
+      "position": "Volunteer, \"Stariji brat, starija sestra\"",
       "startDate": "2016-11",
       "endDate": "2017-07",
-      "summary": "\"Stariji brat, starija sestra\" (Older Brother, Older Sister); certificate for exceptional work with children from underprivileged families."
+      "summary": "\"Older Brother, Older Sister\"; certificate for exceptional work with children from underprivileged families."
     }
   ],
   "education": [
@@ -312,32 +312,53 @@
   ],
   "projects": [
     {
+      "name": "empty-shell",
+      "roles": [
+        "author · in private development"
+      ],
+      "description": "A starting repository for projects run with a coding agent: rules, checks and an empty wiki, with enola, tabula and taha inside."
+    },
+    {
       "name": "enola",
       "roles": [
-        "core contributor"
+        "core contributor · open source"
       ],
       "description": "Checks a codebase's architecture rules in CI. I built its rule system and maintain four Ruby gems that bring it to Rails teams."
     },
     {
+      "name": "tabula",
+      "roles": [
+        "author · in private development"
+      ],
+      "description": "A Rust tool that keeps a project's memory and decisions as plain files in git, and judges finished work against what was decided."
+    },
+    {
+      "name": "taha",
+      "roles": [
+        "author · in private development"
+      ],
+      "description": "Runs a coding agent unattended inside a mandate you set, and comes back with finished, checked work."
+    },
+    {
       "name": "enola-guides",
       "roles": [
-        "author and maintainer"
+        "author and maintainer · open source"
       ],
       "description": "Guides to enola for Rails, Ember, Python, TypeScript, Go and Rust, with a catalogue of 26 architecture laws. Ten releases since August 2026, on RubyGems, npm, PyPI and crates.io."
     },
     {
       "name": "tended and pi-brain",
       "roles": [
-        "author and maintainer"
+        "author and maintainer · open source"
       ],
       "description": "Knowledge bases a coding agent maintains, so people and agents work from the same written specs and decisions. tended is on PyPI; pi-brain is on npm, with ten releases."
     },
     {
       "name": "treasure_hunt",
       "roles": [
-        "author"
+        "author · open source"
       ],
-      "description": "A location-based treasure hunt for conferences, with GPS clues, teams, hints and live leaderboards. Built on Rails 8.1 for RubyConf Austria 2026 and open-sourced under MIT for any organiser."
+      "description": "A location-based treasure hunt for conferences, built on Rails 8.1 for RubyConf Austria 2026 and open-sourced under MIT."
     }
   ],
   "references": [
